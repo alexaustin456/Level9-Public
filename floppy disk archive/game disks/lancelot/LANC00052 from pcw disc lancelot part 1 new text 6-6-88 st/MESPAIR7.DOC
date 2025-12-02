@@ -1,0 +1,147 @@
+
+
+
+
+     ; Message pairs for use in
+     describing containment positions ; also used for preposition table ; ;
+     part printed before container ; [1600:Lancelot could see] ; 0 - you
+     can see (user's name not ; printed by PRINTOBJECTS) [1601:^P on |^P
+     onto] ; 1 - on [1602:^P underneath|^P below ^P under] ; 2 - under
+     [1603:^P behind] ; 3 - behind [1604:] ; 4 - carrying [1605:] ; 5 -
+     wearing [1606:in|^P at] ; 6 - blocking the hole [1607:^P in |^P into
+     ^P inside] ; 7 - in [1608:hanging from] ; 8 [1609:growing from ] ; 9
+     - part of [1610:^P between] ; tied between is tied a rope ;; [1611:]
+     ;11 - 'the carter was pushing a cart' [1612:lying on] ;12
+     [1613:sitting on] ;13 [1614:fastened to] ;14 ; 15 'giant Nabon was
+     lying on the pillow' [1616:^P with|^P using] [1617:^P from] ; ; part
+     printed between container and contained. ; [1640:] ; 0 [1641:was] ; 1
+     - on [1642:was] ; 2 - under [1643:was] ; 3 - behind [1644:was
+     carrying] ; 4 [1645:was wearing] ; 5 [1646:was blocked by] ; 6 - is
+     blocked by [1647:was] ; 7 - in [1648:was] ; 8 [1649:was] ; 9 - part of
+     is [1650:was tied] ;10 - [1651:was driving] ;11 - the carter was
+     pushing a cart [1652:] ;12 [1653:] ;13 [1654:was] ;14 - fastened to
+     [1655:was lying on] ; ; for plural contents... [1670:] ; 0 [1671:were]
+     ; 1 - on [1672:were] ; 2 - under [1673:were] ; 3 - behind [1674:was
+     carrying] ; 4 [1675:was wearing] ; 5 [1676:was blocked by] ; 6 - is
+     blocked by [1677:were] ; 7 - in [1678:were] ; 8 [1679:were] ; 9 - part
+     of is [1680:was tied] ;10 - [1681:was driving] ;11 - the carter was
+     pushing a cart [1682:] ;12 [1683:] ;13 [1684:were] ;14 - fastened to
+     [1685:was lying on]   ;15
+
+     ; 1700: is base for prepositions to use with 'you'
+     ;
+     ; 1700+N is part printed before 'you'
+     [1715:tied to]
+     ;
+     ; 1740+N is part printed between you and object(s)
+     [1741:was on]         ; 1 - on
+     ; 1742 is 2
+     ; 1743 is 3
+     [1744:owned]          ; 4 - own
+     [1745:was wearing]    ; 5
+     [1746:was riding]     ; 6
+     [1747:was in]         ; 7
+     [1751:was driving]    ; 11 - Lancelot was pushing
+     [1752:was lying on]   ; 12
+     [1753:was sitting on] ; 13
+     [1754:was fastened to];14
+     [1755:was lying on]
+     ;
+     ; for plural prepositions...
+     ; 1770+N is part printed between you and object(s)
+     [1771:were on]         ; 1 - on
+     ; 1772 is 2
+     ; 1773 is 3
+     [1774:owned]           ; 4 - own
+     [1775:were wearing]    ; 5
+     [1776:were riding]     ; 6
+     [1777:were in]         ; 7
+     [1782:were lying on]   ; 12
+     [1783:were sitting on] ; 13
+     [1784:were fastened to];14
+     [1785:were] ; tied to you is 15
+     ;
+
+
+
+
+
+
+     [1800:^P off]
+     [1801:^P up]
+     [1802:^P down]
+     [1803:^P to]
+     [1804:^P out]
+     [1805:^P from the ] ; used for npc motion
+     [1806:^P for]
+     [1807:^P until]
+     [1808:^P debug]
+     [1809:^P through]
+     [1810:^P about]
+     ;
+     ; Parser messages..
+     [2000:you don't need to use "]
+     [2001:" to finish the game]
+     ;
+     [2003:I don't understand the word "]
+     [2004:" when used like that]
+     ;
+     [2006:Lancelot was ]
+     [2007:in a ] ; as in 'You are in an alder forest
+     [2008:in an ]
+     [2009:exits led in all directions]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     [2009:exits led in all directions]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+

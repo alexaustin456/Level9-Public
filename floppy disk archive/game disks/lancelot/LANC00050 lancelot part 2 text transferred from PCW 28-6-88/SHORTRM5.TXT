@@ -1,0 +1,595 @@
+
+
+
+     ;
+     ; Short-Form room Descriptions (800+N). No full stops at end please.
+     ; These are the brief mode descriptions; they are prefixed by
+     ; 'Lancelot was' and, in verbose mode, messages 1300+N are appended.
+     ;
+     ; room 1 is used as exit modifier for synthesised rooms.
+     ; rooms 2..20 are those with static connections; i.e. not on the
+     ; synthesised grid.
+     ;
+     ; description order is:
+     ; 'Lancelot was'   '800++'   '1100++'  '.'
+     ;                   short      long
+     ;
+     ;
+     [803:in the ^N lower ^N prison. It was gloomily dark, and the ^N walls
+     felt slimy with damp. The heavy ^N air smelt like a stagnant ^N pond]
+     [804:in the ^N courtyard, a stone-flagged ^N square. It had evidentally
+     been recently weeded, since the ^N soil between the ^N stones was loose and
+     newly turned ]
+     [805:in a ^N secret ^N passage. It was very dark, and so narrow that
+     you would need to squeeze your ^N way through the jagged ^N rock in places.
+     The uneven ^N floor needed careful negotiation, although a few rough
+     ^N steps had been cut into the ^N ground to cope with sharp ^N descents and
+     ^N hills]
+     [806:in the ^N entrance, under a wide ^N arch of ^N stone encrusted with
+     ^N flints. The embellishment of a human ^N skull nailed to the ^N centre of the
+     ^N arch was not a particularly welcoming ^N touch]
+     [807:in a ^N gateway. The ^N gates, massive ^N structures of solid wrought
+     ^N iron, were flung back]
+     [808:in a ^N cell. The ^N ceiling was so low that ^N Lancelot could
+     barely stand up straight, and ^N puddles of ^N moisture had collected
+     in the ^N dips in the uneven ^N floor]
+
+     [809:in a ^N prison ^N corridor, a narrow winding ^N passageway, which
+     led uphill and downwards in disorientating ^N turns]
+     [810:in a ^N cell, a long narrow ^N room, with a rough ^N pile of ^N straw in
+     one ^N corner. A tiny ^N grille set into the high ^N ceiling let in a little
+     ^N light, but nothing could be seen through it, and it was way out of
+     reach]
+     [812:in a ^N prison, a ^N passageway from which a ^N number of heavy wooden
+     ^N doors led into the ^N cells. Every ^N sound echoed around the stone
+     ^N chambers. It was so cold that ^N Lancelot could see his
+     own ^N breath]
+     [813:on ^N deck, standing high above the surging ^N waters below. The
+     whole ^N ship creaked in the ^N wind, and some of the ^N planks which made up
+     the ^N deck seemed to shake]
+     [814:in a ^N castle. The ^N rooms were much higher than in most ^N castles
+     ^N Lancelot
+     knew, the ^N ceilings almost out of sight. The ^N walls were built from a
+     dark charcoal-grey ^N stone, and looked thick enough to withstand any
+     ^N onslaught]
+     [815:in a ^N prison. The individual ^N cells appeared to have been adapted from
+     ^N caves which had always existed on the ^N site, rather than being built
+     specifically. The earth ^N floor was alternately rock hard and sludgy
+     with dampness, while cramped ^N passages led off to the ^N cells]
+     [816:on some ^N stairs, rickety with age and with many ^N steps missing.
+     Wooden ^N slats had obviously been placed on the stone ^N ledges at some
+     point, but many of these had rotted or worn away]
+     [817:in a room with a ^N bath, a small ^N chamber with a roaring ^N fire at
+     the far end. ^N Cauldrons of steaming ^N water hung over the ^N fireplace, and
+
+
+
+
+
+
+     a number of large ^N towels were placed on a ^N shelf to one side of the
+     ^N hearth, warming with the ^N heat of the ^N fire]
+     [818:in a ^N hall, a wide ^N room lit by ^N torches in ornate ^N holders fixed
+     to the ^N walls. ^N Trophies from ^N hunting and ^N battles hung everywhere, from
+     complete ^N suits of ^N armour to stuffed ^N animals' ^N heads]
+     [819:on some ^N stairs. The spiral ^N staircase wound tightly around the
+     ^N contours of the ^N tower, while the occasional slit ^N windows afforded a
+     fine ^N view of the ^N shoreline]
+     [820:in the ^N perilous ^N bedroom. It was very dark, but a large ^N bed
+     with a plump ^N mattress and a ^N washstand could just be perceived in the
+     ^N gloom]
+     [821:in the lower branches of the ^N elm, broad and solid and slightly
+     mossy. Parting the ^N greenery of the young ^N sprigs revealed the ^N tree
+     continuing to stretch upwards to the ^N sky]
+     [822:in Elaine's ^N bedroom. A soft golden ^N glow from the flickering
+     ^N forated ^N altar took up most of the ^N room
+     inside]
+
+     [824:in ^N castle ^N Lyonesse|^N dame, a fine imposing ^N edifice in
+     smooth pale ^N stone on top of a ^N hill with commanding ^N views of
+     the surrounding ^N countryside. Inside, the ^N rooms were light and
+     airy, with many interesting ^N pictures and ^N engravings decorating
+     the ^N walls, and well-worn comfortable ^N furnishings]
+
+     [825:in a ^N decaying ^N hall. ^N Debris - ^N wood and ^N stones - littered the
+  orated ^N altar took up most of the ^N room
+     inside]
+
+     [824:in ^N castle ^N Lyonesse|^N dame, a fine imposing ^N edifice in
+     smooth pale ^N stone on top of a ^N hill with commanding ^N views of
+     the surrounding ^N countryside. Inside, the ^N rooms were light and
+     airy, with many interesting ^N pictures and ^N engravings decorating
+     the ^N walls, and well-worn comfortable ^N furnishings]
+
+     [825:in a ^N decaying ^N hall. ^N Debris - ^N wood and ^N stones - littered the
+     ^N floor and the ^N walls were covered in ^N lichens. A couple of small
+     ^N bushes
+     had taken root in one of the many ^N cracks in the stone ^N floor]
+     [826:in the entrance to ^N chapel ^N perilous. It was a narrow
+     ^N passage, with ^N plants overhanging the ^N doorway, creating a green
+     ^N light
+     which shone into the ^N chapel beyond, much of which seemed to be swathed in
+     ^N shadows]
+     [827:inside the ^N chapel. Dark wooden ^N pillars supported the ^N rafters,
+     and thick ^N cobwebs draped many of the ^N statuettes which rested against
+     the ^N walls]
+     [828:in the ^N inner ^N chamber, a small cramped ^N room, with many
+     strange ^N ornaments and ^N relics lining the ^N walls and crowding the
+     ^N floor]
+     [829:at the top of the ^N elm. The ^N branches were much slimmer here and
+     were full of ^N sap, with many small ^N shoots bursting from the ^N tips of the
+     ^N sprigs. The ^N wind could be felt much more strongly here and the whole
+     ^N tree seemed to
+     sway in the ^N breeze]
+     ;
+     [830:on the ^N stairs. Here the stone ^N steps gave way to a wooden
+     ^N construction, which creaked disconcertingly underfoot]
+     [831:in the ^N living ^N quarters. The ^N furniture looked old and well-
+     used. A few ^N drapes hung from the ^N ceiling, but were quite powerless to
+     eliminate the ^N draughts which swirled through the ^N rooms]
+     [832:on the ^N stairs, a broad sweeping ^N staircase hewn out of solid
+     ^N stone]
+     [833:in a ^N stable, heaped high with ^N straw, and also, since it had
+
+
+
+
+
+
+     evidentally not been recently mucked out, ^N piles of ^N horse ^N excrement.
+     Brass ^N rings for tethering the ^N horses lined the ^N wall]
+     [834:on the ^N stairs, which wound upwards steeply and unevenly in tight
+     circles]
+     [835:in the ^N basement, which smelt musty and stale. A few ^N casks of
+     some unidentifiable ^N drink distilled at the ^N castle nestled against the
+     ^N wall. The ^N floor was slightly damp and the ^N ceiling low]
+     [836:in a ^N tunnel, cut through sandy ^N earth and weaving around the
+     makeshift ^N walls of solid ^N rock. Its ^N height varied wildly from one
+     ^N stretch to the next; much of the going had to be made on ^N hands and
+     ^N knees. Occasionally the ^N noise of dripping ^N water signalled that the
+     ^N roof was not stable throughout the ^N tunnel, although a few wooden
+     ^N props had been driven into the soft ^N soil for support ]
+
+     [837:in a ^N prison, a solid stone ^N outhouse, with few ^N windows and an
+     earth ^N floor]
+     [838:in a ^N guardroom, entirely unfurnished apart from a ^N couple of
+     wooden ^N benches and a low ^N table. ^N Tankards, some empty, some half-filled
+     with ^N ale cluttered the ^N table and the high ^N window ^N ledge at the far end]
+     [839:in an ^N upper ^N prison. Here one could see out of the tiny
+     barred ^N windows and look down at the sheer drop of several hundred feet
+     to the rocky ^N ground below]
+
+     [845:on a ^N riverbank, a grassy ^N stretch bordered by tall coarse ^N reeds
+     and the ^N mud of the ^N river's ^N edge itself]
+     [846:on a ^N decrepit ^N bridge, which was sodden through and through
+     and many of its ^N planks were splintered, or gaping with ^N holes, so that
+     the ^N water below was clearly visible]
+     [847:outside a ^N manor ^N house. It was taller than most of the
+     nearby ^N buildings, made of grey ^N stone, with many high narrow ^N windows.
+     ^N Smoke curled up from a central ^N chimney set into the thick ^N thatch]
+     [848:in ^N forest ^N Meliot. The dense ^N growth of tall ^N conifers,
+     soaring straight up to the ^N sky like
+     ^N spires, cut out the ^N sunlight from the ^N forest ^N floor. The ^N ground was
+     soft with a ^N carpet of ^N pine ^N needles and spotted with ^N fir ^N cones ]
+     [849:on a ^N dangerous ^N road, twisting and winding around ^N boulders,
+     and ^N clumps of ^N eaves and ^N leaf ^N mould]
+     [852:on a ^N roman ^N road beside a ^N turret. The long straight
+     ^N highway stretched out as far as the ^N eye could see and had been laid
+     with flat ^N stones, although ^N weeds had sprouted plentifully in the
+     ^N cracks. The ^N turret threw a long dark ^N shadow across the ^N way]
+     [853:at a ^N junction in the ^N forest. The ^N track divided into two
+     here, both ^N paths of well-trodden rotting ^N leaves, although the higher
+     ^N road looked eaves and ^N leaf ^N mould]
+     [852:on a ^N roman ^N road beside a ^N turret. The long straight
+     ^N highway stretched out as far as the ^N eye could see and had been laid
+     with flat ^N stones, although ^N weeds had sprouted plentifully in the
+     ^N cracks. The ^N turret threw a long dark ^N shadow across the ^N way]
+     [853:at a ^N junction in the ^N forest. The ^N track divided into two
+     here, both ^N paths of well-trodden rotting ^N leaves, although the higher
+     ^N road looked slightly drier underfoot]
+     [854:in ^N Garlon's ^N turret, a squat square ^N tower built with many
+     small ^N stones wedged together]
+     [855:at a ^N big ^N clearing beside the ^N castle of ^N forest ^N
+     Sauvage. The cool dusk of the ^N forest gave way to sunny ^N grassland, a
+     small ^N meadow sprinkled with ^N buttercups and ^N cowslips, and humming with
+     ^N bees and other ^N insects]
+     [856:on a ^N roman ^N road through ^N briars. The tangled ^N thorns
+
+
+
+
+
+
+     stretched out over the ^N road to catch the unwary. Some faded and blowsy
+     ^N flowers were still left on the ^N plants, which were thronged with lazy
+     ^N bees buzzing from one to the other. The ^N road wove its ^N way through the
+     ^N bushes as far as the ^N horizon]
+     [857:on a ^N roman road through ^N forest ^N Sauvage, a straight wide
+     ^N track stretching deep into the ^N forest. Some paving ^N stones had been
+     laid to cover the most obviously muddy ^N parts. The surrounding ^N trees
+     curved over the ^N road to create a high ^N arch]
+     [858:on the ^N great north road, wide and even as it traversed the
+     ^N moors or followed alongside ^N rivers but narrowing to a stony single-
+     file ^N track as it wound around ^N hills, or descended into wooded ^N valleys.
+     Some ^N parts, where the ^N track was stamped into a hard smooth ^N surface by
+     ^N carts and ^N horses' ^N hooves and the ^N roadside was dotted with
+     ^N cairns, were
+     well-used by ^N travellers, while other ^N sections, where fewer ^N people used
+     the ^N road, were more difficult to negotiate]
+
+     [859:on a ^N triumphal ^N avenue|^N Camelot ^N Arthur ^N Guenever, an
+     imposing ^N highway, fully lined with flat ^N stones, dry and kept clear of
+     ^N weeds and encroaching ^N undergrowth]
+     [860:on the ^N coast road, a sandy ^N strip just a few ^N feet above the
+     ^N high ^N tide ^N mark. Stubby ^N marram ^N grass and other ^N sea ^N plants lined the
+     ^N verges, while empty ^N seashells littered the ^N way, and ^N flotsam from the
+     ^N winter ^N storms lay piled up on the ^N sides]
+     [861:at ^N Tintagel, the ^N headland jutting out fiercely into the
+     foaming ^N Atlantic below. At the very ^N top of the sheer ^N cliff rose the
+     dark grey ^N castle, its ^N battlements affording a fine ^N view over towards
+     ^N Wales
+     across the ^N sea and the north Cornish ^N hinterland to the south]
+     [862:on a ^N walled ^N road, over which a ^N man on ^N horseback could just
+     see into the ^N fields beyond. The ^N dry ^N stone ^N wall was speckled with
+     ^N lichens and small ^N plants wedged into its ^N crevices]
+     [863:on a ^N road, marked out with smooth ^N pebbles imported from a
+     nearby ^N beach, which crunched underfoot]
+     [864:on a ^N beach, where occasional
+     ^N crops of dark grey ^N rock pushed out above the fine golden ^N sands, leaving
+     deep ^N rock ^N pools at their ^N feet. It was bordered on either ^N side by tall
+     ^N headlands protruding into the ^N bay]
+     ;
+     [866:on a ^N hill, a windswept ^N tor covered in short coarse ^N grass, the
+     ^N peak a bare ^N head of hard ^N granite. The ^N slopes were dotted with smaller
+     ^N granite ^N outcrops, and mazy ^N rabbit ^N tracks wove from ^N rock to
+     ^N rock]
+     [867:on a ^N winding ^N road, which negotiated thickly wooded ^N river
+     ^N valleys and wound around the ^N foot of bleak ^N moors, sometimes following
+     the ^N course of ^N ridges on their lower ^N slopes. ^N Dry ^N stone
+     ^N walls marked the
+     ^N verges along some ^N sections, while the ^N way meandered alongside small
+     twisting ^N streams for long ^N stretches]
+     [868:at a ^N crossroads, a large and evidentally busy ^N junction, since
+     the ^N track was worn and pitted with ^N footmarks and ^N clefts made by
+     ^N horses' ^N hooves. A small ^N patch of straggling ^N grass marked the
+     ^N centre of
+     the ^N crossing]
+     [869:on an ^N island, a hugs built on to solid ^N rock a hundred ^N yards or so back from
+     the ^N sea itself, a tall square ^N edifice looking out to ^N sea]
+     [871:in ^N Corbin ^N village, a ^N settlement of tiny stone ^N houses, built
+     in ^N places to afford as much ^N protection from the ^N wind as possible,
+     their ^N doors facing inland, and ^N smoke blowing furiously from nearly all
+     the ^N chimneys. A few meagre ^N strips of farmed ^N land could be
+     seen behind the ^N cottages, but there was little s built on to solid ^N rock a hundred ^N yards or so back from
+     the ^N sea itself, a tall square ^N edifice looking out to ^N sea]
+     [871:in ^N Corbin ^N village, a ^N settlement of tiny stone ^N houses, built
+     in ^N places to afford as much ^N protection from the ^N wind as possible,
+     their ^N doors facing inland, and ^N smoke blowing furiously from nearly all
+     the ^N chimneys. A few meagre ^N strips of farmed ^N land could be
+     seen behind the ^N cottages, but there was little sign of any ^N inhabitants]
+     [872:in a ^N forest ^N maze. The ^N trees grew so close together and the
+     smaller ^N branches were so dense it was impossible to see more than few
+     ^N yards ahead]
+
+     [873:in a ^N forest ^N maze]
+     [874:in a ^N forest ^N maze]
+     [875:in a ^N forest ^N maze. A green ^N light seemed to shine thinly from
+     the ^N sky over the ^N trees and ^N forest ^N floor]
+
+     [876:in a ^N forest ^N maze]
+     [877:in a ^N forest ^N maze]
+     [878:in a ^N forest ^N maze]
+     [879:in a ^N forest ^N maze. ^N Twigs snapped underfoot, and the ^N crackle
+     was muffled in the thick ^N greenery which hung like a ^N curtain on all
+     ^N sides]
+     [880:in a ^N forest ^N maze]
+     [881:in a ^N forest ^N maze]
+     [882:in a ^N forest ^N maze]
+     [883:in a ^N forest ^N maze. A ^N red ^N squirrel jumped casually from one
+     ^N branch to another a few ^N yards ahead]
+     [884:in a ^N forest ^N maze]
+     [885:in a ^N forest ^N maze]
+     [886:at the ^N wailing ^N castle, which loomed out of the ^N woods, first
+     indistinctly, as the ^N trees hid it from clear ^N view. It might have been
+     like something out of a ^N fairy ^N tale, had it not been for the stark ash
+     grey ^N contours of the ^N towers, and its utter lack of ^N adornment. There
+     was also nothing enchanted about the ^N sounds of pitiful ^N cries, which
+     must surely be human, which could be heard indistinctly from the
+     inside of the ^N castle]
+     [887:in a ^N forest ^N maze]
+     [888:in a ^N forest ^N maze. The ^N sky had disappeared from ^N view,
+     blocked by the ^N closeness of the ^N trees]
+     [889:in a ^N forest ^N maze]
+     [890:in a ^N forest ^N maze]
+     [891:in a ^N forest ^N maze]
+     [892:in a ^N forest ^N maze]
+     [893:in a ^N forest ^N maze]
+     [894:in a ^N forest ^N maze]
+     [895:in a ^N forest ^N maze. ^N Twigs and ^N branches rustled and unseen
+     ^N birds
+     set up a great ^N crying as a ^N wild ^Nanimal searched for ^N food somewhere in
+     the ^N distance]
+     [896:in a ^N forest ^N maze]
+     [897:on a ^N forest ^N road. Surrounded on both ^N sides by dense
+     ^N greenery, a peaty ^N track cut through the ^N woods]
+     [898:on a ^N reedy ^N isle beside a ^N castle. The ^N ground squelched
+     and slurped underfoot, and the coarse ^N reed ^N beds were populated by
+     ^N flocks of wailing ^N water ^N birds. The ^N island was low and flat above the
+     watery ^N swamps around it, and ^N castle was built into the only ^N outcrop of
+     solid ^N rock on the small ^N bump of ^N land]
+     [899:in a ^N trackless ^N marsh. Oily stagnant ^N pools gave way to brown
+
+
+
+
+
+
+     shifting ^N mud, with occasional ^N tufts of ^N grasses attempting to gain some
+     ^N foothold in this slippery oozing ^N landscape. The ^N ground was
+     completely flat for as far as the ^N eye could see, and a grey ^N mist hung
+     over the clammy ^N ground]
+     [900:on a ^N marsh ^N road. Raised above the level of the brackish
+     ^N mud ^N flats, the ^N track had been laid with ^N pebbles to mark out the drier
+     ^N ground, but was nevertheless very wet underfoot]
+     [901:at a ^N siegeworks. The ^N trenches and defensive ^N mounds were clearly
+     visible, the ^N trenches deep and wide to allow the ^N accommodation of
+     horsed ^N knights as well as ^N foot ^N soldiers. Here and there the remains of
+     ^N battle
+     could be seen - half a ^N sword, or a broken ^N spear, or a scrap of torn
+     ^N chain
+     ^N mail hanging from a ^N tree]
+     [902:in the ^N red ^N launds, bare and baked of ^N earth. The barren
+     sandy ^N ground yielded only a few sparse ^N tufts of ^N grass in the way of
+     vegetation. The small ^N mounds which served as ^N hills in the ^N vicinity
+     were as bare as the ^N vales, which gave the ^N lands the appearance of a
+     ^N desert]
+     [903:in the ^N green ^N launds. Here the ^N fields were lush and bushy
+     with tall vibrant ^N grasses and small ^N shrubs,  in the ^N soil. What ^N trees there were were stunted and thin, with
+     shrivelled ^N leaves and spindly ^N twigs for branches]
+     [905:at a ^N country ^N junction. Despite it being a major ^N meeting of
+     the ^N roads, it was evidentally not well-travelled. ^N Grass grew across
+     all the ^N tracks, and wild ^N hawthorn ^N trees overhung the ^N crossing, having
+     not been cut back to make the ^N junction clearer or wider, either
+     deliberately or through any sustained ^N traffic]
+    in the ^N soil. What ^N trees there were were stunted and thin, with
+     shrivelled ^N leaves and spindly ^N twigs for branches]
+     [905:at a ^N country ^N junction. Despite it being a major ^N meeting of
+     the ^N roads, it was evidentally not well-travelled. ^N Grass grew across
+     all the ^N tracks, and wild ^N hawthorn ^N trees overhung the ^N crossing, having
+     not been cut back to make the ^N junction clearer or wider, either
+     deliberately or through any sustained ^N traffic]
+     [906:at a ^N main ^N road, a wide smooth ^N highway, lined at regular
+     ^N intervals with broad ^N elm ^N trees, which gave it the appearance of a regal
+     ^N avenue]
+     [907:on a ^N country ^N road, with ^N dry ^N stone ^N walls lining the
+     ^N route.
+     Against the ^N walls grew ^N blackberry ^N bushes, which made even the
+     negotiable part of the ^N road quite narrow and difficult in places]
+     [908:on a ^N stone ^N road, paved with large ^N flagstones to make the
+     going as even and steady as possible. ^N Mosses and small ^N ferns
+     grew in the ^N gaps in the ^N stones, and spread up the squat ^N walls which
+     marked the ^N verges of the ^N road]
+     [909:on an ^N overgrown ^N road. It was difficult to see the exact
+     ^N path, so tangled and knotted were the ^N bushes and creeping
+     ^N plants which encroached on either ^N side]
+     [910:on an ^N overgrown ^N road, where outflung ^N branches caught the
+     unwary ^N rider across the ^N face, and fallen ^N trees lay across the
+     ^N track,
+     completely blocking the ^N way. Tall ^N foxgloves grew in the very middle of
+     the ^ way, forming a regimental ^N line bisecting the ^N road into two
+     ^N lanes]
+     [911:on a ^N hill, beside a ^N tower. The ^N slopes were bare and craggy,
+     the ^N rocks showing through the straggling ^N tufts of ^N grass and ground
+     ^N plants. A cold ^N wind blew from the north from which little ^N shelter
+     could be found, and echoed round the ^N tower, which had a battered
+     appearance, as though it had barely withstood some of the harsher
+
+
+
+
+
+
+     winter ^N gales]
+     [912:on a ^N beach, a small ^N bay forming a deep ^N curve between two
+     jagged ^N headlands. Seaweed covered ^N rocks were strewn all over the
+     ^N strand, with deep ^N rock and sand ^N pools which made the going tricky]
+     [913:on a ^N mountaintop, up in the midst of grey swirling ^N clouds. the
+     ^N vegetation had ceased altogether here, and the ^N ground was bare lichen-
+     covered ^N rock, which had been worn smooth by the ^N winds and ^N rain on the
+     exposed ^N side]
+     [914:on a ^N mountainside, on a steep stony ^N path near a gurgling
+     ^N stream. The ^N path wove around the more accessible ^N ridges of the
+     ^N mountain, finally twisting out of sight into the ^N clouds which
+     enshrouded the ^N summit]
+     [915:in a ^N glen, which sloped down through ^N woods and ^N glades to a
+     narrow ^N beck in the ^N foot of the ^N valley. Above the tree line, the
+     ^N ground
+     was covered with ^N heather and ^N gorse ^N bushes forming a colourful
+     ^N patchowrk of purple and yellow on the ^N hillsides]
+     [916:in the ^N Orkneys, dozens of ^N islands, some like small ^N rocks
+     hurled at random into the ^N sea. The larger, inhabited ^N islands were bare
+     and windswept, with short thick ^N grass interspersed with stunted ^N trees,
+     blown sideways from the ^N roots by the prevailing ^N winds. A few hardy
+     ^N sheep, protected from the ^N gales by their luxuriant wool
+     ^N coats, grazed on the sparse ^N ground, apparently impervious to the
+     ^N elements]
+
+     [917:in ^N Scotland, a land of fertile broadleaved ^N woods and lush
+     ^N pasture in the south, yielding to the majesty of imposing ^N peaks and
+     deep narrow ^N lochs in the north, the ^N valleys covered in dark secretive
+     ^N pine
+     ^N forests, the gentle lower ^N slopes of the ^N hills carpeted with springy
+     ^N heather and the bright yellow of ^N gorse. Occasionally small rough stone
+     ^N dwellings and untidy ^N villages could be seen where the ^N terrain
+     allowed for ^N habitation]
+     [918:in the ^N marches, a bleak ^N no-man's ^N land of the oft-disputed
+     ^N borders between ^N Scotland and the ^N realm of ^N Logris. The ^N area was criss-
+     crossed with ^N walls built to mark the ^N ownership of the ^N lands they
+     separated. Some had obviously been fought over, won and lost long
+     before, since td ^N boughs
+     gave a firm steady ^N foothold]
+     ;; [921:at the top of the ^N elm. The smaller ^N branches swayed in the
+     ^N breeze. The ^N sprigs were full of ^N sap and numerous plump ^N shoots swelled
+     in the ^N warmth of the ^N sun]
+
+     ; 'echo locations...'
+     [925:in the upper stories of the tower. The rooms, two to each storey,
+     were scarcely furnished at all. In some, there was only a few emoty
+     sacks laid against a wall or a couple of wooden stools. A few moth-
+  d ^N boughs
+     gave a firm steady ^N foothold]
+     ;; [921:at the top of the ^N elm. The smaller ^N branches swayed in the
+     ^N breeze. The ^N sprigs were full of ^N sap and numerous plump ^N shoots swelled
+     in the ^N warmth of the ^N sun]
+
+     ; 'echo locations...'
+     [925:in the upper stories of the tower. The rooms, two to each storey,
+     were scarcely furnished at all. In some, there was only a few emoty
+     sacks laid against a wall or a couple of wooden stools. A few moth-
+     eaten drapes covered some of the draughtier walls. Finding nothing of interest,
+     Lancelot returned to the stairs beside the living quarters]
+     [926:in some thick woodland. He could not see the way ahead so thick
+     were the bushes and greenery and tripped constantly over creeping
+     plants and tree roots. Finding no semblance of a track through the
+     undergrowth, he then returned to the path]
+
+
+
+
+
+
+     [927:in King Pellam's castle. King Pellam himself came out to greet
+     Lancelot, and after the customary pleasantries, settled him down with
+     a jug of ale to talk seriously. The King, it soon transpired, wished
+     to discuss with Lancelot the nature of the Holy Grail, the sacred
+     vessel from which Jesus Christ had drunk and which had been brought to
+     the realm by Joseph of Arimathea.% % Soon, the King assured Lancelot,
+     it would appear, briefly and magically, to the knights at Camelot, but
+     only when the time was right and a knight pure enough in heart to
+     achieve its blessing was present.% %King Pellam seemed to be compelled
+     to reveal to Lancelot many of the details of the quest for the Grail
+     which the Knights of the Round Table would undertake in the name of
+     King Arthur and the kingdom of Logris. Lancelot heardPellam reiterate
+     that only the noblest and most honourable of the knights would
+     eventually achieve the quest, although many would try and lose their
+     lives in the attempt, and he felt his heart stir at the challenge
+     which he hoped lay ahead of him. The king went on, drawing imaginary
+     maps on the table top with his fingers to show how far and wide the
+     knights would travel on their quests, both individually and together.%
+     % Lancelot listened intently at first. He knew full well of the
+     Grail's legend and that the highest honour he, or any other knight,
+     could attain would be to seek and find the Grail, and be cleansed and
+     purified by it. He had hoped that the King might tell him more than he
+     knew already and perhaps give him some clues about his own chances of
+     success in the quest.% % But King Pellam did not, and so, after some
+     hours, when the jug of ale was empty, he made his excuses and left]
+
+     [928:on some more stairs. Lancelot explored some of
+     the rest of the castle, but found little of interest. Many of the
+     rooms appeared to be disused, and a number of the doors were locked.
+     After casting a cursory glance over some of the more interesting
+     pictures and relics on the walls, he returned to where he started]
+     [929:about to land on the stony rocks, and he made ready to jump ship
+     in the hope of finding a foothold at the foot of cliff before the boat
+     was dashed to pieces, when a sudden gust
+     of wind blew the boat back into the water]
+     [930:in Sir Ector's castle. He greeted his brother warmly and they
+     talked of his deeds and the latest news from Camelot. After a while,
+     the conversation lagged, and he
+     returned outside]
+     [931:right outside the castle, but after completing a circuit of the
+     four square walls, he could find no way in, so
+     he returned to the road]
+     ;
+     [1033:on a lake. The water was glassily still, and so deep as to be a
+     rich blue-black in colour]
+     [1034:on a lake beside a rock]
+     [1035:on a lake]
+     [1036:on a lake]
+     [1037:on a lake]
+     [1038:on a lake]
+     [1039:on a lake]
+     [1040:on a lake. A small breeze whipped up the surface of the water
+     into tiny foam-capped waves]
+     [1041:on a lake]
+     [1042:on a lake]
+     [1043:on a lake]
+     [1044:on a lake. In the distance, a couple of large water birds
+     screeched in to make a splashy landing near the far shore]
+     [1045:on a lake]
+     [1046:on a lake]
+
+
+
+
+
+
+     [1047:on a lake]
+     [1048:on a lake]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     ;
+
+
+
+
+

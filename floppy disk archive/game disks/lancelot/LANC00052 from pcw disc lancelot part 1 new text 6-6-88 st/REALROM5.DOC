@@ -1,0 +1,397 @@
+
+
+
+     ; Examine messages for locations and the 'real rooms' in Lancelot
+
+     ; Brief location objects (479+N). See 779+ for examine messages and
+     ; 1199+ for their verbose equivalents..
+     [783:the west way]
+     [784:the mews entrance]
+     [785:the King's gate]
+     [786:the market square]
+     [787:the south way]
+     ;
+     ;
+     ; Short-Form room Descriptions (800+N). No full stops at end please.
+     ; These are the brief mode descriptions; they are prefixed by 'you
+     ; are' and, in verbose mode, messages 1100+N are appended.
+     ;
+     ; room 1 is used as exit modifier for synthesised rooms.
+     ; rooms 2..20 are those with static connections; i.e. not on the
+     ; synthesised grid.
+     ;
+     ; description order is:
+     ; 'Lancelot was' '800++'   '1100++'  '.'
+     ;              locn obj      short      long
+     ;
+     ;
+     ; 803..929 are rooms and echo locations in part 2.
+     ;; [803:in the ^N lower ^N prison. It is dank and smelly]
+     ;; [804:in the ^N courtyard]
+     ;
+     [859:^N Logris ^N Maledisant] ; words for 'go part 2'
+     ;
+     ; 'echo locations...'
+     ;; [925:in the upper stories of the tower. Finding nothing of interest,
+     ;; Lancelot returned to the stairs beside the living quarters]
+     ;; [926:in some thick woodland, and then returned to the path]
+     ;; [927:in King Pellam's castle. He visited King Pellam,
+     ;; who told him about the Holy Grail. Then he made his excuses and left]
+     ;
+     ;
+     ; 933..940 are echo locations (basically for part 2)
+     [933:in the castle rooms. Trophies of battles won and lost honourably
+     decorated the walls - the head of a hart here, a battered suit of
+     armour there. Heavy drapes covered some of the walls to keep out the
+     worst of the draughts, and some hung over dark corridor openings or
+     flights of stairs. Lancelot found nothing of interest, so he left
+     again]
+     [934:in the cloisters, where the monks could be seen earnestly at
+     prayer. A few kneeling near the back turned their heads to peer slily at
+     their uninvited visitor. Lancelot was reluctant to disturb them, so he
+     retreated silently]
+
+     [935:in the upstairs rooms of the castle. In the twisting corridors,
+     he frequently got lost, or inadvertently doubled back on himself. On
+     the whole, the rooms were surprisingly spartan for the court of a
+     king, although they were all very spick and span, but the high
+     ceilings and narrow slit windows made them extremely draughty.
+     Lancelot found nothing of interest, so he returned to the stairs]
+
+     [936:in the downstairs rooms of the castle. The public rooms were vast and
+     well-lit by the many flaming torches hanging from the walls, but the
+     back rooms were altogether pokier, darker, and smellier. Shouts as
+
+
+
+
+
+
+     orders were given and taken, and snatches of jovial conversation
+     filtered through some of the heavy oak doors. Occasionally
+     he would pass servants or messengers, hurrying through the dim halls.
+     Lancelot found nothing of interest, so he returned to the hall]
+
+     ;
+     ;
+     ; 940..1030 are real rooms for part 1
+     [940:in the ^N guest ^N room. It was sparsely furnished, but it looked
+     clean]
+     [941:in the ^N study. A thin ^N light straggled in through a high narrow
+     ^N window]
+     [942:in ^N Merlin's ^N library. The ^N room was a jumble of ^N papers,
+     opened, crumbling ^N books and ^N phials containing strangely coloured
+     ^N liquids ]
+     [943:on ^N Merlin's ^N stairs. They creaked with age, and some of the
+     ^N steps were alarmingly cracked]
+     [944:in the ^N mews. A couple of slit ^N windows let a little ^N light in,
+     but not much in the way of fresh ^N air]
+     [945:in the ^N stables. An overwhelming smell of ^N horse assaulted
+     Lancelot's ^N nostrils]
+     [946:in the ^N kennels. Excited ^N yelps from the inhabitants greeted the
+     ^N intruder]
+     [947:in the ^N hall containing the ^N Round ^N Table. It was a high-
+     ceilinged ^N room with a stone flagged ^N floor. The ^N Round ^N Table dominated
+     the ^N scene]
+     [948:in Lancelot's ^N bedchamber, a clean but austerely furnished ^N room]
+     [949:in Guenever's ^N bedchamber, a soft, warm feminine ^N room]
+     [950:on the ^N stairs. His ^N footsteps on the bare ^N stone echoed around the
+     ^N walls]
+     [951:in Arthur's ^N hall in the ^N castle, a vast echoing ^N room, lit
+     and kept warm mainly by the ^N fire which roared in the ^N hearth at the far
+     end]
+     [952:inside the ^N Serf's ^N gate. Untidy ^N piles of ^N rubbish lay
+     scattered on the ^N ground, while young ^N servants and ^N messenger
+     ^N boys
+     scurried to and fro]
+     [953:in the ^N cathedral, which had a atmosphere of spiritual calm,
+     in marked contrast to the bustle and ^N noise outside ]
+     [954:before the ^N altar, with its ^N candleabrum of polished silver and
+     silken ^N cloths covering the ^N altar ^N table]
+     [955:inside the ^N Bishop's ^N gate, on a wide ^N path weaving between
+     grassy, well-kept ^N lawns]
+     [956:in ^N Guenever's ^N boudoir. Soft ^N furnishings and ^N drapes covered
+     every available ^N surface, and a sweet smell of ^N perfume hung in the
+     ^N air ]
+     [957:in the ^N royal ^N suite. These ^N rooms were much larger than the
+     others, and the ^N wall ^N hangings and ^N bed ^N coverings were decorated with
+     ^N heraldic ^N crests]
+     [958:in the ^N guest ^N suite, which had been freshly cleaned and swept]
+     [959:on the ^N stairs. Some of the ^N steps were uneven and chipped]
+     [960:in the ^N prison, a small dark ^N cell. The ^N stone ^N walls were soft
+     and damp to the touch and the ^N air smelt of mould and decay]
+     [961:in ^N Meliagaunt's ^N hall, a narrow high ceilinged ^N room. A ^N fire
+     at one end sputtered and struggled to stay alight]
+
+     ; outside rooms for part 1...
+     [964:on a ^N forest ^N road. Dense ^N forest hung over the rough ^N track,
+     which was pitted with the ^N marks of ^N horses' ^N hooves]
+     [965:wading through the ^N ford. Although the ^N river was wide and
+
+
+
+
+
+
+     shallow, it ran quite fast here]
+     [966:on a ^N road. Through occasional ^N breaks in the ^N trees, he could
+     see ^N farmland]
+     [967:on a ^N road through the peasant ^N village. Untidy mud and straw
+     ^N huts
+     dotted the ^N roadside at irregular intervals]
+     [968:outside the ^N serf's ^N gate. A shallow muddy ^N track led through
+     the ^N gates, and a hubbub of ^N voices could be heard from the far side]
+     [969:on the ^N road. The ^N track was full of ^N potholes]
+     [970:on the ^N road. Parts of it were very muddy, and he had to ride
+     in twists and turns to avoid the ^N puddles]
+     [971:on the ^N road. ^N Trees and ^N bushes grew thickly at the ^N sides,
+     overhanging the ^N way forward]
+     [972:on the ^N lawns beside the ^N cathedral. The ^N grass was neatly
+     tended and kept short, with ^N flower ^N beds showing off a riotous splash
+     of colour]
+     [973:outside the ^N cloisters. The ^N ground here was obviously tended by
+     the ^N monks, with tidy ^N bushes and flowering ^N plants arranged neatly
+     against the ^N building]
+     [974:on a ^N bridge over the ^N river ^N camel. The ^N river gurgled
+     beneath the rough-hewn ^N bridge]
+     [975:outside the ^N bishop's gate, an imposing ^N structure wrought in
+     ^N iron]
+     [976:in ^N Westminster ^N meadows. The lush wet ^N grass was interspersed
+     with ^N clumps of wild ^N flowers, and was alive with ^N bees and other
+     ^N insects]
+     [977:on a ^N straight ^N way. The untidy ^N grassland stretched out on
+     either ^N side as far as Lancelot could see]
+     [978:in a ^N garden, crowded with root ^N vegetable ^N crops and small
+     ^N fruit
+     ^N trees. A bed of ^N herbs gave off a delicious ^N aroma]
+     [979:beside ^N castle ^N Meliagaunt. The ^N fortress looked grim and
+     forbidding, set into its ^N foundations of solid ^N rock]
+     ;
+     ; grid rooms...
+     ; 1020-1030 is grid in part 1
+     [1020:in the ^N south ^N warren, a small ^N wilderness of stunted ^N trees
+     and ^N gorse ^N bushes]
+     [1021:on the ^N south ^N way, a wide and stony ^N track]
+     [1022:on the ^N west ^N way, a narrow grassy ^N highway closely
+     surrounded by ^N trees and thick ^N bushes]
+     [1023:on the ^N market ^N square. There was a faint murmur and clatter
+     around the ^N square as
+     the ^N villagers lumbered to and fro, carrying ^N straw and ^N foodstuffs back
+     to their ^N homes]
+     [1024:in the ^N north ^N warren. Shrubby ^N undergrowth hid the thick
+     gluey ^N mud underfoot]
+     [1025:on the ^N north ^N way, a winding ^N road through a tangle of
+     ^N bushes and small ^N trees]
+     [1026:on the ^N road outside the ^N mews. The ^N ground was pock-marked with
+     the ^N imprints of ^N horses' ^N hooves and squelchy with ^N mud] ; mews object also here
+     [1027:on the ^N King's ^N road, a wide well-worn ^N fairway]
+     ;
+     ; 1030-1050 are grid rooms for part 2
+     ;; [1033:on a lake. The ^N water was glassily still and so dark that he
+     could not begin to guess at its ^N depth]
+     ;; [1034:on a rock, warm with the heat of the ^N sun on the ^N hillside.
+     ^N Valleys covered
+     with thick dark ^N woodland were spread out below him]
+     ;; [1035:on a lake. A small ^N breeze began to ripple the ^N surface into
+
+
+
+
+
+
+     white lipped ^N ridges]
+     ;
+     ; Now verbose additions to brief location descriptions (1100+n). No
+     ; full stops at end please. These are printed immediately after each
+     ; short description (800+N), without any intervening punctuation.
+     ; (You may start a message with either punctuation or just text.)
+     ; Please add lots of text here, and fill in the gaps...
+     ; 940..1030 are real rooms for part 1
+
+     [1100:in the ^N guest ^N room . There was a simple wood-framed ^N bed in
+     the ^N centre of the ^N room, with a bedside ^N table next to it. A ^N tapestry
+     protraying a stirring battle ^N scene hung on the ^N wall ]
+     [1101:in the ^N study , with which Lancelot could discern an old
+     ^N armchair, sprouting with ^N horsehair and a number of ^N books piled
+     untidily on the ^N floor around it ]
+     [1102:in ^N Merlin's ^N library . Some of them had spilled over the
+     ^N furniture, and burned away the ^N fabric, while others gave off strange
+     ^N smoke. ^N Skins and ^N heads of ^N animals were hanging on the ^N walls, doubtless
+     to be used for ^N Merlin's ^N experiments, and curiously fashioned ^N pieces of
+     smooth ^N wood were suspended from ^N hooks set into the ^N ceiling. In one
+     ^N corner of the ^N room a number of ^N frogs hopped lazily in and out of a
+     large ^N tank of ^N water.% A thick ^N film of ^N dust lay over
+     most of the ^N objects, which made it impossible to determine exactly
+     what they were]
+
+     [1103:on ^N Merlin's ^N stairs . It was also very gloomy and dark, so
+     ^N Lancelot had to be careful not to miss his ^N footing]
+     [1104:in the ^N mews . It smelt dry and chalky, but the thick ^N thatch
+     of the ^N roof kept it fairly warm]
+
+     [1105:in the ^N stables . ^N Noises of
+     whinnying and stamping could be heard from the depths of the ^N barn]
+
+     [1106:in the ^N kennels , and the ^N air smelt strongly of damp ^N dog.
+     ^N Lancelot had difficulty standing upright in the low-ceilinged ^N room]
+     [1107:in the ^N hall containing the ^N Round
+     ^N Table , its ^N shape that of a ^N wheel without ^ spokes, so that the
+     ^N knights could be served their ^N meals from ^N servants on the inside. It
+     was made of highly polished ^N wood, finished to a glassy smooth ^N surface,
+     and at every ^N seat, a small ^N plaque named the ^N knight whose ^N place it was
+     in simple gold ^N lettering]
+     [1108:in Lancelot's ^N bedchamber with a sturdy wooden ^N bed, covered
+     with spotless but rough ^N blankets, a ^N water ^N jug on the ^N bench next to it
+     and a ^N stand where he could hang his ^N armour. A ^N fire had been lit and the
+     ^N room
+     was cosily warm]
+     [1109:in Guenever's ^N
+     bedchamber , kept exceptionally warm by the ^N fire which was frequently
+     stoked. ^N Bottles of beauty ^N preparations lined the ^N shelves, and
+     ^N etchings
+     showing ^N scenes from romantic ^N legends hung on the ^N walls]
+     [1110:on the ^N stairs . From a ^N window set into the ^N half-landing, he
+     had a
+     fine ^N view of the ^N lands surrounding ^N Camelot ]
+     [1111:in Arthur's ^N hall in the
+     ^N castle , which spat out showers of ^N embers on to the stone ^N floor in front of
+     it. The ^N fire and the ^N wall ^N torches gave a flickering gold ^N light
+     which made the ^N room seem more welcoming than its ^N size would suggest]
+     [1112:inside the ^N Serf's ^N gate . A few stray ^N dogs and ^N cats
+     pecked at the ^N debris on the dusty ^N ground]
+
+
+
+
+
+
+     [1113:in the ^N
+     cathedral . ^N Statues of ^N saints lined the walls, and ^N Lancelot
+     found that his every ^N footstep echoed around the ^N pillars and up into
+     the ^N rafters]
+     [1114:before the ^N altar . A great ^N tapestry hung heavily on the ^N wall
+     behind it and the ^N altar ^N table seemed flooded with ^N light from the
+     side
+     ^N windows]
+     [1115:inside the ^N Bishop's ^N
+     gate . A small tidy ^N hedge marked out the ^N limits of the ^N path]
+     [1116:in ^N Guenever's ^N boudoir . A couple of rich silken ^N dresses
+     were folded neatly over a ^N chest, and still more ^N finery could be seen
+     spilling out of a wide ^N cupboard]
+     [1117:in the ^N royal ^N
+     suite . The ^N bed in particular was enormous, with a richly decorated
+     ^N cover of purple ^N samite]
+     [1118:in the ^N guest ^N suite . A large ^N display of wild ^N flowers in a
+     ^N pot on the ^N window ^N seat gave the ^N room a fresh welcoming ^N smell]
+     [1119:on the ^N stairs , but where the ^N stone was smooth, the ^N steps had
+     been ground to a fine ^N polish and almost shone]
+     [1120:in the ^N prison . The only ^N light came from a tiny ^N window,
+     heavily barred, set high up against the ^N ceiling, while a thin smattering
+     of dirty ^N straw covered the ^N floor ]
+     [1121:in ^N Meliagaunt's ^N hall  in the ^N draught which blew in from
+     the open ^N windows. Some of the ^N wall ^N torches had already gone out, which
+     made it difficult to see into the ^N shadows of the ^N room]
+
+     ; outside rooms for part 1...
+     [1124:on a ^N forest ^N road . Sometimes the ^N sun was blotted out by
+     the ^N thickness of the ^N branches of the taller ^N trees]
+     [1125:wading through the ^N ford , gurgling merrily over the rough
+     ^N track into a deeper ^N pool beyond]
+     [1126:on
+     a ^N road , comprising of a mixture of ^N crops and ^N sheep grazing. He
+     could spot a few bent-over ^N figures of ^N farmworkers in the ^N fields ]
+     [1127:on a ^N road through the peasant village  and a few ^N people could
+     be seen milling about or scrubbing ^N vegetables outside the ^N huts. Some of
+     them stopped what they doing to stare silently at ^N Lancelot as he rode
+     by]
+     [1128:outside
+     the ^N serf's ^N gate . The ^N gates were made of ^N wood and had
+     evidentally been much patched and repaired over the ^N years]
+     [1129:on the ^N road , with untidy ^N verges extending into low ^N heathland]
+     [1130:on the ^N road . ^N Lancelot could hear the sound of ^N water from a
+     ^N stream or ^N river nearby]
+     [1131:on the ^N road . A steep ^N escarpment rose above the ^N road on
+     either ^N side, making the ^N atmosphere quite oppressive]
+     [1132:on the ^N lawns beside the ^N cathedral . The ^N cathedral was tall
+     and inspiring, and looked even taller with its ^N spire extending far
+     into the ^N sky from the central ^N tower]
+     [1133:outside the ^N cloisters , which was low-roofed, with several
+     ^N plants trained to climb over its ^N walls from the ^N ground to the thatched
+     ^N roof]
+     [1134:on a ^N bridge over the ^N river
+     ^N camel . The ^N bridge was a simple ^N structure, with a central ^N arch
+     anchoring it to the ^N river ^N bed ]
+     [1135:outside the ^N bishop's gate . A finely detailed ^N coat of ^N arms
+     was carved in the ^N centre in coloured ^N metal]
+     [1136:in ^N Westminster ^N
+     meadows and the ^N air was humming with ^N bees, ^N butterflies and
+
+
+
+
+
+
+     other ^N insects. In the ^N distance ^N Lancelot could see ^N sheep grazing on the
+     ^N pasture by the ^N river]
+     [1137:on a ^N straight ^N way . This part of the ^N land didn't appear to
+     be farmed at all, but was left fallow]
+     [1138:in a ^N garden . It was a riotous ^N tangle of different ^N species of
+     ^N plants, all competing for ^N space in the fertile ^N soil]
+     [1139:beside ^N castle ^N Meliagaunt , with only the
+     narrowest of ^N windows set in the smooth stone ^N walls. It was
+     obviously designed with one firm ^N objective - to keep ^N people out]
+     ;
+     ; grid rooms... ; 1020-1030 is
+     grid in part 1
+     [1140:in the ^N south ^N warren. The branches were twisted and grew
+     thickly, so that it was difficult to cut a path between them]
+     [1141:on the ^N south
+     ^N way . Isolated ^N spots of straggling ^N vegetation gave some interest
+     to
+     the ^N surroundings]
+     [1142:on the ^N west ^N way . ^N Lancelot could hear ^N birds singing from the
+     depths of the ^N trees around him]
+     [1143:on the ^N market ^N square . The ^N buildings here were quite large
+     and sturdily built, but obscured by untidy ^N stalls and makeshift ^N animal
+     ^N pens
+     used on ^N market ^N days, which spilled out into the ^N square itself]
+     [1144:in the ^N north ^N warren . It smelt damp and faintly decaying,
+     and the heavy ^N air seemed to close in on him]
+     [1145:on the ^N north ^N way . He could hear the ^N crackling of ^N twigs
+     underfoot as he made his ^N way along the overgrown ^N track]
+     [1146:on the ^N road outside the mews . Many of the ^N divots made by
+     the ^N horses had filled up with ^N water and large ^N puddles had formed in
+     ^N places] ; mews object also here
+     [1147:on the ^N King's ^N road . Here the ^N ground was easy going, as
+     the constant ^N traffic had beaten it into a smooth hard ^N road.
+     Flowering ^N bushes lined the ^N track] ;
+
+     [1269:outside Merlin's house, an untidy ^N stone ^N dwelling with a thatched
+     ^N roof which appeared to have deposited much of its ^N straw on the
+     ^N ground
+     beneath it. It was obviously in a state of disrepair. ^N Cobwebs hung
+     densely over the ^N windows and it was impossible to see anything through
+     these murky ^N holes in the ^N wall. Outside, against the ^N wall, grew a wild
+     ^N proliferation of strange ^N plants, none of which ^N Lancelot could begin to
+     identify. Most were shooting up abundantly and some had ^N labels attached to
+     them with curious ^N writing or ^N symbols on them which ^N Lancelot found he
+     could not decipher. The ^N door was low and set deep into the ^N wall. It
+     hung slightly askew; indeed it seemed as though it could easily fall
+     off its ^N hinges  ]
+     [1270:outside the kennels, an untidy collection of huts, with wooden
+     props holding up a makeshift roof]
+     [1271:outside the stables, a low-slung outhouse made of dark rough
+     stone]
+     ;
+     ;
+     ;
+
+
+
+
+
+
+
+
+
+     [1271:outsi

@@ -1,0 +1,387 @@
+
+
+
+     ;
+     ; Now verbose additions to brief location descriptions (1100+n). No
+     ; full stops at end please. These are printed immediately after each
+     ; short descriptions (800+N), without any intervening punctuation.
+     ; (You may start a message with either punctuation or just text.)
+     ; Please fill in the gaps with verbose additions for the more
+     ; interesting locations, and bulk out the text as appropriate...
+     ;
+     [1100:in the ^N lower ^N prison . Lancelot could see no sign of any
+     furnishings, not even a ledge in the wall to sit upon]
+     [1101:in the ^N courtyard . A few straggling plants attempted to make
+     a set piece in the centre, but they had obviously not been tended for
+     some time, and wer enow mostly going to seed]
+     [1102:in a ^N secret ^N passage . Occasional rockfalls indicated that the tunnel
+     ceiling was not entirely stable, and in one place the fallen stone
+     shad to be cleared to make the way passable]
+     [1103:in the ^N entrance]
+     [1104:in a ^N gateway]
+     [1105:in a ^N cell . A pile of straw, evidentally for sleeping on, lay
+     in one corner, but it was sodden and gave no protection from the hard
+     stone floor]
+     [1106:in a ^N prison ^N corridor . The ground was alternately stony
+     and mulchy with earth, and the walls felt soft and crumbly]
+     [1107:in a ^N cell . There were marks scored on to the walls, as
+     previous prisoners had counted up the days of their incarceration]
+     [1108:in [1112:on some ^N stairs]
+     [1113:in a room with a ^N bath . The whole chamber was misty with
+     steam, mixed, it must be said, with smoke from the fire and it was
+     difficult to see clearly from one end of the room to the other ]
+     [1114:in a ^N hall]
+     [1115:on some ^N stairs]
+     [1116:in the ^N perilous ^N bedroom . Tattered drapes in a heavy grey
+     cloth added to the shadows, and billowed slightly from time to time
+     from the draughts behind them]
+     [1117:in the lower br[1112:on some ^N stairs]
+     [1113:in a room with a ^N bath . The whole chamber was misty with
+     steam, mixed, it must be said, with smoke from the fire and it was
+     difficult to see clearly from one end of the room to the other ]
+     [1114:in a ^N hall]
+     [1115:on some ^N stairs]
+     [1116:in the ^N perilous ^N bedroom . Tattered drapes in a heavy grey
+     cloth added to the shadows, and billowed slightly from time to time
+     from the draughts behind them]
+     [1117:in the lower branches of the ^N elm]
+     [1118:in Elaine's ^N bedroom and the air was heavy with a musky scent.
+     The overall effect was quite intoxicating]
+     [1119:in a ^N chapel beside a ^N tomb , its candleabra and vessels
+     brightly polished and kept in good condition, and its simple silk frontal
+     clean and uncreased, in marked contrast to the rough simplicity of the
+     rest of the interior]
+     [1120:in ^N castle ^N Lyonesse|^N dame]
+     [1121:in a ^N decaying ^N hall . Sandy and rubble had accumulated at
+     the foot of the walls, and cobwebs hung from the pillars]
+     [1122:in the entrance to ^N chapel ^N perilous]
+     [1123:inside the ^N chapel]
+     [1124:in the ^N inner ^N chamber . The air smelt stale, as though no-
+     one had used the room for decades]
+     [1125:at the top of the ^N elm]
+     ;
+     [1126:on the ^N stairs]
+
+
+
+
+
+
+     [1127:in the ^N living ^N quarters . An old suit of armour stood in
+     one corner, a souvenir, perhaps, of a past battle, but it too was
+     showing its age and was mottled with rust]
+     [1128:on the ^N stairs]
+     [1129:in a ^N stable , some with their ropes still attached, and the
+     room was divided into stalls with some thin ricketty planks of dark
+     wood]
+     [1130:on the ^N stairs]
+     [1131:in the ^N basement . A pile of dusty hessian sacks lay piled up
+     against the far corner. Some had split and little mounds of grain had
+     spilt on to the floor in front of them]
+
+     [1132:in a ^N tunnel . The underground seemed to lead downhill for
+     much of the way, and obviously reached far into the depths of the
+     earth]
+     [1133:in a ^N prison . Judging from its dimensions - the low ceiling
+     and very few windows - it had probably been converted from a stable or
+     grain storage barn]
+     [1134:in a ^N guardroom]
+     [1135:in an ^N upper ^N prison]
+
+     [1136:on a ^N riverbank . The river was wide here and flowed lazily,
+     while a few stagnant mudpools had collected on the path, choked with
+     green algae ]
+     [1137:on a ^N decrepit ^N bridge . Much of the wooden sides had been
+     washed away, and although parts of the bridge walls had been filled
+     in with ropes lashed to what remained of the central arch, it
+     looked as though it would take little effort to send the whole
+     structure crashing into the river]
+     [1138:outside a ^N manor ^N house . The grounds surrounding it had
+     been neatly tended, with lawns and smart shrubberies, and a herb
+     garden on the south facing side]
+     [1139:in ^N forest ^N Meliot . Squirrels could be seen darting from
+     branch to branch, and there was evidence too that larger animals and
+     game frequented the woods]
+     [1140:on a ^N dangerous ^N road]
+     [1141:on the ^N track outside ^N Turquin's ^N manor . The road led
+     straight and unswervingly up to the gate to the manor itself]
+     [1142:on a ^N forest ^N track]
+     [1143:on a ^N roman ^N road beside a ^N turret , a square building
+     with a crenellated roof]
+     [1144:at a ^N junction in the ^N forest]
+     [1145:in ^N Garlon's ^N turret . The moss which grew plentifully up
+     the sides of the tower gave it a patchworked effect ]
+     [1146:at a ^N big ^N clearing beside the ^N castle of ^N forest ^N Sauvage]
+     [1147:on a ^N roman ^N road through ^N briars]
+     [1148:on a ^N roman road through ^N forest ^N Sauvage]
+     [1149:on the ^N great north road . Smaller tracks led off to the
+     villages and settlements along the way, and makeshift milestones marked the
+     relevant
+     distances along the route, although many of the letters cut into the
+     rock had become faded or overgrown and were difficult to read]
+     [1150:on a ^N triumphal ^N avenue|^N Camelot ^N Arthur ^N Guenever]
+     [1151:on the ^N coast road]
+     [1152:at ^N Tintagel . The countryside to the south was fertile and
+     gently rolling, in contrast to the harsh coastline. In the sea far below
+     the castle, seals basked in the sun and sported intral patch a smooth round
+     boulder had acted as a signpost, with directions etched into it, but
+     wind, rain and the moss covering most of the stone had rendered these
+     unreadable]
+     [1169:on an ^N island . The air was alive with seabirds, shrieking and
+     wailing over vast overpopulated colonies they had created on the
+     cliff ledges]
+     [1170:on a ^N shore beside a ^N tower , capped with notched
+     battlements, and pitted with narrow arched windows]
+     [1171:in ^N Corbin tral patch a smooth round
+     boulder had acted as a signpost, with directions etched into it, but
+     wind, rain and the moss covering most of the stone had rendered these
+     unreadable]
+     [1169:on an ^N island . The air was alive with seabirds, shrieking and
+     wailing over vast overpopulated colonies they had created on the
+     cliff ledges]
+     [1170:on a ^N shore beside a ^N tower , capped with notched
+     battlements, and pitted with narrow arched windows]
+     [1171:in ^N Corbin ^N village . The cottages lined the main road
+     through the village, and further up, clustered around the small stone
+     church]
+     [1172:in a ^N forest ^N maze]
+     [1173:in a ^N forest ^N maze]
+     [1174:in a ^N forest ^N maze]
+     [1175:in a ^N forest ^N maze]
+     [1176:in a ^N forest ^N maze]
+     [1177:in a ^N forest ^N maze]
+     [1178:in a ^N forest ^N maze]
+     [1179:in a ^N forest ^N maze]
+     [1180:in a ^N forest ^N maze]
+     [1181:in a ^N forest ^N maze]
+     [1182:in a ^N forest ^N maze]
+     [1183:in a ^N forest ^N maze]
+     [1184:in a ^N forest ^N maze]
+     [1185:in a ^N forest ^N maze]
+     [1186:at the ^N wailing ^N castle . The castle was not protected by a
+     moat, but a rough track led off the path straight to an immense door,
+     made out of solid oak and reinforced with metal straps. It appeared to
+     be very firmly shut]
+     [1187:in a ^N forest ^N maze]
+     [1188:in a ^N forest ^N maze]
+     [1189:in a ^N forest ^N maze]
+     [1190:in a ^N forest ^N maze]
+     [1191:in a ^N forest ^N maze]
+     [1192:in a ^N forest ^N maze]
+     [1193:in a ^N forest ^N maze]
+     [1194:in a ^N forest ^N maze]
+     [1195:in a ^N forest ^N maze]
+     [1196:in a ^N forest ^N maze]
+     [1197:on a ^N forest ^N road]
+     [1198:on a ^N reedy ^N isle beside a ^N castle . For all that, it
+     looked strong and well-built, although, rising out of the marshy mists
+     as it did, it had a semblance of insubstantiality about it, as though
+     its solid walls hovered above the ground]
+     [1199:in a ^N trackless ^N marsh]
+     [1200:on a ^N marsh ^N road]
+     [1201:at a ^N siegeworks . Despite its present usage, it was all too
+     easy to hear the echoes of past
+     battles, and ghosts of long-dead knights, which seemed to linger on the air]
+     [1202:in the ^N red ^N launds]
+     [1203:in the ^N green ^N launds]
+     [1204:in the ^N black ^N launds]
+     [1205:at a ^N country ^N junction]
+
+
+
+
+
+
+     [1206:at a ^N main ^N road]
+     [1207:on a ^N country ^N road]
+     [1208:on a ^N stone ^N road]
+     [1209:on an ^N overgrown ^N road]
+     [1210:on an ^N overgrown ^N road]
+     [1211:on a ^N hill, beside a ^N tower]
+     [1212:on a ^N beach]
+     [1213:on a ^N mountaintop . The sense of solitude was all-pervading,
+     with any views of the terrain below masked by the damp mists]
+     [1214:on a ^N mountainside . Long narrow runs of scree overflowed the
+     path in places, and made travelling more of a scramble than riding in
+     a straight line]
+     [1215:on a ^N glen]
+     [1216:in the ^N Orkneys . The settlements were made up of low stout
+     crofts, huddled together for shelter from the constant gales. Many had
+     not endured the wilder storms and lay open-topped and ruined, either
+     deserted or used as makeshift sheep pens]
+     [1217:in ^N Scotland . It was a wildly beautiful country, and much
+     feared and renowned for the ferocity and hardiness of its inhabitants,
+     who would defend their land, infertile and inhospitable as much of it
+     was, against any aggressor]
+     [1218:in the ^N marches]
+     [1219:in an ^N apple ^N
+     tree ^N clearing beside ^N castle ^N Chariot] ;;
+     [1220:in the lower
+     branches of the ^N elm]
+     ;
+     ;
+     [1221:at the top of the ^N elm]
+
+     ; 'echo locations...'
+     [1225:in the upper stories of the tower. Finding nothing of interest,
+     Lancelot returned to the stairs beside the living quarters]
+     [1226:in some thick woodland, and then returned to the path]
+     [1227:in King Pellam's castle. He visited King Pellam,
+     who told him about the Holy Grail. Then he made his excuses and left]
+     [1228:on some more stairs. Lancelot explored some of
+     the rest of the castle, then returned to where he started]
+     [1229:about to land on the stony rocks, when a sudden gust
+     of wind blew the boat back into the water]
+     [1230:in Sir Ector's castle. After brief pleasantries, he
+     returned outside]
+     [1231:right outside theA tower could be seen this side
+     of a tidy little village with a dominating castle]
+     [1341:shore at the western side of a huge expanse of water]
+     [1344:shore beside the isle of Servage]
+     [1348:under a daunting, climbable rock cliff. At the top of the
+     cliff could be seen a castle worthy of the most horrific of
+     horror films]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     horror films]
+
+
+
+
+
+
+
+
+
+
+
+
+
+A tower could be seen this side
+     of a tidy little village with a dominating castle]
+     [1341:shore at the western side of a huge expanse of water]
+     [1344:shore beside the isle of Servage]
+     [1348:under a daunting, climbable rock cliff. At the top of the
+     cliff could be seen a castle worthy of the most horrific of
+     horror films]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     horror films]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

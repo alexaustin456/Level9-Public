@@ -1,0 +1,26 @@
+ourney. ] 
+; 225 north way 
+; 
+[1576:Lancelot realised that this was the place Kay had named. ] 
+; 226 road outside mews 
+; 
+[1577:Lancelot knew that this gate led to Logris, the main part 
+of the country, where he might meet further adventure. A man at 
+arms strode by and saluted Lancelot as he passed. ] ; 227 King's road 
+; 
+; Message pairs for use in describing containment positions 
+; and also used for preposition table 
+; 
+; part printed before container 
+; 
+[1600:Lancelot could see] ; 0 - you can see (user's name not 
+;                                printed by PRINTOBJECTS) 
+[1601:^P on |^P onto] ; 1 - on 
+[1602:^P underneath|^P below ^P under] ; 2 - under 
+[1603:^P behind]      ; 3 - behind 
+[1604:]               ; 4 - carrying 
+[1605:]               ; 5 - wearing 
+[1606:in|^P at]       ; 6 - blocking the hole 
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8 
+[1609:gr

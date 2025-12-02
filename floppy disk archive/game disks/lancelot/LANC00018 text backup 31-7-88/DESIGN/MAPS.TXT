@@ -1,0 +1,245 @@
+            LANCELOT MAPS. COPYRIGHT (C) 1988 LEVEL 9
+            ----------------------------------------- 
+
+CAMELOT (PART 1)                                                Logris
+----------------                                                     ^
+                                                                     |
+Forest Road -- Ford + King -- Road -- Road Thru -- Outside ---+      |
+(Start)        in disguise             Village    Serfs' Gate |      |
+                                       all+  L's Room G's Room.
+|     |                                |   . Round   |          |    .
+|  Merlin's  Kennels Stables Mews      |   . Table   +- Stairs -+    .
+|   Stairs    |       |      |      Inside .    |         |d         .
+|     |       |       |      |      King's .  Arthur's    v   "Castle.
+|   Road -- Road - Road - Road ----- Gate  .  Hall in Castle - Rooms".
+|                           |   x      |   ........|..................
+|                   North Warren -- North Way      |  all+  L's Room G's Room.
+|     |                                |   . Round   |          |    .
+|  Merlin's  Kennels Stables Mews      |   . Table   +- Stairs -+    .
+|   Stairs    |       |      |      Inside .    |         |d         .
+|     |       |       |      |      King's .  Arthur's    v   "Castle.
+|   Road -- Road - Road - Road ----- Gate  .  Hall in Castle - Rooms".
+|                           |   x      |   ........|..................
+|                   North Warren -- North Way      |          "Monks" 
+|                      |        x      |           |            | i/o
++-- Inside -------- West Way ------- Market ---- Lawns ------ Outside 
+   Serfs' Gate         |        x    Square     +Drive       Cloisters 
+                       |               |           |                 
+                  South Warren ---- South Way  Cathederal -- Altar --+ 
+                                       |                             | 
+                               Inside Bishop's Gate                  | 
+                                       |                             | 
+......... (City Wall) ....... Bridge over River Camel .............. | 
+                                       |                             | 
+                               Outside Bishop's Gate                 |
+                                       |                             v 
+                                   Westminster                   Grail
+                                     Meadows                     Lands
+                                       | 
+                                  Straight Way
+                 (When following Guen; Ambush, followed by Cart) 
+                                       | 
+          Boudoir -i/o- Garden -- Beside Castle      CASTLE MELIAGAUNT
+         +Guenever     +Ladder     Meliagaunt        -----------------
+             |                      ^    |
+         Royal Suite + Knights      |    | 
+             |                      |   i/o
+             |    +-d-> Prison -out-+    |
+ Guest       |   /                       |
+ Suite --- Stairs ------u/d------ Meliagaunt's
++Chest       |                        Hall 
+             |                         | 
+     "Rest of Upstairs"        "Rest of Downstairs" 
+
+
+LOGRIS (PART 2) 
+---------------
+
+Northgales                                              CENTRAL LOGRIS
+^                                                       --------------
+|  Guardroom - Upper Prison -u/d- Lower Prison 
+|                    |            + Prisoners 
+|                Courtyard 
+|               /         \                 Cell+Other Prisoners 
+| Secret Passage ----      Entrance                  | 
+|                    \        |               Prison Corridor --- Cell 
+|                     ---- Gateway                   |
+|                             |                      v
+Track outside Turquin's Manor-+              Castle Chariot in 
+                   |                        Apple Tree Clearing
+              Forest Track                           |
+                   |            Big Clearing         |
++- Roman Road -- Junction ------ +Castle of ---- Roman Road --+
+|  past Turret  in Forest      Forest Sauvage     + Briars    |     N
+v           |                        |                        |    W*E
+Listinoise  in Garlon's Turret  "Visited Sir Ector"           |     S 
+                                                              |
++-------------------------------------------------------------+
+| 
+|                        +----------> Orkneys 
+|                        |
+|                 Great North Road 
+|                        |
++-Roman Road -- Crossroads+Signpost -- Coast Road --> Gaul+Servage
+ thru Forest             | 
+   Sauvage        Triumphal Avenue
+                         |
+                         +----------> Camelot 
+
+
+
+Prison+Tristram                                  Deck         CORNWALL
+      ^                                           |           --------
+      |                                    Beach,Fire,Ships
+Tintagel+Army                             /
+             \                           /
+      N       Walled Road - Road+Sentries
+     W*E           | 
+      S         up/down
+                   |
+"Cornish towns" - Hill ---e/w/up----- Winding Road -----> Listinoise
+
+
+            "Rocks, Can't Land"   Castle+Giant - Prison   GAUL+SERVAGE
+                             |        |                   ------------
+        @ --- @ --- @ --- @ -+    on Island       th      Hall
+|                                                 | 
+v                         "Rest of Castle" - Stairs - Elaine's Bedroom 
+Central                                           |
+Logris                                     Perilous Bedroom
+
+                     
+
+ @ *-- @ --- @ *-- @ --- @  Forest Maze, hiding             LISTINOISE
+ *|    |     *     |     *  the castle home of              ----------
+ | \   |     |     |     |  Breunis Saunce Pite. 
+ |  -* |     |     |     |  "@" meath      Hall
+|                                                 | 
+v                         "Rest of Castle" - Stairs - Elaine's Bedroom 
+Central                                           |
+Logris                                     Perilous Bedroom
+
+                     
+
+ @ *-- @ --- @ *-- @ --- @  Forest Maze, hiding             LISTINOISE
+ *|    |     *     |     *  the castle home of              ----------
+ | \   |     |     |     |  Breunis Saunce Pite. 
+ |  -* |     |     |     |  "@" meant forest; 
+ @ --* @ --- @ --- @ --- @  "*" indicated the                ^
+ |     | *-  |     |     |  direction of a one-              N
+ |     |   \ |     |    /   way exit.                       W*E
+ |     |   | *     | *--                                     S
+ @ --- @ --- @     @   Wailing 
+|*     *|          *   Castle 
+||     | \         |     |                          "Pellam's Message"
+||     |  -*       |     |  All directions were              | 
+|@ *-- @ *-- @ --- @ --- @  with the compass,           (N/S+In/Out)
+|*     *|--\       |     |  except "N+U" which               |
+||     | \  \      |     |  was north AND up.         Reedy Isle+Castle
+*|    N+U --**     *     |  Castle could be                  |
+ @ --- @ --- @ --- @ *-- @  found via "UNSEEN".        Trackless Marsh 
+       |                                                     | 
+   +-- Forest Road -------------------------------- Marsh Road --+
+   |   |                                                         | 
+   |  "Very thick woodland"                                      v 
+   v                                                           Central
+Cornwall                                                       Logris
+
+
+
+  Castle Lyonesse                                           NORTHGALES 
+        |                                                   ----------
+  Siegeworks+Horn                                ^
+        |                                        N
+ Red Launds+Knight                              W*E
+        |                                        S
+Green Launds+Knight 
+        |             Stone Road  Overgrown             Decaying Hall, 
+Black Launds+Knight    +Brachet --  Road                 Damosel+body
+        |                  |         |                        |
+ Country Junction --- Overgrown   Riverbank -- Decrepit -- Outside
+        |               Road                    Bridge      Manor
+  Main Road+Elm                                               |
+  beside Castle --- "No way into Castle"                Forest+Meliot
+        |                                                     |
+   Country Road                                         Dangerous Road 
+        |                        I/O               I/O        | 
+        v          Inner Chamber --- Inside Chapel --- Chapel Perilous
+  Central Logris   Hellawes+Cloth    30 Knights
+
+
+
+"Upper Stories of Tower"           ORKNEYS          Mountaintop+Beacon
+  |                                -------                  |
+Stairs --- Living Quarters                             Mountainside
+  |                                                         |
+Stairs --- Stable --------in/out------- Hill+Tower --- Glen+Bushes 
+  |                                         |               |
+Stairs --- Basement+Chest --- Prison        |            Orkneys 
+                 |                          |               |
+               Tunnel ------------------> Beach          Scotland
+  ^                                                         |
+  N       "Vertical" exits in tower are up/down.         Marches
+ W*E       Exit to Tunnel is initially hidden.              |
+  S                                                         v 
+                                                      Central Logris 
+
+
+
+GRAIL LANDS (PART 3)          Inside Church
+--------------------              |     
+                              Fine Church + "Priest"    
+                                  | 
+                              Paved Road
+                                 /
+Vagon Castle - Track - Fork+Cross  
+(Start here)                     \
+                              Thorny Track 
+       ^                          |
+       N                      Woodland+Knight - Clearing+Damosel ----+
+      W*E                                          |                 |
+       S                                        Pavilion             |
+                                                                     | 
++--------------------------------------                           White Abbey+Tomb                        | 
+                                                                     |
++--------------------------------------------------------------------+
+| 
+|                                 Sand Dune
+|                                     |
+|                                    Sand
+|  Glade+Ector         Shore - Sea - Isle- Sea - Sea 
+|       |                |   x  |  x  |  x  |  x  |
++- Forest Ride - Bleak Shore - Sea - Sea - Sea - Dark Sh                           White Abbey+Tomb                        | 
+                                                                     |
++--------------------------------------------------------------------+
+| 
+|                                 Sand Dune
+|                                     |
+|                                    Sand
+|  Glade+Ector         Shore - Sea - Isle- Sea - Sea 
+|       |                |   x  |  x  |  x  |  x  |
++- Forest Ride - Bleak Shore - Sea - Sea - Sea - Dark Shore+Gate ----+
+        |        +Boat   |   x  |  x  |  x  |  x  |                  |
+   Glade+Maid          Shore - Sea - Sea - Sea - Sea                 |
+                         |   x  |  x  |  x  |  x  |                  | 
+                       Shore - Sea - Isle- Isle - Sea                | 
+                                      of                             | 
+                                   Turnance   Clearing+Red Dragon    | 
+                                      |           |                  |
+                                      |          Path                |
+                                      |           |                  |
+                                      |          Path                |
+                                      |           |                  |
+                                Path up Cliff - Hillock              | 
+                                                  |                  |
+                                                 Path                |
+                                                  |                  |
+                                                 Path                |
+                                                  |                  |
+                                              Clearing+Black Dragon  |
+                                                                     | 
++--------------------------------------------------------------------+ 
+| 
++- Pavement - Antechapel - Dark Valley - Castle - Corridor - Grail 
+   + Thorn    +Bors/Percival             +Lions             (Finish)
+

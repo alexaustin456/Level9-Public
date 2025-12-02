@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+
+
+ CONFIDENTIAL: LANCELOT CONTEST DESIGN. COPYRIGHT (C) 1988 LEVEL 9
+ ----------------------------------------------------------------- 
+
+The Lancelot adventure game will be accompanied by a treasure hunt, 
+for the first prize of a solid silver chalice - representing the 
+Holy Grail which features strongly in the Arthurian legends and in 
+the game. This will be "buried" at a secret location and dug up by 
+the overall winner. 
+
+Treasure hunts are prone to several logistic problems, which will be 
+tackled as follows..
+
+* Hunt duration. An ideal treasure hunt should go on for a few 
+months; we do not want someone to win the Grail on the day after 
+the game is launched, and conversely interest would fade away if 
+the search went on for years. 
+
+Basically, a controllable source of information, external to the 
+published game, is needed so we can give clues to Grail seekers and 
+control their progress. Of the various ways of doing this (coded 
+classified ads in Database magazines is one), providing a telephone 
+clue line would seem to be the best. 
+
+We would set up a telephone line with a recorded message, changed 
+every week, for seekers to ring up and listen to. This would be 
+quite cheap (though making it an 0898 number would probably be going 
+too far!) and would control game progress well: the Grail could not 
+be won too soon if a vital clue was withheld for several weeks, 
+and, conversely, slow progress could be countered by helpful hints. 
+
+* Retaining media interest. With a simple treasure hunt for a single 
+prize, there are only two times of interest: when the contest starts 
+and when the prize is won. What we need is something to fill the gap, 
+perhaps intermediary winners: finalists who would then go forward to 
+contest the main prize. If groups of finalists were selected at 
+regular intervals, with the last group being chosen just before the 
+second stage of the contest, interest would be maintained throughout. 
+
+* Security. While it is obviously a good idea for the Grail to be 
+buried in the ground, it should be dug up after the photo session 
+and "buried" in a bank vault until just before the end of the 
+contest. It would not do for some kid with a metal detector to 
+scupper the quest. 
+
+                           ----------
+
+My proposal is as follows..
+
+1) At the game launch, where I believe a medieval contest is planned 
+   for the journalists, the winner would be the first finalist. 
+
+2) The competition in the game would actually be a set of perhaps 
+   four contests; one a month. Each would be triggered by a message 
+   on the quest 'phone and would result in a possible location for 
+   the Grail. At the end of each month, we would pick out 9 
+   finalists from those who sent in correct answers. Each finalist 
+   would get a scroll, (making them a knight of the Round Table?), 
+   and perhaps some token prize. For publicity reasons, we might bias 
+   finalists (in the first month at least) so that there was one from 
+   each region of the country. 
+
+3) Immediately after the last of these puzzles was won, we'd send out 
+   the details of the second stage contest to all the finalists. This 
+   would require a fair amount of Arthurian research, and would lead 
+   to the actual location of the Grail. The first person to 'phone in 
+   the correct answer would win, and we would take them along to the 
+   site in order to unearth the (re-buried) Grail. 
+
+   To console the runners up, all finalists who found the Grail 
+   within a rrness. 
+
+                           ---------- 
+
+Each of the preliminary contests is structured as follows:
+
+1) The telephone message/PCW advert gives the triggering clue for 
+   that month's contest (a crude example might be, "take the second 
+   word from each paragraph of the first story). 
+
+2) Players use the triggering clue to find words in the game and 
+   booklet text (either directly, as the above example, or because 
+   it refers to a series of riddles, e.g "Understand all the books 
+ rness. 
+
+                           ---------- 
+
+Each of the preliminary contests is structured as follows:
+
+1) The telephone message/PCW advert gives the triggering clue for 
+   that month's contest (a crude example might be, "take the second 
+   word from each paragraph of the first story). 
+
+2) Players use the triggering clue to find words in the game and 
+   booklet text (either directly, as the above example, or because 
+   it refers to a series of riddles, e.g "Understand all the books 
+   in Merlin's library, which have 'Magic' in their titles"). 
+
+3) The words are arranged into a "master riddle", giving a possible 
+   location for the Grail. There are many ways of deriving a place 
+   from a riddle; a simple example, using initial letters, might be 
+   "The isthmus narrows to a grassy exposed land" (Tintagel). 
+
+4) Successful players send in the master riddle and solution: every 
+   entry accompanied by the appropriate coupon from the game. (I 
+   don't mind multiple entries from people who buy multiple games!)
+
+(I will actually insert more riddles than necessary into the game, 
+so that we can cope with such situations as someone stumbling on 
+and publicising the answer to a contest that has not yet started. 
+This will also allow us to regulate the quest - e.g triggering a 
+difficult contest if players found the first one too easy.) 
+
+Contest design breaks down into two elements: hiding the words of 
+the master riddle in the program or booklet, and deriving a place- 
+name from the master riddle. 
+
+Example ways of hiding the words of a master riddle: 
+* in the booklet; 
+* in the text that people tell you on first meeting; 
+* answers to selected riddles, in Merlin's library; 
+* ditto, said in "thank you" messages by freed knights; 
+* ditto, carved in upper case, on scenery throughout the game.  
+
+Specified in any of the following ways:
+* words following, or riddles containing, a word in a specified 
+  category; e.g the name of a colour, or a word starting with Q; 
+* by position; e.g the 4th word in each paragraph. 
+
+Example ways of deriving a place-name from a riddle: 
+* initial letters; 
+* straightforward question, e.g "Capital city with Arthur's Seat". 
+ 
+That's it. As you can see, the mechanism and structure of the contest 
+is all worked out. Producing the master riddles and hiding their 
+component words will be pretty much routine, but, as it will involve 
+quite a bit of work, I'd like agreement before going ahead. 
+
+                              - Pete Austin 16/5/88 

@@ -1,0 +1,306 @@
+
+
+
+     ;; Echo verbs (250-299) which just print the message containing them.
+     ;; Intansitive echo verbs up to 284. Please fill in the gaps if you
+     ;; can think of additional appropriate words...
+     ;
+     [250:if you say so|^V no]
+     [251:if you say so|^V yes]
+     [252:Lancelot looked scornful and refused|^V leap ^V hop ^V skip
+     ^V dance ^V celebrate]
+     [253:As that word was released upon the wind, time stood still,
+     the world was plunged into blackness and all sound ceadn't already know about|
+     ^V listen ^V hear]
+     [257:please send the coupon to Level 9 Computing, PO Box 39,
+     Weston-super-Mare, for a comprehensive ^N cluesheet|^V hint ^V help]
+     [258:just tell me which way you want to go, and I'll handle
+     getting into and out of the boat|^V board ^V sail]
+     ;; [259:]
+     [260:the only ^V escape is to finish the game]
+     ;; [261:]
+     [262:Lancelot would have to find that out for himself|^V what]
+     [263:Why not|^V y ^V why]
+     [264:dn't already know about|
+     ^V listen ^V hear]
+     [257:please send the coupon to Level 9 Computing, PO Box 39,
+     Weston-super-Mare, for a comprehensive ^N cluesheet|^V hint ^V help]
+     [258:just tell me which way you want to go, and I'll handle
+     getting into and out of the boat|^V board ^V sail]
+     ;; [259:]
+     [260:the only ^V escape is to finish the game]
+     ;; [261:]
+     [262:Lancelot would have to find that out for himself|^V what]
+     [263:Why not|^V y ^V why]
+     [264:funny you should ask that, I was just wondering ^V where it
+     was myself]
+     [265:I'm afraid even I don't know ^V how things work around here]
+     [266:sorry, I can't help with such matters|^V whether ^V who]
+     [267:that kind of language does not impress me one little bit|^V sod
+     ^V motherfucker ^V crap ^V nigger ^V cock ^V nerd ^V bloody
+     ^V frigging ^V wanker ^V turd ^V piss ^V shit ^V twat ^V cunt
+     ^V prick ^V bollocks ^V jesus ^V christ ^V dick ^V god ^V devil
+     ^V tits ^V asshole ^V arsehole ^V cretin ^V conservatives ^V spastic
+     ^V coon ^V wog ^V fucking ^V fucker ^V fuck ^V bastard ^V bugger
+     ^V damn ^V fart ^V sex ^V hell ^V bonk ^V rainbird ^V pratt ^V rape
+     ^V shag] ; lower case swear words
+     ;; [268:]
+     ;; [269:]
+     [270:so what is there to ^V shout about? I don't know|^V yell]
+     ;; [271:]
+     ;; [272:]
+     [273:what? Going so soon? Try CONTROL C, but don't forget to save
+     your position first|^V goodbye ^V bye]
+     [274:you're forgiven|^V sorry]
+     [275:Lancelot screamed impressively, but without effect|^V scream]
+     ;; [276:]
+     ;; [277:]
+     ;; [278:]
+     [279:Lancelot closed his eyes and tried to ^V sleep, but couldn't.
+     So he gave up and stayed awake instead]
+     [280:only a fool would try to ^V swim in armour]
+     [281:what do you mean, ^V think? Thinking's your department, not mine]
+     [282:Lancelot was no musician] ; (response to "play"; not echo verb).
+     [283:hit] ; thing 'hit' target (response to "throw"; not echo verb).
+     ;
+     ;; Echo verbs (250-299) which just print the message containing them.
+
+
+
+
+
+
+     ;; Traisitive echo versb follow. Please fill in the gaps if you can
+     ;; think of additional appropriate words...
+     ;
+     ;; [284:]
+     ;; [285:]
+     [286:Lancelot's armour rattled with the effort|^V shake]
+     ;; [287:]
+     [288:you are here to use objects, not to ^V bury them]
+     ;; [289:]
+     [290:Lancelot polished it until it gleamed|^V rub ^V clean ^V polish]
+     [291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+     [292:please ^V empty a container by removing its contents in turn]
+     ;; [293:]
+     [294:Lancelot had no way to ^V light anything]
+     [295:try throwing lots of water at it|^V extinguish]
+     ;; [296:]
+     [297:XXX. If you don't mind, I'll just pay lip service to that
+     command|^V kiss]
+     [298:there are no magic wands to ^V wave around here]
+     [299:nothing happened. Lancelot tried again, and nothing happened
+     again|^V press ^V select ^V depress ^V poke ^V prod ^V touch]
+     ;
+     ;
+     ; Objects (300+N)..
+     [301:^N Lancelot|^N player ^N me] ; Lancelot must start with upper case.
+     [302:^N Tristram] ; Tristram.
+     [303:^N Galahad] ; Galahad.
+     [304:^N Bors ^N de ^N Ganis] ; Bors.
+     [305:Sir ^N Question ^N Mark] ;***
+     [306:^N Gawain] ; Gawain.
+     [307:the ^N Red ^N Knight] ; Red Knight.
+     [308:^N Meliot] ; Meliot.
+     [309:^N Lamorak] ; Lamorak.
+     [310:^N Ector ^N de ^N Maris] ; Ector de Maris.
+     [311:^N Agravain] ; Agravain.
+     [312:^N Aliduke] ; Aliduke.
+     [313:^N Brandiles] ; Brandiles.
+     [314:^N Brian] ; Brian.
+     [315:^N Geheris] ; Geheris.
+     [316:^N Gareth] ; Gareth.
+     [317:^N Lionel] ; Lionel.
+     [318:^N Marhaus] ; Marhaus.
+     [319:Sir ^N Breunis] ; Breunis.
+     [320:^N someone ^N invisible|^N Garlon] ; Invisible Garlon.
+     ;
+     [322:a ^N Magical ^N Knight] ; Magical knight in Perilous Bedroom.
+     [323:^N Turquin] ; Turquin.
+     [324:^N Pedivere] ; Pedivere.
+     [325:the ^N Black ^N Knight] ; Black Knight.
+     [326:the ^N Green ^N Knight] ; Green Knight.
+     ;; [327:the ^N Red ^N Knight] ; Red Knight.
+     [328:^N Hellawes] ; Hellawes.
+     [329:^N Queen ^N Morgan] ; Queen Morgan.
+     [330:^N Queen ^N Northgales] ; Queen of Northgales.
+     [331:^N Queen ^N Eastlands] ; Queen of the Eastlands.
+     [332:^N Queen ^N Outisles] ; Queen of the Outisles .
+     [333:the ^N Damosel ^N Maledisant|^N Lynes] ; sentries of Orkney Tower.
+     [347:^N Thirty ^N Knights] ; 30 knights in Chapel Perilous.
+     [348:^N guard] ; guard of Orkney Tower.
+     ; [349:^N dragon] ; dragon from Tomb.
+     [350:^N hawk|^N lunes] ; Hawk in tree.
+     [351:^N brachet] ; Meliot's brachet.
+     ;
+     ; weapons (40 onwards)..
+     ;
+     ; clothes...
+     ;
+     ; now some ordinary objects (80 onwards)..
+     [380:^N broken ^N branch] ; broken branch.
+     [381:^N cloth] ; cloth to cure Meliot.
+     [382:^N food] s] ; sentries of Orkney Tower.
+     [347:^N Thirty ^N Knights] ; 30 knights in Chapel Perilous.
+     [348:^N guard] ; guard of Orkney Tower.
+     ; [349:^N dragon] ; dragon from Tomb.
+     [350:^N hawk|^N lunes] ; Hawk in tree.
+     [351:^N brachet] ; Meliot's brachet.
+     ;
+     ; weapons (40 onwards)..
+     ;
+     ; clothes...
+     ;
+     ; now some ordinary objects (80 onwards)..
+     [380:^N broken ^N branch] ; broken branch.
+     [381:^N cloth] ; cloth to cure Meliot.
+     [382:^N food] ; prison rations.
+     [383:^N glass of ^N wine] ; glass of wine.
+     [384:^N harp] ; Tristram's harp.
+     [385:^N horn|^N toot] ; horn.
+     [386:^N hot ^N coals] ; coals in fire.
+     [387:^N plate] ; plate carried by damosel.
+     ;
+     [389:^N relic|^N hand ^N contents] ; saint's hand.
+     [390:^N sack] ; sack - Nabon's pillow.
+     [391:^N soup] ; soup.
+     [392:^N pillow] ; pillow.
+     [393:^N cauldron] ; cauldron in fire.
+     [394:^N winch] ; winch above prison pit.
+     [395:^N dead ^N wood] ; dead wood beside Elm.
+
+     ; some static objects (110 onwards)..
+     [410:^N bath] ; bath for Elaine.
+     [411:^N beacon] ; beacon on Orkney mountain.
+     [412:^N bell] ; bell.
+     [413:^N boat] ; magic boat.
+     [414:^N briars] ; briars to prune.
+     [415:^N bushes] ; bushes for Lancelot to hide in.
+     [416:^N cage] ; cage above prison pit.
+     [417:^N cart] ; supply cart where L can hide.
+     [418:^N chest] ; chest of treasure, hiding tunnel escape route.
+     [419:^N crossbow] ; automatic crossbow.
+     [420:^N fire] ; bonfire on beach.
+     [421:^N lever] ; lever to enable/disable prisoner chain release.
+     ; [422:^N lid] ; heavy lid of tomb.
+     [423:^N keyhole] ; dummy keyhole in Nabon's castle.
+     [424:^N panel] ; panel in Perilous Bedroom.
+     [425:^N loose ^N planks] ; planks in manor.
+     [426:^N loose ^N planks] ; planks (needed?).
+     [427:^N loose ^N planks] ; planks (needed?).
+     [428:^N portcullis] ; Orkney portcullis.
+     [429:^N secret ^N panel] ; secret panel.
+     [430:^N ships] ; Sessoine invasion fleet.
+     [431:^N shutters] ; Garlon turret shutters.
+
+
+
+
+
+
+     ; [432:^N tomb] ; tomb.
+     [433:^N elm] ; elm.
+     [434:^N inscription] ; inscription.
+     [435:^N pile of ^N sails] ; pile of sails.
+     [436:^N bed] ; bed in perilous bedroom.
+     [437:^N siege ^N army] ; Sessoine army.
+     [438:^N trapdoor] ; trapdoor.
+     ;
+     ; static objects for L1 (150...165)
+     ;
+     ;---------------
+     ;
+     ; some invisible objects (170 onwards)..
+     ;; [470:^N tomb] ;
+     ;
+     ;----------------
+     ; ADD IRRELEVANT INVISIBLE OBJECTS 160..179 here...
+     ;---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+..179 here...
+     ;---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

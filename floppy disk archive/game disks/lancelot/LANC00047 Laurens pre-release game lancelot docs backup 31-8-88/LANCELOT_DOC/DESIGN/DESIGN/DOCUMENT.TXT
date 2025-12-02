@@ -1,0 +1,24 @@
+
+
+          LANCELOT DOCUMENTATION. COPYRIGHT (C) 1988 LEVEL 9 
+          -------------------------------------------------- 
+
+
+    The booklet which accompanied the Lancelot game divided into the 
+following sections... 
+
+1) Brief guide to the adventure system; an Infocom-style introduction, 
+with examples of useful commands, and which sets the Arthurian 
+atmosphere for the game. 
+
+2) Biographical details of the dozen main people in the game: about 50 
+or 100 words about each, plus b&w pictures. 
+
+3) 5,000 word precis of "Le Morte D'Arthur". 
+
+4) Appendix: 1 page with credits, implementation notes, some clues etc. 
+
+
+
+    In addition, there was an instruction card and some kind of 
+full-colour heraldic poster. 

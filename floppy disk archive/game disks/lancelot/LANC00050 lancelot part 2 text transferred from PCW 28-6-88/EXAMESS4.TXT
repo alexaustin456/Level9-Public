@@ -1,0 +1,348 @@
+
+
+
+     ;
+     ; Examine messages (600+N). NO full stops at end please.
+     ;
+     [601:a brave and fearless knight. He had an interesting face, with a
+     strong nose and jaw, which gave him a proud and noble expression,
+     although he looked older than his years. Of medium height, he was
+     stockily built, with broad shoulders. His armour was new and still
+     didn't quite look as though it had 'settled' on him.] ; Lancelot.
+
+     [602:Tristram, who had fair silky hair and a slightly foppish manner.
+     He was famous throughout the land for his accomplishments on the harp,
+     the which you could see borne on his slight shoulders. He was nimble
+     and agile in combat, which made up for his lack of brute force] ; Tristram.
+     [603:Galahad. The sun seemed to shine all around Galahad, of the
+     golden hair, sunny smile and cornflower blue eyes. His debonair,
+     carefree manner suggested that little was ever likely to go wrong in Galahad's
+     life. His armour gleamed, even on the dullest day, his horse was the
+     sleekest and fleetest of them all, he was truly everything a dashing young
+     knight should be. And he knew it.  ] ; Galahad.
+     [604:Bors de Ganis, a steady and reliable knight whom you could
+     usually count on. He was one of the longest-standing of the Round
+     Table, and embodied all its values of chivalry and valour] ; Bors de Ganis.
+     [605:a knight with a large question mark tattooed on his head, jovial
+     and hearty] ; Mark.
+     [606:Ga of Sir Meliot. Lacerated from scalp to
+     foot with deep, gaping wounds from spear and sword, it was difficult
+     to imagine how he had looked whole] ; Meliot.
+
+     [609:Lamorak, small and wiry, with an aggressive demeanour ] ; Lamorak.
+
+     [610:Ector de Maris, the brother of Lancelot, a faithful, competent
+     knight whose love for his brother kept him blindly loyal, and brave in
+     his shadow] ; Ector.
+     [611:Agravain, brother of Gawain, who had pointed features, and sharp
+     fer of Sir Meliot. Lacerated from scalp to
+     foot with deep, gaping wounds from spear and sword, it was difficult
+     to imagine how he had looked whole] ; Meliot.
+
+     [609:Lamorak, small and wiry, with an aggressive demeanour ] ; Lamorak.
+
+     [610:Ector de Maris, the brother of Lancelot, a faithful, competent
+     knight whose love for his brother kept him blindly loyal, and brave in
+     his shadow] ; Ector.
+     [611:Agravain, brother of Gawain, who had pointed features, and sharp
+     ferret-like nose] ; Agravain.
+     [612:Aliduke. He was tall and powerful, of burly build, and his armour
+     was riddled with nicks and dents from fierce battles ] ; Aliduke.
+     [613:Brandiles, who was, as usual, scratching himself. he had a
+     crooked face, accentuated by a broken nose.] ; Brandiles.
+
+     [614:Brian, a roaring giant of a man, with a thick ginger beard and
+     long luxuriant locks of golden bronze] ; Brian.
+     [615:Geheris, who was dark like his brother, Gawain, short in stature,
+     but powerfully built] ; Geheris.
+     [616:Gareth. Unlike his brothers GAwain, Geheris and Agravain, he was
+     tall, broad and fair, with huge strong hands which looked as though
+     they could crush rocks without difficulty] ; Gareth.
+     [617:Lionel, a very young knight, who was Lancelot's nephew. He looked
+     and fiddled with his wristlets, chewing at his lower lip the
+     meanwhile. His fingernails were bitten down to the quick] ; Lionel.
+     [618:Marhaus, who was older than many of the other knights, and bore
+     many scars of battles on his face and arms] ; Marhaus.
+     [619:a knight of particularly evil appearance, with hooded brows and a
+
+
+
+
+
+
+     single straight line where two distinct eyebrows should have been, and
+     a gnarled chin which jutted alarmingly from his face. He had perhaps
+     been  spoiled by the many treacherous deeds and battles in his past] ;
+     Sir Breunis.
+
+     [620:invisible. Lancelot could hear his pattering feet
+     running around, but could see nothing of him] ; Invisible Garlon.
+     ;;
+     [622:an impressive-looking knight with a shimmering
+     aura] ; magic knight in Perilous Bedroom.
+     [623:Turquin, hard-faced knight with little expression in his granite-
+     like features. Even his eyes seemed glassy and to betray little of
+     what he was thinking. His fast agile movements, however, belied a
+     quick intelligence and cunning] ; Turquin.
+     [624:wearing about half the armour in the kingdom. A full set of half-
+     inch mail was merely the outer layer - inside were layers of mail
+     and leathers. His horse could obviously hardly cope with the weight -
+     and Pedivere was swaying from side to side on top] ; Pedivere.
+     [625:the Black Knight. He looked as though he was made out of solid
+     stone, so thick were his limbs. His armour shone like ebony  ] ; Black Knight.
+     [626:the Green Knight. If anything, he was taller and even more
+     powerful than the Black Knight, and the veins stood out starkly on his
+     temples and his hands. The green colouring, of his armour and also his
+     horse, made it difficult to see him clearly from a distance] ; Green Knight.
+
+     ;
+     ;
+     [627:the Red Knight, towering above the surroundings on a chestnut horse the
+     size of a outhouse. With his flowing flame coloured hair, he looked as
+     though his very head was on fire] ; Red Knight.
+     [628:Hellawes, a sorceress able to take on many forms. In her natural
+     state, she was evidentally not in her first youth, but still carried
+     herself rigidly upright, her long stright black hair splashed with
+     grey, and piercing jet-coloured eyes that seemed to see straight into
+     your mind] ; Hellawes the Witch.
+     [629:Queen Morgan. She was a tall, angularly thin woman, with a long
+     sharp nose, and dark, dramatically etched features. Her talon-like pointed
+     fingernails and long narrow feet accentuated this. Her beauty was cold
+     and almost cruel, but always fascinating ] ; Q. Morgan.
+     [630:Queen Northgales, tall, blonde and statuesque, with a commanding
+     face when it was in repose. However, when she smiled, she blossomed
+     and looked almost coy] ; Q. Northgales.
+     [631:Queen Eastlands, petite and dark, with impish features and dark eyes
+     like deep pools, mysterious and alluring] ; Q. Eastlands.
+     [632:Queen Outisles, whose flame-coloured hair belied her reputation
+     for a fiery temper when aroused to anger. Her piercing green eyes had
+  ; damosel tending
+     ; Meliot.
+     ;
+     [636:a charming lady who seemed very agitated about something,
+     and kept looking from the tree to the castle behind her] ; Lady.
+     [637:about 8 feet tall, thickly built and looking immensely
+     strong. His legs were as broad as the pillars in the great hall at
+
+
+
+
+
+
+     Camelot, and his head looked as though it had been chiselled from
+     granite] ; Giant Nabon.
+     ;
+     [640:a huge army laying siege to Tintagel Castle. their shield ; damosel tending
+     ; Meliot.
+     ;
+     [636:a charming lady who seemed very agitated about something,
+     and kept looking from the tree to the castle behind her] ; Lady.
+     [637:about 8 feet tall, thickly built and looking immensely
+     strong. His legs were as broad as the pillars in the great hall at
+
+
+
+
+
+
+     Camelot, and his head looked as though it had been chiselled from
+     granite] ; Giant Nabon.
+     ;
+     [640:a huge army laying siege to Tintagel Castle. their shields
+     shimmered in the sunlight, so that they resembled a great river
+     flowing through the Cornish valley] ; Sessoine army.
+     [641:a wizened old carter, his face gnarled like a walnut, bandy-
+     legged and arms on which the veins stood out like knotted cords] ; carter.
+     [642:a beautiful young woman, plump and rosy, with fine fair hair and
+     wide blue eyes] ; Elaine.
+     [643:a beautiful young mermaid, lithe and slim. Her long fair hair
+     veiled the upper half of her body, while her single fin was a bright
+     seaweed green colour] ; mermaid.
+     [644:an old man wreathed in adders and other snakes, yet somehow
+     of a sad, gentle appearance] ; old man in Perilous Bedroom.
+     [645:waving forks, scythes and chittling knives in a threatening
+     manner] ; residents of Orkney tower.
+     [646:some kilted sentries, looking sturdy, strong and somewhat dour]
+      ; sentries of Orkney Tower.
+     [647:about 30 fully-armoured knights, dressed in black. Their armour
+     glinted darkly and menacingly, while their visors were all down,
+     making it impossible to catch sight of a face among them]
+     ; Hellawes' Thirty knights.
+     [648:keeping a close eye on Lancelot, and looked determined not
+     to let him enter the tower] ; Guard of Orkney Tower.
+     ; [649:a fiendly dragon puffing fire and brimstone. Two long teeth,
+     pointing inwards could be seen protruding from a cavernous jaw] ; fiendly dragon.
+     [650:a remarkably bloated bird. Lancelot was amazed that this bird
+     could actually fly. Its lunes were tangled in the foliage of the
+     tree] ; hawk, tangled in tree.
+     [651:a large dog, standing about waist height to Lancelot. He had a
+     lean wiry coat, and a droopy mouth, which salivated slightly. You
+     could not help but notice the four huge paws supporting the strong
+     legs] ; brachet.
+     ;
+     ; weapons (40 onwards)..
+     ;
+     ; clothes...
+     ;
+     ; now some ordinary objects (80 onwards)..
+     [680:a broken branch. The wood was quite dry and healthy, judging by
+     the condition of the wood at the splintered end] ; broken branch.
+     [681:a piece of cloth, a rough neutral-coloured linen] ; cloth.
+     [682:delicious-looking. It was a glistening stew, with  chunks of lean
+     meat and colourful vegetables nestling in a rich gravy, and smelled
+     heavenly] ; tempting food in prison.
+     [683:a glass of wine, sparkling in a simple glass] ; glass of wine.
+     [684:a small harp. The wood was a little worn, but highly polished,
+     and it was tightly strung] ; Tristram's harp.
+     [685:a beautifully carved horn. It was not particularly ornate, but
+     each etch made in the surface brought out the grain of the bone in
+     fine detail] ; signal horn.
+     [686:some hot coals, burning brightly] ; coals.
+     [687:a small metal plate, rather battered, and none too clean] ; prison utensil.
+     ;
+     [689:the mummified hand of some long-dead saint. It was nearly black,
+     like a piece of charred wood. the fingers were long and thin, with a
+     claw-like appearance] ; relic.
+     [690:a large hessian sack] ; Nabon's pillow.
+     [691:some vegetable soup. The liquid was thin, but there was a
+
+
+
+
+
+
+     good variety of root vegetables simmering in the broth] ; soup in cauldron.
+     [692:a soft feather pillow, plump and downy] ; pillow.
+     [693:large, very hot, cauldron] ; cauldron.
+     [694:a winch, connected by hidden chains to the cage] ; prison winch.
+     [695:some dead wood from the elm tree. It was about 4 feet long, and
+     very heavy. Lancelot could easily throw it] ; branch.
+     ;
+     ; some static objects (110 onwards)..
+     [710:a bath, deeper and longer than most baths of the day. It was
+     beaten out of metal and stood on four wooden legs at each corner] ; Elaine's bath.
+     [711:a beacon ready for lighting, to signal a warning to the
+     Orkney tower] ; beacon.
+     [712:a bell, simply fashioned, with no adornments, out of brass] ; bell.
+     [713:a magical ed
+     together, and the wheels looked strong and evenly positioned] ; cart.
+     [718:a strong chest] ; chest.
+     [719:a crossbow. Lancelot easily destroyed the evil device with
+     a quick blow from his sword, and the broken mechanism disintegrated
+     into tiny fragments] ; crossbow trap.
+     [720:a fire burning brightly] ; fire.
+     [721:a lever apparently connected to something in the room
+     below] ; prison lever.
+     ; [722:a lid. It was chiselled out of stone and looked extremely ed
+     together, and the wheels looked strong and evenly positioned] ; cart.
+     [718:a strong chest] ; chest.
+     [719:a crossbow. Lancelot easily destroyed the evil device with
+     a quick blow from his sword, and the broken mechanism disintegrated
+     into tiny fragments] ; crossbow trap.
+     [720:a fire burning brightly] ; fire.
+     [721:a lever apparently connected to something in the room
+     below] ; prison lever.
+     ; [722:a lid. It was chiselled out of stone and looked extremely heavy] ; lid of tomb.
+     [723:a keyhole. Lancelot could see nothing through it, and strangely,
+     there seemed to be no lock mechanism inside] ; Nabon's keyhole.
+     [724:a panel, which was just slightly out of alignment with those
+     adjacent to it] ; secret panel.
+     [725:some squeaky planks in the floor, which wobbled a little if you
+     stepped on them] ; loose planks.
+     [726:some squeaky planks in the floor] ; loose planks (needed?).
+     [727:some squeaky planks in the floor. The noise seemed to echo around
+     the room] ; loose planks (needed?).
+     [728:a large metal portcullis, operated from the upper stories of
+     the tower] ; Orkney portcullis.
+     [729:a small secret panel, with no visible way of opening it from
+     this side] ; secret panel.
+     [730:the ships of the Sessoin invasion fleet, pulled up by the
+     shore. The vessel were long and narrow, with high, carved prows which
+     reared up out of the water] ; Sessoine ships.
+     [731:some shutters across the window] ; Garlon's shutters.
+     ; [732:a tomb, carved smoothly out of stone, and looking like a large
+     chest. Some rough emblems had been chiselled into the side] ; tomb.
+     [733:a tall elm tree, with a number of low sweeping branches close to
+     the ground] ; elm.
+     [734:an inscription, "Here lives Elaine, cursed by Queens Morgan and
+     Northgales to simmer in boiling water, until rescued by the best
+     knight in the world"] ; inscription.
+     [735:a large pile of dry canvas sails] ; sails.
+     [736:a large, comfortable looking bed] ; bed.
+     [737:a large army besieging castle Lyonesse. The soldiers were armed
+     in colours showing a variety of allegiances, and there was much
+     shouting as they surged forward and back in turns] ; Army outside Lyonesse.
+     [738:a large trapdoor set into the floor] ; trapdoor.
+
+
+
+
+
+
+     ;
+     ; Examine messages for location objects (479+N). See 779+ for examine
+     ; messages and 1199+ for their verbose equivalents..
+     [780:a bleak shore. No trees nor anything much in the way of
+     vegetation could be seen - indeed there was barely a beach of any
+     description. Some rocky outcrops stood out in the shallow water,
+     eroded to a squat smoothness by the centuries-old lashing from the sea] ; bleak shore.
+     [781:the Isle of Servage, rising gradually from the water to a central
+     high summit. The shore was pitted by coves, and headlands jutting out
+     over the waves and causing considerable turbulence in the sea below] ; Isle of Servage.
+     [782:the shore near Corbin castle. Fine dark sand between the numerou
+     rocks soon gave way to a
+     salty mud spotted with coarse grass, from which the castle rose
+     bleakly] ; shore near Corbin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+leakly] ; shore near Corbin.
+
+
+

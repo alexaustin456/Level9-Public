@@ -1,0 +1,529 @@
+
+
+
+
+     ; general error message when parsing has broken down.
+     [2010:I don't understand what you mean]
+     [2011:Lancelot couldn't see]
+     [2012:Lancelot didn't have]
+     [2013:Lancelot already had]
+     [2014:(Perhaps I'm just being particularly thick today, but I really
+     haven't a clue as to what you are blathering on about)]
+     [2015:it's too far away] ; examine, take etc. scenery objects
+     [2016:I can't find a verb in that sentence]
+     [2017:it's not there]
+     [2018:there were too many nouns in that sentence.]
+     [2019:Lancelot couldn't see that here]
+     [2020:Lancelot owned nothing at all. ]
+     [2021:it was dark, Lancelot could not see. ]
+     ;
+     [2036:sorry, I don't fully understand that verb.]
+     ; ^ verb in keyword table but not in CALLVERB routine
+     [2037:there didn't seem to be anything suitable. ]
+     [2038:said, "That was a rhetorical question"]
+     [2039:what a mouthful! ]
+     ;
+     [2044:couldn't have ] ; as in 'Lancelot couldn't have knocked that'
+     ;; [2045:that]
+     [2046:that]
+     [2047:here]
+     [2048:Lancelot couldn't find ]
+     ;
+     [2053:it's not clear to what ]
+     [2054: is referring]
+     ;
+     ;; [2055:(removing] ; E.g '(Removing the bat from the cage first).'
+     ;; [2056:from the]  ; to avoid containers inside themselves.
+     ;; [2057:first).]
+     ;
+     ; error messages for NPC's
+     [2060:are you talking to yourself again?]
+     [2061:Lancelot couldn't talk to several people at once]
+     ;
+     ;; [2065:for] ; as in 'looks for the cask'
+     ;; [2066:but can't find]
+     ;
+     ;; message pair when a npc tries to take stuff from others...
+     ;; [2074:won't let]
+     ;; [2075:take it]
+     ;
+     ; Standard Adventure output messages
+     ;
+     [2100:Welcome to playtest part 1 of Lancelot, copyright (C) 1988
+     from Level 9 Computing. ]
+     ;; [2101:Lancelot couldn't see]
+     ;; [2102:Lancelot didn't have]
+     ;; [2103:Lancelot already had]
+     ;; [2104:Lancelot couldn't see that here]
+     ;; [2105:in the distance is ] ; for scenery seen from afar
+     ;; [2106:Lancelot owned nothing at all. ]
+     ;; [2108:it was dark, Lancelot could not see]
+     ;
+     ; examining something greater than maxobject: (but not scenery)
+     ; rare occurrence - mostly for omnipresent objects, numbers, spells
+
+
+
+
+
+
+     [2112:it looked exactly as Lancelot had expected. ]
+     ;; [2113: nothing]
+     [2114:Lancelot couldn't go that way]
+     [2115:through the door]
+     ;; [2116:Lancelot banged his nose, knees and knuckles on the door.
+     ;; Perhaps he  should have opened it first? ]
+     [2117:it's already open]
+     ;; [2118:it's already closed]
+     ;; [2119:Lancelot found]
+     ;
+     [2123:Lancelot couldn't put ] ; paired with 2124
+     [2124:there]
+     ;
+     ;; [2125:Lancelot couldn't go there! ]
+     [2126:Lancelot would have to drop it first]
+     ;
+     ;; [2127:Lancelot couldn't climb that]
+     [2128:%Did you know that you can go quickly to a far off place? E.g
+     "RUN TO LOGRIS" or "GOTO CATHEDRAL."%]
+     ;
+     ; 2130 is used when player refers to scenery which is not nearby
+     [2130:I can't find a reference to "]
+     [2131:Lancelot was on it! ]
+     [2132:what? ]
+     [2133:where? ]
+     [2134:Lancelot was wearing ]
+     [2135:please try again, saying what with? ]
+     [2136:which one?]
+     [2137:at what?]
+     [2139:was full]
+     [2140:" here]
+     ;
+     [2142:Lancelot couldn't wear ]
+     ;; [2143:Lancelot couldn't reach it from here]
+     ;
+     [2147:Lancelot was already wearing that]
+     [2148:Lancelot found he didn't need to do that]
+     ;
+     ; Confirmation messages
+     ;
+     [2152:worn]
+     [2153:OK]
+     [2155:time passed. ]
+     [2156:said]
+     [2158:Lancelot found he would have to untie it first]
+     ;
+     [2160:YES or NO please.%]
+     ;
+     ;; [2177;Lancelot heard strange noises]
+     ;; [2178:Lancelot heard a strange noise]
+     ;; [2179:Lancelot heard some strange noises coming from nearby]
+     ;; [2180:Lancelot heard an odd noise and, though he listened carefully, he
+     ;; could not identify it]
+     ;; [2181:Lancelot heard a strange noise]
+     ;
+     ;; [2190:(]
+     ;; [2191:)]
+     ;
+     ; Death, scoring, game control etc.
+     ;
+
+
+
+
+
+
+     [2200:really restart? ]
+     ;; [2201:%press space to play again]
+     [2202:really restore? ]
+     [2203:% %did Lancelot continue? ]
+     [2204:said, "Thank you"]
+     ;
+     [2209:% %thy adventure is over.
+     %Please type RESTART, OOPS, RESTORE or RAM RESTORE: ]
+     [2210:the room was badly damaged] ; attack room
+     [2211:Lancelot looked around and decided it wasn't worth the effort.
+     He had made a good job of devastating the place last time]
+     [2212:really! You're so destructive! ]
+     [2213:it looks as though the Vandals have been at work here]
+     ;; [2214:% %Do you want to continue? ]
+     [2215:that's too long to wait] ; won't wait
+     [2216:you can wait for someone, or for an interval. Eg WAIT FOR
+     KAY, WAIT 10, or WAIT FOR 25 MINUTES]
+     ;; [2217:the time was ]
+     ;
+     ; Residual combat messages..
+     ;; [2230:the body of] ; as in 'the body of a troll'
+     ;; [2231:, but]
+     ;
+     ; Score messages..
+     [2240:%Lancelot scored ]
+     [2241:% %you seem to have got Lancelot killed.%]
+     [2242: out of 1000] ;  and was a ]
+     ;
+     [2300:undo and ram save//restore don't work in this version. ]
+     [2301:%please insert save disc and press a key. %]
+     [2302:%please insert game disc.%]
+     [2308:I can't use UNDO to go back further than this. ]
+     [2309:%(This version allows you to use RAM SAVE and RAM RESTORE to
+     save a position in memory, and UNDO to take back bad moves).%]
+     [2310:can't return to that saved position in memory. Perhaps you've
+     turned off the computer, or reloaded the game, since it was saved. ]
+     ;
+     ;
+     [2311:% %Lancelot is about to start another part of the game. Do you
+     want to save his position first, just in case? ] ; tape ***
+     [2312:that data was not saved from Lancelot. ]
+     [2313:play the game tape to load part ] ; tape ***
+     [2314:% %Lancelot is about to start another part of the game. Do you
+     want to go ahead? ]
+     ;
+     [2319:you've started in the middle of the game. Please
+     restore a position saved from this part. ] ; tape ***
+     ;;
+     ; misc jokey messages (slightly more complex than echo verbs)..
+     [2401:that might end up with Lancelot getting hurt] ; attack me
+     [2404:Lancelot could smell nothing of interest]
+     [2405:Lancelot found nothing much to write about]
+     [2406:Lancelot normally smelled OK, but at that
+     stage of his journey he just smelled]
+     ; smell player
+     [2407:Lancelot said hello]
+     [2416:to be, or not to be, that is the question]
+     ;
+     ; add your messages for special cases here....
+     [2498:could not honorably attack a woman]
+
+
+
+
+
+
+     [2499:at this point, you have the option of going straight to the
+     last part, the Quest for the Holy Grail, but I assume you want to
+     play the whole game. Shall we start at the beginning? ]
+
+     [2500:they fought for a long time, first one gaining the
+     advantage, then the other. Finally, completely exhausted, the
+     black knight yielded. Did Lancelot accept his surrender? ]
+     [2501:Lancelot brutally attacked the defenceless knight, knocking
+     him to the ground and unfastening his his helmet, ready for the
+     fatal blow.%
+
+     %But, before Lancelot could strike, dozens of guards appeared from
+     the bushes and hurled him to the ground.%
+
+     %The black knight identified himself as King Arthur, and severely
+     chastised Lancelot for his lack of honour or chivalry. The king's
+     party then rode off towards Camelot]
+     ;
+     [2502:the black knight revealed himself as King Arthur. "Thank you,
+     Lancelot, you fought most honourably", he said with a bow, "I would
+     be happy to knight you if thou wouldst come tomorrow, to my castle
+     in Camelot."%
+
+     %The king summoned his guards from the surrounding bushes, where
+     they had hidden to watch the fight, and the royal party rode off
+     towards the city]
+     [2503:to retreat would be cowardly]
+     [2504:"I will not parley until we have fought"]
+     [2505:said, "Well, have you not the stomach for a fight"]
+     [2506:said, "If you will not strike the first blow, I will". With that,
+     he prepared to strike]
+     [2507:the black knight stood firmly in the way]
+     [2508:if you want to fight someone, just say so] ; can't 'retaliate' now
+     [2509:-] ; minus sign for negative scores
+
+     [2510:said a devout prayer] ; general case.
+     ; some special cases for knights...
+     [2511:rode]
+     [2512:, mounting his horse]
+     [2513:dismounted and walked]
+     [2514:such things are below your knightly gaze] ; exam horse/armour
+     [2515:-] ; minus sign for negative scores
+     [2516:was riding a huge war-horse]
+     ;
+     ;
+
+     [2519:settled down and got ready to go to sleep]
+     [2520:thought he'd better find somewhere to sleep soon]
+     [2521:decided to go straight to the mews]
+     [2522:decided it would be better not to leave so late at night]
+     ; three messages as L gets sleepier in the mews
+     [2523:sat down]
+     [2524:found a comfortable spot and lay down]
+     [2525:soon fell asleep. In the morning, he was awakened by a curious
+     cawing sound. As he rubbed the sleep from his eyes, and his eyes
+     adjusted to the sunlight, he realized it was coming from the roof of
+     the mews. Perched there, along several rows of poles, were about twenty
+     hawks]
+     ; some reactions from Sir Kay (in order)...
+     [2526:laughed uncontrollably]
+
+
+
+
+
+
+     [2527:guffawed loudly and pointed at Lancelot]
+     [2528:shrieked with laughter and at last managed to splutter out,
+     "Didn't you know that the hawks sleep in the mews? I think you should
+     have found somewhere a little CLEANER to sleep!" Sir Kay returned to
+     his uncontrollable mirth]
+     [2529:couldn't bear to go into the presence of his king whilst
+     this dirty]
+     ;
+     ;
+     ; message group for resurrection type comments...
+     [2530:Merlin appeared, "Oh dear, have you got into a fix?]
+     [2531:Merlin appeared, "Oh not again, have you got into trouble?]
+     [2532:Merlin appeared, "Oh dear, rescuing you is a full time job.]
+     ;
+     ;
+     ; two message groups
+     [2540:smote]
+     [2541:smote]
+     [2542:smote]
+     ;
+     ;; [2550:with his sword]
+     ;; [2551:with his sword]
+     ;; [2552:with his sword]
+     ;
+     ; injury status messages
+     [2560:dead]
+     [2561:close to death]
+     [2562:gravely wounded]
+     [2563:seriously hurt]
+     [2564:badly hurt]
+     [2565:injured]
+     [2566:moderately injured]
+     [2567:slightly hurt]
+     [2568:almost unhurt]
+     [2569:unhurt]
+     ;
+     ;
+     ;; [2570:would have sunk in the water]
+     ;; [2571:directed the boat to the]
+     ;; [2572:directed the boat] ; followed by 'from the west' etc.
+     ;; [2573:was not worthy to direct the boat]
+     ;; [2574:the boat would not move without wind]
+     ;; [2575:only the best knight in the world could take it] ; the sword
+
+     ; more Merlin rescue stuff... *** used in this part?
+     [2580:would you like me to rescue you?"]
+     [2581:"OK, stay where you are then"]
+     [2582:"I'll see what I can do..." There was a flash, and Lancelot
+     found that he had moved]
+     ;---
+     [2583:realized to his horror that he was filthy with the
+     droppings of the hawks]
+     [2584:managed to clean the worst of the mess off]
+     [2585:said, "Well I never. You look in need of a room. Please
+     make yourself at home here"]
+     [2586:said, "Oh dear, what a terrible smell! Be off with you,
+     and don't come back in that state"]
+     [2587:lay down on the bed]
+     [2588:was very comfortable on the bed]
+     [2589:soon fell asleep. In the morning, he woke refreshed and ready
+
+
+
+
+
+
+     for the challenges of the new day]
+     ; hints from racetrack...
+     [2590:said to Lancelot, "The Queen will become very important to you"]
+     [2591:said to Lancelot, "You must prove your worth outside of Camelot"]
+     [2592:said, "I will help you on your journey"]
+     [2593:said, "Lancelot, there is so much you must learn. Read the
+     books in the library"]
+     [2594:said, "Lancelot, be wise and true. Much depends on your actions"]
+     [2595:was not watertight]
+     ;; [2596:was already full]
+     ;
+     [2597:the door was locked] ; widely used (especially on first night)
+     [2598:invited Lancelot to join her Maying in the fields
+     beside Westminster]
+     [2599:found the queen was missing. However, there
+     were scuffled marks on the ground which indicated a struggle and many
+     people marching southwards]
+     [2600:the drawbridge was closed]
+     [2601:greeted] ; (Arthur) greeted (freed knight)
+     [2602:and thanked Lancelot for rescuing him] ; (freed knight)
+     [2603:bowed low to Lancelot and promised further service if
+     he required it]
+     [2604:said, "Hush, my love"]
+     [2605:a quick slap across the face reminded Lancelot that his attentions
+     were not welcome] ; 'rude word' npc
+
+     ;
+     [2609:picked a book at random and read, "]
+     ; hints are followed by ".
+     [2610:{hint 1}]
+     [2611:{hint 2}]
+     [2612:{hint 3}]
+     [2613:{hint 4}]
+     [2614:{hint 5}]
+     [2615:{hint 6}]
+     [2616:{hint 7}]
+     [2617:{hint 8}]
+     [2618:{hint 9}]
+     [2619:{hint 10}]
+
+     ; some unpleasant happenings in the warrens... (ActorVaryMessageDot)
+     [2620:thought he heard someone following him, but could see no-one]
+     [2621:saw a shadow move, then it was gone]
+     [2622:heard the sound of running feet from behind, which
+     stopped as soon as he turned round]
+     [2623:a window high above opened, and water poured out all over Lancelot.
+     Fortunately, much of it rolled off the armour, but enough got inside
+     to make it uncomfortable]
+     [2624:was hit by a stone thrown by someone out of sight]
+     [2625:was just missed by a rock dropped from a high window]
+     [2626:was just missed by a squashy fruit dropped from a high window]
+     [2627:sank into an enormous puddle of mud. Lancelot thought it was too deep
+     to be natural, and had probably been dug deliberately to catch
+     the unwary. He managed to climb out again]
+     [2628:was just missed by a squashy fruit dropped from a high window]
+     [2629:was just missed by a large melon dropped from a high window]
+     ;
+     ;
+     ;
+     ; messages when L comes back from Logris adventures...
+
+
+
+
+
+
+     [2630:could not get through the bars]
+     [2631:lacked the desperate strength necessary to bend back the bars]
+     [2632:climbed the ladder]
+     [2633:overcome by passion, Lancelot bent back the thick iron bars,
+     and dashed inside. The minor injury he sustained to his hand seemed
+     of no consequence...%
+
+     %When Lancelot awoke the next morning, he heard the sound of approaching
+     footsteps from within the castle]
+     [2634:the footsteps became louder]
+     [2635:there was a knock on the door]
+     [2636:saw Lancelot. He raised his sword, and executed the naked Lancelot
+     before he had time to don his armour]
+     [2637:but]
+     ;
+     [2646:could not get through the locked window]
+     [2647:saw Lancelot's injury and executed him on the spot]
+     [2648:his hand was bleeding from where he had cut himself on the bars]
+     [2649:seemed sore afraid to see Lancelot] ; meet Meliagaunt for first time
+     [2650:pushed the cart]
+     [2651:hid in the cart]
+     [2652:hidden archers shot and killed Lancelot's horse]
+     [2653:trudged for many hundreds of yards,
+     but could not walk far without his horse]
+     [2654:rode a long way down the road]
+     [2655:knelt to Guenever, "My Queen, forgive me". She
+     agreed, and insisted that Lancelot should spare him. Sir Meliagaunt
+     bowed deeply, and Guenever decided to spend the knight. Guenever
+     whispered in Lancelot's ear, "Come to me tonight, my darling"]
+     [2656:waved dismissively and Lancelot felt compelled to leave]
+     [2657:the guards said, "Sorry, Sir Lancelot, we have orders to let
+     no one past tonight, to the Queen]
+     [2658:found that they neatly hid his injury] ; wear gloves
+
+     ; Sir Meliagaunt...
+     [2659:was standing over the Queen, his sword poised.
+     Meliagaunt accused the Queen of adultery. Lancelot agreed to
+     defend the Queen's honour by fighting 3 days later. Sir Meliagaunt
+     called the castle guards, had the window secured, and left angrily
+     with the Queen]
+     ;
+     [2660:Lancelot heard shouting from the Queen's room]
+     [2661:the shouting became louder]
+     [2662:Sir Meliagaunt shouted again, "Whose blood is this"]
+     [2663:Sir Meliagaunt shouted, "If you will not tell me whose blood
+     this is, you shall die"]
+     [2664:Lancelot heard a woman's scream from the Queen's room, and he
+     realized that Guenever was dead]
+     [2665:the lights went out and the floor gave way. Lancelot fell a long
+     way, and woke up much later]
+     [2666:promised Lancelot his freedom if he would promise to love
+     her]
+     [2667:agreed, and gave his heart to her, forgetting about Guenever.
+     A new horse was provided, and Lancelot prepared to leave]
+     [2668:the damosel sighed and left]
+     [2669:a night and a day passed]
+     [2670:told Lancelot that it was the day of Guenever's execution. She
+     took pity on his predicament, and
+     offered to free Lancelot in exchange for a kiss]
+     [2671:kissed the damosel, and she opened the door and left.
+
+
+
+
+
+
+     A new horse was provided, and Lancelot prepared to leave]
+     [2672:the damosel left, and Lancelot knew that Guenever would now die]
+     [2673:"Just kiss me if you agree"]
+
+     ; Guenever execution scene...
+     [2674:tried to free Guenever, but was restrained by the crowd]
+     [2675:Guenever was tied to the pyre]
+     [2676:cried, "Lancelot, defend my honour"]
+     [2677:Meliagaunt addressed Lancelot, "I will only fight you if you
+     remove your armour and fight with one hand tie behind your back".
+     Lancelot agreed, and the fight began. Despite being handicapped,
+     Lancelot still defeated Meliagaunt, who surrendered. Guenever was
+     freed]
+     [2678:thanked Lancelot for saving her]
+     [2679:told Arthur what had happened. He grew angry and sent orders
+     that Meliagaunt should be captured and brought back to Camelot. Then
+     he said, "Thank you for defending my Queen's honour"]
+
+     [2680:now all the Knights of the Round Table were assembled, life
+     proceeded normally at court. Lancelot lived happily, doing great deeds,
+     and enjoying occasional secret liaisons with Guenever. About twenty
+     years passed in this way, until a prophesy appeared above the Siege
+     Perilous about the imminent arrival of Galahad (*quotation*) who
+     would lead the grail quest.% %Lancelot removed his armour
+     and sword, and decided to the see the Queen
+     to take his leave of her before setting out on the grail quest]
+     [2681:there was a knock on the door]
+     [2682:a voice called out, "Sir Lancelot, come out or we shall be
+     forced to break down this door". Lancelot realized that he could not
+     hope to defeat a group of knights without his sword and armour]
+     [2683:the voice called again, "Sir Lancelot, come out and face justice"]
+     [2684:someone started to beat on the door with a sword hilt]
+     [2685:the beating became more insistent]
+     [2686:dozens of knights burst into the room and captured Lancelot]
+     [2687:opened the door and a knight entered]
+     [2688:closed the door]
+     [2689:knocked out the knight and grabbed his armour and weapons.
+     Thus armed, he defeated the other knights, and those who were not killed
+     vowed to keep silent. Lancelot was summoned to the main hall,
+     where the holy grail had appeared. The quest for the holy grail
+     was started]
+     ; combat messages when L is unarmoured/unweaponed
+     [2690:without his sword]
+     [2691:~'s unarmoured body]
+     [2692:found a group of knights waiting]
+     [2693:Lancelot was captured. He was banished after watching
+     the Queen burnt for adultery]
+     ;
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+t was captured. He was banished after wa

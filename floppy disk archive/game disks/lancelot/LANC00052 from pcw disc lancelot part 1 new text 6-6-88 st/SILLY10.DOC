@@ -1,0 +1,613 @@
+
+
+
+
+     ; don't be silly group...
+     [3100:don't be silly. That's my job]
+     [3101:well, that's a novel concept]
+     [3102:you must be mad if you really mean that]
+     [3103:now there's a peculiar thing to want to do]
+     [3104:daft I call it]
+     [3105:you must be two lengths short of a halberd to think of that]
+     [3106:you should know better than that]
+     [3107:what? Are you out of your mind?]
+     [3108:do you have any other strange habits I should know about?]
+     [3109:hardly sensible, is it?]
+     ;
+     ; nice try group...
+     [3110:nice try, my friend]
+     [3111:a truly valiant attempt at a solution. Shame it won't work]
+     [3112:no chance]
+     [3113:that really does deserve some credit, though it doesn't actually
+     work]
+     [3114:with ideas like that, you'll go far - eventually]
+     [3115:not bad...but not yet]
+     [3116:it's a good idea, but it won't help]
+     [3117:imaginative - but ultimately fruitless]
+     [3118:as a plan, it's flawed: it won't do any good]
+     [3119:that was good in theory, but useless in practice]
+
+     ;
+     ; just scenery group...
+     [3120:you might as well leave it alone]
+     [3121:I suggest that you forget about it]
+     [3122:that's not important to the game]
+     [3123:forget it. It's only scenery]
+     [3124:that was just put there to confuse you. I see it has]
+     [3125:don't worry about that. It's just a bit of local colour]
+     [3126:you don't need to bother with that]
+     [3127:I'd leave it well alone if I were you]
+     [3128:it's all right; it's not part of the plot]
+     [3129:it's not really relevant]
+     ;
+     ; missing object...
+     [3130:now what was the object of that? Try again]
+     [3131:sorry, I couldn't find an object in that]
+     [3132:please be more specific]
+     [3133:I don't like to object, but there was no object in that command]
+     [3134:do it to what? You didn't say]
+     [3135:I think you overlooked the sentence object there]
+     [3136:give us an object this time, Squire]
+     [3137:you'll have to supply an object to go with that]
+     [3138:you lost the object of the enterprise there]
+     [3139:I'd have no objection if you'd give me an object to work with]
+     ;
+     ; Nothing happened group...
+     [3140:I don't know what that was suppose to achieve, but nothing happened]
+     [3141:that didn't seem to work]
+     [3142:that had no effect on anything]
+     [3143:that was outstandingly ineffective]
+     [3144:that did nothing at all, I'm afraid]
+     [3145:it's all exactly the same as before]
+     [3146:well, that hardly set the world on fire. Nothing happened at
+     all]
+
+
+
+
+
+
+     [3147:sorry, no-one seemed to notice]
+     [3148:well, we're all still here and nothing's changed a bit]
+     [3149:nothing happened. Not a thing]
+     ;
+     ; the following are printed after the object name..
+     ;
+     [3150:wouldn't move] ; try to move static object group
+     [3151:didn't budge]
+     [3152:refused to be moved]
+     [3153:seemed fixed in place]
+     [3154:was unmoved]
+     [3155:remained just where it was]
+     [3156:could not be moved]
+     [3157:was obviously immovable]
+     [3158:didn't even wobble]
+     [3159:stayed squarely where it was]
+     ;
+     [3160:don't bother, it would do nothing] ; don't bother group
+     [3161:that would be a waste of time]
+     [3162:that would be pointless]
+     [3163:that won't get you anywhere]
+     [3164:don't expect any results from that]
+     [3165:you'll get no further that way]
+     [3166:that won't help]
+     [3167:that's not constructive]
+     [3168:that won't do anything sensible]
+     [3169:don't mess around with that]
+     ;
+     ; groupsay messages for hello responses
+     [3170:said, "Hello, Sir"]
+     [3171:said, "Greetings"]
+     [3172:said, "Hello, what brings you here"]
+     [3173:greeted his with an inscrutable smile]
+     [3174:said, "How do you do?" politely]
+     [3175:nodded courteously]
+     [3176:bowed in acknowledgement]
+     [3177:said, "Greetings, noble knight"]
+     [3178:said, "Good day, Sir Knight"]
+     [3179:murmured something which sounded friendly]
+     ;
+     ; groupsay messages for npc's being unable to carry out an order
+     [3180:said, "sorry, Sir, but I couldn't do everything you asked"]
+     [3181:said, "sorry, Sir, but I couldn't carry out all your orders"]
+     [3182:said, "I didn't get round to all of it"]
+     [3183:said, "I'm afraid I didn't manage to do all you wanted"]
+     [3184:said, "It's no good - I couldn't do everything"]
+     [3185:apologised for not having done everything]
+     [3186:looked rather downcast. "I haven't done everything you asked me
+     to"]
+     [3187:looked apologetic, and said, "I'm afraid I couldn't get it all
+     done"]
+     [3188:muttered that it hadn't been possible to do everything]
+     [3189:apologised profusely for not fulfilling all the orders]
+     ;
+
+     ; groupsay messages for npc's being unable to carry out an order
+     [3190:said, "sorry, Sir, but I couldn't do everything you asked with]
+     [3191:said, "sorry, Sir, but I couldn't carry out all your orders with]
+     [3192:said, "I couldn't manage everything with]
+     [3193:said, "It's no good - I couldn't do it all with]
+
+
+
+
+
+
+     [3194:said, "I'm afraid I couldn't get it all done with]
+     [3195:looked rather downcast. "It just wasn't possible to do all you
+     asked with]
+     [3196:apologised for not being able to do everything with]
+     [3197:muttered that it couldn't all be done with]
+     [3198:said, "I'm sorry, but it didn't all work with]
+     [3199:apologised for not fulfilling all the orders with]
+
+     ; NB, CE to PA: is this section numbered correctly?;
+
+     ; messages for people recovering things they need
+     ;; [3190:said, "I'll take that, thank you very much"]
+     ;; [3191:said, "Give that to me"]
+     ;; [3192:said, "That's mine"]
+     ;; [3193:said, "Ah-ha! now I'll get it back"]
+     ;; [3194:said, "Let me have it this minute"]
+     ;; [3195:said, "Oh no, you don't", and snatched it back]
+     ;; [3196:grabbed it, saying, "Mine, I think"]
+     ;; [3197:cried, "Excuse me, young sir" and took it back]
+     ;; [3198:said, "What on earth do you think you're doing?" and grabbed
+     it]
+     ;; [3199:demanded its return]
+
+     ;; responses for npcs - those who can talk and those who can't.
+     ;; first - npc refuses an order
+     ;; [3210:said, "Find someone else, I'm tired"]
+     ;; [3211:said, "Don't try to order me around, good knight"]
+     ;; [3212:said, "No I won't"]
+     ;; [3213:refused, saying "That is not the sort of thing I do"]
+     ;; [3214:exclaimed, "Why should I? Do it yourself"]
+     ;; [3215:said, "Certainly not. Who do you think I am?"]
+     ;; [3216:looked affronted. "I'm sorry, Sir, but that's really not my
+     job"]
+     ;; [3217:said, "Not on your life - or mine"]
+     ;; [3218:shook his head and said, "I just haven't got the time"]
+     ;; [3219:said, "You're really asking too much of me"]
+     ;
+     ; now, npc accepts an order
+     [3230:said, "Very well. It would be a pleasure"]
+     [3231:said, "Of course, I'll be right there"]
+     [3232:said, "Yes, certainly"]
+     [3233:agreed, saying "Anything to oblige"]
+     [3234:nodded and said, "Right away, Sir"]
+     [3235:said, "It will be done straightaway"]
+     [3236:said, "Of course, it's no problem"]
+     [3237:said, "No trouble at all, Sir"]
+     [3238:nodded enthusiastically, saying, "Consider it done, Sir"]
+     [3239:said, "I'll see to it immediately"]
+     ;
+     ; now response to questions when not obedient...
+     [3250:said, "You'll have to find that out for yourself, Sir"]
+     [3251:said, "You won't get any help from me, young Sir"]
+     [3252:pretended to ignore his question]
+     [3253:demurred, saying "Sorry, but I really can't say"]
+     [3254:spread sorrowful hands and said, "Ah, if only I could help.."]
+     [3255:made no response at all]
+     [3256:seemed not to hear]
+     [3257:refused, saying, "I can't help you, Sir"]
+     [3258:said, "Ah, now, that would be telling, wouldn't it?"]
+     [3259:laughed, "Oh no, you won't get anything out of me that way"]
+
+
+
+
+
+
+     ;
+     ; response to requests to give anything(s) to anyone
+     [3270:said, "You'll have to fight me for that"]
+     [3271:said, "I'd rather die than part with that"]
+     [3272:said, "I'm not about to give anything away"]
+     [3273:clutched at it, saying "It's mine! Clear off"]
+     [3274:stared back in silent refusal]
+     [3275:said, "Tis more to me than my life's worth"]
+     [3276:looked rather annoyed. "Why on earth should I do a thing like
+     that?"]
+     [3277:said, "I'm not about to part with that without a very good
+     reason"]
+     [3278:said, "If it's all the same to you, I'll hang on to it"]
+     [3279:tightened his grip on it, and said mutinously, "It's staying
+     right here"]
+     ;
+     ; npc wants to obey orders just given, but can't understand any of them!
+     [3290:said, "Sorry Sir, I don't understand"]
+     [3291:said, "It must be me, Sir, I can't understand what you're
+     saying"]
+     [3292:said, "Pardon? Could you rephrase that"]
+     [3293:looked blank and said, "Eh?.."]
+     [3294:said, "Can we try that again? My grasp of English isn't quite what it
+     should be"]
+     [3295:looked puzzled, saying, "Sorry, I can't quite see what you're
+     getting at"]
+     [3296:said, "What? I didn't follow any of that"]
+     [3297:looked confused: "I'm not with you, Sir. What exactly did you
+     mean?"]
+     [3298:gave him a funny look and said, "I'm sorry, I can't have heard
+     that correctly"]
+     [3299:tapped the side of his head with his forefinger and said, "Come
+     on, Sir, spit it out"]
+     ;
+     ; again used following a command referring to scenery
+     [3530:the previous command was not repeatable]
+     [3531:you can't do that again]
+     [3532:it wouldn't help to try that again]
+     [3533:that was a once-only command. It doesn't do seconds]
+     [3534:oh, not again! I've been through that once already]
+     [3535:sorry, you've had your chance]
+     [3536:now you're just repeating yourself]
+     [3537:try something different]
+     [3538:this isn't getting you anywhere]
+     [3539:one attempt at that was quite enough]
+     ;
+     ;; npc is blocked in a racetrack *********** used?
+     ;; [3540:stopped, looking confused]
+     ;; [3541:looked puzzled]
+     ;; [3542:seemed uncertain of what to do next]
+     ;; [3543:ground to a confused halt]
+     ;; [3544:stood stock still and said, "Now what?"]
+     ;; [3545:appeared lost]
+     ;; [3546:looked bewildered]
+     ;; [3547:gazed around, looking befuddled]
+     ;; [3548:stopped dead and scratched his head]
+     ;; [3549:shook his head and said, "This can't be right"]
+
+     ;; messages when the player tries to take things from others...
+     ;; [3550:wouldn't let Lancelot have it] ;?????
+
+
+
+
+
+
+     ;; [3551:slapped his hand away]
+     ;; [3552:stopped him from taking it]
+     ;; [3553:held onto it and said, "This is mine. You can't have it"]
+     ;; [3554:refused to give it to Lancelot]
+     ;; [3555:tightened his grip and turned away]
+     ;; [3556:said, "I'd leave it alone, if I were you"]
+     ;; [3557:said, "Come on, Sir, what could you possibly want with
+     this?"]
+     ;; [3558:said, "Sorry, I need this more than you do"]
+     ;; [3559:refused to let go]
+
+     [3560:dead] ; printed by follow code
+     ;
+     [3600:a voice in the distance shouted, "wow!
+     A stack overflow". ] ;>>mike 28/3/88 - merged from 3 messages
+     ;;>>mike 28/3/88 [3603:don't panic! normal service will be resumed shortly] ; a panic
+     ;;>>mike 28/3/88 [3604:sorry, I can't get Lancelot there from here]
+     [3605:sorry, Lancelot will have to find his own way from here]
+     ;
+     ; conversational fragments...
+     [3610:I am perfect in every way] ; must be capital at start
+     [3611:you are a knight]
+     [3612:cleared its throat and said.. "]
+     ;
+     [3614:Lancelot yelled "ARRRGGGGGHHHHH"! ]
+     ;
+     ; 'npc, rude' word for talking people
+     [3620:swore back at Lancelot]
+     [3621:swore loudly]
+     [3622:seemed very offended]
+     [3623:said, "@@*!#/\*&@!!, to you too"]
+     [3624:gave Lancelot a mouthful in reply]
+     [3625:looked shocked]
+     [3626:took two steps backwards and stared in horror]
+     [3627:said, "Rudeness won't get you anywhere]
+     [3628:said stiffly, "I hope you don't speak like that when ladies are
+     present"]
+     [3629:sniffed, "That sort of language cuts no ice with me"]
+     ;
+     ; 'npc, help' for talking people
+     [3640:said, "Help yourself, my dear Sir"]
+     [3641:said, "I'd love to, but I wouldn't be any use to you"]
+     [3642:said, "You'll get no help from me, my liege"]
+     [3643:said, "I would if I could, but I can't so I shan't"]
+     [3644:said, "Stand on your own two feet... Oh, you are standing, sorry"]
+     [3645:scoffed, "Who do you think I am, your nursemaid?"]
+     [3646:shrugged and said, "You probably know more than I do, Sir"]
+     [3647:sighed, "I wouldn't know where to begin, I'm afraid"]
+     [3648:started to say something, but then clammed up completely]
+     [3649:said, "Sorry, Sir, I've never been much good at working things
+     out myself"]
+
+     ;
+     ; 'npc, echo verb' for talking people
+     [3660:said, "You must be nuts"]
+     [3661:said, "Sorry Sir, but I think you've cracked"]
+     [3662:said, "That isn't possible. And if it is, it shouldn't be allowed"]
+     [3663:laughed, "You do have some odd ideas, Lancelot"]
+     [3664:looked askance at Lancelot]
+     [3665:said nervously, "You are joking, aren't you Sir?"]
+
+
+
+
+
+
+     [3666:slapped his thigh heartily and said, "Oh, Lancelot, you'll be
+     the death of me!"]
+     [3667:said, "You've obviously been burying your head in far too many
+     obscure sorcery books again"]
+     [3668:asked, "Have you suffered a head wound recently, Lancelot?"]
+     [3669:said, "You'd better get yourself a new helmet. That one must be
+     putting too much pressure on the brain"]
+     ;
+     ;-----------
+     ; gold-singing for various people...
+
+     ; rescued knights
+     ;
+     [3700:looked virtuous]
+     [3701:sharpened his sword]
+     [3702:polished his armour]
+     [3703:told tales of past battles]
+     [3704:made a rather poor joke about a maiden's favours]
+     [3705:played nervously with his visor]
+     [3706:examined some nicks in his shield]
+     [3707:made a few mock parrying jabs with his spear]
+     [3708:scratched himself vigorously]
+     [3709:burst into a traditional hunting song]
+
+
+     ; peasants.
+
+     ; dc.b friendly+disabled,dodge,10,100,255,1 ; 54 hawks
+     [3710:cawed loudly]
+     [3711:made a terrible din]
+     [3712:plucked at their feathers]
+     [3713:moved edgily from one foot to the other]
+     [3714:spat out mouthfuls of feathers]
+     [3715:pecked at one another]
+     [3716:jumped about from perch to perch]
+     [3717:sharpened their talons on their perches]
+     [3718:jostled noisily against one another]
+     [3719:looked murderous]
+
+     ; 55 Queen's knights
+     [3720:rubbed down their horses]
+     [3721:checked over their weaponry]
+     [3722:chattered animatedly amongst themselves]
+     [3723:were admiring the sheen on their armour]
+     [3724:preened themselves]
+     [3725:rearranged the plumes in their helmets]
+     [3726:compared notes on previous jousting experiences]
+     [3727:pulled silly faces when Guenever's back was turned]
+     [3728:argued hotly over who was in favour with the Queen at that
+     moment]
+     [3729:were doing highly disrespectful impersonations of Tristram's
+     harp-playing]
+
+     ; 56 black knight
+     ; ** used?
+     [3730:looked proud and imposing]
+     [3731:waved his sword]
+     [3732:yawned slightly]
+     [3733:seemed impatient]
+     [3734:hefted his sword]
+
+
+
+
+
+
+     [3735:took a couple of paces forward, then stopped]
+     [3736:looked bored]
+     [3737:patted his horse]
+     [3738:raised his shield as if about to charge]
+     [3739:stared into the distance]
+
+     ; 57 Guenever
+     [3740:fluttered her eyelashes]
+     [3741:cocked her head at Lancelot]
+     [3742:winked at Lancelot]
+     [3743:pouted]
+     [3744:smiled prettily]
+     [3745:tossed her head regally]
+     [3746:examined her delicately turned foot]
+     [3747:gave Lancelot a small secret smile]
+     [3748:raised an eyebrow quizzically]
+     [3749:glanced sidelong at Lancelot through thick eyelashes]
+
+     ; 58 Sir Kay
+     ; not used. 3750
+
+     ; 59 Sir Meliagaunt
+     [3760:stoked the fire]
+     [3761:taunted Guenever]
+     [3762:took a burning brand from the fire and waved it to the cheers
+     of the crowd]
+     [3763:ordered more fuel for the fire]
+     [3764:barked out an order to an aide and waved him away to carry it out]
+     [3765:glowered menacingly at Guenever]
+     [3766:smiled cruelly]
+     [3767:shared an obscene joke with one of his knights]
+     [3768:prodded carefully at the base of the fire to make the flames
+     spread more evenly]
+     [3769:leapt back suddenly as an ember landed on his foot]
+
+     ; 60 Arthur
+     [3770:looked regal]
+     [3771:gave some small orders to an aide, who rushed off to carry them out]
+     [3772:stifled a yawn]
+     [3773:looked steadily at Lancelot]
+     [3774:turned slightly to gaze upon his queen]
+     [3775:stared dreamily into the distance, his thoughts evidentally elsewhere]
+     [3776:frowned at a young servant who had slopped water on the floor]
+     [3777:chuckled at a pleasantry made by one of the knights]
+     [3778:was approving the plans for the next jousting tournament]
+     [3779:asked a nearby knight how he had fared on his latest hunting
+     expedition]
+
+
+     ; 61 Sir Colgreavaunce
+     [3780:stretched and yawned]
+     [3781:started on one of his interminable battle stories]
+     [3782:belched]
+     [3783:checked the hinges on his visor]
+     [3784:grunted, deep in thought]
+     [3785:muttered indistinctly under his breath]
+     [3786:cleared his throat noisily]
+     [3787:started to speak, but seemed to forget what he was going to say,
+     and his voice trailed off]
+     [3788:flexed the muscles of his jousting arm, as if in preparation for
+
+
+
+
+
+
+     something]
+     [3789:picked at a small scratch on his wrist]
+
+     ; 62 Merlin
+     [3790:recited a spell to himself]
+     [3791:waved his arms around in some mystical fashion]
+     [3792:closed his eyes and swayed from side to side]
+     [3793:folded his arms and appeared to start meditating]
+     [3794:stood dead still for a moment, as if distracted by something
+     far away]
+     [3795:tugged thoughtfully at his beard]
+     [3796:appeared to be in a trance]
+     [3797:looked stern]
+
+     ; 63 Carter
+     [3800:sung of carting]
+     [3801:started to hum "the jolly carter"]
+     [3802:stopped to rub his back]
+     [3803:put down his cart to groan, then picked it up again]
+     [3804:waved to someone in the far distance]
+     [3805:broke wind]
+     [3906:belched, with relish]
+     [3907:pulled out a splinter in his hand]
+     [3908:laughed half under his breath, at some remembered joke]
+     [3909:complained bitterly and loudly at the price of ale]
+
+     ; 64 Damosel in Sir Meliagaunt's castle - she is after Lancelot.
+     [3810:smiled cheekily at Lancelot]
+     [3811:winked at Lancelot]
+     [3812:deliberately brushed against Lancelot]
+     [3813:fluttered her eyelashes]
+     [3814:looked invitingly at Lancelot]
+     [3815:ran her tongue across her lips]
+     [3816:smoothed her headdress with slim white hands]
+     [3817:gave Lancelot a sly upwards glance]
+     [3818:twirled her dress, exposing rather more of her plump calves than was
+     strictly necessary]
+     [3819:played with a coloured bangle on her wrist]
+
+     ; 3820 peasants
+     [3820:seethed]
+     [3821:stopped to look at Lancelot]
+     [3822:stirred]
+     [3823:went about their business, raking muck, cleaning out pigs, and
+     other farmyard activities]
+     [3824:smelt terrible]
+     [3825:looked downtrodden and bedraggled]
+     [3826:argued with one another in a desultory fashion]
+     [3827:scratched around in the dirt, looking for any roots or edible
+     leaves that might have been dropped or discarded]
+     [3238:clutched their children to them fearfully when they saw
+     Lancelot]
+     [3239:stared passively at Lancelot]
+
+
+     ; crowd waiting for execution.
+     [3830:seethed]
+     [3831:murmured]
+     [3832:was becoming restless ]
+     [3833:chanted something unintelligible]
+
+
+
+
+
+
+     [3834:called for the Queen to be burnt]
+     [3835:huddled together expectantly]
+     [3836:clustered around the pyre with excitement]
+     [3837:began opening cloths wrapped round food, and settled down
+     to eat]
+     [3838:were climbing on one another's shoulders for a better view]
+     [3839:shouted for the proceedings to be speeded up]
+     ;
+     ;; [3700:assumed an expression of deep piety]
+     ;; [3701:sharpened his sword]
+     ;; [3702:rubbed at a tarnished piece of armour until it shone]
+     ;; [3703:launched into the tale of his quest for the great white hart]
+     ;; [3704:exchanged lewd jokes about the village maidens]
+     ;; [3704:looked aloof, as though all this was beneath him]
+     ;; [3705:made small talk with the knight nearest him]
+     ;; [3706:swatted at a troublesome fly]
+     ;; [3707:tried to repair some dents in his breastplate]
+     ;; [3708:boasted of the lady whose favours he trying to win]
+     ;; [3709:remarked that he was hungry]
+
+
+     ;; [3810:blew a raspberry at Lancelot]
+     ;; [3811:grinned at Lancelot]
+     ;; [3812:waved cheerily to the hidden operator of the portcullis]
+     ;; [3813:consulted with a messenger, who then left]
+     ;; [3814:polished his sword]
+     ;; [3815:checked over his armour]
+     ;; [3816:scratched himself vigorously]
+     ;; [3817:blew his nose loudly]
+     ;; [3818:chewed happily on a piece of root]
+     ;; [3819:hummed a popular questing song under his breath]
+
+     ;
+     ;----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ popular questing song under his breath]
+
+     ;
+     ;----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

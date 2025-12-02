@@ -1,0 +1,19 @@
+PUZZLES
+
+In order to capitalise on the full facilities of Level 9's adventure 
+system, it is necessary to take care when designing multi-player 
+puzzles. Puzzles which can be solved sequentially (e.g a NPC goes and 
+does something while the player has no involvement in the task), are 
+undesirable as they can be emulated on simpler adventure systems. 
+
+It is important to ensure that multi-player puzzles are genuine; i.e 
+that several characters are actively involved, at the same time. 
+
+Categories are:
+
+1) Too much for one person to do (e.g boat: one rows, one bails).
+
+2) Co-ordination (e.g catapult up acrobat to grab high object).
+
+3) Two places at once (e.g sound alarm to decoy guard from vault). 
+

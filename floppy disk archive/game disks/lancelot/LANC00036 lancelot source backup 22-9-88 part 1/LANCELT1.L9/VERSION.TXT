@@ -1,0 +1,12 @@
+;************************************************************
+
+
+;; Versioning Notes.
+;
+; You MUST change the code in Aspecial.txt for part 1
+; before recompiling. Search for 2620 and change :
+;
+; IF X1>2 ...
+; to IF X1>9
+;
+; for use on the ST.

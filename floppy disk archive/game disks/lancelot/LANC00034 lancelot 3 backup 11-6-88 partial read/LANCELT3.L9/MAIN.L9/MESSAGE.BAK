@@ -1,0 +1,1871 @@
+; Lancelot 3 source, copyright (C) 1988 Level 9 Computing.
+;
+; MESSAGE.TXT, messages/keywords for the game.
+;
+; ST Version
+;
+; Messages are of the form: [ number : text ] ; comment
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course.
+;
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard).
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first.
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+;
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+;
+; punctuation messages..
+[1: ]
+[2::]
+[3:, ]
+[4:.] ; dot with no space
+[5:%]
+[6:and ] 
+[7:.%]
+[8:?%]
+[9:. ]
+;
+; positions etc..
+[10:exits led ]
+[11:an exit led ] 
+[12: through a door]
+[13: through an open door]
+[14: and ] 
+[15:That's enough "What now" prompts. ]
+[16:%> ]
+[17:%What now? ]
+[18:: ];
+[19:"]
+;
+; Messages for printing objects..
+[20:a ]
+[21:the ]
+[22:an ]
+[23:some ]
+[24:." ] ; dot quote
+[25:% %] ; blank line
+[26:worn] ; for 'couldn't have worn'
+[27:taken] ; for 'couldn't have taken'
+;
+; exits directions, doubling as movement verbs..
+[51:^V north|^V north ^V n ^V northwards]
+[52:^V northeast|^V northeast ^V ne]
+[53:^V east|^V e ^V eastwards]
+[54:^V south|^V s ^V southwards]
+[55:^V southeast|^V se]
+[56:^V southwest|^V sw]
+[57:^V west|^V w ^V westwards]
+[58:^V northwest|^V northwest ^V nw]
+[59:^V upwards|^V u ^V up]
+[60:^V downwards|^V d ^V down]
+[61:^V inside|^V in ^V inwards ^V into ^V enter]
+[62:^V outside|^V out ^V leave]
+[63:^V cross|^V across ^V over]
+[64:with the ^V climb|^V scramble ^V ascend ^V mount]
+; is in 'you struggle with the climb and are in'
+;
+; Intransitive verbs..
+[70:^V i]
+[71:^V again|^V a]
+[72:^V look|^V l ^V display ^V redisplay ^V refresh]
+[73:^V inventory|^V inv ^V possessions ^V possess ^V list]
+[74:^V quit ^V restart]
+[75:^V restore ^V load]
+[76:^V save]
+[77:^V ramsave ^V ram]
+[78:^V ramload]
+[79:^V score ^V rating ^V status]
+[80:^V verbose]
+[81:^V brief]
+[82:^V wait|^V wa ^V pause ^V z]
+[83:^V ring|^V play ^V blow ^V toot ^V sound]
+[84:^V on]
+[85:^V off|^V jump] ;>>special to gnome3 - 'jump' added
+[86:^V pictures ^V graphics]
+[87:^V words ^V text]
+;
+[89:^V undo ^V oops ^V whoops]
+[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash]
+;
+[92:^V searched|^V search ^V explore]
+[93:^V dig]
+[94:^V sniffed|^V sniff ^V smell]
+[95:^V knocked|^V knock]
+[96:got|^V stood ^V stand] ; output e.g. 'L got out', 'L got in' etc.
+[97:^V lay|^V lie]
+[98:^V sat|^V sit]
+;
+[100:^V said|^V say ^V whisper ^V call]
+[101:^V teleported|^V teleport]
+[102:^V getme]
+;
+[103:^V filled|^V fill] ; >>Lancelot
+[104:^V ran|^V run ^V gallop]
+[105:^V made|^V make] ;>>Lancelot3
+[106:^V prayed|^V pray] ;>>Lancelot3
+[107:yeuch|^V eat ^V bite ^V taste ^V nibble ^V lick]
+;; [105:^V poured|^v pour ^V empty] ;>>gnome2
+;; [106:^V watered|^V water] ;>>gnome2
+[108:^V went|^V go ^V goto ^V find ^V walk ^V gallop]
+[109:stopped|^V stop ^V abort]
+[110:^V drank|^V drink]
+[112:^V exits ^V exit]
+;
+; verbs for output..
+[130:^V had|^V have ] ; mainly for output
+[131:^V had|^V has ] ; mainly for output
+[132:^V was|^V am ] ; mainly for output
+[133:^V were|^V are ] ; mainly for output 'you were'
+[134:^V was|^V is ] ; mainly for output 'someone was'
+[135:are] ; output only - present tense for 'tell me about'
+[136:is]  ; output only - present tense for 'tell me about'
+;
+;; [137 is 'GO IN']
+;; [138 is 'GO OUT']
+;; 139 is 'wait for person'
+;; 140 is 'wait until time'
+;; 141 is 'wait for (length of time)'
+;; 142 is 'wait for single turn'
+[143:^V fought|^V fight ^V kill]
+;
+[145:^V dodged|^V dodge]
+; 146 and 147 have text for debugging output only - do not mark
+[146:gdgo]  ; 196 - gdgo
+[147:gdrun] ; 197 - gdrun
+[148:^V stuff]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+;
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick
+^V pluck ^V catch ^V lift ^V pull ^V grab]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+; 
+[168:^V pushed|^V tug ^V push ^V launch ^V shovel 
+^V paddle] ; >>gnome3 - launch
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ^V untie]
+;
+[176:^V inserted|^V insert]
+;
+;; [182:^V collect] ; goal-directed
+;
+; 186, 187 and 189 have text for debugging only
+[186:return object] ; 186 is 'return object to initial' (for npcs)
+;; [188:^V find] ; set up find.
+[189:gdfind] ; 239 is gdfind
+;
+[190:^V closed|^V close ^V shut]
+;; 
+[192:^V told|^V tell]
+[194:struggled] ; mainly for output
+; 195 is 'steal all from'
+;
+[197:killed] ; output only
+;
+[210:reached] ; output only
+[211:dragged] ; output only
+[212:passed] ; output only
+[213:flew] ; output only
+[214:walked] ; output only
+[215:caught] ; output only
+[216:entered] ; output only, e.g 'Fred enters from the east'. Do not mark 
+; 
+;; Echo verbs (250-299) which just print the message containing them. 
+;; Intansitive echo verbs up to 284. Please fill in the gaps if you 
+;; can think of additional appropriate words... 
+; 
+[250:if you say so|^V no]
+[251:if you say so|^V yes]
+[252:Lancelot looked scornful and refused|^V leap ^V hop ^V skip 
+^V dance ^V celebrate]
+[253:As that word was released upon the wind, time stood still, 
+the world was plunged into blackness and all sound ceased. Then, 
+from afar, Lancelot heard Merlin say, "Stop mucking about!" and 
+everything went back to normal|^V plugh ^V xyzzy ^V sesame  
+^V humakaat ^V satarh ^V ollabin ^V obis] ; amusing magic responses
+[254:the ^V weather was always fine in Camelot]
+[255:if you want to talk to someone, follow their name with what you 
+want to say to them. For example ARTHUR, HELLO|^V hello ^V welcome 
+^V hi ^V greetings ^V day ^V afternoon]
+[256:Lancelot heard nothing that he didn't already know about|
+^V listen ^V hear]
+[257:please send the coupon to Level 9 Computing, PO Box 39, 
+Weston-super-Mare, for a comprehensive ^N cluesheet|^V hint ^V help]
+[258:Lancelot ^V knelt down and closed his eyes|^V kneel]
+;; [259:]
+[260:the only ^V escape is to finish the game]
+;; [261:]
+[262:Lancelot would have to find that out for himself|^V what]
+[263:Why not|^V y ^V why]
+[264:funny you should ask that, I was just wondering ^V where it 
+was myself]
+[265:I'm afraid even I don't know ^V how things work around here]
+[266:sorry, I can't help with such matters|^V whether ^V who]
+[267:that kind of language does not impress me one little bit|^V sod 
+^V motherfucker ^V crap ^V nipples ^V cock ^V nerd ^V bloody 
+^V frigging ^V wanker ^V turd ^V piss ^V shit ^V twat ^V cunt 
+^V prick ^V bollocks ^V jesus ^V christ ^V dick ^V god ^V devil 
+^V tits ^V asshole ^V arsehole ^V cretin ^V conservatives ^V spastic 
+^V coon ^V wog ^V fucking ^V fucker ^V fuck ^V bastard ^V bugger 
+^V damn ^V fart ^V sex ^V hell ^V bonk ^V rainbird ^V pratt ^V rape 
+^V shag] ; lower case swear words 
+;; [268:]
+;; [269:]
+[270:so what is there to ^V shout about? I don't know|^V yell]
+;; [271:]
+;; [272:]
+[273:what? Going so soon? Try CONTROL C, but don't forget to save 
+your position first|^V goodbye ^V bye]
+[274:you're forgiven|^V sorry]
+[275:Lancelot screamed impressively, but without effect|^V scream]
+;; [276:]
+;; [277:]
+;; [278:]
+[279:Lancelot closed his eyes and tried to ^V sleep, but couldn't]
+[280:just in time, Lancelot remembered he was wearing armour|^V swim]
+[281:what do you mean, ^V think? Thinking's your department, not mine]
+[282:Lancelot was no musician] ; (response to "play"; not echo verb). 
+[283:hit] ; thing 'hit' target (response to "throw"; not echo verb). 
+;
+;; Echo verbs (250-299) which just print the message containing them. 
+;; Transitive echo verbs follow. Please fill in the gaps if you can 
+;; think of additional appropriate words... 
+; 
+[284:just tell me which way you want to go, and I'll handle getting
+into and out of the boat|^V board]
+;; [285:] 
+[286:Lancelot's armour rattled with the effort|^V shake]
+;; [287:]
+[288:you are here to use objects, not to ^V bury them]
+;; [289:]
+[290:Lancelot polished it until it gleamed|^V rub ^V clean ^V polish]
+[291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+[292:please ^V empty a container by removing its contents in turn]
+;; [293:]
+[294:Lancelot had no way to ^V light anything]
+[295:Lancelot had no need to do that|^V extinguish]
+;[296:]
+[297:XXX. If you don't mind, I'll just pay lip service to that 
+command|^V kiss]
+[298:there are no magic wands to ^V wave around here]
+[299:nothing happened. Lancelot tried again, and nothing happened 
+again|^V press ^V select ^V depress ^V poke ^V prod ^V touch]
+; 
+;
+; Objects (300+N)..
+[301:^N Lancelot|^N player ^N me] ; Lancelot must start with upper case.
+[302:^A black ^N knight] ; black knight.
+[303:^N Nacien] ; Nacien the hermit.
+;
+; names to tell the woodland knight.
+[304:him|^N Tristram ^N Bors ^N de ^N Ganis ^N Gawain
+^N Red ^N Meliot ^N Lamorak ^N Ector ^N de ^N Maris
+^N Agravain ^N Aliduke ^N Brandiles ^N Brian ^N Geheris  ^N Gareth
+^N Lionel ^N Marhaus ^N Arthur] ; not real people in this part.
+;
+;; [304:^N Ector] ; Ector.
+[305:^N Bors] ; Bors.
+[306:^N Percival] ; Percival.
+[307:^N knight] ; who wants to know L's name.
+[308:^N Galahad] ; Galahad.
+[309:^A evil ^N knights] ; evil knights, who are burning Galahad.
+;
+[310:^N priest]
+[311:^N pilgrim] ; pilgrim.
+;; [312:^N maid] ; maid.
+[313:^N damosel] ; tempting damosel.
+[314:^N cleric] ; cleric.
+[315:^N priests] ; priests.
+;
+[325:^N lions] ; fierce lions outside Grail Castle.
+[326:^A red ^N dragon] ; red dragon.
+[327:^A foul ^N fiend] ; fiend from tomb.
+[328:^A black ^N dragon] ; black dragon.
+[329:^N elemental] ; elementals near Grail. 
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[380:^N crown] ; tempting crown.
+[381:^A silver ^N plate] ; fiendly damosel's plate.
+[382:one ^N cake|^N cakes] ; remaining cake. 
+[383:two ^N cakes|^N cake] ; two cakes.
+[384:three ^N cakes|^N cake] ; full set of tempting cakes.
+[385:^N body] ; body of unchristian man.
+[386:^N chalice] ; Nacien's chalice.
+[387:^N shield] ; shield for Galahad. 
+[388:^N horn] ; magic horn, blown for wind.
+[389:^N sword] ; sword for Galahad.
+[390:^N key] ; key.
+[391:^N cup] ; cup.
+;
+; 
+; full containers...
+;; [400:chalice of ^N water] ; chalice.
+[401:chalice of ^N water] ; chalice.
+[402:chalice of ^N mead] ; chalice.
+[403:chalice of ^N sand] ; chalice.
+;
+;; [405:cup of ^N water] ; cup.
+[406:cup of ^N water] ; cup.
+[407:cup of ^N mead] ; cup.
+[408:cup of ^N sand] ; cup.
+;
+; some static objects (130 onwards)..
+[430:^N altar] ; altar.
+;
+[432:^N boat] ; magic boat, hung in white samite. 
+[433:^A thorn ^N thicket] ; thorn thicket.
+[434:the ^N Holy ^N Grail] ; Holy Grail.
+[435:^N pavilion] ; false pavilion.
+[436:^N bed] ; tempting damosel's bed. 
+[437:^N fire] ; fire on island.
+[438:^N sand ^N dune] ; dune beyond fire.
+[439:^N well|^N water] ; magic well.  
+[440:^N cross] ; at fork in path near start
+[441:^N cross] ; in wasteland (near white abbey)
+;
+;----------------
+; ADD IRRELEVANT INVISIBLE OBJECTS 139..149 here...
+
+;---------------
+;
+; some invisible objects (150 onwards)..
+[450:^N tomb] ; tomb of fiend.
+[451:^N stake|^N bonds] ; Galahad is tied to this.
+[452:^N river|^N water] ; river.
+;
+;----------------
+; ADD IRRELEVANT INVISIBLE OBJECTS 160..179 here...
+;---------------
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+[480:^N bleak ^N shore] ; bleak shore.
+[481:^N Isle of ^N Turnance] ; Isle of Turnance.
+[482:^N sand ^N dune] ; sand isle.
+[483:^N gate] ; gate.
+; 
+; These are used for seeing from a distance and for input, e.g for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc.
+;---
+[530:^N rainbird] ; for 'cheat' mode. 
+[531:^N breadcrumbs|^N sausagemeat] ; for 'cheat' mode. 
+
+; Collective nouns...
+[534:^N everything ^N all ^N every]
+[535:^N ingredients] ; collective noun - was 'treasure'
+;; [536:^N weapons] ; collective noun
+[537:^N people|^N everyone ^N everybody] ; collective noun
+;; [538:^N clothes|^N armour]
+;
+; Omni-present objects.. 
+[539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It 
+; is apparently never described by PRINTOBJECT (so?).
+[541:^N water|^N river]
+[542:^N be]
+[543:^N room|^N ground ^N floor] ; used for output as well
+[544:^N wall|^N walls]
+[545:^N sky|^N sun ^N moon]
+; 
+; and finally, some miscellaneous nouns..
+[546:^N love] ; >>special to L3
+[547:^N except ^N but]
+[548:^N it|^N that ^N them ^N those ^N none ^N him ^N her]
+[549:^N minute ^N minutes]
+
+[550:^N sign ^N cross] ;for 'MAKE SIGN OF CROSS' >>special to Lancelot3
+[551:^J then ^J next]
+[552:^J therefore ^J so]
+[553:^N Lancelot|^N you] ;you
+[554:^N horse|^N armour ^N weapons ^N sword ^N helmet ^N feet ^N nose]
+; >>special to Lancelot
+;
+; Pronouns...
+[560:it] ; ita
+[561:it] ; itan
+[562:some]
+[563:he]
+[564:she]
+[565:they]
+[566:Lancelot] ; you
+[567:he] ; proper male
+[568:she] ; proper female
+;
+[570:it] ; ita
+[571:it] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:Lancelot] ; you]
+[577:him] ; proper male
+[578:her] ; proper female
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s]
+[581:es]
+[582:is] ; used in examine
+;
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direction of the moving npc.
+;
+[585:from the south]      ; north
+[586:from the southwest]  ; northeast
+[587:from the west]       ; east
+[588:from the north]      ; south
+[589:from the northwest]  ; southeast
+[590:from the northeast]  ; southwest
+[591:from the east]       ; west
+[592:from the southeast]  ; northwest
+[593:from below]          ; above
+[594:from above]          ; below
+[595:from outside]        ; inside
+[596:from inside]         ; outside
+[597:from across the way] ; across
+[598:by climbing]         ; climb
+[599:with a jump]         ; jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+[601:the second best knight in the world] ; Lancelot. 
+[602:a knight, black as any bear. Six and a half feet tall, and
+as menacing as any knight could be] ; black knight.
+[603:a wise old hermit] ; Nacien the hermit.
+;; [604:a brave knight] ; Ector.
+[605:a brave knight] ; Bors.
+[606:a brave knight] ; Percival.
+[607:a knight with a green and blue shield - the colours
+of the forest] ; knight who wants to know L's name.
+[608:the best knight in world, and Lancelot's son] ; Galahad.
+[609:about 50 evil knights] ; Knights who kidnap Galahad.
+[610:an aging holy man] ; false priest.
+[611:a pitiful sight - prostrate on the ground and obviously too
+weak to move. Every so often, he murmured, "Water, water"] ; pilgrim. 
+;
+[613:a gorgeous young women, dressed in fine garments, and possessed
+of great poise and charm] ; tempting damosel. 
+[614:a penniless cleric] ; cleric.
+[615:a group of holy men] ; priests. 
+
+[625:some ferocious lions snapping at Lancelot's heels] ; lions.
+[626:a huge black dragon] ; black dragon.
+[627:a powerful, evil fiend] ; fiend from tomb.
+[628:a black dragon] ; black dragon.
+[629:an elemental] ; can probably never examine this.
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[680:a bejewelled crown] ; tempting crown.
+[681:a large silver plate] ; damosel's plate.
+[682:a single, tempting cake] ; remaining cake.
+[683:two delicious-looking cakes] ; two cakes.
+[684:three freshly baked cakes, iced carefully with fine icing,
+and decorated with exotic patterns] ; all three cakes.
+[685:the body of a false christian] ; body from tomb. 
+[686:a beautiful chalice] ; Nacien's chalice.
+[687:a holy shield, made by Joseph of Arimithea and marked with a red
+cross of blood] ; Galahad's shield.
+[688:a musical horn] ; horn.
+[689:a sword, with an inscription, "Only the best knight in the world
+may wield this"] ; Galahad's sword.
+[690:a large key] ; key.
+[691:a metal cup] ; cup.
+;
+; full containers...
+[700:a chalice of water] ; chalice of water.
+[701:a chalice of salt water] ; chalice of salt water.
+[702:a chalice of mead] ; chalice of mead.
+[703:a chalice of sand] ; chalice of sand.
+
+[705:a cup of water] ; cup of water.
+[706:a cup of salt water] ; cup of salt water.
+[707:a cup of mead] ; cup of mead.
+[708:a cup of sand] ; cup of sand.
+
+
+; some static objects (130 onwards)..
+[730:a holy altar] ; alter.
+[731:a stony cross bearing the inscription, "This way to peace" 
+(pointingto the northeast), and "This way to death" (pointing to 
+the southeast)] ; cross near start. 
+[732:a mysterious boat. As Lancelot looked at it, he saw the holy
+power vested in it, and realized that he was unworthy to guide it. There
+were three ^N spindles set into it] ; magic barge.
+[733:a thick thorn thicket, on either side. A vale
+of tears indeed, if one strayed from the true path] ; thicket. 
+[734:the Holy Grail, the most revered item in all of 
+Christendom] ; Holy Grail.
+[735:a gaily coloured pavilion - a large permanent tent, with 
+the flapat the front tied open to give a welcoming 
+appearance] ; tempting pavilion. 
+[736:a soft, king-size feather bed] ; damosel's bed.
+[737:a blazing fire] ; fire around sand island.
+[738:a large sand dune] ; sand beyond fire.
+[739:a large well of holy water. As Lancelot looked at the well, 
+he noticed its waters seemed to sink away from him] ; well.
+[740:a stony cross] ; at fork in path near start.
+[741:a stony cross] ; in wasteland.
+;
+; some invisible objects (150 onwards)..
+[750:a huge tomb, marked with the inscription, "Only the best knight in
+the world may open this tomb and live"] ; tomb. 
+[751:a huge stake set into the ground to which Galahad was 
+tied] ; stake. 
+[752:a wide shallow river running north-south] ; river. 
+;
+; Examine messages for location objects (479+N). See 779+ for examine 
+; messages and 1199+ for their verbose equivalents..
+[780:a bleak shore] ; bleak shore. 
+[781:the isle of Turnance] ; isle of Turnance. 
+[782:a sand dune] ; sand dune. 
+[783:a gate] ; gate. 
+;
+; Short-Form room Descriptions (1000+N). No full stops at end please.
+; These are the brief mode descriptions; they are prefixed by 'you 
+; are' and, in verbose mode, messages 1300+N are appended.
+;
+; room 1 is used as exit modifier for synthesised rooms.
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid.
+;
+; description order is:
+; 'Lancelot was' '1200++'      '1000++'   '1300++'  '.'
+;              locn obj        short      long
+;
+;
+[1003:in a bleak ^N wasteland]
+[1004:at a ^N ford]
+[1005:in a ^N clearing]
+;; [1006:in a ^N pavilion]
+[1007:in a shady ^n woodland]
+[1008:on a ^N thorny ^N track]
+[1009:at a ^N fork]
+[1010:on a track ending at Vagon castle]
+;; [1011:in ^N Vagon ^N Castle]
+[1012:on a ^N paved road]
+[1013:beside a fine ^N church to the north]
+;; [1014:inside the ^N church]
+[1015:on a ^N path up the cliff]
+[1016:on a ^N hillock]
+[1017:on a ^N path]
+[1018:on a ^N path]
+[1019:at a ^N clearing]
+[1020:on a ^N path]
+[1021:on a ^N path]
+[1022:in a ^N clearing]
+[1023:on a ^N pavement]
+;; [1024:in an ^N antechapel]
+[1025:in a ^N dark ^N valley]
+;; [1026:in a ^N castle]
+;; [1027:in a ^N majestic ^N corridor]
+;; [1028:in the ^N Grail ^N chamber]
+[1029:on a ^N path]
+[1030:on a ^N path]
+[1031:on a ^N path]
+[1032:on a ^N path outside a ^N hermitage]
+[1033:in Nacien's ^N hermitage]
+[1034:in the ^N wasteland beside a ^N cross]
+[1035:on a ^A stony ^N road]
+[1036:on a ^N forest ^N ride]
+[1037:beside a ^N well]
+[1038:in the ^N white ^N abbey beside a large tomb] ; don't mark tomb
+[1039:at the ^N base of a ^N cliff]
+[1040:in a ^N glade]
+[1041:in a ^N glade]
+[1042:on a ^N sand ^N dune]
+
+[1050:in ^N Vagon ^N castle]
+[1051:in a ^N pavilion]
+[1052:inside the ^N church]
+[1053:in a ^N castle]
+[1054:in a ^N majestic ^N corridor]
+[1055:in the ^N Grail ^N chamber]
+[1056:in an ^N antechapel]
+;
+[1113:on the shore]
+[1114:on the sea]
+[1115:on the isle of Turnance]
+[1116:on the sea]
+[1117:on the sea]
+[1118:on the shore]
+[1119:on the sea]
+[1120:on the sea]
+[1121:on the sea]
+[1122:on the sea]
+[1123:on a bleak shore]
+[1124:on the sea]
+[1125:on the sea]
+[1126:on the sea]
+[1127:on a dark shore]
+[1128:on a shore]
+[1129:on the sea]
+[1130:on the shore at sand isle]
+[1131:on the sea]
+[1132:on the sea]
+;
+;
+;; [1159:, south of a high cliff]
+;; [1160:, south of a vertical cliff]
+;; [1161:, at the extreme northeast corner of the valley]
+;
+; verbose messages for location objects..
+;
+; 1199+N (see 779+ for examine messages and 479+ for brief descs)
+
+
+; Now verbose additions to brief location descriptions (1300+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (1000+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.)
+; Please add lots of text in this section; adding omitted messages 
+; as appropriate...
+;
+;; [1003:in a bleak ^N wasteland]
+[1303:leading into the distance to the west]
+
+;; [1004:at a ^N ford]
+[1304:across a deep river running north-south]
+
+;; [1005:in a ^N clearing]
+[1305:in the middle of a dense forest]
+
+;; [1007:in a shady ^n woodland]
+[1307:on a north-south path]
+
+;; [1008:on a ^N thorny ^N track]
+[1308:leading into a wood to the south]
+
+;; [1009:at a ^N fork]
+[1309:in the track]
+
+;; [1010:on a track ending at Vagon castle]
+;
+;; [1012:on a ^N paved road]
+;; [1013:beside a fine ^N church to the north]
+;
+;; [1015:on a ^N path up the cliff]
+;; [1016:on a ^N hillock]
+;; [1017:on a ^N path]
+;; [1018:on a ^N path]
+;; [1019:at a ^N clearing]
+;; [1020:on a ^N path]
+;; [1021:on a ^N path]
+;; [1022:in a ^N clearing]
+;; [1023:on a ^N pavement]
+;
+;; [1025:in a ^N dark ^N valley]
+;;
+;; [1029:on a ^N path]
+;; [1030:on a ^N path]
+;; [1031:on a ^N path]
+;; [1032:on a ^N path outside a ^N hermitage]
+;; [1033:in Nacien's ^N hermitage]
+;; [1034:in the ^N wasteland beside a ^N cross]
+;; [1035:on a ^A stony ^N road]
+;; [1036:on a ^N forest ^N ride]
+;; [1037:beside a ^N well]
+;; [1038:in the ^N white ^N abbey]
+[1338:beside a huge tomb]
+;; [1039:at the ^N base of a ^N cliff]
+;; [1040:in a ^N glade]
+;; [1041:in a ^N glade]
+;; [1042:on a ^N sand ^N dune]
+;
+;; [1050:in ^N Vagon ^N castle]
+[1350:which was simply furnished with bare stone floor and walls]
+;; [1051:in a ^N pavilion]
+[1351:in the gloomy shade of the tent, the only light coming from
+the glow of sunlight through the fabric]
+;; [1052:inside the ^N church]
+[1352:. The cool air was still and quiet in this holy place]
+;; [1053:in a ^N castle]
+;; [1054:in a ^N majestic ^N corridor]
+;; [1055:in the ^N Grail ^N chamber]
+;; [1056:in an ^N antechapel]
+;
+;
+; 1500+n are messages printed on first entering each room. We need 
+; lots of text in messages in this category. Please add extra 
+; messages as necessary to tell the story...
+;
+[1504:a black knight rode out to greet Lancelot and said, "No worldly
+knight shall pass me". ]
+
+[1505:the damosel invited Lancelot to enter the pavilion. Lancelot
+thought that she looked entrancing. ] 
+
+[1507:the knight said, "Hold fast traveller, I will let anyone
+pass but Sir Lancelot. What is your name, please?" ]
+
+[1513:the priest said, "Sir Lancelot, prince amongst Knights, I greet
+you. If you will steal for me a jewelled crown, as a token of service, 
+I will transport you to the place where the Holy Grail lies". ]
+
+[1516:a fisherman appeared and said, "Two dragons are terrorizing
+my people - they live in clearings at the northern and southern ends
+of this path". Then he ran off. ]
+
+[1529:Nacien the Hermit appeared and said to Lancelot, "Turn back, 
+Lancelot. Else I must obey my master and cast my innocent disciples 
+and myself from the cliffs above." Then he vanished. ]
+
+[1530:Nacien appeared again and pleaded, "Oh, foolish one. Why dost 
+thou condemn us to death?" Then he ran up the path. ]
+
+[1531:Nacien said, "Turn back, turn back, before it is too late". 
+Then he ran towards the hermitage. ]
+
+[1532:Lancelot saw another vision of Nacien, trying to plead 
+with him.  ]
+
+[1533:Nacien was waiting for Lancelot inside the hermitage. He
+explained that Lancelot had previously seen a fiend in his image, 
+trying to turn Lancelot aside from the true path. Nacien thanked 
+Lancelot for his faithfulness, and offered a chalice to him. ]
+
+;; [1534:Lancelot slept by the cross and had a dream. A sick knight was
+;; cured by the Holy Grail and was told to "withdraw from this holy
+;; place". ]
+
+[1536:Lancelot arrived just in time to see a dwarf drag a maid out of
+sight to the south, and a group of knights drag the bound and tied 
+body of Sir Ector away to the north. Lancelot had to decide who  
+should he rescue first: his brother, or the innocent maiden. ]
+
+[1540:in the glade, Lancelot found Sir Ector being attacked by a group
+of evil knights. They saw him arriving, and fled without a fight. Lancelot
+freed Sir Ector, who thanked him and rode away. ]
+
+[1541:in the glade, Lancelot easily scared off the dwarf, to the effusive
+thanks of the maid. ]
+
+[1551:the damosel held out a plate of 3 dainty cakes to Lancelot,
+"Please eat your fill". ]
+
+[1553:the lions jumped up as if to block the way to the east. ]
+
+[1555:triumphal music sounded and the quest was completed. ]
+
+[1556:Bors and Percival bowed low to Lancelot. ]
+;
+;
+;
+; Message pairs for use in describing containment positions
+; also used for preposition table
+;
+; part printed before container
+;
+[1600:Lancelot could see]      ; 0 - you can see (user's name not printed
+; by PRINTOBJECT)
+[1601:^P on |^P onto] ; 1 - on
+[1602:^P underneath|^P below ^P under] ; 2 - under
+[1603:^P behind]      ; 3 - behind
+[1604:]               ; 4 - carrying
+[1605:]               ; 5 - wearing
+[1606:in|^P at]       ; 6 - blocking the hole
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8
+[1609:growing from ]  ; 9 - part of
+[1610:^P between]     ; tied between is tied a rope
+;; [1611:]            ;11 - for ring of knucklebone
+[1612:lying on]       ;12
+[1613:sitting on]     ;13
+[1614:fastened to]    ;14
+;; [1615:tied to]; 15 tied to (the chest) and holding the lid open is..
+[1616:^P with|^P using]
+[1617:^P from]
+;
+; part printed between container and contained.
+;
+[1640:]                ; 0 
+[1641:was]             ; 1 - on
+[1642:was]             ; 2 - under
+[1643:was]             ; 3 - behind
+[1644:was carrying]    ; 4
+[1645:was wearing]     ; 5
+[1646:was blocked by]  ; 6 - is blocked by
+[1647:was]             ; 7 - in
+[1648:was]             ; 8
+[1649:was]             ; 9 - part of is
+[1650:was tied]        ;10 -
+[1651:]                ;11 - from
+[1652:]                ;12
+[1653:]                ;13
+[1654:was]             ;14 - fastened to
+;; [1655:and holding the lid open was] ;15 tied to the (chest) is a (strap)
+;
+;---
+; for plural contents...
+[1670:]                ; 0 
+[1671:were]            ; 1 - on
+[1672:were]            ; 2 - under
+[1673:were]            ; 3 - behind
+[1674:was carrying]    ; 4
+[1675:was wearing]     ; 5
+[1676:was blocked by]  ; 6 - is blocked by
+[1677:were]            ; 7 - in
+[1678:were]            ; 8
+[1679:were]            ; 9 - part of is
+[1680:was tied]        ;10 -
+[1681:]                ;11 - from
+[1682:]                ;12
+[1683:]                ;13
+[1684:was]             ;14 - fastened to
+;; [1685:and holding the lid open was] ;15 tied to the (chest) is a (strap)
+;---
+;
+; 1700: is base for prepositions to use with 'you'
+;
+; 1700+N is part printed before 'you'
+[1715:tied to]
+;
+; 1740+N is part printed between you and object(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]          ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was] ; tied to you is 15
+;
+; for plural prepositions...
+; 1770+N is part printed between you and object(s)
+[1771:were on]         ; 1 - on
+; 1772 is 2
+; 1773 is 3
+[1774:owned]           ; 4 - own
+[1775:were wearing]    ; 5
+[1776:were riding]     ; 6
+[1777:were in]         ; 7
+[1782:were lying on]   ; 12
+[1783:were sitting on] ; 13
+[1784:were fastened to];14
+[1785:were] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parser messages..
+[2000:you don't need to use "] 
+[2001:" to finish the game]
+;
+[2003:I don't understand the word "]
+[2004:" when used like that]
+;
+[2006:Lancelot was ]
+[2007:in a ] 
+[2008:in an ]
+[2009:exits led in all directions]
+;
+; general error message when parsing has broken down.
+[2010:I don't understand what you mean]
+[2011:Lancelot couldn't see]
+[2012:Lancelot didn't have]
+[2013:Lancelot already had]
+[2014:(Perhaps I'm just being particularly thick today, but I really 
+haven't a clue as to what you are blathering on about)]
+[2015:it's too far away] ; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence]
+[2017:it's not there]
+[2018:there were too many nouns in that sentence.]
+[2019:Lancelot couldn't see that here]
+[2020:Lancelot owned nothing at all. ]
+[2021:it was dark, Lancelot could not see]
+;
+[2036:sorry, I don't fully understand that verb.]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there didn't seem to be anything suitable. ]
+[2038:said, "That was a rhetorical question"]
+[2039:what a mouthful! ]
+;
+[2044:couldn't have ] ; as in 'Lancelot couldn't have knocked that'
+;; [2045:that]
+[2046:that]
+[2047:here]
+[2048:Lancelot couldn't find ]
+;
+[2053:it's not clear to what ]
+[2054: is referring] 
+;
+;; [2055:(removing] ; E.g '(Removing the bat from the cage first).'
+;; [2056:from the]  ; to avoid containers inside themselves.
+;; [2057:first).]
+;
+; error messages for NPC's
+[2060:are you talking to yourself again?]
+[2061:Lancelot couldn't talk to several people at once]
+;
+;; [2065:for] ; as in 'looks for the cask'
+;; [2066:but can't find]
+;
+;; ; message pair when a npc tries to take stuff from others...
+;; [2074:won't let]
+;; [2075:take it]
+;
+; Standard Adventure output messages
+;
+[2100:Welcome to part 3 of Lancelot, copyright (C) 1988 Level 9 
+Computing. ]
+;; [2101:Lancelot couldn't see]
+;; [2102:Lancelot didn't have]
+;; [2103:Lancelot already had]
+;; [2104:Lancelot couldn't see that here]
+;; [2105:in the distance is ] ; for scenery seen from afar
+;; [2106:Lancelot owned nothing at all. ]
+;; [2108:it was dark, Lancelot could not see]
+;
+; examining something greater than maxobject: (but not scenery)
+; rare occurrence - mostly for omnipresent objects, numbers, spells
+[2112:it looked exactly as Lancelot had expected. ]
+;; [2113: nothing]
+[2114:Lancelot couldn't go that way]
+[2115:through the door]
+;; [2116:Lancelot banged his nose, knees and knuckles on the door. Perhaps he 
+;; should have opened it first? ]
+[2117:it's already open]
+;; [2118:it's already closed]
+;; [2119:Lancelot found]
+;
+[2123:Lancelot couldn't put ] ; paired with 2124
+[2124:there]
+;
+;; [2125:Lancelot couldn't go there! ]
+[2126:Lancelot would have to drop it first]
+;
+;; [2127:Lancelot couldn't climb that]
+[2128:%Did you know that you can go quickly to a far off place? E.g 
+"RUN TO BOAT" or "GOTO CHAPEL."%]
+;
+; 2130 is used when player refers to scenery which is not nearby
+[2130:I can't find a reference to "]
+[2131:Lancelot was on it! ]
+[2132:what? ]
+[2133:where? ]
+[2134:Lancelot was wearing ]
+[2135:Please try again, saying what with? ]
+[2136:which one?]
+[2137:at what?]
+[2139:was full]
+[2140:" here]
+[2141:nobody wants it]
+[2142:Lancelot couldn't wear ]
+;; [2143:Lancelot couldn't reach it from here]
+;
+[2147:Lancelot was already wearing that]
+[2148:Lancelot found he didn't need to do that]
+;
+; Confirmation messages
+;
+[2152:worn]
+[2153:OK]
+[2155:time passed. ]
+[2156:said]
+[2158:Lancelot found he would have to untie it first]
+;
+[2160:YES or NO please.%]
+;
+;; [2177;Lancelot heard strange noises]
+;; [2178:Lancelot heard a strange noise]
+;; [2179:Lancelot heard some strange noises coming from nearby]
+;; [2180:Lancelot heard an odd noise and, though he listened carefully, he 
+;; could not identify it]
+;; [2181:Lancelot heard a strange noise]
+;
+;; [2190:(]
+;; [2191:)]
+;
+; Death, scoring, game control etc.
+;
+[2200:really restart? ]
+;; [2201:%press space to play again]
+[2202:really restore? ]
+;; [2203:%please answer YES or NO]
+[2203:% %did Lancelot continue? ]
+[2204:said, "Thank you"]
+;
+[2209:% %the adventure is over.
+%Please type RESTART, OOPS, RESTORE or RAM RESTORE: ]
+;; [2210:the room was badly damaged] ; attack/fireball room
+;; [2211:Lancelot looked around and decided it wasn't worth the effort. he had 
+;; made a good job of devastating the place last time]
+;; [2212:really! You're so destructive! Why don't you go and punch 
+;; a paper bag instead? ]
+;; [2213:it looks as though the Goths have been at work here]
+;; [2214:% %Do you want to continue? ]
+[2215:that's too long to wait] ; won't wait
+[2216:you can wait for someone or a period of time, eg WAIT FOR 
+GALAHAD, WAIT 1 or WAIT FOR 25 MINUTES)]
+;; [2217:the time was ]
+;;
+;; Residual combat messages..
+;; [2230:the body of] ; as in 'the body of a troll'
+;; [2231:, but]
+;
+; Score messages..
+[2240:%Lancelot scored ]
+[2241:% %you seem to have got Lancelot killed.%]
+[2242: out of 1000] 
+;
+[2300:Undo and ram save//restore don't work in this version. ]
+[2301:%please insert save disc and press a key. %]
+[2302:%please insert game disc.%]
+[2308:I can't use UNDO to go back further than this. ]
+[2309:%(This version allows you to use RAM SAVE and RAM RESTORE to 
+save a position in memory, and UNDO to take back bad moves).%]
+[2310:can't return to that saved position in memory. Perhaps you've 
+turned off the computer, or reloaded the game, since it was saved. ]
+;
+[2311:% %Lancelot is about to start another part of the game. Do you 
+want to save his position first, just in case? ] ; tape ***
+[2312:that data was not saved from Lancelot. ]
+[2313:play the game tape to load part ] ; tape ***
+[2314:% %Lancelot is about to start another part of the game. Do you 
+want to go ahead? ]
+;
+[2319:you've started in the middle of the game. Please 
+restore a position saved from this part. ] ; tape ***
+;;
+; misc jokey messages (slightly more complex than echo verbs)..
+[2401:that might end up with Lancelot getting hurt] ; attack me
+[2404:Lancelot could smell nothing of interest]
+[2405:Lancelot found nothing much to write about]
+[2406:Lancelot smelt fairly holy|^V smell]
+; smell player
+[2407:Lancelot said hello]
+[2416:to be, or not to be, that is the question]
+;
+; add your messages for special cases here....
+[2498:could not possibly attack a woman]
+[2499:do you want to continue with the grail quest? ]
+
+[2500:% %Welcome to Lancelot from Level 9 Computing]
+[2501:prayed at the altar] ; vagon castle only
+[2502:Lancelot felt he had forgotten something very important. Did
+he turn back? ] ; leaving V castle without praying
+[2503:Lancelot felt guilt-ridden at having forgotten to pray to God]
+
+[2504:Lancelot knew he had done wrong by stealing the crown]
+[2505:The priest laughed loudly and vanished with the crown]
+
+[2506:made the sign of the cross]
+[2507:vanished in a puff of evil] ; standard for objects disappearing
+; when sign of cross made.
+[2508:the pavilion and the damosel disappeared]
+[2509:the pavilion turned upside down and ] ; followed by 2507
+[2510:said a devout prayer] ; general case.
+; some special cases for knights...
+[2511:rode]
+[2512:, mounting his horse] ; no comma at end
+[2513:dismounted and walked]
+[2514:such things are below your knightly gaze] ; exam horse/armour
+[2515:-] ; minus sign for negative scores
+[2516:was riding a huge war-horse]
+;
+[2520:the damosel wept] ; refuses, or in conjunction with 2521
+[2521:as Lancelot turned away from her]
+[2522:Lancelot ate a cake and felt much stronger]
+[2523:Lancelot felt that all his powers had been restored to him
+and that he now must be the best knight in all the world]
+[2524:the damosel said, "Sir Lancelot, bravest of all knights,
+I have long lusted for you. Come lie with me now". She gestured
+to the bed in the corner]
+[2525:Lancelot made passionate love with the damosel. Then, slowly,
+she began to change into a foul fiend. It screamed
+loudly and vanished, cackling]
+[2526:the damosel said she understood that he must preserve his
+honour]
+[2527:the damosel escorted Lancelot inside]
+[2528:the knight said, "You must give your name"]
+[2529:"Pass friend"] ; If L lies
+[2530:"Then you shall die"] ; If L tells the Knight his name.
+[2531:to the ground, saying, "No worldly knight shall pass"]
+[2532:the knight waved on] ; followed by person name
+;; [2533:a penniless cleric walked past, and was waved on by the knight]
+[2534:the priest stopped Lancelot, "Not until you have given me
+the crown"]
+[2535:the damosel said, "Wait till we're inside"]
+[2536:the damosel said, "You must eat these cakes first"]
+[2537:as Lancelot once made the holy sign, a great voice spoke 
+to him, "Lancelot, why do you continue to take my sign in vain?"
+Lancelot was devastated by such a direct rebuke from God, and departed
+at once to remain in a monastery for the rest of his life]
+;
+; two message groups
+[2540:smote]
+[2541:smote]
+[2542:smote]
+;
+;; [2550:with his sword]
+;; [2551:with his sword]
+;; [2552:with his sword]
+;
+; injury status messages
+[2560:dead]
+[2561:close to death]
+[2562:gravely wounded]
+[2563:seriously hurt]
+[2564:badly hurt]
+[2565:injured]
+[2566:moderately injured]
+[2567:slightly hurt]
+[2568:almost unhurt]
+[2569:unhurt]
+;
+[2570:would have sunk in the water]
+[2571:directed the boat to the]
+[2572:directed the boat] ; followed by 'from the west' etc.
+[2573:was not worthy to direct the boat]
+[2574:the boat would not move without wind]
+[2575:only the best knight in the world could take it] ; the sword
+
+[2580:the tomb was closed]
+[2581:a foul fiend emerged]
+[2582:Galahad advanced towards the fiend. It saw that he was
+protected by too many angels for its power, and it fled]
+[2583:buried the body]
+[2584:was struck down by a bolt of lightning] ; tries to take shield
+[2585:Galahad knelt and prayed, then] ; .. then he took the shield
+
+[2586:the green knight swung his sword, but
+at the last moment, the green knight spared the final blow
+"Sir Lancelot, you have fought bravely, and I shall spare your life".
+You may now pass]
+[2587:the fiend disappeared, vanishin into the body of a false
+christian man in the tomb]
+[2588:said a benediction over the body]
+[2589:Lancelot could not attack one who had shown him such generosity]
+[2590:blew the horn, and a magical wind sprung up]
+[2591:the wall of fire was in the way]
+[2592:helped to dampen the fire]
+[2593:the fire grew a bit]
+[2594:finally quenched the fire]
+[2595:was not watertight]
+[2596:was already full]
+;; [2595:threw water onto the fire]
+;
+[2600:Lancelot heard a warning voice "Galahad, your son, is in danger
+for his life". Lancelot followed the directions given by the voice 
+and rushed to Galahad's aid..] ; no space after 2 dots - gives
+;; three dots in output messages
+
+;; [2601:Galahad had been captured by a group of evil knights, and was about
+;; to be burnt at the stake]
+[2602:Galahad was tied to a stake in the middle of the road]
+[2603:the bonds were too tight]
+[2604:as Lancelot fled, he heard the screams as Galahad was burnt
+alive. He sat and wept that his cowardice had condemned his son
+to such an evil death]
+[2605:suddenly, the skies opened, and bolts of lightning struck down
+many of the foes, and put the rest to flight. The last stroke set
+Galahad free. He dropped to his knees and thanked the lord, then
+offered to help Lancelot attain the grail]
+[2606:Lancelot realized that without Galahad's aid, there was no
+way he could attain the Grail]
+[2607:could not cut the bonds without harming Galahad]
+
+[2608:refused to sully the holy water of the well] ; drink, particulally galahad
+[2609:the pilgrim tried to drink from the well, but was too weak]
+[2610:the water
+dropped down the well away from Lancelot. He realized that
+his sins were repellent to the holy water]
+
+[2611:the pilgrim tried to get up, but failed. Helped by Lancelot, he
+reached into the well, and filled the chalice. He drank deeply, and
+was instantly revived by the healing holy water. He handed the chalice
+back to Lancelot, and walked off to continue his pilgrimage]
+[2612:Lancelot realized that the gentlewoman had been abused by her
+captor, and slain in vengeance]
+[2613:Lancelot realized that he was too late - Sir Ector had been
+slain. Only a pool of blood remained]
+[2614:a young woman screamed in the distance]
+;
+; e.g. "L filled the cup with water"...
+[2620:with water]
+[2621:with salt water]
+[2622:with mead]
+[2623:with sand]
+
+[2624:the water]
+[2625:the salt water]
+[2626:the mead]
+[2627:the sand]
+
+[2628:drank]
+[2629:drained away]
+
+[2640:was not holy enough to pass through the gate]
+[2641:the two dragons saw each other and killed each other in
+the ensuing battle. The people of the isle appeared and thanked
+Lancelot, then gave him a cup of mead]
+[2642:said, "We will gladly help you here, but we
+cannot yet leave the antechapel - for it is not yet time for us to see
+the Grail"]
+[2643:said, "Father, I cannot pass through this door, for that way
+leads to the Grail. I must remain here and pray for forgiveness"]
+
+; result of sand on the elementals...
+[2647:the wind had little effect on the fire spirit]
+[2648:the wind rippled the water spirit a little]
+[2649:the wind blew away the sand spirit]
+
+[2650:a fire spirit appeared]
+[2651:a water spirit appeared]
+[2652:a sand spirit appeared]
+
+; result of water/mead...
+[2653:extinguished the fire spirit]
+[2654:made the spirit very happy]
+[2655:rolled off the sand spirit]
+
+; result of sand...
+[2656:had little effect on the fire spirit]
+[2657:dried up the water spirit]
+[2658:reinforced the sand spirit]
+
+[2659:the spirit put the key back, and disappeared]
+
+[2660:singing voices told Lancelot to have faith in God and to
+proceed to the Grail]
+[2661:Lancelot was not free of sin, so he could not pass through]
+[2662:Lancelot realized that he had no chance of further forgiveness
+from Nacien, so he would never see the Grail]
+
+[2663:Lancelot withdrew from the Grail chamber, and proceeded back
+to Camelot. Galahad, Bors and Percival also attained the Grail
+in their own time]
+
+[2664:the door was locked]
+[2665:a voice chided Lancelot for his lack of faith] ; attack lions
+
+; additions to Lancelot's name...
+[2669:the second best knight in the world]
+[2670:the infidel]
+[2671:the thief]
+[2672:the liar]
+[2673:the uncharitable]
+[2674:the glutton]
+[2675:the fornicator]
+[2676:the cowardly]
+[2677:the dragon-slayer]
+[2678:the spirit-slayer]
+[2679:the sinful]
+;
+[2680:Sir] ; comes first
+;
+; some remarks made by Galahad on various occurances...
+[2690:remember, I am the best knight in the world, not you]
+[2691:use the key, dummy]
+[2692:the elementals got the better of you that time]
+[2693:may the lord forgive you for this terrible sin] ; general
+[2694:father, we are taught that to cross oneself is good.
+But gluttony of any sort is a sin. Do not distress our Father by 
+takinghis his symbol in vain] ; make sign of cross
+[2695:thank the lord for the removal of some more evil from
+the world] ; fiends dispelled
+[2696:father, I will pray with you] ; L prays
+[2697:I would speak with you". Then he moved close to Lancelot and
+said, "What of honour? What of your vows of truth? You have betrayed
+all that is good and knightly. For this sin you must beg forgiveness
+from Nacien]
+[2698:father, you must not entertain such thoughts] ; various
+; unsuccessful attempted sins
+[2699:father, I will pray to God for a favourable wind. God will
+provide]
+[2700:my prayers have been answered. Praise be to God]
+[2701:fear not, father, God our father will protect us]
+[2702:thank you Sire, I owe you my father's life]
+[2703:father, not even I am pure enough to reach into this well. Only
+one who has endured many hardships on a long pilgrimage could
+drink from here] ; subtle enough hint, what?
+[2704:father, I cannot explain your dream. Only Nacien, a wise and
+good hermit can help you]
+
+; Nacien's comments...
+[2750:Nacien looked at Lancelot and spoke: "My son, you have sinned]
+[2751:sin before that]
+[2752:previous sin]
+[2753:latest sin]
+[2754:was]
+[2755:Lancelot heard a might voice, saying "Lancelot, why do you 
+repeatedly takemy name in vain?" Lancelot was full ashamed that he 
+had been so unworthy, and quit the quest to become a hermit]
+[2756:my son, this is a grave sin, but I can forgive you"]
+[2757:my son, these sins are too grave for me to forgive. You must
+join a monastery and pray to God for forgiveness"]
+[2758:Nacien blessed Lancelot and said, "My son, you are without sin"]
+[2759:your]
+
+; table of sins....
+[2760:pride]
+[2761:wrath]
+[2762:envy]
+[2763:lust]
+[2764:gluttony by eating all of the damosel's cakes] ; s5
+[2765:avarice]
+[2766:sloth]
+[2767:not trusting in God when misled by the fiend pretending
+to be me] ; faith
+[2768:hope] ; hope
+[2769:not having sufficient charity to accept the damosel's kind
+hospitality] ; v3
+[2770:injustice]
+[2771:a lack of fortitude]
+[2772:a lack of prudence]
+[2773:intemperence]
+[2774:rejecting God by making an offering to a fiend] ; c1
+[2775:being more concerned with finding the Grail than with
+honouring God at the altar in Vagon castle] ; graven image - c2
+[2776:to take the name of Lord your God in vain] ; c3
+[2777:not to remember the Sabbath] ;? is this possible?
+[2778:not to honour your parents] ; ?ditto
+[2779:to kill]
+[2780:committing adultery with the damosel] ; c7
+[2781:stealing the crown from its rightful owner, even though
+he was not present to claim rights to it] ;to steal
+[2782:lying to the woodland knight about your name] ; c9
+[2783:to covet]
+
+[2790:Lancelot told Nacien of his dream. Nacien said, "That is easily
+explained]
+[2791:{dream near crown}]
+[2792:{dream in wasteland}]
+
+[2800:Lancelot slept beside the cross]
+[2801:and dreamt of a damosel cavorting
+with two fierce dragons] ; hint about damosel in pavilion
+[2802:and had a dream. A sick knight was
+cured by the Holy Grail and was told to "withdraw from this holy
+place"]
+
+; messages displayed on "scenery" racetracks. Printed
+; by an equivalent of ActorM1Dot
+; ...
+; cleric...
+[2810:drank at the stream]
+[2811:greeted the knight]
+[2812:knelt before the cross and said a devout prayer]
+[2813:knelt and prayed to God]
+[2814:asked God for forgiveness]
+[2815:prayed to God to forgive all wrong-doers]
+[2816:got up and faced the altar for a brief moment]
+[2817:knelt in the abbey and prayed]
+; non-racetrack comments for cleric...
+[2818:looked contemptuously at the priest, then crossed himself]
+[2819:looked in anger at the pavilion, then crossed himself and moved
+away]
+[2820:tended to the pilgrim and said, "I am sorry, my son, I have
+no water to give you"]
+[2821:greeted Nacien and received his blessing]
+;
+; priests...
+[2830:drank at the stream]
+[2831:greeted the knight cheerily. He in turn stared back
+without any show of emotion or friendship] ; black knight
+[2832:knelt and prayed to God]
+[2833:asked God for forgiveness]
+[2834:prayed to God to forgive all wrong-doers]
+[2835:got up and faced the altar for a brief moment]
+[2836:knelt in the abbey and prayed]
+[2837:greeted the knight happily. He asked for their blessing, which
+was gladly given]
+;
+; Nacien racetrack...
+[2840:sat cross-legged on the floor]
+[2841:assumed the lotus position]
+[2842:closed his eyes and rocked back and forth]
+[2843:got up and removed the remains of a burnt-out candle]
+[2844:put a new candle in place of the old one]
+[2845:took out a taper from within his gown]
+[2846:lit the candle and blew out the taper]
+[2847:placed his hands on Lancelot's head and blessed him]
+[2848:lit a joss stick, and the fragrance rapidly filled the room]
+[2849:re-arranged his simple robes]
+[2850:looked out of the hermitage to the magnificent view around]
+[2851:seemed to be admiring the view]
+[2852:took a deep breath of air, held it for a moment, then let
+it out with a huge sigh]
+[2853:sat down to enjoy the sunshine]
+[2854:got up and stretched]
+;
+; damosel racetrack (inviting Lancelot inside)...
+[2860:said, "Won't you come inside for a while"]
+[2861:said, "Please come in, Lancelot"]
+[2862:pleaded with Lancelot to come in]
+;
+; false priest VaryMessage group:
+[2870:looked at the crown and said, "Thank you my son. Now hand
+it over"]
+[2871:made a grab for the crown which Lancelot evaded]
+[2872:stared intently at the crown]
+[2873:asked Lancelot politely for the crown]
+[2874:screamed "The crown is mine! Hand it over"]
+;
+; damosel inviting Lancelot to eat the cakes varymessage
+[2880:said, "Come on, eat them up"]
+[2881:said, "They are very nice cakes"]
+[2882:said, "I'll be terribly hurt if you don't eat them all. They took
+simply ages to bake"]
+[2883:said, "If you won't eat them all for their sake, eat them for mine"]
+[2884:said, "Go on, be a devil and finish them off"]
+;
+; damosel inviting Lancelot to bed varymessage.
+[2890:lay sexily on the bed]
+[2891:beckoned to Lancelot]
+[2892:reached out an uncovered arm to Lancelot]
+[2893:called huskily to Lancelot]
+[2894:murmured sweet nothings to Lancelot]
+;
+;; descriptions for outside rooms (do not mark anything in 2800 to 2819)..
+;; matches up with TERRAINTABLE
+;;
+;; [2800:on a glacier]
+;; [2801:on a road] ; described elsewhere
+; Message groups (spaced every ten to permit lots of variations)..
+;
+;------------
+; responses when NPC is not obedient 3050+
+; use ACTORM1Dot
+;
+[2902:said, "I must stay here to guard this ford"] ; black knight
+[2903:said, "My whole life is devoted to God now. I cannot help you
+with worldly matters] ; Nacien
+;; [2904:Ector]
+;; [2905:Bors]
+;; [2906:Percival]
+[2907:said, "I will not help with your petty quest"]
+; knight who wants to know L's name.
+
+[2908:said, "I cannot help you until this land is free of evil"]
+; give commands to galahad when not obedient
+
+[2909:said, "Soon you will be dead"] ; evil knights
+
+[2910:said, "I must fight evil in my own way] ; priest
+[2911:said, "Just find me something to drink with"] ; give commands
+; to pilgrim
+
+;; [2912:maid]
+[2913:said, "Please do as I say"] ; damosel
+[2914:said, "I must strive against wrong with God's help"] ; cleric
+[2915:said, "We have a mission of our own to fulfill"] ; priests
+;
+[2925:roared threateningly] ; lions
+[2926:blew a puff of smoke over Lancelot] ; red dragon
+[2927:cackled loudly] ; foul fiend
+[2928:blew a puff of smoke over Lancelot] ; black dragon
+[2929:screamed with laughter]  ; elemental
+
+;---------
+; Galahad racetrack...
+[2960:lay down to rest beside the cross]
+[2961:prostrated himself before the altar]
+[2962:knelt before Nacien]
+[2963:said, "Nacien, I have sinned"]
+[2964:said, "Nacien, I wish to confess my sins to you"]
+[2965:said, "Nacien, I have sinned by walking past a cross without 
+praying"]
+[2966:said, "Nacien, I have sinned by being too proud to eat food 
+instead of praying"]
+[2967:said, "Nacien, with all these sins, I am not yet worthy to
+attain the Holy Grail". Nacien said, "Be at peace my son. I will
+pray for you"]
+[2968:said, "Thank you for listening. I will now go and pray for
+forgiveness"]
+[2969:said, "Father, beware the damosel who stands beside yonder
+pavilion. I for one do not trust her"]
+[2970:said, "Father, this priest is false. There is a feeling of evil
+about him"]
+[2971:said, "Father, a great evil was once perpetrated at this place"]
+[2972:said, "Sir Knight, I am Sir Galahad, son of Lancelot". The knight
+replied, "My quarrel is with your father, not with you"]
+;
+; a varymessage group for Galahad to use at semi-random times
+;
+[2980:dropped to his knees and prayed]
+[2981:started to sing a hymn]
+[2982:looked skyward and closed his eyes. He rocked to and fro, as if
+listening to a voice only he could here]
+[2983:prostrated himself and cried out to God for forgiveness]
+[2984:recited a rosary]
+[2985:quoted from the Bible] ; a real quotation? (in Latin of course)
+[2986:clasped his hands together in silent prayer]
+[2987:was about to take a step when he jumped back. Lancelot glimpsed a
+small insect crawl away unscathed]
+[2988:closed his eyes and recited a prayer]
+[2989:sang a holy song]
+;------------
+
+; greetings from each person on first meeting user 3000+N
+
+;; [3002:black knight]
+;; [3003:Nacien]
+;
+[3005:Bors said, "Hello Sir Lancelot. Percival and I will help
+in whatever ways we can". ]
+[3006:Percival said, "Yup, that goes for me too". ]
+;; [3007:knight] ; who wants to know L's name.
+[3008:Galahad said, "Hello father". ]
+[3009:the evil knights said, "Lancelot, put down your sword, or
+die at our hands. We will kill Galahad, and you have not the
+power to prevent us. ]
+
+;; [3010:priest]
+[3011:the pilgrim said, "Have pity upon me. I have not had a drink
+for more than a week. Please find me a drinking vessel". ]
+;; [3011:pilgrim]
+;
+;; [3013:the damosel said, "Come on Lancelot, why not come inside
+;; for a while". ]
+;; [3013:damosel]
+;; [3014:cleric]
+;; [3015:priests]
+;
+;; [3025:lions]
+;; [3026:red dragon]
+;; [3027:foul fiend]
+;; [3028:black dragon]
+;; [3029:elemental]
+;
+;-------
+; don't be silly group...
+[3100:don't be silly. That's my job]
+[3101:well, that's a novel concept]
+[3102:you must be mad if you really mean that]
+[3103:now there's a peculiar thing to want to do]
+[3104:daft I call it]
+;
+; nice try group...
+[3110:nice try, my friend] 
+[3111:a truly valiant attempt at a solution. Shame it won't work]
+[3112:no chance]
+[3113:that really does deserve some credit, though it doesn't actually 
+work]
+[3114:with ideas like that, you'll go far - eventually]
+;
+; just scenery group...
+[3120:you might as well leave it alone]
+[3121:I suggest that you forget about it]
+[3122:that's not important to the game]
+[3123:forget it. It's only scenery]
+[3124:that was just put there to confuse you. I see it has]
+;
+; missing object...
+[3130:now what was the object of that? Try again]
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+[3133:I don't like to object, but there was no object in that command]
+[3134:do it to what? You didn't say]
+;
+; Nothing happened group...
+[3140:I don't know what that was suppose to achieve, but nothing happened]
+[3141:that didn't seem to work]
+[3142:there had no effect on anything]
+[3143:that was outstandingly ineffective]
+[3144:that did nothing at all, I'm afraid]
+;
+; the following are printed after the object name..
+;
+[3150:wouldn't move] ; try to move static object group
+[3151:didn't budge]
+[3152:refused to be moved]
+[3153:seemed fixed in place]
+[3154:was unmoved]
+;
+[3160:don't bother, it would do nothing] ; don't bother group
+[3161:that would be a waste of time]
+[3162:that would be pointless]
+[3163:that won't get you anywhere]
+[3164:don't expect any results from that]
+;
+; groupsay messages for hello responses
+[3170:said, "Hello, Sir"]
+[3171:said, "Greetings"]
+[3172:said, "Hello, what brings you here"]
+[3173:greeted his with an inscrutable smile]
+[3174:said, "How do you do?" politely]
+;
+; groupsay messages for npc's being unable to carry out an order
+[3180:said, "Sorry, Sir, but I couldn't do everything you asked"]
+[3181:said, "Sorry, Sir, but I couldn't do everything you asked"]
+[3182:said, "Sorry, Sir, but I couldn't do everything you asked"]
+[3183:said, "Sorry, Sir, but I couldn't do everything you asked"]
+[3184:said, "Sorry, Sir, but I couldn't do everything you asked"]
+;
+
+; groupsay messages for npc's being unable to carry out an order
+[3190:said, "Sorry, Sir, but I couldn't do everything you asked with]
+[3191:said, "Sorry, Sir, but I couldn't do everything you asked with]
+[3192:said, "Sorry, Sir, but I couldn't do everything you asked with]
+[3193:said, "Sorry, Sir, but I couldn't do everything you asked with]
+[3194:said, "Sorry, Sir, but I couldn't do everything you asked with]
+
+
+; messages for people recovering things they need
+;; [3190:said, "I'll take that, thank you very much"]
+;; [3191:said, "Give that to me"]
+;; [3192:said, "That's mine"]
+;; [3193:said, "Ah-ha! now I'll get it back"]
+;; [3194:said, "Let me have it this minute"]
+;
+;; responses for npcs - those who can talk and those who can't.
+;; first - npc refuses an order
+;; [3210:said, "Find someone else, I'm tired"]
+;; [3211:said, "Don't try to order me around, good knight"]
+;; [3212:said, "No I won't"]
+;; [3213:refused, saying "That is not the sort of thing I do"]
+;; [3214:exclaimed, "Why should I? Do it yourself"]
+;
+; now, npc accepts an order
+[3230:said, "Very well. It would be a pleasure"]
+[3231:said, "Of course, I'll be right there"]
+[3232:said, "Yes, certainly"]
+[3233:agreed, saying "Anything to oblige"]
+[3234:nodded and said, "Right away, Sir"]
+;
+; now response to questions when not obedient...
+[3250:said, "You'll have to find that out for yourself, Sir"]
+[3251:said, "You won't get any help from me, young Sir"]
+[3252:pretended to ignore his question]
+[3253:demurred, saying "Sorry, but I really can't say"]
+[3254:spread sorrowful hands and said, "Ah, if only I could help.."]
+;
+; response to requests to give anything(s) to anyone
+[3270:said, "You'll have to fight me for that"]
+[3271:said, "I'd rather die than part with that"]
+[3272:said, "I'm not about to give anything away"]
+[3273:clutched at it, saying "It's mine! Clear off"]
+[3274:stared back in silent refusal]
+;
+; npc wants to obey orders just given, but can't understand any of them!
+[3290:said, "Sorry Sir, I don't understand"]
+[3291:said, "It must be me, Sir, I can't understand what you're 
+saying"]
+[3292:said, "Pardon? Could you rephrase that"]
+[3293:looked blank and said, "Eh?.."]
+[3294:said, "Can we try that again? My grasp of English isn't quite what it 
+should be"]
+;
+;; messages when npc can't find the way to its destination *** used?
+;; [3350:said, "I can't find it anywhere"]
+;; [3351:said, "I'm lost"]
+;; [3352:said, "Where can it be? I can't find it"]
+;; [3353:looked around with a lost expression and said, "Now what?"]
+;; [3354:said frantically, "Which way? Which way?"]
+;
+; again used following a command referring to scenery
+[3530:the previous command was not repeatable]
+[3531:you can't do that again]
+[3532:it wouldn't help to try that again]
+[3533:that was a once-only command. It doesn't do seconds]
+[3534:oh, not again! I've been through that once already]
+;
+;; npc is blocked in a racetrack *********** used?
+;; [3540:stopped, looking confused]
+;; [3541:looked puzzled]
+;; [3542:seemed uncertain of what to do next]
+;; [3543:ground to a confused halt]
+;; [3544:stood stock still and said, "Now what?"]
+;
+;; messages when the player tries to take things from others...
+;; [3550:wouldn't let Lancelot]
+;; [3551:slapped his hand away]
+;; [3552:stopped him from taking it]
+;; [3553:held onto it and said, "This is mine. You can't have it"]
+;; [3554:refused to give it to Lancelot]
+;
+[3560:dead] ; printed by follow code
+;
+[3600:a voice in the distance shouted, "]
+[3601:." ]
+[3602:wow! A stack overflow] ; a stack overflow!
+[3603:don't panic! normal service will be resumed shortly] ; a panic
+[3604:sorry, I can't get Lancelot there from here]
+[3605:sorry, Lancelot will have to find his own way from here]
+;
+; conversational fragments...
+[3610:I am perfect in every way] ; must be capital at start
+[3611:you are a knight]
+[3612:cleared its throat and said.. "]
+;
+[3614:Lancelot yelled "ARRRGGGGGHHHHH". He felt much better afterwards]
+;
+; 'npc, rude' word for talking people
+[3620:swore back at Lancelot]
+[3621:swore loudly]
+[3622:seemed very offended]
+[3623:said, "@@*!#/\*&@!!, to you too"]
+[3624:gave Lancelot a mouthful in reply]
+;
+; 'npc, help' for talking people
+[3640:said, "Help yourself, my dear Sir"]
+[3641:said, "I'd love to, but I wouldn't be any use to you"]
+[3642:said, "You'll get no help from me, my liege"]
+[3643:said, "I would if I could, but I can't so I shan't"]
+[3644:said, "Stand on your own two feet.. Oh, you are standing, sorry"]
+;
+; 'npc, echo verb' for talking people
+[3660:said, "You must be nuts"]
+[3661:said, "Sorry Sir, but I think you've cracked"]
+[3662:said, "That isn't possible. And if it is, it shouldn't be allowed"]
+[3663:laughed, "Oh! You are a hoot, Sir Lancelot"]
+[3664:looked askance at Lancelot]
+;
+;-----------
+; 3700.. is gold-singing in Lancelot
+; 2 black knight
+[3700:looked disdainfully at Lancelot]
+[3701:looked disdainfully at Lancelot]
+[3702:looked disdainfully at Lancelot]
+
+; 3 - nacien
+[3710:said a quiet prayer]
+[3711:blessed Lancelot]
+[3712:made the sign of the cross]
+
+; 4 - Ector
+[3720:knelt down and prayed]
+[3721:looked around suspiciously]
+[3722:looked holy]
+
+; 5 - Bors
+[3730:knelt down and prayed]
+[3731:looked around suspiciously]
+[3732:looked holy]
+
+; 6 - Percival
+[3740:knelt down and prayed]
+[3741:looked around suspiciously]
+[3742:looked holy]
+
+; 7 - Woodland Knight
+[3750:knelt down and prayed]
+[3751:looked around suspiciously]
+[3752:looked holy]
+
+; 8 - Galahad
+[3760:knelt down and prayed]
+[3761:looked around suspiciously]
+[3762:looked holy]
+
+; 9 - evil Knights
+[3770:knelt down and prayed]
+[3771:looked around suspiciously]
+[3772:looked holy]
+
+; 10 - priest
+[3780:knelt down and prayed]
+[3781:looked around suspiciously]
+[3782:looked holy]
+
+; 11 - pilgrim
+[3790:looked thirsty]
+[3791:gasped]
+[3792:clawed the earth]
+
+; 12 - maid
+[3800:looked pretty]
+[3801:smiled winningly]
+[3802:smiled at Lancelot]
+
+;; 13 - damosel
+;; [3810:looked enticingly at Lancelot]
+;; [3811:winked at Lancelot]
+;; [3812:smirked at Lancelot]
+;
+; 14 - cleric
+[3820:knelt down and prayed]
+[3821:looked around suspiciously]
+[3822:looked holy]
+;
+; 15 - priest
+[3830:knelt down and prayed]
+[3831:looked around suspiciously]
+[3832:looked holy]
+;
+; 25 - lions
+[3930:lunged for Lancelot, but fortunately missed]
+[3931:leapt at Lancelot, but fell short]
+[3932:jumped straight past Lancelot]
+;
+; 26 - black dragon
+[3940:smoked quietly]
+[3941:belched noisily]
+[3942:breathed out a little wisp of smoke]
+
+; 27 - foul fiend
+[3950:cackled with such evil that Lancelot was sore afraid]
+[3951:screamed with glee]
+[3952:hissed with spite]
+;
+;------------
+;
+; Garbage words..
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+^N good ^N of ^N cute ^N there]
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+^N warily ^N quickly ^N rapidly ^N following ^N around]
+[4002:^N please ^N Sir]
+;
+; Book protection code...
+;
+[4200:%A winged spirit stopped Lancelot, pointing in a copy of a 
+rather tattered book. ]
+[4201:page ]
+[4202:, line ]
+[4203:, word ]
+[4204:?"%]
+[4205:The spirit sighed deeply and Lancelot knew he was wrong. ]
+[4206:The spirit smiled and faded away.%]
+[4207:"What is the word at ]
+[4208:The spirit grimaced and Lancelot knew he had sinned greatly. 
+He felt himself fading away... ]
+;
+;; 100 protection words, e.g [4301:^C half]
+;

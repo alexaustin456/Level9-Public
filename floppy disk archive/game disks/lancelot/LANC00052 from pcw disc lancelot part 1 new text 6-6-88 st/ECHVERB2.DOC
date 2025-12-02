@@ -1,0 +1,207 @@
+
+
+
+     ;; Echo verbs (250-299) which just print the message containing them.
+     ;; Intansitive echo verbs up to 284. Please fill in the gaps if you
+     ;; can think of additional appropriate words...
+     ;
+     [250:if you say so|^V no]
+     [251:if you say so|^V yes]
+     [252:Lancelot looked scornful and refused|^V leap ^V hop ^V skip
+     ^V dance ^V celebrate]
+     [253:As that word was released upon the wind, time stood still,
+     the world was plunged into blackness and all sound ceased. Then,
+     from afar, Lancelot heard Merlin say, "Stop mucking about!" and
+     everything went back to normal|^V plugh ^V xyzzy ^V sesame
+     ^V humakaat ^V satarh ^V ollabin ^V obis] ; amusing magic responses
+     [254:the ^V weather was always fine in Camelot]
+     [255:if you want to talk to someone, follow their name with what you
+     want to say to them. For example ARTHUR, HELLO|^V hello ^V welcome
+     ^V hi ^V greetings ^V day ^V afternoon ^V hallo ^V hullo]
+     [256:Lancelot heard nothing that he didn't already know about|
+     ^V listen ^V hear]
+     [257:please send the coupon to Level 9 Computing, PO Box 39,
+     Weston-super-Mare, for a comprehensive ^N cluesheet|^V hint ^V help]
+     ;; [258:]
+     ;; [259:]
+     [260:the only ^V escape is to finish the game]
+     ;; [261:]
+     [262:Lancelot would have to find that out for himself|^V what]
+     [263:Why not|^V y ^V why]
+     [264:funny you should ask that, I was just wondering ^V where it
+     was myself]
+     [265:I'm afraid even I don't know ^V how things work around here]
+     [266:sorry, I can't help with such matters|^V whether ^V who]
+     [267:that kind of language does not impress me one little bit|^V sod
+     ^V motherfucker ^V crap ^V nipples ^V cock ^V nerd ^V bloody
+     ^V frigging ^V wanker ^V turd ^V piss ^V shit ^V twat ^V cunt
+     ^V prick ^V bollocks ^V jesus ^V christ ^V dick ^V god ^V devil
+     ^V tits ^V asshole ^V arsehole ^V cretin ^V conservatives ^V spastic
+     ^V coon ^V wog ^V fucking ^V fucker ^V fuck ^V bastard ^V bugger
+     ^V damn ^V fart ^V sex ^V hell ^V bonk ^V rainbird ^V pratt ^V rape
+     ^V shag] ; lower case swear words
+     ;; [268:]
+     ;; [269:]
+     [270:so what is there to ^V shout about? I don't know|^V yell]
+     ;; [271:]
+     ;; [272:]
+     [273:what? Going so soon? Try CONTROL C, but don't forget to save
+     your position first|^V goodbye ^V bye]
+     [274:you're forgiven|^V sorry]
+     [275:Lancelot screamed impressively, but without effect|^V scream]
+     ;; [276:]
+     ;; [277:]
+     ;; [278:]
+     [279:Lancelot closed his eyes and tried to ^V sleep, but couldn't]
+     [280:only an idiot would consider swimming while wearing armour|^V swim]
+     ;; [281:]
+     [282:Lancelot was no musician] ; (response to "play"; not echo verb).
+     [283:hit] ; thing 'hit' target (response to "throw"; not echo verb).
+     ;
+     ;; Echo verbs (250-299) which just print the message containing them.
+     ;; Traisitive echo versb follow. Please fill in the gaps if you can
+     ;; think of additional appropriate words...
+
+
+
+
+
+
+     ;
+     ;; [284:]
+     ;; [285:]
+     [286:Lancelot's armour rattled with the effort|^V shake]
+     ;; [287:]
+     [288:you are here to use objects, not to ^V bury them]
+     ;; [289:]
+     [290:Lancelot polished it until it gleamed|^V rub ^V clean ^V polish]
+     [291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+     [292:please ^V empty a container by removing its contents in turn]
+     ;; [293:]
+     [294:Lancelot had no way to ^V light anything]
+     [295:Lancelot had no need to do that|^V extinguish]
+     ;[296:]
+     [297:XXX. If you don't mind, I'll just pay lip service to that
+     command|^V kiss]
+     [298:there are no magic wands to ^V wave around here]
+     [299:nothing happened. Lancelot tried again, and nothing happened
+     again|^V press ^V select ^V depress ^V poke ^V prod ^V touch]
+     ;
+     ; Objects (300+N)..
+     [301:^N Lancelot|^N player ^N me ^N myself] ; Lancelot.
+     ; Lancelot must start with upper case.
+
+     ; knights who come from part 2...
+     [302:^N Tristram] ; Tristram.
+     [303:^N Galahad] ; Tristram.
+     [304:^N Bors ^N de ^N Ganis] ; Bors.
+     [305:Sir ^N Question ^N Mark] ; ***
+     [306:^N Gawain] ; Gawain.
+     [307:the ^N Red ^N Knight] ; Red Knight.
+     [308:^N Meliot] ; Meliot.
+     [309:^N Lamorak] ; Lamorak.
+     [310:^N Ector ^N de ^N Maris] ; Ector.
+     [311:^N Agravain] ; Agravain.
+     [312:^N Aliduke] ; Aliduke.
+     [313:^N Brandiles] ; Brandiles.
+     [314:^N Brian] ; Brian.
+     [315:^N Geheris] ; Geheris.
+     [316:^N Gareth] ; Gareth.
+     [317:^N Lionel] ; Lionel.
+     [318:^N Marhaus] ; Marhaus.
+     ;
+     [352:^N peasants] ; peasants.
+     [353:^N crowd] ; crowd.
+     [354:^N hawks] ; hawks.
+     [355:^N Queen's ^N knights] ; Queen's knights.
+     [356:the ^N Black ^N Knight|^N first ^N blow] ; Black Knight.
+     ; for 'strike first blow'
+     [357:^N Guenever|^N Queen] ; Guenever.
+     [358:Sir ^N Kay] ; Kay.
+     [359:Sir ^N Meliagaunt] ; Meliagaunt.
+     [360:^N King ^N Arthur] ; Arthur.
+     [361:Sir ^N Colgreavaunce] ; Colgreavaunce.
+     [362:^N Merlin] ; Merlin.
+     [363:^N carter] ; carter.
+     [364:^N damosel] ; Lancelot's warden.
+     ;
+     ; moveable objects are (70..79)
+     [370:^N footstool] ; in Guen's room.
+
+
+
+
+
+
+     [371:^N gloves] ; gloves to hide wounded hands.
+     [372:^N hat] ; hat, worn to look very silly.
+     ;
+     ; static objects for L1 (150..169)
+     [450:^N bars] ;   of window
+     [451:^N bed] ; Guenever's bed in Maliagaunt's castle.
+     [452:^N bed] ; Guenever's bed in royal castle.
+     [453:^N bed] ; Lancelot's bed.
+     [454:^N bed] ; Merlin's guest bed.
+     [455:^N bed] ; Meliagaunt's guest bed.
+     [456:^N bed of straw] ; bed of straw in the Mews.
+     [457:^N blood ^N stain] ; Lancelot's blood (on first bed).
+     [458:^N books] ; Merlin's library books.
+     [459:^N cart] ; cart.
+     [460:^N chest] ; clothes chest.
+     [461:^N ladder] ; below Meliagaunt's window.
+     [462:^N pyre] ; pyre for Guenever.
+     [463:^N sieges] ; seats around Round Table.
+     [464:^N Round ^N Table] ; Round Table.
+     [465:^N window] ; window to Meliagaunt's castle.
+     ;
+     ; some invisible objects (170 onwards)..
+     [470:^N dirt] ; hawk droppings on Lancelot.
+     ;
+     ;---------------
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ on Lancelot.
+     ;
+     ;---------------
+     ;
+
+
+
+
+

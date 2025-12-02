@@ -1,0 +1,71 @@
+           LANCELOT SCORING. COPYRIGHT (C) 1988 LEVEL 9
+           -------------------------------------------- 
+
+CAMELOT (PART 1); total 200 
+--------------------------- 
+
+Reach: Inside Serf's Gate. 10   Spare "Black Knight" ...........  20
+       Merlin's Study .... 10   Read Books in Library ..........  20
+       Merlin's Library .. 10   Rescued Guenever from Meliagaunt  20
+       Arthur's Hall ..... 10   Rescued Guenever from Burning ..  20 
+       Hall + Round Table. 10   Left for Grail Lands ...........  20
+       Meliagaunt's Hall . 10   Tried to slay "Black Knight" ... -20
+       Boudoir ........... 10   Slept in Mews .................. -20
+       Prison ............ 10   Accused of sleeping in Boudoir.. -20
+       L's Room .......... 10   Guenever Killed ................ -20
+       G's Room .......... 10   Went for Grail without telling G -20
+                          ---                           ------------
+                          100                           -100 to +100
+
+
+LOGRIS (PART 2); total 400 
+--------------------------
+
+Reach: Garlon's Turret ... 10   Sessoin Fleet burnt ............  20 
+       Turquin's Courtyard 10   Slept with Elaine, with honour .  20 
+       Castle Chariot Cell 10   Freed all Garlon's Knights......  20 
+       Tintagel Beach .... 10   Freed Falcon ...................  20 
+       Isle of Servage ... 10   Completed Lynet's Quest ........  20 
+       Perilous Bedroom .. 10   Lost honour in Corbin Castle ... -20 
+       Reedy Isle ........ 10   Lost honour in Queens' Castle .. -20 
+       Wailing Castle .... 10   Killed "Red Knight" ............ -20 
+       Green Launds ...... 10   Kissed Hellawes ................ -20 
+       Orkney Stable ..... 10   Did anything nasty to Lynet .... -20 
+                          ---                           ------------
+                          100                           -100 to +100
+
+For "freeing" the 9 knights; 20 each, plus a bonus 20 when all had 
+been rescued, totalling 200. Finally, each rescue by Merlin was -50. 
+
+
+GRAIL LANDS (PART 3); total 400  
+-------------------------------
+
+Reach: Clearing .......... 10   Removed "Priest" by crossing .... 20 
+       Pavilion .......... 10   Removed "Damosel" by crossing ... 20 
+       Wasteland ......... 10   Gentlewoman rescued ............. 20 
+       Nacien's Hermitage. 10   Ector subsequently rescued ...... 20 
+       White Abbey ....... 10   Thirsty Pilgrim helped .......... 20 
+       Sand Isle ......... 10   Tomb Fiend dismissed ............ 20 
+       Isle of Turnance .. 10   Boat moved ...................... 20 
+       Dark Shore + Gate . 10   Dragons slain ................... 20 
+       Castle + Lions .... 10   Key taken ....................... 20 
+       Corridor .......... 10   Exit door unlocked .............. 20 
+                          ---                                    ---
+                          100                                    200
+
+Each sin (not detailed here) cost 50 if unforgiven, but only 10 
+when confessed and forgiven at Nacien's Hermitage. 
+
+For reaching the Holy Grail, there was a bonus of 100. Finally, any 
+rescue by Merlin was -50. 
+
+
+DESCIPTION OF RATING 
+--------------------
+
+Though Lancelot's rank did not change with his score, he started 
+as a squire, was knighted by Arthur and finally was made a Knight 
+of the Round Table. Also, as is detailed elsewhere, a suffix was 
+added to Lancelot's name for a little time after each embarassing 
+event. 

@@ -1,0 +1,683 @@
+
+
+
+
+     ; Arthur's racetrack on initially meeting Lancelot
+     [2490:said "Welcome to Camelot, Lancelot. It has been foretold
+     that you are destined to be one of the greatest of all knights. It's a
+     pleasure to have you at court"]
+     [2491:said "I was very impressed with your performance at the ford
+     yesterday. You fought most nobly and bravely"]
+     [2492:said musingly, "Of course, I'm particularly pleased that you
+     spared me. Otherwise there would have been all sorts of trouble. Very
+     honourable of you"]
+     ;;[2492:turned suddenly grave, and seemed older than before. He told Lancelot to kneel
+     before him, and when the squire had bent low upon his knees, the king
+     drew out his sword and
+     ;;tapped Lancelot briefly on each shoulder. "Arise, Sir Lancelot", said Arthur
+     solemnly, and newly knighted young man did so, his armour squeaking
+     audibly at the joints. Arthur put his sword away and grinned at him.
+     "One of us now, eh?" he said cheerfully ]
+     ;;[2493:told Lancelot to leave. Guenever fluttered her eyelashes at
+     ;;Lancelot in an inviting fashion, and held his gaze for rather longer
+     than was necessary]
+
+
+     [2493:knighted Lancelot, and insisted that
+     he stay and dine with them. As they sat
+     through the meal, and the drinks flowed, Lancelot kept stealing
+     glances across at Queen Guenever. Truly, he thought, she was a
+     beautiful and stately woman. And as the meal wore on, he realized he
+     was falling in love with her.% Once or twice he caught Guenever
+     casting him sidelong looks in return, almost coyly, and eventually,
+     feeling like a small boy, he plucked up the courage to ask to be her
+     champion. As he had feared, she refused to consider being championed
+     by a novice, and for a dreadful moment Lancelot thought she would
+     rebuff him entirely.%
+     But then Guenever smiled knowingly at him and invited him to return to
+     her when he had proved himself to be worthy of her patronage. At this,
+     Lancelot felt a huge swell of pride and promised he would not fail
+     her, but would go to Logris without delay, there to honour Guenever
+     with noble deeds and battles chivalrously won.%
+     Then Arthur looked up from his plate and looked at Lancelot. "I tell
+     you one thing you could do. There are some knights of mine - all
+     honourable fellows of the Round Table here - who are being held
+     captive by these rebel lords who seem to think they own the place.
+  ody of men for attacking Arthur]
+     [2498:could not honorably attack a woman, for his code dictated that damosels
+     should be protected from harm at all times]
+     [2499:at this point, you have the option of going straight to the
+     last part, the Quest for the Holy Grail, but I assume you want to
+
+
+
+
+
+
+     play the whole game. Shall we start at the beginning? ]
+
+     [2500:they fought for a long time, with neither man giving any
+     quarter. First one gained a slight
+     advantageody of men for attacking Arthur]
+     [2498:could not honorably attack a woman, for his code dictated that damosels
+     should be protected from harm at all times]
+     [2499:at this point, you have the option of going straight to the
+     last part, the Quest for the Holy Grail, but I assume you want to
+
+
+
+
+
+
+     play the whole game. Shall we start at the beginning? ]
+
+     [2500:they fought for a long time, with neither man giving any
+     quarter. First one gained a slight
+     advantage, then the other. Lancelot quickly realised that his opponent
+     was a far worthier knight than he had assumed at first and soon he was
+     fighting desperately, with more strength than he had known he
+     possessed. Finally, completely exhausted, the
+     black knight yielded. Did Lancelot accept his surrender? ]
+     [2501:Lancelot brutally hurled himself at the defenceless knight, knocking
+     him to the ground and unfastening his helmet with feverish fingers, ready for the
+     fatal blow.%
+      %But, before Lancelot could strike, dozens of guards appeared from
+     the bushes and threw him to the ground. Even as Lancelot tried to get
+     up, his sword was swiftly taken from him, and several burly men pinned
+     him down.%
+      %The black knight identified himself as King Arthur, and severely
+     chastised Lancelot for his lack of honour or chivalry. The king's
+     party then rode off towards Camelot, leaving Lancelot scrabbling for
+     his weapons in the dirt]
+     ;
+     [2502:the black knight removed his helmet and revealed himself as King
+     Arthur. "Thank you, Lancelot, you fought most honourably; indeed you
+     werea truly worthy opponent," he said
+     with a bow, "It would be a pleasure for me to knight you and admit you
+     to the Round Table, if thou wouldst care to come
+     tomorrow, to my castle in Camelot."%
+      %The king summoned his guards from the surrounding bushes, where
+     they had hidden to watch the fight, and the royal party rode off
+     towards the city]
+     [2503:to retreat would be cowardly]
+     [2504:"I will not parley until we have fought, man to man and sword to
+     sword"]
+     [2505:said, "Well, have you not the stomach for a fight, young man?"]
+     [2506:said, "Come on, Squire, what are we waiting for? If you will not
+     strike the first blow, I will". With that, he prepared to strike]
+
+     [2507:the black knight stood firmly in the way. Something in his
+     demeanour told Lancelot he would not easily be passed]
+     [2508:if you want to fight someone, just say so] ; can't 'retaliate' now
+     [2509:-] ; minus sign for negative scores
+      [2510:said a devout prayer] ; general case.
+     ; some special cases for knights...
+     [2511:rode]
+     [2512:, mounting his horse]
+     [2513:dismounted and walked]
+     [2514:such things are below your knightly gaze] ; exam horse/armour
+     [2515:-] ; minus sign for negative scores
+     [2516:was riding a huge war-horse]
+     ;
+     ;
+      [2519:settled down and made himself as comfortable as he could, ready to go to sleep]
+     [2520:began to feel weary with the rigours of his journey and the long
+     battle with the Black Knight. He thought he'd better find somewhere to sleep soon]
+     [2521:decided to go straight to the mews]
+     [2522:decided it would be better not to leave so late at night, in
+     terrain he was unfamiliar with]
+     ; three messages as L gets sleepier in the mews
+     [2523:sat down]
+     [2524:found a comfortable spot and lay down]
+
+
+
+
+
+
+     [2525:soon fell asleep. In the morning, he was awakened by a curious
+     cawing sound. As he rubbed the sleep from his eyes, and they adjusted
+     to the sunlight, he realised the squawking noises were coming from the
+     roof of the mews. Perched there, along several rows of poles, were
+     about twenty hawks]
+
+     ; some reactions from Sir Kay (in order)...
+     [2526:laughed uncontrollably, his head thrown back and shoulders
+     heaving]
+
+
+     [2527:guffawed loudly and pointed at Lancelot]
+     [2528:shrieked with laughter and at last managed to splutter out,
+     "Didn't you know that the hawks sleep in the mews? I think you should
+     have found somewhere a little CLEANER to spend the night!" Sir Kay returned to
+     his uncontrollable mirth]
+     [2529:couldn't bear to go into the presence of his king whilst
+     this dirty]
+     ;
+     ;
+     ; message group for resurrection type comments...
+     [2530:Merlin appeared, "Well, young man, have you got in561:close to death]
+     [2562:gravely wounded]
+     [2563:seriously hurt]
+     [2564:badly hurt]
+     [2565:injured]
+     [2566:moderately injured]
+     [2567:slightly hurt]
+     [2568:almost unhurt]
+     [2569:unhurt]
+     ;
+     ;
+     ;; [2570:would have sunk in the water]
+     ;; [2571:directed the boat to the]
+     ;; [2572:directed the boat] ; followed by 'from the west' etc.
+     ;; [2573:was not worthy to direct the boat]
+     ;; [2574:the boat would not move without wind]
+     ;; [561:close to death]
+     [2562:gravely wounded]
+     [2563:seriously hurt]
+     [2564:badly hurt]
+     [2565:injured]
+     [2566:moderately injured]
+     [2567:slightly hurt]
+     [2568:almost unhurt]
+     [2569:unhurt]
+     ;
+     ;
+     ;; [2570:would have sunk in the water]
+     ;; [2571:directed the boat to the]
+     ;; [2572:directed the boat] ; followed by 'from the west' etc.
+     ;; [2573:was not worthy to direct the boat]
+     ;; [2574:the boat would not move without wind]
+     ;; [2575:only the best knight in the world could take it] ; the sword
+      ; more Merlin rescue stuff... *** used in this part?
+     [2580:would you like me to rescue you?"]
+     [2581:"OK, stay where you are then"]
+     [2582:"I'll see what I can do..." There was a flash, and Lancelot
+     found that he had moved]
+
+
+
+
+
+
+     ;---
+     [2583:realized to his horror that he was filthy with the
+     droppings of the hawks]
+     [2584:managed to clean the worst of the mess off]
+     [2585:said, "Well I never. You look in need of a good rest and a room
+     for the night. Please
+     make yourself at home here"]
+     [2586:said, "Oh dear, what a terrible smell! Be off with you,
+     and don't come back in that state"]
+     [2587:lay down on the bed]
+     [2588:was very comfortable on the bed]
+     [2589:soon fell asleep. In the morning, he woke refreshed and ready
+
+
+     for the challenges of the new day]
+     ; hints from racetrack...
+     [2590:said to Lancelot, "I have something important to tell you. You
+     should be well aware that it is destined that the Queen will become
+     very important to you. Her fate and yours are bound together "]
+
+     [2591:said to Lancelot, "You will not show yourself to be a noble and
+     valiant knight here in Camelot. You must prove your worth outside the
+     city in the lands beyond"]
+     [2592:said, "Do not fear your youth and solitude on your travels. I will
+     be at hand to help you on your journey"]
+     [2593:said, "Lancelot, there is still so much you must learn. You
+     should read the
+     books in the library"]
+     [2594:said, "Lancelot, be wise and true. Much depends on your actions"]
+     [2595:was not watertight]
+     ;; [2596:was already full]
+     ;
+     [2597:the door was locked] ; widely used (especially on first night)
+     [2598:invited Lancelot to join her Maying in the fields
+     beside Westminster]
+     [2599:found the queen was missing. However, there
+     were scuffled marks on the ground which indicated a struggle and many
+     people marching southwards]
+     [2600:the drawbridge was closed]
+     [2601:greeted] ; (Arthur) greeted (freed knight)
+     [2602:and thanked Lancelot for rescuing him] ; (freed knight)
+     [2603:bowed low to Lancelot and promised further service if
+     he required it]
+     [2604:said, "Hush, my love"]
+     [2605:a quick slap across the face reminded Lancelot that his attentions
+     were not welcome] ; 'rude word' npc
+      ;
+     [2609:picked a book at random and read, "]
+     ; hints are followed by ".
+     [2610:{hint 1}]
+     [2611:{hint 2}]
+     [2612:{hint 3}]
+     [2613:{hint 4}]
+     [2614:{hint 5}]
+     [2615:{hint 6}]
+     [2616:{hint 7}]
+     [2617:{hint 8}]
+     [2618:{hint 9}]
+     [2619:{hint 10}]
+      ; some unpleasant happenings in the warrens... (ActorVaryMessageDot)
+
+
+
+
+
+
+     [2620:thought he heard someone following him, but could see no-one]
+     [2621:saw a shadow move, then it was gone]
+     [2622:heard the sound of running feet from behind, which
+     stopped as soon as he turned round]
+     [2623:a window high above opened, and water poured out all over Lancelot.
+     Fortunately, much of it rolled off the armour, but enough got inside
+     to make it uncomfortable]
+     [2624:was hit by a stone thrown by someone out of sight]
+     [2625:could hear the rustling of some wild animal - or was it human? -
+     nearby, but could see nothing]
+     [2626:was just missed by a squashy fruit dropped from a high window]
+     [2627:sank into an enormous puddle of mud. Lancelot thought it was too deep
+     to be natural, and had probably been dug deliberately to catch
+     the unwary. He managed to climb out again]
+     [2628:was sure he could hear footsteps, which stopped whenever he did.
+     It could have just been an echo from his horse's hooves]
+     [2629:was nearly hit by a large rock dropped from a rooftop]
+     ;
+     ;
+     ;
+     ; messages when L comes back from Logris adventures...
+
+
+     [2630:could not g [2636:saw Lancelot. He raised his sword, and with a swift, clean blow,
+     executed the naked Lancelot before he had time to don his armour]
+
+     [2637:but]
+     ;
+     [2645:pushed Lancelot past the hidden archers]
+     [2646:could not get through the locked window]
+     [2647:saw Lancelot's injury and executed him on the spot]
+     [2648:his hand was bleeding from where he had cut himself on the bars]
+     [2649:seemed sore afraid to see Lancelot] ; meet Meliagaunt for first time
+     [2650:p [2636:saw Lancelot. He raised his sword, and with a swift, clean blow,
+     executed the naked Lancelot before he had time to don his armour]
+
+     [2637:but]
+     ;
+     [2645:pushed Lancelot past the hidden archers]
+     [2646:could not get through the locked window]
+     [2647:saw Lancelot's injury and executed him on the spot]
+     [2648:his hand was bleeding from where he had cut himself on the bars]
+     [2649:seemed sore afraid to see Lancelot] ; meet Meliagaunt for first time
+     [2650:pushed the cart]
+     [2651:hid in the cart]
+     [2652:hidden archers shot and killed Lancelot's horse]
+     [2653:trudged for many hundreds of yards,
+     but could not walk far without his horse]
+     [2654:rode a long way down the road]
+     [2655:knelt to Guenever, "My Queen, forgive me". She paused briefly
+     and then nodded to Lancelot, who looked for a moment as though he
+     might ignore her and slaughter Sir Meliagaunt where he knelt. The
+     Queen drew herself up to her full height, and insisted that Lancelot
+     should spare him. Sir Meliagaunt bowed deeply, and Guenever decided to
+     spend the night at his castle. As they turned to leave, Guenever
+     whispered in Lancelot's ear, "Come to me tonight, my darling"]
+
+     [2656:waved dismissively and Lancelot felt compelled to leave]
+     [2657:the guards said, "Not so fast, Sir Lancelot, we are under orders
+     from the queen to let
+
+
+
+
+
+
+     no-one past tonight]
+     [2658:found that they neatly hid his injury] ; wear gloves
+      ; Sir Meliagaunt...
+     [2659:was standing over the Queen, his sword poised to strike.
+     White with anger and tension, Meliagaunt spat out an accusation of
+     adultery against the Queen.% % Lancelot, chilled with anger at his
+     words, sprang to her defence, and challenged Meliagaunt to a battle
+     for the Queen's honour to take place three days later. Sir Meliagaunt
+     curled his lip at the young knight and accepted the challenge.
+     Sweeping up his weapons, he
+     called the castle guards, ordered the window to be secured, and left angrily
+     with the Queen, held to him in a vice-like grip]
+     ;
+     [2660:Lancelot heard shouting from the Queen's room]
+     [2661:the shouting became louder]
+     [2662:Sir Meliagaunt shouted again, "Whose blood is this"]
+     [2663:Sir Meliagaunt shouted, "If you will not tell me whose blood
+     this is, you shall die"]
+     [2664:Lancelot heard a woman's scream from the Queen's room, and he
+     realized that Guenever was dead]
+     [2665:the lights went out and the floor gave way, with a great
+     splintering. Lancelot fell a long
+     way, and woke up much later]
+     [2666:promised Lancelot his freedom if he would promise to love
+     her]
+     [2667:succumbed, and gave his heart to her, forgetting all about Guenever.
+     A new horse was provided, and Lancelot prepared to leave]
+     [2668:the damosel sighed and left]
+     [2669:a night and a day passed]
+     [2670:told Lancelot that it was the day of Guenever's execution. She
+     took pity on his predicament, and
+     offered to free Lancelot in exchange for a kiss]
+     [2671:kissed the damosel, and she opened the door and left.
+     A new horse was provided, and Lancelot prepared to leave]
+     [2672:the damosel left, and Lancelot knew that Guenever would now die]
+     [2673:"Just kiss me if you agree"]
+      ; Guenever execution scene...
+     [2674:tried to free Guenever, but was restrained by the crowd]
+     [2675:Guenever was tied to the pyre]
+     [2676:cried, "Lancelot, defend my honour"]
+     [2677:Meliagaunt addressed Lancelot coldly, "I will only fight you if
+     you remove your armour and tie one hand behind your back". Lancelot
+     accepted this, and the fight began with harsh blows being dealt on
+     each side. Despite being handicapped, Lancelot's strength with his one
+     free arm was mightier than Meliagaunt's with two shielded limbs. There
+     was never any doubt about who would be the victor, and Meliagaunt
+     shortly surrendered. Guenever was freed]
+
+     [2678:thanked Lancelot for saving her graciously, as befitted her
+     rank, but there were tears in her eyes]
+     [2679:told Arthur what had happened. His face darkened as he heard the
+     news, and he sent orders
+     that Meliagaunt should be captured and brought back to Camelot. Then
+     he said quietly to Lancelot, "Thank you for defending my Queen's
+     honour". But he looked worried as he said it, and the concern did not
+     leave his face afterwaRED WINTERS AND FOUR AND FIFTY
+     ACCOMPLISHED AFTER THE PASSION OF OUR LORD JESUS CHRIST OUGHT THIS
+     SIEGE TO BE FULFILLED. The knights knew that this meant that the
+     fairest, purest knight of all would soon be revealed ot them to lead
+     them to lead the quest for the Holy Grail.% %Lancelot removed his
+     armour and sword, and decided to see the Queen to take his leave of
+     her before setting out on his own attempt to achieve the quest]
+
+     [2681:there was a knock on the door]
+RED WINTERS AND FOUR AND FIFTY
+     ACCOMPLISHED AFTER THE PASSION OF OUR LORD JESUS CHRIST OUGHT THIS
+     SIEGE TO BE FULFILLED. The knights knew that this meant that the
+     fairest, purest knight of all would soon be revealed ot them to lead
+     them to lead the quest for the Holy Grail.% %Lancelot removed his
+     armour and sword, and decided to see the Queen to take his leave of
+     her before setting out on his own attempt to achieve the quest]
+
+     [2681:there was a knock on the door]
+     [2682:a voice called out, "Sir Lancelot, come out or we shall be
+     forced to break down this door". Lancelot realised that he could not
+     hope to defeat a group of knights without his sword and armour]
+     [2683:the voice called again, "Sir Lancelot, come out and face justice"]
+     [2684:someone started to beat on the door with a sword hilt]
+     [2685:the beating became more insistent]
+     [2686:dozens of knights burst into the room and captured Lancelot]
+     [2687:opened the door and a knight entered]
+     [2688:closed the door]
+     [2689:knocked out the knight and grabbed his armour and weapons.
+     Feverishly, he threw the armour on himself, and Guenever's nimble
+     fingers saw to the fastenings. Thus armed, he was more than a match
+     for any of the knights who stood in his way, and he slashed powerfully
+     and deftly to left and to right, his sword flashing in the dark
+     corridor. Many knights, when they saw his desperate strength, realised
+     it would be would be suicidal to face Lancelot in this mood, and vowed
+     to keep their silence about the circumstances in which they had found
+     him.% %Others, unwisely, took him on, but Lancelot, fighting not only
+     for his life but his honour and that of the queen, would brook no
+     opposition, and the floor was a bloody heap of bodies after he had
+     fought his way through. % %Lancelot was summoned to the main hall,
+     where he found a commotion equal, if less violent, to that he had just
+     left upstairs. The Holy Grail had appeared and all was hubbub and
+     excitement among the knights of the round table. The quest for the
+     holy grail was started]
+
+     ; combat messages when L is unarmoured/unweaponed
+     ;[2690:without his sword]
+     ;[2691:~'s unarmoured body]
+     [2692:found a group of knights waiting]
+     [2693:Lancelot was captured. He was banished after watching
+     the Queen burnt for adultery]
+     ;
+     ;
+
+
+
+
+       ; some messages printed by racetracks...
+     [2700:knelt down before the altar]
+     [2701:prayed for forgiveness]
+     [2702:greeted Merlin warmly]
+     [2703:discussed the state of Logris with Merlin, who nodded gravely]
+     [2704:lay down in the long grass and took off his helmet]
+     [2705:lay down as if to sleep]
+     [2706:got up and stretched]
+     [2707:put on his helmet and brushed off the grass]
+     ;
+     ; carter messages on racetrack...
+
+
+
+
+
+
+     [2720:collected some straw from the meadows]
+     [2721:delivered some straw]
+     [2722:collected some vegetables and milk from the market]
+     [2723:delivered some produce to the castle]
+     ;
+     ; additions to Lancelot's name...
+     [2798:of the Round Table]
+     [2799:squire] ; comes first
+     [2800:Sir] ; comes first
+     [2801:the filthy]
+     ;
+      ; "Pet" messages... (table driven)
+     ; some remarks made by Damosel Maledisant on various occurances...
+     ;; [2850:ugh, not enough garlic] ; try soup
+     ;; [2851:very clever]
+     ;; [2852:take some music lessons] ;play harp
+     ;
+     ;---------
+     ; messages when people refuse an order. 3000+n
+     ; Use ACTORM1Dot
+      ;; [2902:was dreamily picking out a tune on his harp, and was
+     oblivious to all appeals] ; Tristram
+     ;; [2903:said off-handedly, "You don't need me right now, do you? I've
+     got a lot of things going on at the moment"]; Galahad
+     ;; [2904:said, "I'm sure you can deal with yourself"] ; Bors de Ganis
+     ;; [2905:looked puzzled, "Why? What do you need me for?"] ; Sir Question Mark ;***
+     ;; [2906:scowled deeply, "Get someone else to do it; I'm about to go
+     hunting"] ; Gawain
+     ;; [2907:seemed to swell even greater in size, and roared angrily at
+     Lancelot, his beard shaking alarmingly] ; the Red Knight
+     ;; [2908:said, "Really, I would much rather not"] ; Meliot
+     ;; [2909:said, "Sorry, Lancelot, but it's quite impossible"] ; Lamorak
+     ;
+     ;; [2910:said, "Lancelot, my brother, you know I would do anything for
+     you, bmeone else] ; Geheris
+     ;; [2916:spread out his large wide hands and said, "Oh no, Lancelot,
+     you must be able to find someone else] ; Gareth
+     ;; [2917:sighed deeply and declined] ; Lionel
+     ;; [2918:said, "Why me, Lancelot? I'm not as young as I used to be"] ; Marhaus
+       ;
+     [2952:smelt awful, and Lancelot decided not to ask
+     for any more help] ; peasants
+     [2953:seemed very unfriendly] ; crowd
+     [2954:squawked and ignored Lancelot] ; hawks
+
+
+     [2955:ignored Lameone else] ; Geheris
+     ;; [2916:spread out his large wide hands and said, "Oh no, Lancelot,
+     you must be able to find someone else] ; Gareth
+     ;; [2917:sighed deeply and declined] ; Lionel
+     ;; [2918:said, "Why me, Lancelot? I'm not as young as I used to be"] ; Marhaus
+       ;
+     [2952:smelt awful, and Lancelot decided not to ask
+     for any more help] ; peasants
+     [2953:seemed very unfriendly] ; crowd
+     [2954:squawked and ignored Lancelot] ; hawks
+
+
+     [2955:ignored Lancelot completely] ; Queen's knights
+     ;; [2956:said, "I will not parley until we have fought"] ; the Black Knight
+     ;;
+     [2957:said, "Sorry Lancelot, I have other things to attend to"] ; Guenever
+     [2958:said, "Do it yourself, peasant"] ; Sir Kay
+     [2959:said, "I will not help my enemy"] ; Sir Meliagaunt
+
+
+
+
+
+
+     [2960:said, "Look, you can't ask me, the king, for help on such
+     trivial matters! Don't bother me with that sort of thing again"]; Arthur
+     [2961:said, "You have despoiled the Queen's honour and
+     deserve to die"] ; Sir Colgreavaunce
+      [2962:said, "I am fully occupied with important matters. There
+     are forces at work of which you know nothing. The best I can do is
+     to help if you get into real difficulties"] ; Merlin
+     [2963:said, "You can get into the cart if you like. Beyond that
+     I cannot help you"] ; carter
+     [2964:said, "I cannot, unless you promise to love me"] ; damosel
+     ; [2965:said, "You have despoiled the Queen's honour and
+     ; deserve to die"] ; Sir Colgreavaunce
+      ;--------
+     ;
+     ;
+     ; comments made by people when they encounter Lancelot for the first time
+     ; 3000+
+     ;; [3002:Tristram said, "Hello Lancelot, have you brought my harp?" ] ;
+     CE to PA: GALAHAD????? in original;;
+     [3003: Galahad cried, "Greetings, father. I'm sorry I cannot tarry
+     long, but I hope to see you again soon". ]
+     [3004: Bors de Ganis said, "Fair greetings, sir, you are a most
+     welcome sight to me in my plight". ]
+     [3005:Sir Question Mark looked briefly at Lancelot, "Good day, sir -
+     have we met before?". ]
+     [3006:Gawain cried out, "Lancelot, you have not come a moment too
+     soon!". ]
+     [3007:the Red Knight said, "Wait, knight. If you want to journey
+     further you must do battle with me for the right to ride past". ]
+     [3008:Meliot said feebly, "Help me, Lancelot, for I cannot last much
+     longer". ]
+     [3009:Lamorak said, "Lancelot my saviour, truly I feared you might not
+     get here in time". ]
+     [3010:Ector de Maris said, "My brother, you have reached me just in
+     time". ]
+     [3111:Agravain nodded briefly at Lancelot]
+     [3112:Aliduke advanced towards Lancelot and said, "Greetings, fair
+     sir, it is an honour to have you with us". ]
+     [3113:Brandiles said, "Good tidings Lancelot, I had heard of your
+     arrival from my comrades". ]
+     [3114:Brian said, "It is always a pleasure to meet a new knight of the
+     round table". ]
+     [3115:Geheris said: "Hello, sir, already I have heard tell of
+     some of your deeds". ]
+     [3116:Gareth nodded to Lancelot, "I look forward to testing your
+     strength on the jousting field before long". ]
+     [3117:Lionel said warmly, "Greetings, uncle, 'tis good to see you
+     again". ]
+     [3118:Marhaus said: "Welcome sir, 'tis a pleasure to have you join the
+     round table". ]
+     [3056:the black knight said, "Hold fast, traveller. Only worthy
+     knights may pass me". ]
+     [3058:Sir Kay said, "Well I never, look what the mouse dragged in.
+     If you have any business in this place, I suggest you go and sleep
+     in the mews. They're cheap, which should suit you fine, and not far
+     from here". He gestured arrogantly to the north, "Be off with you,
+     peasant. There's a curfew for the lower classes, you know". ]
+     [3062:Merlin said, "Greetings, Lancelot. Your coming was foretold
+     to me in a dream". ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

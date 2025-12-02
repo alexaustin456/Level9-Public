@@ -1,0 +1,14 @@
+le|^N everyone ^N everybody] ; collective noun 
+;; [538:^N clothes|^N armour] 
+; 
+; Omni-present objects.. 
+[539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It 
+; is apparently never described by PRINTOBJECT (so?). 
+[541:^N water|^N river] 
+[542:^N be] 
+[543:^N room|^N ground ^N floor] ; used for output as well 
+[544:^N wall|^N walls] 
+[545:^N sky|^N sun ^N moon] 
+; 
+; and finally, some miscellaneous nouns.. 
+[546:^N lo

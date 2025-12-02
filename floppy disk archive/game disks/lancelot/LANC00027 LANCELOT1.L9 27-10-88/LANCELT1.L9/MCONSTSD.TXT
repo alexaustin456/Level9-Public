@@ -1,0 +1,26 @@
+enever had been captured by Sir 
+Meliagaunt and carried off southwards to his castle. They shouted 
+their anger and set out in pursuit, and grim-faced Lancelot rode 
+with them. ] 
+; 
+; grid rooms... 
+; 
+[1570:Lancelot thought how easy it would be to get lost in this 
+maze of winding streets] ; 220 south warren 
+; 
+[1571:peasants and traders, on their way to market, mingled 
+with city folk and priests about their business. ] ; 221 south way 
+; 
+[1572:shopkeepers hawked their wares, shouting loudly to 
+all who passed. Lancelot looked on with interest, but did not 
+dally. ] ; 222 west way 
+; 
+[1573:a sorrowfully thin old woman lurched towards Lancelot, hands 
+outstretched, begging him for food, but walked away as he showed her 
+that he had none to give. ] ; 223 market square 
+; 
+[1574:as Lancelot rode, the skies darkened to black and rain 
+started to fall. ] ; 224 north warren 
+; 
+[1575:a pilgrim turned his eyes to the south for a last sight of 
+the cathedral bef

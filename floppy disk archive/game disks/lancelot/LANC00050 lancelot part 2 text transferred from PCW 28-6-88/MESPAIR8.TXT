@@ -1,0 +1,996 @@
+
+
+
+     ;
+     ; Message pairs for use in describing containment positions
+     ; also used for preposition table
+     ;
+     ; part printed before container
+     ;
+     [1600:Lancelot could see]      ; 0 - you can see (user's name not
+     ; printed by PRINTOBJECTS)
+     [1601:^P on |^P onto] ; 1 - on
+     [1602:^P underneath|^P below ^P under] ; 2 - under
+     [1603:^P behind]      ; 3 - behind
+     [1604:]               ; 4 - carrying
+     [1605:]               ; 5 - wearing
+     [1606:in|^P at]       ; 6 - blocking the hole
+     [1607:^P in |^P into ^P inside] ; 7 - in
+     [1608:hanging from]   ; 8
+     [1609:growing from ]  ; 9 - part of
+     [1610:^P between]     ; tied between is tied a rope
+     ;; [1611:]              ;11 - 'the carter was driving a cart'
+     [1612:lying on]       ;12
+     [1613:sitting on]     ;13
+     [1614:fastened to]    ;14
+     ; 15 'giant nabon was lying on the pillow'
+     [1616:^P with|^P using]
+     [1617:^P from]
+     ;
+     ; part printed between container and contained.
+     ;
+     [1640:]                ; 0
+     [1641:was]             ; 1 - on
+     [1642:was]             ; 2 - under
+     [1643:was]             ; 3 - behind
+     [1644:was carrying]    ; 4
+     [1645:was wearing]     ; 5
+     [1646:was blocked by]  ; 6 - is blocked by
+     [1647:was]             ; 7 - in
+     [1648:was]             ; 8
+     [1649:was]             ; 9 - part of is
+     [1650:was tied]        ;10 -
+     [1651:was driving]     ;11 - the carter was driving a cart
+     [1652:]                ;12
+     [1653:]                ;13
+     [1654:was]             ;14 - fastened to
+     [1655:was lying on]
+     ;
+     ; for plural contents...
+     [1670:]                ; 0
+     [1671:were]             ; 1 - on
+     [1672:were]             ; 2 - under
+     [1673:were]             ; 3 - behind
+     [1674:was carrying]    ; 4
+     [1675:was wearing]     ; 5
+     [1676:was blocked by]  ; 6 - is blocked by
+     [1677:were]             ; 7 - in
+     [1678:were]             ; 8
+     [1679:were]             ; 9 - part of is
+     [1680:was tied]        ;10 -
+     [1681:was driving]     ;11 - the carter was driving a cart
+     [1682:]                ;12
+     [1683:]                ;13
+
+
+
+
+
+
+     [1684:were]             ;14 - fastened to
+     [1685:was lying on]
+
+     ; 1700: is base for prepositions to use with 'you'
+     ;
+     ; 1700+N is part printed before 'you'
+     [1715:tied to]
+     ;
+     ; 1740+N is part printed between you and object(s)
+     [1741:was on]         ; 1 - on
+     ; 1742 is 2
+     ; 1743 is 3
+     [1744:owned]          ; 4 - own
+     [1745:was wearing]    ; 5
+     [1746:was riding]     ; 6
+     [1747:was in]         ; 7
+     [1751:was driving]    ; 11 - Lancelot was driving
+     [1752:was lying on]   ; 12
+     [1753:was sitting on] ; 13
+     [1754:was fastened to];14
+     [1755:was lying on]
+     ;
+     ; for plural prepositions...
+     ; 1770+N is part printed between you and object(s)
+     [1771:were on]         ; 1 - on
+     ; 1772 is 2
+     ; 1773 is 3
+     [1774:owned]           ; 4 - own
+     [1775:were wearing]    ; 5
+     [1776:were riding]     ; 6
+     [1777:were in]         ; 7
+     [1782:were lying on]   ; 12
+     [1783:were sitting on] ; 13
+     [1784:were fastened to];14
+     [1785:were] ; tied to you is 15
+     ;
+     [1800:^P off]
+     [1801:^P up]
+     [1802:^P down]
+     [1803:^P to]
+     [1804:^P out]
+     [1805:^P from the ] ; used for npc motion
+     [1806:^P for]
+     [1807:^P until]
+     [1808:^P debug]
+     [1809:^P through]
+     [1810:^P about]
+     ;
+     ; Parser messages..
+     [2000:you don't need to use "]
+     [2001:" to finish the game]
+     ;
+     [2003:I don't understand the word "]
+     [2004:" when used like that]
+     ;
+     [2006:Lancelot was ]
+     [2007:in a ] ; as in 'You are in an alder forest
+     [2008:in an ]
+     [2009:exits led in all directions]
+     ;
+
+
+
+
+
+
+     ; general error message when parsing has broken down.
+     [2010:I don't understand what you mean]
+     [2011:Lancelot couldn't see]
+     [2012:Lancelot didn't have]
+     [2013:Lancelot already had]
+     [2014:(Perhaps I'm just being particularly thick today, but I really
+     haven't a clue as to what you are blathering on about)]
+     [2015:it's too far away] ; examine, take etc. scenery objects
+     [2016:I can't find a verb in that sentence]
+     [2017:it's not there]
+     [2018:there were too many nouns in that sentence.]
+     [2019:Lancelot couldhere]
+     [2048:Lancelot couldn't find ]
+     ;
+     [2053:it's not clear to what ]
+     [2054: is referring]
+     ;
+     ;; [2055:(removing] ; E.g '(Removing the bat from the cage first).'
+     ;; [2056:from the]  ; to avoid containers inside themselves.
+     ;; [2057:first).]
+     ;
+     ; error messages for NPC's
+     [2060:are you talking to yourself again?]
+     [2061:Lancelot couldn't talk to several people at once]
+     ;
+     ;; [2065:for] ; as in 'looks for the cask'
+     ;; [2066:bhere]
+     [2048:Lancelot couldn't find ]
+     ;
+     [2053:it's not clear to what ]
+     [2054: is referring]
+     ;
+     ;; [2055:(removing] ; E.g '(Removing the bat from the cage first).'
+     ;; [2056:from the]  ; to avoid containers inside themselves.
+     ;; [2057:first).]
+     ;
+     ; error messages for NPC's
+     [2060:are you talking to yourself again?]
+     [2061:Lancelot couldn't talk to several people at once]
+     ;
+     ;; [2065:for] ; as in 'looks for the cask'
+     ;; [2066:but can't find]
+     ;
+     ;; ; message pair when a npc tries to take stuff from others...
+     ;; [2074:won't let]
+     ;; [2075:take it]
+     ;
+     ; Standard Adventure output messages
+     ;
+     [2100:Welcome to part 2 of Lancelot, copyright (C) 1988 Level 9
+     Computing. ]
+     ;; [2101:Lancelot couldn't see]
+     ;; [2102:Lancelot didn't have]
+     ;; [2103:Lancelot already had]
+     ;; [2104:Lancelot couldn't see that here]
+     ;; [2105:in the distance is ] ; for scenery seen from afar
+     ;; [2106:Lancelot owned nothing at all. ]
+     ;; [2108:it was dark, Lancelot could not see]
+     ;
+     ; examining something greater than maxobject: (but not scenery)
+     ; rare occurrence - mostly for omnipresent objects, numbers, spells
+     [2112:it looked exactly as Lancelot had expected. ]
+
+
+
+
+
+
+     ;; [2113: nothing]
+     [2114:Lancelot couldn't go that way]
+     [2115:through the door]
+     ;; [2116:Lancelot banged his nose, knees and knuckles on the door. Perhaps he
+     ;; should have opened it first? ]
+     [2117:it's already open]
+     ;; [2118:it's already closed]
+     ;; [2119:Lancelot found]
+     ;
+     [2123:Lancelot couldn't put ] ; paired with 2124
+     [2124:there]
+     ;
+     ;; [2125:Lancelot couldn't go there! ]
+     [2126:Lancelot would have to drop it first]
+     ;
+     ;; [2127:Lancelot couldn't climb that]
+     [2128:%Did you know that you can go quickly to a far off place? E.g
+     "RUN TO CAMELOT" or "GOTO THE ORKNEYS".%]
+     ;
+     ; 2130 is used when player refers to scenery which is not nearby
+     [2130:I can't find a reference to "]
+     [2131:Lancelot was on it! ]
+     [2132:what? ]
+     [2133:where? ]
+     [2134:Lancelot was wearing ]
+     [2135:Please try again, saying what with? ]
+     [2136:which one?]
+     [2137:at what?]
+     [2139:was full]
+     [2140:" here]
+     ;
+     [2142:Lancelot couldn't wear ]
+     ;; [2143:Lancelot couldn't reach it from here]
+     ;
+     [2147:Lancelot was already wearing that]
+     [2148:Lancelot found he didn't need to do that]
+     ;
+     ; Confirmation messages
+     ;
+     [2152:worn]
+     [2153:OK]
+     [2155:time passed. ]
+     [2156:said]
+     [2158:Lancelot found he would have to untie it first]
+     ;
+     [2160:YES or NO please.%]
+     ;
+     ;; [2177;Lancelot heard strange noises]
+     ;; [2178:Lancelot heard a strange noise]
+     ;; [2179:Lancelot heard some strange noises coming from nearby]
+     ;; [2180:Lancelot heard an odd noise and, though he listened carefully, he
+     ;; could not identify it]
+     ;; [2181:Lancelot heard a strange noise]
+     ;
+     ;; [2190:(]
+     ;; [2191:)]
+     ;
+     ; Death, scoring, game control etc.
+     ;
+     [2200:really restart? ]
+
+
+
+
+
+
+     ;; [2201:%press space to play again]
+     [2202:really restore? ]
+     [2203:% %did Lancelot continue? ]
+     [2204:said, "Thank you"]
+     ;
+     [2209:% %the adventure is over.
+     %Please type RESTART, OOPS, RESTORE or RAM RESTORE: ]
+     ;
+     ;; [2214:% %Do you want to continue? ]
+     [2215:that's too long to wait] ; won't wait
+     [2216:you can wait for someone, or for a period of time; eg WAIT
+     GAWAIN, WAIT 10 or WAIT FOR 25 MINUTES]
+     ;
+     ; Residual combat messages..
+     ;; [2230:the body of] ; as in 'the body of a troll'
+     ;; [2231:, but]
+     ;
+     ; Score messages..
+     [2240:%Lancelot scored ]
+     [2241:% %you seem to have got Lancelot killed.%]
+     [2242: out of 1000]
+     ;
+     [2300:Undo and ram save//restore don't work in this version. ]
+     [2301:%please insert save disc and press a key. %]
+     [2302:%please insert game disc.%]
+     [2308:I can't use UNDO to go back further than this. ]
+     [2309:%(This version allows you to use RAM SAVE and RAM RESTORE to
+     save a position in memory, and UNDO to take back bad moves).%]
+     [2310:can't return to that saved position in memory. Perhaps you've
+     turned off the computer, or reloaded the game, since it was saved. ]
+     ;
+     ;
+     [2311:% %Lancele complex than echo verbs)..
+     [2401:that might end up with Lancelot getting hurt] ; attack me
+     [2404:Lancelot could smell nothing of interest]
+     [2405:Lancelot found nothing much to write about]
+     [2406:Lancelot smelt of oil and leather]
+     ; smell player
+     [2407:Lancelot said hello]
+     [2416:to be, or not to be, that is the question]
+     ;
+     ; add your messages for special cases here....
+     [2498:could not possibly attack a woman]
+     [2499:said "I cannot yet return te complex than echo verbs)..
+     [2401:that might end up with Lancelot getting hurt] ; attack me
+     [2404:Lancelot could smell nothing of interest]
+     [2405:Lancelot found nothing much to write about]
+     [2406:Lancelot smelt of oil and leather]
+     ; smell player
+     [2407:Lancelot said hello]
+     [2416:to be, or not to be, that is the question]
+     ;
+     ; add your messages for special cases here....
+     [2498:could not possibly attack a woman]
+     [2499:said "I cannot yet return to Camelot"]
+     [2500:said, "Sire, you have no further need of me, so I shall take my
+     leave of you and return to Camelot. Farewell". He rode off into
+     the distance]
+     [2501:the sentries blocked]
+     [2502:and said, "No entry"] ; after 2501/name
+
+
+
+
+
+
+     [2503:the armies blocked]
+     [2504:and waved their pikes menacingly]
+     [2505:the soup drained away]
+     [2506:tasted the soup. It was very good, but a bit too salty]
+     [2507:the sails caught fire! Soon the fire spread into a large blaze,
+     engulfing much of the deck. Then the flames spread to the other ships.
+     Lancelot only just had enough time to flee the deck before it was
+     completely ablaze. The Sessoins surrendered and the elders of Tintagel
+     lauded him as a hero, and invited him to dinner]
+     [2508:as Lancelot entered the castle, he was seized by 30 guards who
+     disarmed him and locked him up in the dungeons]
+     [2509:Tristram sighed and said, "If only I had my harp, maybe we
+     could escape"]
+
+     [2510:said a devout prayer] ; general case.
+     ; some special cases for knights...
+     [2511:rode]
+     [2512:, mounting his horse]
+     [2513:dismounted and went]
+     [2514:such things are below your knightly gaze] ; exam horse/armour
+     [2515:-] ; minus sign for negative scores
+     [2516:was riding a huge war-horse]
+     ;
+     ;
+     [2518:left all his possessions behind and]
+     [2519:made the long trip to Camelot]
+     ;
+     [2520:strummed a few chords]
+     [2521:played a hauntingly beautiful tune, his fair head bent low over
+     the harp as if engrossed in his music] ; Tristram playing
+     [2522:soon all the guards were entranced, and gladly opened the
+     cells. Tristram led the escape of all the prisoners by
+     jumping down from the chapel window]
+     ;; [2523:Lancelot hid in the cart]
+     [2523:the carter pushed the cart up to the sentries, who gave it
+     a cursory glance (fortunately missing the lump that was Lancelot) and waved it on]
+
+     [2524:pushed the cart]
+     [2525:hiss! The soup evaporated, but the coals were still glowing red hot]
+     [2526:the pain was excruciating]
+     [2527:Lancelot's skin was beginning to blister]
+     [2528:was in unbearable agony, and had to drop ] ; the cauldron/coals
+     [2529:unfortunately, the door was locked]
+
+     ; message group for resurrection type comments...
+     [2530:Merlin appeared, "Oh dear, have you got into a fix?"]
+     [2531:Merlin appeared, "Oh not again, have you got into trouble?"]
+     [2532:Merlin appeared, "Oh dear, have you got into difficulties again?"]
+
+
+
+     ; two message groups
+     [2540:smote]
+     [2541:struck]
+     [2542:lacerated]
+     ;
+     ;; [2550:with his sword]
+     ;; [2551:with his spear grasped firmly]
+     ;; [2552:with his sword waving dangerously]
+     ;
+
+
+
+
+
+
+     ; injury status messages
+     [2560:dead]
+     [2561:close to death]
+     [2562:gravely wounded]
+     [2563:seriously hurt]
+     [2564:badly hurt]
+     [2565:injured]
+     [2566:moderately injured]
+     [2567:slightly hurt]
+     [2568:almost unhurt]
+     [2569:unhurt]
+     ;
+     ;
+     [2570:would have sunk in the water]
+     [2571:directed the boat to the]
+     [2572:directed the boat] ; followed by 'from the west' etc.
+     ;; [2573:was not worthy to direct the boat]
+     ;; [2574:the boat would not move without wind]
+     ;; [2575:only the best knight in the world could take it] ; the sword
+
+     ; more Merlin rescue stuff...
+     [2580:would you like me to rescue you?"]
+     [2581:"OK, stay where you are then"]
+     [2582:"I'll see what I can do..." There was a flash, and Lancelot
+     found that he had moved]
+
+
+     [2595:was not watertight]
+     ;; [2596:was already full]
+     ;
+
+     [2600:tried to haul Elaine out the cauldron, but his hands always
+     slipped and she seemed to fixed fast to the bottom. She
+     explained sorrowfully that only the best knight in the world could break her curse,
+     and he was evidentally not yet wastle (**what stopped him?) because
+     entry was by invitation only] ; used by Lancelot only
+     [2611:Lancelot entered the castle, and was told of a feast in his
+     honour, arranged by King Pelles and Elaine. The banquet was
+     magnificent, and afterwards, King Pelles withdrew, perhaps a little
+     ostentatiously. Elaine and he were alone. before Lancelot had time to
+     think of pleasantries, he realised that Elaine was blushingly flirting
+     with him. In fact, she made her love for him astle (**what stopped him?) because
+     entry was by invitation only] ; used by Lancelot only
+     [2611:Lancelot entered the castle, and was told of a feast in his
+     honour, arranged by King Pelles and Elaine. The banquet was
+     magnificent, and afterwards, King Pelles withdrew, perhaps a little
+     ostentatiously. Elaine and he were alone. before Lancelot had time to
+     think of pleasantries, he realised that Elaine was blushingly flirting
+     with him. In fact, she made her love for him plain, and eventually she
+     invited him to stay the night. Taking him by the hand, she led him to
+     the bed chambers, and then paused in the corridor outside. She
+     breathed, "Come to me tonight, my love", and then slipped quietly into
+     her room]
+
+     [2612:Lancelot entered the room and saw Elaine's naked body behind the
+     net curtains around the bed. Did he withdraw? ]
+
+
+
+
+
+
+     [2613:Lancelot locked the door behind him.
+     The ecstasy of that night would stay with him forever. But so would
+     his betrayal of his love Guenever. Yet somehow Lancelot knew that his
+     actions of the night would eventually act for good]
+     [2614:Lancelot closed the door behind him, and his mind resolutely
+     set, resolved to continue
+     to be faithful to Guenever]
+     [2615:Lancelot could not leave his room before morning without losing
+     honour]
+     [2616:the panel was held shut by some magical force]
+     [2617:the blows just bounced off, without even scratching the surface]
+     [2618:Lancelot fell asleep straight away. But during the night
+     he was awakened by the noise of the panel opening]
+     [2619:a glowing spear flew from the open panel. It hit Lancelot in the
+     shoulder, wounding him badly, then it vanished. The panel ground shut
+     again]
+     [2620:a magical knight emerged]
+     [2621:an old man emerged. He was enveloped in adders which seethed
+     constantly around him. He was carrying a spear of vengeance]
+     [2622:four gentlewomen and a bishop emerged, then retreated back through
+     the panel, which closed again]
+     [2623:finally, a cock crowed in the castle grounds, and the bedroom door
+     opened to permit Lancelot to leave]
+     [2624:the knight staggered back through the open panel, only to emerge
+     again a moment later, completely healed and stronger than ever]
+     [2625:the panel moved a little, but would not close completely]
+     [2626:the panel was now almost half shut]
+     [2627:the panel shut completely]
+     [2628:the old man blessed Lancelot for not attacking him, and
+     delivered his message. Then he returned through the panel]
+     [2629:as Lancelot left, Elaine forced a drink into his hands, a
+     sparkling ruby-red liquid in a clear crystal glass. He drank
+     deeply, and felt a peaceful warmth seep deep into his body at the
+     very first draught. When he looked up at Elaine, her face seemed to
+     have grown large and luminous in his gaze, and he could remember no
+     other human being but her. It was, as Lancelot himself dimly realised
+     even under its spell, an enchanted
+     love potion (from some random witch or other)! Enthralled in its powers, he
+     slept with Elaine, but without guilt, for he had no strength, physical
+     or mental, to resist. He
+     realised that he had been fated to sire a son by Elaine,
+     regardless of anything he might have tried to do to avoid it
+     Afterwards, he left Corbin Castle, never to return]
+     [2630:the panel was open, but nothing could be seen through the gap, and
+     an invisible force prevented Lancelot from feeling behind it]
+     [2631:the old man screamed and disappeared back through the panel]
+
+     [2635:could see that the mermaid was very annoyed]
+     [2636:the mermaid laughed and played the harp] ; when they snatch it back
+     [2637:the mermaid dodged easily]
+     [2638:the mermaid played a haunting tune on the harp]
+     ;
+     [2640:the giant was sleeping soundly, snoring occasionally]
+     [2641:the giant slept on soundly]
+     [2642:the giant's head was momentarily suspended in mid-air]
+     [2643:the giant's head fell to the ground without support]
+     [2644:the new pillow was too uncomfortable]
+     [2645:dawn broke]
+     [2646:the giant's head was already supported by]
+     [2647:the giant collapsed in a pile of dust]
+
+
+
+
+
+
+     [2648:the giant grabbed the sack and hid it inside his jacket]
+     [2649:tried to open the door, but one person couldn't open it
+     unaided]
+     [2650:also pushered his services]
+     [2659:Sir Question Mark was Sir Breunis's prisoner]
+     ;
+     [2660:couldn't get through the briars]
+     [2661:chopped away at the briars]
+     [2662:the briars grew again]
+     [2663:chopped through the main stem. The briars
+     shrivelled magically and disappeared]
+     ;
+     ;; [2665:Lancelot fell asleep under the tree. He was later awoken
+     ;; by some people riding up...]
+     [2666:Queen Northgales spoke, "Lancelot, which one of us will you
+     choose for yoered his services]
+     [2659:Sir Question Mark was Sir Breunis's prisoner]
+     ;
+     [2660:couldn't get through the briars]
+     [2661:chopped away at the briars]
+     [2662:the briars grew again]
+     [2663:chopped through the main stem. The briars
+     shrivelled magically and disappeared]
+     ;
+     ;; [2665:Lancelot fell asleep under the tree. He was later awoken
+     ;; by some people riding up...]
+     [2666:Queen Northgales spoke, "Lancelot, which one of us will you
+     choose for your love? We must have an answer before you may leave"]
+     [2667:Queen Eastlands said, "You must choose one of us"]
+     [2668:the queens were furious]
+     [2669:hundreds of guards rode up and surrounded Lancelot. He found
+     himself dragged off into a cell within the castle]
+     [2670:Queen Morgan offered Lancelot a cup of wine, "Drink this," she
+     said imperiously, "Then
+     you will feel better"]
+     [2671:Queen Morgan said, "Have you yet changed your mind? If you
+     ever wish to leave here, you must vow to love only me" ] ; need trailing
+     ; space.
+
+     [2672:she said, "Then here you shall stay"]
+     [2673:she said, "Then you may go free"]
+     [2674:she said, "Very well, my love. We shall meet again. And
+     remember, you must remain faithful
+     to me." Then all the queens rode off, their heads close together, as
+     they no doubt congratulated each other on their conquest]
+     [2675:drank the wine. It was a love potion, and under its influence,
+     he cried out for Queen Morgan. She came to him, and he heard himself
+     vowing avidly, wildly, to
+     love her truly for evermore. She left, triumph sweeping across her
+     sharp-featured face, and Lancelot was free]
+     ;;
+     [2676:the damosel offered some food to Lancelot]
+     [2677:Queen Morgan said, "Drink of it at your leisure"]
+     [2678:the damosel drank the love potion and fell in love with Lancelot.
+     She kissed him chastely, and opened the cell]
+     [2679:another night and day passed, with no visitors for Lancelot]
+     [2680:the damosel said impatiently, "Sir Lancelot, if you do not eat, you will
+     surely die"]
+     [2681:it tasted OK] ; eat damosel's food
+     ;
+     [2685:Turquin challenged Lancelot, "Fight and be vanquished, knave"]
+
+
+
+
+
+
+     [2686:Turquin banged on the door to the manor. After a brief pause,
+     it swung open]
+     [2687:knocked on the door. There was a brief pause, then a shower
+     of dirty water was thrown on them from above]
+     [2688:Turquin submitted and fled]
+     [2689:trod on the loose planks]
+     [2690:the panel opened]
+     [2691:an arrow flew from the open panel]
+     [2692:which Lancelot dodged]
+     [2693:which found its target]
+     [2694:fell to the ground, motionless]
+     ;
+     [2695:the panel was closed]
+     [2696:the panel closed]
+     [2697:grabbed the panel to hold it open]
+     [2698:Lancelot felt the floor move a touch. Did he jump back? ]
+     [2699:Lancelot jumped back from the treacherous floor]
+     [2700:the floor tipped up! Lancelot fell a long way, and
+     landed in a prison]
+     [2701:there was a grinding sound from the north, followed by a short
+     scream, then a further grinding noise]
+     [2702:the floor felt unstable, but remained horizontal]
+     [2703:Lancelot saw a bell above the door. Did he jump back
+     to avoid it ringing? ]
+     [2704:the bell rang]
+     [2705:grabbed the bell and silently ripped it from its mounting]
+     [2706:there was a loud grating noise from below]
+     [2707:the winch squeaked as it was turned]
+     [2708:the cage disappeared]
+     [2709:the cage appeared]
+     [2710:the cage rose]
+     [2711:the cage descended]
+     [2712:the chains were held by some mechanism out of sight]
+     [2713:released]
+     [2714:a guard looked down the shaft, and Lancelot knew that
+     all was lost]
+     [2715:the guard shouted into the guardroom, "Oi, you guys, we're
+     being attacked!"]
+     [2716:Dozens of guards streamed out of the guardroom.
+     They drove the party out of the castle, with Lancelot holding a heroic
+     rearguard action]
+     [2717:, who stretched and got up, then got into the cage]
+     [2718:he was chained to the wall by chains that just looped into
+     the wall and were held by some hidden mechanism. Lancelot decided
+     he might be able to free him without any tools]
+     ;
+     ; 10 comments heard from guardroom
+     [2719:from within the guardroom, ]
+     [2720:all conversation stopped]
+     [2721:someone said, "I thought Id. But there
+     was no-one to be seen]
+     [2731:someone] ; used in combat messages
+     [2732:flailed around at random, but hit no-one]
+     [2733:the footsteps followed Lancelot inside]
+     [2734:with the shutters closed, the turret was completely dark.
+     Lancelot heard foul cursing from nearby as Garlon realised he
+     had lost his advantage]
+     [2735:with Garlon dead, Lancelot had removed a scourge from the
+     land which had killed many good knights by foul means]
+     ;
+     [274d. But there
+     was no-one to be seen]
+     [2731:someone] ; used in combat messages
+     [2732:flailed around at random, but hit no-one]
+     [2733:the footsteps followed Lancelot inside]
+     [2734:with the shutters closed, the turret was completely dark.
+     Lancelot heard foul cursing from nearby as Garlon realised he
+     had lost his advantage]
+     [2735:with Garlon dead, Lancelot had removed a scourge from the
+     land which had killed many good knights by foul means]
+     ;
+     [2740:a lady rushed out from the castle and addressed Lancelot, "Oh,
+     good sir, my favourite
+     hawk has]
+     [2741:once again]
+     [2742:become entangled in the branches of the elm tree. Will you please
+     climb the tree to rescue it for me"]
+     [2743:the lady seemed very disappointed, "My falcon has gone forever"]
+     [2744:the lady smiled and gazed adoringly at Lancelot, "I would be
+     greatly honoured if Sir Lancelot himself would rescue the bird", she
+     said with a sideways glance at the knight]
+
+     [2745:removed his armour] ; before climbing tree
+     [2746:the bird was trapped by its lunes, which were entangled in
+     the branches]
+     ;; [2747:the bird flapped away with great effort]
+     [2748:tied the bird's lunes to the wood, and tossed it down to the ground.
+     A cry of joy from below confirmed its safe arrival]
+     [2749:heard sounds of fighting from below]
+     ;; [2750:Pedivere taunted Lancelot, "You are now quite helpless without
+     ;; your armour. You have walked right into the little trap my
+     ;; wife arranged for you"]
+     [2751:turned away from Pedivere to leave, but was mortally wounded
+     by a spear in the back]
+     [2752:was wounded badly without armour]
+     [2753:Pedivere was hit by the wood full square across the shoulder
+     blades, and in trying to fend it off, fell off his horse. He lay on
+     the ground on his back, waving his legs in the air like some strange
+     armoured insect. Lancelot seized his opportunity and overpowered him,
+     pinning him to the ground. Pedivere surrendered, and with Lancelot's
+     help, managed to get to his feet, and left. His wife trailed after
+     him, weeping copiously. Lancelot picked his armour and put it back on,
+     then mounted his horse]
+
+     [2754:Pedivere hurriedly backed his horse away from Lancelot]
+     ;; [2754:could not climb down whilst carrying the struggling bird]
+     ;
+     [2760:yielded. Did Lancelot spare him? ]
+     [2761:said, "None shall pass" and blocked] ; coloured knights blocking people
+     [2762:rode away, striking Lancelot to the ground as he left]
+     [2763:ran him through with a single, clean, stroke]
+     ;; [2764:challenged Lancelot] ; black/red/green knight challenges
+     ;
+     [2765:a flurry of arrows dissuaded] ; .. person
+     [2766:the commander rode up, trembling visibly, and explained that
+     he had been besieging Dame Lyoness,  but that since he did not
+     wish to fight Lancelot, he would leave with his army. He told Lancelot
+     that if he wished to enter the castle he would be free to do so. He
+     also explained that while the black and green knights were his evil
+     servants, the red knight was a honourable round table knight acting under
+
+
+
+
+
+
+     orders]
+     [2767:he offered the services of the red knight to Lancelot]
+     [2768:he rode off with his army in a great hurry]
+
+
+
+     [2769:hid in the bushes]
+     [2770:Lancelot heard a brachet barking]
+     [2771:the damosel spoke out against the killer of Sir Gilbert]
+     [2772:the damosel explained that Sir Gilbert could only be cured by
+     a cloth from the Chapel Perilous]
+     [2773:Lancelot put down his sword]
+     [2774:all thirty knights attacked at once, and Lancelot was quickly
+     overwhelmed]
+     [2775:picked up his sword again]
+     [2776:Hellawes ordered Lancelot to put down his sword and kiss her]
+     [2777:kissed her, and was captured]
+     [2778:Hellawes and her knights vanished]
+     [2779:Sir Meliot took the cloth, and was healed. He thanked Lancelot,
+     and rode off to Camelot with his maid]
+
+     [2780:the guard signalled the portcullis to descend]
+     [2781:the portcullis started to descend]
+     [2782:the portcullis was now half shut]
+     [2783:the portcullis clicked shut]
+     [2784:the guard blocked Lancelot, and said, "No entry"]
+     [2785:the guard was standing inside the closed portcullis]
+     [2786:couldn't fit through the gaps in the portcullis]
+     [2787:lit the beacon]
+     [2788:the guard p rocks and sand]
+
+     ; additions to Lancelot's name...
+     [2798:of the Round Table]
+     [2799:squire]
+     [2800:Sir] ; comes first
+     ;; [2801:the infidel]
+     ;; [2802:the thief]
+     ;
+     [2810:whined and licked its master]
+     [2811:lay down next to Meliot]
+     [2812:ran around in circles]
+
+     ; some messages printed by Damosel Maledisant invoked by racetrack
+     ; in ActorM1Dot format
+     [2840:looked nervously at the guards and said, "I'm just going off
+     to powder m rocks and sand]
+
+     ; additions to Lancelot's name...
+     [2798:of the Round Table]
+     [2799:squire]
+     [2800:Sir] ; comes first
+     ;; [2801:the infidel]
+     ;; [2802:the thief]
+     ;
+     [2810:whined and licked its master]
+     [2811:lay down next to Meliot]
+     [2812:ran around in circles]
+
+     ; some messages printed by Damosel Maledisant invoked by racetrack
+     ; in ActorM1Dot format
+     [2840:looked nervously at the guards and said, "I'm just going off
+     to powder my nose"]
+     [2841:looked from Lancelot to the Queens and said, "Humph! If you're
+     going to dally with these trollops, I'll be off"]
+     [2842:looked from Lancelot to Elaine and back and said, "Well really,
+
+
+
+
+
+
+     don't let me interrupt you," and tossed her head]
+     [2843:was sitting by the side of the road. For a while she pretended
+     not to see Lancelot. Then, reluctantly, she got up and said
+     "well, I hope you enjoyed yourself"]
+     [2844:said, "I suppose I'll have to help you out this time"]
+     ;
+     ; "Pet" messages... (table driven)
+     ; some remarks made by Damosel Maledisant on various occurances...
+     [2850:Ugh, not enough garlic] ; try soup
+     [2851:Very clever]
+     [2852:Take some music lessons] ;play harp
+     [2853:Weakling! Bet you drop it] ; take cauldron
+     [2854:Told you so] ; if he does
+     [2855:Don't you have a key] ; try to open doors etc. without
+     [2856:You're not Jesus] ; walk on water
+     [2857:Yhat was very careless]
+     [2858:Nowhere good enough yet] ; try to lead elaine out of cauldron
+     [2859:Weakling]
+     [2860:Now you've done it]
+     [2861:You filthy little devil] ; "rude word" npc
+     [2862:Watch it - she's only after your title] ; Elaine offer
+     [2863:I hope you enjoyed that] ; after conceiving galahad
+     [2864:DON'T MAKE ANY NOISE WHICH MIGHT WAKE HIM UP] ; near Nabon
+     [2865:Cowardly scum]
+     [2866:Why don't you sharpen your sword] ; try to cut hedge
+     [2867:You can't refuse a challenge]
+     [2868:He was hardly a worthy opponent]
+     [2869:You should have seen that coming]
+     [2870:That should have been you, Lancelot] ; someone else Oublietted
+     [2871:You really messed that up] ; flee from castle
+     [2872:That was a cowardly trick] ; defeat garlon
+     [2873:Fancy letting down a lady] ; lady disappointed - no hawk
+     [2874:You're not worthy to wear armour anyway]
+     [2875:Haha! Get up, you puny weakling] ; bashed over head by xxx knight
+     [2876:How cruel and dishonourable] ; run through xxx knight
+     [2877:That was a mistake]
+     [2878:I think he saw you] ; guard lowers portcullis
+     [2879:What did you expect? Treasure?] ; open chest
+     ;
+     [2919:said, "You have trespassed in my forest, and you shall
+     die"] ;Sir Breunis
+     [2920:said, "Soon you shall die"] ; Invisible Garlon
+     ;
+     [2922:remained quite silent and mysterious] ; a magical knight
+     [2923:repeated his challenge] ; turquin
+     [2924:said, "Soon I will have defeated Lancelot, so I will become the
+     best knight in the world"] ; Pedivere
+     [2925:said, "Sorry, no entry"] ; Black Knight
+     [2926:said, "No entry"] ; Green Knight
+     [2927:said, "Absolutely no entry"] ; Red Knight
+     [2928:said, "Just kiss me"] ; Hellawes
+     ;; [2929:said, "Lancelot, you must choose one of us
+     ;; to be your beloved, or you will never leave this forest". ] ; Queen Morgan
+     ;; [2930:Queen Northgales said, ""Surely it cannot be that difficult a
+     choice," and pouted grotesquely at him]
+     ;; [2931:"Really, Lancelot, we're not unattractive. Just promise
+     yourself to me and you'll be free to go," said Queen Eastlands]
+     ;; [2932:Queen Outisles smiled knowingly at Lancelot, "All I ask is
+     for your love. Isn't your freedom important to you?" ]
+     [2933:said, "You're supposed to be the great knight, do it yourself] ; Damosel Maledisant
+
+
+
+
+
+
+     [2934:said, "I cannot help you"] ; damosel in Chariot prison
+     [2935:said, "Sorry, no"] ;damosel
+     [2936:said, "Sorry, no"] ;Lady
+     [2937:said nothing] ; Giant Nabon *** check not used when Nabon is asleep
+     ;
+     [2940:were too busy maintaining their camp to take any notice] ; army
+     [2941:appeared to be stone deaf] ; carter
+     [2942:smiled and shook her head] ; Elaine
+     [2943:laughed with a kind of tinkling noise] ; mermaid
+     [2944:seemed surprised, and one of the adders hissed noisily] ; old man
+     [2945:seemed busy with their own affairs] ; residents
+     [2946:refu ; [3003:Galahad said, "Greetings father. It's marvellous to see you,
+     but really, I have so
+     ; many things to do". ]
+     [3004:Bors said, "Hail Sir Lancelot, I thank you for rescuing me". ] ; bors
+     [3005:Sir Question Mark said, "Sir Lancelot, please kill Sir Breunis
+     so I may be free". ]
+     [3006:Gawain said, "Lancelot, you arrived just in time. How can I
+     thank you enough for rescuing me?". ] ; Gawain
+
+     [3007:the Red Knight challenged Lancelot. ]
+
+     [3008:Meliot sa ; [3003:Galahad said, "Greetings father. It's marvellous to see you,
+     but really, I have so
+     ; many things to do". ]
+     [3004:Bors said, "Hail Sir Lancelot, I thank you for rescuing me". ] ; bors
+     [3005:Sir Question Mark said, "Sir Lancelot, please kill Sir Breunis
+     so I may be free". ]
+     [3006:Gawain said, "Lancelot, you arrived just in time. How can I
+     thank you enough for rescuing me?". ] ; Gawain
+
+     [3007:the Red Knight challenged Lancelot. ]
+
+     [3008:Meliot said, "Sir Lancelot, please help me". ]
+     [3009:Lamorak said, "Hail Sir Lancelot, I cannot tall you how grateful
+     I am that you have saved me". ] ; Lamorak
+     ;
+     ; all these knights start in the same place,
+     ; so we only need one greeting
+     [3010:Ector said, "Hail Sir Lancelot. We, who have been held
+     prisoner by Turquin for so long do salute you". ] ; Ector
+     ;; Don't bother with messages from fellow prisoners; Agravain,
+     ;; Aliduke, Brandiles, Brian, Geheris, Gareth, Lionel and Marhaus.
+
+     [3019:Sir Breunis said, "You have trespassed in my forest, and you
+     shall die". ] ;Sir Breunis
+     ; [3020:someone]
+     ;
+     ; [3022:a magical knight]
+     [3023:Turquin greeted Lancelot and challenged him to a battle. ]
+     [3024:Pedivere taunted Lancelot, "You are now quite helpless without
+     your armour. You have walked right into the little trap my
+     wife arranged for you". ]
+     [3025:the Black Knight said, "Sorry, no entry". ]
+     [3026:the Green Knight said, "None shall pass me". ]
+     ;; [3027:the Red Knight said, "I am commanded not to let anyone pass". ]
+     ;; [3028:Hellawes said, "Ah, Lancelot, I thought you might find your
+     way here. If you want my help, you'll have to repay me with a kiss" ]
+
+
+
+
+
+
+     [3029:Queen Morgan said, "Lancelot, you must choose one of us
+     to be your beloved, or you will never leave this forest". ]
+     ;; [3030:Queen Northgales said, "But Lancelot, your only chance of
+     leaving is to pledge yourself to one of us"]
+     ;; [3031:Queen Eastlands said, "You surely must choose one of us, for
+     you cannot wish to lose your freedom forever"]
+     ;; [3032:Queen Outisles said, "Your freedom is at stake here,
+     Lancelot. Choose me for your love and your troubles will be over"]
+     [3033:the Damosel Maledisant said, "Greetings, you
+     pathetic excuse for a knight. My lady Dame
+     Lyoness is besieged and needs help, and I suppose you'll have to do,
+     though heaven knows I ought to have been able to find someone better
+     by now". ]
+
+     [3034:the damosel said, "Greetings Lancelot. I am sorry that such
+     a handsome knight as you has been interred in this foul prison. For
+     my part, I will do my best to make your stay bearable". ]
+     ;; 3035:damosel
+     ;; [3036:Lady]
+     ;; [3037:Giant Nabon roared, "So, Sir Lancelot, you have come to test
+     your strength against me"]
+
+     [3040:a ripple of disturbance went through the army as Lancelot appeared. ]
+     ;; [3041:the carter was chewing at a straw and gazed unsteadily at
+     Lancelot as he approached]
+     ;; [3042:Elaine cried, "Good Sir Lancelot, do what you can to help me
+     from this cauldron"]
+     ;; [3043:the mermaid sang softly to herself and stretched out over the
+     rock as the ship sailed by]
+     ;; [3044:old man]
+     ;; [3045:residents]
+     ;; [3046:the sentries stood solidly in a flank, barring the way. One
+     of them raised his lance, and said, "We are under orders not to let
+     you pass"]
+     [3047:the knights said, "If you put down your weapon straight away, we
+     shall let you live". ] ; 30 knights
+     ;; [3048:guard]
+     ;; [3049:the dragon reared up to its full height and let forth a
+     stream of searing flame]
+     ;; [3050:hawk]
+     [3051:the brachet barked at Lancelot and pointed its nose to the north. ]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   [3051:the brachet barked at Lancelot and pointed its nose to the north. ]
+     ;
+
+
+
+
+
+
+
+

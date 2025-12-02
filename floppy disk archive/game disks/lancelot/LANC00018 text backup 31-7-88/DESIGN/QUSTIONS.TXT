@@ -1,0 +1,34 @@
+      LANCELOT CONTEST QUESTIONS. COPYRIGHT (C) 1988 LEVEL 9
+      ------------------------------------------------------ 
+
+At first, read Merlin's books. Take the first word of each book 
+extract and sort them into the "master riddle", taking both the 
+meaning and the initial letters:
+"The Isthmus Narrows To A Grassy Exposed Land" (Tintagel). 
+
+"Arthur Lies Deep Entombed; Rocky Lumps Embellish Yonder Eminence's 
+Damp Gritstone Escarpment" (Alderley Edge). 
+
+"Defended Inhabitation Near Anglesey; Storms Enshroud Merlin's 
+Rich Yellow Secret" (Dinas Emrys). 
+
+
+At last, do much the same:
+"merlin'S gianT micrO upoN thE heatH; thE well-knowN standinG circlE"
+(Stonehenge). 
+
+"inspirinG knolL. arimitheA joseph'S lefT long-agO hawthorN shruB. 
+yoU touR abbeY" (Glastonbury). 
+
+"steeP mooR, wherE arthur'S megalithiC gravE knolL wilL qualifY" 
+(Prescelly).
+
+"famouS mountaiN O' arroW roaD tO cairN" (Snowdon).
+
+"taboO hilL belongeD tO arthur'S father-in-laW, whilE knightS foughT 
+foR chivalrY" (Old Oswestry). 
+
+
+And, in the middle:
+"unDer floOded haZes, faMed grAil secRets maYbe esPy'd. yOu wOn 
+chaLice" (Dozmary Pool).

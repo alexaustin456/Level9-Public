@@ -1,0 +1,133 @@
+
+
+
+
+     ; Brief location objects (479+N). See 779+ for examine messages and
+     ; 1199+ for their verbose equivalents..
+     ;; [480:^N bleak ^N shore]
+     ;; [481:^N isle of ^N Servage]
+     ;; [482:^N shore near ^N Corbin ^N village]
+     [483:^N west ^N way]
+     [484:^N mews ^N entrance]
+     [485:^N King's ^N gate]
+     [486:^N market ^N square]
+     [487:^N south ^N way]
+     ;
+     ; These are used for seeing from a distance and for input, e.g for
+     ; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+     ; They also provide a link between the grid of synthesised locations
+     ; and the real, static locations used for rooms inside buildings etc.
+     ;---
+     [530:^N rainbird] ; for 'cheat' mode.
+     [531:^N breadcrumbs|^N sausagemeat] ; for 'cheat' mode.
+     ;
+     ; Collective nouns...
+     [534:^N everything ^N all ^N every]
+     [535:^N ingredients] ; collective noun - was 'treasure'
+     ;; [536:^N weapons] ; collective noun
+     [537:^N people|^N everyone ^N everybody] ; collective noun
+     ;; [538:^N clothes|^N armour]
+     ;
+     ; Omni-present objects..
+     [539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It
+     ; is apparently never described by PRINTOBJECT (so?).
+     [541:^N water|^N river]
+     [542:^N be]
+     [543:^N room|^N ground ^N floor] ; used for output as well
+     [544:^N wall|^N walls]
+     [545:^N sky|^N sun ^N moon]
+     ;
+     ; and finally, some miscellaneous nouns...
+     [547:^N except ^N but]
+     [548:^N it|^N that ^N them ^N those ^N none ^N him ^N her]
+     [549:^N minute ^N minutes]
+     ;
+     ;; [550:^N sign ^N cross] ;for 'MAKE SIGN OF CROSS' >>special to Lancelot3
+     [551:^J then ^J next]
+     [552:^J therefore ^J so]
+     [553:^N Lancelot|^N you] ;you
+     [554:^N horse|^N armour ^N weapons ^N sword ^N helmet ^N feet ^N nose]
+     ; >>special to Lancelot
+     ;
+     ; Pronouns...
+     [560:it] ; ita
+     [561:it] ; itan
+     [562:some]
+     [563:he]
+     [564:she]
+     [565:they]
+     [566:Lancelot] ; you
+     [567:he] ; proper male
+     [568:she] ; proper female
+     ;
+     [570:it] ; ita
+
+
+
+
+
+
+     [571:it] ; itan
+     [572:them]
+     [573:him]
+     [574:her]
+     [575:them]
+     [576:Lancelot] ; you]
+     [577:him] ; proper male
+     [578:her] ; proper female
+     ;
+     ; and some misc output messages
+     ; plural endings, and other odd verb declension...
+     [579:~] ; print to avoid bug which can print a space after previous word
+     [580:s]
+     [581:es]
+     [582:is] ; used in examine
+     ;
+     ; Entry directions, in the form 'The animal enters from the
+     ; outside'. (As opposed to 'The animal goes in' - the normal
+     ; verb table.) Note that directions are reversed, so the offset
+     ; into the table is the direction of the moving npc.
+     ;
+     [585:from the south]      ; north
+     [586:from the southwest]  ; northeast
+     [587:from the west]       ; east
+     [588:from the north]      ; south
+     [589:from the northwest]  ; southeast
+     [590:from the northeast]  ; southwest
+     [591:from the east]       ; west
+     [592:from the southeast]  ; northwest
+     [593:from below]          ; above
+     [594:from above]          ; below
+     [595:from outside]        ; inside
+     [596:from inside]         ; outside
+     [597:from across the way] ; across
+     [598:by climbing]         ; climb
+     [599:with a jump]         ; jump
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y climbi

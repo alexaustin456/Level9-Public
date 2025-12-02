@@ -1,0 +1,837 @@
+             LANCELOT DESIGN. COPYRIGHT (C) 1988 LEVEL 9
+             ------------------------------------------- 
+
+DESIGN OUTLINE 
+
+Lancelot. The game was a three-part graphical adventure, written in 
+the third person and past tense (like this design). It followed the 
+life of Sir Lancelot: his joining Arthur and Merlin at court; joining 
+the Round Table; becoming the best knight in the world; having a 
+discreet affair with Guenever and finally attaining the Holy Grail. 
+
+The game avoided too many jousts and battles. Instead, the emphasis 
+was on solving adventure-type puzzles (mostly gleaned from the 
+legends, but with "twists" to provide novel solutions) for the first 
+stage of the game; followed by more political and moral puzzles during 
+the search for the Grail. 
+
+                              PROGRAMS            
+
+The game was made up of three adventure programs, corresponding to 
+Camelot, Logris (England), and the Grail Lands. Transfer between them 
+was automatic with disk versions; with cassette versions, you were 
+told when to play a tape. The second two parts could be played 
+seperately, but to get a maximum score, and complete the adventure, 
+it was necessary to start at the beginning. (In fact, finishing the 
+whole game involved loading the programs in the order 1, 2, 1, 3.)
+
+
+                           PART 1 (CAMELOT)
+                           ----------------
+
+Outline map:               LOGRIS (PART 2)
+(Capitals                         |
+indicate              Start -- CAMELOT --> GRAIL LANDS (PART 3)
+importance.)                      |
+                          Castle Meliagaunt
+
+The game started on Lancelot's way to Camelot; he was challenged at a 
+ford by a black knight and defeated him. Sparing the black knight 
+earnt Lancelot honour; trying to finish him off led to the instant 
+appearance of Arthur's guards (for this was who the knight was). 
+Arthur invited Lancelot to come and be knighted in Camelot, then rode 
+off, leaving him alone. 
+
+The city of Camelot had four gates in this game. The east gate was 
+magically closed, with a prophesy over it, until the Round Table was 
+complete (i.e when Lancelot had finished the first parts) and the 
+knights saw the Holy Grail at the Pentecost celebration immediately 
+after. The north gate led to Logris (part 2), while the other two 
+gates were just exits to the surrounding countryside. Lancelot 
+arrived from the west.
+
+It was late by the time Lancelot reached Camelot, to be greeted at the 
+gate by Sir Kay. Kay sneered at Lancelot's appearance and his lack of 
+courtesy for arriving so late, but said that Lancelot could have a 
+room in the Mews. Assuming Lancelot went to the Mews and stayed in his 
+"room" for a while, he fell asleep and woke up the following morning 
+to the screeching of birds perched overhead. Kay met him when he left 
+the Mews and laughed at Lancelot's bespattered appearance. 
+
+Lancelot explored the town, avoiding the warrens, where the common 
+folk lived and where sundry unpleasant surprises awaited the noble 
+traveller, and found the narrow stairs to Merlin's rooms. Merlin's 
+library contained much useful information (it was organised in the 
+same way as the Alchemist's library in Gnome Ranger)and Merlin gave a 
+number of hints as a pottered about. If Lancelot had avoided sleeping 
+in the Mews on first reaching Camelot, Merlin gave him a room. 
+
+When Lancelot woke, it was the following day and Arthur's hall was 
+now unlocked, so he went there, joined Arthur and Guenever for a meal 
+and was knighted. Lancelot realised that he was in love with Guenever, 
+but she refused to even consider letting a novice be her champion, so 
+Lancelot determined to travel through Logris and prove himself the 
+best knight. (Gosub "Logris".)
+
+Lancelot's future relationship with Guenever depended on his score. 
+Once he had done reasonably well, she invited him to join her to 
+celebrate Maying in the woods and fields beside Westminster. But, by 
+the time Lancelot reached there, Guenever had been kidnapped by Sir 
+Meilagaunt. He rode after them; transferring to a cart (which worked 
+in the same way as the boats, if directed by the carter) when his 
+horse was killed (See later for details of Meliagaunt's castle). 
+
+Once all the Round Table Knights were rescued, a lengthy message 
+explained how many years went past (allowing for Galahad to reach a 
+sensible age) and then a prophesy appeared above the Seige Perilous 
+about his imminent arrival. In the meantime, Guenever and Lancelot 
+had an affair, culminating in an unfortunate incident on the night 
+before the Grail appeared, when Lancelot went to the queen's room to 
+take his leave of her, giving Mordred the opportunity to surprise him 
+there. Trapped with no weapons or armour, Lancelot had to act before 
+Arthur arrived, or lose most of his hounour. He opened the door; Sir 
+Colgrevaunce stumbled through; Guenever closed the door and Lancelot 
+hit the knight with a footstool. Once armed in the knight's equipment, 
+Lancelot defeated the other hostile knights, and those who were not 
+killed promised silence.
+ 
+Next Lancelot was summoned to the main hall, where a lengthy chunk of 
+plot exposition revealed how the Holy Grail was seen by the host, and 
+how Gawain inspired the other knights on a tragic quest to find the 
+grail again and return it to Camelot. (Go to "Grail Lands".)
+
+* Castle Meliagaunt
+
+Normally, Lancelot could easily ride to Meliagaunt's castle, though 
+there was no way in: the drawbridge was closed and, although he could 
+climb the ladder to what would be "Guenever's window", Lancelot found 
+he lacked the desperate strength needed to break its bars. 
+
+After Guenever had been kidnapped, Lancelot had to commandeer cart 
+and carter to reach the castle, as described above, but the porter 
+ran away and left the gate unguarded. Sir Meliagaunt knelt to Guenever 
+and she insisted that Lancelot spare him; thereafter deciding to spend 
+the night there and invite Lancelot to her room.  
+
+He climbed the ladder, broke the window bars and entered. (Though 
+Lancelot was not told at the time, he had injured his hand and future 
+examinations of the queen's bed would reveal the blood). When day 
+broke, Lancelot had to leave hurridly before Meliagaunt called on the 
+queen (it would be most dishonorable to be found there). 
+
+Lancelot heard shouting (Meliagaunt had found the blood and accused 
+the queen of sleeping with one of her guards, wounded in her kidnap). 
+Had he charged straight in, Lancelot's own injury would have been 
+spotted and he been accused, with loss of honour. But, it would have 
+been much worse had he not gone, for Meliagaunt's audible shouts of 
+increasing fury would have been followed by the queen's death. 
+
+Examining himself, Lancelot discovered his injury and first went to 
+his own room, wearing a pair of gloves from the clothes chest. He 
+hurried back to the queen, before Meliagaunt could slay her in his 
+rage, and defended Meliagaunt's challenge to the queen's honour - 
+agreeing to fight on her behalf some days hence. 
+
+As Lancelot left and reached the dark stairs from the bedroom, a 
+message reported the lights going out and the floor giving way; 
+Lancelot found himself in a prison cell, with Meliagaunt's laughter 
+ringing in his ears. A damosel kept entering, promising Lancelot his 
+freedom if he would promise to be hers (which would be untrue to 
+Guenever and hence dishonorable). Even on the final day, when the 
+queen was to be burnt on the lawn outside Arthur's castle as an 
+adultress if Lancelot was not there to defend her, he refused the 
+damosel. She then offered to free Lancelot in exchange for a kiss: 
+had he refused, Guenever would have died (disasterous for Lancelot's 
+score); so he accepted, kissed the damosel, dashed to Meliagaunt and 
+killed him (when he died, the game described how Meliagaunt 
+surrendered and would only fight if Lancelot removed some armour and 
+fought with one hand tied behind his back.. just as a message). 
+
+
+                           PART 2 (LOGRIS)
+                           ---------------
+
+Lancelot had to ensure nine knights reached the Round Table, in order 
+that it could be complete and the Holy Grail appear:
+
+1.  Cornwall     Tintagel Castle   Burn fleet to reach Tristram.
+2.  Gaul         Corbin Castle     Survive adventures and sire Galahad.
+3.  Servage      Castle Perilous   Defeat giant to free Bors de Ganis.
+4.  Listinoise   Wailing Castle    Defeat Breunis to free Meliagaunt.
+5.  Logris       Castle Chariot    Escape from prison and free Gawain.
+6.               Turquin's Manor   Free prisoners, e.g Ector de Maris.
+7.  Northgales   Castle Lyoness    Fight and recruit the Red Knight.
+8.               Old Manor         Visit Chapel Perilous; cure Meliot.
+9.  Orkney       Round Tower       Free Sir Lamorak.
+
+Nimue could be called upon for hints. 
+
+
+Outline map:                     ORKNEY    ISLE OF SERVAGE
+(Capitals show                     |      /
+importance.)       NORTHGALES -- LOGRIS -+- GAUL
+                                /  |
+          CORNWALL -- LISTINOISE   CAMELOT (PART 1) --> GRAIL LANDS
+                                                         (PART 3)
+
+* CORNWALL
+
+Kimg Mark had trapped Tristram in Tintagel Castle. In turn, Tintagel 
+was beseiged by an army of the Sessoins', who prevented any entry. 
+
+A cart shuttled back-and-forth between the army and the Sessoins' 
+ships on a nearby beach. Lancelot was blocked by sentries if he 
+tried to reach the beach openly, but he could hide in the cart to 
+get past them. 
+
+Then, Lancelot upended a great cauldron which was bubbling with soup 
+on a bonfire, filled it with coals from this fire, ignored the pain 
+and carried it to the deck of the main ship, where he tipped the 
+burning embers onto a pile of sails on deck. Lancelot had just 
+enough time to escape before the army returned, but their efforts to 
+extinguish the flames were in vain and the resultant fire destroyed 
+their whole fleet. The Sessoins surrendered and the elders of Tintagel 
+lauded him as a hero. 
+
+However, when Lancelot entered the castle, far from freeing Tristram, 
+King Mark locked Lancelot up with him. Tristram sighed that he wished 
+he had his harp; if Lancelot gave one to him, Tristram played it and 
+so inspired the guards that they freed everyone (mention Tristram 
+jumping down from a chapel window). If Lancelot had no harp, Merlin 
+had to rescue Lancelot as usual (he knew that it was needed because 
+of a prior hint from Merlin). *
+
+* Gaul
+
+Corbin. Lancelot came to a tower, over whose door was described the 
+fate of Elaine, cursed by Queens Morgan and Northgales to simmer in 
+boiling water until rescued by the best knight in the world. 
+Providing Lancelot had earned enough honour, and had defeated the 
+dragon below, he could lead her forth (picture), and she invited him 
+to Corbin Castle (the Castle Adventurous) which was otherwise barred 
+to adventurers. 
+
+Two people were needed in Corbin's chapel, to lift the heavy lid of a 
+tomb; carved with "Here shall come a leopard of king's blood, and he 
+shall slay this serpent, and this leopard shall engender a lion in 
+this foreign country, the which lion shall pass all other knights". A 
+horrible, fiendly and fire-spitting dragon emerges; its breath 
+scaring off everyone else. Lancelot could kill it (just) if he kept 
+chopping away. 
+
+On entering Corbin castle, a message was printed about how King 
+Pelles and Elaine arranged a feast for Lancelot, ending with the 
+King inviting Lancelot to stay the night and Elaine making her 
+love for Lancelot pretty obvious. (If it was not the first time, 
+a message was first printed about events being as before). 
+
+Lancelot had the choice of leaving the castle (message about 
+"stumbling out into the gloom to sleep in a ditch" and loss of 
+honour) to presumably return again later; sleeping with Elaine 
+(accepting her offer cost him honour, because it would be betraying 
+Guenever, and bypassed the following puzzles - he had a y/n chance 
+to leave the room on seeing Elaine though), but he could win honour 
+by preferring the room next door and remaining true to Guenever..
+
+Lancelot was warned he would lose honour for leaving the room, which 
+contained only a bed, a door back to the castle and an unopenable 
+panel in the wall. Lancelot fell asleep whenever he lay on the bed, 
+and experienced the following visits: one per awakening, the panel 
+opening each time (though a force stopped Lancelot going through it) 
+and closing afterwards... 
++ A glowing spear which wounded him in the shoulder. 
++ A knight who emerged and fought valiantly; when badly wounded, he 
+  staggered back through the panel and emerged even stronger than 
+  before. Lancelot would have died, had he not closed the panel - 
+  which took several attempts. 
++ An old man, bearing adders and the spear of vengeance, with a 
+  message (the puzzle was for Lancelot NOT to attack him, so this 
+  was not just a message). 
++ A message about four gentlewomen and a Bishop. 
++ Cock-crow, with the door back to the castle finally opening for 
+  Lancelot to leave in honour. On leaving, Lancelot had no choice 
+  but to accept a drink from Elaine (just a message) and, under its 
+  effects, sleep with her as below (but with no loss of honour). 
+
+Sleeping with Elaine just involved a message being printed; Galahad 
+being conceived (necessary if the Round Table was to be completed) 
+and Lancelot being dumped outside. He couldn't subsequently return 
+to Corbin Castle. * 
+
+* Isle of Servage
+
+A magic boat was beached on the northeast coast of Logris: it moved 
+in whichever direction an occupant moved (except "Leave") and so, if 
+there were several occupants, could move several times in one turn. 
+
+A group of mermaids sat on a rock off Servage, playing a harp. If 
+anyone was there at the end of the turn, they snatched back the harp 
+(if appropriate) and jeered at the boat as it was washed past. 
+Fortunately, a group of people could get the boat to there and back, 
+obtaining the harp for later use by Tristram (described as a musician). 
+
+The local fishermen advised Lancelot to leave, saying that the local 
+lord was the Giant, Sir Nabon le Noir, who ate visitors (he already 
+had one knight awaiting this fate). 
+
+Launcelot entered the castle and found Sir Nabon, who revealed that
+the prophesy that he could only be killed by a blow from a saint's 
+right hand; he had removed the right hand from the only saint he met 
+and slept with in in the sack which he used for a pillow. Nabon 
+challenged Launcelot to a fight tomorrow and, feeling totally secure, 
+returned to sleep.  
+
+The sack couldn't be examined, or its contents seen, until it was 
+removed. If the giant had no pillow at the end of the turn, his head 
+fell and he woke (similarly he woke if he got two pillows), retrieved 
+the sack and attacked: the idea was to remove it and get someone else 
+to immediately replace it with something soft. Then the giant could be 
+killed if struck by the mummified relic (he ran away if, after waking 
+and grabbing the sack, he realised that the hand was missing). 
+
+A heavy prison door stood shut behind the giant. Trying to open it, 
+or attack the giant, woke him. The door had a key-hole but there was 
+no key in the game. In fact, the door was not locked - just too stiff 
+to move unless pushed by two people. Opening it freed a captive 
+knight. * 
+
+
+* LISTINOISE 
+
+Listinoise Castle was in the middle of a trackless marsh. Lancelot 
+got disorientated by the mist and any attempt to move there left 
+him back at the edge. However, the Horn could be heard in adjacent 
+locations (e.g "A horn sounded from the south"), and this gave 
+Lancelot enough idea of direction to reach the castle. 
+
+ Marsh Edge -north-> Trackless Swamp -north-> Listinoise Castle
+          ^                               |
+          +--movement when disorientated--+
+
+Wounded King Pellam told Lancelot about the Holy Grail and revealed 
+a vital clue to its whereabouts. *
+
+Within a forest maze stood the Wailing Castle, home of Sir Breunis 
+Saunce Pite. Assuming nobody was waiting outside the door, Breunis 
+would periodically ride out to Launcelot (though not following him 
+inside any building) and fight him. If he encountered any maiden, Sir 
+Breunis would snatch her up for his collection. Only Launcelot could 
+hurt Breunis, but he could not be easily defeated for, if he was hurt, 
+Breunis rode back home with all speed. 
+
+When Breunis reached the Wailing Castle (outside which could be 
+heard the crying of his captive lady prisoners), the door opened, 
+he rode in next turn and the door instantly closed. Thus, nobody 
+following him could get in but, because Breunis moved late in the 
+turn sequence, someone waiting for him outside the castle could rush
+in and reopen the door from inside. Then Launcelot entered, made 
+short work of Breunis, and freed his captive ladies and knights. 
+
+The forest maze was difficult to map, but this was - of course - not 
+necessary as Launcelot could get to the centre by following Breunis 
+to the Wailing Castle. *
+
+* LOGRIS 
+
+Castle Chariot was the fortress of the witch-queen, Morgan le Fay, 
+and stood in a dense forest. The only path was blocked by briars, 
+which grew so fast that one person alone could make no progress in 
+hacking them down; with two chopping away, the main stem was 
+eventually revealed and severed. 
+
+Once past here, Lancelot reached the castle, which stood beside a 
+clearing with an apple tree. On first arriving here, Lancelot fell 
+asleep; four queens rode up and demanded that he choose one of them 
+for his love ("Which one of us will you choose for your love?"). 
+Accepting any of them kept Lancelot his freedom, but at the cost 
+of much honour (Guenever was furious when next they met); answering 
+"none" or "Guenever" resulted in Lancelot being imprisoned in 
+Castle Chariot (any companions were locked up in the next cell). 
+
+Shortly afterwards, Morgan entered, offered Lancelot a cup of wine 
+and asked if Lancelot had changed his mind. The wine was a love 
+potion; drinking this or accepting one of the Queens got Lancelot 
+freed at the expense of his honour (as above). 
+
+After Morgan left, a Damosel entered with food for Lancelot. (In 
+the absense of any action, Morgan and the Damosel repeat this 
+process each "day"; the damosel removing Lancelot's old plate and 
+subsequently re-entering with fresh food.) Lancelot offered her 
+the wine; she accepted it, fell in love with Lancelot, kissed him 
+chastely and unlocked the door. Pausing only to open the nearby 
+cells, freeing their captives and knights, Lancelot escaped. *
+
+Turquin's Manor was basically a complex prison, with the idea of 
+trapping knights who came to rescue their fellows:
+
+          Secret Passage   \           Guardroom
+          |                 Courtyard     |
+    -- Gateway -- Entrance /         \ Upper Prison -- Lower Prison
+
+While he was alive, Turquin rode out to challenge Lancelot each time 
+he arrived outside the Manor. If Lancelot refused (or if Lancelot 
+subsequently breaks off the combat), Turquin banged on the door and 
+rode back into the Manor (this action was to justify his entry 
+unscathed - it signalled the guards to disable the traps - but if 
+anyone else knocked, dirty water was thrown down upon them). Combat 
+went on for a long while, then Turquin submitted and fled. While alive 
+and outside the Manor, Turquin blocked all attempts to enter.  
+
+The Gateway of Turquin's Manor appeared open and unguarded, but there 
+was loose planking in the floor and a "secret panel" in one wall. Any 
+attempt to go through the Gateway to the Entrance Passage resulted in 
+the planking being pressed; the panel opened (unless already open) and 
+a poisoned arrow was fired at each person who passes (Lancelot dodged 
+but anyone else was incapacitated); finally, the panel closed unless 
+someone grabbed it (once held open, people could pass freely through 
+to the Secret Passage). 
+
+The Entrance Passage also had its loose planking: this was one end of 
+a "see-saw" and, unless someone was first standing on the corresponding 
+planking in the Secret Passage, any attempt to pass between the 
+Entrance Passage and the Courtyard tipped the traveller into the Lower 
+Prison and alerted Morgan's guards (Lancelot got a Y/N option to jump 
+back). 
+
+Entering the Upper Prison from the Courtyard triggered a Bell to ring 
+at the end of the turn (Lancelot got a chance to jump back and avoid 
+this if he was the one triggering), unless it was grabbed and muffled. 
+The Bell summoned the nearby guards next turn. 
+
+A lever in the Upper Prison made a grating noise when pulled; it 
+toggled the locking machinery in the Prison below, allowing/preventing 
+prisoners being freed. A Winch could be turned, lowering/raising a 
+cage between here and the Lower Prison; it squeaked a little and 
+alerted the guards to enter ten turns later (a conversation of the 
+form "What was that?", "Nothing", "Someone go and check", "Go 
+yourself!" could be heard through the guardroom door). Opening the 
+Guardroom door alerted the guards immediately, of course. 
+
+The Lower Prison was used by Turquin to whip his prisoners, so there 
+was a scenic whip on one wall. The prison held nine knights (plus any 
+others left behind by previous, failed, rescue attempts). There was 
+not enough time for one person to unlock all the others unaided, so 
+Lancelot freed one and gave him orders to unlock half the others. 
+When the cage started to rise, all the free people not already on it 
+grabbed the bars and were carried up too.  
+
+When the Guards emerged, everyone in the Prisons was locked up. 
+(Throughout the game, if Lancelot was captured in this sort of way, 
+with no hope of escape, it was treated in the same way as "death"). 
+Everyone who was nearer the gateway was herded out (by a single deus 
+ex machina), with messages emphasising Lancelot's brave rear-guard 
+fight, and dumped outside Turquin's Manor. *
+
+Garlon lived in a Turret in the Forest and, whever Lancelot rode 
+past, would ride out invisible (though Lancelot could see the door 
+open and hear hoofsteps) and attack. If Lancelot had fought back, he 
+would have eventually been killed, so he could either run away (at 
+the loss of some honour) or use cunning to defeat invisible Garlon. 
+
+Lancelot went into Garlon's Turret, followed by Garlon, and closed 
+the window shutters to block the light. Once in the dark, invisibility 
+was no longer an advantage and Lancelot easily defeated Garlon. *
+
+* NORTHGALES 
+
+Lancelot was passing an Elm, on the main road beside a castle, when 
+a lady ran from the castle and asked Lancelot to rescue her falcon, 
+which was tangled in the tree ("again" was added if it was not the 
+first time). She stopped anyone else climbing the tree, saying that 
+she would be greatly honoured if Lancelot would rescue the bird 
+himself. (He gained honour for this.) 
+
+     Roadside+Castle -up-> Lower Branches of Elm -up-> Treetop 
+
+Lancelot was forced to remove his armour in order to climb the tree, 
+where he found a bloated and dim-witted bird, trapped by the red tapes 
+of its lunes, which had become tangled in the tree. Had he just freed 
+it, the falcon would have flown away, so Lancelot tied the bird to 
+a convenient broken branch and threw this down: a cry of thanks from 
+below confirmed his success. 
+
+Had Lancelot been accompanied by anyone, he would have next heard the 
+sounds of fighting. In any case, once he had descended, Lancelot 
+encountered Sir Pedivere, who taunted him for being helpless without 
+armour, explained his wife had arranged the falcon business as a trap, 
+and threatened to kill him. Lancelot could not have fought or run 
+away without being stabbed in the back, but he grabbed the dead wood 
+and threw it at the mounted knight: in fending it off, Sir Pedivere 
+overbalanced, fell from his horse and promptly surrendered.
+
+Lancelot got his weapons back and made Pedivere promise not to do it 
+again; he left, following his wife. *
+
+Before the start of this part of the game, in Camelot, Lancelot 
+volunteered to help Lynet her rescue her Lady, who was beseiged in 
+Castle Perilous by the Red Knight of the Red Launds. She showed him 
+the way there, and was rude if he strayed. On the route: 
+
+Lancelot met the Black Knight of the Black Launds, who challenged 
+him. They fought until the Black Knight was defeated and yielded: 
+Lancelot had a Y/N chance to spare him; killing the knight cost 
+honour, but if spared the Knight clobbered Lancelot on the back of 
+the head as he rode away laughing - costing honour and rude remarks 
+from Lynet (see "scoring"). Then Lancelot met the Green Knight and 
+events went the same way. 
+
+Finally, Lancelot met the Red Knight and events went much the same 
+(I hoped that the player had got fed up with being clonked on the 
+head by now and refused to spare him.) If spared the knight rode off 
+and Lancelot continued to the seige camp outside Dame Lyoness' 
+castle and blew an elephant's horn to summon the commander (the 
+presence of archers prevented him simply walking in). The real Red 
+Knight explained that he had previously defeated a Round Table knight 
+(the stakes being that the loser would serve the winner for a month) 
+and made him fight on his behalf. The real Red Knight marched away 
+with his army, not wanting to fight Lancelot, and left him to 
+celebrate with, or grieve over, the Round Table knight. Lancelot 
+also ended up with the horn. *
+
+Lancelot followed a brachet to a decrepit manor, where he found the 
+body of Sir Gilbert and a damosel who spoke out against his killer. 
+A trail of blood led into the forest, where Lancelot found Sir 
+Meliot, who was badly wounded, and a damosel who explained that 
+he could only be cured by a cloth from the Chapel Perilous. 
+
+Lancelot went there; thirty great knights threatened him, telling him 
+to lay down his sword or die, in steadily more extreme terms. Had he 
+done so, or attacked, Lancelot would have been killed. In the next 
+room was Hellawes the Sorceress; she told Lancelot to put down his 
+sword and kiss her, or never see Guenever again. Had he done so, he 
+would have been captured. Lancelot ignored Hellawes and took the 
+cloth, whereapon she and her knights vanished. 
+
+Lancelot took the cloth back to Sir Meliot, touched it to his wounds 
+and he was cured. *
+
+* ORKNEY 
+
+Castle of King Lot, Queen Morgause and her sons Gawain, Uwain, 
+Gaheris, Gareth and Mordred. 
+
+The Castle of Queen Morgause and King Lot was a single stone tower, 
+like a lighthouse, with a single round room on each floor and a tight 
+spiral staircase within the thick stone wall. It was intended for 
+defense against raiding parties, rather than sustained attack, and 
+any alarm resulted in the portcullis being dropped and the castle 
+"sealed" from many turns. 
+
+A guard stood outside the single door and, if anyone came in view, he 
+would signal the portcullis to descend; standing just inside to block 
+the way as it descended. (Lancelot got the option to jump back.) 
+
+A beacon stood on a nearby hill, to alert the defenders of attack. 
+When lit, the guard signalled the portcullis to descend and - without 
+waiting for it to finish - ran up the hill path to find what was going 
+on. Lancelot, assuming he was hiding in the heather near the tower, 
+had just enough time to rush in beneath the descending door (though 
+this blocked his escape). 
+
+The ground floor of the tower was basically a stable, and the upper 
+stories were filled with armed people, so Lancelot ignored the 
+panicking residents and went down to the basement. He unbarred the 
+prison holding a captured knight (and anyone left behind on previous, 
+failed, rescue attempts), went into the storeroom next door and got 
+everyone to help push a heavy treasure chest off the trapdoor there. 
+
+Failure to escape in a fairly short period of time would have led to 
+capture, once the inhabitants regrouped, but in fact Lancelot led 
+everyone to freedom through a secret passage. *
+
+
+                         PART 3 (GRAIL LANDS)
+                         --------------------
+
+Escaping after his affair with Guenever, Lancelot returned for the 
+service at Pentecost, the arrival and knighting of Galahad and the 
+following feast when the Round Table was complete for the first and 
+only time. A damosel arrived from Nacien, revealing that Lancelot 
+was no longer the best knight. Then the Holy Grail appeared in a 
+vision; Gawain swore to see it again - and many other knights did 
+likewise; the host paraded through the streets of Camelot and left 
+through its east gate - Launcelot started part 3 in Vagon Castle. 
+
+After solving moral dilemmas, heroically rescuing Galahad and going 
+with him to strange lands aboard a magic barge, and proving virtuous, 
+Lancelot reached Castle Carbonek and achieved the Grail. 
+
+Whenever Lancelot first examined any cross in this part, a message 
+was printed, saying how he knelt and prayed and saw the corresponding 
+vision from Morte D'Arthur. On next meeting any hermit, the previous 
+vision was explained. 
+ 
+Seven deadly sins: Pride,Wrath,Envy,Lust,Gluttony,Avarice,Sloth.
+Virtues: Faith,Hope,Charity,Justice,Fortitude,Prudence,Temperance.
+Ten commandments.. thou shalt:
+   1. have no other gods but me
+   2. not make for yourself a graven image
+   3. not take the name of the Lord your God in vain
+   4. remember the Sabbath day to keep it holy
+   5. honour your father and your mother
+   6. not kill
+   7. not commit adultery
+   8. not steal
+   9. not bear false witness against your neighbour
+   10.not covet
+
+Lancelot's sins were remembered and counted against him at the end. 
+He could only find out what they were (i.e use "score") from Nacien 
+the Hermit, who could forgive them once only so Launcelot could 
+finish, though the score penalty remained. (One sin worthy of note 
+concerns making the sign of the cross unnecessarily - i.e when no 
+fiends were present - as this was treated  as a breach of commandment 
+2 or 3. Exceptionally, the game was ended if he took the sign of God 
+in vain too often.) 
+
+    Launcelot started, all alone, in Vagon Castle. All manner of 
+treasures and weapons were stacked in its hall. Unless Lancelot 
+prayed at its altar, before leaving the castle, he was warned about 
+forgetting something and given a y/n chance to change his mind (C2, 
+being concerned with the Grail itself rather than God). 
+
+Its exit led to a fork in the trackway, with a wide paved road through 
+a gleaming arch on the left and a narrow track through a thicket of 
+thorns on the right. A crown rested before a stone cross at the fork
+(taking it: C8, theft). The paved road led to a fine church, where a 
+"priest" offered Lancelot a sight of the grail, if he would hand over 
+the crown as a token of service; he was penalised if he did so (C1, 
+rejecting God), and the "priest" vanished laughing. The priest refused 
+to let Lancelot pray unless he handed over the crown, but making the 
+sign of the cross got rid of him. 
+
+Lancelot then came to a knight who blocked the road and asked his 
+name, saying that he would let anyone pass apart from Lancelot. Lying 
+reduced Launcelot's score (C9); the truth led to a battle which 
+Lancelot lost, though he was spared and allowed to pass. 
+
+    A pavilion stood beside the road, and a damosel emerged to invite 
+him inside. She wept if he refused (lack of charity, V3). On entry, 
+the damosel offered Lancelot a plate of dainties: eating each made him 
+feel stronger and, if he ate the lot, he falsely thought that his 
+powers must be restored and that he was the best knight (S5, Gluttony). 
+The damosel then invited Launcelot to her bedchamber (C7, adultery), 
+but said she understood when he refused. If Lancelot made the sign of 
+the cross, the pavilion turned upside down and everything vanished. 
+
+Lancelot then came to a deep valley and a deep river, through which 
+he had to cross. If Lancelot was carrying anything, an armed knight 
+rode out, black as any bear, and smote him to earth, saying that no 
+worldly knight could pass. Otherwise, he waved Lancelot on (as a clue, 
+assorted penniless clerics walked past every now and then) into the 
+wasteland beside the waters of Mortaise. 
+
+    A stony cross stood in the wasteland; Lancelot dreamed that a sick 
+knight was cured by the Holy Grail and was told to "withdraw from 
+this holy place". Roads led in all directions, the main one to... 
+
+Nacien had a hermitage atop a cliff in the wasteland. On first meeting 
+Lancelot he blessed him, said that he could forgive his sins once, 
+showed him a scroll which summarised his tasks, and gave him a chalice 
+to help with his tasks. And, if Lancelot had had a recent dream, 
+Nancien explained it. The first visit to Nacien's base, because a 
+fiend pretending to Nacien accosted Lancelot, saying that he would 
+have to cast himself and his innocent followers from the cliff unless 
+Lancelot turned back (about 4 messages were involved and the fiend 
+cunningly ran back up the climbing path each time, so he couldn't be 
+got rid of by Lancelot crossing himself). If Lancelot did turn back, 
+this indicated a lack of faith (V1); when he reached the top, Nacien 
+explained the deception and when he reached the bottom, later, 
+Lancelot saw no bodies.  
+
+The second road passed a well, where sat a thirsty pilgrim - too faint 
+to proceed and with no container to scoop water. If Lancelot tried to 
+fill the Chalice, the water sank down the well and he failed. But he 
+gave the Chalice to the Pilgrim and he could fill it OK (V3, Charity). 
+The Pilgrim promptly left, returning the Chalice to Lancelot.  
+
+Then this road led to a White Abbey. On a tomb was written that only 
+the best knight in the world should open it. Lancelot lost merit for 
+doing so. A foul fiend emerged; too powerful to kill in combat 
+(Lancelot died if he tried this), but which fled if Galahad atacked 
+(he was "protected by too many angels" for its power). Once the fiend 
+had fled, the body of a false Christian man was revealed; Lancelot 
+removed it and accepted the monks' offer to bury it elsewhere. A 
+shield (made by Joseph of Arimithea and marked with a red cross of 
+blood) stood in the main hall. Again, this was for the best knight 
+and could only be carried by Galahad. 
+
+The final road led to a forest, where Lancelot simultaneously came 
+upon his brother, Sir Ector, who was naked and beaten by two knights, 
+being transported one way, while a fair gentlewoman was being abducted 
+in the opposite direction. Had he gone after Ector, the gentlewoman 
+would have been abused and her kidnapper slain in vengeance by the 
+time Lancelot got there. So, he rescued her first - defeating and 
+sparing her captor - then went after Lionel, whose kidnappers released 
+him without a fight and fled. (See P24 in morte2.txt for more?)
+
+During the above, Galahad would occasionally be seen, riding about. 
+But when Lancelot had tackled everything, he heard a warning voice 
+and followed its directions to where Galahad had been captured by 
+evil knights and was about to be burnt at the stake. Lancelot charged 
+in and continued fighting, even at the risk of his own life. If he 
+fled, Galahad wound have been killed and the Grail could not be 
+achieved (Lancelot was told some time later). During the battle, 
+Lancelot could not run away and he found that the various equivalents 
+of RESTORE didn't work (evil laughter sounded if he tried them). In 
+fact, when Lancelot was about to die bravely, the Lord intervened with 
+bolts of lightning and set the enemy to flight - allowing the player 
+to command Galahad, to get the shield and move the boat etc.
+ 
+    A boat waited on the shore of the waters of Mortaise; it was 
+needed to carry Launcelot to the more difficult problems of this part 
+but, while it worked in the same way as the boat in part 2, Galahad 
+was the only person worthy to direct it. Hence, Lancelot needed him. 
+At first, the boat's sails were empty; but, when the horn was blown 
+there, a wind sprang up to propel the craft. The boat contained a 
+bed, sword (only useable by Galahad), three spindles (scenery) and a 
+musical horn. 
+
+Isle of Sand. A wall of fire blocked passage from the beach, but 
+it could be extinguished if two people collaborated to throw water 
+(filling their containers from the sea). The centre of the island 
+was just one big sand dune - the only source of accessible sand 
+(containers could hold water, salt water, mead or sand). 
+
+Isle of Turnance. A fisherman revealed that a red and a black dragon 
+lived here; they were vicious beasts and attacked everything on sight. 
+Lancelot and Galahad each went to a dragon, then returned to the 
+centre of the island. When the dragons met, they fought and destroyed 
+each other. Thus the people of the island were freed (V4, justice) and 
+gave Lancelot a cup of mead in thanks. 
+
+    A gate stood upon a dark shore, that only Galahad and Lancelot 
+could pass through - and Lancelot could only use if he were holy 
+enough. A pavement led past a Glastonbury Thorn tree, through ranks 
+of stones and to an antechapel. Here were the remaining Grail Knights 
+(Bors and Percival) and a great key. Bors and Percival were prepared 
+to help Lancelot, but refused to leave the antechapel. Likewise, 
+Galahad refused to go beyond it, for it was not yet the time for 
+these three to see the Grail. 
+
+When the Key was taken, a Fire spirit leapt up from the torches set in 
+the wall to defend it. This could be extinguished by thrown water, in 
+which case a water spirit appeared. Sand would dry the water, and wind 
+blow away the resulting sand spirit. If any spirit remained at the end 
+of the turn, it retrieved the key.
+
+Singing voices told Lancelot to have faith in God and proceed to find 
+the Grail, so he unlocked the exit door from the antechamber and 
+followed the path, through a dark valley, to a castle guarded by 
+lions. The lions attacked, but missed. If Lancelot retaliated, he was 
+chided for lack of faith (V1). Once in the castle beyond, Lancelot 
+found a door behind which he knew was the Holy Grail (he could hear 
+the singing and see the light) but, unless he was free of Sin, he 
+could go no further. (If Lancelot was not free of sin, and he had no 
+chance of further forgiveness through Nacien, the player was told). 
+Anyway, once inside, the Quest ended in victory.  
+
+
+                               SCORING 
+                               ------- 
+
+Scoring was in terms of honour, with bonusses for such things as 
+rescuing knights or leading Elaine from her kettle, and penalties for 
+striking from ambush (e.g the sleeping giant on Servage) and killing 
+opponents who had already yielded.
+
+The score was in the range -1000 to +1000 (0 to 2000 internally?), 
+with the game being stopped if persistent deeds of infamy caused the 
+lower limit to be reached. 
+
+In addition, Lancelot's name was temporarily modified by each scoring 
+event; losing the "Sir" from "Sir Lancelot" and adding a suffix, e.g 
+"Lancelot the Dragon-slayer" or "Lancelot of Servage". 
+
+To add atmosphere, if any follower(s) of Lancelot were present at an 
+embarassing event for him, one of them was quite likely to laugh or 
+make rude remarks. 
+
+                                DEATH
+                                ----- 
+
+Lancelot was unbeatable in fair combat, but a there were a few traps 
+which lead to his death or permanent capture. The first two times, 
+Merlin appeared and rescued Lancelot (at the cost of 1 honour); the 
+third time, he appeared but was forced to admit defeat. 
+
+Because of Lancelot's exceptional prowess, there were several traps 
+which would have proved fatal to anyone else, but where Lancelot had 
+a last chance to "jump back". A neat example was the "see-saw trap", 
+where people must use two exits simultaneously, to balance the floors 
+of two passages beyond. E.g, one way of getting it wrong was:
+Lancelot was at the junction, with identical doors to northeast and 
+northwest. He could see Sir Fallguy. 
+SIR FALLGUY, WAIT THEN GO NORTHWEST
+Sir Fallguy nodded. 
+NE
+Lancelot went northeast and was in the east passage. 
+The floor wobbled alarmingly! Did Lancelot jump back? YES
+Phew! That was close. Lancelot was back at the junction. 
+Lancelot heard a cry from the northwest, and what sounded like a 
+falling body.
+
+In this case, had Lancelot not jumped back, all would have been 
+well. The reason for the example was to demonstrate that the option 
+to jump back was not in the movement code, but in special case code 
+after movement had taken place. It was probably a good idea to put 
+it in the same code as detected the danger to Lancelot and which 
+might well have gone on to kill him. 
+ 
+                            LANCELOT ALONE 
+                            -------------- 
+
+Several sections of the game (e.g in Castles Chariot and Corbin) were 
+basically solved by Lancelot acting alone. For example, he might have 
+been taken prisoner and have to escape. In these cases, Lancelot's 
+followers (if any) were either captured in another cell, or simply 
+left to their own devices until he returned; obeying any orders that 
+had already been given. 
+
+                         HORSES & ARMOUR ETC. 
+                         -------------------- 
+
+It was assumed (as would be explained in the book) that all relevant 
+people had horses, weapons etc at need; it would have been tedious 
+to force the player to handle them explicitely. Horses, for example, 
+were only mentioned as part of the text for movement: when travelling 
+outside on land, people were described as riding; when going from 
+outside to inside, they "dismounted" first, and when first moving 
+about outside, having been dismounted, they mounted. Likewise, weapons 
+and armour were mentioned in the text for combat. 
+
+Examinining someone reported their armour and any horse etc. 
+
+                           "ECHO LOCATIONS"
+                           ----------------
+
+To complement invisible objects and echo verbs, this game introduced 
+"echo locations".. When Lancelot moved to one of these, its 
+corresponding message was printed instead of the location desc, e.g: 
+"Lancelot went north. He was amazed by the splendour of the northern 
+part of the castle and wandered about for hours, exploring it all. 
+Finally, having satisfied his curiosity, Lancelot returned south" 
+(the location text being, ". He was amazed ... his curiosity,").  
+
+As this example showed, the movement was reversed after the message 
+had been printed, so that nobody could actually end up in an "echo 
+location".
+
+When an NPC entered an "echo location" they were likewise kicked out, 
+e.g: "Elaine went north. She returned from the north. "   
+
+The intention was to cope with the common situation where only part 
+of a building was necessary for the game and where it would have 
+literally been a "waste of space" to map the rest. 
+
+                          RECRUITING PEOPLE 
+                          ----------------- 
+
+Lancelot couldn't command everybody (especially his socially 
+superiors!), but could make use of freed knights and anyone else 
+who specifically offered to help him. 
+
+Note that freed knights automatically followed their liberator (ie 
+Lancelot if present) to avoid the player needing to type this each 
+time. They tried to leave, though, if Lancelot already had a lot of 
+followers; otherwise, the small army would have been tedious. 

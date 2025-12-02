@@ -1,0 +1,275 @@
+
+
+
+     ;
+     ; 1450+n are messages printed on first entering each room
+     ; (see visittable). Please add extra messages as necessary to
+     ; tell the story; reporting Lancelot's impressions on first
+     ; reaching spectacular locations...
+
+     [1350:in the ^N lower ^N prison . Lancelot gagged in the fetid air]
+     [1351:in the ^N courtyard]
+     [1352:in a ^N secret ^N passage . Lancelot's armour made him clumsy
+     and heavy-footed, but at least the metal protected him from grazing
+     arms and legs on the jagged walls]
+     [1353:in the ^N entrance]
+     [1354:in a ^N gateway]
+     [1355:in a ^N cell . Lancelot looked all around for a means of escape,
+     but could see no obvious weakness in the cell's construction]
+     [1356:in a ^N prison ^N corridor . He peered right and left at the
+     cells along the passage, but all were locked shut. Only muffled groans
+     and cries told him that others were held here too]
+     [1357:in a ^N cell . Lancelot knocked on the walls, but they all
+     seemed quite solid, and he knew he had no means of reaching the grille]
+     [1358:in a ^N prison . Lancelot shivered in the chilly air]
+     [1359:on ^N deck . The heavy rocking of the ship nearly caused him to
+     keel over once or twice]
+     [1360:in a ^N castle . Lancelot was amazed at the dimensions of the
+     chambers, and could only guess that the castle's residents were built
+     to massive proportions]
+     [1361:in a ^N prison . Lancelot tried to memorise the layout of the
+     prison, certain that he would lose his bearings otherwise]
+     [1362:on some ^N stairs]
+     [1363:in a room with a ^N bath . Lancelot let the warmth of the room
+     seep into him for some moments, until he had to wipe the sweat from
+     his brow]
+     [1364:in a ^N hall . He gazed at the trophies with interest,
+     recognising some of the battle scenes from tales told to him in his
+     boyhood]
+     [1365:on some ^N stairs]
+     [1366:in the ^N perilous ^N bedroom . He felt a great sense of unease
+     in the room, which he couldn't immediately explain]
+     [1367:in the lower branches of the ^N elm . Tree-climbing had been one
+     of Lancelot's favourite pastimes in his younger, more carefree days,
+     and he was rather proud to show off his agility and strength to the young
+     maiden below]
+     [1368:in Elaine's ^N bedroom . Lancelot could feel conflicting
+     emotions pulling at him, and the temptation of the seductive
+     atmosphere was almost more than he could bear. Guenever suddenly
+     seemed a long way away, a shadowy figure in his thoughts]
+     [1369:in a ^N chapel beside a ^N tomb]
+     [1370:in ^N castle ^N Lyonesse|^N dame . Lancelot felt comforted by
+     its homely appearance after his long hard days of travelling]
+     [1371:in a ^N decaying ^N hall]
+     [1372:in the entrance to ^N chapel ^N perilous]
+     [1373:inside the ^N chapel . Despite its ramshackle appearance,
+     Lancelot felt a spiritual peace imbuing him, as he did in all places
+     of worship, and he knelt briefly to pray, before rising to his feet to
+     look around the small building some more]
+     [1374:in the ^N inner ^N chamber]
+     [1375:at the top of the ^N elm]
+     ;
+     [1376:on the ^N stairs]
+     [1377:in the ^N living ^N quarters]
+
+
+
+
+
+
+     [1378:on the ^N stairs]
+     [1379:in a ^N stable]
+     [1380:on the ^N stairs]
+     [1381:in the ^N basement . Lancelot was hardly tempted to try out any
+     of the casks, deciding that they probably containe^N decrepit ^N bridge . Lancelot gripped the reins more
+     tightly and forced his horse to face the bridge in a straight line
+     down the middle before attempting to ride across]
+     [1388:outside a ^N manor ^N house]
+     [1389:in ^N forest ^N Meliot . Lancelot inhaled deeply, enjoyed the
+     heavy piny scent]
+     [1390:on a ^N dangerous ^N road. He glanced from side to side warily
+     as he spurred his horse along the track]
+     [1391:on the ^N track outside ^N Turquin's ^N manor. Lancelo^N decrepit ^N bridge . Lancelot gripped the reins more
+     tightly and forced his horse to face the bridge in a straight line
+     down the middle before attempting to ride across]
+     [1388:outside a ^N manor ^N house]
+     [1389:in ^N forest ^N Meliot . Lancelot inhaled deeply, enjoyed the
+     heavy piny scent]
+     [1390:on a ^N dangerous ^N road. He glanced from side to side warily
+     as he spurred his horse along the track]
+     [1391:on the ^N track outside ^N Turquin's ^N manor. Lancelot steeled
+     himself to meet the adversary within]
+
+     [1392:on a ^N forest ^N track . It was easy riding, and lancelot
+     spurred his horse on to a good pace]
+     [1393:on a ^N roman ^N road beside a ^N turret]
+     [1394:at a ^N junction in the ^N forest]
+     [1395:in ^N Garlon's ^N turret]
+     [1396:at a ^N big ^N clearing beside the ^N castle of ^N forest ^N
+     Sauvage . He was seized by an absurd desire to dismount and sleep for
+     a while in the meadow, but his shook these thought off, reminding
+     himself that he yet had much to do]
+     [1397:on a ^N roman ^N road through ^N briars . Lancelot clanged his
+     visor shut to avoid being scratched in the face]
+     [1398:on a ^N roman road through ^N forest ^N Sauvage]
+     [1399:on the ^N great north road . Several times Lancelot stoped
+     simply to admire the views over the wild moorlands ]
+
+     [1400:on a ^N triumphal ^N avenue|^N Camelot ^N Arthur ^N Guenever]
+     [1401:on the ^N coast road]
+     [1402:at ^N Tintagel . He felt that no other lands in the realm could
+     rival this coastland for its savage splendour, as he watching the
+     seals making light of the strong currents and waves which hit the
+     rocks with such fury]
+     [1403:on a ^N walled ^N road]
+     [1404:on a ^N road]
+     [1405:on a ^N beach . Lancelot steered his horse to walk along the
+     water's edge, so that its prints would be washed away quickly by the incoming
+     tide]
+     ;
+     [1406:on a ^N hill . Lancelot caught sight of a couple of rabbits,
+     their white bob-tails flashing through the tufts of grass]
+     [1407:on a ^N winding ^N road . He guided his horse carefully, fearing
+     it would twist a leg on some of the rockier stretches]
+     [1408:at a ^N crossroads . Peering during each road in turn, Lancelot
+     considered which way to take]
+     [1409:on an ^N island . Lancelot thoght it a quite desolate place]
+     [1410:on a ^N shore beside a ^N tower]
+
+
+
+
+
+
+     [1411:in ^N Corbin ^N village]
+     [1412:in a ^N forest ^N maze]
+
+     [1413:in a ^N forest ^N maze]
+     [1414:in a ^N forest ^N maze]
+     [1415:in a ^N forest ^N maze]
+
+     [1416:in a ^N forest ^N maze . Lancelot stopped and looked around him,
+     angry with himself for losing the path]
+     [1417:in a ^N forest ^N maze]
+     [1418:in a ^N forest ^N maze]
+     [1419:in a ^N forest ^N maze]
+     [1420:in a ^N forest ^N maze]
+     [1421:in a ^N forest ^N maze . He tried vainly to recover his bearings]
+     [1422:in a ^N forest ^N maze]
+     [1423:in a ^N forest ^N maze]
+     [1424:in a ^N forest ^N maze]
+     [1425:in a ^N forest ^N maze]
+     [1426:at the ^N wailing ^N castle]
+     [1427:in a ^N forest ^N maze]
+     [1428:in a ^N forest ^N maze]
+     [1429:in a ^N forest ^N maze]
+     [1430:in a ^N forest ^N maze]
+     [1431:in a ^N forest ^N maze]
+     [1432:in a ^N forest ^N maze . Lancelot began to wonder if he would
+     ever find a way out of the forest]
+     [1433:in a ^N forest ^N maze]
+     [1434:in a ^N forest ^N maze]
+     [1435:in a ^N forest ^N maze]
+     [1436:in a ^N forest ^N maze]
+     [1437:on a ^N forest ^N road]
+     [1438:on a ^N reedy ^N isle beside a ^N castle]
+     [1439:in a ^N trackless ^N marsh . Visions of the horse sinking deep
+     into the mud, taking him in his heavy armour down with it, taunted
+     Lancelot]
+     [1440:on a ^N marsh ^N road]
+     [1441:at a ^N siegeworks]
+     [1442:in the ^N red ^N launds]
+     [1443:in the ^N green ^N launds]
+     [1444:in the ^N black ^N launds . There must have been a massively
+     fierce heath fire to have caused this much devastation, thought Lancelot]
+     [1445:at a ^N country ^N junction]
+     [1446:at a ^N main ^N road]
+     [1447:on a ^N country ^N road]
+     [1448:on a ^N stone ^N road]
+     [1449:on an ^N overgrown ^N road . Lancelot ducked and wove under the
+     twigs and branches]
+     [1450:on an ^N overgrown ^N road]
+     [1451:on a ^N hill, beside a ^N tower]
+     [1452:on a ^N beach]
+     [1453:on a ^N mounse of great adventure in this
+     strange realm]
+
+
+
+
+
+
+     [1458:in the ^N marches . Memories of the legends he had heard of
+     bitter battles for this strip of land flooded back as Lancelot
+     surveyed the wilderness]
+     [1459:in an ^N apple ^N tree ^N clearing beside ^N castle ^N Chariot.
+     Nonetheless, Lancelot found himself beguiled by the calm of the scene]
+     ;; [1460:at the top of the ^N elm]
+     ;
+     [1464:the giant spoke, "Sir Lancelot, it is prophesied that I can onnse of great adventure in this
+     strange realm]
+
+
+
+
+
+
+     [1458:in the ^N marches . Memories of the legends he had heard of
+     bitter battles for this strip of land flooded back as Lancelot
+     surveyed the wilderness]
+     [1459:in an ^N apple ^N tree ^N clearing beside ^N castle ^N Chariot.
+     Nonetheless, Lancelot found himself beguiled by the calm of the scene]
+     ;; [1460:at the top of the ^N elm]
+     ;
+     [1464:the giant spoke, "Sir Lancelot, it is prophesied that I can only
+     be killed by a blow from a saint's right hand. I removed the right
+     hand from the only saint I've ever met, and now use it as a pillow.
+     Therefore, be afraid. Be very afraid, for tomorrow you shall die"
+     Then the giant returned to his bed to sleep. ]
+
+     [1473:Lancelot found a fiendly dragon in the chapel, resting across
+     the altar and chewing on a skull. He leapt to the attack, but found
+     the dragon's fire and stell-like talons almost a match for his
+     strength nimble swordwork. The fight lasted from noon to dusk, but
+     eventually, Lancelot , although wounded with deep scratches and burns
+     to his arms and hands, managed to slay the flagging
+     beast with one desperate lunging blow.%
+     %Sir Lancelot leaned upon his sword, tired nigh unto death. ]
+
+     [1474:dame Lyoness greeted Lancelot and thanked him for rescuing
+     her estates. She said that she must reward him for his valour and
+     after some thought, she offered him the services of the
+     Red Knight and added that Lynet, the Damosel Maledisant, could stay
+     with him. She then retired to tend to her wounded soldiers, and
+     graciously sent Lancelot on his way. ]
+
+     [1475:the damosel explained tearfully to Lancelot that Sir Meliot could
+     only be cured by a cloth from the Chapel Perilous, but that the chapel
+     was guarded heavily and with enhcantments, by
+     Hellawes. ]
+
+     [1478:Hellawes crooked a long pointed finger at Lancelot, and invited
+     him, wheedlingly, to put down his sword and kiss her. ]
+
+     [1519:some fishermen appeared and strode up to Lancelot. Speaking in
+     an undertone, as if afraid of being overheard, they warned him about the lord
+     of Servage. They told him that Sir Nabon le Noir was an evil giant
+     who had the custom of eating his visitors - and that one knight was
+     currently awaiting his doom in the castle prison. ]
+
+     [1569:Lancelot saw some people emerge from the castle and ride
+     up to him. ]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   [1569:Lancelot saw some people emerge from the castle and ride
+     up to him. ]
+     ;
+
+
+

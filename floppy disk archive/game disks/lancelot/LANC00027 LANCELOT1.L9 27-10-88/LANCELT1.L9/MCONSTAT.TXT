@@ -1,0 +1,34 @@
+d beneath] 
+; 169 outside Merlin's house 
+; 
+[1270:. The road had been churned to a ^N bog all around the ^N door 
+of a ^N low-roofed ^N building on the north side] ; 170 road outside 
+; kennels 
+; 
+[1271:, while to the north it led on to the ^N great ^N stone 
+^N yard of the ^N stables. An ^N upturned ^N horseshoe had been 
+nailed to the wall] ; 171 road outside stables 
+; 
+[1272:. The ^N main ^N drive curved north across the ^N grass and 
+entered into the ^N castle ^N gates. Opposite this, on  set
+
+; Versioning notes.....
+
+ diskversion=0 ; set to 1 if running/chaining off disk
+ NotDiskVersion=1
+
+ allowcheat=0
+
+ IncludeOops=1
+ IncludePictures=0
+ IncludeProtection=1
+
+; set notmac=1 for 16 bit versions other than mac and 8bit disk versions
+; set notmac=0 for 8 bit cassette versions and mac
+; (notmac=0 disables the insert disk messages)
+
+ notmac=0
+
+ Bits8=1
+ Bits16=0
+;----

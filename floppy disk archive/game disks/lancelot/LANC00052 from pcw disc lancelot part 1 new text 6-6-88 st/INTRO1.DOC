@@ -1,0 +1,267 @@
+
+
+
+     ; Lancelot 1 source, copyright (C) 1988 Level 9 Computing.
+     ;
+     ; MESSAGE.TXT, messages/keywords for the game.
+     ;
+     ; ST Version
+     ;
+     ; Messages are of the form: [ number : text ] ; comment
+     ; They must be in numeric order, but gaps are allowed in the number
+     ; sequence, of course.
+     ;
+     ; | (vertical bar) terminates the printable part of a message. It
+     ;   is typed by shifting backslash (to the left of the keyboard).
+     ; / forces the following character to be printed literally.
+     ; % is carriage return. Note that carriage return is ignored if
+     ;   the printing is already at the start of a line, to make coding
+     ;   simpler. To force a real carriage return, print space first.
+     ; ^ (shift 6) marks a word for recognition by the parser. It is
+     ;   followed by a letter for word type:
+     ;   Adjective; Comment; conJunction; Noun; Preposition; Verb.
+     ;
+     ; Capitalization is done automatically on output and you are
+     ; recommended to use lower case for the first letter of messages
+     ; as this improves compression and will make no difference on
+     ; output, providing all punctuation is correct.
+     ;
+     ; punctuation messages..
+     [1: ]
+     [2::]
+     [3:, ]
+     [4:.] ; dot with no space
+     [5:%]
+     [6:and ]
+     [7:.%]
+     [8:?%]
+     [9:. ]
+     ;
+     ; positions etc..
+     [10:exits led ]
+     [11:an exit led ]
+     [12: through a door]
+     [13: through an open door]
+     [14: and ]
+     [15:That's enough "What now" prompts. ]
+     [16:%> ]
+     [17:%What now? ]
+     [18:: ];
+     [19:"]
+     ;
+     ; Messages for printing objects..
+     [20:a ]
+     [21:the ]
+     [22:an ]
+     [23:some ]
+     [24:." ] ; dot quote
+     [25:% %] ; blank line
+     [26:worn] ; for 'couldn't have worn'
+     [27:taken] ; for 'couldn't have taken'
+     ;
+     ; exits directions, doubling as movement verbs..
+     [51:^V north|^V north ^V n ^V northwards]
+
+
+
+
+
+
+     [52:^V northeast|^V northeast ^V ne]
+     [53:^V east|^V e ^V eastwards]
+     [54:^V south|^V s ^V southwards]
+     [55:^V southeast|^V se]
+     [56:^V southwest|^V sw]
+     [57:^V west|^V w ^V westwards]
+     [58:^V northwest|^V northwest ^V nw]
+     [59:^V upwards|^V u ^V up]
+     [60:^V downwards|^V d ^V down]
+     [61:^V inside|^V in ^V inwards ^V into ^V enter]
+     [62:^V outside|^V out ^V leave]
+     [63:^V cross|^V across ^V over]
+     [64:with the ^V climb|^V scramble ^V ascend ^V mount]
+     ; is in 'you struggle with the climb and are in'
+     ;
+     ; Intransitive verbs..
+     [70:^V i]
+     [71:^V again|^V a]
+     [72:^V look|^V l ^V display ^V redisplay ^V refresh]
+     [73:^V inventory|^V inv ^V possessions ^V possess ^V list]
+     [74:^V quit ^V restart]
+     [75:^V restore ^V load]
+     [76:^V save]
+     [77:^V ramsave ^V ram]
+     [78:^V ramload]
+     [79:^V score ^V rating ^V status]
+     [80:^V verbose]
+     [81:^V brief]
+     [82:^V wait|^V wa ^V pause ^V z]
+     [83:^V ring|^V play ^V blow ^V toot ^V sound]
+     [84:^V on]
+     [85:^V off|^V jump] ; >>
+     [86:^V pictures ^V graphics]
+     [87:^V words ^V text]
+     ;
+     [89:^V undo ^V oops ^V whoops]
+     [90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash
+     ^V bend] ; for bend bars >>special to L1
+     ;
+     [92:^V searched|^V search ^V explore]
+     [93:^V dig]
+     [94:^V sniffed|^V sniff ^V smell]
+     [95:^V knocked|^V knock]
+     [96:got|^V stood ^V stand] ; output e.g. 'L got out', 'L got in' etc.
+     [97:^V lay|^V lie]
+     [98:^V sat|^V sit]
+     ;
+     [100:^V said|^V say ^V whisper ^V call]
+     [101:^V teleported|^V teleport]
+     [102:^V getme]
+     ;
+     [103:^V filled|^V fill] ; >>Lancelot
+     [104:^V ran|^V run ^V gallop]
+     [105:^V made|^V make] ;>>Lancelot3
+     [106:^V prayed|^V pray] ;>>Lancelot3
+     [107:yeuch|^V eat ^V bite ^V taste ^V nibble ^V lick]
+     ;; [105:^V poured|^v pour ^V empty] ;>>gnome2
+     ;; [106:^V watered|^V water] ;>>gnome2
+     [108:^V went|^V go ^V goto ^V find ^V walk ^V ride]
+     [109:stopped|^V stop ^V abort]
+
+
+
+
+
+
+     [110:^V drank|^V drink]
+     [112:^V exits ^V exit]
+     ;
+     ; verbs for output..
+     [130:^V had|^V have ] ; mainly for output
+     [131:^V had|^V has ] ; mainly for output
+     [132:^V was|^V am ] ; mainly for output
+     [133:^V were|^V are ] ; mainly for output 'you were'
+     [134:^V was|^V is ] ; mainly for output 'someone was'
+     [135:are] ; output only - present tense for 'tell me about'
+     [136:is]  ; output only - present tense for 'tell me about'
+     ;
+     ;; [137 is 'GO IN']
+     ;; [138 is 'GO OUT']
+     ;; 139 is 'wait for person'
+     ;; 140 is 'wait until time'
+     ;; 141 is 'wait for (length of time)'
+     ;; 142 is 'wait for single turn'
+     [143:^V fought|^V fight ^V kill]
+     [144:^V retaliate ^V strike ^V challenge ^V prove] ; special to L1
+     [145:^V dodged|^V dodge]
+     ; 146 and 147 have text for debugging output only - do not mark
+     [146:gdgo]  ; 196 - gdgo
+     [147:gdrun] ; 197 - gdrun
+     [148:^V stuff]
+     ;
+     ; Transitive verbs..
+     [150:^V examined|^V examine ^V read]
+     [151:^V cut|^V chop]
+     [152:^V woke|^V wake ^V rouse]
+     ;
+     [154:^V got|^V get]
+     [155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick
+     ^V pluck ^V catch ^V lift ^V pull ^V hold ^V keep ^V turn ^V rotate
+     ^V grab]
+     [156:^V wore|^V wear]
+     [157:^V dropped|^V drop ^V discard]
+     [158:^V put|^V hide ^V conceal]
+     [159:^V removed|^V remove ^V free ^V release]
+     [160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+     [161:^V gave|^V give ^V offer ^V offered ^V sell]
+     [162:^V asked|^V ask ^V question]
+     [163:^V followed|^V follow ^V chase]
+     [164:^V opened|^V open ^V unlock]
+     ;
+     [168:^V pushed|^V tug ^V push ^V launch ^V shovel
+     ^V paddle] ; >>gnome3 - launch
+     [169:^V fastened|^V fasten ^V tie ^V attach]
+     [170:^V unfastened|^V unfasten ^V untie]
+     ;
+     [176:^V inserted|^V insert]
+     ;
+     ;; [182:^V collect] ; goal-directed
+     ;
+     ; 186, 187 and 189 have text for debugging only
+     [186:return object] ; 186 is 'return object to initial' (for npcs)
+     ;; [188:^V find] ; set up find.
+     [189:gdfind] ; 239 is gdfind
+     ;
+     [190:^V closed|^V close ^V shut]
+
+
+
+
+
+
+     ;;
+     [192:^V told|^V tell]
+     [194:struggled] ; mainly for output
+     ; 195 is 'steal all from'
+     ;
+     [197:killed] ; output only
+     ;
+     [210:reached] ; output only
+     [211:dragged] ; output only
+     [212:passed] ; output only
+     [213:flew] ; output only
+     [214:walked] ; output only
+     [215:caught] ; output only
+     [216:entered] ; output only, e.g 'Fred enters from the east'. Do not mark
+     ;
+     ;; Echo verbs (250-299) which just print the message containing them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+     ;
+     ; MESSAGE.TXT, messages/keywords for the gam

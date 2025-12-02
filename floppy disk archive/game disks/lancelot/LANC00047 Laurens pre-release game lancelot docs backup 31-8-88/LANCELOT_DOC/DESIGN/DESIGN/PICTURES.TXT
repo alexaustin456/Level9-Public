@@ -1,0 +1,114 @@
+            LANCELOT PICTURES. COPYRIGHT (C) 1988 LEVEL 9
+            ---------------------------------------------
+Roads (1-5):
+ 1.  Border (16-bit only) plus road through open woodland. 
+ 2.  Path through forest. 
+ 3.  Narrow Ledge ascending the cliff to Nacien's hermitage. 
+ 4.  Narrow mediaeval street through Camelot city. 
+ 5.  Ford, guarded by Black Knight.
+
+Rooms (6-12):
+ 6.  Stone-walled corridor. 
+ 7.  Stone-walled room. 
+ 8.  Mews, with hawk roosting overhead. 
+ 9.  Merlin's study. 
+10.  Guenever's bedroom. 
+11.  Arthur's Hall, with Round Table. 
+12.  Turquin's round prison from above; with iron "lift" cage above. 
+
+Castles (13-19): 
+13.  Camelot City, seen from afar. 
+14.  Castle Meliagaunt (with moat, in open woodland). 
+15.  Tintagel Castle (upon bleak cliffs, above the sea). 
+16.  Round stone tower (in a bare landscape of rolling heather hills). 
+17.  Turquin's Manor (fortified house, in parkland). 
+18.  Pavilion (Rich tent, with banners, in a woodland clearing) 
+19.  Chapel, at the end of a woodland road. 
+
+Misc (20-26): 
+20.  Garden, below Guenever's window. 
+21.  Stone Cross, in the wasteland.
+22.  Spring and pool, in a decorative glade. 
+23.  Sessoine invasion fleet, drawn up on beach; bonfire on the sand.
+24.  Magic boat, draped in white Samite, on the beach. 
+25.  View of sea, from the magic boat. 
+26.  Elaine, rising from her hip-bath, wreathed in steam.
+
+Grail (27-30): 
+27.  Light of Holy Grail, shining through door.
+28.  Holy Grail, appearing to the host of the Round Table. 
+29.  Holy Grail, appearing to Lancelot at the end of the game. 
+30.  Loading Screen (following design of box cover). 
+
+
+                       PICTURE DETAILS
+                       ---------------
+
+The idea was to get significantly better quality pictures than 
+previous games; e.g with extensive use of pattern fill. Whenever 
+possible, the pictures were from Lancelot's viewpoint. 
+
+Roads (1-5):
+ 1.  Border (16-bit only) plus road through open woodland. 
+ 2.  Path through forest. 
+ 3.  Narrow Ledge ascending the cliff to Nacien's hermitage. A path 
+sloped diagonally upwards to the right, across a sheer limestone 
+cliff, towards a stone building near the top. 
+ 4.  Narrow mediaeval street through Camelot city. This scene was like 
+the shambles in York: a narrow alleyway between overhanging houses. 
+ 5.  Ford, guarded by Black Knight. A cobbled track led between over- 
+hanging willows and through a wide place in the stream; in front of 
+which sat a knight in black plate mail; apon a black horse with white 
+markings on nose and feet. 
+
+Rooms (6-12):
+ 6.  Stone-walled corridor. With exposed oak beams above. 
+ 7.  Stone-walled room. Ditto. 
+ 8.  Mews, with hawk roosting overhead. 
+ 9.  Merlin's study. A room of great untidiness, wallpapered with 
+books and with magical miscellanea all around. 
+10.  Guenever's bedroom. Draped with rich fabric; with a four-poster 
+bed, dressing table with mirror; window like a pointed arch with a 
+cross to separate the four panes; rugs on the floor. 
+11.  Arthur's Hall, with Round Table. The table was like the rim of 
+a wheel in shape (not e.g a plate) and was surrounded by massive, 
+high-backed chairs, like those in the chancels of some churches. 
+12.  Turquin's round prison from above; with iron "lift" cage above. 
+The film version of "Man of la Mancha" had such a great prison-pit; 
+with a walkway round the edge of a cylindrical pit. 
+
+Castles (13-19): 
+The castles were something like those in "Defender of the Crown"; with 
+the pattern of stones clearly visible in their walls. I should think 
+that you would be able to "copy" existing pictures (this also applies 
+to pictures in other categories). 
+13.  Camelot City, seen from afar. 
+14.  Castle Meliagaunt (with moat, in open woodland). 
+15.  Tintagel Castle (upon bleak cliffs, above the sea). 
+16.  Round stone tower (in a bare landscape of rolling heather hills). 
+17.  Turquin's Manor (fortified house, in parkland). 
+18.  Pavilion (Rich tent, with banners, in a woodland clearing) 
+19.  Chapel, at the end of a woodland road. The road led to its side 
+door, through a small graveyard. The small spire was on the right.  
+
+Misc (20-26): 
+20.  Garden, below Guenever's window. 
+21.  Stone Cross, in the wasteland. 
+22.  Spring and pool, in a decorative glade. 
+23.  Sessoine invasion fleet, drawn up on beach; bonfire on the sand.
+24.  Magic boat, draped in white Samite, on the beach. 
+25.  View of sea, from the magic boat. The prow of the boat was 
+visible in the foreground; with waves and gulls beyond. 
+26.  Elaine, standing in her hip-bath, wreathed in just sufficient 
+steam to protect her modesty. She was holding out her right hand 
+towards the viewer. 
+
+Grail (27-30): 
+27.  Light of Holy Grail, shining through door.
+28.  Holy Grail, appearing to the host of the Round Table. The grail 
+is a richly decorated cup; something like a fat chess-queen, turned 
+upside down. It had no handles, and glowed brightly as it floated 
+above the Round Table. 
+29.  Holy Grail, appearing to Lancelot at the end of the game. 
+30.  Loading Screen (following design of box cover). 
+ 

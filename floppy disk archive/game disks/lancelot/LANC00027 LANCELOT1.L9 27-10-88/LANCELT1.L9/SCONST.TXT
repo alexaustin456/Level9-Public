@@ -1,0 +1,316 @@
+; Standard adventure source, copyright (C) 1987 Level 9 Computing.
+;
+; SCONST, game-specific constants. You will probably need to change 
+; most of the values of these. 
+;
+; A standard labelling convention for constants is that constants 
+; preceded by I (e.g ILOOK) are relative to their appropriate offset 
+; (e.g verboffset).
+;
+CONST
+ Lancelot=2004 ; unique game identifier value
+;
+; STARTsynthSHORTdescs=1199 ; shortroomdescs+minsynthroom
+ SHORTroomDESCS=800
+ LONGroomDESCS=1100
+;;
+ MAXMOVEAB5:from outside]        ; inside 
+[596:from inside]         ; outside  
+[597:from across the way] ; across 
+[598:by climbing]         ; climb 
+[599:with a jump]         ; jump  
+; 
+; Examine messages (600+N). NO full stops at end please. 
+; 
+[601:the second best knight in the world, now that his son 
+Galahad stood first among the flowers of chivalry. 
+You could tell that he retained the strength of youth with sword 
+and lance, and combined it with the valuable wisdom of his middle 
+years]  
+; Lancelot. ** CLUE 5 ** ; ** CLUE 9 ** 
+; 
+[602:a knight, clad in full ^N armour, as huge and black as 
+any bear. He held his lance under his arm and glowered at 
+Lancelot] ; black knight. 
+; 
+[603:a wise old man, well steeped in faith and philosophy. He 
+needed no sword nor axe, for his knowledge of hidden secrets was 
+power enough] ; Nacien the hermit. ** CLUE 9 ** 
+; 
+;; [604:a brave knight] ; Ector. 
+; 
+[605:a stolid man, not clever but deep-thinking nonetheless. He 
+strove always to do that w with all their might, but it would not move. When the 
+two elder men learned full well that the sword would give only for 
+Arthur, they both knelt down to the earth before him. 
+
+Arthur was greatly dismayed. "My own father and brother!" he 
+exclaimed. "Why do ye kneel before me?"
+
+"Nay, Arthur, I am not your father, nor of your blood" said Sir 
+Ector gently, and for the first time he told him how Merlin had 
+delivered him to Sir Ector as a newborn baby, and charged him to 
+nourish Arthur as his otable 7 ) (starts at 32...)
+ scBase=32
+ scSerfsGate=32
+ scStudy=33
+ scLibrary=34
+ scHall=35
+ scRoundTable=36
+ scMeliagaunt=37
+ scBoudoir=38
+ scPrison=39
+ scLroom=40
+ scGroom=41
+ scSpareBlackKnight=42
+ scSleptInMews=43
+ scAccused=44
+ scGkilled=45
+ scGburnt=46
+ scForgotG=47
+; part 2...
+ scTurret=48
+ scTurquin=49
+ scChariot=50
+ scBeach=51
+ scServage=52
+ scPerilous=53
+ scReedy=54
+ scWailing=55
+ scGreenLaunds=56
+ scOrkneyStable=57
+ scBurntFleet=58
+ scSleptWithElaine=59
+ scFreedTurquinManor=60
+ scFreedFalcon=61
+ scCompletedLynetQuest=62
+ scLostHonourQueen=63
+ scKilledRedKnight=64
+ scBooks=65
+; scKissedHellawes=65
+; scHurtLynet=66
+
+ scFreedKnightBase=65 ; knight 1 is Tristram: object number 2
+ scFreedKnight1=67
+ scFreedKnightMax=74
+ scFreedKnightMaxPlus1=75
+
+ scmax=75
+ scmaxplus1=76
+
+ VisitTableStart=76 ; 34
+ VisitTableEnd=255 ; 213 ; VisitTableStart + (179=num of "Real" rooms)
+
+ MeetingTable=255 ; 213
+ MeetingTableEnd=319 ; 277 ; meetingTable+MaxNpc
+;
+; Objects.her. 
+; 
+[611:a pitiful sight. He lay prostrate upon the ground, so wasted 
+by sun and wind that his flapping robe seemed as if it belonged 
+to a much bigger man. From time to time, he would muster his 
+failing strength to utter a pained murmur of "Water, water"] 
+; pilgrim. ; ** CLUE 8 ** 
+; 
+[613:a most comely and alluring young woman, slender and 
+well-made. Lancelot wondered what was the point of chivalry as 
+he looked at her ^N skin, fair and soft as a gentle breeze, 
+her ^N eyes, blue and clear as a Summer sky, and her lustrous 
+^N tresses, as golden as shimmering sunlight. Her ^N garments 
+were of the finest silk from distant Arabie, and her ^N dress 
+clung gently to the soft contours of her body and caressed her 
+shapely legs] ; tempting damosel. ** CLUE 8 ** 
+; 
+[614:a thin, shabby figure of a man, wearing a thin, patched 
+^N robe. The garb and the tonsure showed he was a cleric; a 
+pale, pinched face and scrawny neck told of frequent hunger. 
+Yet for all 
+his obvious poverty and suffering, he had the air of a man of 
+unbroken spirit, of stoic endurance of the pains of this world 
+and hope for the future] ; cleric. 
+; 
+[615:a group of Benedictine monks, tall and short, thin and 
+fat but all with matching ^N tonsures and brown ^N robes. 
+They waited patiently, knowing all would come to pass in 
+time] ; priests. 
+; 
+[625:ferocious beasts, slashing at the air with savage 
+^N claws, black ^N lips drawn back and red-rimmed ^N jaws 
+agape as they roared their bloodlust. They s=134
+ sails=135
+;
+ SiegeArmy=137
+ trapdoor=138
+
+; moveable objects are (70..79)
+ footstool=70
+ gloves=71
+ hat=72
+
+; static objects for L1 (150..169)
+ bars=150
+ bed=151
+; bed=152
+; bed=153
+; bed=154
+; bed=155
+ bedofstraw=156
+ bloodstain=157
+ books=158
+ p1cart=159
+ p1chest=160
+ ladder=161
+ pyre=162
+ sieges=163
+ tableround=164
+ window=165
+
+;
+ HawkDroppings=170
+
+ ithing=246
+ iroom=243
+
+ sword=254 ; sword/armour objects...
+;
+ minpeople=1 ; = creaturebase
+ maxpeople=64 ;
+ maack ^N cowl of its foul ^N robe that 
+surged and writhed about its rattling ^N body. Taloned 
+^N fingers reached grasping towards Lancelot] ; fiend from tomb. 
+; 
+[628:a great black beast, wreathed in thick, dark smoke that 
+gushed from its ^N nostrils and rose in plumes from the living 
+furnace of its body. Its barbed ^N wings stretched out, 
+darkening the sky and casting night's gloom upon the 
+ground] ; black dragon. 
+; 
+[629:untouchable, invisible. Knowable only by the great sense 
+of evil thh was given to me by Uther 
+Pendragon. The Table will seat a hundred and fifty knights when it 
+is full, and I will myself send a hundred good knights."
+
+Leodegrance was right. The gift of a hundred knights and the Table 
+Round pleased Arthur far greater than land, and he sent out Merlin 
+to find fifty accomplished knights to complete the number, the 
+while he made preparations for the royallest wedding he could 
+devise. But Merlin could only find forty eight knights of enough 
+prowess to grace then each corresponding entry in npcinitial, list 5..
+ attackoffset=2
+; hitpoint offset=3
+ obedienceoffset=4
+ patienceoffset=5
+ goldsingingoffset=6 ; in static data - word (hi byte first)
+;
+; 
+;----
+
+ s1=1 ; pride
+ s2=2 ; wrath
+ s3=3 ; envy
+ s4=4 ; lust
+ s5=5 ; gluttony
+ s6=6 ; avarice
+ s7=7 ; sloth
+ v1=8 ; lackOfFaith
+ v2=9 ; lackOfCharity
+ v3=10 ; injustice
+ v4=11 ; lackOfFortitude
+ v5=12 ; lackOfPrudence
+ v6=13 ; intemperence
+ com1=14 ; worshipAnotherGod
+ com2=15 ; gravenImage
+ com3 but ever to grant mercy when it was asked 
+for, and ever to help ladies, whether gentlewomen or damosels, 
+whenever succour was needed. And every Knight was sworn to this 
+oath and every year at Pentecost they affirmed it again.
+
+
+
+Merlin and Nimue 
+---------------- 
+
+For all that he was a magician and a soothsayer, Merlin fell in 
+love with one of the ladies of the lake, called Nimue. He became 
+besotted upon her and could not bear to be away from her, and she 
+kept in his company until he haldingRock
+; EagleFriendly
+; LeprecaunFriendly
+; DogsHaveToldIngrid
+; DogBarking
+; WitchLookingOut
+; BackDoorBroken
+; DogGone
+; WitchStoningEveryone
+; FollowingSomeone Misty
+; LeprecaunTime
+; DogsHaveFused
+; UnicornHappy
+;----------
+; HaveKilledPlant
+; StartPotionTable
+; IngredientNumber
+; CurrentBook
+; HoldingBreath
+; WeedkillerSmeared
+; BoulderRocking
+; BeanStalkState
+; HOldingCaveMouth
+; HaveDrunkAntidote
+; FlowerRaised
+; GreenSlaveAnimated
+;----
+ TotalMoves
+; LHasLeftVagon LHasStolenCrown
+; DamoselRandy
+; NameGiven ; =1 if L told lie, 2 if told a lie
+; ClimbingPath ; =1 if climbing, =2 if L has met N
+; TombOpen
+; TimeSinceRescueSeen EctorRescued MaidRescued
+; GalahadRescued GalahadCaptured GalahadDeadCounter
+; WindBlowing
+ ProblemObject ProblemVerb
+ gdCurrentSave gdHiSave
+; FireStrength
+; CurrentElemental
+; ChapelUnlocked
+; TempTitle TempTitleCounter
+ GalahadComment
+; LastDream ForgivenessImPossible
+; FirstSin SecondSin LatestSin
+
+
+; vars for L2...
+ OkToVisitTristram
+ TimeCauldronCarried
+; ActorHOldingLid
+; dragonBreathedFire
+ InvitedToEnterCorbin ElaineGreeting
+ PerilousStage PanelClosed OldManTime HaveConceivedGalahad
+ TimeAsleep CurrentPillow NabonAwake
+ TimeSinceHornBlown TimeSinceHornBlownNearby
+ BriarState
+ ChariotUnlocked
+ TurquinManorOpen SecretPanelOpen PeopleInSecretPassage BellRemoved
+ TurquinPrisonersReleased GuardState
+ ShuttersClosed
+ AskedForHawk ArmourRemoved HawkRescued
+ BrachetArrived
+ SwordDropped
+ PortcullisState
+ PushingOrky the people after Arthur. 
+And because of his excellence, Queen Guenever favoured him above 
+all other knights, and he too favoured her, and many of his great 
+knightly deeds were done for love of Guenever.
+
+Sir Lancelot was riding in Corbin, when he saw the fairest tower he 
+had ever seen. Inside was a lady, enchanted to remain in scalding 
+water until the best knight in the world should take her hand.  
+Launcelot rescued her; she thanked him and he thought she was the 
+fairest lady in the world,reetedThisTurn ; prevent Arthur talking to everyone at once
+ KnightsFollowingL
+ GeneralScoreAddition
+ QueenSavedFromBurning
+ RedKnightSpared
+ L1ExitsCommands
+ AltGuardState

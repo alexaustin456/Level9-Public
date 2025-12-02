@@ -1,0 +1,72 @@
+ output only - do not mark 
+[146:gdgo]  ; 196 - gdgo 
+[147:gdrun] ; 197 - gdrun  
+[148:^V stuff] 
+; 
+; Transitive verbs..  
+[150:^V examined|^V examine ^V read ^V search ^V explore] 
+[151:^V cut|^V chop] 
+[152:^V woke|^V wake ^V rouse]  
+; 
+[154:^V got|^V get] 
+[155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick  
+^V pluck ^V catch ^V lift ^V pull ^V hold ^V keep ^V turn ^V rotate 
+^V grab] 
+[156:^V wore|^V wear]  
+[157:^V dropped|^V drop ^V discard] 
+[158:^V put] 
+[159:^V removed|^V remove ^V free ^V release]  
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl] 
+[161:^V gave|^V give ^V offer ^V offered ^V sell] 
+;; [162:^V asked|^V ask ^V question] ; removed by Pete 20/8/88 
+[163:^V followed|^V follow ^V chase] 
+[164:^V opened|^V open ^V unlock ^V unbolt]  
+[165:^V choose]  
+; 
+[168:^V pushed|^V tug ^V push ^V launch ^V shovel 
+^V paddle] ; >>gnome3 - launch  
+[169:^V fastened|^V fasten ^V tie ^V attach] 
+[170:^V unfastened|^V unfasten ^V untie ^V untangle] 
+;  
+;;ööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööto end of ram area
+ IF OOPSPOSEND=0 THEN NOPOSITION ; something wrong here
+ OOPSPOS=OOPSPOSEND ; first invalid position
+
+.OOPS2
+ SUB OOPSPOS,C1
+ X2=OOPSPOS
+ GOSUB RAMREAD
+ if c2<>2 then HighLevelError
+ nomoreinput=true
+ descriptionmode=iverbose ; in case killed in the middle of RUN
+ GOTO @oopsafterrestore
+
+.RAMERROR
+
+ cend
+
+ MESSAGE 2300 ; ram save/restore not available on this machine
+ RETURN
+;---
+.SAVEOOPS
+; OOPSPOS points to the next free position in ram save area
+; this routine calone, follow their name with what you  
+want to say to them. For example KNIGHT, HELLO|^V hello ^V welcome 
+^V hi ^V greetings ^V day ^V afternoon] 
+[256:Lancelot heard nothing but what he already knew of|  
+^V listen ^V hear] 
+[257:I pray thee to send the coupon, with a stamped, self-addressed 
+envelope to Level 9 Computing at PO Box 39, Weston-super-Mare  
+BS24 9UR. We will return a passing fine ^N cluesheet|^V hint ^V help] 
+[258:pray tell me which way you want to go, and I will handle 
+getting into and out of the boat|^V board ^V sail]  
+[259:Lancelot offered his ^V thanks] 
+[260:the only ^V escape is to finish the game] 
+[261:there was no need to worry about such matters. When Lancelot 
+needed to ^V mount or ^V dismount, he did so without thinking]  
+[262:Lancelot would have to find that out for himself|^V what] 
+[263:Why not|^V y ^V why] 
+[264:forsooth, and I was at the instant wondering ^V where it was  
+myself] 
+[265:I am right sorry, but even I know not ^V how things work 
+in this löööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö

@@ -1,0 +1,34 @@
+t seemed as if none lived within, for ^N cobwebs 
+blocked the ^N windows and the low ^N door hung awry. Against the 
+^N wall grew a stone coloured ^N host of GIANT ^N plants, the like 
+of which Lancelot had never seen.% 
+
+%A wrinkled hand, enwrapped in a long flapping sleeve, 
+beckoned to him from an attic window. ] ; ** CLUE 4 ** 
+; 169 road outside Merlin's house 
+; 
+[1520:as Lancelot came by, there was a loud barking and 
+baying. ] ; 170 road outside kennels 
+; 
+[1521:a stable boy came forth,s set
+
+; Versioning notes.....
+
+ diskversion=0 ; set to 1 if running/chaining off disk
+ NotDiskVersion=1
+
+ allowcheat=0
+
+ IncludeProtection=1
+ includepictures=0
+ includeoops=1 ;include oops/ramsave?
+
+; set notmac=1 for 16 bit versions other than mac and 8bit disk versions
+; set notmac=0 for 8 bit cassette versions and mac
+; (notmac=0 disables the insert disk messages)
+ notmac=0
+ fixst=0
+
+ Bits8=0
+ Bits16=1
+;----

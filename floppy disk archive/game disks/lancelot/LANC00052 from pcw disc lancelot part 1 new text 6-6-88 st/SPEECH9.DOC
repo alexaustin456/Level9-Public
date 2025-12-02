@@ -1,0 +1,133 @@
+
+
+
+
+     ; some messages printed by racetracks...
+     [2700:knelt down before the altar]
+     [2701:prayed for forgiveness]
+     [2702:greeted Merlin warmly]
+     [2703:discussed the state of Logris with Merlin, who nodded gravely]
+     [2704:lay down in the long grass and took off his helmet]
+     [2705:lay down as if to sleep]
+     [2706:got up and stretched]
+     [2707:put on his helmet and brushed off the grass]
+     ;
+     ; carter messages on racetrack...
+     [2720:collected some straw from the meadows]
+     [2721:delivered some straw]
+     [2722:collected some vegetables and milk from the market]
+     [2723:delivered some produce to the castle]
+
+     ;
+     ; additions to Lancelot's name...
+     [2798:of the Round Table]
+     [2799:squire] ; comes first
+     [2800:Sir] ; comes first
+     [2801:the filthy]
+     ;
+
+     ; "Pet" messages... (table driven)
+     ; some remarks made by Damosel Maledisant on various occurances...
+     ;; [2850:ugh, not enough garlic] ; try soup
+     ;; [2851:very clever]
+     ;; [2852:take some music lessons] ;play harp
+     ;
+     ;---------
+     ; messages when people refuse an order. 3000+n
+     ; Use ACTORM1Dot
+
+     ;; [2902:] ; Tristram
+     ;; [2903:] ; Galahad
+     ;; [2904:] ; Bors de Ganis
+     ;; [2905:] ; Sir Question Mark ;***
+     ;; [2906:] ; Gawain
+     ;; [2907:] ; the Red Knight
+     ;; [2908:] ; Meliot
+     ;; [2909:] ; Lamorak
+     ;
+     ;; [2910:] ; Ector de Maris
+     ;; [2911:] ; Agravain
+     ;; [2912:] ; Aliduke
+     ;; [2913:] ; Brandiles
+     ;; [2914:] ; Brian
+     ;; [2915:] ; Geheris
+     ;; [2916:] ; Gareth
+     ;; [2917:] ; Lionel
+     ;; [2918:] ; Marhaus
+
+
+     ;
+     [2952:smelt awful, and Lancelot decided not to ask
+     for any more help] ; peasants
+     [2953:seemed very unfriendly] ; crowd
+     [2954:squawked and ignored Lancelot] ; hawks
+
+
+
+
+
+
+     [2955:ignored Lancelot completely] ; Queen's knights
+     ;; [2956:said, "I will not parley until we have fought"] ; the Black Knight
+     ;;
+     [2957:said, "Sorry Lancelot, I have other things to attend to"] ; Guenever
+     [2958:said, "Do it yourself, peasant"] ; Sir Kay
+     [2959:said, "I will not help my enemy"] ; Sir Meliagaunt
+     [2960:said, "You dare'st to ask your king for help on such
+     trivial matters? Do not ask again"] ; Arthur
+     [2961:said, "You have despoiled the Queen's honour and
+     deserve to die"] ; Sir Colgreavaunce
+
+     [2962:said, "I am fully occupied with important matters. There
+     are forces at work of which you know nothing. The best I can do is
+     to help if you get into real difficulties"] ; Merlin
+     [2963:said, "You can get into the cart if you like. Beyond that
+     I cannot help you"] ; carter
+     [2964:said, "I cannot, unless you promise to love me"] ; damosel
+     ; [2965:said, "You have despoiled the Queen's honour and
+     ; deserve to die"] ; Sir Colgreavaunce
+
+     ;--------
+     ;
+     ;
+     ; comments made by people when they encounter Lancelot for the first time
+     ; 3000+
+     ;; [3002:Tristram said, "Hello Galahad, have you brought my harp?" ]
+     [3056:the black knight said, "Hold fast, traveller. Only worthy
+     knights may pass me". ]
+     [3058:Sir Kay said, "Well I never, look what the mouse dragged in.
+     If you have any business in this place, I suggest you go and sleep
+     in the mews. They're cheap, which should suit you fine, and not far
+     from here". He gestured arrogantly to the north, "Be off with you,
+     peasant. There's a curfew for the lower classes, you know". ]
+     [3062:Merlin said, "Greetings, Lancelot. Your coming was foretold
+     to me in a dream". ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eetings, Lancelot. Your coming was foretold

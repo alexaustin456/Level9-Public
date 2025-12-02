@@ -1,0 +1,113 @@
+ееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееt need this first stage of course). 
+   * If the number is bigger than nine, add its digits together. 
+     So 69 becomes 6+9 = 15. 
+   * If the new number is still bigger than nine, repeat the 
+     process until a one-digit number is left. 
+     So 16 becomes 1+5 = 6. 
+   * (So, taking the examples above: 16, CAMELOT and QUEENS would 
+     become 7, 6 and 9). 
+
+3) The answers from above build up into a 6-digit map reference (you 
+   will have to guess the letters at the front of the reference), t need this first stage of course). 
+   * If the number is bigger than nine, add its digits together. 
+     So 69 becomes 6+9 = 15. 
+   * If the new number is still bigger than nine, repeat the 
+     process until a one-digit number is left. 
+     So 16 becomes 1+5 = 6. 
+   * (So, taking the examples above: 16, CAMELOT and QUEENS would 
+     become 7, 6 and 9). 
+
+3) The answers from above build up into a 6-digit map reference (you 
+   will have to guess the letters at the front of the reference), 
+   using the following formula: 
+
+                     First digit:  A+B-Q 
+                     Second digit: C+D-O 
+                     Third digit:  E+F-R 
+                     Fourth digit: G-H+L 
+                     Fifth digit:  I+J-P 
+                     Sixth digit:  K+M-S 
+ 
+   (Again, taking the incorrect example above, the first digit of 
+   the map reference would be four: A+B-Q = 7+6-9 = 4). 
+
+4) Use a map to find the name of the famous place at the map 
+   reference. Write this down. 
+
+
+                              WINNING 
+
+* All entries must be by recorded delivery letter, to ???, AND 
+  the envelope stamped by a post office date stamp to further 
+  prove date of postage. 
+
+* If you work out where the grail is "hidden", write the name of 
+  the famous place, followed by the letters A-S and the answers 
+  to as many of the corresponding questions as you know. 
+
+  The winner will basically be the first person to find the grail 
+  and write in. But each correct answer A-S is worth 1 day so 
+  e.g a lucky entry with only 13 correct answers posted on the 10th 
+  will still be beaten by one with 19 correct answers on the 15th. 
+
+* Only one wrong entry is allowed per person, and if you do send 
+  in a claim for a wrong place all later answers will be ignored. 
+  But you are allowed to send in a second correct entry (i.e one 
+  that also names the right place), if you should work out more 
+  of the answers A-S. 
+
+* Please enter regardless on 31st March 1989. If nobody has worked 
+  out the full answer by then, the winner will be the person who 
+  has got the most correct answers from the nineteen questions. 
+
+
+
+Here are the individual questions. You may need to refer to the 
+Penguin English Library version of Le Morte D'Arthur, and to 
+Arthurian books in general, but I promise that I have avoided 
+obscure sources for the information. I wish you all luck. 
+
+
+
+
+A. How many hound-power was the Questing Beast? 
+
+B. Where did Lancelot's father greatly help Arthur? 
+
+C. How many times did Lancelot rescue Guenever at the stake? 
+
+D. How many brothers, or half-brothers, had Mordred? 
+
+E. Which sword's name indicated it could cut steel? 
+
+F. How many Round Table knights saw the Grail at Pentecost? 
+
+G. Who was also called Cuchullain? 
+
+H. Who of Arthur's Grail Knights lived longest? 
+
+I. What colour was a new knight's shield? 
+
+J. What exactly was Lucy? 
+
+K. What was Lancelot's real name? 
+
+L. Emperors' bird.  
+
+M. Arthurian namesake of computer. 
+
+N. Assuming the celebrants of Mass were supernatural, how many 
+   mortals saw the Grail in Castle Carbonek? 
+
+O. Where was Geoffrey the writer from? 
+
+P. Someone's original name was slightly changed to please the 
+   French. What was it? 
+
+Q. Who stand near Arthur's grave, between his sons and his quoit? 
+
+R. Kind of tree which may have grown on the Isle of Avalon. 
+
+S. The historical Arthur seems to have been a war leader similar 
+   to Alfred the Great. How many centuries aparhe 
+    replac

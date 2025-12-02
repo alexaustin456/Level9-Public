@@ -1,0 +1,26 @@
+ting objects.. 
+[20:a ] 
+[21:the ]  
+[22:an ] 
+[23:some ] 
+[24:." ] ; dot quote  
+[25:% %] ; blank line 
+[26:worn] ; for 'could not have worn' 
+[27:taken] ; for 'could not have taken'  
+; 
+; exits directions, doubling as movement verbs.. 
+[51:^V north|^V north ^V n ^V northwards]  
+[52:^V northeast|^V northeast ^V ne] 
+[53:^V east|^V e ^V eastwards] 
+[54:^V south|^V s ^V southwards]  
+[55:^V southeast|^V se] 
+[56:^V southwest|^V sw] 
+[57:^V west|^V w ^V westwards]  
+[58:^V northwest|^V normides, in passing, mentioned how Sir Gawain and his bretheren 
+had feloniously slain Sir Lamorak de Gales. Sir Percival swooned when 
+he learned of his brother's death. 
+
+Dinadan met Tristram and they argued about whether lovers made good 
+knights. Tristram refused to give his name, so Dinadan became angry 
+and called him a coward. Then Sir Epinogrus, great lover of the King 
+of Wales' daughter, arrived. Dinadan jousted with him to

@@ -1,0 +1,19 @@
+öööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö
+
+ diskversion=1 ; set to 1 if running/chaining off disk
+ NotDiskVersion=0 ; set to 1 if running/chaining off cassette
+
+; Versioning notes.....
+
+ allowcheat=0
+
+; set notmac=1 for 16 bit versions other than mac
+; set notmac=0 for 8 bit versions and mac
+ notmac=0
+
+ includepictures=1
+ includeoops=1 ; include oops/ramsave?
+ IncludeProtection=1 
+
+ RemoveGroupsOf3=0
+ IncludeFunnies=1

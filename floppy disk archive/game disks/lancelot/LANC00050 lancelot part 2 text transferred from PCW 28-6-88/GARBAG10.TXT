@@ -1,0 +1,209 @@
+
+
+
+     ;
+     ; Garbage words..
+     [4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also
+     ^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+     ^N good ^N of ^N cute ^N there]
+     [4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+     ^N warily ^N quickly ^N rapidly ^N following ^N around]
+     [4002:^N please ^N Sir]
+     ;
+     ; Book protection code...
+     ;
+     [4200:%A funny little rock appeared from under a plant and stopped Lancelot[4304:^C about]
+     [4305:^C grandma]
+     [4306:^C the]
+     [4307:^C a]
+     [4308:^C the]
+     [4309:^C whipped]
+     ;
+     [4310:^C on]
+     [4311:^C hay]
+     [4312:^C my]
+     [4313:^C to]
+     [4314:^C it]
+     [4315:^C and]
+     [4316:^C treesday]
+     [4317:^C so]
+     [4318:^C with]
+     [4319:^C toothmarks]
+     ;
+     ;; [4320:^C]
+     [4321:^C grandma]
+     [4322:^C have]
+     [4323:^C hole]
+     [4324:^C weekend]
+     [4325:^C whipped]
+     [4326:^C the]
+     [4327:^[4304:^C about]
+     [4305:^C grandma]
+     [4306:^C the]
+     [4307:^C a]
+     [4308:^C the]
+     [4309:^C whipped]
+     ;
+     [4310:^C on]
+     [4311:^C hay]
+     [4312:^C my]
+     [4313:^C to]
+     [4314:^C it]
+     [4315:^C and]
+     [4316:^C treesday]
+     [4317:^C so]
+     [4318:^C with]
+     [4319:^C toothmarks]
+     ;
+     ;; [4320:^C]
+     [4321:^C grandma]
+     [4322:^C have]
+     [4323:^C hole]
+     [4324:^C weekend]
+     [4325:^C whipped]
+     [4326:^C the]
+     [4327:^C the]
+     [4328:^C on]
+     [4329:^C gift ^N gift-wrapped]
+     ;
+     [4330:^C the]
+     [4331:^C a]
+     [4332:^C everyone]
+     [4333:^C and]
+     [4334:^C made]
+
+
+
+
+
+
+     ;; [4335:^C]
+     [4336:^C this]
+     [4337:^C last]
+     [4338:^C Bottomlow]
+     [4339:^C Sosmall]
+     ;
+     [4340:^C sandwiches]
+     [4341:^C even]
+     [4342:^C this]
+     [4343:^C her]
+     [4344:^C mother]
+     [4345:^C gift ^C gift-wrapped]
+     [4346:^C know]
+     [4347:^C the]
+     [4348:^C in]
+     [4349:^C morning]
+     ;
+     [4350:^C flour]
+     [4351:^C coach]
+     [4352:^C the]
+     [4353:^C something]
+     [4354:^C good ^C odd]
+     [4355:^C he]
+     [4356:^C them]
+     ;; [4357:^C 20th ^C th ^C 20]
+     [4358:^C tipped]
+     [4359:^C tipped]
+     ;
+     [4360:^C at]
+     [4361:^C provide]
+     [4362:^C nose]
+     [4363:^C better]
+     [4364:^C oh]
+     [4365:^C morning]
+     [4366:^C the]
+     [4367:^C were]
+     ;; [4368:^C]
+     [4369:^C floated]
+     ;
+     [4370:^C my]
+     [4371:^C he]
+     [4372:^C weekend]
+     [4373:^C is]
+     ;; [4374:^C]
+     [4375:^C in]
+     ;; [4376:^C]
+     [4377:^C provide]
+     [4378:^C count]
+     [4379:^C while]
+     ;
+     [4380:^C well]
+     [4381:^C the]
+     ;; [4382:^C]
+     [4383:^C him]
+     [4384:^C bed]
+     [4385:^C to]
+     [4386:^C the]
+     [4387:^C it]
+     [4388:^C remember]
+     [4389:^C should]
+
+
+
+
+
+
+     ;
+     [4390:^C on]
+     [4391:^C he]
+     ;; [4392:^C]
+     ;; [4393:^C]
+     [4394:^C had]
+     [4395:^C fish]
+     [4396:^C father]
+     [4397:^C the]
+     [4398:^C so]
+     ;; [4399:^C]
+     [4400:^C the]
+     ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     [44

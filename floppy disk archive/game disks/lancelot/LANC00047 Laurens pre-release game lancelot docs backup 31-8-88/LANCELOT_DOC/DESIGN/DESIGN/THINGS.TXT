@@ -1,0 +1,261 @@
+            LAUNCELOT THINGS. COPYRIGHT (C) 1988 LEVEL 9 
+            --------------------------------------------
+ 
+The game was made up of three adventure programs, corresponding to 
+Camelot, Logris (England) and the Grail Lands. The player could 
+transfer at will between the first two of these, but the final Grail 
+Lands part was completely seperate. 
+
+It was assumed (as would be explained in the book) that all relevant 
+people had horses, weapons etc at need; it would have been tedious 
+to force the player to handle them explicitely. Horses, for example, 
+were only mentioned as part of the text for movement: when travelling 
+outside on land, people were described as riding; when going from 
+outside to inside, they "dismounted" first, and when first moving 
+about outside, having been dismounted, they mounted. Likewise, weapons 
+and armour are mentioned in the text for combat. 
+
+Examinining someone described their armour and any horse etc. 
+
+Linkage. The idea was to play the parts in order, but they could be 
+treated much as separate games. Part 3 was self-contained (intended 
+to be played after the others; the only thing carried across being 
+Lancelot's score), but the other two were completely linked and L. 
+could pass between them at will. Thus it was important that object 
+numbers did not conflict in the two parts (so that Lancelot found 
+things where he had left them on returning to a part), and that 
+portable objects and recruitable people were duplicated. Thus, L. 
+could lead his freed knights to Arthur, if he wished, and see their 
+reunion. (Obviously, however, it was not essential to duplicate all 
+special properties: the Horn direction was only needed in Part 2 
+for example). 
+
+ 
+                           PART 1 (CAMELOT)
+                           ----------------
+
+OBJECT         WHERE           PURPOSE 
+
+Footstool      Bed (G's room)  "Weapon" used to hit Colgreavaunce.  
+Gloves         in Chest        Worn to hide Lancelot's wound. 
+Hat            in Chest        Worn to make people laugh; v.silly.
+
+ 
+STATIC OBJECT  WHERE           PURPOSE 
+ 
+Bars           Window          Broken, when furious, to reach Gwen. 
+Bed            Boudoir         L slept with G, leaving his blood. 
+Bed            G's Room        Conceales footstool (a "weapon").
+Bed            L's Room        Scenery. 
+Bed            Guest Room      Lying/sleeping here avoided Mews. 
+Bed            Guest Suite     Lying/sleeping here avoided Gwen. 
+Bed of Straw   Mews            Lying/sleeping here was unwise. 
+Blood Stain    Bed (Boudoir)   Evidence of Gwen's unfaithfulness.
+Books          Library         Provided hints. 
+Cart           Straight Way    see "Carter".
+Chest          Guest Suite     Contained Hat and Gloves. 
+Ladder         Garden          Climbed to reach Window. 
+Pyre           Lawns (later)   To burn Gwen if not rescued. 
+Seiges         Hall of R.T     Scenery. Showed unfreed of knights. 
+Table Round    Hall of R.T     Scenery. 
+Window         Garden          Led to the Boudoir. See "Bars".      
+ 
+PERSON         WHERE           PURPOSE 
+
+Queen's Knights   Royal Suite  Blocked access to Boudoir. 
+Black Knight   Ford            Disguised Arthur. Defeat and spare. 
+Sir Colgreavaunce G's Room     Ambusher; hit and robbed of armour. 
+Sir Kay        Serf's Gate     Insulted and mislead L. 
+Sir Meliagaunt M's Hall etc.   Accused Guenever etc. 
+
+Arthur         Arthur's Hall   Looked regal; knighted L etc.  
+Guenever       A's Hall etc.   Main character in this part. 
+Merlin         Study           Provided lodging and information. 
+
+Carter         Straight Way    Took ambushed L to Castle Meliagaunt. 
+Damosel        Prison          Freed Lancelot when kissed. 
+
+Peasants       Village Road    None. 
+Crowd          Lawns           Gathered to watch Gwen burn. 
+
+Hawks          Mews            Scenery, only seen after L had slept. 
+ 
+(This list ignores most scenery people. You should probably have a 
+few knights and commoners wandering about, to make the place seem 
+occupied. However some people, Mordred's knights, the full complement 
+of the Table Round etc. just appeared in messages).  
+
+
+
+                           PART 2 (LOGRIS)
+                           ---------------
+
+OBJECT        WHERE            PURPOSE 
+ 
+Broken Branch Tree             Tie to hawk; then throw at Pedivere. 
+Cloth         Chapel Perilous  Give/Touch to Sir Meliot to cure him. 
+Food          Put on Plate     Lancelot could eat it if he liked. 
+Glass of Wine Prison           Love potion; given to Damosel. 
+Harp          Mermaids         Given to Tristram to win his freedom. 
+Horn          Castle Lyonesse  Heard everywhere; "WAIT FOR TOOT" (?). 
+Hot Coals     in Fire          Carried in Pot to light Sessoine Ships.
+Plate         Damosel (Prison) Excuse for Damosel's visit to prison. 
+Pot           on Fire          Container for Hot Coals (and Soup). 
+Relic/Hand    in Sack          Once he had this, Lancelot beat Nabon. 
+Sack          Nabon's pillow   Held Relic. Hard to take. 
+Soup          in Pot           None. 
+
+ 
+STATIC OBJECT WHERE            PURPOSE 
+ 
+Bath          Corbin Tower     Held Elaine. 
+Beacon        Orkney Peak      Lit to distract guard
+Bell          Upper Prison     Rang unless grabbed and muffled. 
+Boat          Shore            Moved as directed by occupants. 
+Briars        Forest           Blocked way north until pruned. 
+Bushed        Orkney Glen      Lancelot could hide here from the Guard 
+Cage          Up/Lower Prison  Moved between upper and lower prisons. 
+Cart          Cornwall         Lancelot rode past Sentries on this. 
+Chest         Orkney Basement  Push to reveal tunnel entrance. 
+Crossbow      Secret Passage   Triggered by Planking; firing an arrow. 
+Fire          Cornish Beach    None. 
+Lever         Upper Prison     Pull to free/fix prisoner locks. 
+Lid           on Tomb          Two people must lift it to free dragon.
+Keyhole       Servage Castle.  Dummy. 
+Panel         Perilous Bedroom When closed, blocked the Magic Knight. 
+Loose Planks  Manor            Triggered crossbow trap. 
+  "     "     Secret Passage   When stood on, fixed the following.. 
+  "     "     Entrance         Tipped passer into prison, unless fixed. 
+Portcullis    Orkney Tower     Lowered by guard. 
+Secret Panel  Manor            Held open, to reach Secret Passage. 
+Ships         Cornish Beach    Sessoine Invasion Fleet; L. burnt them.
+Shutters      in Turret        Closed to darken Garlon's Turret. 
+Tomb          Chapel Perilous  Held a fire-spitting dragon.
+Winch         Upper Prison     Turned to raise/lower cage to prison. 
+
+ 
+PERSON        WHERE            NOTES 
+ 
+Tristram      Tintagel Prison  Given a harp, he played it to escape.
+Galahad       not in this part Sired in Corbin. 
+Bors de Ganis Servage Prison   Rescued Knight. 
+Meliagaunt    Wailing Castle   Rescued Knight. 
+Gawain        Castle Chariot   Rescued Knight. 
+Red Knight    Castle Lyonesse  "Rescued" Knight; aka Sir 
+Meliot        Forest nr Manor  "Rescued" Knight; cured by cloth. 
+Lamorak       Orkney Tower     Rescued Knight. 
+Ector de Maris  Manor          Rescued Knight \ 
+Agravain          "            Rescued Knight | 
+Aliduke           "            Rescued Knight | 
+Brandiles         "            Rescued Knight | 
+Brian             "            Rescued Knight  > Turquin's 9 Prisoners.
+Geheris           "            Rescued Knight | 
+Gareth            "            Rescued Knight | 
+Lionel            "            Rescued Knight | 
+Marhaus           "            Rescued Knight / 
+
+Sir Breunis   riding about     attacked annoyingly, until tracked home. 
+Sir Garlon    beside Turret    Attacked Lancelot. Never seen. 
+Giant Nabon   Servage Castle   Lancelot got the relic, then attacked. 
+Magic Knight  Perilous Bedroom Lancelot closed the panel, then slew him
+Turquin       outside Manor    Attacked passing knights. 
+Pedivere      below Elm        Lancelot threw the branch at him. 
+Black Knight  Black Launds     Lancelot fought and spared him. 
+Green Knight  Green Launds     Lancelot fought and spared him. 
+Red Knight    Red Launds       Lancelot fought and spared him. 
+
+Hellawes      Chapel Perilous  Threatened Lancelot to kiss her. 
+Queen Morgan  Castle Chariot   Lancelot refused all her offers. 
+Q.Northgales  Castle Chariot   Only in game so Lancelot could name her.
+Q.Eastlands   Castle Chariot   Only in game so Lancelot could name her. 
+Q.Out Isles   Castle Chariot   Only in game so Lancelot could name her. 
+
+Damosel Maledisant (aka Lynet) Main character in this part. 
+Damosel       Prison (Chariot) Freed Lancelot when offered the wine. 
+Damosel       Forest nr Manor  Explained how to cure Sir Meliot.
+Lady          below Elm        asked Lancelot to free hawk from tree. 
+
+Army          at Tintagel      Beseiged the place, until Ships burnt. 
+Carter        on Cart          Needed for it to move on its racetrack. 
+Elaine        in the Bath      When rescued, bears Galahad. 
+Mermaids      Rock in Sea      Steal their harp. 
+Old Man       Perilous Bedroom Lancelot lost honour for attacking him.  
+Residents     Orkney Tower     Attack invaders of the upper stories. 
+Sentries      Cornish Road     Block people if not on Cart.  
+30 Knights    Chapel Perilous  Lancelot ignored their threats. 
+Guard         Orkney Tower     Lit beacon distracted him. 
+
+Dragon        in Tomb          Lancelot slew it to become best knight. 
+Hawk          Elm              Lancelot threw it down, with branch. 
+
+(King Mark, Guards and Elders of Tintagel, King Pelles, Fishermen, 
+King Pellam, Breunis' Captive Ladies, Turquin's Guards, Archers, 
+real Red Knight, Brachet, Damosel and Sir Gilbert, Orkney trapdoor etc. 
+just appeared in messages).  
+
+ 
+
+                         PART 3 (GRAIL LANDS)
+                         --------------------
+
+OBJECT         WHERE           PURPOSE 
+
+Chalice        Nacien          Container (see Antechapel). 
+Cup            Turnance Isle   Container (see Antechapel). 
+Horn           in Boat         Container. Blow for Wind, e.g for Boat. 
+ 
+Body           in Tomb         Give to Monks to bury elsewhere. 
+Crown          Fork in Road    Tempted theft. Priest asked for it. 
+Crucifix       on Altar        Best left where it was. 
+Dainties       on Plate        Increased L's strength and gluttony. 
+Key            Antechapel      Held to unlock Antechapel door. 
+Map            Vagon Castle    Showed places. Best left where is was. 
+Plate          Damosel         Held dainties for Lancelot.  
+Scroll         Nacien          Clues. 
+Shield         White Abbey     "Treasure" for Galahad, not Lancelot. 
+Sword          Boat            "Treasure" for Galahad, not Lancelot. 
+
+STATIC OBJECT  WHERE           PURPOSE 
+ 
+Altar          Vagon Castle    Pray here. 
+Cross          at Fork         Pray here. 
+Cross          in Wasteland    Pray here. 
+Boat           moved on Sea    Galahad could direct it. 
+Holy Grail     Finish location Here so it could be referred to.
+Pavilion       Clearing        Where Damosel tempted Lancelot. 
+Sails          in Boat         Clue as to why Boat wouldn't move. 
+Stake/Wood   appeared by Boat  Trapped Galahad, until he was rescued. 
+Tomb           White Abbey     Fiend lept out. Puzzle for Galahad. 
+Wall of Fire   Isle of Sand    Extinquished with lots of water. 
+Well           Wasteland       Sinking water indicated Lancelot's sins. 
+
+PERSON         WHERE           PURPOSE 
+
+Lancelot       Vagon           Grail Knight. Our hero. 
+Galahad        Riding          Grail Knight. Main character in part 3. 
+Bors           Antechapel      Grail Knight. 
+Percival       Antechapel      Grail Knight.
+Evil Knights   near Stake      Had to be fought to rescue Galahad. 
+Knight,Shining Woodland        Tested Lancelot's honesty. 
+
+Dragon,Black   Turnance        Attacked anyone around (eg Red Dragon).        
+Dragon,Red     Turnance        Attacked anyone around (eg Black Dragon) 
+Lions          Outside Castle  Attacked Lancelot, but always missed.  
+
+Damosel        by Pavilion     Fiend. Tempted Lancelot with food etc. 
+False Priest   Fine Church     Fiend. Promised way to Grail, for Crown. 
+Foul Fiend     from Tomb       Fiend. Flees Galahad; could kill L. 
+
+Fire Spirit    in Antechapel   Retrieved key unless extinguished. 
+Water Spirit   in Antechapel   Retreived key unless dried. 
+Sand Spirit    in Antechapel   Retrieved key unless blown away. 
+
+Galahad        Riding          Main character in part 3. 
+Evil Knights   near Stake      Had to be fought to rescue Galahad. 
+Knight,Shining Woodland        Tested Lancelot's honesty. 
+Nacien         Hermitage       Interpreted dreams. Forgave Lancelot. 
+Monks          White Chapel    Stood about. Eventually buried body. 
+Pilgrim        by Well         Lent Chalice; he could reach the water. 
+
+(The Black Knight, Ector, Gentlewoman, Fisherman, People of Turnance, 
+Angels holding the Grail etc. just appeared in messages). 

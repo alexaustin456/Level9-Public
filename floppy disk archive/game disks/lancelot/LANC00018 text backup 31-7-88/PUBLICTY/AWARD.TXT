@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+        ENTRY FOR BRITISH PERSONAL COMPUTER AWARDS 1988
+        ----------------------------------------------- 
+
+1. Level 9's entry is "Lancelot", an adventure game published in 
+   collaboration with Mandarin. 
+
+2. I would like the game considered for "Game of the Year" and the 
+   triple-format system used for the Amstrad CPC/PCW/Spectrum+3 
+   version considered for the "PCW Editor's Award". 
+
+3. See below. 
+
+4. Lancelot is for games players in their teens and upwards. 
+
+5. Lancelot costs 19.95 pounds for 16-bit computers, all disc: 
+   Atari ST, Amiga, IBM PC/compatibles, and Macintosh. 
+
+   Lancelot costs 14.95 pounds for 8-bit computers.. Disc: Apple II,  
+   Amstrad CPC/PCW/Spectrum+3, Atari XL/XE, BBC Master/B+/expanded B, 
+   CBM 64. Tape: Amstrad CPC, Atari XL/XE, CBM 64, MSX and Spectrum. 
+
+6. See below. I'm afraid I've mixed together the text for "3" and "6", 
+   but please consider the description of "triple-format discs" as 
+   coming in this category. 
+
+7. Photograph and logo enclosed. 
+
+
+LANCELOT
+--------
+
+    "Lancelot" is a big graphical adventure, with up to 250K of text. 
+It is based faithfully on the Arthurian legends in Malory's "Morte 
+D'Arthur", retold in the accompanying booklet. 
+
+Thus you do not Merlin throwing fireballs, or Lancelot earning points 
+by depopulating the countryside, or heavy metal orcs for that matter. 
+
+What you do get is language with the flavour of the original, events 
+from the book, and a mix of traditional adventure puzzles and those 
+concerned with the ethics of chivalry. 
+
+    "Lancelot" uses Level 9's adventure system, which is the most 
+sophisticated around. We match the others as regards parser and 
+pictures, are ahead where where compression is concerned and, for 
+example, Magnetic Scrolls and Infocom have none of the following:   
+
+1) Availability on 16 formats. 
+
+2) Comprehensive free cluesheet with 1000 entries (in my opinion, 
+   this level of help is vital for big adventures). 
+
+3) RAM SAVE/RESTORE and UNDO on most versions. UNDO is possibly our 
+   single most useful feature. It takes you back to before your last 
+   move, correcting any mistake without the need for SAVE. 
+
+4) wide range of goal-directed commands: go to, run to, find, follow, 
+   wait for etc. These remove much of the slog of adventuring. E.g 
+   "FIND MERLIN" finds the best route to Merlin and walks you there, 
+   replacing lots of little commands. 
+
+5) true multi-character features. Obedient people can be commanded 
+   to do anything that the player can (e.g Galahad, go to well, fill 
+   chalice and cup, find me and give everything to me). 
+
+   These save time, as other people can go off to complete minor 
+   puzzles, while you simultaneously tackle something more demanding. 
+
+   And they allow a unique range of "multi-player" puzzles. For 
+   example, to free Turquin's prisoners quickly, Lancelot commands 
+   someone to wind him down in a cage, wait for a signal and wind 
+   the cage back up. Then, once down in the prison, Lancelot tells 
+   the first escapees to help free the rest. 
+
+
+TRIPLE-FORMAT DISCS (AS USED FOR LANCELOT)
+------------------------------------------
+
+    The increasing variety of home micros, and the tendency of 
+publishers to bring out many individual versions of each game for 
+them, poses problems for retailers and players alike. 
+
+Basically, it is difficult for any shop to stock all the machine 
+versions of even the more popular games. 
+
+Fortunately, there is a solution.. multi-format games which run on 
+more than one micro (e.g by recording a Spectrum game on side A of 
+a tape and a Commodore 64 version on side B). 
+
+    Level 9 currently hold the record, with three incompatible 
+formats on one disc. Our 3" discs work on all three main UK formats: 
+Amstrad CPC, Amstrad PCW and Spectrum +3 (all with pictures). 
+
+Triple-format discs are quite a step forward; firstly, because nobody 
+else has got beyond dual-format, and secondly because of the way 
+it has been done.. 
+
+    Traditional dual-format discs, whether flippies or otherwise, 
+have in effect one version of the game on side A and the other on B. 
+This is obviously wasteful of space, as both copies of the game have 
+to fit on one disc. 
+
+    Level 9's triple-format discs are different, with just one copy 
+of the game, filling most of the disc. There is a small amount of 
+machine-specific code to handle things which differ, like disc 
+access and picture display. 
+
+Producing a multi-format di
+
+Join Arthur's knights in "Lancelot", from Level 9 and Mandarin
+
+    "Lancelot" is a blockbuster graphical adventure, based faithfully 
+on the Arthurian legends in Malory's "Morte D'Arthur", retold in the 
+accompanying book. 
+
+You will be relieved to know that the game does not have Merlin 
+throwing fireballs, or Lancelo

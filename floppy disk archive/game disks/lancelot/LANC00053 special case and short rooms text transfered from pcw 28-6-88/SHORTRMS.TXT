@@ -1,0 +1,133 @@
+
+
+
+     ; 940..1030 are real rooms for part 1
+     [940:in the ^N guest ^N room. It was sparsely furnished, but it looked
+     clean]
+     [941:in the ^N study. A thin light straggled in through a high narrow
+     window]
+     [942:in ^N Merlin's ^N library. The room was a jumble of papers,
+     opened, crumbling books and phials containing strangely coloured liquids ]
+     [943:on ^N Merlin's ^N stairs. They creaked with age, and some of the
+     steps were alarmingly cracked]
+     [944:in the ^N mews. A couple of slit windows let a little light in,
+     but not much in the way of fresh air]
+     [945:in the ^N stables. An overwhelming smell of horse assaulted
+     Lancelot's nostrils]
+     [946:in the ^N kennels. Excited yelps from the inhabitants greeted the
+     intruder]
+     [947:in the ^N hall containing the ^N Round ^N Table. It was a high-
+     ceilinged room with a stone flagged floor. The Round Table dominated
+     the scene]
+     [948:in Lancelot's ^N bedchamber, a clean but austerely furnished room]
+     [949:in Guenever's ^N bedchamber, a soft, warm feminine room]
+     [950:on the ^N stairs. His footsteps on the bare stone echoed around the walls]
+     [951:in Arthur's ^N hall in the ^N castle, a vast echoing room, lit
+     and kept warm mainly by the fire which roared in the hearth at the far
+     end, and spat out showers of embers on to the stone floor in front of
+     it]
+     [952:inside the ^N Serf's ^N gate. Untidy piles of rubbish lay
+     scattered on the ground, while young servants and messenger boys
+     scurried to and fro]
+     [953:in the ^N cathedral, which had a atmosphere of spiritual calm,
+     nmarked contrast to the bustle and noise outside ]
+     [954:before the ^N altar, with its candleabra of polished silver and
+     silken cloths covering the altar table]
+     [955:inside the ^N Bishop's ^N gate]
+     [956:in ^N Guenever's ^N boudoir. Soft furnishings and drapes covered
+     every available surface, and a sweet smell of perfume hung in the air ]
+     [957:in the ^N royal ^N suite. These rooms were much larger than the
+     others, and the wall hangings and bed coverings were decorated with
+     heraldic crests]
+     [958:in the ^N guest ^N suite, which had been freshly cleaned and swept]
+     [959:on the ^N stairs. Some of the steps were uneven and chipped]
+     [960:in the ^N prison, a small dark cell. The stone walls were soft
+     and damp to the touch and the air smelt of mould and decay]
+     [961:in ^N Meliagaunt's ^N hall, a narrow high ceilinged room. A fire
+     at one end sputtered and struggled to stay alight]
+
+     ; outside rooms for part 1...
+     [964:on a ^N forest ^N road. Dense forest hung over the rough track,
+     which was pitted with the marks of horses' hooves]
+     [965:wading through the ^N ford. Although the river was wide and
+     shallow, it ran quite fast here]
+     [966:on a ^N road. Through occasional breaks in the trees, he could
+     see farmland]
+     [967:on a ^N road through the peasant village. Untidy mud and straw huts
+     dotted the roadside at irregular intervals]
+     [968:outside the ^N serf's ^N gate. A shallow muddy track led through
+     the gates, and a hubbub of voices could be heard from the far side]
+     [969:on the ^N road. The track was full of potholes]
+     [970:on the ^N road. Parts of it were very muddy, and he had to ride
+     in twists and turns to avoid the puddles]
+     [971:on the ^N road. Trees and bushes grew thickly at the sides,
+
+
+
+
+
+
+     overhanging the way forward]
+     [972:on the ^N lawns beside the ^N cathedral. The grass was neatly
+     tended and kept short, with flower beds showing off a riotous splash
+     of colour]
+     [973:outside the ^N cloisters. The ground here was obviously tended by
+     the monks, with tidy bushes and flowering plants arranged neatly
+     against the building]
+     [974:on a ^N bridge over the ^N river ^N camel. The river gurgled
+     beneath the rough-hewn bridge]
+     [975:outside the ^N bishop's gate, an imposing structure wrought in
+     iron]
+     [976:in ^N Westminster ^N meadows. The lush wet grass was interspersed
+     with clumps of wild flowers, and was alive with bees and other insects]
+     [977:on a ^N straight ^N way. The untidy grassland stretched out on
+     either side as far as Lancelot could see]
+     [978:in a ^N garden, crowded with root vegetable crops and small fruit
+     trees. A bed of herbs gave off a delicious aroma]
+     [979:beside ^N castle ^N Meliagaunt. The fortress lare. There was a faint murmur and clatter
+     around the square as
+     the villagers lumbered to and fro, carrying straw and foodstuffs back
+     to their homes]
+     [1024:in the ^N north ^N warren. Shrubby undergrowth hid the thick
+     gluey mud underfoot]
+     [1025:on the ^N north ^N way, a winding road through a tangle of
+     bushes and small trees]
+     [1026:on the ^N road outside the mews. The ground was pock-marked with
+     the imprints of horses' hooves and squelchy with mud] ; mews are. There was a faint murmur and clatter
+     around the square as
+     the villagers lumbered to and fro, carrying straw and foodstuffs back
+     to their homes]
+     [1024:in the ^N north ^N warren. Shrubby undergrowth hid the thick
+     gluey mud underfoot]
+     [1025:on the ^N north ^N way, a winding road through a tangle of
+     bushes and small trees]
+     [1026:on the ^N road outside the mews. The ground was pock-marked with
+     the imprints of horses' hooves and squelchy with mud] ; mews object also here
+     [1027:on the ^N King's ^N road, a wide well-worn fairway]
+     ;
+     ; 1030-1050 are grid rooms for part 2
+     ;; [1033:on a lake. The water was glassily still and so dark that he
+     could not begin to guess at its depth]
+     ;; [1034:on a rock, warm with the heat of the sun on the hillside. Valleys covered
+     with thick dark woodland were spread out below him]
+     ;; [1035:on a lake. A small breeze began to ripple the surface into
+     white lipped ridges]
+     ;
+     ; Now verbose additions to brief location descriptions (1100+n). No
+     ; full stops at end please. These are printed immediately after each
+     ; short description (800+N), without any intervening punctuation.
+     ; (You may start a message with either punctuation or just text.)
+     ; Please add lots of text here, and fill in the gaps...
+     ; 940..1030 are real rooms for part 1
+
+
+
+
+
+
+
+
+
+.)
+     ; Please add lots of text here, and fill in the gaps...
+     ; 940..1030 are real rooms

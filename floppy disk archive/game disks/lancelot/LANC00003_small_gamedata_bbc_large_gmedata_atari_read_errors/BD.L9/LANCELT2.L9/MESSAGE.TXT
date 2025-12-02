@@ -1,0 +1,2129 @@
+; Lancelot 2 source, copyright (C) 1988 Level 9 Computing. 
+; MESSAGE.TXT messages for the game: X (atari xl/xe) Disc version. 
+; 
+; punctuation messages.. 
+[1: ] 
+[2::] 
+[3:, ] 
+[4:.] ; dot with no space 
+[5:%] 
+[6:and ] 
+[7:.%] 
+[8:?%] 
+[9:. ] 
+; 
+; positions etc.. 
+[10:exits led ] 
+[11:an exit led ] 
+[12: through a door] 
+[13: through an open door] 
+[14: and ] 
+; 
+[16:%> ] 
+[17:%What now? ] 
+[18:: ]; 
+[19:"] 
+; 
+; Messages for printing objects.. 
+[20:a ] 
+[21:the ] 
+[22:an ] 
+[23:some ] 
+[24:." ] ; dot quote 
+[25:% %] ; blank line 
+[26:worn] ; for 'could not have worn' 
+[27:taken] ; for 'could not have taken' 
+; 
+; exits directions, doubling as movement verbs.. 
+[51:^V north|^V n] 
+[52:^V northeast|^V ne] 
+[53:^V east|^V e] 
+[54:^V south|^V s] 
+[55:^V southeast|^V se] 
+[56:^V southwest|^V sw] 
+[57:^V west|^V w] 
+[58:^V northwest|^V nw] 
+[59:^V upwards|^V u ^V up] 
+[60:^V downwards|^V d ^V down] 
+[61:^V inside|^V in ^V into ^V enter] 
+[62:^V outside|^V out ^V leave] 
+[63:^V cross|^V across] 
+[64:^V climb|^V ascend] 
+; 
+; Intransitive verbs.. 
+[70:^V i] 
+[71:^V again|^V a] 
+[72:^V look|^V l] 
+[73:^V inventory|^V inv ^V list] 
+[74:^V quit ^V restart] 
+[75:^V Restore ^V load] 
+[76:^V save] 
+[77:^V ramsave ^V ram] ; && 
+[78:^V ramload] ; && 
+[79:^V score ^V rating ^V status] 
+[80:^V verbose] 
+[81:^V brief] 
+[82:^V wait|^V wa ^V pause ^V z] 
+[83:^V blow|^V play ^V sound] 
+[84:^V on] 
+[85:^V off|^V jump] 
+[86:^V pictures ^V graphics] ; && 
+[87:^V words ^V text] ; && 
+; 
+[89:^V Undo ^V Oops] 
+[90:^V attacked|^V attack ^V hit ^V break] 
+; 
+[95:^V knocked] 
+[96:got|^V stand ^V hide] 
+; output eg 'L got out', 'L got in' etc. 
+[97:^V lay|^V lie] 
+[98:^V sat|^V sit] 
+; 
+[100:^V said|^V say] 
+; 
+[104:^V ran|^V run] 
+[105:^V made|^V make] 
+[106:^V prayed|^V pray] 
+[107:Lancelot refused|^V eat ^V bite ^V taste] 
+[108:^V went|^V go ^V goto ^V find] 
+[109:stopped|^V stop] 
+[110:^V drank|^V drink] 
+[112:^V exits ^V exit] 
+; 
+; verbs for output.. 
+[130:^V had|^V have ] ; mainly for output 
+[131:^V had|^V has ] ; mainly for output 
+[132:^V was|^V am ] ; mainly for output 
+[133:^V were|^V are ] ; mainly for output 'you were' 
+[134:^V was|^V is ] ; mainly for output 'someone was' 
+[135:are] ; output only - present tense for 'tell me about' 
+[136:is]  ; output only - present tense for 'tell me about' 
+; 
+;; [137 is 'GO IN'] 
+;; [138 is 'GO OUT'] 
+;; 139 is 'wait for person' 
+;; 140 is 'wait until time' 
+;; 141 is 'wait for (length of time)' 
+;; 142 is 'wait for single turn' 
+[143:^V fought|^V challenge ^V fight ^V kill] 
+; 
+; Transitive verbs.. 
+[150:^V examined|^V examine ^V read ^V search] 
+[151:^V cut|^V chop] 
+[152:^V woke|^V wake ^V rouse] 
+; 
+[154:^V got|^V get] 
+[155:^V took|^V take ^V carry ^V pick ^V catch 
+^V pull ^V hold ^V turn ^V rotate] 
+[156:^V wore|^V wear] 
+[157:^V dropped|^V drop] 
+[158:^V put] 
+[159:^V removed|^V free ^V release] 
+[160:^V threw|^V throw ^V hurl] 
+[161:^V gave|^V give ^V offered] 
+; 
+[163:did ^V follow|^V chase] 
+[164:^V opened|^V open ^V unlock ^V unbolt] 
+[165:^V choose] 
+; 
+[168:^V pushed] 
+[169:^V fastened|^V tie ^V attach] 
+[170:did ^V unfasten|^V untie ^V untangle] 
+; 
+[190:^V closed|^V close ^V shut] 
+; 
+[192:^V told|^V tell] 
+[194:struggled] ; mainly for output 
+; 195 is 'steal all from' 
+; 
+[197:killed] ; output only 
+; 
+[210:reached] ; output only 
+[211:dragged] ; output only 
+[212:passed] ; output only 
+[213:flew] ; output only 
+[214:walked] ; output only 
+[215:caught] ; output only 
+[216:entered] ; output only, eg 'Fred entered from the east'. Do not mark 
+; 
+;; Echo verbs (250-299) which just print the message containing them. 
+;; Intransitive echo verbs up to 284. Please fill in the gaps if you 
+;; can think of additional appropriate words... 
+; 
+[249:if you say so|^V no ^V Nay] 
+; 
+[251:if you say so|^V yes ^V Yay] 
+; 
+[255:to ^V talk, enter eg Knight, follow me|^V hello ^V welcome] 
+; 
+[257:Level 9 Computing do a fine ^V cluesheet|^V hint ^V help] 
+[258:to ^V board the boat, just get in] 
+[259:Lancelot offered his ^V thanks] 
+; 
+[263:Why not|^V y ^V why] 
+; 
+[267:such knavish talk ill befits a knight|^V frigging 
+^V wanker ^V turd ^V cunt ^V bollocks ^V asshole ^V arsehole 
+^V cretin ^V spastic ^V coon ^V wog ^V fucking ^V fucker 
+^V fuck ^V rape ^V shag] ; l/c swear words 
+[268:such foul behavior in public was unthinkable for a 
+knight|^V crap ^V piss ^V shit ^V fart] 
+; 
+[272:Lancelot ^V laughed|^V chuckle] 
+[273:^V farewell. Pray save your position first|^V bye ^V goodbye] 
+[274:mercy ye shall have|^V sorry] 
+; 
+[276:Lancelot did ^V kneel in reverence] ; usable in holy places. 
+[277:for ^V information, examine Lancelot|^V info] 
+[278:tis rude to ^V stare|^V watched] 
+; 
+[280:knights did not ^V swim] 
+;
+[282:Lancelot was no minstrel] ; (response to "play"; not echo verb). 
+[283:hit] ; thing 'hit' target (response to "throw"; not echo verb). 
+; 
+;; Echo verbs (250-299) which just print the message containing them. 
+;; Transitive echo verbs follow. Please fill in the gaps if you can 
+;; think of additional appropriate words... 
+; 
+[286:there was no great effect|^V shake ^V sharpen ^V rub 
+^V clean ^V polish] 
+; 
+[288:Lancelot was no farmer, to ^V dig the earth|^V bury] 
+[289:to ^V lead people, try eg Gareth,follow me] 
+; 
+[291:put things in a container. Or in the Grail Quest, 
+try eg ^V fill chalice] 
+[292:try removing each object in turn. Or in the Grail Quest, 
+eg ^V empty cup, or throw water] 
+; 
+[294:Lancelot had no way to ^V light anything, but perhaps the 
+beacon] 
+[295:try and throw lots of water|^V extinguish] 
+[296:Lancelot expressed his gratitude|^V thank] 
+[297:Lancelot was choosy about who he kissed|^V kiss] 
+; 
+; Objects (300+N).. 
+[301:^N Lancelot|^N me] ; Lancelot must start with upper case. 
+[302:^N Tristram] ; Tristram. 
+; 
+[304:^N Bors ^N de ^N Ganis] ; Bors. 
+[305:Sir ^N Pedivere] ; Pedivere. 
+[306:^N Gawain] ; Gawain. 
+[307:the ^N Red ^N Knight] ; Red Knight. 
+[308:^N Meliot] ; Meliot. 
+[309:^N Lamorak] ; Lamorak. 
+[310:^N Ector ^N de ^N Maris] ; Ector de Maris. 
+[311:^N Agravain] ; Agravain. 
+[312:^N Aliduke] ; Aliduke. 
+[313:^N Brandiles] ; Brandiles. 
+[314:^N Brian] ; Brian. 
+[315:^N Geheris] ; Geheris. 
+[316:^N Gareth] ; Gareth. 
+[317:^N Lionel] ; Lionel. 
+[318:^N Marhaus] ; Marhaus. 
+[319:Sir ^N Breunis] ; Breunis. 
+[320:^N someone ^N invisible|^N Garlon] ; Invisible Garlon. 
+; 
+[322:the ^N Magical ^N Knight] ; Magical Knight in Perilous Bedroom. 
+[323:Sir ^N Turquin] ; Turquin. 
+[324:Sir ^N Phelot] ; Phelot. 
+[325:the ^N Black ^N Knight] ; Black Knight. 
+[326:the ^N Green ^N Knight] ; Green Knight. 
+; 
+[328:^N Hellawes] ; Hellawes. 
+[329:Queen ^N Morgan] ; Queen Morgan. 
+[330:Queen ^N Northgales] ; Queen of Northgales. 
+[331:Queen ^N Eastlands] ; Queen of the Eastlands. 
+[332:Queen ^N Outisles] ; Queen of the Outisles . 
+[333:the ^N Damosel ^N Maledisant] ; Maledisant. 
+[334:^N maiden] ; maiden in prison. 
+[335:^N Damosel] ; Meliot's damosel. 
+[336:^N Lady] ; lady with lost hawk. 
+[337:^N Giant ^N Nabon|^N Nabon's ^N head] ; Giant Nabon. 
+; 
+[340:^N army] ; army of Sessoines. 
+[341:^N carter] ; carter. 
+[342:^N Elaine] ; Elaine. 
+[343:^N mermaid] ; mermaid. 
+[344:^N old ^N man] ; man with spear in Perilous Bedroom. 
+[345:^N residents] ; residents of Orkney Tower. 
+[346:^N sentries] ; sentries of Orkney Tower. 
+[347:^N thirty ^N knights] ; 30 knights in Chapel Perilous. 
+[348:^N guard] ; guard of Orkney Tower. 
+; 
+[350:^N hawk] ; Hawk in tree. 
+[351:^N brachet] ; Meliot's brachet. 
+; 
+; now some ordinary objects (80 onwards).. 
+;  
+[381:^N cloth] ; cloth to cure Meliot. 
+[382:^N food] ; prison rations. 
+[383:^N glass of ^N wine] ; glass of wine. 
+[384:^N harp] ; Tristram's harp. 
+[385:^N horn|^N toot] ; horn. 
+[386:^N hot ^N coals] ; coals in fire. 
+[387:^N plate] ; plate carried by damosel. 
+; 
+[389:^N relic] ; saint's hand. 
+[390:^N sack] ; sack - Nabon's pillow. 
+[391:^N soup] ; soup. 
+[392:^N pillow] ; pillow. 
+[393:^N cauldron] ; cauldron in fire. 
+[394:^N winch] ; winch above prison pit. 
+[395:^A dead ^N wood] ; dead wood beside Elm. 
+; 
+; static objects (110 onwards).. 
+[410:^N bath] ; bath for Elaine. 
+[411:^N beacon] ; beacon on Orkney mountain. 
+; 
+[413:^N boat] ; magic boat. 
+[414:^N briers] ; briers to prune. 
+[415:^N bushes] ; bushes for Lancelot to hide in. 
+[416:^N cage] ; cage above prison pit. 
+[417:^N cart] ; supply cart where L can hide. 
+[418:^N chest] ; chest, hiding tunnel escape route. 
+[419:^N crossbow] ; automatic crossbow. 
+[420:^N fire] ; bonfire on beach. 
+[421:^N lever] ; lever to enable/disable prisoner chain release. 
+; 
+[423:^N keyhole] ; dummy keyhole in Nabon's castle. 
+[424:^N panel] ; panel in Perilous Bedroom.  
+[425:^N loose ^N planks] ; planks in manor. 
+; 
+[428:^N portcullis] ; Orkney portcullis. 
+[429:^N secret ^N panel] ; secret panel. 
+[430:^N ships] ; Sessoine invasion fleet. 
+[431:^N shutters] ; Garlon turret shutters. 
+; 
+[433:^N elm ^N tree] ; elm. 
+[434:^N inscription] ; inscription. 
+[435:^N pile of ^N sails] ; pile of sails. 
+[436:^N bed] ; bed in perilous bedroom. 
+[437:^N siege ^N army] ; Sessoine army. 
+[438:^N trapdoor] ; trapdoor. 
+; 
+; 
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents.. 
+[480:^N bleak ^N shore] ; bleak shore. 
+[481:^N isle of ^N Servage] ; Isle of Servage. 
+[482:^N shore near ^N Corbin] ; Corbin Shore. 
+; 
+; 
+; Collective nouns... 
+[534:^N everything ^N all ^N every] 
+[537:^N people|^N everyone ^N everybody] 
+; 
+; 
+; Omni-present objects.. 
+[539:^N door] ; normal door, for PRINTACTORACTION. 
+[541:^N water|^N river] 
+[542:^N be] 
+[543:^N room|^N ground ^N floor] ; used for output as well 
+[544:^N wall|^N walls] 
+[545:^N sky|^N sun ^N moon] 
+; 
+; and finally, some miscellaneous nouns... 
+[547:^N except ^N but] 
+[548:^N it|^N that ^N them ^N those ^N him ^N her] 
+;; [549:^N minute|^N minutes] 
+[550:^N sign ^N cross] ;for 'make sign of cross' 
+[551:^J then ^J next] 
+[552:^J therefore ^J so] 
+[553:^N Lancelot|^N you] ; you 
+[554:^N horse|^N armour ^N weapons ^N sword] 
+; >>special to Lancelot 
+; 
+; Pronouns... 
+[560:it] ; ita 
+[561:it] ; itan 
+[562:some] 
+[563:he] 
+[564:she] 
+[565:they] 
+[566:Lancelot] ; you 
+[567:he] ; proper male 
+[568:she] ; proper female 
+; 
+[570:it] ; ita 
+[571:it] ; itan 
+[572:them] 
+[573:him] 
+[574:her] 
+[575:them] 
+[576:Lancelot] ; you 
+[577:him] ; proper male 
+[578:her] ; proper female 
+; 
+; and some misc output messages 
+; plural endings and other odd verb declension... 
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s] 
+[581:es] 
+[582:is] ; used in examine 
+; 
+; Entry directions, 
+; 
+[585:from the south]     ; north 
+[586:from the southwest] ; northeast  
+[587:from the west]      ; east 
+[588:from the north]     ; south 
+[589:from the northwest] ; southeast  
+[590:from the northeast] ; southwest 
+[591:from the east]      ; west 
+[592:from the southeast] ; northwest  
+[593:from below]         ; above 
+[594:from above]         ; below 
+[595:from outside]       ; inside  
+[596:from inside]        ; outside 
+[597:from across the way]; across 
+[598:by climbing]        ; climb  
+[599:with a jump]        ; jump 
+; 
+; Examine messages (600+N). NO full stops at end please. 
+; 
+[601:proud and valiant] ; Lancelot 
+[602:skilled with the harp] ; Tristram 
+; 
+[604:solid and reliable] ; Bors de Ganis. 
+[605:full valiant] ; Pedivere. 
+[606:hot tempered] ; Gawain. 
+[607:mighty in battle] ; Red Knight. 
+[608:badly wounded] ; Wounded Meliot. 
+[609:much given to scowling] ; Lamorak. 
+[610:brother to Lancelot] ; Ector de Maris. 
+[611:brother to Gawain] ; Agravain. 
+[612:of great strength] ; Aliduke. 
+[613:scratching himself] ; Brandiles. 
+[614:a roaring giant of a man] ; Brian. 
+[615:brother to Gawain] ; Sir Geheris 
+[616:broad and fair, with fair strong hands] ; Gareth. 
+[617:nephew to Lancelot] ; Lionel 
+[618:scarred and weary of battles] ; Marhaus. 
+[619:of evil mien] ; Sir Breunis. 
+[620:invisible] ; Invisible Garlon. 
+; 
+[622:clad in a shining aura] ; magic knight in Perilous Bedroom. 
+[623:a knight with features of granite] ; Turquin. 
+[624:wearing near half the armour in the land, for to keep 
+himself safe from Lancelot] ; Phelot. 
+[625:a daunting sight] ; Black Knight. 
+[626:a mighty oak of a man] ; Green Knight. 
+[628:an enchantress] ; Hellawes the Witch. 
+; 
+[629:a tall, angular woman] ; Q. Morgan. 
+[630:small and dark] ; Q. Northgales. 
+[631:tall and blond] ; Q. Eastlands. 
+[632:very beautiful] ; Q. Outisles. 
+; 
+[633:furious to be thus examined] ; Damosel Maledisant. 
+[634:very pretty. She caught Lancelot's gaze and blushed] 
+; maiden in Chariot. 
+; 
+[635:sorely tried by the plight of her master] ; damosel tending Meliot. 
+[636:ever looking to the tree] ; Lady. 
+[637:fully two yards taller than Lancelot] ; Giant Nabon. 
+; 
+[640:laying siege to Tintagel] ; Sessoine army. 
+[641:gnarled like a walnut] ; carter. 
+[642:a comely damosel, plump and rosy] ; Elaine. 
+[643:half fish; her long hair reached down to ENSHROUD her 
+breasts] ; mermaid ** CLUE 3 ** 
+[644:of a sad appearance] ; old man in P. Bedroom. 
+[645:waving scythes] ; residents of Orkney tower. 
+[646:sturdy and dour men] ; sentries of Orkney Tower. 
+[647:armoured all in black] ; Hellawes' Thirty knights. 
+[648:keeping a close eye on Lancelot] ; Guard of Orkney Tower. 
+; 
+[650:a surpassing bloated bird, so fat with LUMPS that Lancelot 
+was amazed it could ever fly. Its ^N lunes were tangled in the 
+branches] ; hawk, tangled in tree. ** CLUE 2 ** 
+; 
+[651:a large dog, with a mouth that dribbled betimes] ; brachet. 
+; 
+; 
+; now some ordinary objects (80 onwards).. 
+; 
+[681:of ^A coarse ^N linen] ; cloth. 
+[682:a ^A fine ^N pie] ; tempting food in prison. 
+[683:clear wine in a slender ^N goblet] ; glass of wine. 
+[684:rosewood. Its music would QUALIFY as the best] 
+; Tristram's harp. ** CLUE 6 ** 
+; 
+[685:a signal horn to blow] ; signal horn. 
+[686:burning brightly] ; coals. 
+[687:a simple dish] ; prison utensil. 
+[689:the ^N mummified ^N hand of a saint] ; relic. 
+[690:lumpy] ; Nabon's pillow. 
+[691:some ^N broth] ; soup in cauldron. 
+[692:filled with the finest down] ; pillow. 
+[693:a hot iron pot] ; cauldron. 
+[694:turned to move the cage] ; prison winch. 
+[695:a solid piece of elm] ; branch. 
+; 
+; some static objects (110 onwards).. 
+[710:enchanted] ; Elaine's bath. 
+[711:provided with tinder. It could be re-lit as needed] ; beacon. 
+; 
+[713:draped in white samite] ; magic boat
+[714:armed with thorns] ; briers to prune. 
+[715:large enough to hide several knights] ; bushes. 
+[716:fastened to the winch] ; prison cage. 
+[717:crudely made] ; cart. 
+[718:heavy] ; chest. 
+[719:the act of a moment to destroy it] ; crossbow trap. 
+[720:burning steadily] ; fire. 
+[721:leading to the room below] ; prison lever. 
+; 
+[723:without purpose] ; Nabon's keyhole. 
+[724:almost hidden] ; secret panel. 
+[725:a trap] ; loose planks. 
+; 
+[728:across the doorway] ; Orkney portcullis. 
+[729:a small hidden door] ; secret panel. 
+[730:the Sessoine invasion fleet] ; Sessoine ships. 
+[731:hinged beside the window] ; Garlon's shutters. 
+[733:very high] ; elm. 
+; 
+[734:, "Here lives Elaine, cursed by Queens Morgan and Northgales 
+to simmer in boiling water, until rescued by the best knight in 
+the world"] ; inscription. 
+; 
+[735:piled upon the deck] ; sails. 
+[736:full comfortable] ; bed. 
+[737:besieging the castle] ; Army outside Lyonesse. 
+[738:set in the floor] ; trapdoor. 
+; 
+; 
+; Examine messages for location objects (479+N). See 779+ for examine 
+; messages and 1199+ for their verbose equivalents.. 
+; 
+[780:barren of trees] ; bleak shore. 
+[781:rising high from the water] ; Isle of Servage. 
+[782:a windswept place] ; shore near Corbin. 
+; 
+; 
+; Short-Form room Descriptions (800+N). No full stops at end please. 
+; These are the brief mode descriptions; they are prefixed by 
+; 'Lancelot was' and, in verbose mode, messages 1100+N are appended. 
+; 
+; description order is: 
+; 'Lancelot was'   '800++'   '1100++'  '.' 
+;                   short      long 
+; 
+[803:in the ^N lower ^N prison] 
+[804:in the ^N courtyard of ^N Turquin's ^N manor] 
+[805:in a ^N secret ^N room] 
+[806:in a wide ^N arch below the ^N gatehouse] 
+[807:in the ^N gateway of ^N Turquin's ^N manor] 
+[808:in ^N prison] 
+[809:in a north-south ^N prison ^N corridor] 
+[810:in the ^N dungeons of ^N castle ^N Chariot] 
+; 
+[812:in the ^N dungeons of ^N Tintagel] 
+[813:on board a ^N Sessoine ^N warship] 
+[814:inside the tower] ; Nabon's tower 
+[815:in ^N prison] 
+[816:on some ^N stairs] 
+[817:in a room] 
+[818:in the ^N hall of ^N Corbin ^N castle] 
+[819:on the ^N gallery] 
+[820:in the ^N perilous ^N bedroom] 
+[821:in the ^A lower ^N branches of the ^N elm] 
+[822:in Elaine's ^N bedroom] 
+[823:in a ^N chapel beside a ^N tomb] 
+[824:in ^N castle ^N Lyonesse|^N Dame] 
+[825:in a ^N decaying ^N hall] 
+[826:just outside ^N Chapel ^N Perilous] 
+[827:inside the ^N chapel] 
+[828:in the ^N inner ^N chamber] 
+[829:at the top of the ^N elm] 
+[830:on the ^N stairs] 
+[831:in the ^N living ^N quarters] 
+[832:on the ^N stairs] 
+[833:in the ^N ground ^N floor] 
+[834:at the ^N foot of the ^N stairs] 
+[835:in the ^N basement] 
+[836:in a ^N tunnel] 
+[837:in a ^N prison] 
+; 
+[838:in a ^N guardroom. The guards looked up in surprise as 
+Lancelot entered] ; MUST ALL BE IN SHORT DESCRIPTION - NO LONG 
+; 
+[839:in an ^N upper ^N prison] 
+; 
+[845:on a ^N riverbank] 
+[846:crossing a ^N decrepit ^N bridge] 
+[847:outside a ^N manor ^N house] 
+[848:in ^N forest ^N Meliot] 
+[849:on a ^N dangerous ^N road] 
+[850:on the ^N track outside ^N Turquin's ^N manor] 
+[851:on a ^N straight ^N track] 
+[852:on a ^N Roman ^N road beside a ^N turret] 
+[853:at a ^N junction in the ^N forest] 
+[854:in ^N Garlon's ^N turret] 
+[855:beside the ^N castle of ^N forest ^N Sauvage] 
+[856:on an east-west ^N Roman ^N road] 
+[857:on a ^N Roman road through ^N forest ^N Sauvage] 
+[858:on the ^N great north road] 
+[859:on a ^N wide ^N avenue|^N Camelot ^N Arthur ^N Guenever] 
+[860:on the ^N coast road] 
+[861:at ^N Tintagel|^N Cornwall] 
+[862:on a ^N walled ^N road] 
+[863:on a ^N road] 
+[864:on a ^N beach] 
+; 
+[866:on a windswept ^N tor] 
+[867:on a ^N winding ^N road] 
+[868:at a ^N crossroads] 
+[869:on an ^N island] 
+[870:on a ^N shore beside a ^N tower] 
+[871:in ^N Corbin ^N village] 
+[872:in the ^N forest] 
+[873:in the ^N forest] 
+[874:in the ^N forest] 
+[875:in the ^N forest] 
+[876:in the ^N forest] 
+[877:in the ^N forest] 
+[878:in the ^N forest] 
+[879:in the ^N forest] 
+[880:in the ^N forest] 
+[881:in the ^N forest] 
+[882:in the ^N forest] 
+[883:in the ^N forest] 
+[884:in the ^N forest] 
+[885:in the ^N forest] 
+; 
+[886:at the ^N wailing ^N castle] 
+; 
+[887:in the ^N forest] 
+[888:in the ^N forest] 
+[889:in the ^N forest] 
+[890:in the ^N forest] 
+[891:in the ^N forest] 
+[892:in the ^N forest] 
+[893:in the ^N forest] 
+[894:in the ^N forest] 
+[895:in the ^N forest] 
+[896:in the ^N forest] 
+[897:on a ^N forest ^N road] 
+; 
+[898:on a ^N reedy ^N isle beside a ^N castle] 
+[899:in a ^N trackless ^N marsh] 
+[900:on a ^N marsh ^N road] 
+[901:at a ^N siegeworks] 
+[902:in the ^N red ^N launds] 
+[903:in the ^N green ^N launds] 
+[904:in the ^N black ^N launds] 
+[905:at a ^N country ^N junction] 
+[906:at a ^N main ^N road] 
+[907:on a ^N country ^N road] 
+[908:on a ^N stone ^N road] 
+[909:on an ^N overgrown ^N road] 
+[910:on an ^N overgrown ^N road] 
+[911:beside a ^N broch] 
+[912:on a ^N beach] 
+[913:on a ^N mountaintop] 
+[914:on the ^N mountainside] 
+[915:in a ^N glen] 
+[916:in the ^N Orkneys] 
+[917:in ^N Scotland] 
+[918:in the ^N marches] 
+[919:below an ^N apple ^N tree beside ^N castle ^N Chariot] 
+; 
+; Echo locations... 
+; 
+[925:blocked by immovable iron shutters] 
+; 
+[926:in DAMP woodland, thick with sparrows. Finding no track, 
+Lancelot returned] ; ** CLUE 2 ** 
+; 
+[927:in castle Pellam, where King Pellam confided that the Holy 
+Grail would appear after the arrival in Camelot of Lancelot's 
+unborn son, Galahad. Lancelot left, puzzled] 
+; 
+[928:on yet more stairs, so Lancelot returned] 
+; 
+[929:blocked by sharp rocks] 
+; 
+[930:in the castle of Sir Ector of the forest Sauvage. Each
+greeted the other warmly and they ate and talked of the 
+latest news from Camelot. At last they bade each other fond 
+farewell] 
+; 
+[931:among the hens that pecked about the GRITSTONE castle. He 
+could find no entrance and returned to the road] ; ** CLUE 2 ** 
+; 
+; Outside locations..
+; 
+[1033:on the ^N sea] 
+[1034:on the ^N sea beside a ^N rock] 
+[1035:on the ^N sea] 
+[1036:on the far ^N shore] 
+[1037:on the ^N sea] 
+[1038:on the ^N sea] 
+[1039:on the ^N sea] 
+[1040:on the ^N sea] 
+[1041:on the west ^N shore of a wide ^N sea] 
+[1042:on the ^N sea] 
+[1043:on the ^N sea] 
+[1044:on the ^N Isle of ^N Servage] 
+[1045:on the ^N sea] 
+[1046:on the ^N sea] 
+[1047:on the ^N sea] 
+[1048:on the ^N sea] 
+; 
+; Now verbose additions to brief location descriptions (1100+n). 
+; 
+[1103:. The only way out was the ^N opening above] ; in lower prison 
+[1104:. An ^N ugly ^N building lay on the north side] ; in courtyard 
+; 
+;; [1105:] ; secret room
+;; [1106:] ; in the entrance 
+;; [1107:] ; in a gateway 
+;; [1108:] ; in a cell 
+;; [1109:] ; in a prison corridor 
+;; [1110:] ; in a cell 
+;; [1112:] ; in a prison 
+; 
+[1113:. The air was thick with the smell of ^N pitch] ; on deck 
+; 
+;; [1114:] ; in Giant Nabon's castle 
+;; [1115:] ; Nabon's prison 
+;; [1116:] ; on some stairs 
+; 
+[1117: filled with ^N steam] ; in a room with a bath 
+; 
+[1118:. ^N Stuffed ^N ducks hung here, ^N trophies of the hunt 
+to EMBELLISH the ^N walls] ; hall of Corbin castle ** CLUE 2 ** 
+; 
+[1119:. There were bedrooms to east and south] ; in the gallery
+; 
+[1120:. DEEP ^N shadows moved like ^N strange ^N birds] 
+; in the perilous bedroom ** CLUE 2 ** 
+; 
+;; [1121:] ; in the lower branches of the elm 
+; 
+[1122:. Truly it was a place to enchant any man] 
+; Elaine's bedroom 
+; 
+[1123:. There was a tomb GRAVE and the ^N tick of ^N beetles] 
+; in chapel with tomb ** CLUE 6 ** 
+; 
+[1124:. This EMINENCE's position gave a far view, like unto 
+that of a circling eagle] ; in castle Lyonesse ** CLUE 2 ** 
+; 
+[1125:. Birds roosted in the ROCKY ^N ledges of its ^N walls] 
+; in a decaying hall ** CLUE 2 ** 
+; 
+[1126:, where Lancelot saw many ^N fair ^N rich ^N shields 
+turned upside down] ; in the churchyard of chapel perilous 
+; 
+;; [1127:] ; inside the chapel 
+;; [1128:] ; in the inner chamber 
+;; [1129:] ; atop the elm 
+;; [1130:] ; on the stairs 
+;; [1131:] ; in the living quarters 
+;; [1132:] ; on the stairs 
+; 
+[1133: of the broch] ; in the ground floor 
+; 
+[1134:, within the west wall of the broch] 
+; at the base of the stairs 
+; 
+;; [1135:] ; in the basement 
+;; [1136:] ; in a tunnel 
+;; [1137:] ; in a ^N prison 
+; 
+[1139:. A ^N great ^N pit was set into the centre of the 
+^N floor] ; in an upper prison 
+; 
+[1145:. A ^N rotten ^N bridge led east across the ^N flood] 
+; on a riverbank 
+; 
+[1146:. Many of its ^N planks were splintered, so that the 
+^N water below was seen, with its SECRET ^N fishes] 
+; on a decrepit bridge ** CLUE 3 ** 
+; 
+[1147:, which had fallen into ruin] ; outside a manor house 
+; 
+;; [1148:] ; in forest Meliot 
+;; [1149:] ; on a dangerous road 
+;; [1150:] ; track outside Turquin's manor 
+; 
+[1151:through a wide ^N glade] ; on a forest track 
+; 
+[1152:. The ^N turret threw a ^N dark ^N shadow across 
+the east-west ^N highway] ; Roman road beside a turret 
+; 
+[1153:. The ^N track split and led west and north] 
+; at a junction in the forest 
+; 
+;; [1154:] ; in Garlon's turret 
+;; [1155:] ; at a great clearing beside the castle of forest Sauvage 
+;; [1156:] ; Roman road through thorns 
+;; [1157:] ; on a Roman road through forest Sauvage 
+; 
+[1158:. Wide and even, it crossed the ^N whistling MOOR] 
+; great north road ** CLUE 6 ** 
+; 
+[1159: to the north. By order of the King, such roads were kept 
+clear of ^N bushes] 
+; on a triumphal avenue 
+; 
+[1160:, an ^N east-west ^N causeway through the ^N marsh] 
+; on the coast road 
+; 
+[1161:. Atop the ^N sheer ^N ESCARPMENT rose the ^N dark 
+^N castle, surrounded by circling seagulls] 
+; at Tintagel ** CLUE 2 ** 
+; 
+[1162:. The ^N dry ^N stone ^N wall was the home for dozens of 
+birds, their ^N droppings ENTOMBED in its ^N crevices] 
+; on a walled road ** CLUE 2 ** 
+; 
+[1163: from the beach] ; on a road 
+; 
+;; [1164:] ; on a beach 
+;; [1166:] ; on a hill 
+; 
+[1167:, which ran through ^N thickly ^N wooded ^N river ^N valleys, 
+where RICH lords DEFENDED their rights to the salmon] 
+; on a winding road ** CLUE 3 ** 
+; 
+[1168:, the which was much used] ; at a crossroads 
+; 
+[1169:. Atop its ^N peak was a ^N dark ^N tower] ; on an ^N island 
+; 
+[1170:. From here a ^N narrow ^N track led east, past a slender 
+^N tower] 
+; 
+[1171:, an INHABITATION where the people ate fish. Small 
+^N houses huddled around the castle] ; Corbin village ** CLUE 3 ** 
+; 
+;; [1172:] ; in a forest maze 
+;; [1173:] ; in a forest 
+;; [1174:] ; in a forest 
+;; [1175:] ; in a forest 
+;; [1176:] ; in a forest 
+;; [1177:] ; in a forest 
+;; [1178:] ; in a forest 
+;; [1179:] ; in a forest 
+;; [1180:] ; in a forest 
+;; [1181:] ; in a forest 
+;; [1182:] ; in a forest 
+;; [1183:] ; in a forest 
+;; [1184:] ; in a forest 
+;; [1185:] ; in a forest 
+; 
+[1186:, which loomed into view between the ^N trees] 
+; at the wailing castle 
+; 
+;; [1187:] ; in a forest
+;; [1188:] ; in a forest 
+;; [1189:] ; in a forest 
+;; [1190:] ; in a forest 
+;; [1191:] ; in a forest 
+;; [1192:] ; in a forest 
+;; [1193:] ; in a forest 
+;; [1194:] ; in a forest 
+;; [1195:] ; in a forest 
+;; [1196:] ; in a forest 
+; 
+[1197: through open ^N woodland] ; on a forest road 
+; 
+[1198:. ^N Bitterns boomed their hollow cries amid the 
+coarse ^N reed ^N beds. A ^N castle stood upon an ^N outcrop 
+of solid ^N rock] 
+; on a reedy isle beside a castle 
+; 
+;; [1199:] ; in a trackless marsh 
+;; [1200:] ; on a marsh road 
+; 
+[1201: where the road ended. Above the ^N waste ^N chaos rose 
+the entrance portals of ^N castle ^N Lyonesse] ; at a siegeworks 
+; 
+[1202:, a ^N clearing encompassed by Autumn ^N trees] 
+; in the red launds (a laund is a glade) 
+; 
+[1203:, a ^N clearing encompassed by leafy ^N trees] 
+; in the green launds 
+; 
+[1204:, a ^N clearing encompassed by ^N old ^N trees] 
+; in the black launds 
+; 
+;; [1205:] ; at a country junction 
+;; [1206:] ; at a main road 
+;; [1207:] ; on a country road 
+;; [1208:] ; on a stone road 
+;; [1209:] ; on an overgrown road 
+;; [1210:] ; on an overgrown road 
+; 
+[1211:. Lancelot knew the ^N thick ^N stone ^N walls 
+were a strong defence] 
+; beside a broch 
+; 
+[1212:. Lancelot fancied to see MERLIN'S ^N name in the 
+shape of a ^N shoal of ^N fish] ; on a beach ** CLUE 3 ** 
+; 
+[1213:. The bark of deer echoed from the MEGALITHIC ^N rocks] 
+; on a mountaintop ** CLUE 6 ** 
+; 
+[1214:. A STEEP ^N path passed above the gurgles of a ^N stream 
+and climbed steeply to the ^N summit] 
+; on a mountainside ** CLUE 6 ** 
+; 
+[1215:. It which sloped west to a ^N beck where ^N salmon hid 
+beneath the YELLOW ^N gorse. Above the trees, the ^N mountainside 
+was all purple with ^N heather] ; on a glen ** CLUE 3 ** 
+; 
+;; [1216:] ; in the Orkneys 
+;; [1217:] ; in Scotland 
+; 
+[1218:. The land was crossed by a great ^N wall. Even now it 
+LIES strong, for eagles to perch upon] ; in the marches ** CLUE 2 ** 
+; 
+;; [1219:] ; in an apple tree clearing beside castle Chariot 
+; 
+[1333:. As ^N giant waves ^N passed, children of distant STORMS, 
+Lancelot watched the ^N fish leap] ; on the sea ** CLUE 3 ** 
+; 
+[1334:, where a ^N comely ^N mermaid sat a-combing her ^N long 
+^N hair] ; on the sea beside a rock 
+; 
+;; [1335:] ; on the sea 
+; 
+[1336:, where a ^N narrow ^N path led east through a ^N strange 
+^N country] ; on the sea shore 
+; 
+[1337:. A ^N shoal of ^N small ^N fishes flurried NEAR the 
+^N surface, making ^N silver ^N ripples on the ^N water] 
+; ** CLUE 3 ** 
+; 
+;; [1338:] ; on the sea 
+; 
+[1339:, amidst a shoal of cod. Beyond the fish, a ^N large 
+^N island, like unto ANGLESEY, rose to the northeast] 
+; on the sea ** CLUE 3 ** 
+; 
+;; [1341:] ; on the sea shore 
+;; [1342:] ; on the sea 
+;; [1343:] ; on the sea 
+;; [1344:] ; on the sea 
+;; [1345:] ; on the sea 
+;; [1346:] ; on the sea 
+;; [1347:] ; on the sea 
+;; [1348:] ; on the sea 
+; 
+; 1450+n are messages printed on first entering each room 
+; 
+;; [1453:] ; in the lower prison 
+; 
+[1454:] ; courtyard of T's manor 
+;
+[1455:the loose wood floor creaked and sank beneath him, as 
+if a see-saw. ] ; in a secret room 
+; 
+[1456:here too the floor was of wood. ] 
+; in a wide arch below the gatehouse 
+; 
+[1457:Lancelot could scarce believe his good fortune in 
+taking the manor so easily. ] ; in the gateway of Turquin's manor 
+; 
+;; [1458:] ; in another prison cell 
+;; [1459:] ; in a north-south prison corridor 
+;; [1460:] ; in the deepest dungeons of castle Chariot 
+;; [1462:] ; in the dungeons of Tintagel 
+;; [1463:] ; on board a Sessoine warship 
+; 
+[1464:%the giant spoke. "I fear you not, for a saint did 
+prophesy that I shall be slain by a blow from his hand. So I 
+killed him and keep his hand in my pillow. Be afeared, Sir 
+Knight, for soon you shall die". The giant laughed and returned 
+to sleep. ] ; Nabon's castle 
+; 
+;; [1465:] ; in a prison 
+;; [1466:] ; on some stairs 
+; 
+[1467:%In the bath sat Elaine, naked as a needle, and Lancelot 
+thought that she was the most beautiful woman that he had ever 
+seen, except for Queen Guenever. ] ; in a room with a bath 
+; 
+;; [1468:] ; in a the hall of Corbin castle
+; 
+[1469:Lancelot knew that his honour was at stake. ] ; on the gallery 
+; 
+;; [1470:] ; in the perilous bedroom 
+; 
+[1471:from far above, Lancelot heard the hawk mewing 
+miserably. Clearly the bird was trapped up YONDER. ] 
+; in the lower branches of the elm ** CLUE 2 ** 
+; 
+[1473:] ; Corbin Chapel 
+; 
+[1474:%Dame Lyonesse thanked Lancelot warmly. Before she left, 
+she said that Lynet, the Damosel Maledisant, could stay with 
+him. ] ; castle Lyonesse 
+; 
+[1475:the Damosel bent tearfully over Sir Meliot. ] 
+; 
+[1476:as he marvelled WHERE the shields hung, Lancelot bethought 
+himself to hear a scraping. Perchance swords were being drawn 
+inside. ] ; in the entrance to chapel perilous ** CLUE 6 ** 
+; 
+[1477:the knights all grinned and gnashed at Sir Lancelot. ] 
+; inside the chapel 
+; 
+[1478:Lancelot thought he heard music as Hellawes said, "Alas 
+Lancelot, if you do not surrender you WILL die for it. Put down 
+your sword". ] ; chapel perilous ** CLUE 6 ** 
+; 
+[1479:the hawk spitefully bit a chunk out of his hand. ] 
+; at the top of the elm 
+; 
+;; [1480:] ; on the stairs 
+;; [1481:] ; in the living quarters 
+;; [1482:] ; on the stairs 
+; 
+[1483:Lancelot looked at the stairs to the west and fancied 
+that there were cellars below. ] ; in a stable 
+; 
+;; [1484:] ; on the stairs 
+; 
+[1485:Lancelot saw the shadow of a door in the eastern wall. ] 
+; in the basement 
+; 
+;; [1486:] ; in a tunnel 
+;; [1487:] ; in a prison 
+;; [1488:] ; in a guardroom 
+; 
+[1489:the rattle of dice came from behind the thick oak door of 
+a guardroom to the west, mingling with the clank of 
+chains from the pit. ] ; in an upper prison 
+; 
+;; [1495:] ; on a riverbank 
+;; [1496:] ; on a decrepit bridge 
+; 
+[1497:Lancelot could hear a soft keening from within the manor. ] 
+; outside a manor house 
+; 
+;; [1498:] ; in forest Meliot 
+;; [1499:] ; on a dangerous road 
+;; [1500:] ; on the track outside Turquin's manor 
+;; [1501:] ; on a forest track 
+; 
+[1502:Lancelot saw the door of the turret open and close again 
+quickly, yet saw nobody. ] ; on a Roman road beside a turret 
+; 
+;; [1503:] ; at a junction in the forest 
+; 
+[1504:bright sun did stream in through the window. ] 
+; in Garlon's turret 
+; 
+;; [1505:] ; at a great clearing beside the castle of forest Sauvage 
+;; [1506:] ; on an east-west Roman road, bordered by a thorn thicket 
+;; [1507:] ; on a Roman road through forest Sauvage 
+;; [1508:] ; on the great north road 
+; 
+[1509:Lancelot looked about him at the Realm of Logris. Here 
+were imprisoned those knights that he must free to complete the 
+company of the Round Table. ] ; on a triumphal avenue 
+; 
+[1510:the road tilted and shook beneath the hooves of 
+Lancelot's horse. ] ; on the coast road 
+; 
+[1511:the land about the castle was filled with the tents and 
+hosts of a besieging army, landed from their nearby ships. ] 
+; at Tintagel 
+; 
+;; [1512:] ; on a walled road 
+; 
+[1513:the sentries watched Lancelot. ] 
+; on a road 
+; 
+;; [1514:] ; on a beach 
+;; [1516:] ; on a windswept tor 
+; 
+[1517:a herald hastened from the west. "O Lancelot, flower of 
+chivalry", he cried. "The Sessoine host have landed from their 
+ships and lie in siege about Tintagel. Prithee come with all 
+speed!" Spurring his horse, the herald rode away. ] 
+; on a winding road 
+; 
+;; [1518:] ; at a crossroads
+; 
+[1519:fishermen warned Lancelot about Sir Nabon le Noir, 
+an evil giant who was wont to eat his visitors. Even now, a 
+knight awaited this doom in the castle prison. ] ; Turnance 
+; 
+;; [1520:] ; beside a tower 
+;; [1521:] ; in Corbin village 
+;; [1528:] ; in a forest 
+;; [1551:] ; at a siegeworks 
+;; [1552:] ; in the red launds 
+;; [1553:] ; in the green launds 
+;; [1554:] ; in the black launds 
+; 
+[1555:as he rested on a small KNOLL, Lancelot heard the howls 
+of a brachet, far to his right. ] ; country junction ** CLUE 6 ** 
+; 
+;; [1556:] ; at a main road 
+;; [1557:] ; on a country road 
+;; [1558:] ; on a stone road 
+; 
+[1559:a brachet ran away north. ] ; on an overgrown road 
+; 
+[1560:as an eagle flew past, Lancelot thought back to ARTHUR 
+and Camelot. ] ; on an overgrown road ** CLUE 2 ** 
+; 
+;; [1561:] ; beside a tower 
+;; [1562:] ; on a beach 
+; 
+[1563:Lancelot realised that the beacon was intended as a 
+warning for the people below. ] ; on a mountaintop 
+; 
+;; [1564:] ; on a mountainside 
+;; [1565:] ; in a glen 
+;; [1566:] ; in the Orkneys 
+; 
+[1567:Lancelot looked ever for ambush. For the Scots had 
+but lately fought against King ARTHUR'S men and Lancelot 
+thought to hear the music of the pipes. ] ; in Scotland ** CLUE 6 ** 
+; 
+;; [1568:] ; in the marches 
+[1569:Lancelot lay him down in the shade and he fell into a 
+sleep. At length he was awakened by four royal ladies, riding 
+from the castle. ] ; beside castle Chariot 
+; 
+; 
+; Message pairs for use in describing containment positions 
+; also used for preposition table 
+; 
+; part printed before container 
+; 
+[1600:Lancelot could see] ; 0 - you can see 
+; (user's name not printed by PRINTOBJECTS) 
+; 
+[1601:^P on|^P onto]  ; 1 - on 
+[1602:^P underneath|^P below ^P under] ; 2 - under 
+;; [1603:^P behind]   ; 3 - behind 
+;; [1604:]            ; 4 - carrying 
+;; [1605:]            ; 5 - wearing  
+[1606:^P at]          ; for input only >>> *** Pete *** 19/9/88
+[1607:^P in |^P into ^P inside] ; 7 - in 
+;; [1608:hanging from]; 8  
+;; [1609:growing from]; 9 - part of 
+;; [1610:^P between]  ; tied between is tied a rope 
+;; [1611:]            ;11 - 'the carter was driving a cart'  
+[1612:lying on]       ;12 
+[1613:sitting on]     ;13 
+[1614:fastened to]    ;14  
+;                     ;15 'Giant Nabon was lying on the pillow' 
+[1616:^P with|^P using] 
+[1617:^P from]  
+; 
+; part printed between container and contained...  
+;; [1640:]            ; 0 
+[1641:was]            ; 1 - on 
+[1642:was]            ; 2 - under  
+;; [1643:was]         ; 3 - behind 
+[1644:was carrying]   ; 4 
+[1645:was wearing]    ; 5  
+;; [1646:was blocked by] ; 6 - is blocked by 
+[1647:was]            ; 7 - in 
+;; [1648:was]         ; 8  
+;; [1649:was]         ; 9 - part of is 
+;; [1650:was tied]    ;10 - 
+[1651:was driving]    ;11 - the carter was driving a cart  
+;; [1652:]            ;12 
+;; [1653:]            ;13 
+[1654:was]            ;14 - fastened to  
+[1655:was lying on]   ;15 - Nabon was lying on 
+; 
+; for plural contents... 
+;; [1670:]            ; 0 
+[1671:were]           ; 1 - on  
+[1672:were]           ; 2 - under 
+;; [1673:were]        ; 3 - behind 
+[1674:were carrying]  ; 4  
+[1675:were wearing]   ; 5 
+;; [1676:were blocked by]; 6 - is blocked by 
+[1677:were]           ; 7 - in  
+;; [1678:were]        ; 8 
+;; [1679:were]        ; 9 - part of is 
+;; [1680:were tied]   ;10 -  
+[1681:were driving]   ;11 - the carter was driving a cart 
+;; [1682:]            ;12 
+;; [1683:]            ;13  
+[1684:were]           ;14 - fastened to 
+[1685:were lying on]  ;15 - people were lying on 
+;  
+; 1700: is base for prepositions to use with 'you' 
+; 
+; 1700+N is part printed before 'Lancelot'  
+[1715:tied to] 
+;  
+;  
+; 1740+N is part printed between Lancelot and object(s) 
+[1741:was on]         ; 1 - on 
+;; 1742 is 2  
+;; 1743 is 3 
+[1744:owned]          ; 4 - own 
+[1745:was wearing]    ; 5  
+;; [1746:was riding]  ; 6 
+[1747:was in]         ; 7 
+;;                    ; 8 
+;;                    ; 9 
+;;                    ;10
+[1751:was driving]    ;11 - Lancelot was driving  
+[1752:was lying on]   ;12 
+[1753:was sitting on] ;13 
+[1754:was fastened to];14  
+[1755:was lying on] 
+; 
+;  
+; for plural prepositions... 
+; 1770+N is part printed between people and object(s) 
+[1771:were on]         ; 1 - on  
+;; 1772 is 2 
+;; 1773 is 3 
+[1774:owned]           ; 4 - own  
+[1775:were wearing]    ; 5 
+;; [1776:were riding]     ; 6 
+[1777:were in]         ; 7  
+[1782:were lying on]   ; 12 
+[1783:were sitting on] ; 13 
+[1784:were fastened to];14 
+[1785:were] ; tied to you is 15 
+; 
+[1800:^P off] 
+[1801:^P up] 
+[1802:^P down] 
+[1803:^P to] 
+[1804:^P out] 
+[1805:^P from the ] ; used for npc motion 
+[1806:^P for] 
+[1807:^P until] 
+[1808:^P debug] 
+[1809:^P through] 
+[1810:^P about] 
+ 
+; 
+; Parser messages.. 
+[2000:you do not need ] 
+[2001: in this part] 
+; 
+[2003:I do not understand ] 
+[2004: when used like that] 
+; 
+[2006:Lancelot was ] 
+;; [2007:in a ] ; as in 'You are in an alder forest 
+;; [2008:in an ] 
+;; [2009:exits led in all directions] 
+; 
+; general error message when parsing has broken down. 
+[2010:I do not understand] 
+[2011:Lancelot could not see] 
+[2012:Lancelot did not have] 
+[2013:Lancelot already had] 
+[2014:(I truly do not understand)] 
+[2015:it was too far away] ; examine, take etc. scenery objects 
+[2016:I cannot find a verb] 
+[2017:it is not there] 
+[2018:too many nouns. ] 
+[2019:Lancelot could not see that] 
+[2020:Lancelot owned nothing. ] 
+[2021:it was dark. ] 
+; 
+[2036:sorry, I do not fully understand that verb] 
+; ^ verb in keyword table but not in CALLVERB routine 
+[2037:there did not seem to be anything suitable. ] 
+[2038:looked surprised] 
+[2039:what a mouthful! ] 
+; 
+[2044:could not have ] ; as in 'Lancelot could not have hit that' 
+;
+[2046:that] 
+[2047:here] 
+[2048:Lancelot could not find ] 
+; 
+[2053:it is not clear what ] 
+[2054: refers to] 
+; 
+; error messages for NPC's 
+[2060:do you often talk to yourself?] 
+[2061:Lancelot only talked to one person at once] 
+; 
+; Standard Adventure output messages 
+; 
+; examining something greater than maxobject: (but not scenery) 
+; rare occurrence - mostly for omnipresent objects, numbers, spells 
+[2112:Lancelot saw little of note. ] 
+; 
+[2114:Lancelot could not go that way] 
+[2115:through the door] 
+; 
+[2117:it is already open] 
+; 
+[2123:Lancelot could not put ] ; paired with 2124 
+[2124:there] 
+; 
+[2126:Lancelot should drop it first] 
+; 
+; 2130 is used when player refers to scenery which is not nearby 
+[2130:I find no reference to ] 
+[2131:Lancelot was on it! ] 
+[2132:what? ] 
+[2133:where? ] 
+[2134:Lancelot was wearing ] 
+[2135:Please try again, saying what with? ] 
+[2136:which one?] 
+[2137:at what?] 
+[2139:was full] 
+[2140: here] 
+[2141:nobody wants it] 
+; 
+[2142:Lancelot could not wear ] 
+; 
+[2147:Lancelot was already wearing that] 
+[2148:Lancelot did not need to] 
+; 
+; Confirmation messages 
+; 
+[2152:worn] 
+[2153:at your command] 
+[2155:time passed. ] 
+[2156:said..] ; e.g Damosel Maledisant said.. "You idiot!" 
+[2158:Lancelot should untie it first] 
+; 
+[2160:Yea or Nay please. ] 
+; 
+; Death, scoring, game control etc. 
+; 
+[2200:verily restart? ] 
+; 
+[2202:verily restore? ] 
+[2203:did Lancelot continue? ] 
+[2204:thanked Lancelot] 
+; 
+[2209:the adventure is over. Prithee type Restart, Undo, 
+Restore or Ram Restore: ] ; && 
+; 
+[2215:that is too long to wait] ; would not wait 
+[2216:try eg Wait for Gawain, or Wait 10] 
+; 
+; Score messages.. 
+[2240:Lancelot scored ] 
+[2241:you seem to have got Lancelot killed. ] 
+[2242: out of 1000] 
+; 
+;; [2300:Undo and Ram Save//Restore are not available. ] ; && 
+[2301:please insert save disc and press a key.  ] ; && disc 
+[2302:please insert game disc. ] ; && disc 
+[2308:you cannot Undo any further. ] ; && 
+;
+[2310:I cannot return to that position. ]  ; && 
+; 
+;; [2311:Lancelot is about to start another part of the game. 
+;; Do you want to save his position first, just in case? ] ; && tape 
+[2312:that data was not saved from Lancelot. ] ; && 
+;; [2313:play the game tape to load part ] ; && tape 
+;; [2314:Lancelot is about to move to another part of the game. 
+;; Do you want to go ahead? ] ; && tape 
+;; 
+;; [2319:you have started in the middle of the game. Please 
+;; restore a position saved from this part. ] ; && tape 
+;; 
+; misc jokey messages (slightly more complex than echo verbs).. 
+[2401:that seems dangerous] ; attack me 
+; 
+; add your messages for special cases here... 
+[2496:had grievously slain a Round Table knight] 
+; 
+[2498:could not possibly attack a woman] 
+[2499:could not yet return to Camelot] 
+[2500:took his leave and returned to Camelot] 
+[2501:the sentries blocked] 
+; 
+[2503:the army blocked] 
+[2504:and waved their pikes] 
+[2505:the soup drained away] 
+[2506:it was a bit salty] 
+; 
+[2507:the sails caught fire and the flames were carried by 
+the breeze to set afire the entire fleet. 
+%Their ships lost, the Sessoines could do nought but surrender. 
+King Mark of Cornwall declared Lancelot a hero and bade him enter 
+Tintagel city in triumph] 
+; 
+[2508:King Mark stepped forward. "Welcome, Sir Knight", he said. 
+"You have our thanks. But Sir Tristram of the Table Round is my 
+prisoner and I cannot chance that you plan to free him".
+Thereupon, King Mark signalled to his guards, who threw 
+Lancelot into the dungeons] 
+; 
+[2509:Tristram sighed. "I see King Mark has captured you too. 
+Had I but a harp, perchance we might escape"] 
+; 
+[2510:said a devout prayer] ; general case. 
+; some special cases for knights... 
+[2511:rode] 
+[2512:, mounting his horse] 
+[2513:dismounted and went] 
+[2514:such things are below your knightly gaze] ; exam horse/armour 
+[2515:-] ; minus sign for negative scores 
+[2516:was riding a fine horse] 
+[2517:made the sign of the cross] ; >>mike 2/7/88 
+; 
+[2518:left all his possessions behind and] 
+[2519:made the long trip to Camelot] 
+; 
+[2520:strummed a few chords] 
+[2521:played a beautiful tune] ; Tristram playing 
+[2522:soon all the guards fell under the enchantments of his 
+music and gladly opened the cells for all to escape] 
+; 
+[2523:the carter drove past the sentries] 
+[2524:drove the cart] 
+; 
+[2525:hiss! The soup boiled away and the coals were yet glowing] 
+[2526:was in pain] 
+[2527:was in pain] 
+[2528:had to drop ] ; the cauldron/coals 
+; 
+[2529:the door was locked] 
+; 
+; Merlin rescue stuff... 
+[2530:Merlin appeared] 
+[2531:Merlin appeared] 
+[2532:Merlin appeared] 
+; 
+; two message groups 
+[2540:smote] 
+[2541:buffeted] 
+[2542:walloped] 
+; 
+; injury status messages 
+[2560:dead] 
+[2561:close to death] 
+[2562:gravely wounded] 
+[2563:sorely hurt] 
+[2564:badly hurt] 
+[2565:injured] 
+[2566:but lightly wounded] 
+[2567:slightly hurt] 
+[2568:scarcely harmed] 
+[2569:unhurt] 
+; 
+[2570:would have sunk in the water] 
+[2571:directed the boat to the] 
+[2572:directed the boat] ; followed by 'from the west' etc. 
+; 
+; Merlin rescue stuff... 
+[2580:"shall I rescue you?"] 
+[2581:"stay where you are then"] 
+[2582:there was a bright flash..] 
+[2595:leaked] 
+; 
+[2600:tried but failed to rescue Elaine. The maiden sighed 
+sorrowfully, for it seemed that he was not yet worthy] 
+; 
+[2601:led Elaine from the cauldron. She was delighted to be 
+rescued, but hastened to quit the room and cover herself. 
+At the door, she shyly looked back and invited Lancelot to 
+visit her at Corbin castle] 
+; 
+[2605:Lancelot was slapped across the face] ; 'rude word' npc 
+; 
+[2608:could not in honour return to Corbin castle] 
+[2609:was too afraid to enter Corbin castle] 
+[2610:could not enter Corbin castle without being invited] 
+; used by Lancelot only 
+; 
+[2611:%King Pelles, father of Elaine had commanded a feast to 
+honour Lancelot. For he knew well the prophesy that Sir Lancelot 
+should get a child upon his daughter, the which would be named 
+Galahad. Elaine remained after the banquet. "Come to me this night, 
+in the east bedroom", she said and slipped upstairs] 
+; 
+[2612:%Elaine turned to Lancelot and stretched forth an arm in 
+welcome. Did Lancelot remember Guenever and quit the room? ] 
+; 
+[2613:of course not. Lancelot betrayed Guenever, but the joy 
+of that night would stay with him forever] 
+; 
+[2614:Lancelot stepped back, faithful to Guenever] 
+; 
+[2615:Lancelot could not in honour leave before morning] 
+[2616:the panel was held shut by some magical force] 
+[2617:the blows made not the least mark] 
+[2618:during the night, Lancelot was awakened by the creaking 
+of the panel opening] 
+[2619:a glowing spear smote Lancelot in the shoulder and 
+vanished. The panel ground shut again] 
+[2620:a Magical Knight emerged] 
+[2621:an old man emerged, enveloped in adders. In his hand he 
+bore a spear of vengeance] 
+[2622:four gentlewomen and a bishop emerged, then withdrew 
+back through the panel, which closed again behind them] 
+[2623:at last, a cock crowed outside and Lancelot was free to 
+leave] 
+[2624:the knight fell back through the open panel, only 
+to emerge again a moment later, healed full well and stronger 
+than before] 
+[2625:the panel moved a little] 
+[2626:the panel was now almost half shut] 
+[2627:the panel shut completely] 
+[2628:the old man blessed Lancelot for not attacking him, 
+and returned through the panel] 
+; 
+[2629:as Lancelot left, Dame Brisen, the enchantress who was 
+Elaine's lady, gave him a cup of drugged wine. Lancelot drank 
+it and believed that maiden Elaine was Queen Guenever. And so 
+they lay together. Afterwards, Lancelot remembered himself and 
+left. Thus the prophesy was fulfilled, but Lancelot kept his 
+honour because he betrayed Guenever against his will] 
+; 
+[2630:the panel was open, but Lancelot could not reach within] 
+; 
+[2631:the old man screamed and disappeared] 
+; 
+[2635:could see that the mermaid was very annoyed] 
+[2636:the mermaid laughed and played the harp] ; when they snatch it back 
+[2637:the mermaid dodged easily] 
+[2638:the mermaid played a haunting tune on the harp] 
+; 
+[2640:the giant was fast asleep and snoring betimes] 
+[2641:the giant slept on] 
+[2642:the giant's head hung for an instant in mid-air] 
+[2643:the giant's head fell to the ground] 
+[2644:the new pillow caused him discomfort] 
+[2645:dawn broke] 
+[2646:the giant's head was already supported by] 
+[2647:the giant collapsed into dust as the mummified hand 
+struck him] 
+; 
+[2648:the giant hid the sack] 
+[2649:could not open the door without help] 
+[2650:also pushed on the door, which now opened easily] 
+[2651:the relic was trapped under Nabon's head] ; in the sack 
+[2652:Lancelot could not see its contents] 
+[2653:Giant Nabon awoke] 
+; 
+[2655:Lancelot lost his bearings in the mist] 
+[2656:the horn sounded] 
+[2657:Lancelot could once more tell which way was which] 
+[2658:Sir Pedivere thanked Lancelot] 
+[2659:Sir Pedivere was the prisoner of Sir Breunis] 
+; 
+[2660:could not get through the briers] 
+[2661:chopped away at the briers] 
+[2662:the briers grew again] 
+[2663:chopped through the main stem and the briers shrivelled] 
+; 
+; ------ 
+; 
+[2666:Queen Northgales spoke. "Lancelot, which one of us 
+will you choose for your love? We must have an answer before 
+you may leave"] 
+[2667:Queen Eastlands spoke. "You must choose one of us ere you 
+leave"] 
+[2668:the Queens were furious that Lancelot would not choose one 
+of them] 
+[2669:Lancelot was dragged away to a cell] 
+[2670:Queen Morgan offered Lancelot a glass of wine. "Drink 
+this," she said imperiously] 
+; cup->glass 
+[2671:Queen Morgan spoke. "Are you now willing to love only me?" ] 
+[2672:she scowled. "Then you shall stay"] 
+[2673:Queen Morgan laughed in triumph, having won her wager 
+with the other Queens that Lancelot would betray Guenever and 
+choose her. She gloatingly dismissed him] 
+[2674:the Queens laughed in merry triumph and rode away. Lancelot 
+bowed his head sadly, for he knew that he had failed Guenever] 
+[2675:drank the wine. It was a love potion and he cried out for 
+Queen Morgan. She smirked in triumph and arrogantly dismissed 
+him] 
+; drink Morgan's wine 
+[2676:the maiden offered some food] 
+[2677:Queen Morgan offered a glass of wine] 
+[2678:the maiden fell in love with Lancelot and opened the door] 
+[2679:another day passed] 
+[2680:the maiden was impatient. "Sir Lancelot, you must eat"] 
+[2681:ate the food. Under its enchantments, he betrayed Guenever 
+and cried out for Queen Morgan. She smirked in triumph and 
+arrogantly dismissed him] 
+; eat maiden's food 
+[2682:"Thank you, but I hunger not"] 
+; 
+; --------- 
+; 
+[2685:Sir Turquin challenged Lancelot to fight] 
+;; [2686:Sir Turquin banged on the door to the manor. After 
+;; a brief pause, it swung open] 
+[2687:knocked on the door. A shower of dirty water splashed down] 
+[2688:Sir Turquin submitted and fled inside his manor] 
+; 
+[2689:trod on the loose planks] 
+[2690:the panel opened] 
+[2691:an arrow flew from the open panel] 
+[2692:, but Lancelot dodged it easily] 
+[2693:and found its target] 
+[2694:was severely wounded] 
+; 
+[2695:the panel was closed] 
+[2696:the panel closed] 
+[2697:clutched at the panel to hold it open] 
+[2698:Lancelot felt the floor move. Did he jump back? ] 
+[2699:Lancelot jumped back] 
+[2700:the floor tipped up and Lancelot fell] 
+[2701:someone screamed to the north] 
+[2702:the floor was balanced by someone in the secret passage] 
+; 
+[2706:a grating noise sounded below] 
+[2707:the winch squeaked as it was turned] 
+[2708:the cage left] 
+[2709:the cage appeared] 
+[2710:the cage rose] 
+[2711:the cage descended] 
+[2712:the chains were held by something out of sight] 
+[2713:did release] 
+[2714:a guard looked down the shaft and Lancelot knew that 
+all was lost] 
+[2715:the guard shouted. "To arms! We are attacked!"] 
+[2716:dozens of guards poured forth from the guardroom and 
+drove the party from the castle, with Lancelot fighting a 
+heroic rearguard action] 
+[2717:, who stretched and arose, then got into the cage] 
+[2718:he was bound fast by chains] ; test "examine chains"
+; 
+; 10 comments heard from guardroom 
+[2719:from within the guardroom.. ] 
+[2720:all conversation stopped] 
+[2721:someone spoke. "I thought I heard something"] 
+[2722:another voice spoke. "No, it was only the wind"] 
+[2723:"should not we go and find out"] 
+[2724:"finish your drink first"] 
+[2725:"I think you should go and look"] 
+[2726:"you are not in charge here"] 
+[2727:"It was only an idea"] 
+[2728:"since you are so keen, you go and look"] 
+[2729:a guard emerged, saw Lancelot and shouted a warning] 
+; 
+; Invisible Garlon stuff... 
+[2730:Lancelot saw the door open and heard footsteps emerge. 
+But there was nobody to be seen] 
+[2731:someone] ; used in combat messages 
+[2732:flailed around but hit nobody] 
+[2733:Lancelot heard footsteps follow him inside] 
+[2734:with the shutters closed, the turret was completely dark. 
+Lancelot heard foul cursing from nearby as Garlon realised he 
+had lost any advantage from being invisible] 
+[2735:with Garlon dead, Lancelot had removed a foul scourge 
+that had been the death of many good knights] 
+; 
+[2740:a lady ran up and cried aloud. "O Lancelot, flower of all 
+knights, my hawk is slipped from me and the lunes about her 
+feet are ] 
+[2741:once again ] 
+[2742:entangled fast in yonder elm"] 
+; 
+[2743:the lady sighed sorrowfully. "Alack and woe! My hawk 
+has gone from me forever"] 
+[2744:the lady smiled at Lancelot. "It would be an honour 
+if the most worthy Lancelot would rescue my bird"] 
+[2745:could not climb the tree in his armour, so he left it 
+heaped upon the ground] 
+; before climbing tree 
+[2746:the hawk was held fast by its tangled lunes] ;>>mike 2/7/88 
+; 
+[2748:did free the hawk and threw it down to the ground. A cry 
+of joy from below heralded its safe arrival] 
+[2749:heard fighting from below] 
+; 
+[2751:Sir Phelot struck Lancelot through the back] 
+[2752:was wounded badly without armour] 
+; 
+[2753:the wood smote Sir Phelot on the one side of the head, 
+so that he fell dead upon the ground. The lady left 
+weeping, and Lancelot armed himself again] 
+; 
+[2754:Sir Phelot blocked Lancelot with his broadsword] 
+;  
+[2760:yielded. Did Lancelot spare him? ] 
+[2761:blocked] ; coloured knights blocking people 
+[2762:rode away, striking Lancelot to the ground as he left] 
+[2763:ran him through] 
+[2764:rode away, saluting Lancelot] 
+; 
+[2765:a flurry of arrows dissuaded] ; .. person 
+[2766:the commander had been besieging Dame Lyonesse, but had 
+no wish to do battle with Sir Lancelot] 
+[2767:he said the Red Knight should follow Lancelot] 
+[2768:the army left in a great hurry] 
+; 
+[2769:hid in the bushes] 
+[2770:Lancelot heard a brachet barking] 
+; 
+[2772:the Damosel murmured tearfully to Lancelot that Sir 
+Meliot was grievously hurt and could not be healed save by 
+a cloth from the Chapel Perilous. ] ; 
+; 
+[2773:Lancelot put down his sword] 
+[2774:all thirty knights attacked at once] 
+[2775:picked up his sword again] 
+[2776:Hellawes bade Lancelot put up his sword and kiss her] 
+[2777:kissed her and was entrapped by her enchantments] 
+; 
+[2778:there was a great storm and a tempest. Hellawes vanished 
+and all her knights with her] 
+; 
+[2779:Sir Meliot touched the cloth to his wounds and was 
+rightway healed. He rode off to Camelot with his maid, there 
+to join Arthur] 
+; 
+[2780:the guard signalled to the tower] 
+[2781:the portcullis descended a little] 
+[2782:the portcullis was now half shut] 
+[2783:the portcullis clicked shut] 
+[2784:the guard blocked the way. "Ye shall nay pass"] 
+[2785:the guard was beside the closed portcullis] 
+[2786:was blocked by the portcullis] 
+[2787:lit the beacon, which flared briefly] 
+[2788:put out the beacon] 
+[2789:heard some people approaching] 
+; 
+[2790:the prison door was bolted from this side] 
+[2791:slid back the bolts] 
+[2792:strained against the chest] 
+[2793:too few people were helping] 
+[2794:the chest slid away from the trapdoor] 
+[2795:the heavy chest was on top of the trapdoor] 
+[2796:the Orkney people attacked all at once and captured 
+Lancelot] 
+[2797:the chest was full of rocks] 
+; 
+; additions to Lancelot's name.. 
+[2798:of the Round Table] 
+[2799:squire] 
+[2800:Sir] ; comes first 
+; 
+; brachet racetrack messages.. 
+[2810:licked its master] 
+[2811:lay down next to Meliot] 
+[2812:ran around in circles] 
+; 
+; some messages printed by Damosel Maledisant invoked by racetrack 
+; in ActorM1Dot format 
+[2840:looked nervously at the guards. "I think I will go to 
+powder my nose"] 
+; 
+; notice that 2841 starts with name (DM), unlike all others
+[2841:the Damosel Maledisant sniffed. "If you are going to dally 
+with these trollops, I will be off"] 
+; 
+[2842:looked from Lancelot to Elaine. "Well truly, 
+do not let me interrupt you"] 
+[2843:was sitting by the side of the road. "I hope you enjoyed 
+yourself", she said] 
+[2844:said, "I suppose I will have to help"] 
+; 
+; "Pet" messages... (table driven) 
+; some remarks made by Damosel Maledisant on various occurrences... 
+[2850:not enough garlic] ; try soup
+[2851:very clever] 
+[2852:not a patch on Tristram] ;play harp 
+[2853:I bet you drop it] ; take cauldron 
+[2854:told you so] ; if he does 
+[2855:you need help] ; try to open doors etc. without 
+[2856:you are not Jesus Christ] ; walk on water 
+[2857:that was most careless] 
+[2858:good thing too] ; try to lead Elaine out of cauldron 
+[2859:methinks you needed help] 
+[2860:now you have done it] 
+[2861:you filthy little devil] ; "rude word" npc 
+[2862:she is after your title] ; Elaine offer 
+[2863:I hope you enjoyed that] ; after conceiving galahad 
+[2864:shh] ; near Nabon 
+[2865:cowardly beast] 
+[2866:it takes two to cut such briers] ; try to cut hedge 
+[2867:a challenge should never be refused] 
+[2868:he did not seem worthy] 
+[2869:you should have seen that coming] 
+[2870:oh dear] ; someone else Oublietted 
+[2871:you truly messed that up] ; flee from castle 
+[2872:that was a cowardly trick] ; defeat garlon 
+[2873:fancy letting down a lady] ; lady disappointed - no hawk 
+[2874:you are not worthy to wear armour anyway] 
+[2875:ha ha] ; bashed over head by xxx knight 
+[2876:how cruel and dishonourable] ; run through xxx knight 
+[2877:that was a mistake] 
+[2878:I think he saw you] ; guard lowers portcullis 
+[2879:it looks empty] ; open chest 
+; 
+; Responses to commands, I think... 
+; 
+[2919:refused] ;Sir Breunis 
+[2920:remained full silent] ; Invisible Garlon 
+; 
+[2922:remained full silent] ; a Magical Knight 
+[2923:repeated his challenge] ; Turquin 
+[2924:refused] ; Phelot 
+[2925:raised his black spear] ; Black Knight 
+[2926:tilted his green lance] ; Green Knight 
+[2927:raised his red spear] ; Red Knight 
+; 
+[2928:asked Lancelot to kiss her] ; Hellawes 
+; 
+[2933:refused] ; Damosel Maledisant 
+; 
+[2934:could not help Lancelot] ; maiden in Chariot prison 
+[2935:apologised] ;damosel 
+[2936:apologised] ;Lady 
+[2937:said nothing] ; Giant Nabon *** not used if Nabon asleep 
+; 
+[2940:paid him no heed] ; army 
+[2941:appeared to be stone deaf] ; carter 
+[2942:smiled and shook her head] ; Elaine 
+[2943:laughed] ; mermaid 
+[2944:seemed surprised] ; old man 
+[2945:refused] ; residents 
+[2946:refused angrily] ; sentries 
+[2947:refused angrily] ; thirty knights 
+[2948:refused] ; guard 
+; 
+[2950:squawked loudly] ; hawk 
+[2951:was but a dog] ; brachet 
+; 
+;--------- 
+; 
+; comments made by people on first meeting Lancelot (3000+)... 
+; 
+[3002:Tristram spoke. "Do you have my harp?" ] 
+; 
+[3004:Bors spoke. "Hail Sir Lancelot, I thank you for my 
+rescue". ] ; Bors 
+[3005:Sir Pedivere spoke. "Prithee slay Sir Breunis 
+that I may be free". ] 
+;; [3006:] ; Gawain 
+[3007:the Red Knight challenged Lancelot. ] 
+[3008:Meliot spoke. "Sir Lancelot, prithee give me succour. 
+My wounds may only be cured by a cloth belonging to the witch 
+that made them". ] 
+[3009:Sir Lamorak was most grateful. ] ; Lamorak 
+; 
+; the following knights all start in the same place, so we only 
+; need one greeting to avoid a silly chorus.. 
+[3010:Ector spoke. "Hail Sir Lancelot. We salute you, that are 
+held prisoner by the evil Sir Turquin". ] ; Ector 
+; 
+; Do not bother with messages from fellow prisoners; Agravain, 
+; Aliduke, Brandiles, Brian, Geheris, Gareth, Lionel and Marhaus. 
+; 
+[3019:Sir Breunis shouted that all visitors to his forest 
+should die. ] ; Sir Breunis 
+; 
+[3023:Sir Turquin challenged Lancelot to do battle. ] 
+[3024:as the Lady turned away and wept, Sir Phelot attacked. 
+"When you are slain, Lancelot, I shall be called best knight". ] 
+; Phelot 
+;
+[3025:the Black Knight challenged Lancelot. ] 
+[3026:the Green Knight challenged Lancelot. ] 
+; 
+[3029:Queen Morgan spoke. "Lancelot, you must choose one of us 
+as your beloved". ] 
+; 
+[3033:the Damosel Maledisant spoke. "Greetings. My lady 
+Dame Lyonesse is besieged. She needs help and I suppose 
+you will have to do". ] 
+; 
+[3034:the maiden greeted Lancelot. ] 
+; 
+[3040:a ripple ran through the army. ] 
+; 
+[3047:the knights spake all together, with a grimly voice. 
+"Knight Lancelot, put down your sword straight away. Go 
+not inside the inner chapel and we may show you mercy". ] 
+; Thirty knights 
+; 
+[3051:the brachet whined pleadingly at Lancelot. ] 
+; 
+; do not be silly group... 
+[3100:that seems silly] 
+[3101:I don't think so] 
+[3102:that seems marvellously silly] 
+; 
+; nice try group... 
+[3110:nice try] 
+[3111:a good plan but it achieves nothing] 
+[3112:alas that your fine idea achieves nothing] 
+; 
+; just scenery group... 
+[3120:Lancelot found nothing of note] 
+[3121:do not bother with that] 
+[3122:that has no import to the game] 
+; 
+; missing object... 
+[3130:please be more specific] 
+[3131:the object was missing] 
+[3132:I think I have lost the object] 
+; 
+; Nothing happened group... 
+[3140:nothing happened] 
+[3141:that did not seem to work] 
+[3142:that did nothing at all] 
+; 
+; the following are printed after the object name.. 
+; 
+; try to move static object group.. 
+[3150:would not move] 
+[3151:did not budge] 
+[3152:would not shift] 
+; 
+; no point group.. 
+[3160:there is no point] 
+[3161:that would be a waste of time] 
+[3162:do not bother with that] 
+; 
+; groupsay messages for hello responses.. 
+[3170:bowed in acknowledgement] 
+[3171:murmured a reply] 
+[3172:smiled] 
+; 
+; groupsay messages for npc's being unable to carry out an order.. 
+[3180:had failed to finish his task] 
+[3181:told Lancelot he had had problems] 
+[3182:had not been able to finish] 
+; 
+; groupsay messages for npc's being unable to carry out an order.. 
+[3190:told Lancelot of his "problems with] 
+[3191:apologized for his "problems with] 
+[3192:muttered about "problems with] 
+; 
+; now, npc accepts an order 
+[3230:nodded] 
+[3231:agreed] 
+[3232:nodded] 
+; 
+; response to requests to give anything(s) to anyone 
+[3270:did not answer] 
+[3271:gripped it tightly] 
+[3272:stared back] 
+; 
+; npc wants to obey orders just given, but cannot understand any of them! 
+[3290:did not understand] 
+[3291:failed to understand] 
+[3292:cupped a hand behind an ear] 
+; 
+; again used following a command referring to scenery.. 
+[3530:not again] 
+[3531:prithee try something different] 
+[3532:you already tried that] 
+; 
+[3560:dead] 
+; 
+[3600:Merlin shouted about a stack overflow. ] 
+; 
+[3605:sorry, Lancelot would have to find his own way] 
+; 
+[3614:Lancelot shouted. ] 
+; 
+; 'npc, rude' word for talking people 
+[3620:swore back at Lancelot] 
+[3621:looked scornful] 
+[3622:spat in disgust] 
+; 
+; 'npc, echo verb' for talking people 
+[3660:just smiled] 
+[3661:looked askance] 
+[3662:saw no purpose in that] 
+; 
+;----------- 
+; 
+; gold-singing for various people... 
+; 
+; Tristram, Galahad, Bors, Meliagaunt, Gawain, Red Knight, Meliot, 
+; Lamorak, Ector, Agravain, Aliduke, Brandiles, Brian, Geheris, 
+; Gareth, Lionel, Marhaus 
+[3700:waited in readiness] 
+[3701:examined his sword] 
+[3702:looked around] 
+; 
+; Breunis 
+[3710:grimaced] 
+[3711:eyed Lancelot] 
+[3712:paced up and down] 
+; 
+; Hellawes 
+[3750:warned Lancelot not to touch the cloth] 
+[3751:said Lancelot would live if he would but forget Guenever 
+and kiss her] 
+[3752:invited Lancelot to kiss her] 
+; 
+; Queen Morgan, Queen Northgales; Queen Eastlands, Queen Outisles 
+[3760:smiled at Lancelot] 
+[3761:raised an eyebrow] 
+[3762:smoothed her gown] 
+; 
+; Damosel Maledisant 
+[3770:smiled] 
+[3771:watched Lancelot] 
+[3772:sighed] 
+; 
+; Damosel standing over body 
+[3780:wept] 
+[3781:kissed Sir Meliot] 
+[3782:comforted Sir Meliot as best she could] 
+; 
+; Lady (hawk) 
+; must not mention the hawk 
+[3790:looked into the tree] 
+[3791:looked guilty] 
+[3792:wrung her hands] 
+; 
+; Thirty knights 
+[3800:stared at Lancelot] 
+[3801:closed in around Lancelot] 
+[3802:told Lancelot to put down his sword] 
+; 
+; guard 
+[3810:grinned at Lancelot] 
+[3811:looked warily at Lancelot] 
+[3812:polished his sword] 
+; 
+; hawk 
+[3820:tried to fly away] 
+[3821:pecked Lancelot spitefully] 
+[3822:stared at Lancelot] 
+; 
+; brachet 
+[3830:barked eagerly] 
+[3831:whined] 
+[3832:barked] 
+; 
+; Meliot 
+[3990:groaned the name of Hellawes] 
+[3991:fainted for a moment] 
+[3992:murmured about the Chapel Perilous] 
+; 
+;---------- 
+; 
+; Garbage words.. 
+[4000:^N the ^N some ^N and ^N also ^N before ^N wade ^N good 
+^N of ^N there ^N therefore ^N am ^N my ^N your ^N try 
+^N please ^N Sir ^N Queen] 
+; 
+; Book protection code... 
+; 
+;; [4200:A sorceress with a blue book blocked Lancelot. ] 
+;; [4201:page ] 
+;; [4202:, line ] 
+;; [4203:, word ] 
+;; [4204:?%] 
+;; [4205:the sorceress smiled nastily. ] 
+;; [4206:the sorceress faded away. ] 
+;; [4207:she asked the word at ] 
+;; [4208:Lancelot felt his strength fade. ] 
+; 
+;; [4301:^C she]  ; 7/7/2
+;; [4302:^C were ^C of]  ; 4/6/7
+;; [4303:^C recalled]  ; 13/9/8
+;; [4304:^C living ^C these]  ; 5/10/5
+;; [4305:^C of ^C had]  ; 10/3/6
+;; [4306:^C the]  ; 4/4/3
+;; [4307:^C see]  ; 2/5/4
+;; [4308:^C board]  ; 16/6/1
+;; [4309:^C by]  ; 6/5/2
+;; ;; [4310:]  
+;; [4311:^C is]  ; 5/3/8
+;; [4312:^C were ^C this]  ; 10/8/5
+;; [4313:^C between]  ; 14/3/6
+;; [4314:^C not]  ; 2/8/3
+;; [4315:^C speak]  ; 19/7/4
+;; [4316:^C next]  ; 16/2/1
+;; [4317:^C Arthur ^C of]  ; 5/7/2
+;; ;; [4318] 
+;; ;; [4319] 
+;; [4320:^C altar]  ; 15/6/5
+;; [4321:^C Arthur]  ; 18/3/6
+;; [4322:^C to]  ; 19/8/3
+;; [4323:^C please]  ; 6/3/4
+;; [4324:^C within]  ; 7/2/1
+;; [4325:^C had]  ; 14/5/2
+;; [4326:^C teaching]  ; 12/2/7
+;; [4327:^C her]  ; 8/1/8
+;; ;; [4328] 
+;; [4329:^C that]  ; 12/3/6
+;; [4330:^C Arthur]  ; 17/2/3
+;; [4331:^C see]  ; 3/5/4
+;; [4332:^C Merlin]  ; 7/8/1
+;; [4333:^C aloft]  ; 13/3/2
+;; [4334:^C the]  ; 5/4/7
+;; [4335:^C the]  ; 19/5/8
+;; [4336:^C gift]  ; 6/8/5
+;; ;; [4337] 
+;; [4338:^C that]  ; 15/2/3
+;; [4339:^C all]  ; 9/1/4
+;; [4340:^C counsel]  ; 17/4/1
+;; ;; [4341] 
+;; [4342:^C came]  ; 8/6/7
+;; [4343:^C other]  ; 11/9/8
+;; [4344:^C was]  ; 11/6/5
+;; [4345:^C Pendragon ^C time]  ; 1/3/6
+;; [4346:^C Grail]  ; 13/6/3
+;; ;; [4347] 
+;; [4348:^C after]  ; 8/10/1
+;; [4349:^C and]  ; 11/3/2
+;; [4350:^C she ^C distressed]  ; 1/8/7
+;; [4351:^C his]  ; 3/7/8
+;; [4352:^C Nimue]  ; 7/4/5
+;; ;; [4353] 
+;; [4354:^C battles ^C Uther]  ; 1/6/3
+;; [4355:^C adventures ^C was]  ; 12/9/4
+;; [4356:^C after]  ; 8/10/1
+;; [4357:^C birth ^C the]  ; 1/1/2
+;; [4358:^C it]  ; 13/10/7
+;; [4359:^C young]  ; 14/1/8
+;; [4360:^C who ^C but]  ; 12/8/5
+;; [4361:^C with]  ; 18/9/6
+;; [4362:^C dreamed]  ; 18/6/3
+;; [4363:^C at]  ; 18/5/4
+;; [4364:^C slept]  ; 18/6/1
+;; [4365:^C the]  ; 19/3/2
+;; [4366:^C he]  ; 16/2/7
+;; [4367:^C seat]  ; 6/5/8
+;; ;; [4368] 
+;; ;; [4369] 
+;; [4370:^C and]  ; 16/10/3
+;; [4371:^C could]  ; 15/7/4
+;; [4372:^C the]  ; 18/2/1
+;; ;; [4373] 
+;; [4374:^C Lancelot]  ; 9/4/7
+;; [4375:^C wife]  ; 17/9/8
+;; [4376:^C empty]  ; 3/4/5
+;; [4377:^C what]  ; 7/9/6
+;; [4378:^C their]  ; 14/10/3
+;; [4379:^C Uther's]  ; 2/3/4
+;; [4380:^C when]  ; 9/8/1
+;; [4381:^C son]  ; 17/9/2
+;; [4382:^C child]  ; 2/6/7
+;; ;; [4383] 
+;; [4384:^C knelt]  ; 8/8/5
+;; [4385:^C were ^C flee]  ; 1/9/6
+;; [4386:^C return]  ; 12/4/3
+;; [4387:^C ye]  ; 18/9/4
+;; [4388:^C hoods]  ; 19/4/1
+;; [4389:^C Galahad]  ; 16/1/2
+;; [4390:^C that ^C her]  ; 5/8/7
+;; [4391:^C him ^C Uther]  ; 1/7/8
+;; [4392:^C at]  ; 13/6/5
+;; ;; [4393] 
+;; [4394:^C the ^C complete]  ; 10/4/3
+;; [4395:^C sword]  ; 5/1/4
+;; [4396:^C hoods]  ; 19/4/1
+;; [4397:^C Round]  ; 6/9/2
+;; ;; [4398] 
+;; [4399:^C was]  ; 12/1/8
+;; [4400:^C the]  ; 18/4/5 

@@ -1,0 +1,1034 @@
+t the child should be named Galahad; that he 
+would become the best of all knights, surpassing even his father; 
+and that he would be worthy of the Holy Grail. Yet how could it be 
+done, fair though Elaine was, when every man knew that Lancelot 
+kept himself only for love of the Queen Guenever?
+
+Then Dame Brisen, one of the greatest enchantresses that lived at 
+the time, came unto Pelles, and told him that she could work this 
+thing by using her crafts.
+
+Lancelot was given wine, the which had Brisgled with 
+the ^N scent of ^N flowers] ; tempting pavilion. 
+; 
+[736:large and soft, filled with fine ^N down and laid 
+with ^N sheets of satin all delicately embroidered with richly 
+coloured silks. This was a bed made for sweet sleep and sweeter 
+pleasures] ; damosel's bed. 
+; 
+[737:an impassible barrier that stretched from sea to sea. Full 
+high they roared, red as the fires of damnation, not faltering 
+nor flickering, yet the source of those flames could not be 
+seen] ; fire around sand islanen infused with potion 
+to make him blinded with lust, and when he was taken unto Elaine's 
+chamber, he thought that she was Guenever, and lay with her until 
+morning.
+
+Elaine knew well that the child she carried from that night was 
+born to be the noblest knight in the world, and when he was born, 
+she christened him Galahad, and kept him well and nourished him. 
+But Lancelot was shamed by the trickery, and left the castle that 
+same morning to continue his travels.
+
+Some months after, Arthur decreed that a feast be held.
+
+Elaine deemed it right that she should attend the feast and bring 
+the baby Galahad with her. She came with her servant Dame Brisen, 
+and a retinue of twenty knights, and was so richly attired that all 
+of Camelot agreed she was the fairest lady ever seen in that court. 
+All, that is, save Lancelot, for fear of Guenever's fury.
+
+Elaine was heavy of heart that Lancelot would not speak kindly to 
+her, nor look at her, and went unto Brisen for advice. The 
+enchantress ass the world may open this tomb and live"] ; tomb. 
+; 
+[751:a great beam set upright into the ground, and piled all 
+around with ^N branches and ^N brushwood. Atop this unlit 
+^N pyre stood the goodly knight Sir Galahad, lashed to the stake 
+as helpless as a lamb bound for slaughter] ; stake. 
+; 
+[752:wide and turbulent flowing softly to the south. ^N Marsh 
+^N marigolds tumbled down its ^N banks and ^N bullrushes nodded 
+their heavy heads on the nether side] ; river. 
+; 
+; Examine messages for loc 10 ector de maris
+ dc.b ProperMale,3	; 11 agravain
+ dc.b ProperMale,3	; 12 aliduke
+ dc.b ProperMale,3	; 13 brandiles
+ dc.b ProperMale,3	; 14 brian
+ dc.b ProperMale,3	; 15 geheris
+ dc.b ProperMale,3	; 16 gareth
+ dc.b ProperMale,3	; 17 lionel
+ dc.b ProperMale,3	; 18 marhaus
+ dc.b ProperMale,86	; 19 sir breunis
+ dc.b ProperMale,52	; 20 sir garlon
+;; dc.b ProperMale,14	; 21 giant nabon
+ dc.b 0,0		; 22
+ dc.b ProperMale,0	; 22 magic knight
+ dc.b ProperMale,50	; 23 turquin
+ dc.b ProperMale,0	; 24 p*** repeated - also found at 738 *** 
+; 
+[783:a light ^N lattice of pale ^N wood, yet endowed with the 
+power to resist the unworthy. In the ^N archway above were 
+inscribed the words, "Let only he who is without sin pass 
+beneath"] 
+; 
+; Short-Form room Descriptions (1000+N). No full stops at 
+; end please.  These are the brief mode descriptions; they 
+; are prefixed by 'Lancelot was' and, in verbose mode, 
+; messages 1200+N are appended. 
+; 
+; room 1 is used as exit modifier for synthesised rooms. 
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid. 
+; 
+; description order is: 
+; 'Lancelot was' '????++'      '1000++'   '1200++'  '.'  
+;               locn obj        short      long 
+; 
+; 
+[1003:in a ^N bleak ^N wasteland] 
+[1004:at a ^N ford] 
+[1005:on an ^N east-west ^A woodland ^N road] 
+;; [1006:in a ^N pavilion] 
+[1007:in ^N shady ^N woodland] 
+[1008:on a ^N thorny ^N track] 
+[1009:at a ^N fork] 
+[1010:on a ^N track leading east] 
+;; [1011:in ^N Vagon ^N Castle] 
+[1012:on a ^N paved ^N road leading north] 
+[1013:outside a ^N fine ^N church] 
+;; [1014:inside the ^N church] 
+[1015:on a ^N path that wound up the ^N cliff] 
+[1016:on a ^A small ^N hillock] 
+[1017:on a ^N path leading north along a ^N cliff ^N top] 
+[1018:on a ^N path through a ^N pine ^N wood] 
+[1019:at a ^N clearing amongst the ^N pines] 
+[1020:on a ^N path straggling down from a ^N hillock] 
+[1021:on an ^A overgrown ^N path] 
+[1022:in a ^A blackened ^N clearing] 
+[1023:on a ^N pavement] 
+;; [1024:in an ^N antechapel] 
+[1025:in a ^N dark ^N valley] 
+;; [1026:in a ^N castle] 
+;; [1027:in a ^N majestic ^N corridor] 
+;; [1028:in the ^N Grail ^N chamber] 
+[1029:on a ^A rocky ^N path] 
+[1030:on a ^A steep ^N path] 
+[1031:on a ^N path near the top of a ^N cliff] 
+[1032:on a ^N path outside a ^N hermitage] 
+[1033:in Nacien's ^N hermitage] 
+[1034:at the crossing of ^N two ^N roads] 
+[1035:on a ^A stony ^N road] 
+[1036:on a ^N forest ^N ride] 
+[1037:beside a ^N wellold knight set his young charge surely in that seat, and 
+departed, so that the boy was in the centre of the others' looks. 
+Many marvelled that one so young did dare sit in that siege, but 
+Lancelot knew him as his own son, and his heart swelled up with 
+pride. 
+
+The next day, King Arthur took Galahad to a lake near Camelot, 
+where the court had found a sword set into a stone in a lake. This 
+sword was inscribed with lettering, which read that only the best 
+knight in the world could pull the swor,cauldron	; 91 soup
+pillow equ 92
+ dc.b on,PerilousBed	; 92 pillow
+cauldron equ 93
+ dc.b 0,64		; 93 cauldron
+ dc.b 0,39		; 94 winch
+ dc.b SingularSome,106	; 95 dead wood
+ dc.b 0,0		; 96
+ dc.b 0,0		; 97
+ dc.b 0,0		; 98
+ dc.b 0,0		; 99
+ dc.b 0,0               ;100 
+ dc.b 0,0               ;101 
+ dc.b 0,0               ;102 
+ dc.b 0,0		;103 
+ dc.b 0,0               ;104
+ dc.b 0,0               ;105
+ dc.b 0,0               ;106
+ dc.b 0,0               ;107
+ dc.b 0,0               ;108
+ dc.b 0,0               ;109
+; static objects... (110+)
+bath equ 110
+ dc.b 0,17              ;110 bath
+ dc.b 0,113             ;111 beacon
+ dc.b 0,0              ;112 bell
+ dc.b obv,241             ;113 boat
+ dc.b pluralsome,56     ;114 briars
+ dc.b pluralsome,115    ;115 bushes
+ dc.b 0,39               ;116 cage
+ dc.b PushedBy,Carter	;117 cart
+ dc.b on,trapdoor       ;118 chest
+ dc.b 0,5               ;119 crossbow
+fire equ 120
+ dc.b 0,64              ;120 fire
+ dc.b 0,39              ;121 lever
+leak wasteland] 
+[1203: with only a couple of ^N clumps of ^N coarse ^N grass and 
+^N stunted ^N heathers struggling to survive in the ^N hard ^N stony 
+^N ground. All was ^N silent in that ^N barren ^N land, save for the 
+faint ^N sound of ^N distant ^N running ^N water] 
+; 
+;; [1004:at a ford] 
+[1204: across a ^N south-flowing ^N river. Full ^N steep and ^N rocky 
+were the ^N valley ^N sides on either hand. A ^N tumble of ^N elder, 
+^N larch and ^N willow found purchase on the ^N western ^N side, 
+yet opposite was nought but ^N stunted ^N gorse] 
+; 
+;; [1005:on an east-west woodland road] 
+[1205: in the middle of a ^N dense ^N forest. A ^N profusion of 
+^N bright ^N flowers bejewelled the ^N smooth ^N green ^N sward all 
+around. A ^N shaft of ^N sunlight shone down to the ^N middle of 
+the ^N clearing] ; ** CLUE 8 ** 
+; 
+;; [1007:in shady woodland] 
+[1207:, on a ^N winding ^n path that ran north and east below 
+the ^N canopy of ^N leaves. The ^N great ^N beeches rose high 
+on either side, their ^N dense ^N crowns touching and all but 
+shutting out the ^N sky. Sunlight dappled the ^N branch ^N tips and 
+^N stray ^N shafts broke through and danced in the woods beneath] 
+; 
+;; [1008:on a thorny track] 
+[1208: leading south through a ^N dense ^N growth of ^N brier 
+and ^N bramble] 
+; 
+;; [1009:at a fork] 
+[1209: in the road, marked by a ^N great ^N stone ^N cross. A rough 
+and narrow ^N track led southeast through a ^N thorn ^N thicket, 
+while to the northeast lay a ^N wide ^N road
+could not see the Holy Grail because it was so preciously covered. 
+And I will vow here and now, that tomorrow without delay, I will go 
+out in quest of the Holy Grail. I will labour for a year and a day, 
+or longer if needs be, and I shall not rest until I have seen the 
+Grail more openly than it has been seen here."
+
+The other knights were greatly inspired by this and ere Gawain had 
+sat down, each of them had risen and made vows such as he had done. 
+And as they were rejoicing and making great plans for their quest, 
+only Arthur was still and silent. 
+
+For Arthur remembered the prophecies and teaching of the soothsayer 
+Merlin, and he knew that many of his knights would never return, 
+and the Table Round would never be restored.
+
+
+
+The Quest for the Holy Grail 
+---------------------------- 
+
+The quest for the Holy Grail continued for many years, and all the 
+knights who set out to seek the Holy vessel had many marvellous 
+adventures, but none more than Sir Lancelot who was to see the Grail 
+at Castle Carbonek, or Galahad whose destiny was to fulfil the 
+quest.
+
+Lancelot rode hard for several days, until he came unto an old 
+chapel, where he thought to find himself rest. He tried to enter 
+therein, but could only reach the altar, richly arrayed in silk and 
+with six great candles set into a fair silver candlestick. He could 
+find no entry to the chapel itself and at last, tired and dismayed, 
+laid himself to sleep on his shield at a stony cross outside.
+
+He was half wakened some time after when two fair white palfreys 
+rode up to the cross. The palfreys bore a litter which carried a 
+sick knight, that moaned in pain for the Holy Grail to come to heal 
+him.
+
+Lancelot stirred, still half asleep, for it seemed to him that he 
+could not rise into wakefulness, and he espied the candlestick from 
+the altar carry itself, as if floating, unto the cross. It was 
+followed by a silver table, and the shining holy vessel of the 
+Holy Grail, although Lancelot could see none that wa the ^N trees 
+stunted and clad with ^N grimy ^N leaves] 
+; 
+;; [1021:on a path] 
+[1221: within a ^N dismal ^N wood. A ^N haze of ^N smoke blocked out 
+the sun, and the ^N poor ^N light that seeped through was absorbed 
+by the ^N soot and ^N ash that lay thickly all around] 
+; 
+;; [1022:in a clearing] 
+[1222: strewn with ^N fallen ^N trees, their ^N boughs trampled 
+and flattened. The air was heavy with ^N acrid ^N smoke and the 
+^N stench of dragon] 
+; 
+;; [1023:on a pavement] 
+[1223: of ^N oked that up!
+ dc.b 234,22 ; cowardly trick!
+ dc.b 243,23 ; didn't you rescue the hawk?
+ dc.b 245,24 ; not worthy to wear armour anyway
+ dc.b 255,250 ; add on 250 to numbers...
+
+ dc.b 12,25 ; ha ha!
+ dc.b 13,26 ; how cruel
+ dc.b 27,27 ; I think that was a mistake
+ dc.b 30,28 ; I think he saw you
+ dc.b 47,29 ; you didn't really expect treasure?
+ dc.b 0,0
+
+
+;
+;
+;---------
+ even
+NPCINITIAL
+list5
+; first we have a dummy entry for npc 0
+; this is used as some pointers to the *other*
+; things; 
+;; [1029:on a path] 
+[1229: amongst the ^N shrubs that grew at the base of the 
+cliff. The ^N path bended sometimes to left and right, but 
+travelled generally eastwards and upwards] 
+; 
+;; [1030:on a path] 
+[1230: part way up the ^N cliff. Here it narrowed as it wound 
+its way around a ^N rugged ^N outcrop] 
+; 
+;; [1031:on a ^N path] 
+[1231: close to the top. The ^N shrubs far below were mere 
+splashes of ^N green amongst the ^N stark ^N shadows of the 
+^N jagged ^N rocks at the ^N base of ttention flag'
+
+FRIENDLY EQU 0
+dodge equ 0
+damage equ 0
+; now the npc tables themselves...
+defaultmale equ 3410
+defaultfemale equ 3420
+defaultanimal equ 3400
+; npc 0 has dummy entry used as pointers above
+
+; dc.b enemy, dodge, attack, hit points, obedience, patience, gold-sing
+; if bit 7 of the "enemy" byte is set, the npc will be inactive
+; until it meets Lancelot
+inactive equ $80
+disabled equ $40 ; set for npc's in part 2
+
+ dc.b FRIENDLY,dodge,35,100,3,0           ; 1 USER
+ dc.w defaultmboth east and west as far as the eye could see. 
+To the north it was bounded by a ^N high ^N cliff, its ^N rugged 
+^N face crossed by a ^N thin ^N straggling ^N path. Southwards, 
+a patch of ^N dusty ^N greenery told of water and human habitation] 
+; 
+;; [1035:on a stony road] 
+[1235: that tracked through the ^N wasteland. His horse picked 
+a careful passage between the ^N hard ^N flints and ^N troublesome 
+^N pebbles] 
+; 
+;; [1036:on a forest ride] 
+[1236: of smooth ^N sward] 
+; 
+;; [1037:besige lands which he knew 
+not. Many adventures befell him and always he was successful in his 
+endeavors and gained much in knightly experience. He had defeated 
+many knights in fair combat, he had given support to the defenders 
+in a great siege at a castle, and with their comrades Sir Bors and 
+Sir Percival, he had been set adrift to sea in a boat which had 
+beached them in the marches of Scotland, there to do battle with 
+many knights who had challenged them. 
+
+Lancelot made great joy to hear his tales. His own quest had been 
+tortuous and hard, with little success and he took much pride in 
+his son. For a full six months, Lancelot and Galahad voyaged 
+together in that boat, encountering many perilous adventures.
+
+But never did they come near the Holy Grail, that was the true 
+nature of their quest and so Galahad then left the ship to seek the 
+vessel as he was ordained.
+
+The did Sir Lancelot make much sorrow, for he was alone and 
+downhearted, but he prayed daily to God that he might still see 
+some tidings of the Holy Grail. The ship carried him over the sea, 
+he knew not whereto, but trusted it to steer him safely.
+
+After a month at sea, the ship beached at midnight beside a fine 
+castle. A postern opened out towards the sea and a voice bade 
+Lancelot to enter in. Anon, Lancelot armed himself and went to the 
+gate, for here, so he thought, might at last be his adventure.
+
+As he neared the castle, Lancelot saw two lions on guard. He drew
+his sword, but it was smitten from his hand and a voice chided his 
+evil faith, that he put more trust in weapons than in his Maker. 
+
+He entered the castle without further challenge, but inside he could 
+find no door or gate which would open. But behind one door he could 
+hear sweet and reverent singing, and he knew full well that the Holy 
+Grail was in that room. Lancelot fell to his knees and prayed to God 
+to show him at least some part of the Grail.
+
+He looked up from his prayers and was filled with awe to see the 
+chamber door swing ^N stained ^N glass and filled the 
+chamber with the colours of glory] 
+; 
+;; [1056:in an antechapel] 
+[1256:, a small room, lined with ^N panelling of ^N pale ^N oak 
+and furnished with ^N pews of the ^N same ^N warm ^N wood. A single 
+^N candle was set in a ^N holder on one wall and sent a 
+flickering pale light into the room] 
+; 
+;; [1113:on the southwest shore] 
+[1313: at the southern limits of a ^N stony ^N strand] 
+; 
+;; [1114:on the sea] ; east of 1113 
+[1314:, amid the ^N tossing ^N waves and the distant cries of ^N gulls] 
+; 
+;; [1115:on the isle of Turnance] 
+[1315: on a ^N narrow, ^N rocky ^N beach at the ^N foot of a ^N cliff. A 
+^N well-worn ^N footpath lead upwards] 
+; 
+;; [1116:on an ^N isle] ; *** was marked on the sea - changed to match plan *** 
+[1316: near the ^N eastern ^N end of an ^N isle] 
+; 
+;; [1117:on the sea] ; south west 
+[1317: at the edge of a violent storm that rent the sky to 
+south and east. So turbulent were the ^N waves there that all 
+passage was ie, Galahad, since departing from the ship, had many further 
+adventures before he met again with Sir Percival and Sir Bors. The 
+three of them then rode together until they came to the Castle 
+Carbonek. When they entered within, King Pelles was full glad to see 
+them, for he knew that now the quest for the Grail would be achieved.
+
+King Pelles, his son Eliazar and the three Grail knights sat down 
+to dinner, but before they could eat, a voice came them. "There are 
+two among you that are not in the quest for the Holy Grail, and 
+therefore you both should depart."
+
+King Pelles stood up. The moment had come, and with a single look 
+at Galahad he and his son slipped away. Scarce had they gone, when 
+a man and four angels appeared before the knights. The angels set 
+the man down before a table of silver and on the table the Holy 
+Grail appeared. The man, who was dressed as a bishop, set about the 
+ritual of the celebrating of mass. He kissed Galahad and bade 
+Galahad kiss his fellow knights, whice oceans. Even from the masthead 
+there was nought to see but water and sky in all four quarters 
+of the compass] 
+; 
+;; [1126:on the sea] ; east of 1125 
+[1326:, in a place of flat calm. Scarcely a breath of wind 
+stirred the water or moved the heavy clouds that hung above] 
+; 
+;; [1127:on a dark shore] 
+[1327: where ^N endless ^N clouds blocked out the light of the sun. 
+A great wall loomed up at the edge of the shore, and in the 
+midst of the wall was patch of paler grey] 
+; 
+;; [1128:on the northwest shore] ; north of 1123 
+[1328: where the strand ended at ^N great ^N cliffs that reached down 
+to the sea] 
+; 
+;; [1129:on the sea] ; east of 1128 
+[1329:, caught up in swift currents and shallow waters. At times 
+the sea was green with ^N weed that grew on ^N great ^N reefs of 
+^N sand below] 
+; 
+;; [1130:on the shore at sand isle] 
+[1330:. It was a small ^N flat ^N isle, encompassed by the ocean on 
+three sides] 
+; 
+;; [1131:on the sea] ; east of 1130 
+[1331:, in rain that so fills of a bishop came to Galahad 
+and Bors and Percival and he had the Holy Grail with him. They 
+celebrated mass, and the man revealed himself to the knights as 
+Joseph, son of Joseph of Arimathea, and now Galahad knew that his 
+time on earth was near an end.
+
+Galahad kneeled before the table which held the Holy vessel and 
+made his prayers, and as he did so, his soul departed quickly and 
+quietly to Jesus Christ. The watching Percival and Bors perceived a 
+great multitude of angels take it up to heating a 
+lonely track through a vast empty sky. ] 
+; 
+[1404:% %of a sudden, the black knight rode out to greet Lancelot 
+crying, "No worldly knight shall pass me". And straightway he 
+smote Lancelot a mighty blow that spilled him to the ground. ]; ford 
+; 
+;; [1005:in a clearing] 
+[1405:the damosel stepped forward and, raising her slender 
+arms in welcome, invited him inside. The weary knight was 
+entranced by her soft tones and her great beauty, and he 
+looked upon her in wonder as she beckoned towards the 
+pavilion. ] 
+; 
+[1407:% %the knight urged his steed down the track towards Lancelot, 
+tilted his lance in greeting and said, "Hold fast traveller, 
+I will give passage to any knight but he that is called Sir 
+Lancelot. By your leave, please tell me your name". ] ; woodland 
+; 
+;; [1008:on a thorny track] 
+[1408:long, sharp ^N thorns clawed at Lancelot's cloak, 
+slowing his passage, and Lancelot pressed his horse hard to
+one side to allow a ^N woodman to pass with a heavy bundle 
+of se king. 
+Guenever was sentenced to the fire, but Lancelot returned to rescue 
+her and the twain left Logris for Lancelot's lands in France. 
+
+For himself, Arthur desired only peace with Lancelot, for he had 
+loved him well in earlier days. But Arthur listened to the counsel 
+of Gawain, who was his nephew. And Gawain was mad for vengeance, for 
+Lancelot had slain his bretheren in the rescue.
+
+So Arthur took his army to France, leaving Sir Mordred to rule 
+England in his absence, for Sir Mordred was much dust, for it had not 
+rained for many a day. ] ; ** CLUE 8 ** 
+; 
+;; [1012:on a paved road] 
+[1412:^N Sparrows and ^N finches sang gaily in the 
+well-kempt ^N beech ^N hedges on either hand, before 
+flying low into the nearby woodland. ] 
+; 
+[1413:% %the preacher stepped forth, from where he had been 
+standing just outside the chapel porch and said, "Sir 
+Lancelot, prince amongst knights, I greet you. I know of 
+your quest and can help. If you will but pay me with the 
+jewelled crown as a token of service to my Lord, I will 
+help shorten your quest for the Holy Grail". ] ; church to north 
+ 
+[1415:% %a poor fisherman appeared and said, "Good knight, give 
+us succour! Two great dragons are laying waste to this isle 
+and striking terror into my people. They live yonder in 
+clearings at the ends of that path". He pointed swiftly 
+eastwards, then ran off with a terrible wailing. ] ; path up cliff 
+; 
+;; [1016:on a hillock] 
+[1416:an angry roar rumbled from the woods to the south and 
+ated to Salisbury.
+
+The final battle was assigned for Salisbury on the day after Trinity 
+Sunday. The night before, Arthur could not sleep; his heart was 
+heavy with the decline of his kingdom and the enmity of Lancelot. 
+At last he fell to sleeping fitfully, and as he slept he dreamed, 
+and it seemed that the ghost of Gawain appeared to him.
+
+"I have come to warn you of your death," said the Gawain of Arthur's 
+dream. "If ye fight with Mordred as ye both have assigned, doubt not 
+that ye will be 5
+ dc.w 0 ; 16
+ dc.w 0 ; 17
+ dc.w 0 ; 18
+ dc.w BreunisRt-list5 ; 19 Breunis Sans Pite
+ dc.w 0 ; 20
+ dc.w 0 ; 21
+ dc.w 0 ; 22
+ dc.w TurquinRt-list5 ; 23 turquin
+ dc.w 0 ; 24
+ dc.w 0 ; 25
+ dc.w 0 ; 26
+ dc.w 0 ; 27
+ dc.w 0 ; 28
+
+ dc.w MorganRt-List5 ; 29 Queen Morgan Le Fey
+ dc.w 0 ; 30
+ dc.w 0 ; 31
+ dc.w 0 ; 32
+ dc.w MaledisantRt-list5 ; 33 - damosel Maledisant
+ dc.w damoselRt-list5 ; 34 damosel in castle chariot
+ dc.w 0 ; 35
+ dc.w 0 ; 36
+ dc.w 0 ; 37
+ dc.w BeggarRt-List5 ; 38
+ dc.w Ts ancient walls part clad in glossy ivy. ] 
+; 
+;; [1025:in a dark valley] 
+[1425:a deep rumbling came from the east, and it rolled among 
+the silent stones and echoed from the valley walls. ] 
+; 
+;; [1029:on a path] 
+[1429:% %A follower of Nacien the Hermit ran down the path 
+towards Lancelot, shouting, "Turn back from this path, I beg 
+you". Then he vanished as swiftly as he came. ] ; path 
+; 
+;; [1030:on a path] 
+[1430:% %A second disciple appeared and pleaded, "Oh, worthy 
+knight. Why dost t knights, "I have not much 
+time left," he said painfully. "Therefore, take my sword Excalibur 
+and throw it into yonder lake."
+
+Bedevere took the jewelled sword and went down to the lakeside, but 
+he hid it behind a tree. "I have done as you ask," he told Arthur. 
+
+"What saw thou at the lake?" asked Arthur. "Sire," replied Bedevere, 
+"I saw nothing but waves and the wind on the water." 
+
+"Then thou art lying," said Arthur heavily. "Go again, and quickly, 
+for thy tarrying puts my life in jeopard0
+ifollow equ 113
+open equ 114 ;64
+go equ 96 ; go to room noun1 (=setupgo)
+close equ 140 ; 90
+wait equ 92
+examine equ 100
+take equ 105
+give equ 111
+eat equ 123
+find equ 139
+kill equ 93
+waitforperson equ 89
+waituntiltime equ 90
+waitforperiod equ 91
+put equ 108
+returnobject equ 136
+gdfind equ 139
+
+Conditional equ 247
+
+ActorVaryMessage equ 248 ; goes straight on in same turn to next step in rt
+WRtActorVaryMessage equ ActorVaryMessage*256
+
+ActorSingleMessage equ 249 ; this completes acto and keened greatly. 
+Bedevere placed the weakened king into the barge, where the ladies 
+received him with great mourning. 
+
+Arthur struggled to speak. "Bedevere, I must go into the vale of 
+Avalon to be healed of this wound." And Bedevere watched the barge 
+as it sailed away.
+
+
+
+Epilogue 
+-------- 
+
+When Queen Guenever heard that Arthur was slain, and of the 
+bloodshed on Salisbury Field, she stole away quietly to a nunnery at 
+Almesbury, and spent the rest of her days in penance for her sins.
+
+As Gawain had prophesied in Arthur's vision, Lancelot landed at 
+Dover within a month, having heard of Mordred's treachery.
+
+He was too late to save Arthur, but was determined to see his lady 
+Guenever again. For seven days he was on the road and on the eighth 
+he came to a nunnery. As he entered the cloister, a nun dressed all 
+in black and white saw him there and swooned.
+
+They spoke together for a short time, and when Lancelot saw that 
+Guenever had taken to a life of penance, he decided orSingleMessage,2679 ; hi hubby!
+ dc.b racetrackReturn,0,nullobject,nullobject
+;---
+RescuedKnightRt
+; dc.w WActorSingleMessage,2603 ; bowed low and promised further service
+RKRt
+ dc.b go,0,154,nullobject
+ dc.w WActorSingleMessage,2700 ; knelt at altar
+ dc.w WActorSingleMessage,2701 ; prayed
+ dc.b gdfind,0,merlin,nullobject
+ dc.w WActorSingleMessage,2702 ; greeted Merlin
+ dc.w WActorSingleMessage,2703 ; discussed Logris
+ dc.b go,0,176,nullobject
+ dc.w WActorSingleMessage,2704 ; lay down in grassuge tomb] 
+; 
+;; [1038:in the white abbey beside a large tomb] ; don't mark tomb 
+; 
+;; [1039:at the base of a cliff] 
+;
+[1439:two salamanders lazed in the hot sunshine. Then, 
+seeing the knight, they turned and scuttled swiftly up a rough 
+path. ] ; ** CLUE 8 ** 
+; 
+;; [1040:in a glade] 
+[1440:% %in the midst of the glade, Lancelot found Sir Ector 
+beset by a merciless band of knights. Yet cowardly were 
+they, as well as evil, and at the sight of Lancelot they 
+fled forthwith without a fight..                    ¦ †÷    ..                    †     åHO_V1  TXT       óP  •„ÿø                                                                                                                                                                                                                                                                                                                                                                                                                                   
+[1450:only the altar had been dressed with colour and richness. ] 
+; 
+;; [1051:in a pavilion] 
+[1451:the damosel held out a plate of three dainty cakes to 
+Lancelot, saying "Please eat your fill". ] 
+; 
+;; [1052:inside the church] 
+[1452:Lancelot realised that this was a true church, for all 
+that a fiend had waited without to tempt him, and he knelt 
+and prayed. ] 
+; 
+;; [1053:in a castle] 
+[1453:at the sight of Lancelot, the lions leaped up as if to 
+block the way to the east. ] 
+; 
+;; [Goto,BreunisRt-list5
+
+;---
+
+P1KnightRt
+; racetrack started when L+G are together at end
+ dc.w WRtMessage,2681 ; knock at door
+ dc.b waitForPeriod,0,1,nullobject
+ dc.w WRtMessage,2682 ; knock at door 2
+ dc.b waitForPeriod,0,1,nullobject
+ dc.w WRtMessage,2683 ; knock at door 3
+ dc.b waitForPeriod,0,1,nullobject
+ dc.w WRtMessage,2684 ; knock at door 4
+ dc.b waitForPeriod,0,1,nullobject
+ dc.w WRtMessage,2685 ; knock at door 5
+ dc.b waitForPeriod,0,1,nullobject
+ dc.w WRtMessage,2686 ; knock at dond bowed low to Lancelot, 
+and welcomed him that he had joined them. ] 
+; 
+;; [1113:on the southwest shore] 
+[1513:sea birds strutted and squawked upon the cliffs. ] 
+; 
+;; [1114:on the sea] ; east of 1113 
+[1514:cormorants dived into the waters beyond and flew off to 
+the east with their catches. ] 
+; 
+;; [1115:on the isle of Turnance] 
+[1515:steps had been hewn out of the rocks at places up 
+the cliff. ] 
+; 
+;; [1116:on an isle] ; *** changed to match plan *** 
+[1516:splinters of timber on the rocks told of recent landings. ] 
+; 
+;; [1117:on the sea] ; south west 
+[1517:to the west, the sea boiled white on a rocky shore. ] 
+; 
+;; [1118:on the western shore] ; north of 1113 
+[1518:the far ends of the shore were lost in the flying spray. ] 
+; 
+;; [1119:on the sea] ; east of 1118 
+[1519:the wind drove the sea in a line of white breakers upon the 
+far shore. ] 
+; 
+;; [1120:on the sea] ; east of 1119 
+[1520:] 
+; 
+;; [1121:on the sea] ; east of 1120 
+[1521:a white dove flew high abo from meadows
+ dc.b go,0,223,nullobject
+ dc.w WActorSingleMessage,2721 ; deliveries
+ dc.w WActorSingleMessage,2722 ; deliveries
+ dc.b go,0,179,nullobject
+ dc.w WActorSingleMessage,2723 ; deliveries
+ dc.b go,0,176,nullobject ; to meadows
+ dc.w WRtGoto,P1CarterRt-list5
+;---
+MeliagauntNormalRt
+;inactive at start. dc.b waitForPerson,0,user,nullobject
+ dc.w WActorSingleMessage,2649 ; sore afraid
+ dc.b go,0,156,nullobject
+ dc.b waitForPerson,0,user,nullobject
+ dc.w WActorSingleMessage,2655 ; knelt tent is a strange Machiavellian figure, who seems to 
+have taken control of the regime. Now, the government's policies 
+ignore the needs of the bulk of the population and seem to be 
+concentrating on building mysterious factories. 
+
+The new Advisor is invulnerable to conventional attack, but leaves 
+secretly every night, going to a hidden base on the edge of the city. 
+It turns out that she is one of an invading force of robots.
+
+The doctor builds a detector to discover exactly which officials have isle] 
+[1530:a low dune rose to the north. ] 
+; 
+;; [1131:on the sea] ; east of 1130 
+[1531:a gull took rest upon the mast for a time, then rose 
+and beat a weary passage to the southeast. ] 
+; 
+;; [1132:on the sea] ; east of 1131 
+[1532:a dolphin appeared and regarded the boat with a 
+questioning eye before turning its head to the south. ] 
+; 
+; 
+; Message pairs for use in describing containment positions 
+; also used for preposition table 
+; 
+; part printed before container 
+; 
+[1600:Lancelot could see]      ; 0 - you can see (user's name 
+; not printed by PRINTOBJECT)  
+[1601:^P on |^P onto] ; 1 - on 
+[1602:^P underneath|^P below ^P under] ; 2 - under 
+[1603:^P behind]      ; 3 - behind  
+[1604:]               ; 4 - carrying 
+[1605:]               ; 5 - wearing 
+[1606:in|^P at]       ; 6 - blocking the hole  
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8 
+[1609:growing from ]  ; 9 - part of  
+[1610:^P between]     ; tied between is tied a rope 
+;; [1611:]            ;11 - for ring of knucklebone 
+[1612:lying on]       ;12  
+[1613:sitting on]     ;13 
+[1614:fastened to]    ;14 
+;; [1615:tied to]; 15 tied to (the chest) and holding the lid open is..  
+[1616:^P with|^P using] 
+[1617:^P from] 
+;  
+; part printed between container and contained. 
+; 
+[1640:]                ; 0  
+[1641:was]             ; 1 - on 
+[1642:was]             ; 2 - under 
+[1643:was]             ; 3 - behind  
+[1644:was carrying]    ; 4 
+[1645:was wearing]     ; 5 
+[1646:was blocked by]  ; 6 - is blocked by  
+[1647:was]             ; 7 - in 
+[1648:was]             ; 8 
+[1649:was]             ; 9 - part of is  
+[1650:was tied]        ;10 - 
+[1651:]                ;11 - from 
+[1652:]                ;12  
+[1653:]                ;13 
+[1654:was]             ;14 - fastened to 
+;; [1655:and holding the lid open was] ;15 tied to the (chest) is a (strap)  
+; 
+;--- 
+; for plural contents...  
+[1670:]                ; 0 
+[1671:were]            ; 1 - on 
+[1672:were]        
+ dc.b WaitForPeriod,0,2,nullobject
+ dc.w RacetrackMessage,2693 ; burn guen
+ dc.b RacetrackReturn,0,nullobject,nullobject
+;---
+MerlinRt
+; inactive until L appears
+  dc.b Conditional,0,HawkDroppings,nullobject
+   dc.w WRTGoto,MerlinSmellyRt-list5
+ dc.w WActorSingleMessage,2585 ; I suppose you need a room
+ dc.w WrtGoto,MerlinAfterSleepRt-list5
+
+MerlinSmellyRt
+ dc.w WActorSingleMessage,2586 ; what a smell!
+
+MerlinAfterSleepRt
+ dc.b go,0,140,nullobject
+ dc.w WActorSingleMessage,2590
+ dc.b go,0, 
+;--- 
+;  
+; 1700: is base for prepositions to use with 'you' 
+; 
+; 1700+N is part printed before 'you'  
+[1715:tied to] 
+; 
+; 1740+N is part printed between you and object(s)  
+[1741:was on]         ; 1 - on 
+; 1742 is 2 
+; 1743 is 3  
+[1744:owned]          ; 4 - own 
+[1745:was wearing]    ; 5 
+[1746:was riding]     ; 6  
+[1747:was in]         ; 7 
+[1752:was lying on]   ; 12 
+[1753:was sitting on] ; 13  
+[1754:was fastened to];14 
+[1755:was] ; tied to you is 15 
+;  
+; for plural prepo dc.b conditional,0,user,nullobject
+  dc.w WRTGoto,WFLOk-List5 ; Lancelot has arrived
+ dc.b WaitForPeriod,0,0,nullobject
+
+ dc.b conditional,0,user,nullobject
+  dc.w WRTGoto,WFLOk-List5 ; Lancelot has arrived
+ dc.b WaitForPeriod,0,0,nullobject
+
+; L still not here - let's go about our business
+WFLOk
+ dc.b racetrackreturn,0,nullobject,nullobject
+;---
+PeasantsRt
+ dc.b conditional,0,beggar,nullobject
+  dc.w WActorSingleMessage,3900
+
+ dc.w WrtGosub,WaitForLancelot-list5
+ dc.w WActorSingleMessage,
+
+
+
+
+
+
+                      LEVEL 9 NEWS: MAY 1988
+
+* Level 9 are proud to announce what we believe is a world record: 
+  triple-format discs. Spectrum +3 versions of Gnome Ranger and 
+  Time & Magik also run on Amstrad CPCs and PCWs - all with pics. 
+
+  Also, +3 Time and Magik contains all you need to adapt the Amstrad 
+  CPC/PCW disks of our Rainbird games for the +3. Don't wait while 
+  Rainbird decide whether to launch our games on the +3... Buy the  
+  Amstrad CPC/PCW versions and upgrancelot already had] 
+[2014:(Perchance my brains are scattered, but I can make no 
+sense of your yammering and jabbering)] 
+[2015:it lay too far afield] ; examine, take etc. scenery objects 
+[2016:I can not find a verb in that sentence] 
+[2017:it was not there] 
+[2018:there were too many nouns in that sentence. ] 
+[2019:Lancelot could not see that from where he stood] 
+[2020:Lancelot owned nothing at all. ] 
+[2021:it was dark, Lancelot could not see] 
+; 
+[2036:apologies, dear player, but I do notnd finally, Level 9 t-shirts (S,M,L,XL) are just 4 pounds each. 
+öööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö[2056:from the] ; to avoid containers inside themselves. 
+;; [2057:first). ] 
+; 
+; error messages for NPC's 
+[2060:do you talk to yourself again?] 
+[2061:Lancelot could speak to only one person at once] 
+; 
+;; [2065:for] ; as in 'looks for the cask' 
+;; [2066:but can't find] 
+; 
+;; ; message pair when a npc tries to take stuff from others... 
+;; [2074:won't let] 
+;; [2075:take it] 
+; 
+; Standard Adventure output messages 
+; 
+[2100:Welcome to the Quest for the Holy Grail, the final part of 
+
+5. Lancelot costs 19.95 pounds for 16-bit computers, all disc: 
+   Atari ST, Amiga, IBM PC/compatibles, and Macintosh. 
+
+   Lancelot costs 14.95 pounds for 8-bit computers.. Disc: Apple II,  
+   Amstrad CPC/PCW/Spectrum+3, Atari XL/XE, BBC Master/B+/expanded B, 
+   CBM 64. Tape: Amstrad CPC, Atari XL/XE, CBM 64, MSX and Spectrum. 
+
+6. See below. I'm afraid I've mixed together the text for "3" and "6", 
+   but please consider the description of "triple-format discs" as 
+   coming in this category.,0,beggar,nullobject
+  dc.w WActorSingleMessage,3915 ; kicked beggar
+
+ dc.b go,0,151,nullobject ; go see king arthur
+ dc.w WActorSingleMessage,3923 ; bowed to the king
+ dc.b conditional,0,Guenever,nullobject
+  dc.w WActorSingleMessage,3924 ; bowed to guenever
+ dc.w WActorSingleMessage,3925 ; fawned to king
+
+ dc.w WRtGoto,KayRt-list5
+
+
+KayCritiqueRt
+; this racetrack is activated when L sleeps in the mews
+ dc.b gdfind,0,user,nullobject
+  dc.b Conditional,0,HawkDroppings,nullobject
+   dc.w WRtGal adventure puzzles and those 
+concerned with the ethics of chivalry. 
+
+    "Lancelot" uses Level 9's adventure system, which is the most 
+sophisticated around. We match the others as regards parser and 
+pictures, are ahead where where compression is concerned and, for 
+example, Magnetic Scrolls and Infocom have none of the following:   
+
+1) Availability on 16 formats. 
+
+2) Comprehensive free cluesheet with 1000 entries (in my opinion, 
+   this level of help is vital for big adventures). 
+
+3) ere] 
+[2141:nobody wants it] 
+[2142:Lancelot could not wear ] 
+;; [2143:Lancelot could not reach it from here] 
+; 
+[2147:Lancelot was already wearing that] 
+[2148:Lancelot found he did not need to do that] 
+; 
+; Confirmation messages 
+; 
+[2152:worn] 
+[2153:OK] 
+[2155:time passed. ] 
+[2156:said] 
+[2158:Lancelot found he would have to untie it first] 
+; 
+[2160:YES or NO please.%] 
+; 
+;; [2177;Lancelot heard strange noises] 
+;; [2178:Lancelot heard a strange noise] 
+;; [2179:Lancelot heard some strange noises coming from nearby] 
+;; [2180:Lancelot heard an odd noise and, though he listened 
+;; carefully, he could not identify it] 
+;; [2181:Lancelot heard a strange noise] 
+;; 
+;; [2190:(] 
+;; [2191:)] 
+; 
+; Death, scoring, game control etc. 
+; 
+[2200:really restart? ] 
+;; [2201:%press space to play again] 
+[2202:really restore? ] 
+;; [2203:%please answer YES or NO] 
+[2203:% %did Lancelot continue? ] 
+[2204:said, "Thank you"] 
+; 
+[2209:% %thy adventure is over. 
+%Please type R, once down in the prison, Lancelot tells 
+   the first escapees to help free the rest. 
+
+
+TRIPLE-FORMAT DISCS (AS USED FOR LANCELOT)
+------------------------------------------
+
+    The increasing variety of home micros, and the tendency of 
+publishers to bring out many individual versions of each game for 
+them, poses problems for retailers and players alike. 
+
+Basically, it is difficult for any shop to stock all the machine 
+versions of even the more popular games. 
+
+Fortunately, there is a u can wait for someone or a period of time, eg WAIT FOR 
+GALAHAD, WAIT 1 or WAIT FOR 25 MINUTES)] 
+; 
+;; [2217:the time was ] 
+;; 
+;; Residual combat messages.. 
+;; [2230:the body of] ; as in 'the body of a troll' 
+;; [2231:, but] 
+; 
+; Score messages.. 
+[2240:%Lancelot scored ] 
+[2241:% %you seem to have got Lancelot killed.%] 
+[2242: out of 1000] 
+; 
+[2300:Undo and ram save//restore don't work in this version. ] 
+[2301:%please insert save disc and press a key. %] 
+[2302:%please insert gamebeen done.. 
+
+    Traditional dual-format discs, whether flippies or otherwise, 
+have in effect one version of the game on side A and the other on B. 
+This is obviously wasteful of space, as both copies of the game have 
+to fit on one disc. 
+
+    Level 9's triple-format discs are different, with just one copy 
+of the game, filling most of the disc. There is a small amount of 
+machine-specific code to handle things which differ, like disc 
+access and picture display. 
+
+Producing a multi-format dielRt
+ dc.b go,0,10,nullobject
+ dc.b racetrackMessage,0
+  dc.w 2676 ; offered food to lancelot
+ dc.b waitForPeriod,0,2,NullObject ; allow L to take it
+;; dc.b drop,0,food,nullobject
+ dc.b go,0,8,nullobject
+ dc.b WaitForPeriod,0,2,NullObject ; give queen time to leave
+ dc.b WaitForPerson,0,QueenMorgan,Nullobject
+ dc.b racetrackGoto,0
+  dc.w DamoselRt-list5
+
+MorganRT
+ dc.b go,0,8,nullobject
+ dc.b waitForPerson,0,Damosel,Nullobject
+ dc.b RaceTrackMessage,0
+  dc.w 2679 ; another day and night pas found nothing much to write about] 
+;>>mike 24/8/88[2406:Lancelot smelt fairly holy - an interesting mixture of 
+;>>mike 24/8/88sweat, incense and well-oiled armour |^V smell] ; smell player 
+;; [2407:Lancelot said hello] 
+;>>mike 24/8/88[2416:to be, or not to be, that is the question] 
+; 
+; add your messages for special cases here.... 
+[2498:could not possibly attack a woman] 
+;>>mike 24/8/88[2499:do you want to continue with the quest for the Grail? ] 
+;  
+[2500:% %The company of knights went eetains the flavour of the original stories, where 
+people and events come straight from the legends, and which has a 
+mix of traditional adventure puzzles and those concerned with chivalry. 
+
+You play the role of Lancelot: his knighting by Arthur; the valient 
+quests which earned him the title of "Best Knight in the Land"; his 
+doomed affairs with Elaine and Guenever, and his success in the quest 
+for the Holy Grail. 
+
+    "Lancelot" uses Level 9's

@@ -1,0 +1,1278 @@
+ning] 
+[2619:a glowing spear flew from within the opening. It smote 
+Lancelot in the shoulder, wounding him sorely, then it vanished.  
+The panel ground shut again] 
+[2620:a Magical Knight emerged] 
+[2621:an old man emerged, enveloped in adders which seethed  
+constantly around him. In his hand he bore a spear of vengeance] 
+[2622:four gentlewomen and a bishop emerged, then withdrew back  through 
+the panel, which closed again behind them]  
+[2623:at last, a cock crowed in the castle grounds and th(Old Oswestry). 
+
+
+And, in the middle:
+"unDer floOded haZes, faMed grAil secRets maYbe esPy'd. yOu wOn 
+chaLice" (Dozmary Pool).
+öööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööUMBER=NULLNUMBER
+ NOMOREINPUT=TRUE ; have come to end of input line
+; CARRYCAPACITY=NORMALCAPACITY
+ GOSUB @INITOBJECTS
+;>>> gosub randomizetreasure
+ gosub @initnpcs
+ SOMETHINGPROCESSED=TRUE ; force printing of WHAT NEXT ?
+ NORMALDESCRIPTIONMODE=IVERBOSE
+ AutoExits=ivoff ; default to exits off
+ OOPSPOS=1
+; vandalptr=vandalbase
+;
+ gosub @initlocations
+
+; now set up variables as pointers to starts
+; within segmented lists
+ value=list5(0)
+ gosub @valuetimes256
+ x1=list5(1)
+ add value,x1
+ star and guilt did not last, because it was not 
+by his intent that he was unfaithful to Guenever. And Lancelot 
+knew that it was his fate to sire Galahad by Elaine, despite all 
+his efforts] 
+; 
+[2630:the panel was open, but nothing could be seen through the gap, 
+and  an invisible force prevented Lancelot from reaching within] 
+[2631:the old man screamed and disappeared back through the panel] 
+;  
+[2635:could see that the mermaid was very annoyed] 
+[2636:the mermaid laughed and played the harp] ; when they snatch it back 
+[2637:the mermaid dodged easily]  
+[2638:the mermaid played a haunting tune on the harp] 
+; 
+[2640:the giant was fast asleep and snoring betimes]  
+[2641:the giant slept on soundly] 
+[2642:the giant's head hung for an instant in mid-air] 
+[2643:the giant's head fell to the ground without support]  
+[2644:the new pillow caused him discomfort] 
+[2645:dawn broke] 
+[2646:the giant's head was already supported by]  
+[2647:the giant collapsed in a pile of dust as the saintly then InitMeeting1
+
+; object=DamoselMaledisant
+; gosub SetX4ToObjectAttributes
+; x1=followOffset
+; add x1,x4
+; npccurrent(x1)=c1 ; make damosel follow Lancelot
+
+; object=DamoselMaledisant
+; gosub MakeObjectASlave
+
+ actor=user
+ gosub @setuproom
+
+ CurrentRank=2799 ; "Squire"
+ PanelClosed=3 ; close  panel in Perilous Bedroom ; for part 2
+ CurrentPillow=sack ; for part 2
+
+ random x1
+ x2=25
+ gosub @X1ModX2
+ CurrentBook=2610
+ add CurrentBook,x1
+
+;; KnightsNotRescued=9
+
+cif IncludePictures
+[2656:a horn sounded] 
+[2657:Lancelot could once more tell which way was which]  
+[2658:Sir Pedivere thanked Lancelot for destroying Breunis, 
+and offered his services] 
+[2659:Sir Pedivere was the prisoner of Sir Breunis]  
+; 
+[2660:could not get through the briars] 
+[2661:chopped away at the briars]  
+[2662:the briars grew again] 
+[2663:chopped through the main stem. The briars 
+shrivelled magically and disappeared]  
+; 
+; ------ 
+; 
+[2666:Queen Northgales spoke, "Lancelot, which one of us will you 
+choose for your love? We must have an answer before you may leave"] 
+[2667:Queen Eastlands said, "You must choose one of us ere you 
+leave"]  
+[2668:the queens were furious that Lancelot would not choose one 
+of them] 
+[2669:hundreds of guards sallied from the castle and dragged 
+Lancelot away to a cell beneath the castle]  
+[2670:Queen Morgan offered Lancelot a glass of wine, "Drink 
+this," she said imperiously, "Then will you feel better"] 
+; cup->glass  
+[2671:Queen Morgan said, "Haveconfessed and forgiven at Nacien's Hermitage. 
+
+For reaching the Holy Grail, there was a bonus of 100. Finally, any 
+rescue by Merlin was -50. 
+
+
+DESCIPTION OF RATING 
+--------------------
+
+Though Lancelot's rank did not change with his score, he started 
+as a squire, was knighted by Arthur and finally was made a Knight 
+of the Round Table. Also, as is detailed elsewhere, a suffix was 
+added to Lancelot's name for a little time after each embarassing 
+event. ööööööööööööööööööööööööööööööööööööing in 
+merry triumph over their conquest. 
+%Lancelot bowed his head sadly, for he knew that he had been 
+untrue to Guenever]  
+[2675:drank the wine. Its rich fumes filled his head and his 
+heart, for this was a love potion. Under its enchantment, he 
+betrayed Guenever and cried out for Queen Morgan. She smirked in 
+triumph, having won her wager with the other queens that Lancelot 
+would choose her, and arrogantly told Lancelot to leave]  
+[2676:the maiden offered some food to Lancelot] 
+[2677:Que; otherwise, npc's give up (dunno why!)
+ executeProcessed=true 
+ fatalerror=false
+ gosub @PrintActorVerb ;>> goto @done
+ m1=PrepOffset
+ add m1,Prep
+ if hidest=0 then @PrintM1Dot
+ gosub @PrintM1
+ x1=dest ;>>changed for L1
+ gosub @PrintTheObjectX1
+ goto @PrintDot
+;
+;---
+.BOARD ; e.g. boat
+.STANDON
+.STANDIN
+ if actor<>user then standInNotUser ;>> mike 31/8/88
+ gosub @StopFollowing ;>>mike 31/8/88
+
+.standInNotUser
+ if object=p1carter then @setCOmmandFinished
+ if object=p1cart then standok
+ed out for Queen 
+Morgan. She smirked in triumph, having won her wager with the 
+other queens that Lancelot would choose her, and arrogantly 
+told Lancelot to leave] ; eat maiden's food  
+[2682:the maiden refused, saying "Thank you, but I hunger not, 
+though a drink of wine would not go amiss"] 
+; 
+; --------- 
+;  
+[2685:Sir Turquin challenged Lancelot, "Fight and be vanquished, 
+knave"] 
+[2686:Sir Turquin banged on the door to the manor. After a brief 
+pause, it swung open]  
+[2687:knocked on  his freed knights to Arthur, if he wished, and see their 
+reunion. (Obviously, however, it was not essential to duplicate all 
+special properties: the Horn direction was only needed in Part 2 
+for example). 
+
+ 
+                           PART 1 (CAMELOT)
+                           ----------------
+
+OBJECT         WHERE           PURPOSE 
+
+Footstool      Bed (G's room)  "Weapon" used to hit Colgreavaunce.  
+Gloves         in Chest        Worn to hide Lancelot's wound. 
+Hat            in Chest        Worn to make people laugh; v.silly.
+
+ 
+STATIC OBJECT  WHERE           PURPOSE 
+ 
+Bars           Window          Broken, when furious, to reach Gwen. 
+Bed            Boudoir         L slept with G, leaving his blood. 
+Bed            G's Room        Conceales footstool (a "weapon").
+Bed            L's Room        Scenery. 
+Bed            Guest Room      Lying/sleeping here avoided Mews. 
+Bed            Guest Suite     Lying/sleeping here avoided Gwen. 
+Bed of Straw   Mews            Lying/sle
+[2705:grabbed the bell and silently ripped it from its mounting]  
+[2706:there was a loud grating noise from below] 
+[2707:the winch squeaked as it was turned] 
+[2708:the cage disappeared]  
+[2709:the cage appeared] 
+[2710:the cage rose] 
+[2711:the cage descended]  
+[2712:the chains were held by some mechanism out of sight] 
+[2713:released] 
+[2714:a guard looked down the shaft and Lancelot knew that  
+all was lost] 
+[2715:the guard shouted into the guardroom, "To arms, you lazy 
+band of tosspots, we are being attacked!"]  
+[2716:dozens of guards poured forth from the guardroom. 
+They drove the party from the castle, with Lancelot fighting a 
+heroic rearguard action]  
+[2717:, who stretched and arose, then got into the cage] 
+[2718:he was bound fast by chains that looped into the wall and 
+were held tight by some hidden mechanism. It beseemed Lancelot  
+that he might be able to free him without any tools] 
+; 
+; 10 comments heard from guardroom  
+[2719:from within the guardroom, ] 
+[2720:all conversation stopped] 
+[2721:someone said, "I thought I heard something"]  
+[2722:another voice said, "No, it was only the wind"] 
+[2723:"Should not we go and find out"] 
+[2724:"Ah, finish your drink first"]  
+[2725:"I think you should go and look"] 
+[2726:"Who are you trying to order around? I am in charge here"] 
+[2727:"It was only an idea"]  
+[2728:"Since you are so keen, you go and look"] 
+[2729:a guard emerged and saw Lancelot. He turned round and shouted 
+to the others within] ;>>mike 2/7/88  
+; 
+; Invisible Garlon stuff... 
+[2730:Lancelot saw the door open and heard footsteps emerge. 
+But there was nobody to be seen] 
+[2731:someone] ; used in combat messages 
+[2732:flailed around at random, but hit nobody]  
+[2733:Lancelot heard footsteps follow him inside] 
+[2734:with the shutters closed, the turret was completely dark. 
+Lancelot heard foul cursing from nearby as Garlon realized he  
+had lost the advantage of his invisibility] 
+[2735:with Garlon dead, Lancelot had removed fro       Love potion; given to Damosel. 
+Harp          Mermaids         Given to Tristram to win his freedom. 
+Horn          Castle Lyonesse  Heard everywhere; "WAIT FOR TOOT" (?). 
+Hot Coals     in Fire          Carried in Pot to light Sessoine Ships.
+Plate         Damosel (Prison) Excuse for Damosel's visit to prison. 
+Pot           on Fire          Container for Hot Coals (and Soup). 
+Relic/Hand    in Sack          Once he had this, Lancelot beat Nabon. 
+Sack          Nabon's pillow   Held Relic. Hain adoration, "I would be 
+greatly honoured if the most worthy Lancelot would rescue the bird",  
+she simpered] 
+[2745:could not climb the tree while encumbered with his heavy armour, 
+so he shed himself of its weight and left it heaped upon the ground]  
+; before climbing tree 
+[2746:the hawk was held fast by its lunes, which were entangled in 
+the branches] ;>>mike 2/7/88  
+; 
+;; [2747:the bird flapped away with great effort] 
+;  
+[2748:untied the tangled lunes, and tossed the hawk down to the differs from "NEWLOCATION", which is concerned 
+; with walking-about-type-movement, primarily in the way that the action 
+; is reported. MOVEOBJECT validates the movement before carrying it out.
+.MOVEOBJECT
+; Move 'OBJECT' to 'POS', 'HIPOS'
+; Return RESULT=TRUE if move was successful
+ GOSUB ISOBJECTMOVEABLE
+ IF RESULT=FALSE THEN @IMMOVABLE
+; is the contents already contained by the container (or V-V) ?
+ GOSUB @CHECKIFCONTAINED
+;
+ IF HIPOS=0 THEN MONOTACTOR
+; ACTOR to gain this object, check if ilot most  
+treacherously.% 
+ 
+%The lady departed, weeping. And therewithal, Sir Lancelot put his  
+armour upon him as fast as he might, for he feared an attack from 
+the knight's castle that stood nearby] 
+;  
+[2754:Lancelot was without weapons, while Sir Phelot was armed 
+with a flashing broadsword. Lancelot could not approach him to 
+land a single blow]  
+;   
+[2760:yielded. Did Lancelot spare him? ] 
+[2761:said, "None shall pass" and blocked] ; coloured knights blocking people 
+[2762:rode aw a fire-spitting dragon.
+Winch         Upper Prison     Turned to raise/lower cage to prison. 
+
+ 
+PERSON        WHERE            NOTES 
+ 
+Tristram      Tintagel Prison  Given a harp, he played it to escape.
+Galahad       not in this part Sired in Corbin. 
+Bors de Ganis Servage Prison   Rescued Knight. 
+Meliagaunt    Wailing Castle   Rescued Knight. 
+Gawain        Castle Chariot   Rescued Knight. 
+Red Knight    Castle Lyonesse  "Rescued" Knight; aka Sir 
+Meliot        Forest nr Manor  "Rescued" Knight; cured by cloth. 
+Lamorak       Orkney Tower     Rescued Knight. 
+Ector de Maris  Manor          Rescued Knight \ 
+Agravain          "            Rescued Knight | 
+Aliduke           "            Rescued Knight | 
+Brandiles         "            Rescued Knight | 
+Brian             "            Rescued Knight  > Turquin's 9 Prisoners.
+Geheris           "            Rescued Knight | 
+Gareth            "            Rescued Knight | 
+Lionel            "            Rescued Knight | 
+Marhaus         to take things
+ IF HIPOS=0 THEN MONTONPC
+ IF POS<minnpc THEN MONTONPC
+ IF POS>MAXNPC THEN MONTONPC
+; code here is to avoid NPCs having things put on them etc.
+; or the statue / bloodworm / bat being given things
+; no special cases for giving to NPC, so make it carry it
+ IF HIPOS=WORN THEN MONTONPC ; unless it is going to wear it
+ HIPOS=CARRIED
+
+.MONTONPC
+
+ FROM=CURRENTPOS(OBJECT)
+ HIFROM=HICURRENTPOS(OBJECT)
+ CURRENTPOS(OBJECT)=POS
+ HICURRENTPOS(OBJECT)=HIPOS
+;
+; now decribe the move
+;
+; show ACTOR doing something
+; verb is set up
+ if verb=ithrow then monodesc
+ objectsave=object
+ gosub @printACTORactiondot
+ object=objectsave
+
+.monodesc
+ gosub @specialaftermoveobj
+ goto @returnTRUE ; move went just fine!
+
+.MOVEOBJFAIL
+ M1=2131 ;  you're on it
+ gosub @errorm1
+
+.MOPREVENT
+ RESULT=FALSE
+.moveobjret
+;; RETURN
+;---
+.POSITIONSHADOWS
+; Make objects follow the ACTOR around where applicable. e.g. DOORS.
+; and other objects which are in several places at once. 
+.psret
+ RETURNelot most heartily 
+and rode off to Camelot with his maid, there to join Arthur] 
+; 
+[2780:the guard signalled to someone inside the tower]  
+[2781:the portcullis started to descend] 
+[2782:the portcullis was now half shut] 
+[2783:the portcullis clicked shut]  
+[2784:the guard blocked the way to Lancelot and cried, "Ye 
+shall nay pass"] 
+[2785:the guard was standing inside the closed portcullis]  
+[2786:could not fit through the gaps in the portcullis] 
+[2787:lit the beacon, which flared briefly and then died away] 
+[2788:put out the beacon]  
+[2789:heard some people approaching] 
+; 
+[2790:the prison door was bolted from this side]  
+[2791:slid back the bolts] 
+[2792:strained against the chest] 
+[2793:too few people were helping]  
+[2794:the chest slid away from the trapdoor] 
+[2795:the heavy chest was on top of the trapdoor] 
+[2796:the inhabitants regrouped and came forth with pitchforks to  
+lock up Lancelot] 
+[2797:the chest opened just far enough to reveal that it was full of 
+rockel, King Pelles, Fishermen, 
+King Pellam, Breunis' Captive Ladies, Turquin's Guards, Archers, 
+real Red Knight, Brachet, Damosel and Sir Gilbert, Orkney trapdoor etc. 
+just appeared in messages).  
+
+ 
+
+                         PART 3 (GRAIL LANDS)
+                         --------------------
+
+OBJECT         WHERE           PURPOSE 
+
+Chalice        Nacien          Container (see Antechapel). 
+Cup            Turnance Isle   Container (see Antechapel). 
+Horn           in Boat         Container. (user) ;>>L2
+ if x1=p1cart then NLPrintMoveAnyway ;>>L2
+.NLNotPushingCart
+ goto NLEnd1
+; x2=hicurrentpos(actor)
+; if x1<>x2 then NLEND1 ;>>special to Lancelot3/boat
+; x1=currentpos(user) ;>>special to Lancelot3/boat
+; if x1<>boat then NLEND1
+; x2=currentpos(actor)
+; if x1<>x2 then NLEND1 ;>>special to Lancelot3/boat
+.NLPrintMoveAnyway
+ actorsave=actor ;>>special to Lancelot3/boat
+ actor=user ;>>special to Lancelot3/boat
+ gosub @SetUpRoom ;>>special to Lancelot3/boat
+ gosub @PrintRoom ;>>specia844:said, "I suppose I will have to help you out this time"] 
+; 
+; "Pet" messages... (table driven)  
+; some remarks made by Damosel Maledisant on various occurrences... 
+[2850:Ugh, not enough garlic] ; try soup 
+[2851:Very clever]  
+[2852:Try taking some music lessons first] ;play harp 
+[2853:Weakling! Bet you drop it] ; take cauldron 
+[2854:Told you so] ; if he does  
+[2855:Do you not have a key] ; try to open doors etc. without 
+[2856:You are not Jesus Christ, you know] ; walk on water 
+[2857:en NLNoFudge
+ x2=Hicurrentpos(x1)
+ if x2=0 then PVMRet
+ Hicurrentpos(x1)=c0 ; prevent printing it again
+ goto NLVisit
+
+.NLNoFudge
+ x1=VisitTableStart
+ add x1,Room
+ if x1>VisitTableEnd then PVMRet
+ x2=List7(x1)
+ if x2=0 then NoVisitTableMessage
+ list7(x1)=c0 ; prevent printing it again
+.NLVisit
+ x1=1350 ; base for initial visit
+ add x1,x2
+ gosub SpecialVisitMessage
+ message x1
+.NoVisitTableMessage
+.PVMRet
+ return
+;---
+.SpecialVisitMessage
+; about to print message x1
+; zero x1 if you dllenge] 
+[2868:He did not seem a worthy opponent] 
+[2869:You should have seen that coming]  
+[2870:That should have been you, Lancelot] ; someone else Oublietted 
+[2871:You really messed that up] ; flee from castle 
+[2872:That was a cowardly trick] ; defeat garlon  
+[2873:Fancy letting down a lady] ; lady disappointed - no hawk 
+[2874:You are not worthy to wear armour anyway] 
+[2875:Ha ha! Not so great now, are you,  
+Lancelot?] ; bashed over head by xxx knight 
+[2876:How cruel and dishonourable] ; run through xxx knight 
+[2877:That was a mistake]  
+[2878:I think he saw you] ; guard lowers portcullis 
+[2879:What did you expect? Treasure?] ; open chest 
+;  
+; Responses to commands, I think... 
+; 
+[2919:said, "You have trespassed in my forest and you shall  
+die"] ;Sir Breunis 
+[2920:said, "Soon you shall die"] ; Invisible Garlon 
+;  
+[2922:remained full silent, enwrapped in mystery] 
+; a Magical Knight 
+[2923:repeated his challenge] ; Turquin  
+[2924:curled his lip, saying, "Soon will IrbOffset(50)
+
+.NotLongRide
+ if actor<>p1Carter then NotCarter
+ verb=2650 ; "pushed the cart"
+
+.NotCarter
+; verb=istruggle
+; if dir=iclimb then dl1
+ verb=58 ; go
+
+.dl1
+; gosub @isactorflying
+; if result=false then dl2
+; verb=163 ; flew
+;
+;.dl2
+ gosub @printACTORverb ; the npc goes
+.printdirectionanddoor
+ m1=verboffset ; north-1
+ add m1,dir
+ gosub @printM1 ; direction
+ gosub printdoor
+
+ if actor=user then dlMounted
+ if actor<MinMounted then NotMounting
+ if actor>MaxMounted then NotMoed Knight 
+; 
+[2928:said, "Just kiss me"] ; Hellawes  
+; 
+;; [2929:said, "Lancelot, you must choose one of us 
+;; to be your beloved, or you will never leave this forest". ] ; Queen Morgan  
+;; [2930:Queen Northgales said, ""Surely it cannot be that difficult a 
+;; choice," and pouted grotesquely at him] 
+;; [2931:"Really, Lancelot, we are not unattractive. Just promise  
+;; yourself to me and you will be free to go," said Queen Eastlands] 
+;; [2932:Queen Outisles smiled knowingly at Lancelot, "Al
+
+
+
+
+
+
+
+
+Peter Holme                    Page 1 of 1                   21/7/88
+Mandarin 
+Europress, Europa House, 
+Adlington Park, London Rd, 
+Adlington, Macclesfield, 
+Cheshire SK10 5NY. 
+Fax: 0625 879966. 
+
+Dear Peter, 
+
+           Regarding your fax of this morning: 
+
+1) Thanks for the Lancelot manual, which looks to be fine. I hope a 
+   copy is in the post as well. 
+
+2) Time and Magik/Lancelot to USA. 
+
+   We would like to see firm figures on this but, based on what we 
+   hav ; carter  
+[2942:smiled and shook her head] ; Elaine 
+[2943:laughed with a kind of tinkling noise] ; mermaid 
+[2944:seemed surprised, and one of the adders hissed noisily] ; old man  
+[2945:seemed busy with their own affairs] ; residents 
+[2946:refused angrily] ; sentries 
+[2947:refused angrily and closed in around Lancelot] ; thirty knights 
+[2948:refused] ; guard 
+;; [2949:dragon] (?)  
+[2950:squawked loudly] ; hawk 
+[2951:was only a dog, so could not understand Lancelot] ; brachet 
+;  
+;----OPEN
+.opendoor
+ m1=2597 ; door was locked
+ if day>0 then openNotLate
+ if room=172 then @PrintM1Dot ; Arthur's castle
+ if room=227 then @PrintM1Dot ; Logris
+ if room=221 then @PrintM1Dot ; southern gate
+.openNotLate
+.OpenDoorOk
+ DOOROPEN=TRUE
+ if room<>149 then OpenNotFinalScene
+ currentpos(SirColgreavaunce)=room
+ m1=2687 ; opened door & a knight came in
+ goto @ActorM1Dot
+
+.OpenNotFinalScene
+ goto @printACTORactiondot
+
+.OpenNotDoor
+ if object=window then OpenBars
+ if object<>bars then Opereatest 
+peril. How can I thank you for rescuing me?". ] ; Gawain 
+[3007:the Red Knight challenged Lancelot. ]  
+[3008:%Meliot said, "Sir Lancelot, prithee give me succour. 
+My wounds may only be cured by a cloth belonging to the witch 
+that made them". ] 
+[3009:Lamorak said, "Hail Sir Lancelot, I cannot tell you how 
+grateful I am that you have saved me". ] ; Lamorak  
+; 
+; the following knights all start in the same place, so we only 
+; need one greeting to avoid a silly chorus..  
+[3010:Ector said, "Hail Sir Lancelot. We salute you, we who have been 
+held prisoner for so long by the wicked Sir Turquin". ] ; Ector 
+;; Do not bother with messages from fellow prisoners; Agravain,  
+;; Aliduke, Brandiles, Brian, Geheris, Gareth, Lionel and Marhaus. 
+; 
+[3019:Sir Breunis said, "You have trespassed in my forest and you  
+shall die". ] ;Sir Breunis *** same message as 2919 ! *** 
+; 
+;; [3020:] ; invisible someone  
+;; [3022:] ; a Magical Knight 
+; 
+[3023:%Sir Turquin greeted Lancelot with a  M1=2141 ; nobody wants it
+ GOTO @ERRORM1dot
+;---
+.GIVENPC
+; giving NOUN1 to NPC NOUN2
+ IF NOUN2=NULLOBJECT THEN NOBODYWANTSIT
+ OBJECT=NOUN1
+ pos=noun2
+ GOSUB @MOVEOBJECT
+ goto @specialaftergive
+;---
+.THROW
+ if noun2=nullobject then @drop
+; drop the object...
+ pos=room ;** could probably do 'VERB=IDROP, GOTO DROP'
+ hipos=0
+ gosub @moveobject
+ if result=FALSE then @throwret ; not possible
+;; if noun2<minnpc then thrownotnpc
+;; if noun2>maxnpc then thrownotnpc
+;; throw something at someone - so treat as aggressive
+;; object=noun1 here
+;; gosub ithits ; print what happens
+;; blowstrength=1
+;; target=noun2
+;; gosub makeenemies
+;; goto dodamage
+;;
+;;.thrownotnpc
+;; drop through to ithits
+
+
+
+.ithits
+ verb=ihit
+;; object=noun1
+ gosub @printOBJECTverb ; prints 'the object hits'
+ object=noun2
+ gosub @printTHEobject2 ; print out him etc.
+ goto @printdot
+;---
+.CHECKIFLIGHT
+; Return RESULT=TRUE if room is illuminated
+; (either naturally or by objects etc.)
+ goto @ReturnTrue
+
+cannot wish to lose your freedom forever"] 
+;; [3032:Queen Outisles said, "Your freedom is at stake here, 
+;; Lancelot. Choose me for your love and your troubles will be over"]  
+; 
+[3033:the Damosel Maledisant said, "Greetings, you poor excuse 
+for a knight. My lady, Dame Lyonesse, is besieged. She needs help,  
+and I suppose you will have to do. Though, heaven knows, I ought 
+to have been able to find someone better". ] 
+;  
+[3034:the maiden said, "Greetings Lancelot. It grieves me that 
+such a handsome and worthy knight as you has been interred in 
+this foul prison. For my part, I will do my best to bring what  
+comforts I may". ] 
+; 
+;; [3035:] ; damosel  
+;; [3036:] ; Lady 
+;; [3037:Giant Nabon roared, "So, Sir Lancelot, you have come 
+;; to test your strength against me"]  
+; 
+[3040:a ripple of fear ran through the army as Lancelot came into 
+view. ]  
+; 
+;; [3041:the carter was chewing at a straw and gazed unsteadily 
+;; at Lancelot as he approached]  
+;; [3042:Elaine cried, "Good Sir Lancelot, do what you can to 
+;; help me from this cauldron"] 
+;; [3043:the mermaid sang softly to herself and stretched out  
+;; over the rock as the ship sailed by] 
+;; [3044:] ; old man 
+;; [3045:] ; residents  
+;; [3046:the sentries stood solidly in a flank, barring the 
+;; way. One of them raised his lance and said, "We are under 
+;; orders not to let you pass"]  
+; 
+[3047:the knights spake all together, with a grimly voice, and 
+said, "Knight Lancelot, put down your sword straight aw, 
+(with values 1,1,1  3,3,3 and 5,5,5). He has faithfully copied this.  
+
+The resulting new pictures will have to be corrected before we can 
+use them in the game - and the borders will meanwhile look less 
+good than intended on screenshots (because of using dark grey in 
+place of black as the darkest colour). 
+
+
+                        Regards, 
+ 
+
+                                Pete Austin 
+  ööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö of a halberd to think of that] 
+[3104:Lancelot thought that marvellously silly]  
+; 
+; nice try group... 
+[3110:that was a nice try]  
+[3111:a good plan but it achieves naught] 
+[3112:alas that your fine idea should achieve nothing] 
+[3113:an interesting try, but worth no bezants]  
+[3114:keep trying, but not along those lines] 
+; 
+; just scenery group...  
+[3120:Lancelot found nothing of interest] 
+[3121:you do not need to bother with that] 
+[3122:that has no import to the game]  
+[3123:Lancicture
+; displaypicture for room PICTURETODRAW
+; this is either a static room number 2..25
+; or a scenery object number 180..200
+; or 255=forest
+;; ** ADD SPECIAL CODE TO SELECT PICTURE X1 **
+; x1=room
+; gosub @getTerrainType
+; x2=x1 ; store terrain type
+cif IncludePictures
+
+ x1=28 ; arthur+guen
+ x2=currentpos(arthur)
+ if x2<>room then spNotArthur
+ x2=currentpos(guenever)
+ if x2=room then sdrawpicturex1
+
+.spNotArthur
+ x1=2 ; road through forest
+ if room=177 then sdrawpicturex1
+ x1=4 ; cag at all, I fear] 
+;  
+; the following are printed after the object name.. 
+; 
+; try to move static object group..  
+[3150:would not move] 
+[3151:did not budge] 
+[3152:would not shift an inch]  
+[3153:seemed fixed in place] 
+[3154:stayed rooted to the spot] 
+; 
+; no point group..  
+[3160:do not bother, it would do nothing] 
+[3161:that would be a waste of time] 
+[3162:that would not change anything]  
+[3163:that will not do anything of value] 
+[3164:do not bother yourself with that] 
+;  
+; =149 then sdrawpicturex1
+ x1=11 ; Arthur's hall, with round table
+ if room=147 then sdrawpicturex1
+ if room=151 then sdrawpicturex1
+ x1=13 ;Camelot seen from afar
+ if room=166 then sdrawpicturex1
+ x1=14 ; Castle Meliagaunt
+ if room=179 then sdrawpicturex1
+ if room=161 then sdrawpicturex1
+ x1=20 ; garden below G's window
+ if room=178 then sdrawpicturex1
+ x1=22 ; spring and pool
+ if room=176 then sdrawpicturex1
+cend
+ return
+
+.sdrawpicturex1
+; print x1 ;****
+; message space ;******
+ goto @Drill still take a little time, however, as 
+we still have to package the "small machine" version of the system 
+(it's working, I think, but not finalised) and, of course, check the 
+game on a great variety of hardware. 
+
+           We all looked at the Grail sketch yesterday, and called 
+upon the opinion of a couple of unbiased visitors. Briefly... 
+
+We obtained rare unanimity in the opinion that, briefly, the 
+ornamentation was good, but the overall shape of the chalice looked 
+wrong. It's too spindly. 
+
+If its height was squashed to less than half the current proportion, 
+and (additionally) the bowl increased significantly in size relative 
+to the stem, then you'd have more the right effect. 
+
+I would personally go for slightly less complex ornamentation, with 
+perhaps a "frosted" ring around the body of the bowl to emphasise 
+its apparent weight. 
+
+                         Best wishes, 
+
+
+                                     Pete Austin.
+
+
+PS: My thanks to those involved on the "trSir, I understand you not]  
+[3292:cupped a hand behind an ear] 
+[3293:said, "Could you perhaps speak slower, Sire"]  
+[3294:said, "Perhaps I misheard that"] 
+; 
+; again used following a command referring to scenery..  
+[3530:the previous command was not repeatable] 
+[3531:not again!] 
+[3532:it would not help to try that again]  
+[3533:prithee try something different] 
+[3534:you already tried that] 
+;  
+[3560:dead] 
+;  
+[3600:a voice in the distance shouted, "Wow! A stack 
+overflow". ] ;>>mike 28/3/88 - merged from 3 messages 
+[3605:sorry, Lancelot would have to find his own way from here] 
+;  
+; conversational fragments... 
+;; [3610:I am perfect in every way] ; removed by Pete 20/8/88
+;; [3611:you are a knight]  
+;; [3612:cleared its throat and said, "] 
+; 
+[3614:Lancelot yelled "ARRRGGGGGHHHHH"! ]  
+; 
+; 'npc, rude' word for talking people 
+[3620:swore back at Lancelot]  
+[3621:looked scornful] 
+[3622:spat in disgust]  
+[3623:was not impressed] 
+[3624:gave Lancelot a mouthful i result can be at 
+variance with the truth.  
+
+Taking the first paragraph, for example, I can't recall ever using the 
+word "sluggish" about anyone. And Level 9 have no current intention to 
+go back to publishing our own adventures. 
+
+The rest of the article seems to have been loosely based on press 
+releases etc from around the time of PCW (I seem to recall that I was 
+the one who eventually got a "pre-release" sticker put up beside "Time 
+and Magik" to show that it was not quite the finished vero1
+;
+.parsego
+ againverb=isetupgo
+; verb=isetupgo here
+.parsego1
+; return noun1 as room number of destination
+ noun1=nullobject
+;>>removed by L2 treetype=0
+;>>removed by L2 terraintype=0
+.gad1
+ adjective1=nullobject
+ adjective2=nullobject
+ treatasfind=FALSE
+ gosub getpart
+ if gperror=TRUE then baddestination
+ if treatasfind=TRUE then parsefindvalue
+ if verb=0 then gadnotmove
+ if verb<maxdirectionplus1 then gadend ; exit tidily for 'GO EAST'
+.gadnotmove
+ if noun1<>nullobject then gadend ;M to contract; L9 get rights to 
+story and picture) then I will send a revised copy of Claire's 
+statement (which contains a few innaccuracies, e.g as regards Level 
+9's future plans) by return, and you can get something released 
+without more ado. 
+
+          Finally, I would like to categorically state that nothing I 
+have said following our agreement of December could have led to the 
+news item in question. Firstly because I have said no such thing, and 
+secondly because copy deadlines would havack him] 
+;; [3733:called Lancelot a coward] 
+;; [3734:stared at Lancelot]  
+;; 
+;; Phelot (attacks L all the time) 
+;; [3735:made foul gestures at Lancelot]  
+;; [3736:waved his sword menacingly toward Lancelot] 
+;; [3737:hurled abuse at Lancelot] 
+;; [3738:hefted his great shield up higher]  
+;; [3739:tested the edge of his sword] 
+;;  
+;; Black Knight, Green Knight, Red Knight (attack L all the time) 
+;; [3740:glared menacingly at Lancelot] 
+;; [3741:goaded Lancelot]  
+;; [3742:told Lancelot to turn back] 
+;; [3743:warned Lancelot of the dangers ahead] 
+;; [3744:taunted Lancelot]  
+; 
+; Hellawes 
+[3750:warned Lancelot not to touch the cloth]  
+[3751:made mystic signs in the air. Lancelot was surprised at 
+how much she reminded him of Guenever] 
+[3752:offered Lancelot that he should live if he would but 
+forget Guenever and kiss her]  
+[3753:looked strangely attractive] 
+[3754:pouted at Lancelot and invited him to kiss her] 
+;  
+; Queen Morgan, Queen Northgales; Queen Eastlands, Q1987 was another mixed year for adventures.  On the negative side, 
+arcade adventures, role-playing games and MUGs remained disappointing; 
+Rainbird's adventure teams brought out amazingly few titles; the trend 
+towards favouring presentation over content continued; and the year 
+ended with Activision making the baffling decision to withdraw most of 
+Infocom's adventures (and thus giving a great boost to piracy). But, 
+on the plus side, we saw: 16-bit micros finally arrive; adventure text 
+exceeded 2t] 
+[3783:mopped Sir Meliot's brow]  
+[3784:comforted Sir Meliot as best she could] 
+; 
+; Lady (hawk)  
+; must not mention the hawk 
+[3790:looked into the tree] 
+[3791:looked guilty] ;>>mike 2/7/88  
+[3792:wrung her hands] 
+[3793:looked around furtively] 
+[3794:paced up and down]  
+; 
+;;;;; Giant Nabon 
+;;;;; army  
+;;;;; carter 
+;;;;; Elaine 
+;;;;; mermaid  
+;;;;; old man ( in Perilous Bedroom) 
+;;;;; residents 
+;;;;; sentries  
+; 
+; Thirty knights 
+[3800:threatened Lancelot if he did not put down his sword]  
+[3801:closed in around Lancelot a little] 
+[3802:told Lancelot to put down his sword] 
+[3803:tried to block Lancelot's way south] 
+[3804:menaced Lancelot] 
+;  
+; guard 
+[3810:blew a raspberry at Lancelot] 
+[3811:grinned at Lancelot]  
+[3812:waved cheerily to the hidden operator of the portcullis] 
+[3813:spoke with a messenger, who then left] 
+[3814:polished his sword]  
+; 
+;;;;; dragon 
+;  
+; hawk 
+[3820:squawked loudly] 
+[3821:tried to fly away, but got its wings all atangle and  
+flopped back down in a heap] 
+[3822:pecked Lancelot spitefully] 
+[3823:fixed Lancelot with a malicious beady eye]  
+[3824:puffed out its breast feathers until it was as round as a 
+ball] 
+;  
+; brachet 
+[3830:barked eagerly] 
+[3831:seemed to sniff a new scent]  
+[3832:barked loudly] 
+[3833:pounced on its own shadow] 
+[3834:chased its tail]  
+; 
+; Meliot 
+[3990:groaned and murmured Hellawes' name]  
+[3991:lost consciousness for a moment] 
+[3992:moaned] 
+[3993:suddenly cried out in pain]  
+[3994:murmured something about the Chapel Perilous] 
+; 
+;----------  
+; 
+; Garbage words.. 
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also  
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble 
+^N good ^N of ^N cute ^N there] 
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly  
+^N warily ^N quickly ^N rapidly ^N following ^N around] 
+[4002:^N please ^N Sir] 
+;  
+; Book protection code... 
+; 
+;; [4200:%A sorceress blocked Lancelot, flourishing a copy of a blue  
+;; book. ] 
+;; [4201:page ] 
+;; [4202:, line ]  
+;; [4203:, word ] 
+;; [4204:?"%] 
+;; [4205:The sorceress smiled nastily and Lancelot knew he was wrong. ]  
+;; [4206:The sorceress blew a kiss and faded away. ] 
+;; [4207:The sorceress wanted to know the word at ] 
+;; [4208:Wrong again! Lancelot felt the strength drain from his limbs.. ]  
+; 
+;; [4301:^C she] ; 7/7/2
+;; [4302:^C were ^C of] ; 4/6/7
+;; [4303:^C recalled] ; 13/9/8
+;; [4304:^C living ^C these] ; 5/10/5
+;; [4305:^C of ^C had] ; 10/3/6
+;; [4306:^C the] ; 4/4/3
+;; [4307:^C see] ; 2/5/4
+;; [4308:^C board] ; 16/6/1
+;; [4309:^C by] ; 6/5/2
+;; ;; [4310] 
+;; [4311:^C is] ; 5/3/8
+;; [4312:^C were ^C this] ; 10/8/5
+;; [4313:^C between] ; 14/3/6
+;; [4314:^C not] ; 2/8/3
+;; [4315:^C speak] ; 19/7/4
+;; [4316:^C next] ; 16/2/1
+;; [4317:^C Arthur ^C of] ; 5/7/2
+;;  ;; [4318]
+;;  ;; [4319]
+;; [4320:^C altar] ; 15/6/5
+;; [4321:^C Arthur] ; 18/3/6
+;; [4322:^C to] ; 19/8/3
+;; [4323:^C please] ; 6/3/4
+;; [4324:^C within] ; 7/2/1
+;; [4325:^C had] ; 14/5/2
+;; [4326:^C teaching] ; 12/2/7
+;; [4327:^C her] ; 8/1/8
+;;  ;; [4328]
+;; [4329:^C that] ; 12/3/6
+;; [4330:^C Arthur] ; 17/2/3
+;; [4331:^C see] ; 3/5/4
+;; [4332:^C Merlin] ; 7/8/1
+;; [4333:^C aloft] ; 13/3/2
+;; [4334:^C the] ; 5/4/7
+;; [4335:^C the] ; 19/5/8
+;; [4336:^C gift] ; 6/8/5
+;;  ;; [4337]
+;; [4338:^C that] ; 15/2/3
+;; [4339:^C all] ; 9/1/4
+;; [4340:^C counsel] ; 17/4/1
+;;  ;; [4341]
+;; [4342:^C came] ; 8/6/7
+;; [4343:^C othelack of balance in the original report and in the 
+action of specifically telling the Gnome Ranger reviewer to note down 
+bugs. (In fact, he actually found a lot of my design choices instead!) 
+
+Faced with such scrutiny, I think the game emerged with flying colours. 
+However, this incident made me think about the dangerous question of 
+bugs in adventures: let's be honest and start by admitting that all 
+adventures have them (we're trying to simulate worlds in a small 
+computer for heavens sake!). Ne ; 12/8/5
+;; [4361:^C with] ; 18/9/6
+;; [4362:^C dreamed] ; 18/6/3
+;; [4363:^C at] ; 18/5/4
+;; [4364:^C slept] ; 18/6/1
+;; [4365:^C the] ; 19/3/2
+;; [4366:^C he] ; 16/2/7
+;; [4367:^C seat] ; 6/5/8
+;;  ;; [4368]
+;;  ;; [4369]
+;; [4370:^C and] ; 16/10/3
+;; [4371:^C could] ; 15/7/4
+;; [4372:^C the] ; 18/2/1
+;;  ;; [4373]
+;; [4374:^C Lancelot] ; 9/4/7
+;; [4375:^C wife] ; 17/9/8
+;; [4376:^C empty] ; 3/4/5
+;; [4377:^C what] ; 7/9/6
+;; [4378:^C their] ; 14/10/3
+;; [4379:^C Uther's] ; 2/3/4
+;; [4380:^C when] ; 9/8/1
+;; [4381:^C son] ; 17/9/2
+;; [4382:^C child] ; 2/6/7
+;;  ;; [4383]
+;; [4384:^C knelt] ; 8/8/5
+;; [4385:^C were ^C flee] ; 1/9/6
+;; [4386:^C return] ; 12/4/3
+;; [4387:^C ye] ; 18/9/4
+;; [4388:^C hoods] ; 19/4/1
+;; [4389:^C Galahad] ; 16/1/2
+;; [4390:^C that ^C her] ; 5/8/7
+;; [4391:^C him ^C Uther] ; 1/7/8
+;; [4392:^C at] ; 13/6/5
+;;  ;; [4393]
+;; [4394:^C the ^C complete] ; 10/4/3
+;; [4395:^C sword] ; 5/1/4
+;; [4396:^C hoods] ; 19/4/1
+;; [4397:^C Round] ; 6/9/2
+;;  ;;n
+ if noun2<>250 then @actorcantverbnoun1
+.makeSign
+ m1=2517 ; made sign of cross
+ gosub @ActorM1Dot
+
+;; Now special cases for destroying fiends
+; if room<>13 then CrossNotPriest
+; m1=2507 ; "vanished in a puff of evil"
+; object=Priest
+;.CrossObject
+; gosub checkifpresent ; make sure the object is here
+; if result=false then CrossRet
+;
+; if m1=0 then DestroyObject
+; gosub PrintTheObject
+; gosub printm1dot
+; goto DestroyObject
+;
+;.CrossNotPriest
+; if room<>5 then CrossNotPavillion
+;; m1=2508 ; pavillion vanished
+;.DestroyPavillion
+; ;m1=2507
+; object=pavillion
+; gosub CrossObject
+; object=Damosel
+; goto CrossObject
+
+.CrossRet
+ return
+;---
+.eat
+ m1=107 ; Yeuch!
+ goto @printm1dot
+;----
+.GENERALBLOW
+; given TARGET,ACTOR (WHO IS ATTACKING)
+; do an ordinary (non-magical) blow
+;
+ IF ACTOR=TARGET THEN @mighthurtyourself
+; object=target
+; gosub @isobjectalive
+; if result=true then gbalive
+; if target>maxpeople then @silly
+; m1=3509 ; what harm could a dead body do you?
+; g; Lancelot 3 source, copyright (C) 1988 Level 9 Computing.
+; 
+; MESSAGE.TXT, messages/keywords for the game. 
+; 
+; ST Version 
+; 
+; Messages are of the form: [ number : text ] ; comment 
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course. 
+; 
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard). 
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first. 
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+; 
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves comprew strikes its
+; IF TARGET<>USER THEN GBSHIELD
+; M1=3510 ; blow strikes your
+;.GBSHIELD
+; gosub @reportm1
+; GOSUB @DESCOBJX1 ; describe armour etc.
+;.gbnodesc
+; IF X1<>SHIELD THEN GBARMOUR
+; SUB SHIELDSTRENGTH,BLOWSTRENGTH
+; IF SHIELDSTRENGTH=0 THEN GBSHATTER
+; IF SHIELDSTRENGTH>NEGATIVE THEN GBSHATTER
+; X2=SHIELDSTRENGTH
+;.GBEND
+; MESSAGE 3525 ; (which has
+; PRINT X2 ; strength of armour remaining
+; MESSAGE 3526 ; hit points left).
+;.GBRET
+; RETURN
+;
+;.GBSHATTER
+; CURRENTPOS(X1)=C0
+; M1 mouse, with its left button pressed, to 
+  slide the picture up and down);
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and 
+  BACK SPACE; 
+* RAM SAVE/RESTORE and UNDO; 
+* README file. For more information, boot the Amiga with Workbench, 
+  then insert the game disc and double click on its icon and README.TXT 
+
+AMSTRAD CPC DISC FEATURES
+------------------------- 
+* colour pictures (use F8 and F2 to slide the picture up and down). s|^V d ^V down] 
+[61:^V inside|^V in ^V inwards ^V into ^V enter] 
+[62:^V outside|^V out ^V leave] 
+[63:^V cross|^V across ^V over] 
+[64:with the ^V climb|^V scramble ^V ascend ^V mount] 
+; is in 'you struggle with the climb and are in' 
+; 
+; Intransitive verbs.. 
+[70:^V i] 
+[71:^V again|^V a] 
+[72:^V look|^V l ^V display ^V redisplay ^V refresh] 
+[73:^V inventory|^V inv ^V possessions ^V possess ^V list] 
+[74:^V quit ^V restart] 
+[75:^V restore ^V load] 
+[76:^V save] 
+[77:^V ramsave ^V ram] 
+[78:^V ramload] 
+[79:^V score ^V rating ^V status] 
+[80:^V verbose] 
+[81:^V brief] 
+[82:^V wait|^V wa ^V pause ^V z] 
+[83:^V ring|^V play ^V blow ^V toot ^V sound] 
+[84:^V on] 
+[85:^V off|^V jump] ;>>special to gnome3 - 'jump' added 
+[86:^V pictures ^V graphics] 
+[87:^V words ^V text] 
+; 
+[89:^V undo ^V oops ^V whoops] 
+[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch 
+^V smash ^V challenge] 
+; 
+;>>mike 24/8/88[92:^V searched|^V search ^V explore] 
+[93:^V dig] 
+[94:^V sniffed|^V sniff ^V smell] 
+[95:^V knocked|^V knock] 
+[96:got|^V stood ^V stand] ; output e.g. 'L got out', 'L got in' etc. 
+[97:^V lay|^V lie] 
+[98:^V sat|^V sit] 
+; 
+[100:^V said, |^V say ^V whisper ^V call] 
+[101:^V teleported|^V teleport] 
+[102:^V getme] 
+; 
+[103:^V filled|^V fill] ; >>Lancelot 
+[104:^V ran|^V run ^V gallop] 
+[105:^V made|^V make] ;>>Lancelot3 
+[106:^V prayed|^V pray] ;>>Lancelot3 
+[107:Lancelot refused, for his tastes were accustomed to finer 
+things|^V eat ^V bite ^V taste ^V nibble ^V lick] 
+;; [105:^V poured|^v pour ^V empty] ;>>gnome2 
+;; [106:^V watered|^V water] ;>>gnome2 
+[108:^V went|^V go ^V goto ^V find ^V walk ^V gallop] 
+[109:stopped|^V stop ^V abort] 
+[110:^V drank|^V drink] 
+[112:^V exits ^V exit] 
+; 
+; verbs for output.. 
+[130:^V had|^V have ] ; mainly for output 
+[131:^V had|^V has ] ; mainly for output 
+[132:^V was|^V am ] ; mainly for output 
+[133:^V were|^V are ] ; mainly for output 'you were' 
+[134:^V was|^V is ] ; mainly for output 'someone was' 
+[ new features. Copy the previous game to a 
+  new disc, then copy GAME.PRG from the Lancelot disc, replacing 
+  the old version. Hey presto! Variable text size etc; 
+* README file. For more information, start the ST with a disc which 
+  does not auto-boot (e.g a blank disc). Then insert the game disc 
+  and double click on its icon and README.TXT. 
+
+BBC DISC FEATURES
+-----------------
+* colour pictures on BBC Masters, B+ with additional sideways RAM, 
+  or BBC B with both shadow and sideways RAM. 
+ if target>54 then KillGoody
+ if target>18 then targetDeathNotGoodKnight
+.KillGoody
+
+ if target<>user then KillNotUser ;>>mike 29/8/88
+ if CurrentRank<>2800 then targetDeathNotGoodKnight ; "Sir" ;>>mike 29/8/88
+.KillNotUser
+
+ x1=100
+ sub GeneralScoreAddition,x1
+ m1=2496 ; special message
+ gosub @ActorM1Dot
+
+.targetDeathNotGoodKnight
+
+
+;; enemies don't hate it any more...
+ x4=enemyoffset
+.targetdeath1
+ x1=npccurrent(x4)
+ if x1<>target then targetdeath2
+ npccurrent(x4)=c0
+.targetdeath2er ^V offered ^V sell] 
+;; [162:^V asked|^V ask ^V question] ; removed by Pete 20/8/88 
+[163:^V followed|^V follow ^V chase] 
+[164:^V opened|^V open ^V unlock] 
+; 
+[168:^V pushed|^V tug ^V push ^V launch ^V shovel 
+^V paddle] ; >>gnome3 - launch 
+[169:^V fastened|^V fasten ^V tie ^V attach] 
+[170:^V unfastened|^V unfasten ^V untie] 
+; 
+[176:^V inserted|^V insert] 
+; 
+;; [182:^V collect] ; goal-directed 
+; 
+; 186, 187 and 189 have text for debugging only 
+[186:return object] ; 186 is 'return object to initial' (for npcs) 
+;; [188:^V find] ; set up find. 
+[189:gdfind] ; 239 is gdfind 
+; 
+[190:^V closed|^V close ^V shut] 
+;; 
+[192:^V told|^V tell] 
+[194:struggled] ; mainly for output 
+; 195 is 'steal all from' 
+; 
+[197:killed] ; output only 
+; 
+[210:reached] ; output only 
+[211:dragged] ; output only 
+[212:passed] ; output only 
+[213:flew] ; output only 
+[214:walked] ; output only 
+[215:caught] ; output only 
+[216:entered] ; ditto, e.g 'Fred enters from the east'. Do not mark 
+; 
+;; Echo verbs (250-299) which just print the message containing them. 
+;; Intransitive echo verbs up to 284. Please fill in the gaps if you 
+;; can think of additional appropriate words... 
+; 
+[249:if you say so|^V nay ^V no] 
+[250:Lancelot could ^V smell nothing of interest|^V sniffed ^V sniff]
+[251:if you say so|^V yes ^V yay] 
+[252:Lancelot looked scornful and refused|^V leap ^V hop ^V skip 
+^V dance ^V celebrate] 
+[253:As that word was released upon the wind, time stood still, 
+the world was plunged into blackness and all sound ceased. Then, 
+from afar, Lancelot heard Merlin say, "Stop 
