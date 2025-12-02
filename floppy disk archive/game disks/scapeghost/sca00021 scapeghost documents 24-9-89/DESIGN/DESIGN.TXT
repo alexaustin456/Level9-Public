@@ -1,0 +1,730 @@
+
+        SCAPEGHOST DESIGN. COPYRIGHT (C) 4/12/1988 LEVEL 9
+        -------------------------------------------------- 
+
+                        DESIGN OUTLINE 
+
+The game was a three-part graphical adventure, written in the first 
+person past tense (like this design). It could be played as three 
+separate games, but the idea was to play them in sequence to reenact 
+the tale of how I, in the three nights following my death, brought 
+my murders to justice and saved my partner's life.  
+
+I was one of two investigators spying on a gang of drug dealers. 
+Unfortunately things went wrong, the gang realised what was going 
+on, killed me and were holding my colleague, Sarah Pearson, as a 
+hostage. When their plans came to fruition, they planned to kill 
+her and move out.  
+
+I was unjustly blamed for the debacle and, in the way of ghosts, I 
+remained behind to right the wrong of my murder. I had three nights 
+to develop my powers as a ghost, learn the plans of the gang, bring 
+them to justice and free myself. 
+
+
+                         INTRODUCTION
+
+Scapeghost needed no background story; just a 20-page manual, three 
+programs and some freebies. The short intro went much as follows.. 
+
+"I wondered if this was what amnesia was like. I could remember 
+nothing since driving to the meet with the drug gang that I and 
+Sarah had infiltrated. Now I stood to attention on the end of the 
+rank of police, staring forward as a priest read platitudes. 
+
+'I wonder which poor sod got it this time', I thought, and peered 
+sideways at the grave. 
+
+When the mourners filed away, ignoring me, I was still rooted to the 
+spot. The name on the tombstone was my own." 
+
+The three adventure programs each reenacted one night. They were 
+"Ghost", "Haunted House" and "Poltergeist". 
+
+
+NIGHT 1: NOVEMBER GRAVEYARD
+
+New ghosts are invisible, have no special powers, and must remain 
+very near their graves. Part 1 was entirely set in the Victorian 
+graveyard and involved interaction with the other ghosts and a stray 
+dog. I could not, as yet, affect the physical world much. Movement 
+was generally slow and dream-like. 
+
+Initially I could pick up either of the two lightest objects. But 
+picking up any object increased my strength (I was told when this 
+happened) so that I could pick up slightly heavier things - always 
+being capable of lifting the three light objects just heavier than 
+the heaviest carried so far. Only one thing at a time, though. Once 
+I was strong enough to pick up the heaviest light object, I was able 
+to push static objects and rock light examples (e.g the Urn). 
+
+The presence of humans was somewhat distressing, after the initial 
+set-piece scenes, and I felt as if starting to fade when they looked 
+in my direction. I dropped anything carried and could not do 
+anything active to objects when people were around. 
+
+
+The game started beside my grave, with the mourners about to leave. 
+They followed their own racetracks, through the main gate and out of 
+the game. No interaction was possible (the idea being to demonstrate 
+how difficult it is for ghosts to affect the living), but a few 
+clues could be gained by following police, so as to eavesdrop on 
+their conversations. It seemed that sergeant Pearson had not 
+reported in, but there had been an anonymous phone call, suggesting 
+that she was held hostage. 
+
+There was also a journalist, asking stupid questions of the "And 
+what did you think about the play, Mrs Lincoln?" variety. 
+
+A lone mourner, standing in the crowd, did not leave straightway 
+with the others but wandered through the cemetery, pausing to light 
+a cigarette (dropping the empty match book on the ground) and pat 
+the lid of a great stone vault. Then I remembered where I had seen 
+him before: it was with the crooks. Putting two-and-two together, I 
+realised that this must be the hiding place for the drugs and, from 
+the copy of the Mail in his pocket, that tomorrow was the date they 
+would be sold. The "mourner" walked off through the twilight mists. 
+
+Meanwhile, a workman had walked from his shed (leaving the door open 
+so the inside could be inspected) and trudged through the fallen 
+leaves to the deserted grave. Working steadily, he transferred the 
+nearby mound of earth into the grave, then placed the wreaths on top. 
+
+And meanwhile, his supervisor arrived in a small electrical cart and 
+walked around the graveyard gathering up faded flowers to place on a 
+heap behind the shed. (Such people occasionally made comments about 
+thinking themselves watched, looking through me, to emphasise the 
+fact that I was a ghost). 
+
+These two met at the shed and went inside, switching on its naked 
+bulb. This was visible outside and a message at that location 
+mentioned the light shining out whenever the bulb was on. (If I had 
+been inside, the sudden shock of the light would have caused me to 
+black out - reawakening beside my grave). They soon left, first 
+switching on the spotlight that illuminated the "church repair fund" 
+thermometer (which would have affected me similarly), then walking 
+to the electric cart and driving away. There was no opportunity to 
+sneak into the shed. 
+
+Shortly afterwards, twilight gave way to darkness and I found myself 
+back beside my grave. (This onset of darkness triggered the dog and 
+the ghosts to emerge and start their racetracks, and also caused the 
+setting up of a whole new set of "first time in room" messages.) 
+
+The rest of the design for this part relates to night time... 
+
+* My Grave. I returned here abruptly whenever I was overwhelmed by 
+light etc. The wreath on the grave was used to placate Edna Willmot. 
+
+* Danby's Grave. Joe Danby was a former innkeeper, who came over to 
+welcome me to the cemetery and escorted me about - lightening part 1 
+with his "graveyard humour" (as he called it). His headstone had a 
+lavish testimony to how well he was liked in the village. Joe was 
+worried about his fate in the afterlife - as he said, "The Bible 
+doesn't have much good to say about publicans" - but he helped 
+willingly and was the main character in this part. 
+
+* New Graves. Depressing cot-shaped beds of white gravel. 
+
+* Willmot Graves. Despite their joint tombstone reading "reunited", 
+they were anything but. They argued about everything, including the 
+fact that Edna (who died exactly a year after Bert) had her name 
+carved first on the inscription. 
+
+Their daughter still brought two wreaths on the anniversary and 
+Edna's had faded slightly faster and been discarded by the Supervisor 
+before dark. When I replaced this (putting Edna's card in my wreath 
+and getting the dog to carry it across), they helped grudgingly. 
+Before this, Bert would not move lest Edna stole his wreath, and Edna 
+would not help until Bert returned the wreath that she thought he had 
+hidden to spite her. (She would have refused to believe the faded 
+wreath was her own, by the way.) 
+
+* Copper Beech. I examined the jumbled stonework beneath and it 
+turned out to be (i.e was replaced by) a pile of broken carvings 
+and a plinth. After nightfall, a statue of a man, lying on his back, 
+was seen on examining the plinth. Hitting etc the statue revealed it 
+as the ghost of Alex Pym, who chanted some gibberish about nine 
+overthrowing the church and was willing to help. If left without 
+commands, though, he tended to return to his plinth and resume the 
+appearance of a statue. 
+
+* Sundial. When pushed repeatedly by at least two people, it rocked 
+more and more and eventually fell over - breaking and allowing the 
+gnomon to be taken to Edith to satisfy the "end of time" puzzle. 
+
+* Ridge Grave. David Ridge leaned against his splendid marble 
+sarcophagus and arrogantly refused to help any newcomer. He showed 
+off his poltergeist powers by casually rocking a nearby urn and 
+would only help when I had trained my powers enough to do likewise 
+(by moving steadily heavier objects). 
+
+* Shed. At the start, I could walk at will into the shed, but then 
+the workman returned and first switched on its light bulb (banishing 
+any ghosts inside) and then locked the door on leaving. 
+
+To enter afterwards, I needed the help of others: ghosts to open the 
+lock (three pushed back the levers while one turned the lock barrel) 
+and the dog to push open the shed door. 
+
+The dog wandered about, coughing horribly, for on examination a tiny 
+chicken bone could be seen lodged in its throat. It was scared of 
+ghosts and snarled at me, fur bristling, but when I kneeled down and 
+spoke softly (or similar; for a few turns?) it seemed to calm down. 
+(It did not like being patted by a ghost, though.) When I could get 
+close enough to it, I grabbed the bone and it came free - the dog 
+was off in a panic, but it returned a little afterwards and was 
+fairly cooperative. 
+
+Thereafter, the dog followed me about and seemed interested in 
+whatever I was keen on. It could not follow orders, not being able 
+to hear me, but would follow my example. If I made as if to push 
+something, it would do likewise, and if I tried to pick something up 
+a couple of times (failing because it was too heavy) it would get 
+the idea and carry it. Only one thing at a time. Thus the dog could 
+carry the wreath for Edna. 
+
+The dog was the only one strong enough to pull the rope handle which 
+opened the shed door (once unlocked). Once inside, it immediately 
+grabbed the carrier bag containing the biscuits etc kept by the 
+workman for his tea and was off, never to return. (If it hadn't 
+carried the wreath to Edna by this point, I would have felt very 
+uneasy - with the sense of something left undone).
+
+Opening the door rang a bell attached to this. I took it for Violet.  
+
+Inside was the switch for the spotlight. It took two ghosts to push 
+hard enough to move the switch - turning the spotlight on/off. Also 
+there was a pull cord to switch the bulb on/off. 
+
+* Colonel's grave. The colonel followed a group of "vandals" about, 
+muttering about the youth of today as they joked and shared a 
+bottle of vodka. He was glad to see a policeman and promised to 
+help once these yobbos had been chased off. 
+
+The vandals wandering about the west of the cemetery barely noticed 
+the spotlight going off (except to joke about a dead bulb - "this 
+is the right place for it"), but they interpreted the shed light 
+going on as meaning the priest was prowling about and left rapidly 
+through a gap in the hedge behind the elder bushes. 
+
+I found it difficult to remain near the vandals, by the way, as 
+whenever they looked directly at (or through) me, I started to fade. 
+
+* Pruned Branches. Examine the Heap of Branches to find the Faded 
+Wreath which in turn contained Edna's card. 
+
+* Violet's Grave. Violet Conway had gone blind, as she aged before 
+death, and now did not feel easy wandering about. In her prattle, 
+she mentioned finding her way by sound, so I attached a bell from 
+the shed to a nearby bush. Then she would help. 
+
+* Edith's Grave. Edith Dean was an unhappy ghost who felt that she 
+was cursed to remain beside her grave until the end of time. I could 
+achieve this, so that she would help, in one of several ways: 
+- write "time" in the gravel of her grave and then erase it. 
+- if two ghosts cooperated to push the sundial, it rocked more and 
+  more and eventually fell and broke. The gnomon was taken to her. 
+- drop the watch in the vase on her grave. 
+- search twice beside the elder bushes to find a copy of Time 
+  magazine. When taken to her, she lit and destroyed it. 
+
+* Path+Vault. Joe Danby revealed the weakness of the wall behind the 
+giant thermometer, "There's no point in collecting money; the first 
+storm of winter will have this lot down. I can see the cracks deep 
+in the stone". 
+
+If all nine ghosts pushed the thermometer simultaneously (or nearly 
+so?) the wall around it collapsed, trapping the drugs hoard in the 
+vault. 
+
+When several ghosts all pushed in the same turn, by the way, 
+messages were output to describe an increasing tempest. If we all 
+pushed together, the winds were irresistably strong, and it was this 
+that toppled the wall and ended this part of the game. 
+
+* Lit areas. The three southernmost locations were inaccessible 
+after dark because of the effect of street lamps. The other areas 
+south of my grave were accessible, but when the spotlight was on 
+it weakened the ghosts so that they could do nothing except float 
+about and complain. 
+
+
+
+NIGHT 2: HAUNTED HOUSE
+
+By the next night, my powers had grown and I could roam abroad, 
+reach the criminals' house and walk through doors (not yet walls). 
+
+The gang had moved out hurridly, though the house was not empty, 
+but guarded by a homicidal ghost. I found enough evidence to 
+convict them, and also the location where they had moved, and 
+arranged for everything to get to the police. 
+
+I 'phoned their new address for a final check, and listened as the 
+telephone was answered. "Hello Sarah", I said without surprise. 
+Up to now, no living being had been able to hear me, so imagine my 
+shock when she slammed the receiver down, "But you're dead!" 
+
+* Old Village Green. Cars occasionally crossed the Old Village 
+Green, lighting it and the adjacent. On venturing onto the South 
+Green, return south unless it is quiet and then try again (this 
+should be coded in such a way that a car never appears instantly). 
+
+* Astral Images. Some first-time messages in the house hinted at 
+the shadows of previous events, as did some of Joe's comments 
+about me summoning the echos of past violence. If I concentrated 
+these became clear, though there were simply "too many ghosts" 
+in graveyard locations. 
+
+There was a list of 10 message numbers for each room, representing 
+the events for the time when I had been captured. There was a 
+counter for time, started when I concentrated and stopped if I 
+stopped concentrating, did anything except moving or waiting, or 
+when the tenth message was reached. Concentrating again picked up 
+from the current time, or the beginning if the end had been 
+reached. Zero entries were reported by "time passed" and the next 
+non-zero message. The end was represented by "the images faded". 
+
+The events corresponded to my capture, the death of one of the 
+gang and their flight, as seen and/or heard from the various rooms 
+of the house. Highlights are: 
+= I listen through door to crooks in next room, then sneak outside, 
+  meanwhile everyone else plays cards and talks in the kitchen; 
+= I bury ID card and return inside, meanwhile Susan betrays me, 
+  though this is not obvious yet; 
+= I listen through door again and dial police from hall, meanwhile 
+  one crook gets up and heads to my room with gun; 
+= I wait for answer - crook enters with gun, he makes me back away, 
+  grabs 'phone, listens and replaces it; crook points gun at me and 
+  shouts a question about whether I had told anything to the police. 
+= we struggle and gun goes off, killing crook; 
+= crooks surround me before I can escape, body taken upstairs ; 
+= body taken to loft, other crooks spread out through downstairs; 
+= body hidden in tank and crooks return to landing, other crooks 
+  tidy downstairs and eg burn papers in fireplace; 
+= all crooks return to hall;  
+= everybody leaves house, carrying me.  
+
+Watching all this reveals the burning of paper in the fireplace 
+(the note with the gambling debts lodges in the chimney), and the 
+position of my ID card in the garden (it can't be found without 
+this knowledge). There is a standard message for examining things 
+in the vision - basically, can't see more details. 
+
+* Lounge. Echos showed the burning of several papers in the grate, 
+and it seemed that a record of the gang's gambling score was 
+carried up the chimney. 
+
+Reaching through the wall, I could feel the unburnt paper, but the 
+chimney breast stuck out a long way into the room and I could not 
+push it far enough for it to drop off the back of the ledge. The 
+adjacent wall was thin, however, so I told someghost to reach 
+through it and wait - then I went outside, saw the ghostly arm and 
+knew where to reach through the wall to find the paper. I pulled 
+it and it fell down into the lounge. 
+
+There were two Johns in the gang, so they were shown by Christian 
+name and initial of surname. One was uncommon (Q), and useful to 
+the police as it corresponded to the owner of the new hideout.  
+
+Creating a draught up the chimney was a good idea and nearly 
+worked, but just blew the paper to the back of its shelf. 
+
+* Garden. On entering, I had a feeling that something might be 
+hidden here, but I couldn't find it until after seeing the echo of 
+its hiding. After this, I had only to search. 
+
+At the bottom of the garden was a ditch, carrying only a trickle 
+of water but I was unable to cross flowing water. Likewise, I could 
+not reach a hand-drawn map (mentioning that the hideout was a 
+farm) hanging from a twig in the middle of the trickle until I 
+used temperature control to freeze the water. 
+
+Creating a draught would only have blown the map away. 
+
+* Hall. The upstairs was haunted by an extremely vicious ghost; 
+a gang member killed in my attempt to escape. On going upstairs, 
+he did his best to strangle the life out of me (I felt myself 
+fading) and would have succeeded if Joe had not arrived to drag 
+me free. (If someghost else was sent upstairs first, the ghost 
+banished them for the rest of this night.)  
+
+The stairs had a switch and a bulb at the top and bottom. When 
+the light was switched on, the vicious ghost was banished: 
+= But had I done this, the lower light would have got me and, by 
+  the time I recovered, so had he. 
+= Asking Joe to do it banished him (score penalty). 
+= Best was to first remove the downstairs lightbulb. 
+
+Unfortunately, while the upstairs light was on, some light shone 
+down into the hall and sapped my strength sufficiently that I 
+couldn't move the switch. So, to turn the light off, I removed 
+the kitchen bulb and either wrapped it in foil and replaced it, 
+or just pushed foil into the socket. This blew the fuse when the 
+kitchen light was turned on. 
+
+Lightbulbs broke and vanished if dropped (even if automatically). 
+
+A telephone directory rested beside the telephone in the alcove 
+below the stairs. I couldn't read it, because the paper looked 
+translucent to me and the words were kind of jumbled together. 
+However, the bookmark was actually an envelope whose postmark 
+matched the town on the sales ticket. If two ghosts pulled at 
+once, it came free and made another piece of evidence. 
+
+The telephone did not work because its wire was broken, except for 
+a mysterious call which I made at the end of this part - when my 
+ghostly powers had grown and I seemed able to use it anyway. 
+This was just a message. 
+
+* Kitchen. An unstoppered bottle of whisky on the windowsill was 
+evidence of the gang's rapid departure. I pushed this over to 
+spill its contents and charged the vapour, causing a spark which 
+ignited it. The resulting blaze was short lived, until I caused 
+a draught to blow them onto the curtains. The resulting blaze 
+alerted the fire brigade. The firemen then had the oportunity to 
+see any evidence in view, though they had difficulty seeing in 
+the smoke and ignored anything but the body. 
+
+I therefore put the evidence beside the body or preferably in 
+his jeans' pocket. 
+
+* Attic. The focus for the vicious ghost is the dead body of a 
+gang member, hidden in the cold water tank. (The water supply was 
+turned off). Examining the tank was not enough as the lid was on 
+(there was just a gap in one corner); I had to go into it to see 
+the gruesome sight - pushing the lid in my escape. 
+
+When firemen or police arrived, they would not notice any of the 
+other evidence that I might have left for them - kicking papers 
+to one side - because the search for the gang was leaving them 
+so short staffed. But but they could hardly miss a body. So I 
+had to get this somewhere visible for them to find. 
+
+There was an extension lead in the attic, with a plug on one end 
+and a socket on the other. These two ends are distinct, linked, 
+objects (when one is moved within a location, or to the location 
+containing the other, the other does not move - otherwise it 
+follows to where the moving end was). 
+
+Attach one end to the body (the text describes this as being done 
+by freezing) and jam the other in the door of the Grandfather 
+Clock on the landing below. Then push the clock and it tows 
+everything to the foot of the stairs. 
+
+* Bathroom. Examining the mirror reveals that ghosts don't have 
+reflections. I reached through it to find a hiding place beyond, 
+and broke the mirror by hitting it with (or when carrying) any 
+hard object. In the hollow beyond was an empty briefcase, 
+contaminated with drugs and with a price ticket from a store in 
+the town where the gang had now gone. 
+
+* Evidence. The body was sufficient to detain the firemen and get 
+the police. The function of the individual pieces was as follows.. 
+= Identity card: linked the body with me, and hence the gang; 
+= Envelope: postmark shows a town; 
+= Briefcase: price ticket shows same town, confirming that the 
+  police should switch their search there; 
+= Map: mentions a farm; 
+= Paper has the surname initials of two people, one of whom was 
+  the owner of the farm. 
+Joe gave hints and comments as I assembled evidence - so that the 
+risk of calling in the Authorities early was reduced. 
+
+
+
+NIGHT 3: POLTERGEIST
+
+I emerged to find the rubble was cleared and a priest was being 
+forced to exorcise my grave. I kept clear and then hitched a lift 
+with John B and the Weasel, who grabbed the drugs and returned to 
+their farm hideout. All the criminals were there, both the drugs 
+importers and buyers, and most of them stayed downstairs in the 
+farm. They traded goods and money and then played cards and drank, 
+until dawn when they could join the rush-hour traffic. I sabotaged 
+the cars, distracted the lookout so he did not notice the police 
+closing in, freed Sarah and stole the drugs with her help. Then, 
+my work done, I faded away at dawn. 
+
+The drugs importers were.. 
+= John B: heavy bouncer, talks like a boxer. 
+  He accompanied Weasel to collect the drugs, then was banished 
+  upstairs to watch out for any sign of the police. 
+= John Q: leader, east-end gangster, paying off the others.  
+  He waited for the drugs, shared out the money and waited for 
+  dawn, playing cards. 
+= Weasel: diminuitive middle-aged ex-convict engineer. 
+  He collected the drugs, locked up Sarah and played cards, with 
+  occasional visits to check on her. 
+= Jude: sloaney young smuggler. 
+  She followed John Q, smiling when Sarah was imprisoned. 
+ 
+The second group were the buyers, who were generally critical of 
+the way things had gone wrong.. 
+= Professor: upper class spiv. 
+  He waited for drugs and accepted them in return for the money. 
+= Severian: snake in a suit. 
+  He guarded the drugs and followed the professor, looking mean.  
+
+And on nobody's side.. 
+= Sarah: streetwise natural actress (now basically a hostage). 
+  She waited for drugs, then protested as she was imprisoned, 
+  followed orders when rescued and helped hide the evidence. Her 
+  aura warned of her attempts to make off with the drugs. 
+
+* Graveyard. A priest was leaning over my grave, carrying out the 
+ceremony of exorcism as two gang members, John B and the Weasel, 
+looked on. I would have been sent to my rest had I not moved 
+quickly out of the way. The gang had just finished clearing the 
+rubble (disguised as workmen), but the Weasel was worried about 
+the possibility that I was around and so had grabbed the priest 
+and made him exorcise my grave. (Subsequently, if I was banished 
+by light, for example, I could not return again). 
+
+I waited nearby until they had finished and released the priest, 
+who ran inside the Church. They then grabbed the drugs from the 
+rubble, jumped into their van and left. (If I was left behind, 
+I would have been left behind and unable to do anything until 
+the game ended with dawn - soon afterwards.) I was now able to 
+face a little light and got in the back of the van, sheltered a 
+bit on the way by its shadow. Thus I reached the gang's hideout. 
+
+* Introduction to Hideout. This was a primitive smallholding, 
+where the van was hidden in a barn while its drivers went inside. 
+The drugs were inspected, money changed hands and if I did nothing 
+the gang eventually left - the Professor and Severian to distribute 
+the drugs and the other to lie low. (They did not know that my 
+efforts had put the police close on their track, but realised 
+correctly that they had made enough mistakes to be tracked down 
+eventually). 
+
+Sarah got a shock - nobody saw any reason to keep to their 
+agreement to cut her in on the deal. She became a hostage again 
+and was killed when the gang left, if I did nothing. So when I 
+manifested myself visibly, she was keen to follow orders. 
+
+* Behind House. Initially, the house was too brightly lit for me 
+to enter. So I touched the brass insecticide sprayer across the 
+insulators here to shortcircuit the power. John Q emerged to 
+start his emergency generator (in an echo location outhouse) and 
+restore power, but it was at reduced voltage and the lighting 
+was less bright. 
+
+* Barn. In the front of the Barn was a pile of hay, which I 
+searched to find a brass insecticide sprayer (to shortcircuit 
+the house power). 
+
+The Van was parked in the front of the Barn and a stolen Taxi was 
+parked at the back. I could get into either vehicle, and it was 
+possible to deflate their tyres to make them more difficult to 
+drive. 
+
+However, I discovered painfully that I could not enter the back 
+of the Barn. Every attempt failed, and repeated failures weakened 
+me greatly. As I came to realise, that was the site of my death. 
+Thus, I never saw the parked Taxi, but learned about it from the 
+conversation of the Professor, and I had to get Sarah to deflate 
+its tyres. 
+
+* Hall. This contained a walk-in cupboard suitable for hiding 
+Sarah while she waited for people to be distracted away from the 
+Kitchen. 
+
+In there was a circuit breaker marked CEGB. Unless this was 
+turned off, the lights came back on full power after a short 
+while. 
+
+* Kitchen. John B and The Weasel joined those sitting around the 
+table. Sarah was not a hostage as I had supposed, but sitting 
+free with the rest. At first there was celebration, a trading of 
+drugs for money and the division of the money. Then John Q nodded 
+to the Weasel, who grabbed Sarah. John Q thanked her for her help 
+in betraying me, but said that he could never trust a turncoat. 
+The police thought her a hostage, so this she would become. 
+
+The Weasel then locked Sarah in the cellar and made occasional 
+visits to check on her. And John B was sent to the attic to keep 
+a watch for the police. The others sat around playing cards and 
+passing round a whisky bottle, though the Professor refused any 
+drink. They waited for dawn when they could leave under cover of 
+the rush-hour traffic. And as the night wore on, Severian grew 
+increasingly rude about the way the mistakes of the importers. 
+
+I bent the van key in John Q's pocket (he interpreted this as an 
+advance from Jude) to stop this being driven later. 
+
+Severian placed the drugs briefcese behind his chair. It was too 
+heavy for me to move, and Sarah would have been captured and 
+struck unconscious had she been seen taking it, but John B's 
+cries attracted everyone away and gave Sarah the opportunity to 
+escape with the evidence. 
+
+There was a small chance that Serverian thought he saw me and 
+stared in my direction. If I did not leave immediately, he 
+shouted to the others and I had to leave immediately or be 
+doomed by their combined stares. This was one way of triggering 
+them to leave. 
+
+* Attic bedroom. The window overlooked the road from the nearby 
+village towards the hideout, and John B was banished there as 
+look-out. He took a flask of whisky along and so was not too 
+efficient, but the police were closing in and he was bound to 
+see something unless distracted. 
+
+The program made it likely that I was there whenever there was 
+disturbance in the village - and there was always some slight 
+movement to warn me before anything became obvious to John's 
+befuddled gaze. Failure to distract him meant that he noticed 
+the police approaching and rushed downstairs to warn the gang, 
+who left in a hurry (see later).
+
+Distractions only worked once (trying one again only distracted 
+the John B for one turn, while he came up with some logical 
+excuse for it, so another could be tried) and were.. 
+= loose stair which squeaked when pressed; 
+= lamp bulb to unscrew and drop (broken glass was left); 
+= curtains to blow about; 
+= static charge on Weasel (he wandered about and cursed); 
+= cool the room; 
+
+John B got increasingly upset at these poltergeist-type events 
+(even wandering briefly downstairs to complain, to general mirth, 
+that the attic was haunted). 
+
+When I manifested myself and became visible, the effect depended 
+on John B's state. If he was calm, he simply shone his torch at me, 
+and stared at me, with the result that I faded away. Subsequent 
+poltergeist events were treated as a joke. If scared, he ran 
+downstairs and revealed what was happening; the Weasel backed him 
+up and the gang left. But if he was already terrified, he screamed 
+and fired off the full magazine of his gun through me (picture); 
+the gang treated this as an attack and rushed to the attic, doors 
+and windows - leaving the drugs temporarily unguarded. 
+
+If the police actually closed in, by the way, they did not appear 
+in the game except as reports of loud-hailer shouting from an 
+unseen helecopter. If the drugs were to hand, John B burnt them. 
+And if Sarah was about, the gang used her as a hostage and tried 
+to stage a break-out. She was killed. So I had to act just before 
+the police did. 
+
+* Cellar. After a brief while, Sarah was locked up here by Jude 
+and the Weasel. The latter called in occasionally to check on her. 
+
+Sarah was gagged and tied. I manifested myself and removed the 
+gag, once she had calmed down, and cut her bonds with the broken 
+glass. Then Sarah moved the chair to beside the door and stood on 
+it to place a hammer on the shelf over the door, before returning 
+to her previous position. (Note that I couldn't carry the key 
+through the door when it was closed, so I brought them in on an 
+earlier visit by the Weasel). 
+
+The door was bolted from the outside, too firmly for me to open.  
+The Weasel looked through its window to check Sarah was in place; 
+then opened the door and entered. And I pushed the hammer on his 
+head. (If I didn't, he went over to check on Sarah and then left, 
+locking the door behind him. 
+
+I got Sarah to gag and tie the Weasel (otherwise he would have 
+shouted in warning) and lock the door. Later, I got Sarah to 
+steal the briefcase with the drugs and carry them away from the 
+house, when people were distracted by John B's shouts. 
+
+* Endings. The game can finish in several ways. If I did nothing, 
+for example, John B on lookout would spot the police far away and 
+come rushing down with a warning. The Professor and Jude would 
+then rush downstairs and lead Sarah from the cellar, leaving in 
+the taxi with her as a hostage. The others would leave in their 
+van. The gang would all escape, Sarah be subsequently killed 
+(only if she lived could she cleared my name) and I would fade 
+away - having succeeded in nothing. 
+
+If Sarah was used as a hostage in this way, I could save her by 
+manifesting myself and attacking the gang. I faded under the 
+concentrated attention of the gangsters, while Sarah just kept on 
+running and did not clear my name as she would otherwise have 
+done. 
+
+If the people left at their own pace, with ample warning of the 
+police, they had time to inflate the tyres if I'd let out the air 
+and to bend the van key straight. The taxi had no specific key; 
+Severian hot-wired it to get it started. 
+
+If the van key was bent, making this unuseable, its passengers 
+tried to escape across coutry - again escaping unless the police 
+were quite near. The state of the van tires had no great effect. 
+If I got into the escaping van, the press of people robbed me of 
+all strength and I could do nothing - eventually fading away. 
+
+If in the escaping taxi, I could not help becoming visible and 
+fought with John who was driving. Unless the tyres were deflated, 
+he eventually won and I faded away. But if they were, the van 
+tended to swerve about anyway and crashed in the fight. John and 
+Jude escaped the flames, but the evidence was destroyed. 
+
+Best was to let down the tyres, bend the key and distract John B 
+until the police closed in, and meanwhile prepare to free Sarah. 
+Then I paniced John, freed Sarah, collected the drugs and got her 
+clear. Finally, I crashed the taxi.  
+
+
+
+                       GENERAL DESIGN NOTES 
+                       -------------------- 
+
+GHOST POWERS
+
+My powers gradually grew with time, the first evidence of this 
+being the steadily heavier things that I could life in part one. 
+They were as follows: 
+
+1: Telekinesis. Carry light objects, one-at-a-time (all parts). 
+
+2: Draughts. Blow down tower (part 1), Blow flames onto curtain 
+   (part 2), scare John (part 3). 
+
+3: Reach through Objects. (Very limited in part 1, reach through 
+   things/walls in part 2, walk through walls in part 3. I could 
+   never take objects through solids though). 
+
+4: Temperature control. Cool/heat object. Eg freeze water, boil 
+   whisky, scare John (parts 2 and 3). 
+
+5: Static charge. Ignite vapour (part 2), Scare John (part 3). 
+
+6: Astral sight. See auras of people and traces of past events 
+   (especially part 2). Acts as lie detector and shows degree of 
+   fear for example. 
+
+7: Manifestation. Become visible and tangible to people (late p3). 
+   I needed to manifest myself to give orders. If someone entered 
+   or I visited an occupied room, I normally faded automatically. 
+
+
+
+GHOST NOTES 
+
+Joe explained the details of being a ghost as the game went along, 
+so I always knew about future powers. He also dropped hints about 
+why he was still about.. Apart from a few rumoured fear-feeders 
+and soul-suckers, ghosts have no way of feeding - no way of 
+recharging their energies. The way I was gaining in abilities and 
+using my powers, he sighed, I would be lucky to finish even three 
+nights. For himself, he wanted a few more good deeds under his 
+belt before facing the sheep-goat test. 
+
+If prayer works, then it presumably works negatively as well as 
+positively - if the farmer gets the rain he prays for his crops, 
+the rest of us get drenched. A lot of people believed me guilty 
+of criminal stupidity, and their thoughts mattered. Clearing my 
+name might give me a better eternity.  
+
+The structure of the game follows that of the last few hours of 
+my life. We all met in the graveyard to hide the drugs, then 
+went to the gang's nearby hideout where I was betrayed. Gagged 
+and tied, I was taken in the van to John Q's farm, imprisoned in 
+the cellar and then killed in the barn - my body dumped beside 
+the same corner where the taxi would crash three days later. It 
+is important to bring out this parallelism in the game text. 
+

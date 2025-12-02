@@ -1,0 +1,12 @@
+
+
+Arcade Game (yes, "Arcade Game") programmers for 16-bit micros and 
+games consoles. Our in-house authoring system H.U.G.E (wHolly 
+Universal Games Engine) is a breakthrough tool for game programming, 
+allowing not only unprecedented 3D animation and data compression, 
+but total portability between ST, Amiga, IBM PC, Macintosh etc. 
+
+Level 9 have already been commissioned to write a number of games 
+using the H.U.G.E system by a major US firm, and will be happy to 
+discuss programming games for other publishers too. 
+

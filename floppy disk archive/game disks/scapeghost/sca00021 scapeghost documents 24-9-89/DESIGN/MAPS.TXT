@@ -1,0 +1,132 @@
+
+           SCAPEGHOST MAPS. COPYRIGHT (C) 1988 LEVEL 9
+           -------------------------------------------
+
+GHOST (PART 1)
+--------------
+
+     Old Graves..                              ..New Graves
+
+     Elder ---- Colonel's -- Lawn+ ------ New ------ Willmot
+     Bushes      Grave      Crosses      Graves      Graves
+       |     x     |     x     |     x     |     x     |
+       |        Cenotaph       |           |           | 
+   Marigolds ---- War ------ Ridge -- Copper Beech -- New
+   on Grave     Memorial     Grave +Jumbled Stonework Graves 
+       |     x     |     x     |     x     |     x     |
+       |           |           |           |           | 
+     Rose's -- Overgrown --- Long ----- Sundial --- Danby's 
+     Grave     Tombstones    Grass         |         Grave 
+       |     x     |     x     |     x     |     x     |
+    Toppled      Pruned        |           |           | 
+    Sepulcre -- Branches - Path+Shed ---- Path ------ My
+       |     ..................|i/o.....   |         Grave
+       |     .                 |       :   | 
+       |     :           Inside Shed   :   |       
+    Edith's  :                         : Path+ ---- Lawn+
+     Grave   :                         :Thermom.   Spotlight
+             :"Cannot open church door":   | 
+       Burnt Church            |i/o        |                 "N/S 
+                              Path ------ Path ------ Gate - Path
+                               |         +Vault        |      to  
+                               |           |           |    Carpark"  
+                               |          Yew+         | 
+                           Main Gate  Octagon Seat    Lawn
+                               |           |           | 
+                               |           |           | 
+                               |           |           | 
+                       "Road, over wall. Cannot leave cemetary" 
+
+The exits of rooms with all eight exits were reported by a single 
+brief message, rather than a great list. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HAUNTED HOUSE (PART 2)
+----------------------
+
+    "Other Bedrooms in   Bathroom 
+    various directions"  +Mirror
+                       \    | 
+           Breakfast     Landing -u/d- Attic 
+              Room       +Ghost        +Tank 
+               |            | 
+            Kitchen ------ Hall ----- Lounge 
+               |door        |door   +Fireplace
+               |            |           
+             Herb ---- Front Garden - Lawn 
+            Garden          |         +Ivy
+            +Ditch     North Green 
+                            | 
+                    Old Village Green 
+                            | 
+                       South Green 
+                            | 
+  "Tangled ---- Willmot  Winding
+   Branches"    Graves    Track 
+                  |         |
+"Fallen Beech -- New ---- Path
+    (lit)"      Graves    to N
+                  |
+   "Sundial --- Danby's 
+    (lit)"      Grave 
+                  | 
+    "Path        My
+    (lit)" ---- Grave
+
+
+
+
+
+
+POLTERGEIST (PART 3)
+--------------------
+
+
+   Attic -- Attic                                    "Exorcised" 
+  +Window     |                         "Blocked       |      | 
+             u/d  +-- "Bedrooms"        by Rubble" - Path - START
+              |   |                            ^       |    at my 
+              Stairs------------ "Bathroom"    |     Path   Grave
+                  |    Main Room               |   +Rubble
+                  |    |                       |       | 
+                  =Hall= -- Kitchen            +---- Path -- Gate 
+                  |    |                            +Vault   +Van
+ Cellar+Chair    u/d  n/s      Back of  "Outhouse      |      | 
+       |          |   i/o       House   +Generator"   "Too    |
+     Cellar-i/o-Steps  |       +Cables   /            Light"  |
+                       |          |    i/o                    |
+                       |       Side of-/     "Main            | 
+                       |        House         Road"           | 
+                       |       /               |              |
+Back of -- Front of -- Farmyard -- Track -- Junction <--------+ 
+Barn+Taxi    Barn         |                    |       Inside Van
+                          |                    | 
+           "Field" ---- Track --- "Field"    "Main 
+                    across Fields             Road" 
+                          |                    | 
+                          +---------------- Junction 
+                                               | 
+                   End, escape route ->      Corner - "Main Road" 

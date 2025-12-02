@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+                                 
+
+
+
+                    LEVEL 9 GET H.U.G.E!!!                 6/9/89 
+
+Level 9 - premier adventure house - have released their last 
+adventure (see separate release) and in future will concentrate on 
+producing both original and third party games, using their new 
+authoring system, the "wHolly Universal Games Engine" (H.U.G.E). 
+
+"H.U.G.E is a good name for the new Level 9 system," commented 
+Managing Director Mike Austin, "as it includes 165,000 lines of 
+code and has taken 10 man years to develop. It represents a number 
+of major advances for games software, and we are confident that 
+the acclaim that Level 9 have received in the past for our high 
+quality adventures will be continued in the more arcade-orientated 
+environment of H.U.G.E". 
+
+Written exclusively for 16-bit computers: IBM PC, Amiga, Atari ST, 
+and Macintosh, H.U.G.E is a breakthrough tool for game programming, 
+allowing not only unprecedented 3D animation and scrolling, but 
+simultaneous development across all systems. 
+
+Features include: 
+
+    Smooth multi-directional scrolling 
+    Fast animation, with no overhead for 3D graphics  
+    Flexible sprites and Sprite parking 
+    IBM graphics on CGA,EGA,MCGA,Hercules,Tandy and 256 colour modes 
+    Digitised sound 
+    Compression of graphics, code and data etc. 
+    Total portability. 
+
+
+"H.U.G.E has taken a colossal amount of work," remarked Creative 
+Director Pete Austin, "and it means Level 9 now have the single 
+most powerful and versatile programming tool available today - 
+something recognised by every publisher to whom we have demonstrated 
+the system to date. All I can say is, watch this H.U.G.E space!" 
+
+Level 9 have already been commissioned to write a number of games 
+using the system by a major US publisher, and negotiations with 
+further companies are in progress. 
+

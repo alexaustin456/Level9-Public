@@ -1,0 +1,64 @@
+
+           SCAPEGHOST SCORE. COPYRIGHT (C) 1988 LEVEL 9
+           --------------------------------------------
+
+The three parts of the game scored 300, 300 and 400 respectively 
+- with the total being carried forward if the player finished one 
+part and then continued to the next. Thus the maximum for the entire 
+adventure was 1000. 
+
+
+                         GHOST (PART 1)
+                         --------------
+
+Heaviest carriable object: 5 * weight ........................... 50 
+Ghosts recruited (Except Joe): 25 each ......................... 175
+Spotlight switched off .......................................... 25
+Part finished ................................................... 50 
+                                                                 --- 
+                                                           Total 300
+
+
+                     HAUNTED HOUSE (PART 2)
+                     ----------------------
+  
+Evidence found: 20 each ........................................ 100 
+Evidence in Hall: 5 each ........................................ 25 
+Reach Front Garden, Landing, Attic: 10 each ..................... 30 
+Watch Astral Images ............................................. 20 
+Defeat Ghost .................................................... 25 
+Get Body Downstairs ............................................. 50 
+Summon Firemen .................................................. 25 
+Part finished.................................................... 25 
+
+Illuminate Joe in Hall ......................................... -50 
+Each return to Grave, due to light ............................. -10
+                                                                 --- 
+                                                           Total 300
+
+
+
+                      POLTERGEIST (PART 3)
+                      --------------------
+
+Reach West of Grave, Path to Carpark, Barn, Back of House, 
+      Hall, Attic, Cellar: 10 each .............................. 70 
+Shortcircuit Power .............................................. 20 
+Disconnect Power ................................................ 20
+Deflate Tyres: 10 per vehicle ................................... 20 
+Bend Keys ....................................................... 20
+Scare John B: 10 per step ....................................... 50 
+Nearness of police: 10 per step ................................. 50 
+Untie Sarah ..................................................... 20
+Sarah leaves Cellar ............................................. 20
+Tie Weasel ...................................................... 20
+Drugs evidence picked up by Sarah................................ 20
+Drugs got outside house ......................................... 20
+Game finished with Taxi crashing ................................ 50 
+
+Banished by exorcism etc ...................................... -100 
+Sarah killed .................................................. -100 
+Drugs destroyed ............................................... -50 
+Gang escape: -50 per vehicle .................................. -100 
+                                                                 --- 
+                                                           Total 400 
