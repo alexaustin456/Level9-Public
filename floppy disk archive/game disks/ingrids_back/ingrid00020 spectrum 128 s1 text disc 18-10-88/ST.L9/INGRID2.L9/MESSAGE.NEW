@@ -1,0 +1,2055 @@
+; Ingrid's Back! (Gnome Ranger II) part II text. 
+; Copyright (C) 1988 Level 9 Computing. 
+; 
+; AT (Amstrad Tape) version 
+; 
+; Messages are of the form: [ number : text ] ; comment 
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course. 
+; 
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard). 
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first. 
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+; 
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+; 
+; Please ensure that all long room descriptions and first-time 
+; messages are there. Comment blank msgs.. ;; [1375:] ; etc.. 
+; Please comment all long room descriptions, first-time messages, 
+; examine messages etc so we know what they refer to. eg: 
+; [1143:, in the Dunes. Etc..] ; back of Dunrollin. 
+; Exits must be clear from room descriptions or first-time msgs. 
+; 
+; punctuation messages.. 
+[1: ] 
+[2::] 
+[3:, ] 
+[4:.] ; dot with no space 
+[5:%] 
+[6:and ] 
+[7:.%] 
+[8:?%] 
+[9:. ] 
+; 
+; positions etc.. 
+[10:exits led ] 
+[11:an exit led ] 
+[12: through a door] 
+[13: through an open door] 
+[14: and ] 
+; 
+[16:%> ] 
+[17:%What gnow? ] 
+[18:: ]; 
+[19:"] 
+; 
+; Messages for printing objects.. 
+[20:a ] 
+[21:the ] 
+[22:an ] 
+[23:some ] 
+[24:." ] ; dot quote 
+[25:% %] ; blank line 
+[26:worn] ; for 'couldn't have worn' 
+[27:taken] ; for 'couldn't have taken' 
+; 
+; exits directions, doubling as movement verbs.. 
+[51:^V gnorth|^V north ^V gn ^V n] 
+[52:^V gnortheast|^V northeast ^V gne ^V ne] 
+[53:^V east|^V e] 
+[54:^V south|^V s] 
+[55:^V southeast|^V se] 
+[56:^V southwest|^V sw] 
+[57:^V west|^V w] 
+[58:^V gnorthwest|^V northwest ^V nw ^V gnw] 
+[59:^V upwards|^V u ^V up] 
+[60:^V downwards|^V d ^V down] 
+[61:^V inside|^V in ^V into ^V enter] 
+[62:^V outside|^V o ^V out ^V leave] 
+[63:^V across|^V cross ^V over] 
+[64:upwards|^V climb] 
+; 
+; Intransitive verbs.. 
+; 
+[71:^V again|^V a] 
+[72:^V look|^V l] 
+[73:^V inventory|^V I ^V inv] 
+[74:^V quit ^V restart] 
+[75:^V restore ^V load] 
+[76:^V save] 
+[77:^V ramsave ^V ram] ; && 
+[78:^V ramload] ; && 
+[79:^V score] 
+[80:^V verbose] 
+[81:^V brief] 
+[82:^V wait|^V wa ^V z] 
+; 
+[84:^V on] 
+[85:^V off|^V jump] ; >> 
+;; [86:^V pictures ^V graphics] ; && disc 
+;; [87:^V words ^V text] ; && disc 
+; 
+[89:^V oops ^V undo] 
+[90:^V broke|^V attack ^V hit ^V break ^V kick ^V punch ^V smash] 
+; 
+;; [91:^V signed|^V sign] 
+[92:^V searched|^V search ^V explore] 
+[93:^V dug into|^V dig] 
+;; [94:^V sniffed|^V sniff ^V smell] 
+[95:^V knocked|^V knock] 
+[96:got|^V stood ^V stand] ; output eg. 'L got out', 'L got in' etc. 
+[97:^V lay|^V lie] 
+[98:^V sat|^V sit] 
+[99:^V hid|^V hide] 
+; 
+[100:^V said|^V say ^V call] 
+[101:^V teleported] 
+[102:^V getme] 
+; 
+[103:^V filled|^V fill] ; >>Lancelot 
+[104:^V ran|^V run ^V fly] 
+[105:^V made|^V make] ;>>Lancelot3 
+; 
+[107:Ingrid was too full of Mother's apple dumplings to ^V eat 
+anything else|^V taste ^V lick] 
+; 
+[108:^V went|^V go ^V goto ^V find] 
+[109:stopped|^V stop] 
+[110:^V drank|^V drink] 
+[112:^V exits ^V exit] 
+; 
+; verbs for output.. 
+[130:^V had|^V have ] ; mainly for output 
+[131:^V had|^V has ] ; mainly for output 
+[132:^V was|^V am ] ; mainly for output 
+[133:^V were|^V are ] ; mainly for output 'you were' 
+[134:^V was|^V is ] ; mainly for output 'someone was' 
+[135:are] ; output only - present tense for 'tell me about' 
+[136:is] ; output only - present tense for 'tell me about' 
+; 
+;; [137 is 'GO IN'] 
+;; [138 is 'GO OUT'] 
+;; 139 is 'wait for person' 
+;; 140 is 'wait until time' 
+;; 141 is 'wait for (length of time)' 
+;; 142 is 'wait for single turn' 
+[143:^V fought|^V fight ^V kill] 
+; 
+[145:^V dodged|^V dodge] 
+; 146 and 147 have text for debugging output only - do not mark 
+[146:gdgo] ; 196 - gdgo 
+[147:gdrun] ; 197 - gdrun 
+[148:^V stuff] 
+; 
+; Transitive verbs.. 
+[150:^V examined|^V examine ^V read ^V x] 
+[151:^V cut|^V chop] 
+[152:^V woke|^V wake] 
+; 
+[154:^V got|^V get ^V hide] 
+[155:^V took|^V take ^V pick ^V lift ^V hold ^V grab ^V carry] 
+[156:^V wore|^V wear] 
+[157:^V dropped|^V drop] 
+[158:^V put|^V conceal] 
+[159:^V removed|^V remove ^V free ^V release] 
+[160:^V threw|^V throw] 
+[161:^V gave|^V give ^V offer] 
+[162:^V asked|^V ask ^V question] 
+[163:^V followed|^V follow ^V chase] 
+[164:^V opened|^V open ^V unlock] 
+; 
+[168:^V pushed|^V tug ^V push ^V shove] 
+[169:^V fastened|^V fasten ^V tie ^V attach] 
+[170:^V unfastened|^V unfasten ^V untie] 
+[171:^V pulled|^V pull] 
+; 
+[176:^V inserted|^V insert] 
+; 
+;; [182:^V collect] ; goal-directed 
+; 
+; 186, 187 and 189 have text for debugging only 
+[186:return object] ; 186 is 'return object to initial' (for npcs) 
+; 
+[189:gdfind] ; 239 is gdfind 
+; 
+[190:^V closed|^V close ^V shut] 
+; 
+[192:^V told|^V tell] 
+[194:struggled] ; mainly for output 
+; 195 is 'steal all from' 
+; 
+[197:killed] ; output only 
+; 
+[210:reached] ; output only 
+[211:dragged] ; output only 
+[212:passed] ; output only 
+[213:flew] ; output only 
+[214:walked] ; output only 
+[215:caught] ; output only 
+[216:entered] ; output only, eg 'Fred entered from the east'. Do not mark 
+; 
+; Echo verbs (250-299) which just print the message containing them.. 
+[250:^V gnope, ^V gnot at all|^V no ^V gno] 
+[251:^V OK|^V yes] 
+; 
+[255:to talk to someone, enter eg Gnoah, hello|^V welcome ^V hi 
+^V greetings] 
+; 
+[257:send the coupon to Level 9 for a ^V hint|^V help] 
+; 
+[263:Why gnot|^V y ^V why] 
+; 
+[267:well! Wash your keyboard with soap and water|^V sod 
+^V motherfucker ^V crap ^V nipples ^V bloody ^V frigging ^V wanker 
+^V turd ^V piss ^V shit ^V twat ^V cunt ^V bollocks ^V jesus 
+^V christ ^V god ^V devil ^V tits ^V asshole ^V arsehole ^V cretin 
+^V shag ^V spastic ^V coon ^V wog ^V fucking ^V fucker ^V fuck 
+^V bastard ^V bugger ^V damn ^V fart ^V hell ^V pratt ^V rape] 
+; swear words 
+; 
+[273:^V goodbye|^V bye] 
+[274:I forgive you|^V sorry] 
+; 
+[280:the Dribble was too cold for swimming|^V swim] 
+; 
+[283:hit] ; the object 'hit' target 
+; 
+[285:Ingrid wasn't thirsty|^V drink] ;>>gnome2 
+; 
+[294:Ingrid had gno way to ^V light anything, being a gnon-smoker] 
+[295:Ingrid had gno way to ^V extinguish it] 
+; 
+[298:the only thing worth waving around here is a magic wand, 
+and Seamus Sosmall and Mrs Tackhammer are looking for it|^V wave] 
+[299:gnothing happened|^V press ^V poke ^V prod ^V touch] 
+; 
+; -------------------------------------------------------------- 
+; 
+; Objects (300+N).. 
+; 
+; NPCs (1 onwards) People: 
+; 
+[301:^N Ingrid|^N player ^N me] 
+[302:^N Gnora] 
+[303:^N Gnoah] 
+[304:^N Bumpy] 
+[305:^N Dimple] 
+[306:^N Gnoggin] 
+[307:^N Arback ^N Garden] 
+[312:^N Grandma ^N Gnutson] 
+[313:^N Flopsy] 
+[319:^N Seamus ^N Sosmall] 
+; people 20-23 never appear, but 
+; are included for parsing purposes: 
+[322:^N Jasper ^N Quickbuck] 
+; 
+[324:^N trolls|^N Bane] 
+[325:^N Silas ^N Crawley] 
+[326:^N Ambul] 
+[327:^N Bane] 
+[328:^N Chugg] 
+[329:^N Doldrum] 
+[330:^N Ergot] 
+[331:^N Fuddle] 
+[332:^N Gormless] 
+; 
+; Animals 
+; 
+[337:^N guinea ^N pigs] 
+; 
+[338:^N white ^N rabbit] ; never appears, used for parsing purposes 
+; 
+; 'clothes', sort of (60 onwards) 
+; NB: 'worn' but set flags rather than change position 
+[360:^N lipstick] ;(some) singularsome 
+[361:^N perfume|^N scent] ;(some) singularsome 
+[362:^N handbag] 
+; 
+; ordinary objects (80 onwards) 
+[380:^A loose ^N brick] 
+[381:^N bottle] 
+[382:^N cider ^N cask] 
+[383:^N title ^N deeds] ; (some) 
+;[384:^N handbag] 
+[385:^N loaf of ^N bread] 
+[386:^N plans] ; (some) 
+[387:^N sack of ^N flour] ; exam. 'heavy' 
+[388:^N millstone] ; ditto 
+[389:^N blue ^N telelily|^N lily ^A blue] 
+[390:^N green ^N telelily|^N lily ^A green] 
+; see 2842 
+[391:^N dog ^N collar] 
+; 
+; static objects (110 onwards) 
+[410:^N brake] 
+[411:^N bush] ; (some) 
+[412:^N dam] 
+[413:^N gap under her bedroom door] 
+; don't use hole, since it is used for GO RABBIT HOLE 
+[414:^N hook] 
+[415:^N lever] 
+[416:^N pile of ^N turnips] 
+[417:^N root] 
+[418:^N gnotice|^N notice] 
+[419:^N table] 
+[420:^N trapdoor] ;open 
+[421:^N trapdoor] ;closed 
+[422:^N well] 
+[423:^N chimney] 
+[424:^N floodwater|^N flood ^N water] 
+[425:^N broken ^N dam] 
+; 
+; vehicles (140 onwards) 
+[440:^N steamroller|^N roller] 
+[441:^N steamroller ^N ashes|^N roller] ; (some) 
+; 
+; invisible objects (150 onwards) 
+;; [450:guinea pig ^N pens|^N pigpens ^N pen ^N pigpen] 
+;; ; seen from sty (some) 
+;; [451:guinea pig ^N pens|^N pigpens ^N pen ^N pigpen] 
+;; ; seen from west pen (some) 
+;; [452:guinea pig ^N pens|^N pigpens ^N pen ^N pigpen] 
+;; ; seen from middle pen (some) 
+;; [453:guinea pig ^N pens|^N pigpens ^N pen ^N pigpen] 
+;; ; seen from east pen (some) 
+[454:^N windmill|^N mill] 
+[455:^N ditch] 
+[456:^N river|^N Dribble ^N water] 
+[457:^N window] 
+; 
+; people are bound to examine/take hurdles 
+[459:^N hurdles|^N hurdle] ; seen from sty (some) 
+[460:^N hurdles|^N hurdle] ; west pen (some) 
+[461:^N hurdles|^N hurdle] ; middle pen (some) 
+[462:^N hurdles|^N hurdle] ; east pen (some) 
+[463:^N vanes|^N sails] 
+; 
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents.. 
+; 
+; These are used for seeing from a distance and for input, eg for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works). 
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc. 
+; 
+[480:^N sty ^N pigsty] 
+[481:bantam ^N coop] 
+[482:^N barn] 
+;; [483:^N track|^N path] 
+;; [484:well] used for linkage to well bottom. trapdoor is static object 
+[485:^N ruined ^N mill] ; ** clash with half. mill ** 
+;; [486:trapdoor] used for linkage to cellar. trapdoor is static object 
+[487:^N entrance to ^N Gnettlefield ^N Farm|^N farmhouse 
+^N farmyard] ; for GO FARMYARD 
+; 
+[530:^N rainbird] 
+[531:^N breadcrumbs|^N marsbars ^N paxo ^N stuffing] 
+; 
+; Collective nouns.. 
+[534:^N everything ^N all ^N every] 
+[535:^N ingredients] ; collective noun - was 'treasure' 
+;; [536:^N weapons] ; collective noun 
+[537:^N people|^N everyone ^N everybody] ; collective noun 
+;; [538:^N clothes|^N armour] 
+; 
+; Omni-present objects.. 
+[539:^N door|^N gate] ; normal door, for the benefit of PRINTACTORACTION. 
+; It is apparently never described by PRINTOBJECT (so?). 
+[541:^N plants|^N weeds ^N flowers ^N daisy ^N grass 
+^N soil] 
+[542:^N be] 
+[543:^N ground|^N floor ^N room] ; used for output as well 
+[544:^N wall|^N walls] 
+[545:^N sky|^N sun ^N moon] 
+; 
+; -------------------------------------------------------------- 
+; 
+; and finally, some miscellaneous nouns which are used miscellaneously. 
+[547:^N except ^N but] 
+[548:^N it|^N that ^N them ^N those ^N him ^N her] 
+[549:^N minute ^N minutes] 
+; 
+[551:^J then ^J gnext] 
+[552:^J therefore ^J so] 
+[553:^N Ingrid|^N you] ;you 
+; 
+; Pronouns.. 
+[560:it] ; ita 
+[561:it] ; itan 
+[562:some] 
+[563:he] 
+[564:she] 
+[565:they] 
+[566:Ingrid] ; you 
+[567:he] ; proper male 
+[568:she] ; proper female 
+; 
+[570:it] ; ita 
+[571:it] ; itan 
+[572:them] 
+[573:him] 
+[574:her] 
+[575:them] 
+[576:Ingrid] ; you] 
+[577:him] ; proper male 
+[578:her] ; proper female 
+; 
+; and some misc output messages 
+; plural endings, and other odd verb declension.. 
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s] 
+[581:es] 
+[582:is] ; used in examine 
+; 
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direction of the moving npc. 
+; 
+[585:from the south]      ; north 
+[586:from the southwest]  ; northeast 
+[587:from the west]       ; east 
+[588:from the gnorth]     ; south 
+[589:from the gnorthwest] ; southeast  
+[590:from the gnortheast] ; southwest 
+[591:from the east]       ; west 
+[592:from the southeast]  ; northwest  
+[593:from below]          ; above 
+[594:from above]          ; below  
+[595:from outside]        ; inside    
+[596:from inside]         ; outside  
+[597:from across the way] ; across  
+[598:by climbing]         ; climb    
+[599:with a jump]         ; jump 
+; 
+; -------------------------------------------------------------- 
+; 
+; Examine messages (600+N). NO full stops at end please. 
+; 
+; NPCs (1 onwards) People: 
+; 
+[601:unique. (Massed cries of "One's more than enough!")] ; Ingrid 
+; 
+[602:Ingrid's ^N mother, who fought a gallant rearguard action 
+against yeast] ; Gnora 
+; 
+[603:Ingrid's ^N father and as heavy as Jumbo] ; Gnoah 
+; 
+[604:Ingrid's brother who looked after the rabbits] ; Bumpy 
+; 
+[605:Ingrid's second ^N brother; too idle even to enter the 
+Gnomebridge Do-Gnothing Contest] ; Dimple 
+; 
+[606:Ingrid's other ^N brother] ; Gnoggin 
+; 
+[607:the old family retainer] ; Arback Garden 
+; 
+[612:the last in a long list of Gnutters] ; Grandma Gnutson 
+; 
+[613:Ingrid's ^N dog; a gnome's best friend] ; Flopsy 
+; 
+[619:a ^N leprechaun, who spent most of his time popping in and 
+out all over the Dribble Valley] ; Seamus Sosmall 
+; 
+; people 20-22 never appear, but 
+; are included for parsing purposes: 
+;; [622:] ; Jasper Quickbuck 
+; 
+[624:as tough and evil a bunch of trolls as you'd gnever want 
+to meet] ; Trolls 
+; 
+[625:Jasper Quickbuck's land agent, gnow in charge of the Dribble 
+mopping up operation] ; Silas Crawley 
+; 
+[626:a slow kind of ^N troll] ; Ambul 
+; 
+[627:a baleful brute of a ^N troll] ; Bane 
+; 
+[628:a red-gnosed ^N troll] ; Chugg 
+; 
+[629:a deadbeat ^N troll] ; Doldrum 
+; 
+[630:"a fun-luving ^N troll of sofistikated tastes"] ; Ergot 
+; 
+[631:a troll's ^N troll, his boot size bigger than his IQ] ; Fuddle 
+; 
+[632:the stupidest ^N troll] ; Gormless 
+; 
+; Animals 
+; 
+;; [636:small but vicious, with gnasty sharp little beaks and a 
+;; fondness for sticking them into people] ; bantams 
+; 
+[637:fat and furry] ; guinea pigs 
+; 
+;; [638:] ; white rabbit ; never appears, used for parsing purposes 
+; 
+; 'clothes', sort of (60 onwards) 
+; NB: 'worn' but set flags rather than change position 
+; 
+[660:in a shade called "One bite of the cherry". Ingrid could 
+gnot imagine why Grandma had ever bought it] ; lipstick 
+; 
+[661:potent stuff, and very ecognomical. One whiff of "Impulp" 
+was all that a gnomemaid gneeded to get her gnome. The rest could 
+then be used as paint-stripper] ; perfume 
+; 
+[662:a floppy sailcloth ^N bag] ; handbag 
+; 
+; ordinary objects (80 onwards) 
+; 
+[680:a bit wobbly] ; loose brick 
+; 
+[681:wrinkled from where someone had tried to wring the bottle 
+out] ; bottle 
+; 
+[682:full, by the weight of it. But she was gnot strong enough 
+to open it] ; cider cask 
+; 
+[683:the only proof that the Bottomlows had the right to live 
+at Gnettlefield] ; deeds 
+; 
+;; [684:] 
+; 
+[685:about the size of a troll's head, and every bit as solid] ; loaf 
+; ** must state size of bread to fit chimney ** 
+; 
+;; [686:plans] ;; unused here. see 2843 
+; 
+[687:very heavy] ; sack, must be 'heavy' 
+; 
+[688:very heavy] ; millstone. ditto 
+; 
+[689:a bell-shaped flower, which seemed longer inside than 
+outside. Ingrid guessed that it was descended from one of the 
+original telelilies that she had brought back from the wilds] 
+; blue telelily 
+; 
+[690:a wide-mouthed flower] ; green telelily 
+; 
+[691:embroidered "Flopsy". Ingrid burst into tears] 
+; 
+; static objects (110 onwards) 
+; 
+[710:a thick wooden handle] ; brake 
+; 
+[711:a bit trampled by somegnome] ; bush 
+; 
+[712:a make-do construction of stones and mud] ; dam 
+; 
+[713:a draughty gnuisance] 
+; door gap: don't use hole, since it is used for GO RABBIT HOLE 
+; 
+[714:a crude pulley system, with a hook fastened to the end of a 
+long ^N rope that hung from the top of the windmill] ; hook/rope 
+; 
+[715:attached to a wooden bar] ; lever 
+; 
+[716:a huge wobbly pile] ; pile of turnips 
+; 
+[717:a gnarled root which coiled downwards to the lower levels of 
+the warren. It was almost bitten through, but looked strong 
+enough] ; root 
+; 
+[718:, "Gno Ingress"] ;gnotice 
+; 
+[719:dented from where folks had dropped the bread] ; table 
+; 
+[720:open wide, with a drop begneath] ; open trapdoor 
+; 
+[721:closed flush with the ground] ; closed trapdoor 
+; 
+[722:very deep. There was gno water in it, but there did seem to 
+be something at the bottom] 
+; well - must always be something at bottom (e.g telelily) 
+; 
+; ** must state diameter of chimney for bread to fit ** 
+[723:just the right size to stuff a troll's head into. Gnot that 
+there was much chance of that! Clouds of black smoke and ashes 
+billowed out] ; chimney 
+; 
+[724:from the River Dribble. Ingrid was amazed that there had 
+been so much water in it] ; floodwater 
+; 
+[725:like a waterfall] ; broken dam 
+; 
+; vehicles (140 onwards) 
+[740:a fine example of high technology, with its roaring firebox 
+and chundering chimney] ; steamroller 
+; 
+[741:the charred remains of a steamroller] ; steamroller remains 
+; 
+; invisible objects (150 onwards) 
+; 
+;; [750:three guinea pig pens, each separated from the other by a 
+;; small hurdle] ; guinea pig pens seen from sty (some) 
+;; ; 
+;; [751:three guinea pig pens, each separated from the other by a 
+;; small hurdle] ; guinea pig pens seen from west pen (some) 
+;; ; 
+;; [752:three guinea pig pens, each separated from the other by a 
+;; small hurdle] ; guinea pig pens seen from middle pen (some) 
+;; ; 
+;; [753:three guinea pig pens, each separated from the other by a 
+;; small hurdle] ; guinea pig pens seen from east pen (some) 
+; 
+[754:a bit more solid than the old one] ; Halfyard's new windmill 
+; 
+[755:dug in a wide loop around Soggybottom Field] ; ditch 
+; 
+[756:a truly gnomic ^N stream; small and sluggish] ; R.Dribble 
+; 
+[757:facing onto the mill yard] ; window 
+; 
+[759:between the three pens] ; hurdles seen from sty (some) 
+; 
+[760:between the three pens] ; hurdles seen from west pen (some) 
+; 
+[761:between the three pens] ; hurdles seen from middle pen (some) 
+; 
+[762:between the three pens] ; hurdles seen from east pen (some) 
+; 
+[763:decked with Dusty's washing] ; vanes 
+; 
+; Examine messages for location objects (479+N). See 779+ for examine 
+; messages and 1199+ for their verbose equivalents.. 
+; 
+[780:a gnoisy, smelly place] ; pigsty 
+; 
+[781:empty] 
+; 
+[782:probably the most solid building on Gnettlefield Farm] ; barn 
+; 
+;; [783:a gnarrow muddy track that led, between thick stone 
+;; walls, from Ploughgnome Lane to the farm] ; track/path 
+;; 
+;; [784:well] ; used for linkage to well bottom. trapdoor is static object 
+; 
+[785:a heap of stones] ; ruined mill 
+; 
+;;[786:trapdoor] ; used for linkage to cellar. trapdoor is static object 
+; 
+[787:falling down] ; entrance to Gnettlefield 
+; 
+; -------------------------------------------------------------- 
+; 
+; Short-Form room Descriptions (800+N). No full stops at end please. 
+; These are the brief mode descriptions; they are prefixed by 'you 
+; are' and, in verbose mode, messages 1300+N are appended. 
+; 
+; room 1 is used as exit modifier for synthesised rooms. 
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid. 
+; 
+; description order is: 
+; 'Ingrid was'     '800++'   '1100++'  '.'   
+;                   short      long 
+; 
+;Indoors 
+[803:in Grandma Gnutson's bedroom] 
+[804:in her own ^N bedroom] 
+[805:in the ^N kitchen] 
+[806:in the root ^N cellar] 
+[807:in the ^N well] 
+[808:in the guinea pig ^N sty] 
+[809:in a guinea pig ^N pen] 
+[810:in a guinea pig ^N pen] 
+[811:in a guinea pig ^N pen] 
+[812:in the bantam ^N coop] 
+[813:in the ^N barn] 
+[814:in the back of the barn] 
+[815:in the rabbit ^N warren] 
+; first location, hence 'hole' 
+[816:in a ^N burrow] 
+[817:in a ^N burrow] 
+[818:in a ^N burrow] 
+[819:in the ^N lower ^N warren] 
+[820:on the ^N steps of the ^N mill] 
+[821:in the mill room] 
+[822:at the top of the ^N stairs] 
+; 
+;Outdoors 
+[825:in the old ^N mill ^N ruins] 
+[826:at the end of a walled ^N track] 
+[827:on the walled ^N track] 
+[828:on the walled ^N track] 
+[829:on top of ^N Ploughgnome ^N Hill] 
+[830:on ^N Ploughgnome ^N Lane] 
+[831:at the bottom of ^N Ploughgnome ^N Lane] 
+[832:on the mill ^N lane] 
+[833:in the mill ^N yard] 
+[834:in the ^N quarter ^N acre ^N field] 
+[835:in ^N Sandybottom ^N field] 
+[836:behind the barn] 
+[837:in ^N Soggybottom ^N field|^N bog ^N swamp] 
+[838:in a ^N ditch] 
+[839:by the ^N River ^N Dribble] 
+[840:soon hanging outside top of the windmill. 
+%But Ingrid had learned escapology at the Institute of Gnome 
+Economics (where it was gnecessary if one was to go out at 
+nights). Gnever one to hang around, she wriggled free in a 
+matter of moments - and plummeted head first into the bush in 
+the mill yard] 
+; 
+; 'echo locations..' 
+; 
+;Indoors 
+[925:in the rest of the bedrooms. As gnobody was about and there 
+was gnothing to do, she returned to the stairs] 
+; 
+[926:in a confusing tangle of passages, which led her back to 
+the main tunnel] 
+; 
+;Outside 
+[940:on the lane to Greater Cawing. But Ingrid had to defend 
+Gnettlefield from the trolls, so she turned back] 
+; 
+[941:in Little Moaning. The village was deserted, its gnomes 
+evicted. There was gno help to be gained here, so Ingrid return 
+to the lane] 
+; 
+; Terrain types (1020 onwards) 
+[1020:in the southwest corner of the farmyard. A guinea pig 
+sty stood, or rather leant, to the south] 
+[1021:on the south side of the farmyard] 
+[1022:in the southeast corner of the farmyard, outside 
+the old barn] 
+[1023:in the farmyard entrance, beside a muddy track from 
+the west] 
+[1024:at the centre of the farmyard] 
+[1025:on the east side of the farmyard. The fields were 
+visible through a ^A rotten ^N gate to the southeast] 
+[1026:in the gnorthwest corner of the farmyard] 
+[1027:in the middle of the gnorth side of the farmyard, 
+outside the entrance to the house] 
+[1028:in the gnortheast corner of the farmyard] 
+; 
+; -------------------------------------------------------------- 
+; 
+; Now verbose additions to brief location descriptions (1100+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (800+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.) 
+; 
+;Indoors 
+; 
+;; [1103:] ; in Grandma G's bedroom 
+; 
+[1104:. Most of the room was still full of ^N turnips] 
+; Ingrid's Bedroom 
+; 
+[1105:, the heart of the farm] ; kitchen 
+; 
+;; [1106:] ; root cellar 
+; 
+[1107:] ; in the well 
+; 
+[1108:. Three pig pens stood to the south, each separated from 
+the other by a small hurdle, which was low enough for a gnome to 
+cross, but too high for the guinea pigs] ; guinea pig sty 
+; 
+;; [1109:] ; guinea pig pen 
+;; [1110:] ; guinea pig pen 
+;; [1111:] ; guinea pig pen 
+;; [1112:] ; in bantam coop 
+;; [1113:] ; in the barn 
+;; [1114:] ; back of barn 
+; 
+[1115:, beside a large ^N hole in the ground] ; warren passage 
+; 
+;; [1116:] ; warren passage 
+;; [1117:] ; warren passage 
+;; [1118:] ; warren passage 
+; 
+[1119:, begneath the shaft up to the entrance hole] 
+; lower warren 
+; 
+;; [1120:] ; on steps in mill 
+;; [1121:] ; millroom 
+; 
+[1122:, which for some odd reason were littered with ^N turnips. 
+There were bedrooms to east and west, and Ingrid's own door 
+stood to the southeast] ; top of the stairs 
+; 
+;Outdoors 
+; 
+;; [1125:] ; in mill ruins 
+; 
+[1126:, leading west from the farmyard] ; end of walled track 
+; 
+[1127:. It continued east-west, and was barely wide enough for 
+a dog cart] ; on walled track 
+; 
+[1128:, close to where it joined Ploughgnome Lane] 
+; on walled track 
+; 
+[1129:, where Ploughgnome Lane passed the drive to Gnettlefield 
+and wound away southeast towards Little Moaning] 
+; top of Ploughgnome Lane 
+; 
+[1130:, at the straight bit gnear the top of the hill] 
+; on Ploughgnome Lane 
+; 
+[1131:, where it ran gnorthwest-southeast past the junction 
+east to the windmill] 
+; at the bottom of Ploughgnome Lane 
+; 
+[1132:, which led straight east-west, between tall ^N trees] 
+; on the Mill Lane 
+; 
+[1133:. The gnew windmill had been built between the trees, 
+beside the east-west track along the valley] ; mill yard 
+; 
+[1134:. It was the only decent bit of land on the whole 
+farm, gneither too dry, like Sandybottom to the gnorth, 
+gnor boggy like Soggybottom to the east] ; quarter acre field 
+; 
+[1135:. A path wound from the gnorth and vanished into a 
+hole in the ground] ; Sandybottom field 
+; 
+[1136:. Its southern wall was looking a bit worn] 
+; behind barn 
+; 
+[1137:, sinking up to her ankles in the soggy boggy ground. The 
+earth was even wetter to the gnorth, where the Bottomlows' 
+"drainage" ditch led to the Dribble, but got a bit drier 
+to the west] ; Soggybottom field 
+; 
+[1138: that looped round through Soggybottom, meeting the Dribble 
+upstream at both gnorthern ends] ; in ditch 
+; 
+[1139:, at the top end of the so-called drainage ditch] 
+; beside R. Dribble 
+; 
+;; [1140:] ; hanging from hook - no long description 
+; 
+; -------------------------------------------------------------- 
+; 
+; Messages printed on first entering a room (1350+): 
+; 
+;Indoors 
+;; [1353:] ; G G's bedroom 
+;; [1354:] ; Ingrid's bedroom 
+; 
+[1355:here it was that the Bottomlows came together to sit 
+around the table until their tea was cold. 
+% 
+%"Aye up, our Ingrid", said Gnoah as he dipped a piece 
+of bread into his boiled egg and dribbled yolk all over the 
+table. "Ee, but it's a gnice quiet morning this morning". 
+% 
+%Just then a loud rumbling gnoise came from outside. The 
+house trembled and Gnoah's boiled egg rolled out of its 
+Level 9 egg cup. 
+% 
+%"By heck! What were that?", he exclaimed. 
+%"Sounded a bit like a steamroller to me", commented Gnora, 
+"Gnoah, you just gnip outside and take a look". ] ; kitchen 
+; 
+;; [1356:] ; root cellar 
+; 
+[1357:the well was a good well. Ingrid knew this because of a 
+small ^N sign. "Well built by Dodger and Bodger". ] 
+; in the well 
+; 
+;; [1358:] ; in guinea pig sty 
+;; [1359:] ; in guinea pig pen 
+;; [1360:] ; in guinea pig pen 
+; 
+[1361:Ingrid was always surprised how those flimsy gates kept 
+the guinea pigs in place. ] ; in guinea pig pen 
+; 
+[1362:all the bantams had already escaped. ] ; in bantam coop 
+; 
+[1363:Ingrid thought the Barn must be as good as it had been 
+when Arback was a lad - and that's more than Arback was. ] ; in the barn 
+; 
+;; [1364:] ; in back of barn 
+; 
+[1365:anyone climbing back up would have to grab at the root. ] 
+; in rabbit warren passage 
+; 
+;; [1366:] ; in rabbit warren passage 
+;; [1367:] ; in rabbit warren passage 
+;; [1368:] ; in rabbit warren passage 
+;; [1369:] ; in lower warren 
+;; [1370:] ; on mill steps 
+; 
+[1371:clouds of dust drifted out of the window. ] ; in mill room 
+; 
+;; [1372:] ; on stairs 
+; 
+;Outdoors 
+; 
+;; [1375:] ; in mill ruins 
+;; [1376:] ; at end of walled track 
+; 
+[1377:%a loud crashing gnoise came from the distance. ] ; walled track 
+; 
+;; [1378:] ; on walled track 
+;; [1379:] ; top of Ploughgnome Lane 
+;; [1380:] ; on Ploughgnome Lane 
+;; [1381:] ; bottom of Ploughgnome Lane 
+;; [1382:] ; mill lane 
+; 
+[1383:Ingrid was pleased to find that Crawley's lot had 
+rescued Uncle Dusty. It was one less thing for her to do. ] 
+; in mill yard 
+; 
+[1384:%Ingrid gazed west towards Halfyard's gnew windmill. ] 
+; in quarter acre field 
+; 
+;; [1385:] ; in Sandybottom field 
+; 
+[1386:the barn wall definitely gneeded repointing. ] 
+; behind the barn 
+; 
+;; [1387:] ; in Soggybottom field 
+;; [1388:] ; in ditch 
+; 
+[1389:"What a useless dam", thought Ingrid. She kicked it 
+experimentally and water trickled through. ] ; by the River Dribble 
+; 
+;; [1390:] ; hanging on a hook 
+; 
+; -------------------------------------------------------------- 
+; 
+; Message pairs for use in describing containment positions 
+; also used for preposition table 
+; 
+; part printed before container 
+;  
+[1600:Ingrid could see]      ; 0 - you can see (user's name not    
+; printed by PRINTOBJECTS)  
+[1601:^P on |^P onto ^P above ^P over] ; 1 - on  
+[1602:^P undergneath|^P below ^P under ^P begneath] ; 2 - under    
+[1603:^P behind]      ; 3 - behind  
+[1604:]               ; 4 - carrying  
+[1605:]               ; 5 - wearing    
+[1606:in|^P at]       ; 6 - blocking the hole  
+[1607:^P in |^P into ^P inside] ; 7 - in  
+;; [1608:hanging from]  ; 8    
+;; [1609:growing from ] ; 9 - part of  
+;; [1610:^P between]  ; tied between is tied a rope  
+;; [1611:]            ;11 - 'the carter was pushing a cart'    
+[1612:lying on]       ;12  
+[1613:sitting on]     ;13  
+;; [1614:fastened to] ;14    
+[1615:]               ;15 escorting  
+[1616:^P with|^P using]  
+[1617:^P from]    
+;; [1618:in front of]  
+;  
+; part printed between container and contained.    
+;  
+[1640:]                ; 0  
+[1641:was]             ; 1 - on    
+[1642:was]             ; 2 - under  
+[1643:was]             ; 3 - behind  
+[1644:was carrying]    ; 4    
+[1645:was wearing]     ; 5  
+;; [1646:was blocked by]  ; 6 - is blocked by  
+[1647:was]             ; 7 - in    
+;; [1648:was]          ; 8  
+;; [1649:was]          ; 9 - part of is  
+;; [1650:was tied]     ;10 -    
+;; [1651:was driving]  ;11 - the carter was pushing a cart  
+[1652:was]             ;12 ;*graham*  
+[1653:was]             ;13 ;*graham*    
+;; [1654:was]          ;14 - fastened to  
+[1655:was escorting]  
+;    
+; for plural contents..  
+[1670:]                ; 0  
+[1671:were]            ; 1 - on    
+[1672:were]            ; 2 - under  
+[1673:were]            ; 3 - behind  
+[1674:was carrying]    ; 4    
+[1675:was wearing]     ; 5  
+;; [1676:was blocked by]  ; 6 - is blocked by  
+[1677:were]            ; 7 - in    
+[1678:were]            ; 8  
+[1679:were]            ; 9 - part of is  
+;; [1680:was tied]     ;10 -    
+;; [1681:was driving]  ;11 - the carter was pushing a cart  
+[1682:were]            ;12 ;*graham*  
+[1683:were]            ;13 ;*graham*    
+;; [1684:were]         ;14 - fastened to  
+[1685:was escorting]  
+    
+; 1700: is base for prepositions to use with 'you'  
+;  
+; 1700+N is part printed before 'you'    
+[1715:tied to]  
+;  
+; 1740+N is part printed between you and object(s)    
+[1741:was on]         ; 1 - on  
+; 1742 is 2  
+; 1743 is 3    
+[1744:owned]          ; 4 - own  
+[1745:was wearing]    ; 5  
+;; [1746:was riding]  ; 6    
+[1747:was in]         ; 7  
+;; [1751:was driving] ; 11 - Lancelot was pushing  
+[1752:was lying on]   ; 12    
+[1753:was sitting on] ; 13  
+;; [1754:was fastened to] ;14  
+[1755:was escorting]    
+;  
+; for plural prepositions..  
+; 1770+N is part printed between you and object(s)    
+[1771:were on]         ; 1 - on  
+; 1772 is 2  
+; 1773 is 3    
+[1774:owned]           ; 4 - own  
+[1775:were wearing]    ; 5  
+;; [1776:were riding]  ; 6    
+[1777:were in]         ; 7  
+[1782:were lying on]   ; 12  
+[1783:were sitting on] ; 13 
+;; [1784:were fastened to] ; 14 
+;; [1785:were]         ; tied to you is 15 
+; 
+[1800:^P off] 
+[1801:^P up] 
+[1802:^P down] 
+[1803:^P to] 
+[1804:^P out] 
+[1805:^P from the ] ; used for npc motion 
+[1806:^P for] 
+[1807:^P until] 
+[1808:^P debug] 
+[1809:^P through] 
+[1810:^P about] 
+; 
+; Parser messages.. 
+[2000:you don't gneed to use "] 
+[2001:" to finish this part] 
+; 
+[2003:I don't understand the word "] 
+[2004:" when used like that] 
+; 
+[2006:Ingrid was ] 
+[2007:in a ] ; as in 'You are in an alder forest 
+[2008:in an ] 
+;; [2009:exits led in all directions] 
+; 
+; general error message when parsing has broken down. 
+[2010:I don't understand what you mean] 
+[2011:Ingrid couldn't see] 
+[2012:Ingrid didn't have] 
+[2013:Ingrid already had] 
+[2014:(I really don't know what you mean)] 
+[2015:it's too far away] ; examine, take etc. scenery objects 
+[2016:I can't find a verb] 
+[2017:it's gnot there] 
+[2018:there were too many gnouns] 
+[2019:Ingrid couldn't see that here] 
+[2020:Ingrid owned gnothing at all. ] 
+[2021:it was dark. ] 
+; 
+[2036:sorry, I don't fully understand that verb] 
+; ^ verb in keyword table but not in CALLVERB routine 
+[2037:there didn't seem to be anything suitable. ] 
+[2038:said, "That was a rhetorical question"] 
+[2039:what a mouthful! ] 
+; 
+[2044:couldn't have ] ; as in 'Ingrid couldn't have knocked that' 
+;; [2045:that] 
+[2046:that] 
+[2047:here] 
+[2048:Ingrid couldn't find ] 
+; 
+[2053:it's gnot clear what ] 
+[2054: refers to] 
+; 
+; error messages for NPC's 
+[2060:talking to yourself again? ] 
+[2061:please talk to one person at once] 
+; 
+; Standard Adventure output messages 
+; 
+[2100:Welcome to the second part of Ingrid's Back!, copyright 
+(C) 1988 from Level 9 Computing. 
+% 
+%Ingrid woke up on the stairs at Gnettlefield farm. Her head was 
+spinning, her mouth tasted like a bantam coop and her stomach was 
+churning. Had she been poisoned? Mugged? Was Flopsy sitting on 
+her? 
+%Eventually she remembered drinking a pint (or was it more?) 
+of scrumpy last gnight at the party to celebrate her petition.
+% 
+%] 
+; 
+; examining something greater than maxobject: (but not scenery) 
+; rare occurrence - mostly for omnipresent objects, numbers, spells 
+[2112:it looked exactly as Ingrid had expected. ] 
+; 
+[2114:Ingrid couldn't go that way] 
+[2115:through the door] 
+; 
+[2117:it's already open] 
+; 
+[2123:Ingrid couldn't put ] ; paired with 2124 
+[2124:there] 
+; 
+[2126:Ingrid would have to drop it first] 
+; 
+[2128:%To travel quickly, try eg Run to Gnettlefield, or Go to 
+Mill.%] 
+; 
+; 2130 is used when player refers to scenery which is not nearby 
+[2130:I can't find a reference to "] 
+[2131:Ingrid was on it! ] 
+[2132:what? ] 
+[2133:Ingrid did gnot know where to look. ] 
+[2134:Ingrid was wearing ] 
+[2135:please try again, saying what with? ] 
+[2136:which one? ] 
+[2137:at what? ] 
+[2139:was full] 
+[2140:" here] 
+; 
+[2142:Ingrid couldn't wear ] 
+; 
+[2147:Ingrid was already wearing that] 
+[2148:Ingrid didn't gneed to do that] 
+; 
+; Confirmation messages 
+; 
+[2152:worn] 
+[2153:OK] 
+[2155:time passed. ] 
+[2156:said] 
+[2158:Ingrid would have to untie it first] 
+; 
+[2160:YES or GNO please. ] 
+; 
+[2172:gnobody wants it] 
+; 
+; Death, scoring, game control etc. 
+; 
+[2200:really restart? ] 
+; 
+[2202:really restore? ] 
+[2203:%did Ingrid continue? ] 
+[2204:said, "Thank you"] 
+; 
+[2209:%Ingrid's adventure was at an end. 
+%Please type restart, undo, restore or ram restore: ] ; && 
+[2210:the room was badly damaged] ; attack room 
+[2211:Ingrid decided gnot to bother] 
+[2212:coo! What a hooligan] 
+[2213:it looked Gnorsegnomized] 
+; 
+[2215:that's too long to wait] ; won't wait 
+[2216:you can wait for someone or eg WAIT 3] 
+; 
+; Score messages.. 
+[2240:%Ingrid scored ] 
+[2241:%Ingrid had made a mess of it again. ] 
+[2242: out of 600 and was ] 
+[2243:-] ; minus sign 
+; 
+; Ratings 
+; 
+[2249:doing very badly] ; -ve score 
+[2250:a pretty useless little gnome - well, quite pretty] 
+[2251:way below average] 
+[2252:just below average] 
+[2253:an average sort of gnome] 
+[2254:getting better all the time] 
+[2255:above average] 
+[2256:doing very well indeed] 
+[2257:a clever little gnome] 
+[2258:getting rather pleased with herself] 
+[2259:smiling all over her face] 
+[2260:just about satisfied] 
+; 
+[2300:undo and ram save//restore need 128K. ] ; && 
+;; [2301:%please insert save disc and press a key.%] ; && disc 
+;; [2302:%please insert game disc.%] ; && disc
+[2308:I can't use undo to go back any further. ] ; && 
+[2309:(you can use ram save//restore and undo).%] ; && 
+[2310:I can't find that saved position in memory. ] ; && 
+; 
+[2311:%Ingrid has finished this part. Do you want to save her 
+position? ] ; && tape 
+[2312:that data was gnot saved from Ingrid's Back! ] 
+[2313:play the game tape to load part ] ; && tape 
+[2314:%Ingrid is about to start another part of the game. Do you 
+want to go ahead? ] ; && tape 
+; 
+; misc jokey messages (slightly more complex than echo verbs).. 
+[2401:Ingrid was gnot feeling self-destructive] ; attack me 
+;; [2404:Ingrid smelt gnothing of interest] 
+[2405:Ingrid found gnothing much to write about] 
+;; [2406:Ingrid didn't smell too bad, all things considered] 
+; smell player 
+[2407:Ingrid said hello] 
+[2416:to be, or gnot to be, that is the question] 
+; 
+; add your messages for special cases here.. 
+; 
+; gate handlers 
+[2500: through a gate] ; 12 
+[2501: through an open gate] ; 13 
+[2502:through the gate] ; 2115 
+[2503:the gate] ; for output in PrintACTORactiondot 
+; 
+; turnips 
+[2510:opened the bedroom door and was buried by an avalanche 
+of turnips] 
+[2511:the ground was too hard for digging] 
+[2512:was rescued] 
+[2513:Ingrid saw that her bedroom was full of turnips] 
+; 
+; in/out steamroller 
+[2515:got out of the steamroller] 
+[2517:Flopsy followed] 
+; 
+; FROOP 
+; responses for general verbs when buried in turnips 
+[2520:Ingrid's arms were trapped by the turnips] 
+[2521:the turnips got in Ingrid's way] 
+[2522:Ingrid couldn't move a muscle] 
+; 
+; FROOP 
+; responses for Ingrid's cries for help while in the turnips 
+[2530:Ingrid's cries were muffled by the turnips] 
+[2531:Ingrid had a turnip lodged in her mouth] 
+[2532:gnobody heard Ingrid's muffled cries] 
+; 
+; FROOP 
+; various "friendly" npc's ignore Ingrid if she is in turnips. 
+; (male & female) 
+[2540:pretended that she couldn't see Ingrid] 
+[2541:said, "I wonder where Ingrid is"] 
+[2542:said, "I can't find Ingrid anywhere"] 
+; 
+; knock 
+[2545:rat-a-tat-tat] 
+; 
+; FROOP 
+; various "enemy" npc's laugh at Ingrid if she is in turnips. 
+; (all male) 
+[2550:looked at Ingrid and giggled] 
+[2551:smirked at Ingrid amongst the turnips] 
+[2553:prodded Ingrid's foot] 
+; 
+; Seamus warning 
+[2560:%Green smoke billowed up and slowly faded away, revealing 
+a slightly singed Seamus Sosmall. 
+%"Begorra, and it's bad gnews I'm bringing", he said solemnly, 
+"Sure and they've heard about your petition and it hasn't stopped 
+them at all, at all. See Old Crawley, he's beside himself and is 
+working faster than ever. He's already evicted the good people of 
+Little Moaning and yourself is gnext on the list"] 
+[2561:%Seamus pulled himself together and carried on. "Gnow, 
+it comes to me that we've got a bit of a chance. You could maybe 
+slow Silas down by stealing his plans, and if you could do for 
+that steamroller of his, that should stop him, to be sure. 
+%"I'd love to be helping but.." 
+%And Seamus vanished] 
+; 
+; moving a steamroller 
+[2573:drove the steamroller to the ] 
+[2574:drove the steamroller] 
+; 
+; FROOP 
+; Flopsy dodges/bites silas 
+[2580:Flopsy ran circles around Silas] 
+[2581:Silas tried to grab Flopsy, but she was too quick] 
+[2582:Silas kicked at Flopsy in a rage] 
+; 
+; steal plans 
+[2590:Flopsy dodged Silas's wild kicks and got close enough to 
+grab his plans] 
+[2591:"Gerroff!", raged Silas. "They're mine and they're private"] 
+; 
+; steamroller puzzles 
+[2600: (lying down)] 
+[2601:was lying down] 
+[2602:%the trolls carried ] 
+[2603:out of the way] 
+[2604:%the trolls tried to carry Gnoah out of the way. But gnot 
+even they could gnot lift him. 
+% 
+%"You great tub of lard!", raged Silas Crawley. "Come on", he 
+called to the trolls. "We'll have to get at the farm from the 
+other side". They all got back on the steamroller and Silas did 
+a gnifty thirty-three-point turn] 
+[2605:%"Ha! Ha! The road's too wide here for you to block it", 
+laughed Silas as he drove the steamroller around] 
+[2606:the dam was too strong to be broken again] 
+[2607:water gushed towards Soggybottom field] 
+[2608:%Moments later, Ingrid heard angry shouts and curses 
+coming from Silas and the trolls. She looked and saw that 
+their steamroller was bogged down] 
+[2609:Silas drove the steamroller around the flooded area] 
+; 
+; FROOP 
+; message group for silas shouting at actor to get out of the way 
+[2610:"Have you any idea what a mess this steamroller would 
+make if I were to let it roll over you?", Silas yelled to] 
+[2611:"You can't win you know", said Silas to] 
+[2612:"If lie there, I'll just get the trolls to carry you 
+away!", Silas shouted at] 
+; 
+; FROOP 
+; gnoah protests against silas driving steamroller 
+[2620:%"Get off my property!", yelled Gnoah] 
+[2621:%Gnoah kicked the steamroller and yelped] 
+[2622:%"This is private property!", yelled Gnoah] 
+; 
+; flood drains away in ten stages 
+[2630:the floodwater seeped slowly into the ground] 
+[2631:the floodwater soaked into the field] 
+[2632:the floodwater drained away] 
+[2633:the field dried out a little] 
+[2634:the water had almost drained away] 
+[2635:the water had drained away] 
+[2636:the mud began to dry in the sun] 
+[2637:the ground was becoming much firmer] 
+[2638:the ground was almost dry again] 
+[2639:the bog had completely dried up] 
+; 
+; blow up steamroller 
+[2640:"Get that mouldy old loaf away from my steamroller!", 
+shouted Silas, who didn't like the look of it] 
+[2641:the steamroller exploded with an impressive bang, 
+showering ash all over Soggybottom field. 
+% 
+%Silas Crawley and the trolls arrived. "Right! That does it! Gno 
+more Mr Gnice Goblin!" shouted Silas. 
+%"Bane, Chugg, Doldrum, Fuddle and Gormless, round up those pesky 
+Bottomlows. Ergot, lock them in the barn, and Ambul, you catch 
+Ms Cleverclogs here!" 
+% 
+%Silas angrily led six of the trolls towards the farm, while Ambul 
+made his way towards Ingrid] 
+[2642:couldn't reach the chimney] 
+[2643:couldn't reach the chimney from inside the steamroller] 
+; 
+; farm is demolished 
+[2650:Ingrid stood helplessly by as the steamroller demolished 
+her house. A turnip came flying from the rubble and hit Ingrid 
+on the head..] 
+[2651:a steamroller proceeded to demolish the house with Ingrid 
+still inside] ; no dot 
+[2652:%Ingrid heard the steamroller demolishing Gnettlefield 
+farmhouse. She ran towards it, but tripped and fell..] 
+; 
+; warren puzzle 
+[2660:stomped angrily after Ingrid] 
+; 
+[2662:Ambul jumped in front of Ingrid and blocked the way] 
+[2663:%the white rabbit ran down into the warren] 
+[2664:%it fell through into the lower warren, leaving gnothing 
+for Ingrid to climb down] 
+[2665:%it fell down into the lower warren and hit Ambul on the 
+head. He yelled furiously, but was unable to climb back up] 
+[2666:there was gnothing to climb down] 
+; 
+; telelily handling 
+[2670:and faded away] 
+[2671:materialized from] 
+[2672:stood on] 
+[2673:it faded away] 
+[2674:it fell to the bottom of the well] 
+[2675:the walls of the well were too slippery to climb] 
+;[2676:was out of reach at the bottom of the well] 
+;[2677:was in the well] 
+[2678:try dropping it first] 
+[2679:faded away] 
+; 
+; bane (fancies Ingrid) 
+[2680:Bane stood blocking the farmhouse entrance] 
+[2681:Bane stopped Ingrid and began to chat her up. This 
+was a gnew experience for Ingrid, and she wasn't sure that she 
+liked it] 
+[2682:Bane was overcome by love when he saw Ingrid's enchanting 
+lipstick and smelt her lovely perfume. So much so, that he 
+arranged a tryst in Tack's farm, and then rushed off to take a 
+bath.
+%Ingrid smiled inwardly as she waved him farewell. He'd have to 
+tryst by himself. She'd got other plans] 
+[2683:it just wouldn't come off] 
+; 
+; chugg (drinks scrumpy) 
+[2690:Chugg grasped the cask of scrumpy and drained it in one 
+long, gulping swallow. 
+%Then, clutching the cask, Chugg turned bright green and crawled 
+slowly outside] 
+; 
+; mill hoist 
+[2700:the brake had already been released] 
+[2701:there was a slow grinding creak as windmill's vanes began to 
+turn] 
+[2702:the brake was already engaged] 
+[2703:there was a deep scrunching gnoise as the windmill's vanes 
+stopped turning] 
+[2704:%Ingrid could hear the vanes turning outside] 
+[2705:%Ingrid could see the windmill's vanes turning in the wind] 
+[2706:gnothing seemed to happen] 
+[2707:there was a short klunk as if the lever had been moved the 
+wrong way] 
+[2708:Ingrid looked through the window and saw a hook rising on 
+the end of a rope] 
+[2709:the hook rose towards the top of the windmill] 
+; * message 2710 must work for male & female actors, as well as Ingrid * 
+[2710:dangled helplessly on the end of the hook] 
+[2711:there was a brief thunk. Ingrid looked out of the window 
+and saw that the hook was still on the ground] 
+[2712:Ingrid looked through the window and saw a hook descending on the 
+end of a rope] 
+[2713:the hook came down into view] 
+[2714:the hook couldn't be fastened to that] 
+[2715:got off the hook] 
+[2716:the hook could only carry one person] 
+; 
+; collapse barn 
+[2720:the brick could only be moved a little bit and wouldn't 
+come clear of the wall] 
+[2721:the brick came out and the whole barn collapsed with a loud 
+crash, trapping her family inside. They were moaning and 
+grumbling as usual, so Ingrid knew that everybody was all right. 
+She made a mental gnote to dig them out later when she had got 
+some spare time] 
+[2722:the barn door had been locked] 
+[2723:the barn had collapsed] 
+[2724:%Ingrid glanced at where Ergot had been guarding the 
+barn, and saw that he had been flattened by the barn door] 
+; 
+; successive stages of removing bricks 
+[2730:Ingrid pulled at the loose brick and her family heard the 
+gnoise from the inside the barn. They pushed the brick from the 
+other side of the wall and Ingrid managed to pull it free. She 
+tossed it aside and then looked for another loose brick] 
+[2731:Ingrid pulled another brick free with a bit of help from 
+barned Bottomlows] 
+[2732:the brick came free quite easily. The wall was gnow looking 
+distinctly unsteady] 
+[2733:Ingrid tugged yet another brick from the wall and the whole 
+barn wobbled. "We're gnearly free!", cried her family 
+from inside, getting quite excited by it all] 
+; 
+; FROOP 
+; family trapped in collapsed barn 
+[2740:%complaints sounded under the barn] 
+[2741:%"that's the last time I listen to Ingrid", muttered Gnoah] 
+[2742:%"I'll flatten our Ingrid when I get out"] 
+; 
+; FROOP 
+; hear cried from someone on hook at top of windmill 
+[2750:%Ingrid heard someone shouting at her from above] 
+[2751:%somebody shouted, "Get me down from here!"] 
+[2752:%somebody was hanging at the top of the windmill] 
+; 
+; FROOP 
+[2760:%someone was down the well] 
+[2761:%Ingrid kicked a pebble down the well. Instead of a splash, 
+it made an "Ouch" kind of sound] 
+[2762:%a distant echo popped out of the well. "Help!", it said] 
+; 
+[2770:the trapdoor was closed, blocking the way down] 
+[2771:the trapdoor lifted easily] 
+[2772:the trapdoor was too heavy to lift] 
+;[2773:the trapdoor was weighted down] 
+[2774:grunted, as if to say, "DON'T PUSH ME, GNOME"] 
+[2775:fell into the cellar] 
+; 
+; FROOP 
+[2780:%the trapdoor creaked open a little and a hand reached out. 
+Ingrid trod on it, by way of discouragement] 
+[2781:%Ingrid heard thumping gnoises begneath the trapdoor] 
+[2782:%a muffled knocking sound came from the trapdoor] 
+; 
+; FROOP 
+[2790:teetered on the edge of the trapdoor] 
+[2791:leaned over the cellar] 
+[2792:wandered around the edge of the trapdoor] 
+; 
+[2801:the guinea pigs charged through the open gate and ran into 
+the main sty] 
+[2802:scuffled helplessly as the guinea pigs knocked him over and 
+sat on top of him. 
+%He finally managed to wriggle free and staggered away] 
+; Be careful with 2810, since Ingrid may already be in kitchen. 
+[2810:%Having dealt with the last troll, Ingrid remembered that 
+she had to get the deeds from the farmhouse and protect them from 
+Silas Crawley. As she reached the bottom of the stairs, she heard 
+footsteps coming from the landing..] 
+[2811:Silas was clutching Ingrid firmly by the wrist] 
+[2812:escorted Ingrid] 
+[2813:Silas was escorting Ingrid] 
+; 
+; win 
+[2840:Silas saw Ingrid push the deeds through the gap begneath 
+the door, and promptly opened it to retrieve them. Turnips burst 
+through the open door in a great avalanche that buried him before 
+he had time to move. 
+%Ingrid watched from a safe distance until a muffled voice cried, 
+"Get 'em off me!" 
+%"Gnot likely!" Ingrid told him, "And as all your chaps have 
+been dealt with, there's gno-one else to come and dig you out. 
+Do you give up?" 
+%"Yes!", called a turnippy voice. 
+% 
+%With that little problem solved, Ingrid eventually got round 
+to digging her family out from under the collapsed barn, and 
+life returned to gnormal in Little Moaning. 
+% 
+%Oddly enough, gnobody bothered to say thank you, and if it 
+weren't for Ingrid's gnice, trusting gnature, she might have 
+thought they blamed her for everything..] 
+; 
+[2841:fell from above] 
+[2842:please try again, saying BLUE TELELILY or GREEN TELELILY] 
+; 
+; Ingrid automatically examines plans if silas is not carrying them. 
+; Usually, Flopsy will bring them, but it is possible to find them on 
+; the floor if Flopsy was told to drop them as part of her "steal plans" 
+; command. This is why Flopsy has been omitted from this message. 
+; 
+[2843:%as soon as Ingrid saw the plans, she took them and 
+scanned through the schedule. All the other gnomes had already 
+been evicted and, if the steamroller reached Gnettlefield and 
+knocked it down, there would be gnobody left to defend the 
+Dribble Valley. 
+% 
+%As she tried to decide how best to inconvenience the trolls, 
+Flopsy jumped up and swallowed the plans. ] 
+; 
+[2844:took a flying leap towards Ingrid and landed smack on 
+top of her, flattening her into the ground. 
+% 
+%And so it was that, when the Gnorsegnome estate opened at the 
+end of the gnext year, there remained a clear Ingridprint stamped 
+into the ground beside the "Ravisher's Rest" winebar] 
+; 
+; "Pet" messages... (table driven) 
+; some remarks made by Flopsy on various occurrences... 
+; 
+[2850:stood clear of the door] 
+[2851:eyed the plans and growled] 
+[2852:trying to catch minnows as they swam past] 
+[2853:sniggered hoarsely] 
+[2854:watched with disappointment as Silas laughed] 
+[2855:ran into the water and swam towards some ducks] 
+[2856:paddled across the water] 
+[2857:yapped gnoisily] 
+[2858:ate a minnow] 
+[2859:gave a rumbling growl, as if to say, "Use your loaf, 
+Ingrid"] 
+[2860:pointed her snout to the west and whined] 
+[2861:barked the gnational anthem] 
+[2862:pointed her tail in the air and sniffed around the burrow] 
+[2863:sniggered to herself] 
+[2864:rubbed herself against Bane's legs and tried to charm her 
+way past him. But Bane only had eyes for Ingrid] 
+[2865:tried to lick it off and screwed her face up at the gnasty 
+taste] 
+[2866:trotted unsteadily around the kitchen, licking up the 
+puddles of scrumpy which Chugg had spilled] 
+[2867:imitated the windmill's vanes] 
+[2868:stopped wagging her tail in circles] 
+[2869:stuck her gnose out of the window and watched the hook 
+thoughtfully] 
+[2870:tried to take the brick] 
+[2871:sniffed at the collapsed barn] 
+[2872:scratched her paws against the door] 
+[2873:tried to retrieve the brick] 
+[2874:ducked as Ingrid tossed the brick away] 
+[2875:yelped as the brick hit her on the head and bounced into 
+the distance] 
+[2876:stood well clear as Ingrid threw away the brick] 
+[2877:pawed the top of the trapdoor, as if trying to hold it 
+down] 
+[2878:pawed the trapdoor] 
+[2879:looked over the edge and wagged her tail happily] 
+[2880:snapped and sneezed in the settling cloud of dust] 
+[2881:released the deep breath that she had been holding ever 
+since she met the guinea pigs] 
+[2882:snapped at Silas, but he just pushed her out of the way] 
+[2883:shook her head at Ingrid and tutted] 
+[2884:scratched at the hard ground] 
+[2885:yapped in unison with Seamus's coughs] 
+[2886:sniffed the cloud of smoke where Seamus had been standing] 
+[2887:groaned and rolled her eyes at how daft Ingrid seemed to be 
+that day] 
+[2888:yelped as the steamroller just missed her tail] 
+[2889:bit at the dam, but it was too strong to break again] 
+[2890:gave Ingrid a very dumb sort of expression] 
+[2891:stood over the edge of the well and wagged her tail] 
+[2892:whined sympathetically as she watched Bane skip off with 
+romance in his trollish heart] 
+[2893:cringed as the sound went through her] 
+[2894:absently shook her head at Ingrid and tutted] 
+[2895:spat a fish bone out of her mouth] 
+[2896:sat down, then got up again quickly as a startled (and 
+rather squashed) frog hopped out and ribbited away into the 
+distance] 
+[2897:stood on a muddy patch and squashed a tadpole] 
+[2898:looked around for the water] 
+[2899:splashed playfully in the water] 
+; 
+; messages when people refuse an order. 2900+n 
+; Use ACTORM1Dot 
+; 
+[2902:refused] ; Gnora 
+[2903:refused] ; Gnoah (never used, I think)
+[2904:said his rabbits gneeded him] ; Bumpy 
+[2905:said he had to give Gnoggin a hand] ; Dimple 
+[2906:said he had to give Dimple a hand] ; Gnoggin 
+[2907:refused] ; Arback 
+[2912:refused] ; Grandma 
+;; [2913:] ; Flopsy 
+[2919:refused] ; Seamus 
+[2922:refused] ; Jasper (doesn't appear). 
+[2924:blew kisses at Ingrid] ; Trolls 
+[2925:just patted Ingrid on the head] ; Silas 
+[2926:laughed at the very idea] ; Ambul 
+[2927:just kissed Ingrid] ; Bane 
+[2928:was too drunk to understand] ; Chugg 
+[2929:refused] ; Doldrum 
+[2930:refused] ; Ergot 
+[2931:refused] ; Fuddle 
+[2932:made a speech] ; Gormless 
+; 
+[2937:ignored Ingrid and continued to roll in the mud] ; G.Pigs 
+[2938:took gno gnotice of Ingrid] ; White Rabbit 
+; 
+; comments made by people when they encounter Ingrid for the first time 
+; 3000+ 
+; 
+; don't be silly group... 
+[3100:that sounds silly] 
+[3101:gnow there's a funny thing to want to do] 
+[3102:daft I call it] 
+; 
+; nice try group... 
+[3110:gnice try, my friend] 
+[3111:a truly valiant attempt at a solution. Shame it won't work] 
+[3112:gnice try] 
+; 
+; just scenery group... 
+[3120:you might as well leave it alone] 
+[3121:I suggest that you forget about it] 
+[3122:that's gnot important to the game] 
+; 
+; missing object... 
+[3130:gnow what was the object of that? Try again] 
+[3131:sorry, I couldn't find an object] 
+[3132:please be more specific] 
+; 
+; Nothing happened group... 
+[3140:that didn't seem to work] 
+[3141:there was gno effect] 
+[3142:that did remarkably little] 
+; 
+; the following are printed after the object name.. 
+; 
+[3150:wouldn't move] ; try to move static object group 
+[3151:didn't budge] 
+[3152:was unmoved] 
+; 
+[3160:that would be a waste of time] ; don't bother group 
+[3161:that would be pointless] 
+[3162:that won't get you anywhere] 
+; 
+; groupsay messages for hello responses 
+[3170:said, "Hello there"] 
+[3171:said, "Greetings"] 
+[3172:greeted her with an inscrutable smile] 
+; 
+; groupsay messages for npc's being unable to carry out an order 
+[3180:looked puzzled] 
+[3181:had been confused by Ingrid's order] 
+[3182:seemed to have had problems] 
+; 
+; groupsay messages for npc's being unable to carry out an order 
+[3190:seemed puzzled by "] 
+[3191:didn't know what Ingrid had meant about "] 
+[3192:reported problems with "] 
+; 
+; now, npc accepts an order 
+[3230:gnodded slowly] 
+[3231:gnodded obediently] 
+[3232:agreed] 
+; 
+; now response to questions when not obedient... 
+[3250:looked puzzled] 
+[3251:pretended gnot to hear] 
+[3252:muttered something] 
+; 
+; response to requests to give anything(s) to anyone 
+[3270:refused] 
+[3271:refused] 
+[3272:refused] 
+; 
+; npc wants to obey orders just given, but can't understand any of them! 
+[3290:looked puzzled] 
+[3291:seemed confused] 
+[3292:did gnot understand] 
+; 
+; Gold singing... 
+; 
+; Arback 
+[3360:said, "Look out, here comes trouble"] 
+[3361:mumbled] 
+[3362:groaned] 
+; 
+; Flopsy 
+[3370:yapped gnoisily] 
+[3371:shook herself briskly] 
+[3372:wagged her tail] 
+; 
+; bumpy 
+[3380:looked pleased to see Ingrid] 
+[3381:said hello to Ingrid] 
+[3382:smiled vacantly] 
+; 
+; seamus 
+[3390:twitched an eyebrow] 
+[3391:twisted his beard apprehensively] 
+[3392:grinned uneasily] 
+; 
+; gnoah, dimple, gnoggin 
+[3400:blew his gnose on his sleeve] 
+[3401:coughed into his fist] 
+[3402:tried to look busy] 
+; 
+; gnora, grandma 
+[3410:coughed gnoisily] 
+[3411:looked around absently] 
+[3412:shook her head with a slow sigh] 
+; 
+; Default troll 
+[3430:grunted loudly at Ingrid] 
+[3431:opened his mouth and belched] 
+[3432:dribbled all down his chin] 
+; 
+; Trolls 
+[3440:wolf-whistled at Ingrid] 
+[3441:sung a rude song about gnomes] 
+[3442:squabbled violently] 
+; 
+; Silas 
+[3460:gave Ingrid a detestful frown] 
+[3461:laughed pretentiously] 
+[3462:shouted abuse at Ingrid] 
+; 
+; troll 2 fancies Ingrid 
+[3470:called, "Gis a kiss!"] 
+[3471:murmured, "Wot a luvly big li'le lass] 
+[3472:drooled lasciviously] 
+; 
+; troll 3 is totally missed 
+[3480:waved his arms and sang about beer] 
+[3481:collapsed in a drunken heap] 
+[3482:crawled about on the floor] 
+; 
+; pigs 
+[3500:stuffed themselves with acorns] 
+[3501:grunted happily] 
+[3502:rolled in the mud] 
+; 
+; again used following a command referring to scenery 
+[3530:that was gnot repeatable] 
+[3531:you can't do that again] 
+[3532:it wouldn't help to try that again] 
+; 
+[3560:not around] ; printed by follow code 
+; 
+[3600:a voice in the distance shouted about a stack overflow. ] 
+[3605:sorry, Ingrid will have to find her own way from here] 
+; 
+[3614:Ingrid yelled "ARRRGGGGGHHHHH"! ] 
+; 
+; 'npc, rude' word for talking people 
+[3620:swore back at Ingrid] 
+[3621:cursed crudely] 
+[3622:seemed very offended] 
+; 
+; 'npc, help' for talking people 
+[3640:was too busy] 
+[3641:pretended gnot to hear] 
+[3642:refused] 
+; 
+; 'npc, echo verb' for talking people 
+[3660:said, "You must be gnuts"] 
+[3661:looked surprised] 
+[3662:looked askance at Ingrid] 
+; 
+; Garbage words.. 
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also 
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble 
+^N good ^N of ^N cute ^N there] 
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly 
+^N warily ^N quickly ^N rapidly ^N following ^N around] 
+[4002:^N please] 
+[4003:^N road ^N Mister ^N Mr ^N Mrs ^N Miss ^N Bottomlow] 
+[4004:^N telelily ^N lily ^N lilly ^N telelillie ^N lilie ^N lillie] 
+[4005:^N front] ; lie in front of steamroller 
+; 
+; Book protection code... 
+; 
+[4200:%A funny little gremlin stopped Ingrid by waving a copy 
+of a rather tattered book. ] 
+[4201:page ] 
+[4202:, line ] 
+[4203:, word ] 
+[4204:?%] 
+[4205:the gremlin grinned gnastily and Ingrid knew she was wrong. ] 
+[4206:the gremlin vanished in a puff of pink smoke.%] 
+[4207:It wanted to know the word at ] 
+[4208:Wrong again! The gremlin snapped its fingers and everything 
+went black... ] 
+; 
+; ADD PROTECTION WORDS HERE, BUT DO NOT MARK NUMBERS (digits) eg 20 
+[4301:^C even ^C maintain] ;18,9,8 
+[4302:^C writing] ;39,10,5 
+[4303:^C rat] ;40,1,6 
+[4304:^C go] ;21,8,3 
+[4305:^C it] ;38,3,4 
+[4306:^C enter] ;3,4,1 
+[4307:^C hundreds ^C your] ;4,1,2 
+[4308:^C used] ;10,3,8 
+[4309:^C used] ;10,3,8 
+[4310:^C and] ;23,8,5 
+;;[4311:] ;8,1,6 
+[4312:^C go] ;21,8,3 
+[4313:^C sure] ;38,9,4 
+[4314:^C until ^C then] ;19,4,1 
+[4315:^C level] ;4,3,2 
+;;[4316:] ;33,2,7 
+;;[4317:] ;2,7,8 
+;;[4318:] ;7,2,5 
+[4319:^C the] ;32,7,6 
+[4320:^C I] ;37,2,3 
+[4321:^C dusting] ;22,1,4 
+;;[4322:] ;11,10,1 
+;;[4323:] ;20,1,2 
+;;[4324:] ;34,1,8 
+;;[4325:] ;34,1,8 
+[4326:^C brothers] ;31,10,5 
+[4327:^C hadn't] ;40,7,6 
+[4328:^C I] ;37,2,3 
+[4329:^C old] ;22,7,4 
+[4330:^C cabbage] ;27,6,1 
+[4331:^C disappeared] ;36,9,2 
+;;[4332:] ;9,6,7 
+[4333:^C sure] ;26,5,8 
+[4334:^C start ^C doesn't] ;15,8,5 
+;;[4335:] ;8,7,6 
+[4336:^C won't] ;37,6,3 
+[4337:^C below] ;6,3,4 
+[4338:^C se] ;3,2,1 
+[4339:^C instructions ^C section] ;12,1,2 
+;;[4340:] ;18,3,8 
+;;[4341:] ;18,3,8 
+;;[4342:] ;23,2,5 
+[4343:^C the] ;32,7,6 
+[4344:^C won't] ;37,6,3 
+[4345:^C climb] ;6,5,4 
+[4346:^C asked] ;35,8,1 
+[4347:^C and] ;28,9,2 
+[4348:^C see ^C are] ;9,10,7 
+;;[4349:] ;10,7,8 
+[4350:^C axe] ;7,10,5 
+[4351:^C hadn't] ;40,7,6 
+[4352:^C is] ;37,10,3 
+;;[4353:] ;30,1,4 
+;;[4354:] ;11,8,1 
+[4355:^C was] ;28,7,2 
+;;[4356:] ;17,2,7 
+;;[4357:] ;2,1,8 
+[4358:^C through] ;31,8,5 
+;;[4359:] ;8,7,6 
+;;[4360:] ;37,10,3 
+[4361:^C over] ;36,3,4 
+[4362:^C enter] ;3,4,1 
+;;[4363:] ;4,9,2 
+[4364:^C the ^C like] ;9,4,7 
+[4365:^C days] ;34,5,8 
+[4366:^C from ^C of] ;15,6,5 
+;;[4367:] ;16,3,6 
+[4368:^C insert ^C the] ;13,4,3 
+;;[4369:] ;14,9,4 
+[4370:^C readme ^C insert] ;19,10,1 
+[4371:^C moved ^C Dimple] ;20,7,2 
+[4372:^C white ^C use ^C slide] ;17,6,7 
+[4373:^C washing] ;26,9,8 
+[4374:^C writing] ;39,10,5 
+;;[4375:] ;40,3,6 
+[4376:^C insert ^C the] ;13,4,3 
+[4377:^C enter] ;14,5,4 
+[4378:^C Doomladen] ;35,6,1 
+[4379:^C I] ;36,5,2 
+[4380:^C the] ;25,8,7 
+;;[4381:] ;18,3,8 
+[4382:^C and] ;23,8,5 
+;;[4383:] ;8,3,6 
+;;[4384:] ;13,8,3 
+[4385:^C me] ;38,7,4 
+[4386:^C one] ;27,2,1 
+[4387:^C loading ^C for] ;12,7,2 
+;;[4388:] ;17,10,7 
+;;[4389:] ;10,7,8 
+;;[4390:] ;7,6,5 
+;;[4391:] ;16,3,6 
+;;[4392:] ;13,8,3 
+[4393:^C it] ;38,3,4 
+[4394:^C se] ;3,2,1 
+[4395:^C to ^C bs24] ;12,5,2 
+[4396:^C at] ;25,2,7 
+;;[4397:] ;2,1,8 
+[4398:^C brothers] ;31,10,5 
+;;[4399:] ;40,3,6 
+[4400:^C the ^C your] ;13,2,7 
+; 
+; Racetrack messages 
+; 
+; endgame 
+[5000:%Silas grabbed Ingrid and led her to Grandma Gnutson's 
+bedroom, where they found the hidden deeds. "Gnow", said Silas, 
+"you're coming with me to give those deeds to Squire Quickbuck. 
+And gnone of your tricks"] 
+; 
+[5001:%Ingrid knew this was her last chance] 
+; 
+[5002:%Silas dragged Ingrid along] 
+[5003:%Ingrid knew that she had missed her chance to save Little 
+Moaning] 
+;--- 
+; Ingrid doesn't run from chasing troll (FROOP) 
+[5010:chased Ingrid round in circles] 
+[5011:crept up behind Ingrid] 
+[5012:tried to grab Ingrid, but she was too gnimble] 
+;--- 
+; steamroller stage 1 
+[5020:%Silas shovelled some coal into the firebox. Flames licked 
+out and singed his eyebrows. "Bother!", he complained, drawing 
+two lines of coal dust onto his brow to replace them] 
+[5021:%Silas swerved the steamroller to the left a bit, and 
+squashed a hedgehog. "Don't try and lie down in the way", he 
+grinned evilly] 
+[5022:%Silas rubbed his hands together triumphantly. "Only a few 
+more yards and your farmhouse will be rubble!"] 
+;--- 
+; silas & trolls repair dam 
+[5030:"Piddling pixies!", stormed Silas. "Some idiot's gone and 
+burst the dam"] 
+[5031:Silas ground his teeth angrily as he surveyed the river] 
+[5032:"Right!", said Silas to the trolls, "Make it stronger 
+this time!"] 
+[5033:Silas watched the trolls set to work rebuilding the dam. 
+He lit up a cigarette and took a long much-gneeded drag] 
+[5034:the trolls worked busily while Silas puffed his cigarette] 
+[5035:the trolls had repaired half of the dam and stopped to 
+wipe their sweating brows] 
+[5036:the trolls worked hard on the dam. Silas threw his 
+cigarette butt into the river and lit up another one] 
+[5037:the trolls had finished. "That looks strong enough", said 
+Silas. "Come on, back to the steamroller"] 
+;--- 
+; steamroller stage 2 
+[5040:%Silas stopped the steamroller and announced that it was 
+time for a tea break. He opened the firebox and put a rusty 
+kettle on to boil] 
+[5041:%The trolls opened their lunchboxes and set to on their 
+cold hobbit pies] 
+[5042:%Silas handed seven mugs to the trolls. They slurped their 
+tea gnoisily, dunking their indigestive biscuits] 
+[5043:%Silas and the trolls chomped their sandwiches and drank 
+their tea. Meanwhile, thick clouds of smoke billowed from the 
+steamroller's chimney] 
+;--- 
+; before Flopsy rescues Ingrid from turnips 
+[5050:%Flopsy sniffed the turnips, and looked puzzled. Yes, 
+gnow she thought about it, she could recognise Ingrid's own 
+special smell] 
+;--- 
+; bumpy 
+[5060:Bumpy turned towards the hole] 
+[5061:%Bumpy said, "I'm gnot hanging around here for long. This 
+part of the warren looks like it might up and fall down any 
+minute"] 
+; 
+; FROOP 
+[5070:Bumpy uprooted a carrot and chomped it contentedly] 
+[5071:Bumpy looked out across the field] 
+[5072:Bumpy rolled playfully in the long grass] 
+;--- 
+; grandma 
+[5080:%"Hello there, Ingrid", began Grandma Gnutson. "Agny 
+Gnorsegnomes in they turgnips?"] 
+; 
+; FROOP 
+[5090:Grandma Gnutson looked down the plughole in the sink] 
+[5091:"Good, gno Gnorsegnomes", said Grandma Gnutson as she 
+inspected the cupboards] 
+[5092:Grandma Gnutson peered under the table] 
+;--- 
+; pigs 
+[5120:the guinea pigs were delighted to see Ingrid and cuddled 
+against her] 
+[5121:the guinea pigs jumped playfully on Flopsy] 
+[5122:Flopsy whimpered as the guinea pigs scrambled over her] 
+;--- 
+; bane 
+[5140:"Ooh-ahh!", said Bane, struggling for words. "What's a 
+gnice gnomemaid like you doing in a place like this?" 
+%Ingrid forced a grin] 
+[5141:"here you are, my luvly", said Bane, offering a bunch of 
+weeds to Ingrid. Ingrid didn't like to refuse, so she fed them 
+to Flopsy] 
+[5142:Bane knelt down on the ground before Ingrid. A thoughtful 
+frown filled his low forehead] 
+[5143:Bane waved his arms about dramatically as he recited, "A 
+troll he would a wooing go.."] 
+;--- 
+; chugg 
+[5150:Chugg squinted at Ingrid with glazed eyes. "Are you both 
+(hic) twins?", he slurred] 
+[5151:Chugg raised his bottle] 
+[5152:Chugg tried to drink from the bottle, but missed his mouth] 
+[5153:Chugg finally realised he had a problem. "Sheesh! My 
+bo'le's empty!", he concluded] 
+;--- 
+; ergot 
+[5160:%Ergot was on guard duty. "Oy!", he yelled. "Get away from 
+here before I lock you up with the other gnomes"] 
+; 
+; FROOP 
+[5170:Ergot kicked Flopsy out of the way] 
+[5171:Flopsy bit at Ergot's ankle] 
+[5172:Ergot tripped over Flopsy] 
+; 
+; FROOP 
+[5180:Ingrid heard her family inside] 
+[5181:Ergot kicked the barn door to silence the cries] 
+[5182:Ingrid heard her family trying to break free] 
+;--- 
+; trolls 
+; 
+[5190:%One of the trolls pointed at Ingrid. "Cor! 
+Look at that luvly bit o' crumpit"] 
+;--- 
+; farmyard racetrack (male & female actormessages) 
+[5200:emptied pig-swill into the pens] 
+[5201:searched for any dropped turnips] 
+[5202:chewed on a thick turnip sandwich] 
+[5203:made a cup of tea and waited for it to cool] 
+[5204:scrattled in the sink] 
+;--- 

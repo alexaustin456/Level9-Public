@@ -1,0 +1,616 @@
+; Standard adventure source, copyright (C) 1987 Level 9 Computing.
+;
+; TABLE.TXT, assembler format data for tables, a.k.a lists/arrays. 
+; (Save the assembled data as TABLE.DAT). 
+;
+; You must start all DEFWs on EVEN boundaries, else subsequent code 
+; seems to be padded to make it even (according to the GENST listing, 
+; anyway). The EVEN directive inserts a padding byte if appropriate.
+;
+ ORG 0
+starttables
+ dc.l LIST1-starttables ; MOVEABLE OBJECT START
+ dc.l $8000 ; OBJECT CURRENT
+ dc.l $800 EQU 7
+HANGINGFROM EQU 8 ; E.G. TREE
+growingfrom equ 9 ; e.g goat, other people
+LIEON EQU 12
+SITON EQU 13
+fastenedto equ 14
+holdingthelid equ 15 ; for strap/chest
+;
+; additions to high initial position
+OBV EQU $80
+ita equ 0
+itan equ $10 ; starts with a vowel
+singularsome equ $20 ; "some cheese is tasy"
+he equ $30
+she equ $40
+pluralsome equ $50 ; "some ropes are strong"
+you equ $60
+;
+NUMOBJ EQU 192
+NUMHIOBJ EQU NUMOBJ ; NO. OF OBJECTS WITH A HIGH POSITION
+minnpc equ 1
+maxnpc equ 39
+npct EQU 7
+HANGINGFROM EQU 8 ; E.G. TREE
+growingfrom equ 9 ; e.g goat, other people
+LIEON EQU 12
+SITON EQU 13
+fastenedto equ 14
+holdingthelid equ 15 ; for strap/chest
+;
+; additions to high initial position
+OBV EQU $80
+ita equ 0
+itan equ $10 ; starts with a vowel
+singularsome equ $20 ; "some cheese is tasy"
+he equ $30
+she equ $40
+pluralsome equ $50 ; "some ropes are strong"
+you equ $60
+;
+NUMOBJ EQU 192
+NUMHIOBJ EQU NUMOBJ ; NO. OF OBJECTS WITH A HIGH POSITION
+minnpc equ 1
+maxnpc equ 39
+npctablesize EQU 640 ; (maxnpc+1)*16
+npcstacksize equ 400 ;>>mike 8/8/87 - reduced from ST's 512
+
+STACK EQU 50
+OUTPUTBUFFER EQU 32 ;>>Mike 8/8/87 - increased from 24 of ST Version
+SCORETABLE EQU 0 ;>>mike 8/8/87 - reduced from ST's 98 ;length of score table
+OBJTABLE EQU 16 ; number of objects which can be specified on one line
+SCRATCH EQU 32 ; GENERAL PURPOSE WS LIST
+;
+;
+LIST23SIZE EQU NUMOBJ+NUMHIOBJ
+LIST236SIZE EQU LIST23SIZE+npctablesize+npcstacksize
+LIST2367SIZE EQU LIST236SIZE+OUTPUTBUFFER+SCORETABLE
+LIST23678SIZE equ LIST2367SIZE ; >>Mike 8/8/87 - reduced from ST version
+;>>mike 8/8/87 LIST23678SIZE EQU LIST2367SIZE+OBJTABLE
+;
+;---
+LIST1
+ dc.b 0,0               ; OBJECT 0
+USER EQU 1
+ dc.b 0+you,158         ;  1 - USER (Ingrid)
+ dc.b itan,13		; 2 - icechild
+ dc.b he,16 		; 3 - icewarrior
+ dc.b he,17		; 4 - icejester
+ dc.b she,17		; 5 - icequeen
+icepeople equ 6
+ dc.b pluralsome,17	; 6 - icepeople
+ dc.b he,14		; 7 - firefighter
+ dc.b he,12		; 8 - fireguard
+ dc.b he,11		; 9 - fireking
+ dc.b pluralsome,11	; 10 - firepeople
+ dc.b 0,158		; 11 - gate
+ dc.b he,23		; 12 - gnome
+penguin equ 13
+ dc.b she,131           ; 13 - penguin
+ dc.b pluralsome,119             ; 14 - penguins
+yeti equ 15
+ dc.b he,24             ; 15 - yeti
+ dc.b 0,0               ; 16
+ dc.b 0,0               ; 17 
+ dc.b 0,0               ; 18
+ dc.b 0,0               ; 19
+ dc.b 0,0               ; 20
+ dc.b 0,0               ; 21
+ dc.b 0,0               ; 22
+ dc.b 0,0               ; 23
+ dc.b 0,0               ; 24
+ dc.b 0,0               ; 25
+ dc.b 0,0               ; 26
+ dc.b 0,0               ; 27
+ dc.b 0,0               ; 28
+ dc.b 0,0               ; 29
+ dc.b 0,0               ; 30 
+ dc.b 0,0               ; 31 
+ dc.b 0,0               ; 32 
+ dc.b 0,0               ; 33 
+ dc.b 0,0               ; 34 
+ dc.b 0,0               ; 35  
+ dc.b 0,0               ; 36  
+ dc.b 0,0               ; 37
+ dc.b 0,0               ; 38
+ dc.b 0,0               ; 39
+;
+; weapons (40 onwards)..
+ dc.b 0,0               ; 40
+ dc.b 0,0               ; 41
+ dc.b 0,0               ; 42
+ dc.b 0,0               ; 43
+ dc.b 0,0               ; 44
+ dc.b 0,0		; 45
+ dc.b 0,0		; 46
+ dc.b 0,0		; 47
+ dc.b 0,0		; 48
+ dc.b 0,0               ; 49
+ dc.b 0,0               ; 50 
+ dc.b 0,0               ; 51 
+ dc.b 0,0               ; 52 
+ dc.b 0,0               ; 53 
+ dc.b 0,0               ; 54
+ dc.b 0,0               ; 55
+ dc.b 0,0               ; 56
+ dc.b 0,0               ; 57
+ dc.b 0,0               ; 58
+ dc.b 0,0               ; 59
+;
+; clothes...
+ dc.b 0,0		; 60
+ dc.b 0,0
+ dc.b 0,0
+ dc.b 0,0
+ dc.b 0,0               ; 64
+ dc.b 0,0               ; 65
+ dc.b 0,0               ; 66
+ dc.b 0,0               ; 67
+ dc.b 0,0               ; 68 
+ dc.b 0,0               ; 69 
+ dc.b 0,0               ; 70 
+ dc.b 0,0               ; 71
+ dc.b 0,0               ; 72 
+ dc.b 0,0               ; 73
+ dc.b 0,0               ; 74
+ dc.b 0,0               ; 75
+ dc.b 0,0               ; 76
+ dc.b 0,0               ; 77
+ dc.b 0,0               ; 78
+ dc.b 0,0               ; 79
+;
+; now some ordinary objects (80 onwards)..
+ dc.b 0,9		; 80 diamond
+ dc.b itan,23		; 81 emerald
+ dc.b ipin,debris	; 82 ruby
+ dc.b 0,119		; 83 sapphire
+ dc.b 0,23		; 84 boulder
+ dc.b 0,23		; 85 cobblestone
+ dc.b 0,23		; 86 flint
+ dc.b 0,23		; 87 fossil
+ dc.b 0,23		; 88 gravel heap
+ dc.b 0,23		; 89 pebble
+ dc.b 0,23		; 90 slate
+ dc.b 0,0		; 91 
+ dc.b 0,0		; 92
+ dc.b 0,0		; 93
+ dc.b 0,0		; 94
+ dc.b 0,9		; 95 cloudstuff
+ dc.b itan+carried,penguin	; 96 egg
+ dc.b prepin,debris	; 97 key log
+ dc.b 0,0		; 98 sack - given to ingrid by gate
+snowshoes equ 99
+ dc.b singularsome+worn,yeti		; 99 snowshoes
+ dc.b 0,0               ;100 
+ dc.b 0,0               ;101 
+ dc.b 0,0               ;102 
+ dc.b 0,0		;103 
+ dc.b 0,0               ;104
+ dc.b 0,0               ;105
+ dc.b 0,0               ;106
+ dc.b 0,0               ;107
+ dc.b 0,0               ;108
+ dc.b 0,0               ;109
+ dc.b 0,0               ;110
+ dc.b 0,0             ;128
+ dc.b 0,0               ;129
+;
+; some static objects (130 onwards)..
+ dc.b 0,0		; 130 dam
+debris equ 131
+ dc.b 0,20		; 131 debris
+ dc.b 0,0
+ dc.b itan,18		; 133 icefall
+ dc.b itan,0		; 134 icefloe
+ dc.b 0,158		; 135 signpost
+ dc.b 0,114		; 136 treetrunk
+footprints equ 137
+ dc.b pluralsome,25	; 137 yeti's footprints
+ dc.b 0,0		; 138 
+ dc.b 0,0		; 139 
+ dc.b 0,0		; 140 
+ dc.b 0,0		; 141 
+ dc.b 0,0		; 142 
+ dc.b 0,0		; 143 
+ dc.b 0,0		; 144 
+ dc.b 0,0		; 145 
+ dc.b 0,0		; 146        ;128
+ dc.b 0,0               ;129
+;
+; some static objects (130 onwards)..
+ dc.b 0,0		; 130 dam
+debris equ 131
+ dc.b 0,20		; 131 debris
+ dc.b 0,0
+ dc.b itan,18		; 133 icefall
+ dc.b itan,0		; 134 icefloe
+ dc.b 0,158		; 135 signpost
+ dc.b 0,114		; 136 treetrunk
+footprints equ 137
+ dc.b pluralsome,25	; 137 yeti's footprints
+ dc.b 0,0		; 138 
+ dc.b 0,0		; 139 
+ dc.b 0,0		; 140 
+ dc.b 0,0		; 141 
+ dc.b 0,0		; 142 
+ dc.b 0,0		; 143 
+ dc.b 0,0		; 144 
+ dc.b 0,0		; 145 
+ dc.b 0,0		; 146 
+ dc.b 0,0		; 147 
+ dc.b 0,0		; 148 
+ dc.b 0,0		; 149
+;
+; some invisible objects (150 onwards)..
+ dc.b obv,0		;150 river
+ dc.b obv,113		;151 river
+ dc.b obv,114            ;152 river
+ dc.b obv,23            ;153 river
+ dc.b obv,116           ;154 second river near icebridge
+ dc.b obv,117           ;155 river
+ dc.b obv,124           ;156 river
+ dc.b obv,131           ;157 lake
+ dc.b obv,132           ;158 lake
+ dc.b obv,133           ;159 lake
+ dc.b 0,0               ;160 lake (in room 0)
+ dc.b 0,0               ;161
+ dc.b 0,0               ;162
+ dc.b 0,0               ;163
+ dc.b 0,0               ;164
+ dc.b 0,0               ;165
+ dc.b 0,0               ;166
+ dc.b 0,0               ;167
+ dc.b 0,0               ;168
+ dc.b 0,0               ;169
+ dc.b 0,0               ;170
+ dc.b 0,0               ;171
+ dc.b 0,0               ;172
+ dc.b 0,0               ;173
+ dc.b 0,0               ;174
+ dc.b 0,0               ;175
+ dc.b 0,0               ;176
+ dc.b 0,0               ;177
+ dc.b 0,0               ;178
+ dc.b 0,0               ;179
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+ dc.b 0,149		; 180 mountain
+ dc.b 0,158		; 181 base of mountain
+ dc.b 0,122		; 182 rock garden entrance
+ dc.b 0,116 		; 183 icebridge
+; 
+;
+
+
+;---
+ even
+ENDOBJECTS
+terraintable
+LIST4
+; table giving scenery types on grassy plain grid
+m equ 112 ; minsynthroom
+glacier equ m+0
+road equ m+1
+river equ m+2
+lake equ m+3
+riverbank equ m+4
+plain equ m+5
+iceberg equ m+6
+lakebank equ m+7
+
+ dc.b riverbank,riverbank,23,riverbank,riverbank,lake,iceberg
+ dc.b glacier,plain,plain,plain,lakebank,lake,lake
+ dc.b glacier,plain,plain,plain,lakebank,lakebank,lakebank
+ dc.b glacier,plain,plain,road,road,road,road
+ dc.b glacier,plain,plain,road,plain,plain,plain
+ dc.b glacier,plain,plain,road,plain,plain,plain
+ dc.b 24,25,26,plain,plain,plain,plain
+;
+;---------
+list8
+; nothing in list 8 at the present.
+;
+;
+;---------
+ even
+NPCINITIAL
+list5
+; first we have a dummy entry for npc 0
+; this is used as some pointers to the *other*
+; things which are used in this list
+; (the equivalent of this area in list6 is used for temp workspace)
+;
+ dc.w floorpointers-npcinitial
+ dc.w racetracks-npcinitial
+ dc.w reversaltable-npcinitial
+ dc.w 0 ; spare (potion table in part2)
+ dc.b 0,0,0,0,0,0,0,0  ; remainder of dummy entry
+;
+; for each character, have the following info:
+; initial enemy, 0 if none
+; dodge (min 0, max 255)
+; maximum damage done by it (approx 0..40 at present)
+; initial hit points
+; GREED (min 0, max 254)
+; AGRESSION (min 0, max 254)
+; timidity (min 0, max 254)
+; obedience (0 to 254) (likelihood to obey orders or racetrack)
+; (word): standard gold-singing group
+; patience (no. of moves npc will wait between activations) 10
+; try not to have too many npcs with same patience - 
+; it causes bursts of activities which is BAD NEWS!
+; dunno 11
+; dunno 12
+; dunno 13
+; dunno 14
+; dunno 15
+
+; For greed agression, timidity, obediance, there
+; is a special case - if one of the values is 255, then
+; the npc will always choose that one, if it is possible
+; This is particularly useful for slaves etc.
+; Note that npcs will still respond to attacks etc. - 
+; anything which sets the 'attention flag'
+
+FRIENDLY EQU 0
+; now the npc tables themselves...
+defaultmale equ 3410
+defaultfemale equ 3420
+defaultanimal equ 3400
+; npc 0 has dummy entry used as pointers above
+
+ dc.b FRIENDLY,0,20,100,0,0,0,0           ; 1 USER
+ dc.w defaultmale ; standard singing
+ dc.b 0,0,0,0,0,0
+
+ dc.b friendly,50,80,200,20,50,0,255     ; 2 icechild
+ dc.w 2760
+ dc.b 1,0,0,0,0,0
+
+ dc.b friendly,255,80,200,250,200,50,255  ; 3 icewarrior
+ dc.w 2770
+ dc.b 1,0,0,0,0,0
+
+ dc.b friendly,100,80,200,0,80,20,155     ; 4 icejester
+ dc.w 2780
+ dc.b 1,0,0,0,0,0
+
+ dc.b friendly,100,80,200,0,80,20,255     ; 5 icequeen
+ dc.w 2790
+ dc.b 1,0,0,0,0,0
+
+ dc.b friendly,100,80,200,0,80,20,155     ; 6 icepeople
+ dc.w 2820
+ dc.b 1,0,0,0,0,0
+
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,200     ; 13 penguin
+ dc.w 2740
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,255     ; 14 penguins
+ dc.w 2750
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,155     ; 15 yeti
+ dc.w 2700
+ dc.b 1,0,0,0,0,0
+
+;---
+
+floorpointers
+; part of list5
+; now 'floor pointers'
+; there is one bye pair for each static room - the
+; first byte gives the direction to go inwards
+; and the second byte gives direction for going outwards
+; (i.e. toward
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,200     ; 13 penguin
+ dc.w 2740
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,255     ; 14 penguins
+ dc.w 2750
+ dc.b 1,0,0,0,0,0
+
+ dc.b user,100,80,200,0,80,20,155     ; 15 yeti
+ dc.w 2700
+ dc.b 1,0,0,0,0,0
+
+;---
+
+floorpointers
+; part of list5
+; now 'floor pointers'
+; there is one bye pair for each static room - the
+; first byte gives the direction to go inwards
+; and the second byte gives direction for going outwards
+; (i.e. towards the synthesised grid)
+;
+; ** BIG WARNING **
+; all shapes must be simply connected. i.e. given a pair of rooms,
+; you must be able to trace a path between them using only the
+; OUT paths of one OR the other.
+; This is because of the way the follow and GO code works.
+north equ 1
+ne equ 2
+east equ 3
+se equ 5
+south equ 4
+sw equ 6
+west equ 7
+nw equ 8
+up equ 9
+down equ 10
+verbin equ 11
+out equ 12
+cross equ 13
+climb equ 14
+jump equ 15
+
+ dc.b 0 ; room 0 (not used)
+ dc.b 0 ; room 1 (not used)
+ dc.b east ; 2 - cloud
+ dc.b ne ; 3 - cloud
+ dc.b east ; 4 - cloud
+ dc.b se ; 5 - cloud
+ dc.b se ; 6 - soft cloud
+ dc.b ne ; 7 - soft cloud
+ dc.b 0 ; 8 - 
+ dc.b se ; 9 - cloud 9
+ dc.b east ; 10 - tunnel
+ dc.b east ; 11 - fireking
+ dc.b east ; 12 - steamy junction
+ dc.b east ; 13 - prison
+ dc.b north ; 14 - barricaded corridor
+ dc.b ne ; 15 - firecaves
+ dc.b north ; 16 - guarded corridor
+ dc.b north ; 17 - whitehall
+ dc.b south ; 18 - river canyon
+ dc.b nw ; 19 - icecaves
+ dc.b east ; 20 - outlet canyon
+ dc.b ne ; 21 - river canyon
+ dc.b south ; 22 - tunnel entrance
+ dc.b north ; 23 - rock garden
+ dc.b down ; 24 - peak
+ dc.b down ; 25 - slopes
+ dc.b east ; 26 - mountain base
+;---
+ even
+racetracks
+; sequences of commands which actors obey
+; each is referred to by a 16-bit offset from the start of list5
+; the initial sequences are contained in this table at the start..
+ dc.w 0 ; 0
+ dc.w 0 ; 1 - 
+ dc.w 0 ; 2 - icechild
+ dc.w 0 ; 3 - icewarrior
+ dc.w icejesterRt-list5 ; 4 - icejester
+ dc.w 0 ; 5 - icequeen
+ dc.w 0 ; 6 - icepeople
+ dc.w 0 ; 7 - firefighter
+ dc.w 0 ; 8 - fireguard
+ dc.w 0 ; 9 - fireking
+ dc.w firepeoplert-list5 ; 10 - firepeople
+ dc.w 0 ; 11 - gate
+ dc.w 0 ; 12 -gnome
+ dc.w penguinrt-list5 ; 13 - penguin
+ dc.w 0 ; 14 - penguins
+ dc.w yetirt-list5 ; 15 - yeti
+ dc.w 0 ; 16
+ dc.w 0 ; 17
+ dc.w 0 ; 18
+ dc.w 0 ; 19
+ dc.w icequeenracetrack-list5 ;20
+ dc.w firekingracetrack-list5 ; 21
+ dc.w icewarriorTakesIngridToQueenRT-list5 ; 22
+; each of the race track entries has a 4-byte entry:
+; VERB PREP NOUN1 NOUN2
+ipin equ 7
+ipwith equ 16
+
+attack equ 90 ; 40
+open equ 114 ;64
+go equ 96 ; go to room noun1 (=setupgo)
+close equ 140 ; 90
+wait equ 92
+examine equ 100
+take equ 105
+give equ 111
+eat equ 123
+find equ 139
+kill equ 93
+waitforperson equ 89
+waituntiltime equ 90
+waitforperiod equ 91
+put equ 108
+returnobject equ 136
+
+racetracksay equ 250
+racetrackmessage equ 251
+racetrackgosub equ 253
+racetrackgoto equ 254
+racetrackreturn equ 255
+light equ 165 ; 115
+ride equ  185 ; 135
+
+wear equ 106
+remove equ 109
+
+; nouns...
+people equ 237
+everything equ 234
+nullobject equ 255
+
+; prepositions...
+to equ 202
+; note that:
+;
+; NOUN1 will always be searched for if not accessible
+; to the verb (using the usual accessability rules)
+;
+; NOUN2 will normally be searched for using the same rules.
+; There are situations where this is awkward - so if the
+; preposition is WITH, then NOUN2 must be carried (or it will
+; be searched for by the npc).
+;
+icejesterrt
+ dc.b go,0,18,nullobject ; to canyon
+ dc.b find,0,icepeople,nullobject ; to whitehall
+ dc.b racetrackmessage,0
+  dc.w 2499 ; joke
+ dc.b go,0,16,nullobject
+ dc.b racetrackgoto,0
+  dc.w icejesterrt-list5
+
+icewarriorTakesIngridToQueenRT
+ dc.b racetrackmessage,0
+  dc.w 2567 ; ice warrior sees child+leads ingrid south
+ dc.b go,0,17,nullobject
+ dc.b waitforperson,0,user,nullobject
+ dc.b go,0,16,nullobject
+ dc.b racetrackreturn,0,nullobject,nullobject
+
+firePeopleRt
+ dc.b go,0,12,nullobject ; to corridor beside cell
+ dc.b go,0,11,nullobject ; back to fire hall
+ dc.b racetrackgoto,0
+  dc.w firePeopleRt-list5
+
+penguinrt
+ dc.b go,0,124,nullobject
+ dc.b racetrackmessage,0
+  dc.w 2520
+ dc.b go,0,133,nullobject
+ dc.b racetrackmessage,0
+  dc.w 2521
+ dc.b go,0,131,nullobject
+ dc.b racetrackmessage,0
+  dc.w 2522
+ dc.b racetrackgoto,0
+  dc.w penguinrt-list5
+;
+yetirt
+ dc.b remove,0,snowshoes,nullobject
+ dc.b examine,0,snowshoes,nullobject
+ dc.b wear,0,snowshoes,nullobject dc.b 0,4,6,7,1,8,2,3,5 ; compass directions
+ dc.b 10,9,12,11,13,14,15
+;-----------
+
+
+ENDTABLE
+;
+ееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееее dc.b 0,4,6,7,1,8,2,3,5 ; compass directions
+ dc.b 10,9,12,11,13,14,15
+;-----------
+
+
+ENDTABLE
+;

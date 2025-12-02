@@ -1,0 +1,135 @@
+$4 Copyright (C) 1988 Level 9 Computing.
+$4 
+
+$1 MENU.TXT format
+$1   $1 comment-to-end-of-line.
+$1   $2 comment-to-end-of-file.
+$1   $4 text-to-end-of-line. (displayed preceeded by newline.)
+$1   $5 A BB C D EE comment-to-end-of-line.
+$1   $8 F G H I comment-to-end-of-line.
+$1   $9 text-to-end-of-line. (displayed preceeded by newline.)
+$1   $.
+
+$1    A. Upper case alpha that user will type
+$1   BB. Screen mode. One of 01, 03, 06, 07, 14 or 16.
+$1    C. 0 for text-only modes,
+$1       1 to allow PICTURES without loading screen,
+$1       2 to allow PICTURES with loading screen.
+$1    D. 0 for legal,
+$1       1 for fast MGA/not-so-slow EGA,
+$1       2 for normal EGA,
+$1       3 for fast EGA,
+$1       4 for screen-switch between text-only/CGA low-res.
+$1       5 for screen-switch on EGA card CGA monitor
+$1       6 for screen-switch on EGA card EGA monitor
+$1   EE. Loading screen picture number (00=no title).
+
+$1    F. Board type
+$1    G. Monitor type (0=any)
+$1    H. Prefered width/characters (1=40, 0=any)
+$1    I. Ascii screen mode to suggest.
+
+$1 Menu must work on 40-column TV display:
+$1 1234567890123456789012345678901234567890
+
+$1 $. - Remove "$1 " and put "$." is column 1 to display the 
+$1 board type (F) and monitor type (G) in your PC system.
+
+$4 Just press ENTER to play, or select the
+$4 type of display and screen format you
+$4 want from the following list:
+$4 
+$4 A. MDA/Monochrome Display Adaptor.
+$4 B. CGA text-only (40 column).
+$4 C. CGA text-only (80 column).
+$4 D. CGA colour pictures (40 column).
+$4 E. CGA colour pictures (80 column).
+$4 F. MGA/Hercules/CGA b&w pics.
+$4 G. EGA pics on EGA monitor.
+$4 H. EGA pics on CGA monitor (40 column).
+$4 I. EGA pics on CGA monitor (80 column).
+$4 
+$4 D, E or F: Amstrad -CD or -CM.
+$4 G.         Amstrad -ED.
+$4 
+$4 Press the TAB key for modes J to W.
+$4 
+$4 Type a letter if you want to alter the
+$4 screen format. Press ENTER to play:
+
+$1 Allowable key-presses:
+$5 A 07 0 0 00  MDA card
+$5 B 01 0 0 00  CGA/EGA card 40 column text-only for TV
+$5 C 03 0 0 00  CGA/EGA card 80 column text-only
+$5 D 01 1 4 00  CGA card 40 column switch with CGA low-res pictures
+$5 E 03 1 4 00  CGA card 80 column switch with CGA low-res pictures
+$5 F 06 2 1 30  MGA (fast)
+$5 G 16 2 3 30  EGA card & EGA monitor (fast)
+$5 H 13 2 3 30  EGA card & CGA monitor 40 column (fast)
+$5 I 14 2 3 30  EGA card & CGA monitor 80 column (fast)
+
+$1 Other modes allowed, on second menu screen
+$5 J 01 1 5 00  EGA card & CGA monitor 40 column switch with low-res pictures
+$5 K 03 1 5 00  EGA card & CGA monitor 80 column switch with low-res pictures
+$5 L 01 1 6 00  EGA card & EGA monitor 40 column switch with low-res pictures
+$5 M 03 1 6 00  EGA card & EGA monitor 80 column switch with low-res pictures
+$5 N 06 2 0 30  MGA card (slow)
+$5 O 16 2 0 30  EGA card & EGA monitor (slow)
+$5 P 16 2 1 30  EGA card & EGA monitor (not so slow)
+$5 Q 16 2 2 30  EGA card & EGA monitor (normal)
+$5 R 13 2 0 30  EGA card & CGA monitor 40 column (slow)
+$5 S 13 2 1 30  EGA card & CGA monitor 40 column (not so slow)
+$5 T 13 2 2 30  EGA card & CGA monitor 40 column (normal)
+$5 U 14 2 0 30  EGA card & CGA monitor 80 column (slow)
+$5 V 14 2 1 30  EGA card & CGA monitor 80 column (not so slow)
+$5 W 14 2 2 30  EGA card & CGA monitor 80 column (normal)
+
+$1 Suggested modes:
+$8 1 1 0 A  MDA  adaptor/MDA monitor
+$8 2 2 1 D  CGA  adaptor/CGA monitor 40 column
+$8 2 2 0 E  CGA  adaptor/CGA monitor
+$8 3 1 0 A  EGA  adaptor/MDA monitor
+$8 3 2 1 H  EGA  adaptor/CGA monitor 40 column
+$8 3 2 0 I  EGA  adaptor/CGA monitor
+$8 3 0 0 G  EGA  adaptor/any monitor
+$8 4 2 1 D  MCGA adaptor/CGA monitor 40 column
+$8 4 2 0 E  MCGA adaptor/CGA monitor
+$8 4 0 0 F  MCGA adaptor/any monitor
+$8 5 1 0 A  VGA  adaptor/MDA monitor
+$8 5 2 1 H  VGA  adaptor/CGA monitor 40 column
+$8 5 2 0 I  VGA  adaptor/CGA monitor
+$8 5 0 0 G  VGA  adaptor/any monitor
+$8 7 0 0 A  HGC  adaptor/any monitor
+$8 8 0 0 A  HGC+ adaptor/any monitor
+$8 9 0 0 A  HIC  adaptor/any monitor
+
+$1 Menu must work on 40-column TV display:
+$1 1234567890123456789012345678901234567890
+
+$1 Secondary screen:
+$9 These modes all need the EGA card
+$9 except mode N. Choose the type of 
+$9 display you are using and the screen
+$9 format you want from the following:
+$9 
+$9 J. CGA pics on CGA monitor (40 column).
+$9 K. CGA pics on CGA monitor (80 column).
+$9 L. CGA pics on EGA monitor (40 column).
+$9 M. CGA pics on EGA monitor (80 column).
+$9 N. MGA/Hercules/CGA b&w pics (normal).
+$9 O. EGA pics on EGA monitor (very slow).
+$9 P. EGA pics on EGA monitor (slow).
+$9 Q. EGA pics on EGA monitor (normal).
+$9 R. EGA pics on CGA monitor (40 v slow).
+$9 S. EGA pics on CGA monitor (40 slow).
+$9 T. EGA pics on CGA monitor (40 normal).
+$9 U. EGA pics on CGA monitor (80 v slow).
+$9 V. EGA pics on CGA monitor (80 slow).
+$9 W. EGA pics on CGA monitor (80 normal).
+$9 
+$9 Press the TAB key for modes A to I.
+$9 
+$9 Type a letter if you want to alter the 
+$9 screen format. Press ENTER to play:
+
+$2 EOF.

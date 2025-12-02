@@ -1,0 +1,13 @@
+7
+1\games.l9\gnome3.l9\aconst.txt
+1\games.l9\gnome3.l9\mconst.txt
+1sconst.txt
+1pconst.txt
+1\games.l9\gnome3.l9\aparse.txt
+1\games.l9\gnome3.l9\acore.txt
+1\games.l9\gnome3.l9\converse.txt
+1\games.l9\gnome3.l9\npc.txt
+1\games.l9\gnome3.l9\oops.txt
+1averb.txt
+1aspecial.txt
+2340

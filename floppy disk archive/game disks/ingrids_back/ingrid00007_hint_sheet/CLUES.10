@@ -1,0 +1,1454 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General Hints for Part 1
+
+  1 Beginning the game: (650).
+  2 Finding things: (529).
+  3 Finishing part 1: (600).
+  4 Going places: (550).
+  5 Orders to people: (532).
+  6 Scoring for part 1: (686).
+  7 Signatures: (526).
+
+
+Objects/Creatures/People in Part 1
+
+ 10 Arback: where (451), dtl (601).
+ 11 Architect: where (648), dtl (754). 
+ 12 Armillaria Budblast: 
+               where (551), dtl (642).
+ 13 Aunt Halfyard:where(125),dtl(652).
+
+ 15 Bag: where (134), dtl (528).
+ 16 Bed: where (120), dtl (453).
+ 17 Bellrope: where (141), dtl (602).
+ 18 Boat: where (530), dtl (755).
+ 19 Boney Spratt: where(460),dtl(619).
+ 20 Book: where (653), dtl (552). 
+ 21 Bottomlows: where (130), dtl(700).
+ 22 Briers: where (454), dtl (763).
+ 23 Bridge: where (489), dtl (639).
+ 24 Bumpy: where (154), dtl (483).
+ 25 Bushes: where (141), dtl (854).
+
+ 30 Carpet: where (685), dtl (593). 
+ 31 Carriage: where (153), dtl (603).
+ 32 Chickens: where (141), dtl (455).
+ 33 Council: where (553), dtl (757). 
+
+ 35 Dog Brasses: where(604), dtl(651). 
+ 36 Dimple: where (451), dtl (483).
+ 37 Dogless Carriage: 
+               where (153), dtl (603).
+ 38 Doors: where (640), dtl (701).
+ 39 Dusty Halfyard: 
+               where (484), dtl (608).
+
+ 45 Estate Agent: where(554),dtl(758). 
+
+ 46 Farthing,Miss:where(152),dtl(456).
+ 47 Flopsy: where (158), dtl (532).
+ 48 Flora Butterpat: 
+               where (133), dtl (457).
+
+ 50 Gnat Tackhammer: 
+               where (153), dtl (605).
+ 51 Gneehigh: where (138), dtl (612). 
+ 52 Gnoah: where (451), dtl (483).
+ 53 Gnoggin: where (451), dtl (483).
+ 54 Gnomes: where (555), dtl (709). 
+ 55 Gnora: where (451), dtl (483).
+ 56 Gnorsegnomes: where(606),dtl(594).
+ 57 Gnotice, Darkwood: 
+               where (454), dtl (556).
+ 58 Gnotice, Mill Lane: 
+               where (140), dtl (453).
+ 59 Gnotice, Ridley's End: 
+               where (142), dtl (556).
+ 60 Gorilla: where (454), dtl (607).
+ 61 Grandma Gnutson: 
+               where (451), dtl (483).
+ 62 Great Aunt Halfyard: 
+               where (125), dtl (652).
+ 63 Groceries: where (152), dtl (528).
+
+ 65 Halfyard, Dusty: 
+               where (484), dtl (608).
+ 66 Halfyard, Great Aunt: 
+               where (125), dtl (652).
+ 67 Hermit: where (458), dtl (643).
+
+ 70 Ingrid: where (158), dtl (565).
+ 71 Invitation: where (70), dtl(453).
+ 72 Isfrunt: where (706), dtl (760).
+
+ 73 Jumbo Butterpat: 
+               where (133), dtl (457).
+
+ 74 Lancelot: where (485), dtl (799). 
+ 75 Landing Pad: where(609), dtl(777).
+
+ 76 Jasper Quickbuck: 
+               where (653), dtl (710). 
+
+ 80 Ladder, Long: where(646),dtl(545).
+ 81 Ladder, Short:where(486),dtl(770).
+
+ 82 Mangel-Wurzels: 
+               where (685), dtl (610). 
+ 83 Millie Watts: where(646),dtl(761).
+ 84 Mirror: where (699), dtl (715). 
+ 85 Miss Farthing:where(152),dtl(456).
+ 86 Mistress Spratt: 
+               where (533), dtl (613).
+ 87 Mrs Tackhammer: 
+               where (120), dtl (734).
+ 88 Mrs Underlay: where(551),dtl(642).
+
+ 90 N... See Gn...
+
+ 91 Petition: where (70), dtl (702).
+ 92 Pies: where (654), dtl (790). 
+ 93 Pile of Sacks:where(764),dtl(780).
+ 94 Planning Permission: 
+               where (716), dtl (785). 
+
+ 95 Rabbits: where (160), dtl (459). 
+ 96 Red Pipe: where (527), dtl (487). 
+ 97 Rollo Butterpat: 
+               where (60), dtl (641). 
+ 98 Rook: where (151), dtl (789).
+ 99 Rope: where (141), dtl (602).
+
+100 Sacks: where (764), dtl (780).
+101 Salesgnome: where (133), dtl(611).
+102 Seamus Sosmall: 
+               where (115), dtl (703).
+103 Short Ladder: where(486),dtl(770).
+104 Signatures: where (91), dtl(526).
+105 Silas Crawley:where(551),dtl(642).
+106 Spratt, Boney:where(460),dtl(619).
+107 Spratt, Mistress: 
+               where (533), dtl (613).
+108 Surveyor: where (551), dtl (642).
+
+110 Tackhammer, Gnat: 
+               where (153), dtl (605).
+111 Tackhammer, Mrs: 
+               where (120), dtl (734).
+112 Tomato: where (685), dtl (769). 
+
+113 Underlay, Mrs:where(551),dtl(642).
+
+115 Wardrobe: where (120), dtl (488).
+116 Window: where (156), dtl (626).
+117 Window Panes: where(788),dtl(658). 
+
+
+Places in Part 1
+
+120 Bedroom, Tack's Farm: 
+               where (615), dtl (798).
+121 Bridge: where (489), dtl (639).
+
+122 Cawing Road: where(557), dtl(789).
+123 Cottage, Doomladen: 
+               where (125), dtl (659).
+124 Cottage, Spratts: 
+               where (121), dtl (542).
+
+125 Doomladen: where (655), dtl (659).
+126 Dribble: where (537), dtl (786).
+127 Dribblemouth Lighthouse: 
+               where (704), dtl (794).
+128 Dunrollin: where (461), dtl (749).
+
+130 Gnettlefield Farm: 
+               where (644), dtl (765).
+131 Gnome Belt: where (558),dtl (534).
+132 Gnomebridge Road: 
+               where (660), dtl (771).
+133 Green Gnome Inn: 
+               where (137), dtl (784).
+134 Grocers Shop: where(463),dtl(740).
+
+135 Hall, Village:where(463),dtl(535).
+136 Hampton Road: where(616),dtl(797).
+137 High Street: where (559),dtl(797).
+138 Institute: where (685), dtl (656). 
+139 Lighthouse: where (704), dtl(794).
+
+140 Mill Track: where (464), dtl(671).
+141 Mill Yard: where (645), dtl (602).
+142 Ridley's End: where(705),dtl(556).
+143 Molehills: where (561), dtl (719).
+
+145 N... see Gn... 
+
+146 Parkland: where (705), dtl (530).
+147 Ploughgnome Lane: 
+               where (796), dtl (667).
+
+150 River Dribble:where(537),dtl(786).
+151 Rookery: where (557), dtl (789).
+
+152 Shop: where (463), dtl (740).
+153 Smithy: where (463), dtl (603).
+154 Soggybottom Field: 
+               where (496), dtl (556). 
+155 Spit: where (617), dtl (704).
+
+156 Tack's Farm: where(766), dtl(770).
+157 Three Mole Hill: 
+               where (561), dtl (719).
+
+158 Village Hall: where(463),dtl(535).
+
+160 Warren: where (154), dtl (556).
+161 Windmill Track: 
+               where (464), dtl (671).
+162 Windmill Yard:where(645),dtl(602).
+
+
+
+General Hints for Part 2
+
+170 Beginning part 2: (562).
+171 Defeating Trolls: (767). 
+172 Finding things: (529).
+173 Finishing part 2: (661).
+174 Going places: (550).
+175 Orders to people: (687).
+176 Scoring for part 2: (707).
+
+
+Objects/Creatures/People in Part 2
+
+180 Ambul: where (768), dtl (787).
+181 Arback: where (620), dtl (618).
+
+182 Bane: where (772), dtl (782).
+183 Blue Telelily:where(490),dtl(736).
+184 Bottle: where (192), dtl (453).
+185 Brake: where (267), dtl (629).
+186 Brick: where (250), dtl (662).
+187 Bumpy: where (282), dtl (618).
+188 Bushes: where (268), dtl (453).
+
+190 Cask: where (267), dtl (712).
+191 Chair: where (563), dtl (572). 
+192 Chugg: where (793), dtl (776).
+193 Collar: where (808), dtl (691).
+
+194 Dam: where (273), dtl (821).
+195 Deeds: where (791), dtl (843).
+196 Dimple: where (620), dtl (663).
+197 Doldrum: where (801), dtl (829).
+
+200 Electricity: where(693), dtl(564). 
+201 Ergot: where (774), dtl (824).
+
+202 Flopsy: where (257), dtl (708).
+203 Fork: where (685), dtl (802). 
+204 Fuddle: where (801), dtl (829).
+
+205 Gap under Door: 
+               where (277), dtl (800).
+206 Gates: where (261), dtl (810).
+207 Gnoah: where (265), dtl (721).
+208 Gnoggin: where (620), dtl (663).
+209 Gnora: where (265), dtl (663).
+210 Gnotice: where (464), dtl (453).
+211 Gormley: where (801), dtl (829).
+212 Grandma Gnutson: 
+               where (620), dtl (663).
+213 Green Telelily: 
+               where (490), dtl (736).
+214 Guinea Pigs: where(261), dtl(803).
+
+215 Handbag: where (283), dtl (452).
+216 Hook: where (804), dtl (848).
+217 Hurdles: where (261), dtl (839).
+
+220 Ingrid: where (277), dtl (565).
+
+221 Lever: where (267), dtl (848).
+222 Lipstick: where (215), dtl (713).
+223 Loaf: where (242), dtl (809).
+
+224 Millstone: where (274), dtl (491).
+
+225 N... see Gn...
+
+226 Perfume: where (215), dtl (713).
+227 Pile of Turnips: 
+               where (664), dtl (820).
+228 Plans: where (235), dtl (468).
+229 Postcard: where (685), dtl (722). 
+
+230 Root: where (282), dtl (720).
+231 Rope: where (804), dtl (848).
+
+232 Sack: where (267), dtl (491).
+233 Seamus Sosmall: 
+               where (469), dtl (723).
+235 Silas Crawley:where(236),dtl(805).
+236 Steamroller: where (280),dtl(781).
+237 Stone: where (274), dtl (491).
+
+240 Telelily, Blue: 
+               where (490), dtl (736).
+241 Telelily, Green: 
+               where (490), dtl (736).
+242 Table: where (265), dtl (452).
+243 Trapdoor: where (465), dtl (818).
+244 Trolls: where (236), dtl (767).
+245 Turnips: where (664), dtl (820).
+
+246 Well: where (492), dtl (507).
+
+
+Places in Part 2
+
+250 Barn, Behind: where(512),dtl(662).
+251 Barn, Inside: where(622),dtl(566).
+252 Bedroom, Grandma's: 
+               where (257), dtl (556).
+253 Bedroom, Ingrid's: 
+               where (257), dtl (807).
+254 Burrow: where (282), dtl (724).
+
+255 Cellar: where (515), dtl (811).
+
+257 Farmhouse: where (623), dtl (765).
+258 Farmyard: where (466), dtl (727).
+
+260 Grandma's Bedroom: 
+               where (257), dtl (556).
+261 Guinea Pig Sty: 
+               where (493), dtl (803). 
+
+263 Home: where (257), dtl (257). 
+
+264 Ingrid's Bedroom: 
+               where (257), dtl (807).
+
+265 Kitchen: where (257), dtl (666).
+
+267 Mill Room: where (513), dtl (836).
+268 Mill Yard: where (624), dtl (836).
+
+270 Pen: where (278), dtl (839).
+271 Ploughgnome Lane: 
+               where (568), dtl (667).
+
+272 Quarter Acre Field: 
+               where (567), dtl (453).
+
+273 River Dribble:where(471),dtl(694).
+274 Ruins of Mill:where(258),dtl(453). 
+
+275 Sandybottom Field: 
+               where (672), dtl (725).
+276 Soggybottom Field: 
+               where (496), dtl (840).
+277 Stairs: where (257), dtl (562).
+278 Sty: where (493), dtl (803).
+
+280 Track: where (472), dtl (671).
+281 Trapdoor: where (465), dtl (818).
+
+282 Warren: where (680), dtl (724).
+283 Well: where (492), dtl (507).
+284 Windmill Room:where(513),dtl(836).
+285 Windmill Yard:where(624),dtl(836).
+
+
+
+General Hints for Part 3
+
+290 Beginning the game: (569).
+291 Evidence: (511).
+292 Finding things: (529).
+293 Finishing the game: (830).
+294 Going places: (550).
+295 Orders to people: (695).
+296 Scoring for part 3: (812).
+
+
+Objects/Creatures/People in Part 3
+
+300 Accounts: where (370), dtl (501).
+301 Answering Machine: 
+               where (421), dtl (625).
+302 Antiques: where (442), dtl (673).
+303 Armillaria Budblast: 
+               where (681), dtl (514).
+304 Artist: where (417), dtl (696).
+
+305 Blotting Paper: 
+               where (321), dtl (501).
+306 Books: where (426), dtl (539).
+307 Butler: where (404), dtl (570).
+308 Button, Playback: 
+               where (301), dtl (571).
+309 Button, Record: 
+               where (301), dtl (816).
+
+310 Cake: where (685), dtl (831). 
+311 Cassette: where (301), dtl (684).
+312 Chandelier: where (404), dtl(688).
+313 Chimneys: where (441), dtl (581).
+314 Cheque Stubs: where(573),dtl(501).
+315 Cook: where (423), dtl (473).
+316 Curtain: where (410), dtl (728).
+
+320 Daisy: where (423), dtl (748).
+321 Desk: where (422), dtl (582).
+322 Diamond: where (302), dtl (501).
+323 Drawer: where (321), dtl (817).
+324 Dustbins: where (443), dtl (574).
+
+325 Evidence: (511).
+
+326 Faxofile: where (341), dtl (501).
+327 Fireplace, Bedroom: 
+               where (421), dtl (730).
+328 Fireplace, Kitchen: 
+               where (423), dtl (631).
+329 Fireplace, Reading Room: 
+               where (440), dtl (730).
+330 Flag: where (685), dtl (849). 
+
+331 Gardener: where (681), dtl (514).
+332 Ghost: where (832), dtl (849).
+333 Gnoah: where (474), dtl (833).
+334 Gong: where (685), dtl (580). 
+335 Greenhouse Effect: 
+               where (685), dtl (506). 
+336 Hole: where (428), dtl (518).
+337 Housekeeper: where(500), dtl(520).
+338 Ingrid: where (418), dtl (565). 
+
+340 Jacket: where (392), dtl (452).
+341 Jasper Quickbuck: 
+               where (737), dtl (837).
+342 Jewel: where (302), dtl (501).
+
+343 Knocker: where (434), dtl (632).
+
+344 Latch: where (475), dtl (453).
+345 Letter: where (732), dtl (501).
+
+350 Machine, Answering: 
+               where (421), dtl (625).
+351 Manual: where (392), dtl (674).
+352 Masterpiece: where(417), dtl(501).
+353 Meacher: where (497), dtl (676). 
+
+355 N... see Gn...
+
+356 Paintings: where (675), dtl (689).
+357 Paper, Blotting: 
+               where (321), dtl (501).
+358 Photograph: where (391),dtl (501).
+359 Pitcher: where (685), dtl (739). 
+360 Playback Button: 
+               where (301), dtl (571).
+361 Pocket: where (340), dtl (452).
+362 Police: where (682), dtl (682). 
+363 Portrait: where (410), dtl (835).
+364 Pot: where (423), dtl (453).
+365 Potion: where (745), dtl (838).
+
+366 Record Button:where(301),dtl(816).
+367 Rubbish: where (324), dtl (574).
+368 Rulf: where (417), dtl (696).
+
+370 Safe: where (498), dtl (841).
+371 Seamus Sosmall: 
+               where (474), dtl (833).
+372 Secret Door: where(442), dtl(633).
+373 Shadow: where (384), dtl (503).
+374 Slipper: where (685), dtl (697). 
+375 Stubs of Cheques: 
+               where (573), dtl (501).
+376 Sun Lounger: where (519),dtl(850).
+
+380 Tape: where (301), dtl (684).
+381 Telephone, Bedroom: 
+               where (421), dtl (634).
+382 Telephone, Office: 
+               where (422), dtl (634).
+383 Telephone, Portable: 
+               where (341), dtl (576).
+384 Tree: where (445), dtl (503).
+385 Turnips: where (653), dtl (746). 
+
+390 Underlay: where (500), dtl (520).
+
+391 Wallet: where (361), dtl (452).
+392 Wardrobe: where (421), dtl (488).
+393 Window: where (447), dtl (508).
+
+
+Places in Part 3
+
+400 Attic: where (521), dtl (580).
+
+401 Balcony: where (543), dtl (750).
+402 Ballroom: where (505), dtl (586).
+403 Bedroom, Jasper's: 
+               where (756), dtl (842).
+
+404 Central Gallery: 
+               where (541), dtl (677).
+405 Changing Room:where(504),dtl(747).
+406 Chimneys: where (441), dtl (581).
+
+407 Drive: where (499), dtl (509).
+
+410 East End of Gallery: 
+               where (479), dtl (846).
+411 Entrance Hall:where(679),dtl(851).
+
+412 Fireplaces: where (502), dtl(751).
+
+413 Gables: where (441), dtl (698).
+414 Gallery, Central: 
+               where (541), dtl (677).
+415 Gallery, East End: 
+               where (479), dtl (846).
+416 Gallery, West End: 
+               where (525), dtl (852).
+417 Garret: where (678), dtl (752).
+418 Gate: where (623), dtl (775).
+419 Gnew Corridor:where(547),dtl(756).
+
+421 Jasper's Bedroom: 
+               where (756), dtl (842).
+422 Jasper's Office: 
+               where (584), dtl (844).
+
+423 Kitchen: where (635), dtl (853).
+
+425 Ledge: where (647), dtl (759).
+426 Library: where (480), dtl (539).
+427 Library Court:where(636),dtl(453).
+428 Loft: where (477), dtl (518).
+
+430 Main Gallery: where(541),dtl(677).
+431 Ridley's End: where(649),dtl(859).
+
+432 N... see Gn... 
+
+433 Office: where (584), dtl (844).
+
+434 Porch: where (523), dtl (632).
+435 Pool: where (546), dtl (753).
+436 Pump Room: where (637), dtl (648). 
+
+440 Reading Room: where(779),dtl(845).
+441 Roof: where (856), dtl (847).
+
+442 Secret Room: where (588),dtl(673). 
+443 Servants' Yard: 
+               where (544), dtl (592).
+444 Swimming Pool:where(638),dtl(753).
+
+445 Tree Court: where (482), dtl(585).
+446 Tunnel: where (685), dtl (858). 
+
+447 West End of Gallery: 
+               where (525), dtl (852).
+
+448 Yard: where (544), dtl (592).
+
+
+Answers 
+
+450 Environment Secretary. 
+451 Probably gnear Gnettlefield (130). 
+452 Examine it and use its contents. 
+453 Basically just scenery. 
+454 West of Ploughgnome Lane, between 
+    it and Doomladen. 
+455 Bought by Dusty to defend his 
+    Mill from you-know-who. Chase 
+    off everything but (462). 
+456 Points out the Groceries; take 
+    them. Offer her the Petition. 
+457 Co-owner of the Green Gnome; 
+    currently busy for the first 
+    time because of all the extra 
+    guests. Offer the Petition. 
+458 Lives in a cave in the Molehills. 
+    To get her to sign, see (467). 
+459 Keeping clear of Ingrid. She 
+    gnever gets to meet them. 
+
+460 Either fishing in the Dribble, or 
+    drinking in the Green Gnome. He 
+    is still gnot recovered from the 
+    unfortunate time when, totally 
+    pixielated, he got mixed up and 
+    tried fishing in the Inn, and 
+    then drinking... 
+    Ingrid shuddered at the thought.  
+461 In the dunes. West along the High 
+    Street and then south. 
+462 Flopsy. Get her to go east from 
+    the (140). 
+463 South of the High Street. 
+464 East of Ploughgnome Lane, between 
+    it and the Mill Yard. 
+465 Gnorthwest corner of the Farmyard. 
+466 Just outside the Farmhouse. 
+467 She is avoiding Ingrid. See (476). 
+468 Ingrid gneeds to get these but is 
+    gnot quick enough. See (481). 
+469 Arrives briefly to warn Ingrid. 
+
+470 Downhill from Ploughgnome Lane. 
+471 Gnorth of Soggybottom field. 
+472 East of the Farmyard. 
+473 Rules the Kitchen.Refuse any food 
+    that she might offer. 
+474 Hiding in a tree beside the Drive. 
+    Wave and he will climb down. 
+475 Hallway;ground floor of the Manor. 
+476 Drop the Petition in the Cave, go 
+    out and then return to get it. 
+477 At the top of the stairs which 
+    lead up from the Kitchen. 
+478 Jump on the Bandwagon. 
+479 East of the Central Gallery (404). 
+
+480 West of the Reading Room. 
+481 Tell Flopsy to get them. 
+482 Gorth of the Banquetting Hall; 
+    up,out,gnorth from the Kitchen. 
+483 One of Ingrid's relatives. Offer 
+    the petition for a signature. 
+484 Inside his Windmill. See (495). 
+485 Available from Level 9. 
+486 In the barn of Tack's Farm. 
+487 Fashionable architectural style, 
+    which brightens dull brick 
+    buildings by painting gutters and 
+    metalwork in primary colours. 
+488 Open it and look inside. 
+489 East from the High Street. 
+
+490 Grows in Soggybottom field after 
+    it has been triggered. See (194). 
+491 Heavy object. See (243). 
+492 In the middle of the Farmyard. 
+    To find what is inside, see (507). 
+493 South of the SW Farmyard. 
+494 Feed him the Loaf. 
+495 Dusty is a bit suspicious of 
+    Ingrid, seeing as she demolished 
+    his last Mill, so see (510). 
+496 Southeast of the Farmyard. 
+497 Gnowhere any more. 
+498 Move the Portrait (363). 
+499 Gnorth from where part 3 starts. 
+
+500 Wanders around the Manor. 
+501 Evidence against Jasper.See (511). 
+502 Kitchen, Jasper's Bedroom, 
+    Reading Room. 
+503 Examine it to find something. 
+504 East and gnorth from the Pool. 
+505 Gnorth of the Entrance Hall. 
+506 Theory that the slight increase 
+    in carbon dioxide in the air is 
+    ruining the climate. 
+    In the old days, people knew that 
+    Atom bomb tests caused variations 
+    in the weather. See (516). 
+507 Drop anything into the well and 
+    it falls to the bottom. To go 
+    there, see (522). 
+508 Open and go out to the Ledge. 
+509 Go gnorth to the Manor. 
+
+510 Drop the Groceries, with the aim 
+    of luring him out, and pull the 
+    Rope. See (524). 
+511 There are gnine bits of Evidence: 
+    (300),(305),(314),(322),(342), 
+    (345),(542),(358) and (380). 
+512 Gnorth of Sandybottom Field. 
+513 In and up from the Mill Yard. 
+514 In this part, simply defends her 
+    garden and cannot be passed. 
+515 below the Trapdoor. 
+516 Some say that forests produce the 
+    world's oxygen (despite it being 
+    used up again when trees decay) 
+    and these are being cut down to 
+    make room for grass which 
+    apparantly doesn't.See (531).  
+517 Close the Shutters. 
+518 Look through the Hole to see the 
+    room beyond (417). 
+519 East of the Pool. 
+
+520 Wanders around the house,cleaning 
+    and arguing with Daisy. 
+521 At the top of the secret stairs 
+    from the Hole in Tree Court. 
+522 Use magical transport, see (240). 
+523 Gnorth end of the Drive. 
+524 Hide in the Bushes and see (538). 
+525 West of the Central Gallery. 
+526 To get a signature, either sign 
+    the Petition or show it to someone 
+    prepared to sign. See (536). 
+527 All over the place. 
+528 Take to Dusty Halfyard (495). 
+529 Try e.g, "Find something". 
+
+530 On the far side of the River 
+    Dribble (126). 
+531 The resulting increase in carbon 
+    dioxide has slightly warmed the 
+    air, causing events as wide apart 
+    as extra rain in the dry parts of 
+    Africa (flooding Khartoum)and the 
+    trapping of whales in the arctic 
+    ice. See (540). 
+532 Flopsy and the Rook are the only 
+    ones who take orders in Part 1. 
+533 Inside Ferry Cottage. See (542). 
+534 Area of an outstanding lack of 
+    gnatural beauty, where building 
+    is restricted. 
+535 Official village meeting place; 
+    often deserted because it could 
+    gnot compete with the rival 
+    attractions of the Green Gnome. 
+536 Ingrid gneeded signatures from 
+    all the gnomes of Little Moaning, 
+    but gnot Jasper's employees who 
+    signed in false gnames and 
+    devalued the petitions. See (548). 
+537 Flowing below the broken Bridge. 
+538 Jump out when Dusty emerges. 
+539 Read the Books repeatedly. 
+
+540 Based on such pseudo-science, some 
+    pressure groups are worried about 
+    long-term effects and want you to 
+    send them your money. See (549). 
+541 Above the Entrance Hall. 
+542 Knock on the Door. 
+543 West of the Ledge. 
+544 East and Gnorth from the Drive. 
+545 Briefly let down by Millie when 
+    anyone leaves. 
+546 Due gnorth of the Tree Court. 
+547 Gnorth from the West End of the 
+    Gallery. 
+548 The twenty gnomes are... (10), 
+    (19),(24),(36),(39),(48),(50), 
+    (52),(53),(55),(61),(62),(67), 
+    (70),(72),(73),(83),(85),(86) 
+    and (102).  
+549 But, to be serious, the only 
+    certain result of more carbon 
+    dioxide in the air is to make 
+    plants grow better. And the only 
+    certain result of sending money 
+    to pressure groups is more 
+    publicity - and more trees 
+    chopped down for the paper. 
+
+550 Enter compass directions (which 
+    can be abbreviated to n,ne,e,se, 
+    s,sw,w,nw) or try Go Somewhere, 
+    Follow Someone or Find Something. 
+551 Wandering around Little Moaning, 
+    complaining about things. 
+552 The Little Moaning gnomes had gno 
+    use for such things. 
+553 In far-off Gnomebridge. 
+554 Gnot in this game, though it 
+    can't be long before every other 
+    shop is an Estate Agent's. 
+555 All over the place. For a list of 
+    local gnomes, who Ingrid gneeded 
+    for her Petition, see (526). 
+556 Just scenery, but may give a hint 
+    for later. 
+557 Gnorth from Ploughgnome Lane. 
+558 Area around Gnomebridge and 
+    Little Moaning. 
+559 Running east-west through Little 
+    Moaning, gnorth of the Hall. 
+
+560 Wear the Rubber Ring and swim. 
+561 Gnorth of the Parkland. 
+562 Opening the Door may seem a bad 
+    idea at the time, but remember 
+    what happens. Then see (575). 
+563 There were gnone in Gnettlefield. 
+564 I wonder if Ingrid will get this 
+    installed during "Gnome Free"?
+565 Our heroine. 
+566 Where the Bottomlows are trapped, 
+    later in this part of the story. 
+567 West of Soggybottom Field, east 
+    of the Windmill and south of 
+    Sandybottom Field. 
+568 West of the Track and also west 
+    of the Windmill Yard. 
+569 Go to the Porch and knock on the 
+    door. Then go and find Daisy, who 
+    will help. See (579). 
+
+570 Guards Jasper's office. To lure 
+    him away, see (577). 
+571 Push, when the Tape is in the 
+    Machine, to hear its contents. 
+572 Alas, such luxuries did gnot last 
+    long with Gnoah around. 
+573 Hidden in the Desk. See (582). 
+574 Examine the Rubbish. See (578). 
+575 When Ingrid can, go down into the 
+    Kitchen and take what is there, 
+    e.g the (223). Then go outside 
+    and see (583). 
+576 Carried by Jasper so that he can 
+    run his businesses. Gno use to 
+    Ingrid in this game. 
+577 The Butler answers the door when 
+    anyone knocks. So see (587). 
+578 But Ingrid would gnever do this 
+    herself. See (589). 
+579 Gnext, collect Evidence (511) 
+    that Jasper is a crook, so that 
+    he can gnot carry out his plans. 
+
+580 Rumoured to be haunted. See (590). 
+581 Go down to reach flues and ducts. 
+582 Remove the Drawer. 
+583 Go to the Steamroller (236) and 
+    block its progress. See (591). 
+584 South of the Central Gallery, 
+    past the Butler (570). 
+585 Something is hidden. See (384). 
+586 Where Jasper flees in the endgame. 
+    See (596). 
+587 Tell Daisy to go to the Porch and 
+    knock, wait (the abbreviation is 
+    z), knock, z, etc... See (597). 
+588 Beyond the West End of the 
+    Gallery. To get there, see (595). 
+589 So tell Daisy to search it. 
+
+590 Wait for the "ghost"; see (599). 
+591 To Soggybottom field; wait for 
+    the Steamroller again and get rid 
+    of it permanently by means of the 
+    (194) and then the (223). Then, 
+    to give Ambul the slip, see (598). 
+592 Go west to the Kitchen. 
+593 For hiding holes in the floor. 
+594 Former inhabitants of the Dribble 
+    Valley, so it is said. 
+595 There's gno direct way, but look 
+    around and see (393). 
+596 If the door is locked and there 
+    is gno obvious way to get at 
+    Jasper, see (312). 
+597 When the Butler goes to answer the 
+    door, Ingrid can sneak in (433). 
+598 Go to the Warren and see (230). 
+599 Turns out to be Rulf. Follow him. 
+
+600 Having completed the Petition, ee 
+    Signatures (526), take it to be 
+    presented to the Council, see (62). 
+601 Worker (but it's gnot "work" as we 
+    know it) at Gnettlefield. Offer 
+    him the Petition. 
+602 Pull the Bellrope to summon Dusty 
+    Halfyard. See (484). 
+603 To drive the Carriage, get inside 
+    and move as gnormal.Read Ingrid's 
+    Gnettlefield Journal (provided 
+    with the game) for a hint about 
+    its use, or see (614). 
+604 On Mantelpieces everywhere; but 
+    gnot in this game. 
+605 Offer him the petition. Insists 
+    on sitting in the Carriage, but 
+    just ignore him. 
+606 Gno longer around. 
+607 Ingrid mistakenly believes him to 
+    be Rollo Butterpat. See (621). 
+608 Will sign the Petition, if only 
+    Ingrid can find him to give it to 
+    him. See (141). 
+609 On top of the Lighthouse. To fly 
+    there, see (98). 
+
+610 Revolting vegetable, fed only to 
+    cattle and kids in school. 
+611 Visitor to Little Moaning. Will 
+    gnot sign the petition sensibly. 
+612 School mistress who tried to 
+    teach Ingrid everything she knew. 
+613 Wife of Boney.Will sign Petition. 
+614 Can jump the Bridge, see (627). 
+615 Beyond the Window (626). 
+616 West of the High Street. 
+617 South of Dunrollin in the Dunes. 
+618 Exceptionally useless gnome. 
+619 Will sign the Petition, once 
+    Ingrid has returned his Boat. 
+
+620 Initially, wandering around the 
+    Farm. Later, trapped in the Barn. 
+621 To get past him, go to the (22) 
+    and see (628). 
+622 South of the Farmyard. Later in 
+    this part, Ergot guards the way. 
+623 Where Ingrid starts this part. 
+624 West from Soggybottom Field. 
+625 Used to record one of Jasper's 
+    calls as evidence. See (630). 
+626 High up. Ingrid can go in through 
+    it, but see (81). 
+627 In the carriage,go to the highest 
+    point of Ploughgnome Lane. Then 
+    go to the Bridge and go East. 
+628 Once he's tangled in the Briers, 
+    Ingrid can continue to Doomladen. 
+629 Pull to start the windmill. 
+
+630 Make sure the Tape is inside, 
+    wait until the Telephone rings 
+    and press Record. 
+631 Gnot much use, but see (329). 
+632 Knock to summon the Butler, which 
+    could be useful. See (307). 
+633 Leads to the West End of the 
+    Gallery. To get to it, see (393). 
+634 If you like, answer when it rings. 
+    To use such 'phone messages as 
+    evidence, see (301). 
+635 West of the Servants' Yard. 
+636 West of the Ball Room. 
+637 In Bath, I believe. 
+638 Gnorth of the Tree Court. 
+639 Broken, but can be crossed. The 
+    Gnettlefield Journal, supplied 
+    with the game, provides a clue. 
+    See (627).
+
+640 In many places. 
+641 Ingrid thinks the Gorilla is him, 
+    dressed up in furs. See (621). 
+642 Employee of Jasper's. Don't get 
+    them to sign. 
+643 Ingrid gneeds her signature. See 
+    (467). 
+644 East of the gnorth end of 
+    Ploughgnome Lane. 
+645 East of the Mill Track, protected
+    by the Chickens, see (455).
+646 Inside the Lighthouse (139). 
+647 Outside the Window, (508). 
+648 Gnot in this game. 
+649 Where this part takes place. 
+
+650 Examine everyone. Then examine 
+    everything. Type "Exits on" if 
+    you like. Then go gnorth twice to 
+    the bar of the Green Gnome. Gnext 
+    see (657). 
+651 Harness ornaments for cart dogs. 
+652 Local councillor. Offer her the 
+    petition to sign and see (665). 
+653 Gnot in this part. 
+654 Scenery in the Green Gnome. 
+655 West of the gnorth end of 
+    Ploughgnome Lane. 
+656 Ingrid's wide store of knowledge 
+    of science and engineering was 
+    learned at the Institute of Gnome 
+    Economics. Her success can be 
+    measured from the fact that her 
+    teachers all agreed that Ingrid 
+    must graduate as soon as possible. 
+657 Assuming Jumbo is around, start by 
+    entering "offer petition to Jumbo" 
+    and continue to collect signatures 
+    by doing much the same with all 
+    the Little Moaning gnomes - but 
+    gnot outsiders. And see (668). 
+658 Unknown in Little Moaning. 
+659 Where Great Aunt Halfyard lives. 
+
+660 East of Ridley's End. 
+661 Having dealt with the Steamroller 
+    and all the Trolls (171), tackle 
+    Silas Crawley (669). 
+662 When Ingrid's family are trapped, 
+    pull the Brick and see (670). 
+663 One of Ingrid's useless relatives. 
+664 Fall out onto the Stairs if anyone 
+    opens Ingrid's door. 
+665 Bring it back when it's complete. 
+666 Take anything takeable. 
+667 Main Road to Little Moaning. 
+668 The gnomes don't exactly trust 
+    Ingrid, so gnot all of them are 
+    easy to reach. You gneed twenty 
+    gnames and, to make getting the 
+    last few a bit easier, examining 
+    the petition changes to tell you 
+    the missing signatures once it's 
+    almost complete. 
+669 Wait until he leads Ingrid to the 
+    Stairs and then act. See (683). 
+
+670 Repeat until the Barn collapses 
+    and traps Ergot. 
+671 Leads east-west to the windmill. 
+672 Gnorth of Quarter Acre Field. 
+673 The Antiques were reported as 
+    stolen, but in fact hidden are 
+    here. Examine them to find some 
+    portable evidence. 
+674 Like many manuals, says only what 
+    you already know. 
+675 All over the place. 
+676 Well-known accountant, who is so 
+    keen on the freedom of the media 
+    that he keeps suing them. 
+677 Outside Jasper's Office; to enter 
+    see (584). The Chandelier is 
+    interesting too, see (688). 
+678 West of the Attic; see details of 
+    this (580) to get there
+679 Inside the Front Door, but gnot 
+    easily accessible this way. From 
+    the Kitchen, go u,out,w. 
+
+680 Down below Sandybottom Field. 
+681 Guarding her gardens to the gnorth 
+    of the Ballroom and Conservatory. 
+    Cannot be bypassed. 
+682 Already summoned by Jasper and on 
+    their way. See (690). 
+683 Remember the Turnips. See (692). 
+684 Evidence against Jasper, once 
+    recorded. See (301). 
+685 Gnot in this game. 
+686 You score 12 points per Signature 
+    (526); for reaching various places 
+    (75),(125),(141),(146); and for 
+    finishing this part. Total 300. 
+    Bad signatures earn penalties.  
+687 In this part, Flopsy and Gnoah 
+    will follow orders and are gneeded 
+    to finish. 
+688 Untie the Chandelier to swing down 
+    into the Ballroom. 
+689 Examine them. The interesting ones 
+    are in the Garret (352) and the 
+    Portrait at the East End of the 
+    Gallery (410). 
+
+690 Ingrid's maid disguise didn't fool 
+    anyone, and Jasper employed her 
+    because he gneeded a scapegoat to 
+    blame for the "robbery".
+691 Flopsy's collar and evidence of 
+    her sad fate. 
+692 Put the Deeds in the Gap under 
+    the Door. Silas opens the door to 
+    get them back and...
+693 Gnot installed in Little Moaning. 
+694 Look at the Dam (194). 
+695 Daisy will help in this part. 
+696 Follow him; take his Masterpiece 
+    as evidence. 
+697 Will it fit Ingrid's dainty foot? 
+698 Go down the Chimneys. 
+699 Strangely, there are gno mirrors 
+    surviving in Gnettlefield farm. 
+
+700 Gnomes of Gnettlefield Farm. See 
+    (24),(36),(52),(53),(55) and (70). 
+701 Some gnomes are less than willing 
+    to meet Ingrid. For example, they 
+    are lurking behind locked doors 
+    gnear (124), (128),(156) and (162). 
+702 Show it to people for them to 
+    sign. See (526) for signatures. 
+703 Door-to-door Leprechaun. Offer him 
+    the petition to sign. 
+704 The Lighthouse is on the Spit. The 
+    way in is from above,via the (75). 
+705 On the east bank of the Dribble. 
+706 Lives in Dunrollin. See (714). 
+707 You score 10 points for reaching 
+    each of: Behind the Barn, Down 
+    the Well, Mill Room and River 
+    Dribble. And see (717). 
+708 Ingrid's Dog, who can be given 
+    orders. She is especially useful 
+    in solving the puzzles involving 
+    (228),(230) and (284). 
+709 Lots of Gnomes live in and about 
+    the Dribble Valley. Ingrid gneeds 
+    signatures from (526). 
+
+710 Gnognome has seen him yet, but he 
+    seems to have arranged to flatten 
+    Little Moaning for building land. 
+711 Feed it to the trolls. The weight 
+    will slow them down. 
+712 Contains Green Gnome scrumpy. Do 
+    gnot drink; but offer it to (192). 
+713 Ingrid can wear the Lipstick and 
+    Perfume to be even more stunning. 
+    Then see (182). 
+714 If Ingrid knocks on the front 
+    door, he runs away, out of the 
+    back door. See (726). 
+715 For some reason, these don't last 
+    for very long with Ingrid around. 
+716 Jasper Quickbuck seems to have it. 
+717 Plus 20 points for each of the 
+    puzzles associated with (228), 
+    (207),(194),(223). And see (729). 
+718 They can even be used to transport 
+    people. Have a play, but the main 
+    use is to solve the puzzles 
+    connected with (246). 
+719 Where the Hermit lives. See (458). 
+
+720 Bite, or hit/attack, this and it 
+    breaks. See (731). 
+721 Ingrid's big daddy. Surprisingly, 
+    he turns of to be useful (733). 
+722 Read it to learn Jasper's plans. 
+723 Heed his words of wisdom. 
+724 Someone could get trapped down 
+    here. See (230). 
+725 Visit the Warren. 
+726 First, tell Flopsy to go to the 
+    back door and wait. 
+727 See the individual locations and 
+    objects for details. 
+728 Big enough to hide behind.See(735). 
+729 Plus 20 points for dealing with 
+    each Troll, later in this part, 
+    see (171). And 40 points for 
+    defeating Silas at the end; a 
+    total of 300. 
+
+730 Go up. 
+731 Once this is done, anyone in the 
+    tunnel below is trapped.See (738). 
+732 With the other Rubbish. See (574). 
+733 Passive resistance can work better 
+    when the resister is too heavy to 
+    move. See (741). 
+734 Ingrid had gno idea what was going 
+    on, but offered her the Petition 
+    to sign anyway. 
+735 Wait and watch Jasper with the 
+    Safe. See (742). 
+736 Descended from the Telelilies in 
+    "Gnome Ranger" and work in much 
+    the same way. See (744). 
+737 Wanders around the manor, as if 
+    he owned the place. 
+738 Flopsy helps trap Ambul.See (743). 
+739 Paints a thousand words. 
+
+740 Take the Groceries to Uncle Dusty 
+    in his Windmill. See (484). 
+741 Tell him to lie on the ground in 
+    front of the Steamroller. 
+742 If Jasper finds evidence lying 
+    about, he brings it here for safe 
+    keeping. 
+743 Tell Flopsy to wait, wait and 
+    attack the Root. Then go down,up. 
+744 Put something in (or on etc) one 
+    of the lilies and it appears from 
+    the other. Or you can put the lily 
+    on/over something. See (718). 
+745 Given to Ingrid by Seamus. 
+746 Ingrid almost looked forward to 
+    the end of the week, when she 
+    would be paid her wages. 
+747 Jasper leaves his Faxofile here  
+    while swimming. 
+748 Helps Ingrid, especially with the 
+    puzzles connected with(307),(367). 
+749 Isfrunt Garden's home. See (714). 
+
+750 Go inside. 
+751 See (327-329). 
+752 Traditional haunt of artists. ake 
+    the Masterpiece. 
+753 Look at Jasper while he's swimming. 
+    What do you gnotice? See (762). 
+754 In the case of Little Moaning, any 
+    carbuncular buildings that he 
+    designed could only improve it. 
+755 Works in much the same way as the 
+    Carriage (603). Bring it back to 
+    make Boney Spratt happy. 
+756 Jasper's Bedroom is gnorth of the 
+    Gnew Corridor, but the door is 
+    locked.Find a way in via the Roof. 
+757 Group of elected officials who run 
+    the Dribble Valley. 
+758 Fine, upstanding businessman whose 
+    job is to send people details of 
+    houses which are as different as 
+    possible from those which they 
+    actually want to buy. 
+759 Go west. 
+ 
+760 Ingrid gneeded his signature. To 
+    meet him, see (706). 
+761 Offer her the Petition. 
+762 Where has he left his Faxofile? 
+763 The thorns were covered with 
+    tufts of hair where wild creatures 
+    had snagged against them. This 
+    gave Ingrid an idea; see (60). 
+764 Left in the Mill Yard, after 
+    Ingrid meets Dusty. 
+765 Ingrid's home. 
+766 Gnorth of Hampton Road. 
+767 Stop the Steamroller (781), then 
+    deal with the individual Trolls. 
+    See (230),(284),(250),(246),(243), 
+    (261) if one of the previous Troll 
+    traps doesn't work for you, (215) 
+    and (190). 
+768 Follows Ingrid when the 
+    Steamroller is destroyed. 
+769 Beloved of amateur gardeners and 
+    of which it is said, "Never in the 
+    field was so much done by so many 
+    to grow so few". 
+
+770 Drop the Ladder in the farmyard 
+    of Tack's Farm and see (778). 
+771 Goes gnowhere useful. 
+772 Just outside the Farmhouse. 
+773 Used to clean turnips. 
+774 Guarding the Barn, after the 
+    Steamroller is destroyed. 
+775 Examine it. 
+776 Give him the (190). 
+777 The way into the lighthouse. To 
+    go there, see (98). 
+778 Go up through the Window. 
+779 West of the Entrance Hall. 
+
+780 Leave alone. Just offer the 
+    Petition to Dusty. 
+781 Stop it with Gnoah's help (741). 
+    Then go to (276) to finish it off. 
+782 Fancies Ingrid. See (795). 
+783 Pour it into the Pool. 
+784 Only get signatures from locals. 
+785 Authorisation to build houses. 
+786 To cross the River, make use of 
+    the remains of the Bridge (639). 
+787 To escape him, go to the Warren 
+    and see (724). 
+788 There are gnone in Gnettlefield. 
+789 Ingrid can get onto the Rook and 
+    tell it to fly to places. 
+    Especially to the (75) or (139). 
+
+790 Surprisingly good, but useless. 
+791 Found by Silas, gnear the end. 
+792 Hide here until the Trolls leave. 
+793 In the Kitchen, after the 
+    Steamroller has been destroyed. 
+794 Enter the Lighthouse (704) to get 
+    Millie's signature. 
+795 She must become even more stunning 
+    by wearing the (222) and (226). 
+796 Gnorthwest from the High Street. 
+797 Try to gnorth and south. 
+798 Ingrid had gno idea what was going 
+    on, but collected signatures from 
+    both people. 
+799 Game based on the Morte D'Arthur. 
+
+800 Look through it, I think, to see 
+    that Ingrid's Bedroom is full of 
+    Turnips. At the very end of this 
+    part, see (692). 
+801 Wandering about, after the 
+    Steamroller is destroyed. 
+802 What's wrong with using fingers? 
+803 The Guinea Pigs are cute little 
+    creatures and very friendly, but 
+    have a habit of trampling the 
+    people they cuddle up to. Trolls 
+    do gnot like them at all. 
+    See (813). 
+804 Once the Windmill is running, 
+    push and pull the Lever. 
+805 Steal his Plans, see (468). To 
+    escape at the end of this part, 
+    use the Deeds (195). 
+806 Use the Telelilies. See (814). 
+807 You don't want to go in here. 
+808 Suppose Flopsy climbed onto the 
+    Steamroller at the worst moment. 
+809 Look at its size. See (815). 
+
+810 Can be opened to release,or partly 
+    release,the Guinea Pigs. See(803).
+811 Trap a troll here, see (243). 
+812 You score 20 points for reaching 
+    each of (434),(423),(425),(441). 
+    And the same for each piece of 
+    Evidence (511) found, plus 10 each 
+    for evidence carried. Finally, 
+    there is 10 for drinking the 
+    Potion and 40 for finishing.  
+813 When chased, into the Sty and go 
+    se,w,w. The troll will try to 
+    follow, but fail. Then see (823). 
+814 First put one of them in the Well 
+    and drop the other. See (822). 
+815 When the Steamroller is bogged 
+    down, see (826). 
+816 Push it when the Telephone rings. 
+817 Remove it. 
+818 Open it. Then, when followed by a 
+    Troll,push him. Finally, see(825). 
+819 When he escapes into the Ballroom, 
+    follow via the (312). 
+
+820 Anyone trapped in these could gnot 
+    escape. 
+821 Kick it to flood Soggybottom Field. 
+    Timing is critical, see (834). 
+822 Stand on the one on the ground, 
+    take the Handbag and repeat the 
+    process to escape. Gnow, to trap 
+    a Troll, see (828). 
+823 Open the Gate to release the Pigs 
+    into the outer Sty. Gnow the troll 
+    cannot leave without passing them, 
+    so leave him trapped and go ne,n. 
+824 Cannot be passed.To deal with him, 
+    go to (250). 
+825 Close the Trapdoor and put 
+    something heavy on top, eg (224). 
+826 Put the Loaf in its Chimney. 
+827 Tell Flopsy to wait for a while 
+    and pull the Lever.Then go outside 
+    and attach the Hook to a Troll. 
+828 Pick up the Lily, put it over the 
+    Troll and drop it in the Well. 
+829 When he is following Ingrid, use 
+    the puzzle associated with any of 
+    the following to trap him. See 
+    (284),(246),(243) and (261). 
+
+830 Find all the Evidence (511), wave 
+    to Jasper and Seamus and hunt 
+    down Silas. See (819). 
+831 Use to lure the Cook away. 
+832 Rumoured to be in the Attic. 
+833 Do as Gnoah and Seamus say. 
+834 Wait until the Steamroller is 
+    there. Afterwards, use (223). 
+835 Slide it. 
+836 Pull the Brake to start the mill, 
+    then push the Lever to lower the 
+    Hook. See (827). 
+837 See the puzzles connected with 
+    (433),(370),(326),(312). 
+838 There is gno choice but to drink. 
+839 Part of the Guinea Pig Sty, which 
+    can be used to trap a troll (803). 
+
+840 Can be flooded. See (194). 
+841 Contains evidence, but can only be 
+    opened with the combination. There 
+    is a Curtain opposite, see (728). 
+842 Use the Answering Machine and look 
+    in the Wardrobe. 
+843 To outwit Silas,put them in (205). 
+844 Examine the Desk carefully. 
+845 See the Fireplace (329). 
+846 The Portrait(363) hides something. 
+847 Go down chimneys. 
+848 The Rope and Hook can be moved up 
+    and down by means of the Lever in 
+    the Mill Room. See (836). 
+849 Wave the Flag and see what happens. 
+
+850 Ingrid can hide behind it in order 
+    to get behind Jasper to the 
+    Changing Room. See (326). 
+851 Central Room in this part. If 
+    Jasper has just escaped, see (312). 
+852 It seems there is a Secret Room to 
+    the West. Use the (393). 
+853 Don't eat anything. 
+854 Ingrid can hide here. See (17). 
+855 Give it to the Butler. 
+856 In through the Fireplace and up. 
+857 Examine the Bridge. 
+858 Leads to Jasper's secret lair. 
+859 Where this part takes place. 
+860 Copyright (C) 1988 Level 9. 

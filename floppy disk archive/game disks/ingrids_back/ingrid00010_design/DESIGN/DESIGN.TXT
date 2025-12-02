@@ -1,0 +1,634 @@
+       GNOME RANGER II DESIGN. COPYRIGHT (C) 1988 LEVEL 9
+       --------------------------------------------------
+
+                         DESIGN OUTLINE
+
+The game was a three-part graphical adventure, written in the third 
+person and past tense (like this design). It was a sequel to 
+"Gnome Ranger", Level 9's PCW 87 game, and could be played as three 
+seperate games, but the idea was to play them in sequence, to 
+reinact the continuing exploits of Ingrid Bottomlow after her 
+return home to Gnettlefield Farm. 
+
+In Ingrid's absence, the old lord of the manor had been succeeded by 
+Jasper Quickbuck and his agent, Silas Crawley. They had decided that 
+Little Moaning was the ideal site for an exciting new enterprise 
+zone and Gnorsegnome theme park, so the locals were to be evicted... 
+unless Ingrid could put a stop to the plan. 
+
+                            PROGRAMS 
+
+The game comprised Ingrid's journal and three adventure programs, 
+corresponding to events at Little Moaning (the village), Gnettlefield 
+Farm, and Moaning Manor. Transfer between them was automatic with 
+disc versions; with cassette versions the player was told when to 
+load a tape. Each part had to be loaded once. 
+
+The Second Gnettlefield Journal started with Ingrid's return home 
+to Gnettlefield farm (where she found that little had changed and 
+the family had stored turnips in her room again), and recounted the 
+events of the next few weeks, ending with the annual Mid-Winter 
+party at which the gnomes were threatened with eviction. 
+
+
+LITTLE MOANING (PART 1) 
+
+The game started with a report of the meeting in the village hall. 
+The gnomes had been invited to a "party" hosted by the new Squire, 
+but the hall was empty apart from Silas Crawley, Quickbuck's agent, 
+who revealed that their invitations doubled as eviction notices, 
+before leaving and (as it happens) taking the ferryboat to the east 
+bank. 
+
+The other gnomes assumed that "something would turn up" and went 
+off to continue life as before in the village, and the game proper 
+began with Ingrid and Flopsy the dog (the main character in part 1)
+in the hall, determined to get everyone to sign a protest petition 
+and take it to the local councillor, Great Aunt Halfyard at Doomladen 
+- no easy task when a typical gnomish reaction to an Ingrid visit was 
+for householders to double-lock all their doors and hide in the 
+cellar (for similar reasons, only Flopsy and the rook would obey 
+commands in part 1). Ingrid was too thick-skinned to notice anything 
+amiss, but her reputation for accidental destruction was well known.  
+
+At first, reading Ingrid's petition revealed the names of any people 
+who had signed. But once it was nearly complete, examination reported 
+those who had not signed instead, to help the player. If Ingrid tried 
+to get someone to sign twice they reacted appropriately (e.g replying 
+to a knock on their door with "Go away, Ingrid, I've already put my 
+cross on your stupid bit of paper", rather than with the same action 
+as before). Asking one of Quickbuck's men to sign resulted in a false 
+entry, such as "Micky Mouse", which was always there on examination 
+and reduced her score: allow for several such entries, all different. 
+
+* The Bridge was broken some time ago, and now the Ferryboat had 
+been left on the far bank by Silas Crawley the River Dribble was 
+effectively impassible. But Ingrid borrowed Gnat Tackhammer's 
+dogless carriage and took it to the top of Ploughgnome Lane and then 
+rushed at speed down to and over the broken bridge. 
+
+The carriage, and the boat, could carry any number of people and 
+were moved in the same way as the various vehicles in "Lancelot", 
+simply following the moves of anyone on board. If any occupant tried 
+to move indoors (or onto land in the case of the boat), their vehicle 
+was left behind. Climbing up Ploughgnome Lane was described as being 
+hard work; travelling downhill resulted in descriptions of ever 
+greater speed; if the carriage was "going quickly" but turned off 
+(or did not move for a turn) the "brakes were jammed on"; and if the 
+carriage reached the bridge, depending on its "speed", it stopped on 
+the brink, landed in the water (and was dragged back), or jumped the 
+river (if the river was jumped, the carriage was wrecked and everyone 
+but Ingrid and Flopsy fell out half-way, with appropriate cries 
+of horror, and struggled back to the west bank). Gnat Tackhammer 
+insisted on accompanying his carriage, got increasingly worried if it 
+went faster, and ended up head-down in the river mud with the rest. 
+
+The ferry boat started on the east bank of the river, and Ingrid 
+used it to return. 
+
+* Dribblemouth Light was inaccessible by land, as its doorway was 
+high above ground level and Millie Watts was a bit too deaf to hear 
+her shouts and throw down the ladder. Ingrid visited the Rookery 
+and enlisted the help of one of the rooks, who was much more 
+intelligent than the gnomes and delighted to help her block the 
+planned redevelopment. The rook obeyed Ingrid and carried her to the 
+flat platform atop the Lighthouse, from where she climbed down, got 
+Millie's signature, lowered the rope ladder and left. The ladder 
+was promptly raised again afterwards. 
+
+* Dunrollin in the Dunes. The back door was very spongy and knocking 
+had no effect. But, when Isfrunt was at home and Ingrid knocked on 
+the front door, she thought she saw someone at an upstairs window. 
+Continued knocking resulted in footsteps down the stairs, the back 
+door opening and Isfrunt escaping across the fields to Tack's Farm 
+(where he would hide until Ingrid got safely away - e.g to the centre 
+of Little Moaning - before returning). But Ingrid got Flopsy to wait 
+beside the back door, grab Isfrunt when he emerged and carry him to 
+her (or Ingrid could have left Flopsy knocking, I guess). After    
+signing, Isfrunt rushed inside and slammed the door.  
+
+* Ferry Cottage. Mistress Spratt answered the door when Ingrid 
+knocked, and was happy to sign the petition. But Boney Spratt was 
+too busy fishing outside; his job was made a lot more difficult by 
+the loss of his boat (now on the other side of the Dribble). He 
+signed only when Ingrid returned the boat. 
+
+* Forge. Gnat Tackhammer was happy to sign the petition, and was 
+"happy" to let Ingrid borrow his dogless carriage (though he insisted 
+on staying on board). 
+
+* Gnettlefield Farm. On each return, Ingrid found a different type 
+of root vegetable stored in her bedroom. Everyone was prepared to 
+sign her petition, though Bumpy was nowhere to be seen, until 
+Ingrid thought to search the rabbit warren for him. 
+
+* Green Gnome. Everyone was happy to sign the petition, though 
+Ingrid had to be careful to only give the form to locals, as quite 
+a lot of travellers were in residence. 
+
+* Halfyard's New Mill. Ingrid ignored the "No Ingrids" sign, while 
+Flopsy scared away the chickens. She then pulled the bell rope and, 
+had she remained in view, nothing would have happened. But Ingrid 
+decided to surprise Dusty Halfyard, so she left his shopping on 
+the doorstep and hid in some nearby bushes. When Dusty eventually 
+emerged to take in his order from the shop, after shifting all the 
+flour sacks which had blocked the inside of the door and kept it 
+closed, Ingrid jumped out. Dusty leapt in surprise, dropped his 
+groceries onto the hard cobbles where they broke, knocked against 
+the pile of sacks and vanished beneath a cloud of flour. When the 
+air cleared, she found that Dusty was buried again, though it was 
+clear from his tone of voice that he was not hurt. Ingrid made a 
+mental note to summon help and, as one of Dusty's hands was sticking 
+from the pile of sacks, she got him to sign the petition.
+
+* Tack's Farm. Nobody would answer Ingrid's knocking, but she 
+fetched a ladder from the barn, climbed up it and through an open 
+window, where she found Mrs Tackhammer sitting on the bed. Mrs 
+Tackhammer was happy to sign the petition, as was Seamus Sosmall 
+when Ingrid opened a wardrobe and found him - he explained he was 
+trapped there when his teleport spell went wrong. 
+
+* Moaning Manor. A notice, "Maid Wanted" was attached to the gate, 
+but the manor itself was just an echo location. 
+
+* Rookery (Greater Cawing). There was nobody to sign the petition, 
+but a rook flew down to help Ingrid (see Dribblemouth Light).
+
+* Shop. Ingrid simply asked for Miss Farthing's signature, and also 
+offered to deliver the order already made up for Halfyard's Mill. 
+
+* Three Mole Hill. The hermit was well known to like solitude. When 
+Ingrid first arrived at the small cave here, she thought she saw 
+movement, but never got a real look. To get the hermit's signature, 
+Ingrid left her petition in the cave and he signed it when nobody 
+was there to see.  
+
+* Doomladen and Darkwood. Ignoring the new sign, "beware of the mad 
+gorilla", Ingrid was set upon by Rollo Butterpat in a monkey suit, 
+but dodged him by running through a briar patch, where the fur on 
+his costume got caught. 
+
+Great Aunt Aggie Halfyard was happy to see Ingrid, signed the 
+petition and gave encouragement. If the petition was now complete, 
+she offered to present it to the council and Ingrid's role in the 
+first part of the adventure was over. 
+
+At the end of part 1, Ingrid's talent for disaster struck again. 
+News of the petition leaked out and Silas Crawley reacted by bringing 
+forward the date of the eviction to before the council meeting. The 
+gnomes were furious to learn that, because of Ingrid's meddling, they 
+had to be gone by tomorrow...  
+
+
+
+GNETTLEFIELD FARM (PART 2)
+
+The eviction started at first light, with a team of northern trolls 
+marching on the village. Silas Crawley planned to tackle one house at 
+a time, starting with Gnettlefield as this was the only non-rented 
+house and he had to get its deeds. Fortunately, Ingrid was more than 
+up to the task and, though the farm was wrecked in the process, the 
+village was saved. 
+
+This part started with a near-parody from Hitchhiker's Guide (the 
+steam roller taking the part of the bulldozer). Ingrid woke on the 
+landing outside her bedroom door (one look through the crack under 
+the door revealed her room was completely full of root vegetables). 
+Anyone opening the door got buried by turnips, though they were dug 
+out if any friends came past; or in Ingrid's case, a racetrack of 
+messages describing how people walked past, seeming not to hear her 
+muffled cries, until Flopsy arrived. 
+
+(The turnips, by the way, were repacked in Ingrid's room if anyone 
+got a chance while she wasn't looking.)
+
+* Next, Seamus Sosmall teleported in for just long enough to warn 
+Ingrid that the assault on Gnettlefield was about to begin. Ingrid 
+asked Flopsy to get the Plans from Silas and bring them to her, so 
+she would be forewarned. (Nobody else was quick enough to steal his 
+Plans, as Silas would have snatched them back instantly, as he did 
+if he got the chance later. Ingrid knew that Flopsy was fast enough 
+because she reacted to Silas' presence by one from a set of ten 
+attacks, eg nipping at his legs and nimbly dodging his kicks.) 
+
+* For phase 1, a steam roller came lumbering up the narrow track to 
+Gnettlefield Farm, squeezing between the walls and forcing back all 
+in its way. Had it reached the farmyard, Silas would have driven it 
+into the front door - shattering the timbers - before entering to 
+grab the deeds, forcing the gnomes to surrender. 
+
+The roller was stopped if anyone lay in the road, but it was not 
+delayed as the accompanying trolls simply picked everyone up and 
+pushed them down the track. The exception was Noah Bottomlow, who 
+had put on yet more bulk during Ingrid's holiday and now resembled 
+Jumbo Butterpat at his heaviest. He could not be moved from the 
+narrow track, Silas was forced to signal the retreat and redirect 
+the engine around via Soggybottom field. 
+
+If Soggybottom field was already flooded, the roller simply detoured 
+around it and reached the farmyard. But Ingrid arranged for the dam 
+to be broken as the roller reached the field, flooding the area and 
+sinking the roller in the resultant bog. 
+
+While the trolls headed off to find what had happened (and repaired 
+the dam well enough to prevent it being broken again), Ingrid 
+climbed onto the engine and plugged its chimney with Mother's loaf 
+(which was exactly the right size). The resultant blockage caused 
+flames to lick from the firebox, igniting the cab of the roller and 
+putting it out of commission. 
+
+Silas was furious when he and the trolls returned to the destroyed 
+roller, and he ordered his followers to capture the gnomes and put 
+a stop to all resistance. All but one troll (Ambul) chased the 
+gnomes back to the farmyard and locked them up. On Ingrid's 
+subsequent return, she found the gnomes were all locked in the barn 
+and the trolls had split up to patrol the area. 
+
+(Thereafter in part 2, if Ingrid moved into a location with Silas 
+or a patrolling troll, she got the room description and a chance 
+to jump back with no time passing. Any "first time text" was only 
+printed after she had agreed to the move). 
+
+* Troll 1 (Ambul) chased Ingrid to the warren (a white rabbit led 
+her there). She could gain fractionally on Ambul because of her 
+better knowledge of the warren passages, and used the extra turn 
+to brief Flopsy to wait beside the root which provided access to 
+the lower levels. Ambul then arrived and followed Ingrid down; she 
+promptly climbed back up and Flopsy immediately bit off the root as 
+previously ordered. 
+
+Ingrid was prevented by special case code from fleeing in any other 
+direction by special code (the idea was to force her away from the 
+farm so that people could be repositioned without us needing to 
+worry about Ingrid seeing any sudden change). 
+
+Once free of her pursuer, Ingrid sought out and captured the 
+remaining patrolling trolls. The next two, 2 and 3, had  distinct 
+personalities, while the others were effectively interchangeable. 
+
+* Troll 2 (Babble) fancied Ingrid and had made comments such as 
+"Wooargh!" and "Lookit the meat on that one!" when the trolls were 
+acting as a group aboard the steam roller. He was on guard outside 
+Gnettlefield farmhouse, preventing anyone entering, and did not try 
+to capture her, but instead tried to chat Ingrid up. Ingrid was 
+surprised; she had always known she was beautiful, but it was the 
+kind of beauty which normally took a long time to have any impact..
+
+If Ingrid arrived wearing perfume and lipstick, Babble was quite 
+overcome by love and automatically arranged a tryst in Tack's Farm, 
+headed off in that direction and thus left the game. 
+
+* Troll 3 (Chugg) was sitting in the Kitchen of Gnettlefield Farm, 
+waving an empty bottle and singing about beer. Ingrid got Dusty 
+Halfyard's secret cask of Green Gnome scrumpy and offered it to the 
+troll.. Clunk! One green and insensible troll. 
+
+* Troll 4 (Doldrum) was trapped at Halfyard's new windmill by being 
+hoisted into the air. Inside the mill were a brake and a lever. 
+Pulling the brake started the vanes turning, and pushing it stopped 
+them (starting/stopping and continuing were audible inside and 
+visible outside the mill). If the vanes were turning, pulling the 
+lever started the hoist up and pushing started it down. (This was 
+visible on the ground outside because a hook would rise away, or 
+descend into view as appropriate. Inside, any movement was audible 
+and the hook and contents were visible as they passed the "window". 
+Anyone on the hook had to watch as they rose to the window and next 
+to the top of the mill - or reversed the process going down - they 
+could only free the hook when on the ground). Ingrid did not have 
+time to attach the hook to the patrolling troll and then run upstairs 
+to the mill room, before he freed himself, so this was a two-person 
+puzzle (and Flopsy, e.g, was quite capable of operating the controls). 
+The mill, by the way, contained the cask of Green Gnome scrumpy. 
+
+* Troll 5 (Ergot) was guarding the Barn which held Ingrid's family. 
+He prevented any access via the locked front door, but a rough area 
+of wall (visible from inside and outside) proved to be a jerry-built 
+section of wall, rebuilt from loose bricks after the barn was 
+damaged in the past. Persistant attempts at removing the bricks 
+resulted in a sequence of messages - finally ending in the troll 
+being alerted and entering the barn, Ingrid escaping to the outside 
+if appropriate, and the barn collapsing and trapping its complaining 
+occupants. Nobody was hurt, but they were not happy!   
+
+* Troll 6 (Fuddle) was captured using the telelilies. Ingrid dropped 
+one lily down the dry well (and visited there to rescue Grandma's 
+handbag, obviouly lost earlier, and hence get her perfume and 
+lipstick). Even people could be transported by the Lilies if they 
+got in one, or if one was put over their heads, so Ingrid could use 
+this technique to teleport a troll. However, the troll promptly 
+returned via the destination lily, so Ingrid had to promptly drop 
+the second lily in the well to trap him there. 
+
+* Troll 7 (Gormley) was captured in the cellar of Halfyard's old 
+mill (now a pile of rubble). Once Ingrid had opened the trapdoor in 
+the ground, any troll who arrived would briefly teeter on the edge. 
+A push, next turn, and he would fall in. Next turn, the troll would 
+climb out, unless the trapdoor was closed, and on future turns the 
+troll would open the trapdoor unless something was put on top to 
+hold it down. Access to the inside of the "mill" was already blocked 
+by rubble.
+
+* Any troll who followed Ingrid could be trapped in the guinea pig 
+sty. This comprised an outer sty, providing access to three inner 
+pens, seperated by hurdles which everyone but the pigs could cross. 
+Trolls were understandably scared of the pigs and backed away 
+immediately from them, so what Ingrid did was to go through the pens 
+in order, followed by her pursuer, until she reached the third pen 
+with the pigs. Moving/opening the gate to release them into the main 
+"yard" of the sty, Ingrid quickly left, climbing over the gate. The 
+troll was then trapped in the pens, unable to follow because of the 
+pigs. 
+
+If Ingrid had been followed to the sty by more than one troll, the 
+other(s) would have waited outside the sty (the first shouting "You 
+go ahead, I'll wait here to block her escape). If she had simply 
+released the pigs while her pursuer was in the main part of the sty, 
+he would have escaped to the outside and waited there. The guinea 
+pigs would not go out of their sty. 
+
+* Additionally, any troll following Ingrid could be chased off by 
+the bantams. The first person (apart from Ingrid and animals) to 
+enter their coop was chased away by the clucking horde - neither 
+person nor bantams returned. 
+
+* On trapping the last troll, Ingrid was reminded that she had now 
+to enter Gnettlefield and confront Silas, getting the deeds and 
+using them against him. 
+
+* On going upstairs in the house, Ingrid found Silas searching for 
+the deeds to Gnettlefield. He grabbed her (though Ingrid had a 
+chance to jump back) and took her to Grandma Gnutson's bedroom where 
+he forced her to retrieve the deeds (all this was just a message). 
+Then Silas let Ingrid keep the deeds while he marched her out of 
+the house, one location at a time. 
+
+Ingrid had to keep the deeds from Silas, so she waited until she was 
+on the stairs, then shoved them through the crack under her door. 
+Silas opened the door and was buried in turnips! Provided Ingrid had 
+dealt with all Silas' followers, there was nobody to answer his cries 
+and dig Silas out - he had to admit defeat and sign an agreement to 
+leave the gnomes in peace. 
+
+
+
+MOANING MANOR (PART 3)
+
+Events returned to normal in Little Moaning thanks to Ingrid's 
+bravery, though she wished someone had said thank you - why, if 
+she hadn't had such a nice, trusting nature, she might even have 
+thought they blamed everything on her. 
+
+Not much happened for a few weeks, except that Jasper Quickbuck 
+moved to the manor. Then Ingrid's family had a secret meeting, 
+accidentally forgetting to invite Ingrid, and announced that, with 
+Seamus Sosmall's Leprechaun magic, they had learned of a way to 
+solve their problems for good.  
+
+A brave volunteer had to infiltrate the manor and find out what was 
+going on there. By coincidence there was a vacancy for a maid, so 
+Ingrid applied, in disguise, and set out to learn what she could. 
+
+* Front Door. Ingrid started at the Manor Gate. She walked to the 
+Porch, where she knocked and was told to go round to the Servants' 
+Entrance by the Butler. (This was just a message; a special case 
+to speed things up if Ingrid knocked near the start. Later on, 
+knocking involved the Butler in a racetrack with him walking to the 
+door in a similar way, but taking several turns of course). There 
+was a latch inside the front door which could be slid to allow it 
+to be opened from the outside, but relevant "Goto routes" still 
+avoided the front door and went via the Servants' entrance. 
+
+Anyway, Ingrid went round to the Kitchen, where the Housekeeper 
+greeted her with, "So you're the new maid. You're early. Your duties 
+don't start until tomorrow, so keep out of my way until then", before 
+stalking off on a long racetrack around the building. 
+
+Ingrid explored the labyrinthine building, and soon found that 
+Jasper Quickbuck had any number of skeletons in his closets. She 
+needed 9 pieces of evidence for a maximum score, before waving from 
+the Porch to start the endgame. Details were as follows... 
+
+* Jasper's Office. The Butler normally roamed about in the hall 
+outside the Office, reacting angrily if Ingrid opened the door and 
+pushing her towards the kitchen (on any third attempt, Ingrid was 
+fired). The same thing happened if Ingrid was caught when coming out 
+of the Office, and any evidence carried was removed from the game. 
+
+The Butler went to answer the front door when anyone knocked, so 
+Ingrid got Daisy to do this twice, with an appropriate delay, and 
+got past him into the Office. 
+
+Examining the Blotting Paper revealed the incriminating impression 
+of a letter. If the Desk Drawer was opened, it turned out to be 
+empty, but removing it, and then examining the Desk, revealed a set 
+of Cheque Stubs that had slipped behind the Drawer.
+ 
+* Long Gallery. If Jasper encountered any evidence, he immediately 
+took it to the Safe and locked it there, before returning to his 
+previous activity. He ordered anyone else visible away, before 
+opening the safe. 
+
+Ingrid found the safe behind a Picture on the wall; a painting of 
+the first lord. She hid behind some curtains while Jasper approached 
+and opened the safe, learning the combination. She could then open 
+it at will; inside were two sets of account Books. 
+
+* Yard. Searching the Dustbins revealed some disgusting Rubbish and, 
+on searching this, a crumpled Letter about Gnommess share dealing 
+was found. If Ingrid searched the Rubbish, she realise she was in 
+danger of getting contaminated (if she answered yes to the yes/no 
+question, she smelt bed and lost a few points), so she got Daisy to 
+search instead. 
+
+* Jasper's Bedroom. The door was permanently "locked" and could 
+only be used from the inside. But, if she entered the chimney or 
+any fireplace, Ingrid found a connecting network of flues which 
+provided access there. 
+
+Occasionally the phone would ring and, on picking it up, Ingrid 
+could listen to the conversation at the other end. She could also 
+record it, assuming the tape was in the answering machine, by 
+pressing the Record Button (any previous conversation being wiped), 
+and play it back by pressing the Playback Button. 
+
+There were a few conversations, for variety, and any of them were 
+incriminating - the recorded Tape providing good evidence. 
+
+Also, inside the Wallet, in the Pocket, in the Jacket, in the 
+Wardrobe, was a Sheaf of Photographs of the local council planning 
+committee, enjoying themselves with bikini-clad damsels aboard 
+Jasper's yacht. "Aha", thought Ingrid, "now I know how he got 
+planning permission to clear Little Moaning to make room for a 
+Gnorsegnome park."
+
+* Swimming Pool. Jasper kept a tight hold on his Filofax at all 
+times but one; while swimming. He stopped anyone walking past the 
+pool, to the changing room where it was left. But Ingrid could 
+either hide behind a sun-lounger while he walked from the changing 
+room, past her, to the pool - then nip in and take it - or distract 
+him by offering another piece of evidence which he would immediately 
+take to hide in the safe (forgetting the Filofax). 
+
+* Secret Room. Jasper Quickbuck was planning an insurance fiddle 
+and had "stolen" a lot of the more valuable furniture from Moaning 
+Manor and shut it up in a secret room. The 'phone conversations (see 
+above) concerned this, and people such as the Cook mentioned it too. 
+
+Indeed, Ingrid's disguise had been about as successful as one would 
+expect, Jasper had recognised her as a troublemaker, and hired her 
+so she could be blamed when the police arrived. Seamus briefly 
+bobbed up after a few hundred turns to warn Ingrid (this was just 
+a message) and, if she took much too long, the police arrived and 
+arrested her. 
+
+Fortunately, the position of the secret room was obvious: quite a 
+few first-floor windows were unaccounted for, comparing the inside 
+count on one wing with the outside view, and this wing ended 
+abruptly. 
+
+To get there, Ingrid had to climb out of a window, along a ledge, 
+and into the first window of the secret room. Here she found the 
+most valuable antique in the house, the "Moaning Star". 
+
+
+* Tree Court. Climbing the Tree just gave a message about all the 
+birds' nests etc that Ingrid found. Examining it gave a description 
+of how, amongst other things, the Tree cast a dense shadow across 
+one corner of the court (thereafter, the shadow object was visible). 
+Examining the tree's Shadow revealed a hole between the ancient 
+stones - and redirected "in" so it became a visible exit to the 
+spiral stairs beyond this hole, rather than an invisible exit back 
+to the Banquetting Hall. Ingrid climbed the stairs and reached the 
+gloomy Attic above. 
+
+* Garret. The Attic seemed to have no exits except back down and, as 
+Ingrid waited, she heard the sounds of the Ghost of Moaning Manor 
+approaching. If she stayed there, the Artist threw open a hitherto 
+unseen door - the sounds had been his footsteps etc - and invited her 
+into his Garret, "to see my etchings, little girl" (?). 
+
+The artist spent his time churning out "ancient master" paintings 
+for Jasper (by a process which involved a long racetrack using 
+brillo pads etc to age each painting). He was delighted to receive 
+a visitor and happy to let Ingrid take a picture. 
+
+* Library. Ingrid read the books: there were ten messages for this, 
+a new one being produced by each attempt. The first few revealed 
+hints, later ones just reported Ingrid as being increasingly bored 
+with having to read books in EVERY game, and refusing to do so any 
+more. The tenth message (in Ingrid firmly refused to read any more, 
+was repeated for the 10th and later attempts).  
+
+* Chimneys. The exits into fireplaces and chimneys were not visible 
+from outside (just from inside). If Ingrid dropped anything while in 
+a shaft or flue (etc), it rolled away and ended by the corresponding 
+fireplace - in particular, the Duct Junction "led" to the Kitchen. 
+
+* The Loft was adjacent to the Garret, but there was no way through. 
+If Ingrid examined (or looked through) the Hole, she got one of a 
+series of messages about a vague figure shuffling about. 
+
+* Ballroom. Events in the Ballroom could be seen from the Central 
+Gallery, which looked out onto it. And, by untying the Chandelier 
+and answering "yes" to the question about holding onto it, Ingrid 
+could swing down into the Ballroom. She did this at the end, when 
+the door onto the Ballroom became locked. The Housekeeper retied the 
+Chandelier if it was out of place when she walked past. 
+
+* End. When Ingrid thought she had enough evidence, she stepped out 
+onto the front Porch and waved; signalling Seamus Sosmall and her 
+Father to arrive. 
+
+They emerged from a bush to inspect the evidence, and went away 
+again if there was not enough. If there was enough, they told 
+Ingrid to lead the way to Jasper Quickbuck. Ingrid was puzzled when 
+Seamus offered a vial of "strength potion", but gulped it down. 
+She had never felt more single-minded - nothing would let him get 
+away from her!  
+
+Jasper was encountered in the Hall; he saw from the look in Ingrid's 
+eyes that the game was up and ran whimpering into the Ballroom, 
+locking the door. 
+
+Ingrid knew the Balcony led on to the Ballroom, sprinted up the 
+stairs and grabbed the Chandelier moored against the balustrade. 
+With a fearsome whoop, she swung down upon her hapless victim, 
+flattening him to the ground. 
+
+Jasper tried to collect his wits. "OK, you win", he gulped, "You 
+know enough to put me in prison for life. What do you want me to 
+do?" 
+
+The potion coursed through Ingrid's veins. "Marry me!" she 
+breathed. 
+
+Jasper fainted. 
+
+The game ended with a description of the marriage ceremony. The 
+whole population of Little Moaning was delighted; not only was the 
+village saved, but they had got rid of their major pest. And Ingrid 
+was ecstatically planning how to spend her new riches as she stood, 
+clutching her husband. Only Jasper was less than happy, "Where did 
+I go wrong?" he moaned - but very, very quietly. 
+
+
+
+                      GENERAL DESIGN NOTES
+                      --------------------
+SCORING 
+
+To add atmosphere, if any follower(s) of Ingrid were present at an 
+embarassing event for her, one of them was quite likely to laugh or 
+make rude remarks. 
+
+CAPTURE
+
+Although there were no deaths in this game, there were a few events 
+which led to Ingrid's permanent capture. The first two times, Seamus 
+Sosmall "appeared" and rescued Ingrid (at the cost of -10 to her 
+score); the third time, he appeared but was forced to admit defeat. 
+
+ECHO LOCATIONS 
+
+To complement invisible objects and echo verbs, this game continued 
+the concept of "echo locations", introduced in Lancelot (they had 
+inverted commas in the maps). When Ingrid moved to one of these, its 
+corresponding message was printed instead of the location desc, e.g: 
+"Ingrid went south down Ploughgnome Lane, but Little Moaning seemed 
+deserted - all the gnomes must have hidden themselves. Unable to find 
+anyone to help defend Gnettlefield, Ingrid returned north" (the room 
+text being, " down Ploughgnome Lane ... defend Gnettlefield,").  
+
+As this example showed, the movement was reversed after the message 
+had been printed, so that nobody could actually end up in an "echo 
+location".
+
+When an NPC entered an "echo location" they were normally kicked 
+out, e.g: "Flopsy went south. She returned from the south. ", or 
+else they took the opportunity to leave the game and go to Limbo.    
+
+The intention was to cope with the common situation where only part 
+of a place was necessary for the game and where it would have been a 
+"waste of space" to map the rest. 
+
+FIRST TIME TEXT 
+
+To help with storytelling, this game continued the concept of 
+"first time text", introduced in Lancelot. These were messages, 
+one per location, which were printed the first time Ingrid went 
+there - allowing for one-off events, or jokey descriptions which 
+would have fallen flat had they been repeated by every "look". 
+
+The data structure was a list with one entry per location, holding 
+the number of the message to be printed on Ingrid's next visit 
+there. It was initialised from a corresponding static list, and 
+entries were set to 0 (a null message) after printing. Note that 
+messages could be set up during the game and, e.g, the white rabbit 
+in part 2 was not an object but was done in this way. 
+
+COMMANDING PEOPLE 
+
+Ingrid couldn't command everybody, but could make use of Flopsy and 
+anyone else who offered to help. (These others were: the rook in 
+part 1, the rabbit and all the gnomes in part 2, and cousin Daisy in 
+part 3). 

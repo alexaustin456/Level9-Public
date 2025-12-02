@@ -1,0 +1,1619 @@
+;; Gnome Ranger III source, copyright (C) 1987 Level 9 Computing.
+;
+; MESSAGE.TXT, messages/keywords for the game.
+;
+; Gnome Ranger part 3: BBC disk (21430) version. 
+;
+; Messages are of the form: [ number : text ] ; comment
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course.
+;
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard).
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first.
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+;
+; The word type ^C is used when a word is not to be used as part of 
+; the normal parsing but is to be available for checking should it 
+; be needed. This is so references to scenery may be checked for
+; containing particular words.
+;
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+;
+; punctuation messages..
+[1: ]
+[2::]
+[3:, ]
+[4:.] ; dot with no space
+[5:%]
+[6:and ] 
+[7:.%]
+[8:?%]
+[9:. ]
+;
+; positions etc..
+[10:exits led ]
+[11:an exit led ] 
+[12: through a door]
+[13: through an open door]
+[14: and ] 
+[15:That's enough "What gnow" prompts. ]
+[16:%> ]
+[17:%What gnow? ]
+[18:: ];
+[19:"]
+;
+; Messages for printing objects..
+[20:a ]
+[21:the ]
+[22:an ]
+[23:some ]
+[24:." ] ; dot quote
+[25:% %] ; blank line
+[26:worn] ; for 'couldn't have worn'
+[27:taken] ; for 'couldn't have taken'
+;
+; exits directions, doubling as movement verbs..
+[51:^V gnorth|^V g ^V north ^V n ^V gn ^V northwards]
+[52:^V gnortheast|^V ge ^V northeast ^V ne]
+[53:^V east|^V e ^V eastwards]
+[54:^V south|^V s ^V southwards]
+[55:^V southeast|^V se]
+[56:^V southwest|^V sw]
+[57:^V west|^V w ^V westwards]
+[58:^V gnorthwest|^V gw ^V northwest ^V nw]
+[59:^V upwards|^V u ^V up]
+[60:^V downwards|^V d ^V down]
+[61:^V inside|^V in ^V inwards ^V into ^V enter]
+[62:^V outside|^V out ^V leave]
+[63:^V cross|^V across ^V over]
+[64:with the ^V climb]
+; is in 'you struggle with the climb and are in'
+;
+; Intransitive verbs..
+[70:^V i]
+[71:^V again|^V a]
+[72:^V look|^V l ^V display ^V redisplay ^V refresh]
+[73:^V inventory|^V inv ^V possessions ^V list]
+[74:^V quit ^V restart]
+[75:^V restore ^V load]
+[76:^V save]
+[77:^V ramsave ^V ram]
+[78:^V ramload]
+[79:^V score ^V rating ^V status]
+[80:^V verbose]
+[81:^V brief]
+[82:^V wait|^V wa ^V pause ^V z]
+[83:^V ring|^V play]
+[84:^V on]
+[85:^V off|^V jump] 
+[86:^V pictures ^V graphics]
+[87:^V words ^V text]
+;
+[89:^V undo ^V oops ^V whoops]
+[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash]
+;
+[92:^V searched|^V search ^V explore]
+[93:^V dig]
+[94:^V sniffed|^V sniff ^V smell]
+[95:^V knocked|^V knock]
+[96:^V stood|^V stand]
+[97:^V lay|^V lie]
+[98:^V sat|^V sit]
+;
+[100:^V said|^V say ^V whisper ^V call]
+;; [101:^V teleported|^V teleport]
+;; [102:^V getme]
+;
+[104:^V ran|^V run]
+;
+[108:^V went|^V go ^V goto ^V find ^V walk]
+[109:stopped|^V stop ^V abort]
+[110:^V drank|^V drink]
+[112:^V exits ^V exit]
+;
+; verbs for output..
+[130:^V had|^V have ] ; mainlyfought|^V fight ^V kill]
+;
+[145:^V dodged|^V dodge]
+; 146 and 147 have text for debugging output only - do not mark
+;; [146:gdgo]  ; 196 - gdgo
+;; [147:gdrun] ; 197 - gdrun
+;; [148:^V stuff]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+;
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V steal ^V picked ^V pick
+^V catch ^V lift ^V pull]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V concefought|^V fight ^V kill]
+;
+[145:^V dodged|^V dodge]
+; 146 and 147 have text for debugging output only - do not mark
+;; [146:gdgo]  ; 196 - gdgo
+;; [147:gdrun] ; 197 - gdrun
+;; [148:^V stuff]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+;
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V steal ^V picked ^V pick
+^V catch ^V lift ^V pull]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+;
+[168:^V pushed|^V tug ^V push ^V launch ^V shovel 
+^V paddle] 
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ^V untie]
+;
+[176:^V inserted|^V insert]
+;
+;; [182:^V collect] ; goal-directed
+;
+; 186, 187 and 189 have text for debugging only
+[186:return object] ; 186 is 'return object to initial' (for npcs)
+;; [188:^V find] ; set up find.
+;; [189:gdfind] ; 239 is gdfind
+;
+[190:^V closed|^V close ^V shut]
+;; 
+[192:^V told|^V tell]
+[194:struggled] ; mainly for output
+; 195 is 'steal all from'
+;
+[197:killed] ; output only
+;
+[210:reached] ; output only
+[211:dragged] ; output only
+[212:passed] ; output only
+[213:flew] ; output only
+[214:walked] ; output only
+[215:caught] ; output only
+[216:entered] ; output only, e.g 'Fred enters from the east'. Do not mark 
+;
+; Echo verbs (250-299) which just print the message containing them..
+[250:OK, if you say gnot|^V gno ^V no]
+[251:right, so be it|^V yes]
+[252:whee! That was fun|^V leap ^V hop ^V skip ^V dance]
+[253:nothing happened this time, either|^V plugh ^V xyzzy ^V sesame 
+^V plover] ; magic words
+[254:the ^V weather was gnothing to write home about]
+[255:if you want to talk to someone, follow their gname with what you 
+want to say to them. For example GATE, HELLO|^V hello ^V welcome ^V hi 
+^V greetings]
+[256:Ingrid heard gnothing that she didn't already know about|^V listen 
+^V hear]
+[257:send the coupon to Level 9 for a ^V hint|^V help]
+;; [258:the ground was much to hard for digging|^V dig]
+[259:send your ^V cheques to Level 9|^V treasure ^V money]
+[260:the only ^V escape is to finish the game]
+[261:we can't always have what we ^V want]
+[262:Ingrid will have to find that out for herself|^V what]
+[263:Why gnot|^V y ^V why]
+[264:funny you should ask that, I was just wondering ^V where it 
+was myself]
+[265:I'm afraid even I don't know ^V how things work around here. I'm just 
+grateful when they do]
+[266:sorry, I can't help with such matters|^V whether ^V who]
+[267:that kind of language does not impress me one little bit|^V sod 
+^V motherfucker ^V crap ^V gnipples ^V cock 
+^V scott ^V adams ^V frigging ^V wanker ^V turd ^V piss 
+^V shit ^V twat ^V cunt ^V prick ^V bollocks ^V jesus ^V christ ^V dick 
+^V god ^V devil ^V tits ^V asshole ^V arsehole ^V cretin ^V conservatives 
+^V spastic ^V coon ^V wog ^V fucking ^V screw ^V fucker ^V bastard 
+^V bugger ^V damn ^V fart ^V sex ^V hell] ; lower case swear words 
+[268:the real question is whether there is ^V intelligent life on Earth
+|^V intelligence]
+;
+[270:so what is there to ^V shout about? I don't know|^V yell]
+[271:^V royalties are gnever enough and are always late arriving]
+[272:forget these funereal fulminations and get on with life|^V death]
+[273:what? Going so soon? Don't forget to save your position|^V goodbye 
+^V bye]
+[274:you're forgiven, and bless you for your consideration|^V sorry]
+[275:EEEK! (Will that do?)|^V scream]
+[276:what a scorcher|^V phew]
+;
+[279:Ingrid  tried to ^V sleep, but couldn't. She tried counting sheep, 
+but they kept disappearing into snowdrifts and she had to wake up to 
+dig them out]
+[280:the water was freezing and Ingrid didn't have a ^N wetsuit|^V swim]
+[281:what do you mean, ^V think? Thinking's your department, gnot mine]
+[282:Ingrid's attempts at musicianship were gnot well received]
+[283:hit] ; the object "hit" target
+;
+[285:bleuch] 
+[286:Ingrid thought about shaking it, but decided it might gnot be a good 
+idea|^V shake]
+[287:Ingrid's attempt at musicianship are rarely well received, are 
+they? This was gno exception]
+[288:you are here to use objects, gnot to ^V bury them]
+[289:yeuch|^V eat ^V bite ^V taste ^V nibble ^V gnibble ^V lick]
+[290:Ingrid polished it until it gleamed like Arback Garden's bald head in 
+the gnoondayround here is a magic ^N wand, and I 
+don't know if we've got one of those|^V wave]
+[299:gnothing happened. Ingrid tried again, and that time gnothing 
+happened again|^V press ^V select ^V depress ^V poke ^V prod ^V touch]
+;
+; Objects (300+N)..
+[301:^N Ingrid|^N player ^N me] ; Ingrid must start with upper case.
+[302:^A insipid ^N icechild|^N child]
+[303:the ^A indefatigable ^N icewarrior|^N warrior]
+[304:the ^A inane ^N icejester|^N jester]
+[305:the ^A imperious ^N icequeen|^N queen]
+[306:^A innround here is a magic ^N wand, and I 
+don't know if we've got one of those|^V wave]
+[299:gnothing happened. Ingrid tried again, and that time gnothing 
+happened again|^V press ^V select ^V depress ^V poke ^V prod ^V touch]
+;
+; Objects (300+N)..
+[301:^N Ingrid|^N player ^N me] ; Ingrid must start with upper case.
+[302:^A insipid ^N icechild|^N child]
+[303:the ^A indefatigable ^N icewarrior|^N warrior]
+[304:the ^A inane ^N icejester|^N jester]
+[305:the ^A imperious ^N icequeen|^N queen]
+[306:^A innumerable ^N icepeople] ; people is a collective noun
+[307:the ^A fearsome ^N firefighter|^N fighter]
+[308:the ^A fidgety ^N fireguard|^N guard]
+[309:the ^A flamboyant ^N fireking|^N king]
+[310:^A feckless ^N firepeople]
+[311:^A bronze ^N gate]
+[312:the ^A gnarled ^N gnome|^N Gnut ^N Myjob ^N gatekeeper]
+[313:the ^A motherly ^N penguin]
+[314:^N penguins]
+[315:the ^A hairy ^N yeti]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[380:^A sparkling ^N diamond|^N stone ^N rock ^N gem]
+[381:^A enormous ^N emerald|^N stone ^N rock ^N gem]
+[382:^A massive ^N ruby|^N stone ^N rock ^N gem]
+[383:^A glittering ^N sapphire|^N stone ^N rock ^N gem]
+[384:^A lumpy ^N boulder|^N rock ^N stone]
+[385:^A smooth, ^A round ^N cobblestone|^N rock ^N stone]
+[386:^N flint ^N gnodule|^N rock ^N stone ^N nodule]
+[387:^N fossil|^N rock ^N stone]
+[388:^A crumbly ^N gravel ^N heap|^N rock ^N stone]
+[389:small ^N pebble|^N rock ^N stone]
+[390:^A grey ^N slate|^N rock ^N stone]
+
+[395:^A wispy ^N cloudstuff]
+[396:^A large ^N egg|^N Egbert ^N Eggbert]
+[397:^A long ^N key ^N log]
+[398:^A canvas ^N sack]
+[399:^A wicker-work ^N snowshoes|^N shoes]
+;
+; some static objects (130 onwards)..
+[430:^A temporary ^N icedam|^N dam]
+[431:^A sodden ^N debris]
+;; [432:^N icebridge|^N bridge]
+[433:^N icefall|^N snow ^N ice]
+[434:^A wobbly ^N icefloe|^N floe]
+[435:small ^N signpost|^N sign]
+[436:^A long ^N treetrunk|^N tree ^N trunk]
+[437:^N huge ^N footprints]
+;
+;----------------
+; ADD IRRELEVANT INVISIBLE OBJECTS 139..149 here...
+
+;---------------
+;
+; some invisible objects (150 onwards)..
+;;[450:^N river] ; sits in room 0
+[451:^N river|^N water]
+[452:^N river|^N water]
+[453:^N river|^N water]
+[454:^N river|^N water]
+[455:^N river|^N water]
+[456:^N lake|^N water]
+[457:^N lake|^N water]
+[458:^N lake|^N water]
+[459:^N lake|^N water]
+[460:^N lake|^N water] ;; 'out to sea' object - probably never seen
+;
+;----------------
+; ADD IRRELEVANT INVISIBLE OBJECTS 160..179 here...
+[461:^N falchion]; on fireguard
+[462:^N tag] ; on gnome's tunic
+[463:^N throne|^N firethrone] ; with fireking (11)
+[464:^N iceberg] ; middle of lake (119)
+[465:^N cairn of ^N stones] ; peak (24)
+[466:yeti's ^N feet] ; yeti 
+;---------------
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+[480:^N mountain|^N caves]
+[481:^N mountain base]
+[482:^N garden ^N entrance]
+[483:^N icebridge|^N bridge]
+; 
+; These are used for seeing from a distance and for input, e.g for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc.
+;---
+;; [530:^N rainbird]
+;; [531:^N breadcrumbs|^N sausagemeat]
+
+; Collective nouns...
+[534:^N everything ^N all ^N every]
+[535:^N ingredients] ; collective noun - was 'treasure'
+[536:^N weapons] ; collective noun
+[537:^N people|^N everyone ^N everybody] ; collective noun
+[538:^N clothes|^N armour]
+;
+; Omni-present objects.. 
+[539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It 
+; is apparently never described by PRINTOBJECT (so?).
+[541:^N water|^N river]
+[542:^N be]
+[543:^N room|^N ground ^N floor] ; used for output as well
+[544:^N wall|^N walls]
+[545:^N sky|^N sun ^N moon]
+; 
+; and finally, some miscellaneous nouns which are used miscellaneously..
+[547:^N except ^N but]
+[548:^N it|^N that ^N them ^N those ^N none ^N him ^N her]
+[549:^N minute ^N minutes]
+[550:^N breath] ; for 'hold breath' 
+;
+[551:^J then ^J gnext]
+[552:^J therefore ^J so]
+[553:^N Ingrid|^N you] ;you
+;
+; Pronouns...
+[560:it] ; ita
+[561:it] ; itan
+[562:some]
+[563:he]
+[564:she]
+[565:they]
+[566:Ingrid] ; you
+;
+[570:it] ; ita
+[571:it] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:Ingrid] ; you]
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print590:from the gnortheast] ; southwest
+[591:from the east]       ; west
+[592:from the southeast]  ; northwest
+[593:from below]          ; above
+[594:from above]          ; below
+[595:from outside]        ; inside
+[596:from inside]         ; outside
+[597:from across the way] ; across
+[598:by climbing]         ; climb
+[599:with a jump]         ; jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+[601:travel-worn and in definite gneed of a bath] ; you
+[602:an inoffensive innocent, ki590:from the gnortheast] ; southwest
+[591:from the east]       ; west
+[592:from the southeast]  ; northwest
+[593:from below]          ; above
+[594:from above]          ; below
+[595:from outside]        ; inside
+[596:from inside]         ; outside
+[597:from across the way] ; across
+[598:by climbing]         ; climb
+[599:with a jump]         ; jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+[601:travel-worn and in definite gneed of a bath] ; you
+[602:an inoffensive innocent, kidnapped by the fire people. It was 
+small, pale and spotty and had a drip on the end of its gnose]
+[603:built like a brick icehouse, every bit as cold and 
+twice as thick]
+[604:an inebriated imbecile. Ingrid thought he was a pain in the gneck, 
+but his icepeople audiences loved him - which says something about the 
+icepeople] 
+[605:an imperious individual, of impeccable integrity though of 
+idiosyncratic ilk]
+[606:the indigenous inhabitants of that inhospitable icekingdom. They 
+looked rather like a pile of half-melted snow]
+[607:quite dashing in a rough sort of way]
+[608:a flabby flunkey, with a florid face; he was forever fondling his 
+falchion] 
+[609:a fearsome foe, with a feeling for foppish fashions. He wore a 
+fancy ^N frock-coat with a feathery frill]
+[610:a fiery folk, forever fuming and fulminating on fortune, fair 
+or foul. They didn't like parties - mainly because of the danger of 
+spontaneous combustion whenever too many of them packed into the same room]
+[611:a massive structure of solid bronze, with four strange sockets]
+[612:slightly taller than Ingrid and definitely heavier; He was a 
+gatekeeper]
+[613:bored. In terms of excitement, incubating an egg can only be 
+compared to waiting for concrete to set]
+[614:a jolly crowd, flapping around and chattering to each other]
+[615:enormous! He was covered in long, white hair, like a 
+flour-covered haystack. But when the wind blew, which it did rather 
+a lot around there, she could see that there wasn't very much yeti 
+beneath the hair. And he had a kind, if troubled, face]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[680:a magnificent crystal, radiant with an inner light. It was the 
+sort of jewel that men yearned for, dwarves killed for and gnomes 
+used as doorstoppers]
+[681:a superbly crafted jewel, cut to perfect symmetry and with each facet 
+polished to absolute smoothness]
+[682:a massive gem, the size and weight of a boulder]
+[683:as blue as the sea at a summer's gnoon, or as a bucket of Uncle 
+Dusty's gnome-made blueberry wine]
+[684:a common or garden boulder - the sort that you might well wreck 
+the lawnmower on if it turned up unexpectantly]
+[685:a small, round, grey stone. Ingrid thought it would be gnice to paint 
+a pattern on it, write "paperweight" on the bottom and give it to a grateful 
+relative. Except that gnone of her relatives ever used paper]
+[686:a bit broken off a larger gnodule]
+[687:set in a small chunk of limestone. It had a pretty, curly pattern 
+like squashed snail shell]
+[688:about half as high as Ingrid, though much wider at the base]
+[689:about the size of a marble - the big allies, gnot those little glass 
+ones]
+[690:thick, flat on the front and rough around the edges. It reminded her 
+of the students at the Institute] 
+;
+[695:the consistency of Mother's semolina pudding - mainly thin and 
+watery, with some lumps of solid stuff] 
+;
+[696:gnice and warm. Ingrid listened to it carefully to try and hear the 
+chick inside, but it must have been asleep]
+;
+[697:just a small, ordinary log. But Ingrid realized that when this log 
+was removed, the gnext rush of water would wash the other debris out of 
+the way and cure the flooding]
+;
+[698:made of tough canvas]
+;
+[699:very large and flat and much too loose for the dainty feet of 
+the yeti]
+;
+; some static objects (130 onwards)..
+[730:completely blocking the river. The river level was rising behind 
+the dam and falling downstream of it]
+[731:a mixed assortment of junk, principally logs and branches, but with 
+a scattering of empty ^N bottles and ^N barrels]
+;; [732:an icebridge]
+[733:a tumble of loose ice and snow, which looked as though a little 
+pushing would shove some of it into the river below]
+[734:a flat-topped slab of ice about as big as Ingrid's bedroom floor - 
+and probably gnot much colder. Ingrid made a gnote to remind Father 
+to have single glazing put in]
+[735:a wooden pole with planks gnailed on. They pointed gnorth to
+"Gnomebridge", south to "The Rock Garetween snow-covered banks]
+[753:beginning to flow more slowly gnow as it broadened out in the flatter 
+land]
+[754:slow-running and sprawling across its broad bed, as if exhausted by 
+all the rushing about it had done before]
+[755:the mouth of a river where it emptied lazily into the lake]
+[756:so wide that the far shore was out of sight]
+[757:broad and flat, with sheets of ice growing out from the shore]
+[758:bleak and bitterly cold]
+[759:cold, wet and miserable]
+[760:so far from the shore that gnetween snow-covered banks]
+[753:beginning to flow more slowly gnow as it broadened out in the flatter 
+land]
+[754:slow-running and sprawling across its broad bed, as if exhausted by 
+all the rushing about it had done before]
+[755:the mouth of a river where it emptied lazily into the lake]
+[756:so wide that the far shore was out of sight]
+[757:broad and flat, with sheets of ice growing out from the shore]
+[758:bleak and bitterly cold]
+[759:cold, wet and miserable]
+[760:so far from the shore that gnothing but water could be seen]
+;
+[761:a curved sword. Shame on you if you thought it was anything 
+else]
+[762:a small wooden badge with "Gnut Myjob, Gatekeeper" written on it]
+[763:a hot seat]
+[764:the size of a small island, with sharp peaks forming a half-circle 
+around a flatter place where the penguins had gathered]  
+[765:almost up to Ingrid's waist. The topmost stone had written on it, 
+"Erected by the 9th Gnomebridge Guide Troop"]
+[766:sore and blistered from sliding around inside his massive shoes] 
+;
+; Examine messages for location objects (479+N). See 1199+ for their 
+; verbose equivalents..
+[780:high and barren. A gnarrow ^N track led into a cave]
+[781:sloping gently upwards, getting steadily steeper all the time. Deep 
+snowfields lay all around, with outcrops of wind-eroded black rock]
+[782:opening in the high wall that enclosed the garden. A ^N signboard on 
+the wall to the left read "Gnorse Gnook Rock Gardegn. Egntragnce Ognly 
+Ogne Rock"]
+[783:a gnatural arch of ice and frozen snow, spanning the broad river]
+;
+[839:carved from a single slab of pumice] ; examine message for object 239 
+;
+; Short-Form room Descriptions (1000+N). No full stops at end please.
+; These are the brief mode descriptions; they are prefixed by 'you 
+; are' and, in verbose mode, messages 1300+N are appended.
+;
+; room 1 is used as exit modifier for synthesised rooms.
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid.
+;
+; description order is:
+; 'Ingrid was' '1200++'    <'2800++'>     '1000++'   '1300++'  '.'
+;              locn obj    terrain tbl      short      long
+;                          (optional)
+;
+[1002:on a ^N cloud]
+[1003:on a ^N cloud]
+[1004:on a ^N cloud]
+[1005:on a ^N cloud]
+;;[1006:on soft ^N cloud]
+;;[1007:on soft ^N cloud]
+;
+[1009:on cloud ^N 9]
+[1010:in a ^N tunnel]
+[1011:in a ^N fire ^N hall]
+[1012:in a ^N steamy ^N junction]
+[1013:in a ^N prison]
+[1014:in a ^N barricaded ^N corridor]
+[1015:in ^N flooded ^N firecaves]
+[1016:in a ^N guarded ^N corridor]
+[1017:in ^N whitehall]
+[1018:in a ^N river ^N canyon]
+[1019:in ^N labyrinthine ^N icecaves]
+[1020:in an ^N outlet ^N canyon]
+[1021:in a ^N river ^N canyon]
+[1022:in a ^N tunnel]
+[1023:in a ^N rock ^N garden]
+[1024:at the ^N peak of the ^N mountain]
+[1025:halfway up the ^N mountain]
+[1026:on the lower slopes of the mountain]
+;
+[1117: beside the lake]
+[1137:where the road from the gnorth turned and headed eastwards]
+[1138:on an east-west road]
+[1139:on an east-west road]
+[1140:at the end of an east-west road]
+
+[1144:on a gnorth-south road]
+[1150:, beside the sheer south face of the mountain]
+[1151:on a gnorth-south road]
+[1158:on a gnorth-south road]
+;
+[1159:, south of a high cliff]
+[1160:, south of a vertical cliff]
+[1161:, at the extreme gnortheast corner of the valley]
+;
+; verbose messages for location objects..
+;
+; 1199+N (see 779+ for examine messages and 479+ for brief descs)
+[1200:south of a high, bleak mountain. Ingrid gnoticed that steam was 
+drifting from a gnarrow rocky entrance at the edge of the ice, freezing 
+as it emerged and landing ]
+;
+[1201:at the base of a mountain that rose high into the clouds. The way 
+up was hard and stony, but an indomitable spirit could forge a path 
+across the treacherous snow that lay on its slopes. Ingrid considered 
+the challenge as she stood]
+;
+[1202:at the gnorthern entrance of a garden. As far as Ingrid could 
+tell, the only way in lay through an open archway before her. The 
+garden stood]
+;
+[1203:beside a large icebridge which jutted out southwards over the river. 
+Festooned with long icicles, the bridge formed an elegant link between the 
+snowy shores. Ingrid admired it from]
+;
+; Now verbose additions to brief location descriptions (1300+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (1000+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.)
+;
+[1302:, close to the mountain peak. Ingrid knew this was so because of the large ^N sign which read 
+"cloud 9"]
+;
+[1310:, deeper in the mountain. Here the rocky floor was 
+uncomfortably warm underfoot, but at least the hot dry air 
+had cleared up her runny gnose]
+;
+[1311:. Tongues of flame licked up from a broad fiery pool in the centre 
+of the black-glazed floor, casting an angry red light on the dias which
+supported the fireking's throne]
+;
+[1312:, the hall of the fireking behind her and the corridors of the ice 
+people ahead. SIngrid knew this was so because of the large ^N sign which read 
+"cloud 9"]
+;
+[1310:, deeper in the mountain. Here the rocky floor was 
+uncomfortably warm underfoot, but at least the hot dry air 
+had cleared up her runny gnose]
+;
+[1311:. Tongues of flame licked up from a broad fiery pool in the centre 
+of the black-glazed floor, casting an angry red light on the dias which
+supported the fireking's throne]
+;
+[1312:, the hall of the fireking behind her and the corridors of the ice 
+people ahead. Steam swirled around the junction; it was as bad as the 
+farmhouse kitchen on Mudday, when Mother was trying to dry the washing 
+in front of the fire]
+; 
+[1313:, in the hot darkness of the bowels of the fire kingdom. A dull glow 
+from a distant corridor wall cast a dim, eerie red light, and by this 
+Ingrid could see the rough pumice walls and low roof of the dismal cell]
+;
+[1314:. The way was partially barred by thin ^N jets of fire that rose up 
+at Ingrid's feet. The air was still heavy with steam, but slightly cooler]
+;
+[1315:, a succession of high-domed caverns that must once have been full 
+of life and laughter, but were gnow damp and empty]
+;
+[1316:at the edge of the ice kingdom. Icicles hung from the ceiling and 
+grew down the walls in great knotted strands]
+;
+[1317:, the glittering palace of the icequeen; a tall white 
+^N throne, surrounded by a fantasy of sparkling ice]
+;
+[1318:. A chill wind blew down over the rocky slopes, picking up little 
+flurries of powdery snow from the higher reaches, tossing them round in 
+the air, then, bored with the game, letting them fall to a watery grave in 
+the river] ; icefall
+;
+[1319:. Tall, fluted ^N pillars of clear ice stretched gracefully down 
+from ceiling to floor]
+;
+[1320:that ended abruptly in a sheer rock face. Ingrid could tell that 
+the river was gnot flowing through there, but was backing up and finding 
+another exit]
+;
+[1321: within the bounds of the mountain. A gnarrow ^N path had been 
+cut just above the waterline - gnot high enough in some places, for here 
+and there it dipped into the river. But it was passable, for those who 
+didn't mind wet feet]
+; in a river canyon
+; 
+[1322:, just inside the mountain. It was warm in here and the heat of 
+the floor melted the snow off Ingrid shoes, forming little puddles that 
+dried up as she watched]; just inside
+;
+[1323:. Looking round, she thought that Gnut Myjob had taken the term 
+"rock garden" too literally]
+;
+[1324:, high amongst the clouds. Barely visible below, the mountain fell 
+away on one side in a steep, rocky slope. On the other side was an 
+icefield that fed a long, wide ^N glacier. A small cairn of stones had 
+been built on the very peak]
+;
+[1325:, amongst the jagged rocks. The icy wind had swept the exposed 
+slopes clear of snow and piled it up in great ^N drifts] 
+;
+[1326:. It was a bleak landscape of bare stone and broad swathes of packed 
+ice and snow]
+;
+[1414:in a thick pine ^N forest]
+;;[1416:, beside an icebridge to the south]
+[1424:west of a large lake]
+[1431:. In the distance to the east, a large ^N iceberg was visible across 
+the water]
+[1432:gnorth of a large lake]
+[1433:gnorth of a large lake]
+;
+;[1437:where the road turns from gnorth-south to east-west]
+;[1438:on an east-west road]
+;[1439:on an east-west road]
+;[1440:at the end of an east-west road]
+;
+;[1444:on a gnorth-south road]
+;[1451:on a gnorth-south road]
+;[1458:on a gnorth-south road]
+;
+; Message pairs for use in describing containment positions
+; also used for preposition table
+;
+; part printed before container
+;
+[1600:could see]      ; 0 - you can see
+[1601:^P on |^P onto] ; 1 - on
+[1602:^P underneath|^P below ^P under] ; 2 - under
+[1603:^P behind]      ; 3 - behind
+[1604:]               ; 4 - carrying
+[1605:]               ; 5 - wearing
+[1606:in|^P at]       ; 6 - blocking the hole
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8
+[1609:growing from ]  ; 9 - part of
+[1610:^P between]     ; tied between is tied a rope
+;; [1611:]            ;11 - for ring of knucklebone
+[1612:lying on]       ;12
+[1613:sitting on]     ;13
+[1614:fastened to]    ;14
+;; [1615:tied to]; 15 tied to (the chest) and holding the lid open is..
+[1616:^P with|^P using]
+[1617:^P from]
+;
+; part printed between container and contained.
+;
+[1640:]                ; 0 
+[1641:was]             ; 1 - on
+[1642:was]             ; 2 - under
+[1643:was]             ; 3 - behind
+[1644:was carrying]    ; 4
+[1645:was wearing]     ; 5
+[1646:was blocked by]  ; 6 - is bject(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]          ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parsebject(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]          ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parser messages..
+[2000:you don't gneed to use "] 
+[2001:" to finish the game]
+;
+[2003:I don't understand the word "]
+[2004:" when used like that]
+;
+[2006:Ingrid was ]
+[2007:in a ] ; as in 'You are in an alder forest
+[2008:in an ]
+[2009:exits led in all directions]
+;
+; general error message when parsing has broken down.
+[2010:I don't understand what you mean]
+[2011:Ingrid couldn't see]
+[2012:Ingrid didn't have]
+[2013:Ingrid already had]
+[2014:(Perhaps I'm just being thick, but I haven't a clue what you 
+are on about)]
+[2015:it's too far away] ; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence]
+[2017:it's gnot there]
+[2018:there were too many gnouns in that sentence.]
+;
+[2036:sorry, I don't fully understand that verb.]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there doesn't seem to be anything suitable. ]
+;
+[2039:what a mouthful! ]
+;
+[2044:couldn't have ] ; as in 'Ingrid couldn't have knocked that'
+;; [2045:that]
+[2046:that]
+[2047:here]
+[2048:Ingrid couldn't find ]
+;
+[2053:it's gnot clear to what ]
+[2054: is referring] 
+;
+[2055:(removing] ; E.g '(Removing the bat from the cage first).'
+[2056:from the]  ; to avoid containers inside themselves.
+[2057:first).]
+;
+; error messages for NPC's
+[2060:are you talking to yourself again?]
+[2061:Ingrid couldn't talk to several people at once]
+;
+[2065:for] ; as in 'looks for the cask'
+[2066:but can't find]
+;
+; message pair when a npc tries to take stuff from others...
+[2074:won't let]
+[2075:take it]
+;
+; Standard Adventure output messages
+;
+[2100:Welcome to part 3 of Gnome Ranger, copyright (C) 1987 Level 9 
+Computing. ]
+[2101:Ingrid couldn't see]
+[2102:Ingrid didn't have]
+[2103:Ingrid already had]
+[2104:Ingrid couldn't see that here]
+;; [2105:in the distance is ] ; for scenery seen from afar
+[2106:Ingrid owned gnothing at all. ]
+[2108:it was dark, ingrid could gnot see]
+;
+; examining something greater than maxobject: (but not scenery)
+; rare occurrence - mostly for omnipresent objects, numbers, spells
+[2112:it looked exactly as Ingrid had expected. ]
+[2113: gnothing]
+[2114:Ingrid couldn't go that way]
+[2115:through the door]
+[2116:Ingrid banged her gnose on the door. She wished she had opened it. ]
+[2117:it's already open]
+;; [2118:it's already closed]
+[2119:Ingrid found]
+;
+[2123:Ingrid couldn't put ] ; paired with 2124
+[2124:there]
+;
+[2125:Ingrid couldn't go there! ]
+[2126:Ingrid would have to drop it first]
+;
+[2127:Ingrid couldn't climb that]
+[2128:%Did you know that you can go quickly to a far off place? E.g 
+"RUN TO WHITEHALL" or "GOTO PENGUIN."%]
+;
+; 2130 is used when player refers to scenery which is not nearby
+[2130:I can't find a reference to "]
+[2131:Ingrid was on it! ]
+[2132:what? ]
+[2133:where? ]
+[2134:Ingrid was wearing ]
+[2135:Please try again, saying what with? ]
+[2136:which one?]
+[2137:at what?]
+[2139:was full]
+[2140:" here]
+;
+[2142:Ingrid couldn't wear ]
+[2143:Ingrid couldn't reach it from here]
+;
+[2147:Ingrid was already wearing that]
+[2148:Ingrid found she didn't gneed to do that]
+;
+; Confirmation messages
+;
+[2152:worn]
+[2153:OK]
+[2155:time passed. ]
+[2156:said]
+[2158:Ingrid found she would have to untie it first]
+;
+[2160:YES or GNO please.%]
+;
+[2177;Ingrid heard strange gnoises]
+[2178:Ingrid heard a strange gnoise]
+[2179:Ingrid heard some strange gnoises gnearby]
+;
+[2190:(]
+[2191:)]
+;
+; Death, scoring, game control etc.
+;
+[2200:really restart? ]
+;; [2201:%press space to play again]
+[2202:really restore? ]
+[2203:%please answer YES or GNO]
+;
+[2207:do you want to continue? ]
+;
+[2209:% %the adventure has come to an end.
+%Please type RESTART or RESTORE (or OOPS//RAM RESTORE on a big BBC). ]
+[2210:the room was badly damaged] ; attack/fireball room
+[2211:Ingrid looked around and decided it wasn't worth the effort]
+[2212:why don't you go and punch up a paper bag instead? ]
+[2213:it looked as though the Gnorsegnomes had been at work here]
+[2214:% %Do you want to continue? ]
+[2215:that's too long to journeygnome]
+[2255:pathfinder]
+[2256:woodsgnome]
+[2257:forester]
+[2258:leader]
+[2259:big cheese]
+[2260:gnome ranger]
+;
+[2300:There's not enough memory for OOPS or RAM SAVE//RESTORE. ]
+[2301:%please insert save disk and press a key. %]
+[2302:%please insert game disk.%]
+[2308:I can't use OOPS to go back further than this. ]
+[2309:%(This BBC allows RAM SAVE and RAM RESTORE to save a position 
+in memory, and OOPS to take back bad moves).%]
+[2310:can't return to that saved position in memory. Perhjourneygnome]
+[2255:pathfinder]
+[2256:woodsgnome]
+[2257:forester]
+[2258:leader]
+[2259:big cheese]
+[2260:gnome ranger]
+;
+[2300:There's not enough memory for OOPS or RAM SAVE//RESTORE. ]
+[2301:%please insert save disk and press a key. %]
+[2302:%please insert game disk.%]
+[2308:I can't use OOPS to go back further than this. ]
+[2309:%(This BBC allows RAM SAVE and RAM RESTORE to save a position 
+in memory, and OOPS to take back bad moves).%]
+[2310:can't return to that saved position in memory. Perhaps you've 
+turned off the computer, or reloaded the game, since it was saved. ]
+;
+;; [2311:% %Ingrid is about to start another part of the game. Do you 
+;; want to save her position first, just in case? ] ; tape ***
+[2312:that data was not saved from Gnome Ranger. ]
+;; [2313:play the game tape to load part ] ; tape ***
+;
+;; [2319:you've started in the middle of the game. Please 
+;; restore a position saved from this part. ] ; tape ***
+;;
+; misc jokey messages (slightly more complex than echo verbs)..
+[2401:that might end up with Ingrid getting hurt] ; attack me
+[2404:Ingrid could smell gnothing of interest]
+[2405:Ingrid found gnothing much to write about]
+[2406:Ingrid gnormally smelled like a gnasturtium at gnoon, but at that 
+stage of her journey, being so long from a bath and all, she just smelled]
+; smell player
+[2407:Ingrid said hello]
+[2416:to be, or gnot to be, that is the question]
+;
+; add your messages for special cases here....
+[2499:the icejester told a spectacularly unfunny joke about three 
+gnomes, a leprechaun and a cocker spaniel] 
+
+[2500:% %Ingrid finally managed to get away from the old alchemist 
+- he was a terrible gossip when he got going - and strode purposefully 
+off to the gnorth. 
+% %The road wound on, through a land that became steadily more rugged 
+and barren, until at last she arrived at the entrance to a short 
+steep-sided valley. Ingrid knew she must be only a short distance from 
+home. Yes! There, at the end of the valley, where the way had gnarrowed 
+to a cleft, was the gate that led to Dribble Vale and Gnettlefield farm]
+;
+[2501:a sulky voice muttered "Push off!". Ingrid looked around in surprise.
+There was gno-one in sight, and the words had been too clear to have come 
+from the other side of the gate. Then she spotted an ill-defined face 
+amongst the weather-worn mouldings of the gate. A metal mouth moved and 
+said, "Go on, push off. Flamin' tourists. I'm gnot opening and there's 
+gnaff all to gnick gnow. So you may as well 'op it."
+% %"I made meself a promise," continued the gate. "It was some of you 
+tourists what gnicked me gems and I'm gnot opening again until I get 'em 
+all back. So there!" 
+% %"Really!" exclaimed Ingrid. "There's gno gneed to make such a 
+fuss. I'll find them for you, then perhaps I can get on my way."
+% %The gate was a bit taken aback. "Oh,.. well.. ta very much..." it 
+murmured. "This might be 'andy for carryin' 'em." A bronze arm appeared 
+briefly and offered her a sack.]
+;
+[2502:the gate beamed and said, "Ta very much! It's a proper treat to see 
+that again." A bronze arm stretched out to put the gem in place, then 
+folded back into the mouldings]
+[2503:had ] ; must have a trailing space
+[2504: gem] ; must have leading space
+[2505: gems] ; must have leading space
+[2506:Ingrid walked through the gate and into a tunnel. Then through the 
+tunnel and into the sunlight. And there before her, gnestling in a dip in 
+the rolling Downs, lay Gnomebridge. Gnomebridge! Gnettlefield was only two 
+hills away; she could be home in time for supper! Wouldn't they all be 
+pleased to see her..]
+[2507:the gate stopped] ; .. someone
+[2508:the gate said, "'Ang about. Where's the rest of me gems? I got gaps 
+'ere you know"]
+[2509:the gate puffed out its mouldings in pride and pleasure. "Ta, miss!" 
+it said. "I'm right obliged to you for gettin' all me little sparklers 
+back. Gnow, please be my guest." It swung itself open effortlessly]
+;
+; mountain stuff...
+[2510:there was a little moaning gnoise]
+[2511:the moaning became louder and more threatening]
+[2512:the moaning was very close and very threatening, as of some giant 
+creature, seeking to wreak its frenzied blood-lust on any 
+hapless victim that crossed its path]
+[2513:did Ingrid continue? ]
+;
+[2514:% %the yeti rose up in front of Ingrid, towering over her, "Ooooo!" 
+he moaned, "My poor tootsies! Ooooo...oh, hello, what's this? A little 
+gnome! Well, fancy that". He bent down to take a closer look at 
+Ingrid and she could see that, beneath all that hair 
+snow and ^N dandruff over Ingrid. He said ruefully, "Oh I am sorry, miss, 
+but as they won't fit me, they would be even worse for your dainty little 
+tooties. I couldn't allow you to suffer such torment"]
+[2517:the yeti gasped and raised his skinny arms in horror. "What! Me go 
+into that madhouse? Gnot on you gnellie, ducky. I'm gnever going to leave 
+my mountain ever again"]
+[2518:she was careful to pack in the soft padding so as to give a snug, 
+comfortable fit. The yeti tried them on and took a 
+snow and ^N dandruff over Ingrid. He said ruefully, "Oh I am sorry, miss, 
+but as they won't fit me, they would be even worse for your dainty little 
+tooties. I couldn't allow you to suffer such torment"]
+[2517:the yeti gasped and raised his skinny arms in horror. "What! Me go 
+into that madhouse? Gnot on you gnellie, ducky. I'm gnever going to leave 
+my mountain ever again"]
+[2518:she was careful to pack in the soft padding so as to give a snug, 
+comfortable fit. The yeti tried them on and took a few tentative 
+steps. His face lit up with pleasure. "Coo! That's lovely! Oh, joy!!" He 
+stomped around a bit more to make sure, waggling his feet happily, then 
+scampered off with a cheery wave, his cries of "Gosh! Super! This is 
+great!" gradually fading away into the distance]
+[2519:fell through the patch of soft cloud...]
+;
+; lake stuff..
+;
+; initial penguin racetrack...
+[2520:the penguin looked longingly out over the waters of the lake towards 
+the iceberg, and sighed heavily]
+[2521:the penguin grumbled, "That's gnice isn't it. Here I am, all alone,
+while everybody else has cleared off to the iceberg over in the lake"]
+[2522:the penguin complained loudly, "Here I am, left holding the baby as 
+usual. What chance do I have to go and join my friends and enjoy a bit of 
+company? Somebody has got to keep this egg warm"]
+[2523:the penguin said "Well, I can't do anything, can I, until someone 
+takes this egg off my feet"]
+[2524:the penguin agreed grumpily, "Well, all right. But remember I can't 
+leave the beach"]
+[2525:the yeti started to giggle, as if it was party to some secret 
+little joke] ; examining footprints
+; many of these must serve for both treetrunk and ice floe. Be Careful
+; when changing them!
+;
+[2526:Ingrid leapt happily back onto dry land]
+[2527:the penguin gnoticed Ingrid glancing at the egg and said, "Yes, you 
+can see I've been lumbered with the kid and I can't swim across to the 
+iceberg because my egg would freeze in that water. Perhaps you can help"]
+[2528:came into view, carried by the current] ; things arriving
+[2529:drifted off out of sight] ; things leaving
+;
+[2530:the penguin said stolidly, "I'm gnot leaving the lake. I want to 
+keep gnear my friends on the iceberg"]
+[2531:the penguin happily gave the egg to Ingrid, saying, "Gnow, mind you 
+keep little Egbert warm!" She wiggled her feet to get the circulation 
+going, looked at the icy cold water and added, "Can you help me to get 
+across to the iceberg?"]
+[2532:the bridge gave a long, deep, creaking moan - just like Father 
+getting out of bed in the morning - then shuddered and collapsed into a 
+thousand icy fragments. By great good fortune, Ingrid managed to cling 
+onto one of the larger chunks water]
+[2533:Ingrid tried to paddle, but could make gno headway against the 
+strong current]
+[2534:Ingrid took a deep breath and jumped into the freezing water! The 
+bitter cold clutched at her chest and dug into her muscles so that she 
+could scarcely move. She had to summon up her last reserves of strength 
+to clamber back on board]
+[2535:drifted out to sea, out where the icy wind blew between the drifting 
+icebergs, out beyond all hope of salvation]
+[2536:the penguin saw Ingrid floating past and would have quite liked to 
+help, but could gnot leave her egg. She waved a rueful flipper at Ingrid 
+as the gnome maid floated helplessly past, then, resigned to her own fate, 
+shuffled into a more comfortable position and settled down to wait for the 
+egg to hatch]
+; both floe and treetrunk (both 2536 and 2537
+[2537:was swept along by the current]
+; or not Ingrid was on board - she could have seen this from the shore.
+[2538:the penguin saw Ingrid passing close by and, with a flippery waddle 
+and a leap, managed to jump the gap from the shore and scrambled up beside 
+her]
+[2539:the penguin pushed Ingrid along happily for a while, enjoying the 
+freedom of the water after her long egg-squat]
+; push floe in wrong direction
+[2540:the penguin saw what Ingrid was trying to do and paddled furiously 
+to the iceberg. The floe tilted as it hit, throwing Ingrid onto the ice]
+[2541:the penguins helped push Ingrid back to shore. Then they all 
+gnose-dived, waved goodbye with their feet and swam back to their iceberg]
+[2542:% %the penguin rushed over to grab her egg and gave it a fond 
+stroke, "Thank you for looking after little Egbert," she said. "Gnext 
+time I want a baby-sitter, I'll be sure to get in touch"]
+[2543:the penguin said "Gno, I don't think I'd like that. But I'll push 
+the icefloe if thagn! The egntragnce fee to 
+my wognderful gardegn is ogne rock, agnd you havegn't givegn me agny"]
+[2551:the gnome looked at the rock, sniffed disdainfully but said, 
+"Well, I suppose you cagn go ign gnow." With a quick lunge, he hurled her 
+into the garden]
+;
+[2552:the gnome stopped Ingrid, saying "What's goigng ogn! Who do you 
+thignk you are! You cagn't take agnythigng out of my gardegn"]
+[2553:pushed as hard as possible, and just managed to ease the treetrunk 
+out into the current] 
+;
+[2555:gngn! The egntragnce fee to 
+my wognderful gardegn is ogne rock, agnd you havegn't givegn me agny"]
+[2551:the gnome looked at the rock, sniffed disdainfully but said, 
+"Well, I suppose you cagn go ign gnow." With a quick lunge, he hurled her 
+into the garden]
+;
+[2552:the gnome stopped Ingrid, saying "What's goigng ogn! Who do you 
+thignk you are! You cagn't take agnythigng out of my gardegn"]
+[2553:pushed as hard as possible, and just managed to ease the treetrunk 
+out into the current] 
+;
+[2555:gnut Myjob grunted gnoisily, but said gnothing] ; when someone 
+;leaves rock garden
+[2556:the treetrunk started to wobble]
+[2557: and tipped Ingrid into the water! She thrashed around and swam back 
+to it. After several false starts and sudden dunkings, she managed to 
+climb back on board]
+[2558:a rotten old treetrunk fell gnearby with a crash]
+[2559:an old gnome appeared through the gate. He stood bandy-legged and 
+looked balefully at Ingrid]
+;
+; fire people stuff
+[2560:% %the fire king spoke, "Greetings, traveller. Welcome to our city. 
+You are free to go where you will, but do gnot stray south of the guarded 
+corridor. Beyond this lies the city of the ice people: They are a 
+deceitful, evil race, who traitorously attacked by channelling their 
+river through our caves. Many flames were extinguished on that day, 
+but we managed to capture the child of their queen - this hostage is 
+all that keeps the ice fiends from attacking again. Avoid their cold 
+warriors if you value your life"]
+;
+[2561:Ingrid walked past the fire guards and out of their city, but the 
+ice guards jabbed at her with lances of ice and would gnot allow her 
+into theirs]
+;
+[2562:saw that Ingrid had the ice child and cried out, in a voice that 
+brooked gno argument, "High Treason! Off with her head"]
+;
+[2563:caught Ingrid. The fireking was in a burning rage. "You cold-hearted 
+villain," he cried, "For stealing that child, you shall die!"]
+[2564:the door was bolted, but from this side]
+[2565:the door was gnow unlocked]
+[2566:the door was gnow locked]
+[2567:% %the ice warrior saw that Ingrid had rescued the icechild and 
+let out a chill shout of delight. Regaining his composure, he said
+coldly, "Please walk this way." and strode off with a stiff-legged 
+gait. Ingrid tried it, found it was very uncomfortable, and walked 
+gnormally after him]
+;
+[2568:% %the ice queen spoke. "Greetinks, traveller. As the saviour of 
+our child, you are most welcome to our city. You are free to go vhere 
+you vill, but must not return north of the guarded corridor, for 
+there lies the city of the fire people. 
+% %"While ve vere struggling to stem a sudden flood that threatened 
+our caves, the hot ones launched a vicious attack; even kidnapping my 
+own dear child.
+% %"Now we live in constant conflict. Sometimes it is a Hot Var, but 
+now the snowstorms of var blow frostily." She spread her hands and 
+added, "This is not our doink. Ve have enough trouble vith the flood. 
+Ve just vant to be alone"]
+;
+[2569:% %the ice queen took her child into her arms and hugged it coldly. 
+"Ah! My little snowball," she cried, "Gnome, for vhat you haff done for 
+us, ve vill do anythink that you vant. You haff only to ask"]
+;
+[2570:The fire guards would gnot allow] ; 2570 .. person .. 2571
+[2571:into the fire caves "Get back to your own kind, iceball"]
+[2572:the fireguard checked Ingrid over as she walked out. He thought she 
+looked a bit odd, but then, all gnomes look a bit odd]
+[2573:the ice queen said frigidly, "One shall be graciously pleased to do 
+what one can"]
+; ice queen accepts an order
+[2574:a great cheer echoed round the ice caves as the people realized that 
+the blockage had been cleared and that the river would once more run in 
+its gnormal course]
+;
+; river tunnel stuff
+[2578:the water was gnow so high that the depth of water built up an 
+enormous pressure against the dam's foundations. It suddenly gave way 
+at the base and released a solid wave of water into the tunnel]
+[2579:the river was gnow flowing at a low level]
+;
+[2580:a whole load of snow fell into the river, making a small but 
+efficient dam. With the inflowing water held back, the flood
+started to ebb]
+;
+[2581:the dam was strengthened]
+[2582:the dam crumbled and gave way, letting water flood back into the 
+tunnel again]
+[2583:a tidal wave of water flooded through the tunnel, sweeping Ingrid
+off her feet and carrying her away]
+[2584:the tunnel was completely blocked by deep, rushing water. There was 
+gno way through until the water subsided]
+[258;
+; 2590,2591,2592 are for Ingrid only
+[2590:the guard had obviously been well trained in fighting and with the 
+advantage of size and strength, was able to fend off her blows easily]
+;
+[2591:this was High Treason! Gno such assault on the royal 
+personage could go unpunished. Ingrid was taken away to public 
+execution] ; attack royalty 
+;
+[2592:Ingrid laid into the people. They fell back before her furious 
+onslaught, then began to panic and ran, screaming and shouting, in all 
+directions. Ingrid;
+; 2590,2591,2592 are for Ingrid only
+[2590:the guard had obviously been well trained in fighting and with the 
+advantage of size and strength, was able to fend off her blows easily]
+;
+[2591:this was High Treason! Gno such assault on the royal 
+personage could go unpunished. Ingrid was taken away to public 
+execution] ; attack royalty 
+;
+[2592:Ingrid laid into the people. They fell back before her furious 
+onslaught, then began to panic and ran, screaming and shouting, in all 
+directions. Ingrid was accidentally trampled to death by the crowd]
+;
+[2593:the water was gnow ]
+[2594: feet from the top of the dam]
+[2595: foot from the top of the dam]
+;
+[2596:Ingrid thought it would be gnice to put the ruby down for a while]
+[2597:Ingrid was getting fed up with carrying the heavy ruby around]
+[2598:Ingrid muttered rebelliously about players who make other people 
+carry bloody great heavy rubies around]
+[2599:Ingrid was worn out. "Some players have gno consideration!" she 
+said, dumping the ruby on the ground] 
+;
+; room descriptions when floating on the river...
+[2600:on the river]
+[2601:on the river]
+[2602:on the river]
+[2603:on the river]
+[2604:on the river]
+[2605:on the river where it opened out]
+[2606:on the west side of the lake]
+[2607:floating at the gnorthwest corner of the lake]
+[2608:gnear the gnorthern shore of the lake]
+[2609:gnear the gnorth-eastern corner of the lake]
+[2610:on the lake] ; probably never get here.
+;
+; gold-singing stuff
+; yeti (before shoes padded)...
+[2700:stomped around, shoes flapping]
+[2701:moaned loudly, "Ooooh, my poor little tootsies"]
+[2702:groaned sadly, "Ooooh! I hate these rotten loose shoes"]
+;
+; gate
+[2720:grumbled, "Bleedin' souvenir 'unters"]
+[2721:muttered, "There are thieves everywhere"]
+[2722:sniffled and shed a rusty tear for its lost treasure]
+;
+; gnome
+[2730:grimaced fiercely]
+[2731:ground his teeth]
+[2732:spat angrily]
+;
+; penguin
+[2740:waddled about awkwardly]
+[2741:preened her feathers dolefully]
+[2742:murmured wistfully to herself about fish]
+;
+; penguins (on ice floe)
+[2750:flipped and flapped around]
+[2751:called loudly in unison]
+[2752:huddled together and settled down for a gnap]
+;
+; icechild gs
+[2760:whimpered quietly]
+[2761:cried pitifully]
+[2762:whined, "I want an icelolly"]
+;
+; icewarrior gs
+[2770:struck a gallant posture]
+[2771:flexed his icy muscles and rattled his armour]
+[2772:tossed his head to one side and laughed fearlessly]
+;
+; icejester gs
+[2780:told a joke. It got a frosty reception]
+[2781:giggled ineffectually]
+[2782:juggled with his snow balls]
+;
+; icequeen gs
+[2790:looked regally aloof]
+[2791:waved graciously to Ingrid]
+[2792:stared frostily at Ingrid]
+;
+; descriptions for outside rooms (do not mark anything in 2800 to 2819)..
+; matches up with TERRAINTABLE
+;
+[2800:on a glacier]
+;; [2801:on a road] ; described elsewhere
+[2802:on a river]
+[2803:on a lake]
+[2804:on the river bank]
+[2805:on a barren patch]
+[2806:on an iceberg]
+[2807:on a lake bank]
+;
+; icepeople gs
+[2820:skated about looking bored]
+[2821:pelted each other with snowballs]
+[2822:milled about, their icy clothes tinkling tunefully]
+;
+; firefighter gs
+[2830:clutched his sword hotly]
+[2831:looked daggers of fire at Ingrid]
+[2832:stood stiffly to attention]
+
+; fireguard gs
+[2840:wiped his greasy fingers on his cloak]
+[2841:patted his belly and burped loudly]
+[2842:shuffled his feet, leaving smoky smudges on the floor]
+;
+; fireking gs 
+[2850:outlined his defence plans with broad gestures]
+[2851:regally surveyed the room]
+[2852:gave a sweeping wave]
+;
+; firepeople gs
+[2860:debated hotly]
+[2861:stood too close together and started to glow]
+[2862:discussed ideas for a fondu party]
+;
+; Message groups (spaced every ten to permit lots of variations)..
+;
+; don't be silly group...
+[3100:don't be silly. That's my job]
+[3101:well, that's a gnovel concept]
+[3102:you must be mad if you really mean that]
+;
+; nice try group...
+[3110:gnice try, my friend] 
+[3111:a truly valiant attempt. Shame it won't work]
+[3112:gno chance]
+;
+; just scenery group...
+[3120:you might as well leave it alone]
+[3121:I suggest that you forget about it]
+[3122:that's gnot important to the game]
+;
+; missing object...
+[3130:gnow what was the object of that? Try again]
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+;
+; Nothing happened group...
+[3140:gnothing happened]
+[3141:that didn't seem to work]
+[3142:there had gno effect on anything]
+;
+; the following are prinn order
+[3210:said, "Find someone else, I'm tired"]
+[3211:said, "Don't try to order me around, young miss"]
+[3212:refused, "That is gnot the sort of thing I do"]
+;
+; now, npc accepts an order
+[3230:said, "Very well. It would be a pleasure"]
+[3231:said, "Of course, I'll be right there"]
+[3232:gnodded and said, "Right away, Mistress Gnome"]
+;
+; now response to questions when not obedient...
+[3250:said, "You'll have to find that out for yourself, gnome"]
+[3251:said, "You won't get any help from me,n order
+[3210:said, "Find someone else, I'm tired"]
+[3211:said, "Don't try to order me around, young miss"]
+[3212:refused, "That is gnot the sort of thing I do"]
+;
+; now, npc accepts an order
+[3230:said, "Very well. It would be a pleasure"]
+[3231:said, "Of course, I'll be right there"]
+[3232:gnodded and said, "Right away, Mistress Gnome"]
+;
+; now response to questions when not obedient...
+[3250:said, "You'll have to find that out for yourself, gnome"]
+[3251:said, "You won't get any help from me, young miss"]
+[3252:spread sorrowful hands, "Ah, if only I could help.."]
+;
+; response to requests to give anything(s) to anyone
+[3270:said, "You'll have to fight me for that"]
+[3271:clutched at it, saying "It's mine! Clear off"]
+[3272:stared back in silent refusal]
+;
+; npc wants to obey orders just given, but can't understand any of them!
+[3290:said, "Sorry miss, I don't understand"]
+[3291:said, "It must be me, little gnome, but I don't understand"]
+[3292:said, "Eh? My grasp of Gnomic isn't quite what it 
+should be"]
+;
+; messages when npc can't find the way to its destination
+[3350:said, "I can't find it anywhere"]
+[3351:said, "I'm lost"]
+[3352:said frantically, "Which way? Which way?"]
+;
+; again used following a command referring to scenery
+[3530:the previous command was gnot repeatable]
+[3531:you can't do that again]
+[3532:gnot again! I've tried that once already]
+;
+; npc is blocked in a racetrack
+[3540:stopped, looking confused]
+[3541:looked puzzled]
+[3542:ground to a confused halt]
+;
+; messages when the player tries to take things from others...
+[3550:wouldn't let Ingrid]
+[3551:slapped her hand away]
+[3552:refused to hand it over]
+;
+[3600:a voice in the distance shouted, "]
+[3601:." ]
+[3602:wow! A stack overflow] ; a stack overflow!
+[3603:don't panic! Gnormal service will be resumed shortly] ; a panic
+[3604:sorry, I can't get Ingrid there from here]
+[3605:sorry, Ingrid will have to find her own way from here]
+;
+; conversational fragments...
+[3610:I am perfect in every way] ; must be capital at start
+[3611:you are a gnome]
+[3612:cleared its throat and said.. "]
+;
+[3614:Ingrid yelled "ARRRGGGGGHHHHH"]
+;
+; 'npc, rude' word for talking people
+[3620:swore back at Ingrid]
+[3621:swore loudly]
+[3622:seemed very offended]
+;
+; 'npc, help' for talking people
+[3640:said, "Help yourself, my dear girl"]
+[3641:said, "I'd love to, but I wouldn't be any use to you"]
+[3642:said, "Stand on your own two feet.. Oh, you are standing, sorry"]
+;
+; 'npc, echo verb' for talking people
+[3660:said, "You must be gnuts"]
+[3661:said, "Sorry old girl, but I think you've cracked"]
+[3662:said, "That isn't possible. And if it is, it shouldn't be allowed"]
+;
+; Garbage words..
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+^N good ^N of ^N cute ^N there]
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+^N warily ^N quickly ^N rapidly ^N following ^N around]
+[4002:^N please]
+;
+; Book protection code...
+;
+[4200:%A funny little rock appeared from under a plant and stopped Ingrid 
+by waving waved a copy of a rather tattered book. ]
+[4201:page ]
+[4202:, line ]
+[4203:, word ]
+[4204:?"%]
+[4205:The rock vibrated nastily and Ingrid knew she was wrong. ]
+[4206:The rock crawled back under its plant.%]
+[4207:Ingrid thought that the rock probably wanted to know the word at ]
+[4208:Wrong again! The rock picked up a convenient troll and stunned 
+Ingrid with it. ]
+;
+[4301:^C half]
+;; [4302:]
+;; [4303:]
+[4304:^C about]
+[4305:^C grandma]
+[4306:^C the]
+[4307:^C a]
+[4308:^C the]
+[4309:^C whipped]
+;
+[4310:^C on]
+[4311:^C hay]
+[4312:^C my]
+[4313:^C to]
+[4314:^C it]
+[4315:^C and]
+[4316:^C treesday]
+[4317:^C so]
+[4318:^C with]
+[4319:^C toothmarks]
+;
+;; [4320:^C]
+[4321:^C grandma]
+[4322:^C have]
+[4323:^C hole]
+[4324:^C weekend]
+[4325:^C whipped]
+[4326:^C the]
+[4327:^C the]
+[4328:^C on]
+[4329:^C gift ^N gift-wrapped]
+;
+[4330:^C the]
+[4331:^C a]
+[4332:^C everyone]
+[4333:^C and]
+[4334:^C made]
+;; [4335:^C]
+[4336:^C this]
+[4337:^C last]
+[4338:^C Bottomlow]
+[4339:^C Sosmall]
+;
+[4340:^C sandwiches]
+[4341:^C even]
+[4342:^C this]
+[4343:^C her]
+[4344:^C mother]
+[4345:^C gift ^C gift-wrapped]
+[4346:^C know]
+[4347:^C the]
+[4348:^C in]
+[4349:^C morning]
+;
+[4350:^C flour]
+[4351:^C coach]
+[4352:^C the]
+[4353:^C something]
+[4354:^C good ^C odd]
+[4355:^C he]
+[4356:^C them]
+[4357:^C 20th ^C th ^C 20]
+[4358:^C tipped]
+[4359:^C tipped]
+;
+[4360:^C at:^C]
+;; [4393:^C]
+[4394:^C had]
+[4395:^C fish]
+[4396:^C father]
+[4397:^C the]
+[4398:^C so]
+;; [4399:^C]
+[4400:^C the]
+;he]
+;
+[4396:^C father]
+[4397:^C the]
+[4398:^C so]
+;; [4399:^C]
+[4400:^C the]
+;ееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееее:^C]
+;; [4393:^C]
+[4394:^C had]
+[4395:^C fish]
+[4396:^C father]
+[4397:^C the]
+[4398:^C so]
+;; [4399:^C]
+[4400:^C the]
+;

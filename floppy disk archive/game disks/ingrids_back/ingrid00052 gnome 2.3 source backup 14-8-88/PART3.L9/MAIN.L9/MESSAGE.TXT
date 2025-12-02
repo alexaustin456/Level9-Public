@@ -1,0 +1,2305 @@
+; NOTE FOR PETE AUSTIN:
+;
+; BECAUSE VARYMESSAGEDOT IS USED QUITE OFTEN IN GNOME 2.2, SOME GROUP 
+; MESSAGES MAY LIE IN THE "SPECIAL MESSAGES" AREA (2500-2849).
+; TO SIMPLYFY THE JOB OF CUTTING THEM DOWN TO 3 VARIATIONS FOR 8 BIT 
+; MACHINES, I HAVE MARKED THEM WITH A "FROOP".
+;
+; Gnome Ranger II part II source, copyright (C) 1988 Level 9.
+;
+; MESSAGE.TXT: messages/keywords for the game.
+;
+; ST Version
+;
+; Messages are of the form: [ number : text ] ; comment
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course.
+;
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard).
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first.
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+;
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+;
+; punctuation messages..
+[1: ]
+[2::]
+[3:, ]
+[4:.] ; dot with no space
+[5:%]
+[6:and ] 
+[7:.%]
+[8:?%]
+[9:. ]
+;
+; positions etc..
+[10:exits led ]
+[11:an exit led ] 
+[12: through a door]
+[13: through an open door]
+[14: and ] 
+[15:% %Pirate Pete arrived and pinched Ingrid's "What Now" prompts. He 
+laughed fiendishly and then disappeared into the distance. ]
+[16:%> ]
+[17:%What now? ]
+[18:: ];
+[19:"]
+;
+; Messages for printing objects..
+[20:a ]
+[21:the ]
+[22:an ]
+[23:some ]
+[24:." ] ; dot quote
+[25:% %] ; blank line
+[26:worn] ; for 'couldn't have worn'
+[27:taken] ; for 'couldn't have taken'
+;
+; exits directions, doubling as movement verbs..
+[51:^V north|^V north ^V n ^V northwards]
+[52:^V northeast|^V northeast ^V ne]
+[53:^V east|^V e ^V eastwards]
+[54:^V south|^V s ^V southwards]
+[55:^V southeast|^V se]
+[56:^V southwest|^V sw]
+[57:^V west|^V w ^V westwards]
+[58:^V northwest|^V northwest ^V nw]
+[59:^V upwards|^V u ^V up]
+[60:^V downwards|^V d ^V down]
+[61:^V inside|^V in ^V inwards ^V into ^V enter]
+[62:^V outside|^V out ^V leave]
+[63:^V cross|^V across ^V over]
+[64:with the ^V climb|^V scramble ^V ascend ^V mount]
+; is in 'you struggle with the climb and are in'
+;
+; Intransitive verbs..
+[70:^V i]
+[71:^V again|^V a]
+[72:^V look|^V l ^V display ^V redisplay ^V refresh]
+[73:^V inventory|^V inv ^V possessions ^V possess ^V list]
+[74:^V quit ^V restart]
+[75:^V restore ^V load]
+[76:^V save]
+[77:^V ramsave ^V ram]
+[78:^V ramload]
+[79:^V score ^V rating ^V status]
+[80:^V verbose]
+[81:^V brief]
+[82:^V wait|^V wa ^V pause ^V z]
+[83:^V ring|^V play ^V blow ^V toot ^V sound]
+[84:^V on]
+[85:^V off|^V jump] ; >>
+[86:^V pictures ^V graphics]
+[87:^V words ^V text]
+;
+[89:^V undo ^V oops ^V whoops]
+[90:^V broke|^V attack ^V hit ^V break ^V kick ^V punch ^V smash ^V bite]
+;
+[91:^V signed|^V sign]
+[92:^V searched|^V search ^V explore]
+[93:^V dug|^V dig]
+[94:^V sniffed|^V sniff ^V smell]
+[95:^V knocked|^V knock]
+[96:got|^V stood ^V stand ^V hide] ; output e.g. "L got out", "L got in" etc.
+[97:^V lay|^V lie]
+[98:^V sat|^V sit]
+;
+[100:^V said|^V say ^V whisper ^V call]
+[101:^V teleported|^V teleport]
+[102:^V getme]
+;
+[103:^V filled|^V fill] ; >>Lancelot
+[104:^V ran|^V run ^V fly]
+[105:^V made|^V make] ;>>Lancelot3
+;; [106:^V prayed|^V pray] ;>>Lancelot3
+[107:Ingrid was on a strict diet of Big Macs and large fries|^V eat 
+^V bite ^V taste ^V nibble ^V lick]
+[108:^V went|^V go ^V goto ^V find ^V walk ^V fly]
+[109:stopped|^V stop ^V abort]
+[110:^V drank|^V drink]
+[112:^V exits ^V exit]
+[123:Aaaaargh! (will that do?)|^V cry ^V shout ^V scream ^V yell]
+;*
+[124:^V 888155] ; safe combination (gnome2.3) see also, noun 540
+;*
+[125:^V waved|^V wave]
+;*
+[126:^V swung|^V swing] ; gnome2.3 swing chandelier
+;*
+;
+; verbs for output..
+[130:^V had|^V have ] ; mainly for output
+[131:^V had|^V has ] ; mainly for output
+[132:^V was|^V am ] ; mainly for output
+[133:^V were|^V are ] ; mainly for output 'you were'
+[134:^V was|^V is ] ; mainly for output 'someone was'
+[135:are] ; output only - present tense for 'tell me about'
+[136:is]  ; output only - present tense for 'tell me about'
+;
+;; [137 is 'GO IN']
+;; [138 is 'GO OUT']
+;; 139 is 'wait for person'
+;; 140 is 'wait until time'
+;; 141 is 'wait for (length of time)'
+;; 142 is 'wait for single turn'
+[143:^V fought|^V fight ^V kill]
+[145:^V dodged|^V dodge]
+;
+; 146 and 147 have text for debugging output only - do not mark
+[146:gdgo]  ; 196 - gdgo
+[147:gdrun] ; 197 - gdrun
+[148:^V stuff]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick
+^V pluck ^V catch ^V lift ^V keep ^V turn ^V rotate
+^V grab ^V slide ^V answer] ; slide portrait, answer phone gnome2.3
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+[166:^V hold ^V keep] ; as in 'hold cave mouth' ;>>special to gnome 2
+[168:^V pushed|^V tug ^V push ^V launch ^V shove ^V press ^V select 
+^V dial ^V depress ^V poke ^V prod ^V touch ^V paddle 
+^V move] ; >>gnome2.3 - move portrait
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ^V untie]
+[171:^V pulled|^V pull ^V yank]
+[176:^V inserted|^V insert]
+;
+; 186, 187 and 189 have text for debugging only
+[186:return object] ; 186 is 'return object to initial' (for npcs)
+[189:gdfind] ; 239 is gdfind
+;
+[190:^V closed|^V close ^V shut ^V lock]
+[192:^V told|^V tell]
+[194:struggled] ; mainly for output
+; 195 is 'steal all from'
+;
+[197:killed] ; output only
+[210:reached] ; output only
+[211:dragged] ; output only
+[212:passed] ; output only
+[213:flew] ; output only
+[214:walked] ; output only
+[215:caught] ; output only
+[216:entered] ; output only, e.g 'Fred entered from the east'. Do not mark 
+;
+; Echo verbs (250-299) which just print the message containing them..
+[250:I couldn't agree more|^V no]
+[251:right, so be it|^V yes]
+[252:whee! That was fun. Now let's get back to business|^V leap ^V hop 
+^V skip ^V dance ^V celebrate]
+[253:and as that word was released upon the wind, time stood still, the 
+world was plunged into blackness and all sound ceased. Then, from afar, 
+Ingrid heard a voice say, "What the heck was that?" and another replied, 
+"I haven't a clue, but it wasn't for us". Then everything went back to 
+normal|^V plugh ^V xyzzy ^V sesame ^V plover ^V humakaat ^V satarh
+^V ollabin ^V obis ^V condoms] ; magic words for amusing response
+[255:if you want to talk to someone, follow their name with what you 
+want to say to them. For example DAISY, HELLO|^V hello ^V welcome ^V hi 
+^V greetings ^V day ^V afternoon]
+[256:Ingrid heard nothing that she didn't already know about|^V listen 
+^V hear]
+[257:send the coupon to Level 9 for a ^V hint|^V help]
+[263:Why not|^V y ^V why]
+[267:that kind of language does not impress me one little bit|^V sod 
+^V motherfucker ^V crap ^V nipples ^V cock 
+^V bloody ^V scott ^V adams ^V frigging ^V wanker ^V turd ^V piss 
+^V shit ^V twat ^V cunt ^V prick ^V bollocks ^V jesus ^V christ ^V dick 
+^V god ^V devil ^V tits ^V asshole ^V arsehole ^V cretin ^V conservatives 
+^V spastic ^V coon ^V wog ^V fucking ^V fucker ^V bastard 
+^V bugger ^V damn ^V fart ^V hell ^V rainbird ^V pratt
+^V rape]
+; lower case swear words 
+[273:what? Going so soon? Try CONTROL C, but don't forget to save 
+your position first|^V goodbye ^V bye]
+[274:you're forgiven, and bless you for your consideration|^V sorry]
+[277:%^V directory of disk A:\
+% %No files.
+%Space free = no Megabytes|^V dir ^V catalog ^V cat]
+[278:write to Level 9 for a set of instructions|^V sex ^V bonk ^V shag]
+[279:Ingrid closed her eyes and tried to ^V sleep, but couldn't. So 
+she gave up and stayed awake instead]
+[280:Ingrid had forgotten to bring her swimming costume|^V swim]
+[282:Ingrid's attempts at musicianship were not well received]
+[283:hit] ; the object 'hit' target
+[285:Ingrid wasn't thirsty]
+[286:Ingrid thought about shaking it, but decided it might not be a good 
+idea|^V shake]
+[288:you are here to use objects, not to ^V bury them]
+[290:Ingrid polished it until it gleamed in the noonday sun
+|^V rub ^V clean ^V polish]
+[291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+[292:please ^V empty a container by removing its contents in turn]
+[294:Ingrid had no way to ^V light anything. She
+was a non-smoker, you see]
+[295:try throwing some water at it|^V extinguish]
+[297:XXX. If you don't mind, I'll just pay lip service to that 
+command|^V kiss]
+;
+; Objects (300+N)..
+;
+; NPCs (1 onwards)
+; People
+[301:^N Ingrid|^N player ^N me]
+[302:^N Daisy|^N Bottomlow ^N sister] ; only employee that obeyed Ingrid
+[303:^N Gnoah|^N bottomlow ^N father ^N dad]
+[304:^N Seamus ^N Sosmall]
+;
+; Jasper and his employees
+[308:^N Rulf|^N Rolf ^N Harris ^N artist] ; he
+[309:^N butler] ; he
+[310:^N cook|^N chef] ; she
+[311:Mrs ^N Underlay|^N housekeeper]
+[312:^N Jasper ^N Quickbuck]
+;
+; people 320-329 never appear but
+; are used for parsing purposes
+[320:^N ghost|^N spook ^N ghoul ^N spectre] ; misled Ingrid
+[321:^N Amillaria ^N Budblast|^N gardener]
+[322:^N Silas ^N Crawley|^N creepy ^N creepie]
+;
+; Animals
+;[335:]
+;
+; clothes (60 onwards)
+[360:^N jacket|^N blazer ^N coat]
+;
+; ordinary objects (80 onwards)
+[380:set of ^N accounts|^N statements]
+[381:^N blotting ^N paper|^N pad] ; (singularsome)
+[382:collection of ^N cheque ^N stubs]
+[383:^N filofax|^N diary]
+[384:^N letter]
+[385:^N diamond|^N moaning ^N star ^N jewel ^N stone]
+[386:^N painting|^N picture]
+[387:collection of ^N photos|^N snaps]
+[388:^N tape|^N cassette]
+[389:^N drawer]
+[390:^N manual]
+[391:^N phial|^N strength ^N potion]
+[392:^N wallet]
+[393:^N telephone|^N phone ^N receiver] ; "static"
+[394:^N telephone|^N phone ^N receiver] ; "static"
+[395:^N scone|^N roll ^N cake ^N bun]
+;
+; static objects (110 onwards)
+[410:^N answering ^N machine] ; an
+[411:^N record ^N button|^A record]
+[412:^N play ^N button|^N playback ^A play ^A playback]
+[413:collection of valuable ^N antiques]
+[414:^N chandelier]
+[415:^N chimney]
+[416:^N chimney]
+[417:^N books] ; (some)
+[418:^N curtain]
+[419:^N desk]
+[420:^N dustbin|^N bin ^N trashcan]
+[421:^N fireplace|^N mantlepiece ^N mantle]
+[422:^N fireplace|^N mantlepiece ^N mantle]
+[423:^N fireplace|^N mantlepiece ^N mantle]
+[424:^N hole in the shadow|^N gap]
+[425:door ^N knocker]
+[426:^N latch] ; lift/open/slide
+[427:^N stack of ^N paintings|^N pictures ^N pile]
+[428:^N portrait|^N painting ^N picture]
+[429:^N pocket]
+[430:^N pot|^N cauldron ^N coldron ^N stew ^N soup ^N cooking ^N stewing]
+[431:^N rubbish|^N garbage ^N junk]
+[432:^N safe] ; open
+[433:^N safe] ; closed
+[434:^N shadow]
+[435:^N sun ^N lounger]
+[436:^N tree]
+[437:^N wardrobe] ; open
+[438:^N wardrobe] ; closed
+[439:^N window] ; open
+[440:^N window] ; closed
+[441:^N hole in the east wall|^N gap ^N crack]
+[442:^N hole in the west wall|^N gap ^N crack]
+[443:^N paintings|^N pictures] ; central gallery
+[444:^N paintings|^N pictures] ; west gallery
+[445:^N paintings|^N pictures] ; east gallery
+[446:^N bed]
+[447:^N cordless ^N telephone|^N phone]
+;
+; invisible objects (150 onwards)
+[450:^N Moaning ^N Manor] ; make this a position shadow in front of manor
+[451:^N paintings|^N pictures ^N canvas ^N painting ^N picture] ; seen through loft hole
+[452:^N figure] ; seen through garret hole
+[453:^N swimming ^N pool|^N water]
+[454:^N stables] ; (some)
+[455:^N greenhouse]
+[456:^N hidden ^N entrance]
+[457:^N ledge] ; seen from window. "It was outside."
+[458:^N flowerbeds|^N flowers]
+[459:^N avenue of ^N trees]
+[460:^N gate] ; manor gate
+[461:^N lawns]
+[462:^N croquet ^N lawn] ; room 45
+[463:^N croquet ^N lawn] ; room 51
+[464:^N gardens] ; from conservatory
+[465:^N changing ^N room|^N rooms] ; from garden path
+[466:^N coal]
+[467:^N gable]
+[468:^N parapet]
+[471:^N roof|^N slates]
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+;
+; These are used for seeing from a distance and for input, e.g for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc.
+;
+[480:^N drive]
+;
+;*
+; phone numbers for gnome2.3
+[520:^N 026943]		; silas
+[521;^N 076354]		; uncle slybuck
+[522:^N 424242]		; arthur dent
+; the following are real numbers & some of them may have to be removed
+[523:^N 016315168]	; tedious tim (rainbird)
+[524:^N 0254662537]	; NASA flight information (blackburn station)
+[525:^N 0254887386]	; bangladesh tourist info (local indian take away)
+[526:^N 151]		; faults
+[527:^N 100]		; operator
+[528:^N 192]		; enquieries
+[529:^N 031268]		; speaking clock - display game time
+;*
+;
+[530:^N rainbird|^N anita ^N christine ^N tina ^N annette ^N denise]
+[531:^N breadcrumbs|^N marsbars ^N bananas ^N cucumbers]
+;
+:*
+[532:^N 888155] ; safe combination for gnome2.3
+;*
+;
+; Collective nouns...
+[534:^N everything ^N all ^N every]
+[535:^N ingredients] ; collective noun - was 'treasure'
+[537:^N people|^N everyone ^N everybody] ; collective noun
+;
+; Omni-present objects.. 
+[539:^N door|^N gate] ; normal door, for the benefit of PRINTACTORACTION. 
+; It is apparently never described by PRINTOBJECT (so?).
+[541:^N plants|^N weeds ^N flowers ^N daisy ^N bean ^N husk ^N grass
+^N soil]
+[542:^N be]
+[543:^N floor|^N ground ^N room] ; used for output as well
+[544:^N wall|^N walls]
+[545:^N sky|^N sun ^N moon]
+; 
+; and finally, some miscellaneous nouns which are used miscellaneously.
+[547:^N except ^N but]
+[548:^N it|^N that ^N them ^N those ^N none ^N him ^N her]
+[549:^N minute ^N minutes]
+
+[551:^J then ^J next]
+[552:^J therefore ^J so]
+[553:^N Ingrid|^N you] ;you
+;
+; Pronouns...
+[560:it] ; ita
+[561:it] ; itan
+[562:some]
+[563:he]
+[564:she]
+[565:they]
+[566:Ingrid] ; you
+[567:he] ; proper male
+[568:she] ; proper female
+;
+[570:it] ; ita
+[571:it] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:Ingrid] ; you]
+[577:him] ; proper male
+[578:her] ; proper female
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s]
+[581:es]
+[582:is] ; used in examine
+;
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direction of the moving npc.
+;
+[585:from the south]      ; north
+[586:from the southwest]  ; northeast
+[587:from the west]       ; east
+[588:from the north]      ; south
+[589:from the northwest]  ; southeast
+[590:from the northeast]  ; southwest
+[591:from the east]       ; west
+[592:from the southeast]  ; northwest
+[593:from below]          ; above
+[594:from above]          ; below
+[595:from outside]        ; inside
+[596:from inside]         ; outside
+[597:from across the way] ; across
+[598:by climbing]         ; climb
+[599:with a jump]         ; jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+; NPCs (1 onwards)
+; People
+[601:disguised as a maid]
+[602:Daisy Bottomlow, Ingrid's cousin]
+[603:Gnoah Bottomlow, Ingrid's father]
+[604:Seamus Sosmall]
+;
+; Jasper and his employees
+[608:an artist] ; he
+[609:the butler] ; he
+[610:the cook] ; she
+[611:Mrs Underlay, the housekeeper]
+[612:Jasper Quickbuck, the manor's new owner]
+;
+; people 320-329 never appear but
+; are used for parsing purposes
+;[620:^N ghost|^N spook ^N ghoul ^N spectre] ; misled Ingrid
+;[621:^N Amillaria ^N Budblast|^N gardener]
+;[622:^N Silas ^N Crawley|^N creepy ^N creepie]
+;
+; Animals
+;[635:]
+;
+; clothes (60 onwards)
+[660:Jasper's tweed hunting jacket]
+;
+; ordinary objects (80 onwards)
+[680:a set of two bank account statements. Obviously used to fiddle tax, 
+concluded Ingrid, since one of them showed huge sums of undeclared money]
+[681:a sheet of blotting paper. Ingrid examined it closely and 
+found traces of a fraudulent letter]
+[682:evidence of Jasper Quickbuck's devious tax fiddles. They showed 
+large transactions between his business and "private" bank accounts]
+[683:Jasper's Filoxax. It contained a vast collection of telephone numbers, 
+most of which were of his criminal associates. The collection included:% 
+%
+Silas Crawley 026943%
+Uncle "they fell off the back of a lorry" Slybuck 076354%
+Arthur Dent 424242%
+Tedious Tim 016315168%
+NASA flight information 0254662537%
+Bangladesh tourist information 0254887386%
+Faults 151%
+Operator 100%
+Directory enquiries 192%
+Speaking clock 031268]
+[684:a letter addressed to Jasper Quickbuck. It revealed evidence of 
+dubious "Gnommess" share dealing]
+[685:the moaning star. Clearly, Jasper had hidden it here along with 
+other valuable items as a plan to fiddle the insurance companies]
+[686:a brilliant forgery of the Gnoma Lisa] ; painting
+[687:photographs of the Local Council Committee, enjoying themselves 
+with bikini-clad damsels aboard Jasper's yacht. "Aha", thought Ingrid, 
+"now I know how he got planning permission to clear Little Moaning to 
+make room for a Gnorsegnome park"]
+[688:a tape containing recorded telephone conversations]
+[689:a small wooden drawer]
+[690:a manual explaining how to use the telephone answering machine. 
+It read as follows, "Firstly, make sure a tape is inserted in the 
+machine. To record a conversation, press the RECORD button when the 
+telephone is ringing. The message can then be played back by pressing the 
+PLAY button"]
+[691:a phial or Seamus Sosmall's "strength" potion (or so he stated)]
+[692:a big fat wallet that Harry Enfield would have been proud to own]
+[693:a Donald Duck shaped telephone]
+[694:a Mickey Mouse shaped telephone]
+[695:one of the cook's scones and it looked delicious]
+;
+; static objects (110 onwards)
+[710:a telephone answering machine]
+[711:the answering machine's record button]
+[712:the answering machine's playback button]
+[713:priceless antiques]
+[714:tied to the balustrade to keep it clear of the ballroom] ; chandelier
+[715:a chimney]
+[716:a chimney]
+;[717:] ; books SPECIAL CASE
+[718:a huge draped curtain made from finely woven cotton. Ingrid noticed 
+that it appeared to became almost transparant when examined closely, but 
+appeared positively solid from a distance]
+[719:covered in graffiti, which was mostly written with marker pens, but 
+sometimes appeared to be carved with a compass. Some of it read as 
+follows:% 
+%
+"Saliva drools, OK"%
+"I'm a fairy, my name is Nuff. Fairynuff"]
+[720:filthy and germ-ridden] ; dustbins
+[721:empty. A thick layer of soot coated a long flue that led towards 
+the chimney]
+[722:a fireplace. Crackling flames licked fiercely from the coals and 
+heated the base of a large cooking pot]
+[723:an empty fireplace. Ingrid looked up inside it and saw rays of 
+sunlight streaming down from the chimney]
+[724:a hole leading inside]
+[725:a door knocker]
+; Pete.A. - The porch door can be opened from the inside regardless of 
+; the latch being closed. I would have liked this to be otherwise, but 
+; since there are two doors in the hall (i.e. porch & ballroom doors), 
+; it would cause complications when ONLY the ballroom door is allowed 
+; to open, since they both use the flag DOOROPEN=TRUE/FALSE.
+[726:a latch to keep the door locked from the outside only]
+[727:a stack of forged masterpieces]
+[728:a portrait of the late Lord of the manor]
+[729:a pocket in the jacket]
+[730:a pot full of disgusting stew]
+[731:disgusting] ; rubbish
+[732:open] ; safe
+[733:closed] ; safe
+[734:a dense shadow that cast itself across the corner of the court, 
+shading the old stonework with a strong, contrasting darkness.
+Ingrid noticed that a large portion of the shadow appeared to be missing. 
+After a closer look she saw that there was a large hole in the stonework 
+which was wide enough to climb through]
+[735:a sun lounger]
+[736:a big thing with branches and leaves. It cast a dense shadow 
+across one corner of the yard] ; tree
+[737:open] ; wardrobe
+[738:closed] ; wardrobe
+[739:open. Ingrid could see a wide ledge outside] ; window
+[740:closed. Ingrid could see a wide ledge outside] ; window
+[741:a tiny hole]
+[742:a tiny hole through which Ingrid could see the attic]
+[743:paintings of the the late Squire Gillpot and his various 
+predecessors] ; central gallery
+[744:colourful oil paintings of the manor in its plush grounds]
+; west gallery
+[745:newly-hung paintings of Jasper Quickbuck, the manor's new 
+owner] ; east gallery
+[746:Jasper's bed]
+[747:Jasper's personal, shock resistant, water resistant, cordless 
+telephone]
+;
+; invisible objects (150 onwards)
+[750:Moaning Manor in the glory of its colourful grounds]
+; make this a position shadow in front of manor
+[751:stacked up in a dark corner in the room on the other side of the 
+hole] ; paintings seen through attic hole
+[752:a vague figure on the other side of the hole] ; seen through garret hole
+[753:a swimming pool]
+[754:smelly] ; stables
+[755:a greenhouse]
+[756:a hidden entrance. Surprise. Surprise]
+[757:outside and wide enough to stand on] ; seen from window.
+[758:very pretty] ; flowerbeds/flowers
+[759:an avenue of trees]
+[760:the manor gate]
+[761:neatly mowed] ; lawns
+[762:a croquet lawn] ; first croquet lawn
+[763:yet another croquet lawn] ; second croquet lawn
+[764:the manor gardens]
+[765:a changing room] ; from garden path
+[766:black lumpy stuff that burned well]
+[767:a gable]
+[768:a parapet]
+[771:a slate roof]
+;
+; Examine messages for location objects (479+N). See 779+ for examine 
+; messages and 1199+ for their verbose equivalents..
+[780:a drive]
+;
+; Short-Form room Descriptions (800+N). No full stops at end please.
+; These are the brief mode descriptions; they are prefixed by 'you 
+; are' and, in verbose mode, messages 1300+N are appended.
+;
+; room 1 is used as exit modifier for synthesised rooms.
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid.
+;
+; description order is:
+; 'Ingrid was'      '800++'   '1100++'  '.'
+;                   short      long
+;
+; * MAC - please leave any references to the invisible objects *
+; * (messages 450-479) in the room descriptions - Graham.      *
+;
+;Indoors
+[803:in the ^N coal ^N cellar]
+[804:in the ^N basement ^N vault]
+[805:in the ^N scullery]
+[806:on the servants' ^N stairs]
+[807:on a ^N spiral ^N staircase]
+[808:in the ^N loft]
+[809:in the servants' ^N dormitory]
+[810:in the ^N garret]
+[811:in the ^N attic]
+[812:on a ^N staircase set into the wall]
+[813:in the ^N banquet ^N hall]
+[814:in the ^N drawing ^N room]
+[815:in the ^N parlor]
+[816:in the ^N entrance ^N hall]
+[817:in the ^N lounge|^N sitting ^N living ^N room]
+[818:in the ^N reading ^N room]
+[819:in the ^N library]
+[820:in the ^N ballroom|^N ball ^N room]
+[821:in the ^N library ^N court]
+[822:in the ^N conservatory]
+[823:in the ^N tree ^N court]
+[824:in the ^N cloisters]
+[825:in the ^N changing ^N room]
+[826:in the ^N chimney]
+[827:in a chimney ^N shaft]
+[828:in a ^N duct ^N junction]
+[829:in a ^N flue]
+[830:in the ^N central ^N gallery|^N balustrade ^N bannister ^N balcony 
+^N Jasper] ;**JASPER FOR endgame**
+[831:in Jasper Quickbuck's ^N office]
+[832:in a ^N long ^N gallery]
+[833:in a ^N new ^N corridor]
+[834:in Jasper Quickbuck's ^N bedroom]
+[835:in the west gallery]
+[836:at the end of the west gallery]
+[837:in a ^N secret ^N room]
+[838:in the ^N kitchen]
+;
+;Outdoors
+[840:in the ^N porch|^N moaning ^N manor ^N front] ; as in knock on front door
+[841:in the ^N flowerbeds|^N flowers]
+[842:on the manor ^N lawns]
+[843:in an ^N avenue of ^N trees]
+[844:at the manor ^N gate]
+[845:on a ^N croquet ^N lawn]
+[846:on a ^N gravel ^N track]
+[847:in the ^N entrance to the servants' yard]
+[848:in the ^N servants' ^N yard]
+[849:in a ^N sloping ^N passage]
+[850:on the ^N veranda]
+[851:on a ^N croquet ^N lawn]
+[852:by the ^N pool]
+[853:on a garden ^N path]
+[854:in the west ^N gable]
+[855:on the ^N roof]
+[856:in the east ^N parapet]
+[857:on a narrow window ^N ledge]
+[858:on a magnificent ^N balcony]
+;
+; "echo locations..."
+;
+;Indoors
+[925:in the ^N stables. She stood in heap of soft brown objects and 
+decided to go back to the yard to scrape her shoes clean]
+[926:in the ^N greenhouse. The gardener appeared and pranged Ingrid 
+in the bottom with a long sharp garden fork]
+[927:in a ^N scorching ^N passage. She hopped around as her sandals 
+began to burn through]
+[928:in the manor ^N bedrooms. After giving each of the six rooms a 
+brief dusting, she returned to the gallery]
+[929:in the ^N boudoir. It was a quiet ladies' sitting room which Ingrid 
+found rather boring]
+[930:in the ^N dressing ^N room. Since she was already dressed, Ingrid 
+found no point in hanging around here]
+[931:in the ^N nursery where a group of young gnomes were playing 
+noisily. She joined in and drank all their playtime milk]
+;
+;Outside
+[940:in the ^N manor ^N gardens. Clumsily, she stood on the end of 
+a rake which sprang up and bashed her in the nose. Hearing all 
+the commotion, the gardener appeared and prodded Ingrid in the bottom 
+with the sharp end of his sickle]
+[941:in the ^N treetop. There wasn't much of a view from here, since 
+everything was obscured by a mass of smelly old crows' nests]
+;
+; grid rooms (1020+)
+[1020:on the drive, which began to narrow as it wound northwards towards 
+the manor porch. A variety of flowerbeds bloomed pleasantly to the west, 
+while a narrow gravel path led east]
+;
+; Now verbose additions to brief location descriptions (1100+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (800+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.)
+;
+; * MAC - please leave any references to the invisible objects *
+; * (messages 450-479) in the room descriptions - Graham.      *
+;
+[1116:. To the north was a ballroom, while to the east and west were 
+a comfortable lounge and a large banquet hall respectively. A carved 
+ivory balustrade climbed upwards beside a wide staircase]
+[1120:. The floor beneath Ingrid's feet was polished so highly that 
+she could see the clear reflection of an intricate mosaic on the 
+ceiling above]
+[1122:. The gardens flourished outside in all their glory]
+[1130: which was a balcony running from east to west on the first floor 
+of the manor. Down below, Ingrid could see the ballroom]
+[1136:. The wall on the east seemed to end the corridor rather 
+prematurely, since she was sure it should have extended at least another 
+twenty feet, judging by the outside view of the manor]
+[1137:. To the east was a small door which appeared to lead to the 
+west end of the corridor. Ingrid concluded that it must have been well 
+concealed on the other side for her not to have noticed it from the 
+corridor]
+[1140:, which was decoratively covered with a layer of thick ivy. A heavy 
+oak door stood solidly before Ingrid]
+[1141: below the west wing of the manor]
+[1142:. Rolling acres of emerald-green grass flowed endlessly into the 
+distance and met the deep blue skyline with a beautiful contrast]
+[1143:. To the east and west were a variety of lush green lawns]
+[1144:. The manor stood impressively to the north at the end of a long 
+winding drive]
+[1145: (Croquet is a frustrating game played by boring ladies and 
+gentlemen with little wooden balls)]
+[1146: below the east wing of the manor]
+[1147:. An unusual mixture of smells including those of cooking and 
+those of horse manure drifted uneasily from the north]
+[1148:. To the north was a greenhouse and to the east were some 
+stables, which partly explained the peculiar smell around here. An 
+entrance led west, through which Ingrid could see a sloping passageway. 
+The chinking sound of cutlery came from within]
+[1152:. The chequered tiles along the side of the pool gave it an 
+attractive appearance, although the water was more like that found in 
+a public toilet in Birmingham]
+[1153: outside a grotty little changing room]
+[1155:. From here, Ingrid could see the rich farmland that surrounded 
+the manor, and to the west she could see the village of Little Moaning]
+[1157: that overlooked the colourful manor grounds. She looked down over 
+the edge and saw that she was about thirty feet above a large greenhouse. 
+She suddenly felt very peculiar]
+[1158: outside a small, dark room]
+;
+; first time visit messages. (1350+n. Must be followed by punctuation)
+;
+[1353:% %Ingrid stumbled and fell headfirst into the coal. After clambering 
+out, she realised that she was completely covered in black coal dust, 
+so she wiped her eyes and lips clean and performed a short black and 
+white minstrels' song entitled "mammee". ]
+[1380:% %The walls were generously covered by a collection of priceless 
+masterpieces. Ingrid wondered where they had all come from, and even 
+wondered if they might all be fakes]
+[1387:% %The room was filled with all the valuable furniture which used 
+to be in the manor until Jasper moved in. ]
+[1391:% %Brightly coloured daffodils bloomed proudly in neatly arranged 
+patterns. Ingrid clumsily trod all over them and squashed them into 
+the soil. ]
+[1393:% %Ingrid heard a short rustling of leaves and then noticed 
+Gnoah and Seamus climbing down from a nearby tree.% 
+%
+"We just popped over to say good luck, Ingrid," began Seamus. "I hope 
+you manage to find out what's going on in the manor, and if you do, then 
+don't forget to collect some evidence."% 
+%
+"Just give us a wave when you think that you've collected enough 
+of it," added Gnoah. "We'll be up the tree."% 
+%
+They both climbed back up the tree and continued to do whatever they 
+were doing before they did what they just did. ]
+[1396:% %Ingrid skipped joyfully along the path and managed to 
+kick most of the gravel onto the garden. ]
+[1404:% %Somebody had spray-painted "Clark woz 'ere" on the side of 
+the gable. ]
+[1405:% %Ingrid noticed that Gnat Tackhammers smithy was on fire and 
+shook her head disparingly. She made a mental note to tell Gnat when 
+she next visited the village. ]
+;
+; Message pairs for use in describing containment positions
+; also used for preposition table
+;
+; part printed before container
+[1600:Ingrid could see]      ; 0 - you can see (user's name not
+; printed by PRINTOBJECTS)
+[1601:^P on |^P onto ^P above ^P over] ; 1 - on
+[1602:^P underneath|^P below ^P under ^P beneath] ; 2 - under
+[1603:^P behind]      ; 3 - behind
+[1604:]               ; 4 - carrying
+[1605:]               ; 5 - wearing
+[1606:in|^P at]       ; 6 - blocking the hole
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8
+[1609:growing from ]  ; 9 - part of
+[1610:^P between]     ; tied between is tied a rope
+;; [1611:]             ;11 - 'the carter was pushing a cart'
+[1612:lying on]       ;12
+[1613:sitting on]     ;13
+[1614:fastened to]    ;14
+[1615:]		      ;15 escorting
+[1616:^P with|^P using]
+[1617:^P from]
+[1618:in front of]
+;
+; part printed between container and contained.
+[1640:]                ; 0 
+[1641:was]             ; 1 - on
+[1642:was]             ; 2 - under
+[1643:was]             ; 3 - behind
+[1644:was carrying]    ; 4
+[1645:was wearing]     ; 5
+[1646:was blocked by]  ; 6 - is blocked by
+[1647:was]             ; 7 - in
+[1648:was]             ; 8
+[1649:was]             ; 9 - part of is
+[1650:was tied]        ;10 -
+[1651:was driving]     ;11 - the carter was pushing a cart
+[1652:was]             ;12 ;*graham*
+[1653:was]             ;13 ;*graham*
+[1654:was]             ;14 - fastened to
+[1655:was escorting]
+;
+; for plural contents...
+[1670:]                ; 0 
+[1671:were]            ; 1 - on
+[1672:were]            ; 2 - under
+[1673:were]            ; 3 - behind
+[1674:was carrying]    ; 4
+[1675:was wearing]     ; 5
+[1676:was blocked by]  ; 6 - is blocked by
+[1677:were]            ; 7 - in
+[1678:were]            ; 8
+[1679:were]            ; 9 - part of is
+[1680:was tied]        ;10 -
+[1681:was driving]     ;11 - the carter was pushing a cart
+[1682:were]            ;12 ;*graham*
+[1683:were]            ;13 ;*graham*
+[1684:were]            ;14 - fastened to
+[1685:was escorting]
+;
+; 1700+N is part printed before 'you'
+[1715:tied to]
+;
+; 1740+N is part printed between you and object(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]          ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1751:was driving]    ; 11 - Lancelot was pushing
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was escorting]
+;
+; for plural prepositions...
+; 1770+N is part printed between you and object(s)
+[1771:were on]         ; 1 - on
+; 1772 is 2
+; 1773 is 3
+[1774:owned]           ; 4 - own
+[1775:were wearing]    ; 5
+[1776:were riding]     ; 6
+[1777:were in]         ; 7
+[1782:were lying on]   ; 12
+[1783:were sitting on] ; 13
+[1784:were fastened to];14
+[1785:were] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parser messages..
+[2000:you don't need to use "] 
+[2001:" to finish the game]
+[2003:I don't understand the word "]
+[2004:" when used like that]
+[2006:Ingrid was ]
+[2007:in a ] ; as in 'You are in an alder forest
+[2008:in an ]
+[2009:exits led in all directions]
+;
+; general error message when parsing has broken down.
+[2010:I don't understand what you mean]
+[2011:Ingrid couldn't see]
+[2012:Ingrid didn't have]
+[2013:Ingrid already had]
+[2014:(Perhaps I'm just being particularly thick today, but I really 
+haven't a clue as to what you are blathering on about)]
+[2015:it's too far away] ; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence]
+[2017:it's not there. ]
+[2018:there were too many nouns in that sentence. ]
+[2019:Ingrid couldn't see that here]
+[2020:Ingrid owned nothing at all. ]
+[2021:it was dark, Ingrid could not see. ]
+[2022:Ingrid couldn't reach that from here. ]
+[2036:sorry, I don't fully understand that verb. ]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there didn't seem to be anything suitable. ]
+[2038:said "that was a rhetorical question"]
+[2039:what a mouthful! ]
+[2044:couldn't have ] ; as in 'Ingrid couldn't have knocked that'
+[2046:that]
+[2047:here]
+[2048:Ingrid couldn't find ]
+[2053:it's not clear to what ]
+[2054: is referring] 
+;
+; error messages for NPC's
+[2060:are you talking to yourself again? ]
+[2061:Ingrid couldn't talk to several people at once]
+;
+; Standard Adventure output messages
+;
+[2100:Welcome to the playtest version of the third part of Gnome 
+Ranger II, copyright (C) 1988 Level 9 Computing.% 
+%
+Little Moaning had returned to the quiet and peacful place it had been 
+before Silas Crawley had arrived. The regular customers were all 
+drinking scrumpy again in the Green Gnome, Gnat Tackhammer was busy once 
+more in his smithy, and Seamus Sosmall was usually busy looking for 
+his "magic wand", in Mrs Tackhammer's bedroom.% 
+%
+Although Jasper Quickbuck had moved into the manor, nobody in the 
+town had heard from him. Nor had they heard what he was up to, and 
+that made people worry. It seemed that the only way to find out what 
+was going on was to get some simple minded bumpkin to infiltrate the 
+manor.% 
+%
+By a remarkable coincidence, Jasper had advertised a vacancy for a maid, 
+so Ingrid applied, in disguise, and set out to learn what she could.% %]
+;
+; examining something greater than maxobject: (but not scenery)
+; rare occurrence - mostly for omnipresent objects, numbers, spells
+[2112:it looked exactly as Ingrid had expected. ]
+[2114:Ingrid couldn't go that way]
+[2115:through the door]
+[2117:it's already open]
+[2123:Ingrid couldn't put ] ; paired with 2124
+[2124:there]
+[2126:Ingrid would have to drop it first]
+[2128:%Did you know that you can go quickly to a far off place? E.g 
+"RUN TO POOL" or "GOTO PORCH".%]
+;
+; 2130 is used when player refers to scenery which is not nearby
+[2130:I can't find a reference to "]
+[2131:Ingrid was on it! ]
+[2132:what? ]
+[2133:where? ]
+[2134:Ingrid was wearing ]
+[2135:please try again, saying what with? ]
+[2136:which one? ]
+[2137:at what? ]
+[2139:was full]
+[2140:" here]
+;
+[2142:Ingrid couldn't wear ]
+[2147:Ingrid was already wearing that]
+[2148:Ingrid found she didn't need to do that]
+;
+; Confirmation messages
+;
+[2152:worn]
+[2153:OK]
+[2155:time passed. ]
+[2156:said]
+[2158:Ingrid found she would have to untie it first]
+[2160:YES or NO please.%]
+[2172:nobody wants it]
+;
+; Death, scoring, game control etc.
+;
+[2200:really restart? ]
+[2202:really restore? ]
+[2203:% %did Ingrid continue? ]
+[2204:said, "Thank you"]
+[2209:% %the adventure had come to an end.
+%Please type RESTART, OOPS, RESTORE or RAM RESTORE: ]
+[2210:the room was badly damaged] ; attack/fireball room
+[2211:Ingrid looked around and decided it wasn't worth the effort. she had 
+made a good job of devastating the place last time]
+[2212:really! You're so destructive! Why don't you go and punch up a paper 
+bag instead? ]
+[2213:it looks as though the Vandals have been at work here]
+[2215:that's too long to wait] ; won't wait
+[2216:you can wait for someone (e.g. WAIT FOR PENGUIN),
+for a certain length of time (e.g. WAIT FOR 25 MINUTES),
+or until a time (e.g. WAIT UNTIL 14:25)]
+;
+; Score messages..
+[2240:%Ingrid scored ]
+[2241:% %Ingrid had fouled up once again.%] ;>>GnomeII
+[2242: out of 1000 and was ]
+[2243:-] ; minus sign
+;
+; Ratings
+[2250:a pretty useless little gnome]
+[2251:way below average]
+[2252:just below average]
+[2253:an average sort of gnome]
+[2254:improving all the time]
+[2255:above average]
+[2256:doing very well indeed]
+[2257:a clever little gnome]
+[2258:getting a little big-headed about it]
+[2259:smiling all over her face]
+[2260:just about satisfied]
+;
+[2300:oops and ram save//restore don't work in this version. ]
+[2301:%please insert save disk and press a key. %]
+[2302:%please insert game disk.%]
+[2308:I can't use OOPS to go back further than this. ]
+[2309:%(This version allows you to use RAM SAVE and RAM RESTORE to 
+save a position in memory, and OOPS to take back bad moves).%]
+[2310:can't return to that saved position in memory. Perhaps you've 
+turned off the computer, or reloaded the game, since it was saved. ]
+;
+[2311:% %Ingrid is about to start another part of the game. Do you 
+want to save her position first, just in case? ] ; tape ***
+[2312:that data was gnot saved from Ingrid's Back. ]  
+[2313:play the game tape to load part ] ; tape ***
+[2314:% %Ingrid is about to start another part of the game. Do you 
+want to go ahead? ]
+[2319:you've started in the middle of the game. Please 
+restore a position saved from this part. ] ; tape ***
+;
+; misc jokey messages (slightly more complex than echo verbs)..
+[2401:that might end up with Ingrid getting hurt] ; attack me
+[2404:Ingrid could smell nothing of interest]
+[2405:Ingrid found nothing much to write about]
+[2406:Ingrid normally smelled OK, but at that 
+stage of her journey she just smelled]
+; smell player
+[2407:Ingrid said hello]
+[2416:to be, or not to be, that is the question]
+;
+; add your messages for special cases here....
+;
+;* front door puzzle *
+;FROOP
+[2490:tried the door and found that it was locked]
+[2491:heaved against the door but it just wouldn't open]
+[2492:found that the door was locked]
+[2493:strained to open the door, but it seemed to be locked securely]
+[2494:struggled to open the door and realised that it was locked]
+;
+[2501:it was closed]
+[2502:it was open] ; latch
+[2503:bashed the door knocker against the door as loud as she 
+could and a butler arrived. "If you're the new maid," he droned, "then 
+I suggest that you enter by the servants' yard, and not by the front 
+door. Good day, madam!". He went back inside]
+[2504:thumped angrily on the door. Ingrid heard footsteps inside the manor]
+[2505:% %The butler went for the door handle and found that he had locked 
+himself out. After trying each key in a bunch of about fifty, he finally 
+managed to open the door]
+;
+;* jasper's office *
+[2510:"You know that you're not supposed to go in Jasper's office!", 
+stormed the butler, "It's private!".%
+He grabbed Ingrid and carried her into the kitchen. "Now stay here 
+and stop getting under my feet!", he ordered]
+[2511:"Right!", exploded the butler, "You can't say I didn't warn 
+you about going in Jasper's office. You're fired!".% 
+%
+And so, Ingrid lost her job at the manor and Jasper continued his 
+life of fraud, until one grim day when the manor collapsed under an 
+increasing weight of forged paintings that had been stored in the attic]
+[2512:% %the butler took all the evidence that Ingrid had collected and 
+carried it into Jasper's office. He quickly returned, rolling his 
+sleeves up]
+[2513:opened the drawer, found nothing of great interest, and decided 
+to close it again]
+[2514:Surprise! Surprise! A few "missing" cheque stubs just happened to 
+fall out from beneath the drawer]
+[2515:% %Ingrid heard somebody knock on the front door of the manor, and 
+then she heard footsteps as the butler went down the stairs to answer the 
+door. ]
+[2516:% %Ingrid heard footsteps as the butler returned from answering the 
+door. ]
+;
+;* standard daisy follows out of vehicle *
+[2517:Daisy did likewise]
+;
+;* drawer hint *
+[2518:something seemed to be stuck behind the drawer as it was being 
+closed]
+;
+;* safe puzzle *
+[2520:slid the portrait back and concealed the safe]
+[2521:moved the portrait and revealed a huge lead safe that was set 
+firmly into the wall]
+[2522:the safe was locked and could only be opened using the correct 
+combination]
+[2523:the safe door swung open]
+[2524:he moved the portrait and revealed a safe. ]
+[2525:Ingrid watched as he typed the digits "888155" into the combination 
+lock. The safe door swung open. % %]
+[2526:Jasper examined the interior of the safe and nodded devilishly. He 
+locked it again afterwards and replaced the portrait]
+[2527:Jasper stashed into the safe all the evidence of fraud that he was 
+carrying and clasped his hands fiendishly. He locked the safe carefully 
+and then slid the portrait back over it]
+[2528:"Git yer thievin' hands off my things!", stormed Jasper]
+;
+;* jasper guards his changing room *
+[2530:"Don't you dare go anywhere near my changing room!", yelled 
+Jasper at ]
+;2531 Must work if Ingrid is already in changing room, or if she enters 
+;while Jasper is getting changed. It must also work for Jasper changing 
+;and changing back.
+[2531:% %Jasper didn't see Ingrid right away and began to undress 
+himself. Suddenly, he turned around and noticed Ingrid, who happened 
+to be grinning broadly.% 
+%
+"What do you think you're doing in here?!", he snapped, while turning 
+a sort of beetroot red colour. He quickly covered up a certain part of 
+his anatomy with a sock and then pushed Ingrid out of the door]
+[2532:% %"What do you think you're doing hanging around my changing 
+rooms?!", Jasper yelled at Ingrid. "Waiting for a chance to spy on 
+me changing, I'll bet!"%
+He grabbed Ingrid and pushed her back to the pool]
+;
+;* jasper entering bedroom *
+[2540:% %Jasper looked around suspiciously while fumbling for something 
+in his waistcoat pocket. He took out a key and quickly unlocked his 
+bedroom door]
+;
+;* jasper recovering evidence *
+[2541:% %Jasper said, "My, my, we can't have things like this lying 
+around on the floor. This kind of evidence could ruin me!"%
+He bent down and picked the evidence up off the floor]
+[2542:% %"I'll take that, if you don't mind!", insisted Jasper as he 
+snatched ]
+[2543:"This could do to be locked away somewhere safe," he added]
+;
+;* standard knock message *
+[2545:bash! bash! bash! thud! thump! bang! bang! (will that do?)]
+;
+;* examine rubbish *
+[2550:Ingrid realised that searching through the rubbish would 
+put her in danger of being contaminated. Was she to risk this? ]
+[2551:%Ingrid quite wisely decided against searching the rubbish, but 
+she couldn't help but wonder what might be in it]
+[2552:%Ingrid had a good rummidge through the rubbish and succeeded in 
+covering herself in a filthy mess of cigarette ash, rotting fish, and 
+mouldy cheese]
+[2553:Ingrid was contaminated with the awful smell of the rubbish (to 
+her close friends, she was now known as "Ingrid the Stinker")]
+[2554:searched every inch of the rubbish and picked out a rather 
+interesting (and crumpled) letter]
+;
+;* secret room *
+[2570:% %The secret door closed automatically and blended in with 
+the wallpaper]
+[2571:Ingrid refrained from diving out through a window which was 
+apparently closed]
+[2572:The window was closed from the inside, and since Ingrid wasn't 
+a very good cat burglar, she couldn't open it from here]
+;
+;* artist puzzle *
+;FROOP
+;see artist through hole in loft
+[2580:through it, Ingrid could make out the shape of a dark figure 
+moving slowly in a dark room. There appeared to be some paintings in 
+the room]
+[2581:on the other side was a dark room, in which a sinsister dark figure 
+appeared to be rubbing a brillo pad against a painting]
+[2582:through it, Ingrid could see a vague figure shuffling about and 
+groaning eerily in a small, dark room. The room appeared to be stacked 
+with paintings]
+[2583:Ingrid could see a wispy grey figure through the hole. It wandered 
+around slowly and complained about some "lousy enegmatic smile". Ingrid 
+noticed that the figure was glaring at a painting]
+[2584:Ingrid looked through the hole and saw the silhouette of a crouched 
+figure. It appeared to be scribbling something onto a canvas. It looked 
+like a signature]
+;
+;artist arrives
+[2590:% %Ingrid heard a ghostly moan. She looked around with a start but 
+saw nothing but grim shadows]
+[2591:% %Ghostly footsteps paced the room and Ingrid suddenly felt very 
+cold]
+[2592:% %The footsteps seemed to come closer, but Ingrid couldn't see 
+anything in the sinister darkness of the room. She began to shiver]
+[2593:% %The floorboards groaned hauntingly and a sudden breeze filled 
+the room. Ingrid trembled as she remembered the ghost stories of Moaning 
+Manor that Gnoah had once told her]
+[2594:% %Ingrid began to sweat with fear as a hitherto unseen door slowly 
+creaked open. She closed her eyes in terror. "Is this the end?", she 
+stammered, "Will I be cursed to wander the manor for the rest of eternity 
+in some sort of limbo?"% 
+%
+There was a short period of silence, and then Ingrid heard a man singing 
+in a twangy Australian accent, "Tiny kangaroo down, sport. Tiny kangaroo 
+down..."% 
+%
+Ingrid slowly opened her eyes and saw a tall man who was untidily 
+dressed in a pair of overalls that were clearly covered in blotches 
+of oil paint.%
+"G'day sport!", he announced, "I'm Rulf the artist. Pleased to meet 
+you". He held out a hand in greeting and Ingrid shook it nervously.%
+"I think I would have preferred to wander the manor for the rest of 
+eternity," muttered Ingrid quietly to herself.% 
+%
+"Come an' have a look at me studio," continued the Rulf, "I'm sure that 
+ya'd luv to see me etchings, little girl..."]
+;
+[2600:Ingrid looked everywhere, but couldn't see any ghosts. She 
+reassured herself that there was no such thing]
+[2601:pushed against the west wall and opened the door]
+[2602:"Ooh!", praised the artist, "That's one of my best oils, but I 
+can see that you like it, so I'll let you take it"]
+;
+;* books in library *
+[2610:Ingrid removed one the books. "Tax Dodging the Piggot way" was its 
+title. Ingrid casually flicked through the pages, but couldn't really 
+understand the jargon with which it was written. For some reason, 
+it insisted on repeating something about using two seperate bank 
+accounts]
+[2611:Ingrid removed an old book and blew the dust off it to reveal 
+the title, "The Ghost of Moaning Manor". She skipped through the pages 
+quickly and soon learned that the manor's attic was supposedly haunted. 
+"Pah! Haunted indeed!", said Ingrid as she threw the book aside]
+[2612:Ingrid opened a rather large volume entitled, "Home insurance". The 
+contents page revealed that a chapter explaining insurance claims began 
+on page 100001. Unfortunately, pages 100001 to 109263 had been torn 
+out]
+[2613:A colourfully illustrated book captured Ingrid's interest. Its 
+pages showed an extensive collection of paintings, most of which were 
+well known masterpieces]
+[2614:Ingrid noticed a small booklet among the books. It was full of 
+advertising bumf for a new "top of the range" telephone answering 
+machine, "for recording all those devious little conversations"]
+[2615:Ingrid sifted through the books and took out a swashbuckling type 
+novel. She browsed through it and read about an intrepid hero walking 
+along narrow window ledges, swinging from chandeliers and other totally 
+ridiculous things]
+[2616:A well known novel entitled "Oliver Twist" tickled Ingrid's 
+fancy. It was a story about a young boy who would climb chimneys in 
+the day and then spend most of the night stuffing his face with gruel. 
+Ingrid also read about all the diseases that people would get through 
+scavenging the bins for food]
+[2617:Ingrid picked out a detective book entitled "Dick Softly's 
+Horrific Deceptive Agency", in which a little fat guy called Dick would 
+uncover intricate crimes by searching furniture and hiding behind 
+curtains.% 
+%
+Ingrid was getting increasingly bored with having to read 
+books in EVERY game]
+[2618:Ingrid sighed with boredom as she opened yet another book 
+entitled, "My Fair Lady". She yawned as she flicked through the pages 
+and read about a love-sick lavatory attendant who wanted to marry some 
+silly old tart. Ingrid wasn't interested in marriage, and she decided 
+to put the book down.% 
+%
+"Give my eyes a rest," groaned Ingrid, "I'm sick to the teeth 
+of reading these boring old books!"]
+[2619:Ingrid folded her arms stubbornly and refused to ready any more 
+of the books]
+;
+;* chimney puzzles *
+[2620:A fire was blazing in the fireplace]
+[2621:fell down the shaft and clattered into the fireplace below]
+;
+;* phone puzzle *
+[2630:please try again, saying PLAY BUTTON or RECORD BUTTON]
+[2631:the telephone rang for a while and then stopped as somebody 
+answered from another extension]
+[2632:the telephone clicked as somebody put down the extension]
+[2633:picked up the receiver and heard a dialing tone]
+[2634:Ingrid couldn't dial out while the telephone was ringing]
+[2635:lifted the receiver and heard somebody speaking to Jasper, ]
+[2636:put the receiver down again after the call had finished]
+[2637:Jasper picked up the receiver and chatted to one of his 
+friends for a while. When the conversation was over, he put the 
+receiver down again and grinned fiendishly]
+;
+;incoming calls
+[2640:"Hello Jasper, this is the auctioneer speaking. I'm just ringing 
+to let you know that your forged paintings went down a treat. You will 
+be receiving a big cheque at the end of the week"]
+[2641:"Hi Jasper, it's Mr. Piggot of the accounting agency. I'm just 
+ringing to let you know that your tax has been fiddled successfully. 
+Oh, and by the way, thanks for the skiing holiday, it was great"]
+[2642:"Hi there Jasper, you old son of a gun. Honest Joe here. I'm 
+just ringing to let you know that I managed to sell the dodgey Porsche 
+for twenty grand. Yes, that's right, the one you had built by welding 
+three old Reliant Robins together"]
+[2643:"Hello Mr. Quickbuck, this is Mr. Fiddler the insurance company 
+speaking. You'll be pleased to know that your stolen antiques were 
+covered by our policy. I'll put the cheque in the post this afternoon"]
+[2644:"Hi there Jasper. Uncle Slybuck speaking. I think that I've 
+found a way to help you avoid paying your two million pound 'phone 
+bill.% 
+%
+I'm calling from a phone box outside Post Office Tower in London. 
+We've piled a few sticks of dynamite around it and Fred Dibner's 
+going to push the detonator. I'll let you know how it goes"]
+[2645:"Take it easy Jasp! It's Jeff the hacker on the endo' your line. 
+Well, I managed to kindo' like hack into your groovy ol' bank account 
+with this new trendy modem like, and Iza doubled the balance like you 
+said. Anyway, I gotta kindo' like fly away again now. Take it easy, 
+man!"]
+[2646:"Psst! Jasper! It's Flash Harry speaking. I've installed the 
+bugging devices in the gents at the Russiagnome Embassey. One of them's 
+in the loo, and the other's in a chewing gum vending machine. I don't 
+think anybody uses the vending machine, because the chewing gum tastes 
+like rubber.% 
+%
+Anyhow, I'll be recording the Ruskies during the week, and then I'll 
+deliver the tapes to your contacts. Let me know when you get the dosh. 
+Bye!"]
+[2647:"Hi Jasper, it's Mr. Stowaway of the travel agents speaking. 
+I've managed to con fifteen people into your timeshare scheme. They'll 
+be flying to Iran to look at the villa next week. I'll let you know 
+if anyone gets blown up"]
+[2648:"Hi Jasp, it's Mr. Letterhead of the printers speaking. We've 
+managed to print you a few thousand of the seven pound notes you asked 
+for. The van will be 'round on tuesday"]
+[2649:"Good morning Jasper, this is the Local Council speaking. We 
+were wondering if you wanted any more planning permission in 
+exchange for another yachting holiday. Ring us back if you do"]
+;
+;outgoing calls
+[2650:dialed the number and waited. The 'phone at the other end of the line 
+rang for a short while, and then clicked. "Hello, this is a recorded 
+message," said a voice, "I'm sorry, but Mr. Crawley is not in at the 
+moment. He is currently in hospital after being crushed beneath a pile 
+of turnips. If you would like to leave a message, then forget it!"]
+[2651:dialed the number and an old man answered. "Hello, Mr. Slybuck 
+speaking," said the old man, "Can I help you?"% 
+%
+Ingrid blew a loud raspberry down the 'phone and then slammed the 
+receiver down]
+[2652:dialed the number and a rather angry voice answered. "Hello, 
+yes!", snapped the voice. "Look, I can't talk to you right now 
+because my house is about to be flattened by a huge bulldozer. 
+Good day!". The telephone went dead]
+[2653:dialed the number and waited for what seemed to be ten minutes 
+until the call was finally answered. "Hello, this is Tim's secretary 
+speaking," said a sexy female voice, "I'm sorry, but Tim can't be 
+bothered to speak to you at the moment. Please leave a message, and he'll 
+try to get back to you some time next year"]
+[2654:dialed the number and a man answered in a voice which sounded 
+as if he had a clothes peg on the end of his nose. "Just arriving is 
+the three fourty five from Preston," grunted the voice. "On platform 
+two, the one eighteen to Blackpool is just departing approximately three 
+days, two and a half hours late"]
+[2655:dialed the number and someone with a broad Lancashire accent 
+answered, "Oh goodness gracious me! My poppadums are on fire!". Whoever it 
+was didn't hang around. The telephone went dead]
+[2656:dialed the faults number and a British Telecom engineer answered, 
+"If your telephone's faulty, then how the heck did you manage to ring 
+the faults' line!". He slammed the receiver down]
+[2657:dialed the operator. "Sorry!", she said, "But I'm too busy doing 
+this blasted crossword to help you. Please try again tomorrow. CLICK..."]
+[2658:dialed directory enquiries and waited. And waited. And waited]
+[2659:dialed the speaking clock and a voice said, "On the third stroke, 
+the time will be precisely ] ; SPECIAL CASE
+[2660: Pip! Pip! PIP!" ]
+;
+;* answering machine *
+[2670:the tape was blank]
+[2671:and recorded a telephone message]
+[2672:there was no tape in the answering machine]
+;
+;* wave to summon Gnoah & Seamus *
+[2680:Ingrid had never felt more single-minded. Nothing would let 
+Jasper get away from her now]
+[2681:Ingrid waved her arms about and shouted "Yoo-hoo! It's me!"% 
+%
+Shortly after, Gnoah and Seamus climbed down from a nearby tree 
+and approached Ingrid.%
+"Well," began Gnoah, "Where's the evidence?"%
+"Err," added Ingrid.%
+"What do you mean 'err'!", snapped Seamus, "You dragged us all the way 
+down here just to say 'err'?"%
+"Well," continued Ingrid, "I don't actually have any evidence yet..."% 
+%
+Gnoah and Seamus looked at each other and shook their heads in 
+despair.%
+"I told you she'd be a waste of time," muttered Gnoah to Seamus. 
+He stared at Ingrid and took a deep breath. "Go into the manor," he 
+blasted, "and don't come back until you've collected plenty of 
+evidence!"% 
+%
+And with that, Gnoah and Seamus walked away and climbed back up their 
+tree]
+[2682:Ingrid waved enthusiastically."Gnoah? Seamus? Where are you?", she 
+yelled. "I've brough you some evidence of Jasper's fraud!"% 
+%
+Ingrid heard a rustling of leaves and then saw Gnoah fall out of a 
+nearby tree. Shortly after, Seamus climbed down to his aid.%
+"I told you that the branch wouldn't take your weight," said Seamus as he 
+wagged his finger about infront of Gnoah.%
+"Shut it!", replied Gnoah as he stood up and rubbed his back. "Right, let's 
+see what Miss trouble has brought us."% 
+%
+They both came over to Ingrid and had a look at the evidence she had 
+collected.%
+"Hmmmmmm," began Seamus.%
+"Hmmmmmmmmmmm," repeated Gnoah. "This looks okay, but we could do with a 
+bit more evidence if we're to drop Jasper in it up to his neck."%
+"Yes," added Seamus, "Go back into the manor and get some more. Come back 
+out and give us another wave when you're ready. Bye..."% 
+%
+Gnoah and Seamus wandered away and climbed back up their tree]
+[2683:Ingrid jumped up and down and waved her arms about. "Cooeee! 
+Gnoah! Seamus!", she shouted, "I've brought all the evidence that I can 
+find!"% 
+%
+Ingrid waited a while, but there was no reply, so she walked over to 
+the tree where Gnoah and Seamus had been hiding and shook it with all 
+her might. Suddenly, Gnoah and Seamus fell out from a high branch and 
+landed rather uncomfortably on the ground, with Gnoah landing on top 
+of Seamus.%
+"Oooof!", gasped Seamus, "You nearly broke my glass phial, you fat 
+oaf!"%
+Gnoah climbed off Seamus and had a look at the evidence that Ingrid 
+had collected. "Well," he began, "This looks just about enough to put 
+Jasper behind bars for a decade or two."% 
+%
+"Good show!", wheezed Seamus, "I think it's about time we paid Jasper 
+a visit. But first, I have something for you Ingrid,"%
+He rooted around in his pocket for a while and pulled out a small glass 
+phial.%
+"A strength potion," he announced with a grin as he pushed the phial 
+into Ingrid's hand. "Come now, you must now lead the way to Jasper"]
+;
+;* endgame. swing from chandelier etc. *
+[2684:% %Jasper arrived and saw the look in Ingrid's eyes that said 
+the game was up. He ran whimpering into the ballroom and locked the 
+door behind him]
+[2685:tried the ballroom door, but found that it had been locked 
+securely]
+; seen from balcony
+[2686:untied the chandelier and swung down into the ballroom]
+; seen if already in ballroom
+[2687:swung down from above on the chandelier and missed Ingrid by 
+about an inch. The butler strode majestically along the balcony above 
+and retied the chandelier to the balustrade. "Young vandal!", he 
+shouted]
+[2688:Mrs Underlay quickly unlocked the ballroom door, went inside, and 
+then locked the door again behind her]
+; follows 2686 unless endgame
+[2689:Shortly after, the butler walked along the balcony above the 
+ballroom and hoisted the chandelier up again and fastened it to the 
+balustrade. "Hooligan!", he shouted]
+[2690:% %As Ingrid walked along the balcony, she noticed Jasper hiding 
+behind the ballroom door below. "If only I could get down there from 
+here...", she thought]
+; follows 2686 if endgame
+[2700:She clung on to it fearlessly as it whooshed across the room, getting 
+closer and closer to Jasper. Then finally, with a loud "Yeeeha!", she put 
+both feet forward and collided with him, flattening him to the ground.% 
+%
+Jasper tried to collect his wits. "Okay, Okay, you win", he gulped, "You 
+know enough to put me in prison for life. What do you want me to do?"% 
+%
+"Marry me!", breathed Ingrid.% 
+%
+Jasper fainted.% 
+%
+And so, the "happy" couple were married the following week in a small 
+church in Little Hampton. The whole population of Little Moaning attended 
+the reception, and they were delighted; not only was the village saved, but 
+they had got rid of their major pest. And Ingrid was ecstatically planning 
+how to spend her new riches as she stood, clutching her husband. Only 
+Jasper was less than happy, "Where did I go wrong?", he moaned - but very, 
+very quietly. ]
+;
+;* scone *
+[2710:Ingrid took a bite out of the scone and experienced a hot, burning 
+sensation in her mouth. This wasn't very surprising really, since the 
+scone turned out to be filled with curry powder]
+[2711:Mrs Underlay put her hand infront of her mouth to stop herself from 
+laughing. Ingrid couldn't see what was so funny, so she took a bite out 
+of the scone and then found what the joke was. The scone just happened 
+to be filled with curry powder.% 
+%
+"Ho! Ho! Ho!", laughed Mrs Underlay as she rolled about on the floor. "You 
+certainly fell for that one!"%
+Ingrid forced a sporting kind of grin onto her face, while grinding her 
+teeth angrily behind it]
+[2712:As Ingrid bit into the scone, the cook burst out laughing. "They're 
+rather hot!", she guffawed.% 
+%
+Although Ingrid remembered that the scone had felt perfectly cool when 
+she had picked it up, she now realised that it was full of curry powder.% 
+%
+The cook rolled about on the floor in helpless mirth, while Ingrid quickly 
+dashed over to the sink and filled a large jug from the tap. She gulped the 
+water down thirstily and then grinned sickeningly at the cook]
+[2713:Just as Ingrid bit into the scone, she saw the cook whisper into 
+Mrs Underlay's ear. The both fell about laughing and then Ingrid realised 
+that the joke was on her. The scone was full of curry powder.% 
+%
+While Mrs Underlay and the cook were rolling about in helpless mirth, 
+Ingrid decided to get her own back. She spat the curry powder into the 
+cook's stewing pot while they weren't looking and then grinned innocently]
+[2714:looked at the scone and said, "I'm certainly not eating this scone! 
+It stinks of chicken vindaloo!"]
+;
+;* jasper automatically closing safe *
+[2720:"Tut, tut," said Jasper. "Who keeps leaving my safe wide open?"]
+[2721:Jasper sighed when he saw that the safe was uncovered. "I wish 
+people would leave my private things alone," he muttered]
+;
+;* hide from jasper in bedroom *
+[2730:% %As soon as Ingrid saw Jasper, she quickly hid under the bed 
+without him noticing]
+; do not reference an actor here, since this is used when either ingrid 
+; or daisy get out from under the bed.
+[2731:"What do you think you're doing in my bedroom?", stormed Jasper. 
+"It's private, and I'm going to call the police!"% 
+%
+And with that, he picked up the telephone and dialed for the police. 
+A few minutes passed and then there was a sound of heavy footsteps coming 
+from the stairs]
+[2732:Daisy hid under the bed with Ingrid]
+;
+;* seamus's warning *
+[2800:% %A vile cloud of green smoke suddenly billowed up and Seamus 
+Sosmall appeared. He cleared his throat and said, "Greetings. I bring 
+bad news yet again."% 
+%
+"It turns out", he continued, "that Jasper only hired you so that he 
+could blame you for the so called 'theft' of his priceless antiques. 
+If I was you, then I'd find some evidence to drop him in it. But then 
+again, I'm not you, so I'm going to go away!"% 
+%
+Seamus conjured up another cloud of smoke and dissapeared]
+;
+;* police arrive *
+[2801:% %Suddenly, a group of policemen arrived and hand-cuffed 
+Ingrid. "So you're the one who's been pinching the manor's priceless 
+antiques!", said one of them.% 
+%
+"You're under arrest!", said another, "Please come quietly..."% 
+%
+And so, Ingrid was confined to spend the next fifteen years stood by 
+a stagnant little pond somewhere in the grounds of Strangeways prison]
+;
+; "Pet" messages... (table driven)
+; some remarks made by Flopsy on various occurances...
+;
+[2850:said, "You'll get used to it. Most of the doors in this place are 
+usually locked"]
+[2851:said, "Try searching more thoroughly"]
+[2852:scratched her head. "Hmm, it's a combination lock," she said, "I 
+wonder what the correct sequence is?"]
+[2853:applauded]
+[2854:stroked her chin and said, "Hmm, I'm sure there must be another way 
+to get in"]
+[2855:shook her head at Ingrid. "You should take more care of your 
+evidence", she sighed]
+[2856:said, "That was loud enough, but I don't think it will do any good 
+here"]
+[2857:jeered at Ingrid, "Yah! Boo! Sissy! Scared of getting your 
+hands dirty, are we?"]
+[2858:said, "Pooh, Ingrid! You don't half pong"]
+[2859:coughed and said, "Er, how about opening it first"]
+[2860:looked around the room sheepishly. "This place gives me the creeps", 
+she said]
+[2861:began to shiver]
+[2862:tugged at Ingrid's sleeve. "Come on, let's get away from here," she 
+pleaded]
+[2863:stammered, "I-I-I think t-this place is h-h-haunted!"]
+[2864:laughed at Rulf and said, "One of your best oils? Pah! I could do 
+better standing on by head"]
+[2865:said, "That's one of Jasper's books alright!"]
+[2866:nodded in agreement with Ingrid. "These lousy ghost stories are a 
+load of rubbish," she said]
+[2867:thought for a moment. "Come to think of it," she began, "I did hear 
+Jasper mention claiming on the insurance for some stolen antiques"]
+[2868:pointed at a picture of an answering machine. "I think Jasper has 
+one of those in his bedroom," she commented]
+[2869:said, "The chimneys in this place could do with cleaning"]
+[2870:shook her head at Ingrid. "I wouldn't bother with this fireplace," 
+she advised, "Why don't you try the one in the reading room instead. 
+There isn't a fire in that one"]
+[2871:said, "That was clever of you, Ingrid"]
+[2872:said, "Why don't you try ringing somebody"]
+[2873:stroked her chin and muttered to Ingrid, "Judging by the grin on 
+Jasper's face, that telephone conversation had something to do with 
+money"]
+[2874:said, "That was polite of you, Ingrid"]
+[2875:shook her head. "Typical," she sighed]
+[2876:said, "It's tea break time again at British Telecom"]
+[2877:said, "Try recording a message when the 'phone rings"]
+[2878:shouted to Jasper, "Come back, you coward!"]
+[2879:bashed on the door and shouted, "Come on out, Jasper! We know you're 
+in there!"]
+;
+; messages when people refuse an order. 2900+n
+; Use ACTORM1Dot
+;
+[2903:said, "No! I'm too busy"]
+[2904:said, "Don't you order me about, Ingrid"]
+[2908:ignored Ingrid completely]
+[2909:sneered at Ingrid's request for help]
+[2910:laughed and said, "You must be joking!"]
+[2911:broke wind. "That's what I think of you!", she laughed]
+[2912:cleared his throat and spat a slimy green thing on the ground]
+;
+; comments made by people when they encounter Ingrid for the first time
+; 3000+
+;; [3002:Tristram said, "Hello Galahad, have you brought my harp?" ]
+;; [3056:the black knight said, "Hold fast, traveller. Only worthy
+;; knights may pass me". ]
+;
+; don't be silly group...
+[3100:don't be silly. That's my job]
+[3101:well, that's a novel concept]
+[3102:you must be mad if you really mean that]
+[3103:now there's a peculiar thing to want to do]
+[3104:daft I call it]
+;
+; nice try group...
+[3110:nice try, my friend] 
+[3111:a truly valiant attempt at a solution. Shame it won't work]
+[3112:no chance]
+[3113:that really does deserve some credit, though it doesn't actually 
+work]
+[3114:with ideas like that, you'll go far - eventually]
+;
+; just scenery group...
+[3120:you might as well leave it alone]
+[3121:I suggest that you forget about it]
+[3122:that's not important to the game]
+[3123:forget it. It's only scenery]
+[3124:that was just put there to confuse you. I see it has]
+;
+; missing object...
+[3130:now what was the object of that? Try again]
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+[3133:I don't like to object, but there was no object in that command]
+[3134:do it to what? You didn't say]
+;
+; Nothing happened group...
+[3140:I don't know what that was suppose to achieve, but nothing happened]
+[3141:that didn't seem to work]
+[3142:there had no effect on anything]
+[3143:that was outstandingly ineffective]
+[3144:that did nothing at all, I'm afraid]
+;
+; the following are printed after the object name..
+;
+[3150:wouldn't move] ; try to move static object group
+[3151:didn't budge]
+[3152:refused to be moved]
+[3153:seemed fixed in place]
+[3154:didn't move]
+;
+[3160:don't bother, it would do nothing] ; don't bother group
+[3161:that would be a waste of time]
+[3162:that would be pointless]
+[3163:that won't get you anywhere]
+[3164:don't expect any results from that]
+;
+; groupsay messages for hello responses
+[3170:said, "Hello"]
+[3171:said, "Greetings"]
+[3172:said, "Hello, what brings you here"]
+[3173:greeted her with an inscrutable smile]
+[3174:said, "How do you do?" politely]
+;
+; groupsay messages for npc's being unable to carry out an order
+[3180:seemed to be puzzled by something Ingrid had asked]
+[3181:seemed to be puzzled by something Ingrid had asked]
+[3182:seemed to be puzzled by something Ingrid had asked]
+[3183:seemed to be puzzled by something Ingrid had asked]
+[3184:seemed to be puzzled by something Ingrid had asked]
+;
+; groupsay messages for npc's being unable to carry out an order
+[3190:seemed to be puzzled by something Ingrid had asked concerning "]
+[3191:seemed to be puzzled by something Ingrid had asked concerning "]
+[3192:seemed to be puzzled by something Ingrid had asked concerning "]
+[3193:seemed to be puzzled by something Ingrid had asked concerning "]
+[3194:seemed to be puzzled by something Ingrid had asked concerning "]
+;
+; messages for people recovering things they need
+; [3190:said, "I'll take that, thank you very much"]
+; [3191:said, "Give that to me"]
+; [3192:said, "That's mine"]
+; [3193:said, "Ah-ha! now I'll get it back"]
+; [3194:said, "Let me have it this minute"]
+;
+; now, npc accepts an order
+[3230:nodded in acknowledgement]
+[3231:nodded slowly]
+[3232:nodded obediently]
+[3233:agreed]
+[3234:nodded enthusiastically]
+;
+; [3230:said, "I'll get to it at once"]
+; [3231:said, "Of course, I'll be right there"]
+; [3232:said, "Yes, certainly"]
+; [3233:agreed, saying "Anything to oblige"]
+; [3234:nodded and said, "Right away, Sir"]
+;
+; now response to questions when not obedient...
+[3250:said, "You'll have to find that out for yourself, Ingrid"]
+[3251:said, "You won't get any help from me, young Ingrid"]
+[3252:pretended to ignore her question]
+[3253:demurred, saying "Sorry, but I really can't say"]
+[3254:spread sorrowful hands and said, "Ah, if only I could help.."]
+;
+; response to requests to give anything(s) to anyone
+[3270:said, "You'll have to fight me for that"]
+[3271:said, "I'd rather die than part with that"]
+[3272:said, "I'm not about to give anything away"]
+[3273:clutched at it, saying "It's mine! Clear off"]
+[3274:stared back in silent refusal]
+;
+; npc wants to obey orders just given, but can't understand any of them!
+[3290:looked puzzled]
+[3291:seemed to be confused by Ingrid's request]
+[3292:shrugged in non-comprehension]
+[3293:made a questioning noise]
+[3294:didn't seem to understand]
+;
+; [3290:said, "Sorry Ingrid, I don't understand"]
+; [3291:said, "It must be me, Ingrid, I can't understand what you're 
+; saying"]
+; [3292:said, "Pardon? Could you rephrase that"]
+; [3293:looked blank and said, "Eh?.."]
+; [3294:said, "Can we try that again? My grasp of English isn't quite what it 
+; should be"]
+;
+; Goldsinging...
+;
+; seamus
+[3390:broke wind nervously]
+[3391:twitched an eyebrow]
+[3392:toyed nervously with his left ear lobe]
+[3393:managed to force a wry smile]
+[3394:grinned uneasily]
+;
+; Male goldsinging
+[3400:blew his nose on his jumper]
+[3401:coughed into his fist]
+[3402:pushed his finger into his ear and began to waggle it about]
+[3403:looked at Ingrid and shook his head in despair]
+[3404:blew a loud raspberry in Ingrid's ear]
+;
+; Female goldsinging
+[3410:coughed quietly into a handkerchief]
+[3411:looked around absently]
+[3412:looked at Ingrid and sighed pathetically]
+[3413:broke wind loudly and then pointed towards Ingrid]
+[3414:hummed a little tune]
+;
+; daisy
+[3430:grinned to Ingrid]
+[3431:picked her nose thoughtfully]
+[3432:smiled broadly at Ingrid, and showed a mouthful of greenish black 
+teeth]
+[3433:scratched her head and disturbed a few fleas]
+[3434:blew her nose on her sleeve]
+;
+; artist
+[3440:whopped his paintbrush across a canvas and said, "Can you tell 
+what it is yet?"]
+[3441:violenly attacked a canvas with a large paintbrush, splattering 
+paint everywhere]
+[3442:sang about his didgereedo] ;**is this the correct spelling?**
+[3443:squinted at a blank canvas. "Can you tell what it is yet?", he said]
+[3444:wiped his hands on his overalls and left a large blotch of brown 
+paint on them. "Looks like an Aborigine, doesn't it?", he mused]
+;
+; butler
+[3450:said, "Good day, madam"]
+[3451:brushed a few specks of dandruff from his shoulders]
+[3452:poked his nose in the air and ignored Ingrid's presence]
+[3453:tripped over the tails of his suit and banged his nose on the 
+floor]
+[3454:rubbed the large beetroot-shaped object which he called his 
+nose]
+;
+; cook
+[3460:took a small sip from the ladel which she carried. "Just right," 
+he complimented]
+[3461:began to sing about blackbird pie]
+[3462:searched around for certain ingredients]
+[3463:straightened her white apron]
+[3464:flicked inconspicuously through her pocket recipe book]
+;
+; jasper
+[3470:clasped his hands together fiendishly]
+[3471:stood around looking devious]
+[3472:glanced at his watch. "I wonder when the police will arrive?", 
+he asked himself]
+[3473:sniggered pretentiously]
+[3474:grinned devilishly]
+;
+; again used following a command referring to scenery
+[3530:the previous command was not repeatable]
+[3531:you can't do that again]
+[3532:it wouldn't help to try that again]
+[3533:that was a once-only command. It doesn't do seconds]
+[3534:oh, not again! I've been through that once already]
+;
+[3560:dead] ; printed by follow code
+[3600:a voice in the distance shouted, "wow!
+A stack overflow". ] ;>>mike 28/3/88 - merged from 3 messages
+[3605:sorry, Ingrid will have to find her own way from here]
+;
+; conversational fragments...
+[3610:I am perfect in every way] ; must be capital at start
+[3611:you are a gnome]
+[3612:cleared its throat and said.. "]
+[3614:Ingrid yelled "ARRRGGGGGHHHHH"! ]
+;
+; 'npc, rude' word for talking people
+[3620:swore back at Ingrid]
+[3621:swore loudly]
+[3622:seemed very offended]
+[3623:said, "@@*!#/\*&@!!, to you too"]
+[3624:gave Ingrid a mouthful in reply]
+;
+; 'npc, help' for talking people
+[3640:said, "Help yourself, my dear Ingrid"]
+[3641:said, "I'd love to, but I wouldn't be any use to you"]
+[3642:said, "You'll get no help from me, my liege"]
+[3643:said, "I would if I could, but I can't so I shan't"]
+[3644:said, "Stand on your own two feet.. Oh, you are standing, sorry"]
+;
+; 'npc, echo verb' for talking people
+[3660:said, "You must be nuts"]
+[3661:said, "Sorry Ingrid, but I think you've cracked"]
+[3662:said, "That isn't possible. And if it is, it shouldn't be allowed"]
+[3663:laughed, "Oh! You are a hoot, Ingrid"]
+[3664:looked askance at Ingrid]
+;
+; gold-singing for various people...
+;
+; Garbage words..
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+^N good ^N of ^N cute ^N there]
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+^N warily ^N quickly ^N rapidly ^N following ^N around]
+[4002:^N please]
+[4003:^N road ^N Mister ^N Mr ^N Mrs ^N Miss ^N Bottomlow]
+[4004:^N telelily ^N lily ^N lilly ^N telelillie ^N lilie ^N lillie]
+[4005:^N type] ; type combination (gnome2.3)
+;
+; Book protection code...
+;
+[4200:%A funny little gremlin stopped Ingrid by waving a copy 
+of a rather tattered book. ]
+[4201:page ]
+[4202:, line ]
+[4203:, word ]
+[4204:?"%]
+[4205:The gremlin grinned nastily and Ingrid knew she was wrong. ]
+[4206:The gremlin vanished in a puff of pink smoke.%]
+[4207:It wanted to know the word at ]
+[4208:Wrong again! The gremlin snapped its fingers and everything 
+went black... ]
+;
+; ADD PROTECTION WORDS HERE, BUT DO NOT MARK NUMBERS (digits) e.g. 20  
+[4301:^C even ^C maintain]	;18,9,8
+[4302:^C writing] 	;39,10,5
+[4303:^C rat]		;40,1,6
+[4304:^C go]		;21,8,3
+[4305:^C it]		;38,3,4
+[4306:^C enter]		;3,4,1
+[4307:^C hundreds]	;4,1,2
+[4308:^C used]		;10,3,8
+[4309:^C used]		;10,3,8
+[4310:^C and]		;23,8,5
+;;[4311:]		;8,1,6
+[4312:^C go]		;21,8,3
+[4313:^C sure]		;38,9,4
+[4314:^C until ^C then]	;19,4,1
+[4315:^C level]		;4,3,2
+;;[4316:]		;33,2,7
+;;[4317:]		;2,7,8
+;;[4318:]		;7,2,5
+[4319:^C the]		;32,7,6
+[4320:^C I]		;37,2,3
+[4321:^C dusting]	;22,1,4
+;;[4322:]		;11,10,1
+;;[4323:]		;20,1,2
+;;[4324:]		;34,1,8
+;;[4325:]		;34,1,8
+[4326:^C brothers]	;31,10,5
+[4327:^C hadn't]	;40,7,6
+[4328:^C I]		;37,2,3
+[4329:^C old]		;22,7,4
+[4330:^C cabbage]	;27,6,1
+[4331:^C disappeared]	;36,9,2
+;;[4332:]		;9,6,7
+[4333:^C sure]		;26,5,8
+[4334:^C start ^C doesn't] 	;15,8,5
+;;[4335:]		;8,7,6
+[4336:^C won't]		;37,6,3
+[4337:^C below]		;6,3,4
+[4338:^C se]		;3,2,1
+[4339:^C instructions ^C section]	;12,1,2
+;;[4340:]		;18,3,8
+;;[4341:]		;18,3,8
+;;[4342:]		;23,2,5
+[4343:^C the]		;32,7,6
+[4344:^C won't]		;37,6,3
+[4345:^C climb]		;6,5,4
+[4346:^C asked]		;35,8,1
+[4347:^C and]		;28,9,2
+[4348:^C see ^C are]	;9,10,7
+;;[4349:]		;10,7,8
+[4350:^C axe]		;7,10,5
+[4351:^C hadn't]	;40,7,6
+[4352:^C is]		;37,10,3
+;;[4353:]		;30,1,4
+;;[4354:]		;11,8,1
+[4355:^C was]		;28,7,2
+;;[4356:]		;17,2,7
+;;[4357:]		;2,1,8
+[4358:^C through]	;31,8,5
+;;[4359:]		;8,7,6
+;;[4360:]		;37,10,3
+[4361:^C over]		;36,3,4
+[4362:^C enter]		;3,4,1
+;;[4363:]		;4,9,2
+[4364:^C the ^C like]	;9,4,7
+[4365:^C days]		;34,5,8
+[4366:^C from ^C of]	;15,6,5
+;;[4367:]		;16,3,6
+[4368:^C insert ^C the]	;13,4,3
+;;[4369:]		;14,9,4
+[4370:^C readme ^C insert]	;19,10,1
+[4371:^C moved ^C dimple]	;20,7,2
+[4372:^C white ^C use ^C slide]	;17,6,7
+[4373:^C washing]	;26,9,8
+[4374:^C writing]	;39,10,5
+;;[4375:]		;40,3,6
+[4376:^C insert ^C the]	;13,4,3
+[4377:^C enter]		;14,5,4
+[4378:^C doomladen]	;35,6,1
+[4379:^C I]		;36,5,2
+[4380:^C the]		;25,8,7
+;;[4381:]		;18,3,8
+[4382:^C and]		;23,8,5
+;;[4383:]		;8,3,6
+;;[4384:]		;13,8,3
+[4385:^C me]		;38,7,4
+[4386:^C one]		;27,2,1
+[4387:^C loading ^C for]	;12,7,2
+;;[4388:]		;17,10,7
+;;[4389:]		;10,7,8
+;;[4390:]		;7,6,5
+;;[4391:]		;16,3,6
+;;[4392:]		;13,8,3
+[4393:^C it]		;38,3,4
+[4394:^C se]		;3,2,1
+[4395:^C to ^C bs24]	;12,5,2
+[4396:^C at]		;25,2,7
+;;[4397:]		;2,1,8
+[4398:^C brothers]	;31,10,5
+;;[4399:]		;40,3,6
+[4400:^C the]		;13,2,7
+;
+; Racetrack messages
+;---
+;* butler answering door *
+[5000:% %Ingrid heard somebody knocking on the front door of the manor.% 
+%
+"My, my," began the butler, "Do I hear somebody knocking at the 
+front door? Ah well, I'd better go and answer it"]
+[5001:said, "Oh, it's you again! I thought I told you to enter the manor 
+through the servants' entrance. Be off with you!"]
+[5002:% %The butler moaned, "I'm fed up of climbing these rotten old 
+stairs every time somebody knocks on the door!"]
+[5003:got his breath back after climbing the stairs. "I'm fed up!", he 
+protested, "It's always me who has to keep answering that ruddy door!"]
+;
+;* butler racetrack *
+[5011:made sure that the chandelier was tied securely to the balustrade. 
+"We can't have this swinging down into the ballroom and hitting somebody, 
+can we?", he muttered as he dusted a few cobwebs off it]
+[5012:% %Daisy began to make fun of the butler behind his back. She poked 
+her nose in the air and walked around haughtily, while Ingrid giggled 
+quietly to herself]
+[5013:% %The butler plodded around, guarding Jasper's office, which was to 
+the south. "Get away from this office," he shouted at Ingrid, "It's Jasper's and 
+it's private"]
+[5014:% %Daisy began to immitate the butler's funny walk behind his back]
+[5015:% %The butler turned around and saw Daisy making fun of him behind 
+his back. "This'll teach you to make fun of me," he shouted as he 
+smacked her over the head with his feather duster]
+[5016:polished the balustrade until it was gleaming. "That's just about 
+right," he said as he climbed onto it. He lifted his legs up and then 
+slid down the balustrade and bashed his backside on a large wooden thing 
+at the end.% 
+%
+He straddled back up the starircase bow-legged and said, "Gee, that was 
+fun!", in a high pitched, squeaky voice]
+[5017:inspected the paintings one by one, and straightened a few of the 
+crooked ones]
+[5018:stood infront of Jasper's office like a sentry on guard duty. 
+"Nobody but Jasper is allowed in this office," he said. "Now clear off 
+and stop bothering me!"]
+;
+;* underlay racetrack *
+[5020:said, "Ah, you must be the new maid. I see that you've arrived 
+a day early. You're duties don't start until tomorrow, so keep out of 
+my way until then!"%
+She gave Ingrid a sickly grin and continued sweeping the kitchen floor]
+[5021:pointed at Ingrid and muttered to the cook, "I bet she doesn't know 
+one end of a broom from the other".%
+The cook smirked and said, "She looks more like a gargoyle than a maid, 
+doesn't she?". They both pulled faces at Ingrid and fell about laughing]
+[5022:sighed and said, "Ah, well. I can't stand around here all day making 
+fun of the new maid. I'd better get back to work"]
+[5030:made a pouch in her pullover and began to shovel coal into it using 
+a large scuttle]
+[5031:threw open her pullover and emptied a heap of coal onto the fire. She 
+poked it for a while until the flames reached the cooking pot]
+[5032:% %Daisy knelt in front of the fire and attempted to blow it out.%
+"Hoi! You little pest!", stormed Mrs Underlay, "If you don't stop that I'll 
+throw you in the ruddy fire!"]
+[5033:toasted a slice of bread over the fire and then dipped it into the 
+cooking pot. She nibbled it contently and dribbled stew down her apron]
+[5040:laid out the knives, forks and spoons neatly on the table]
+[5041:% %Daisy decided to help Mrs Underlay set the table, but only 
+succeeded in smearing her greasy fingers all over the cutlery. Mrs 
+Underlay prodded her with a fork and told her to go away in short, jerky 
+movements]
+[5042:took some wine glasses out of a wall cabinet and arranged them 
+on the table]
+[5043:% %Daisy "helped" Mrs Underlay clean some of the wine glasses by 
+spitting in them and polishing them out with her grubby jumper]
+[5050:was taking a crafty nap when Ingrid entered the room. Suddenly, she 
+woke up with a start and saw Ingrid watching her.%
+"Oh, er, I was just er, testing the sofa," she said with a feeble grin, 
+"It's all go, being a housekeeper! No time to hang around, you know,"%
+And with that, she went about her business dusting the furniture]
+[5051:% %"Aha! Caught you snoozing on the job," said Daisy to Mrs 
+Underlay, "Just wait until I tell Jasper!"%
+"I've told you once," replied Mrs Underlay, "I was 'testing' the sofa!"%
+Daisy smiled in complete disbelief. "I'll tell on you," she repeated]
+[5052:suddenly began to dust the furniture with more enthusiasm]
+[5053:% %Daisy watched Mrs Underlay slaving away and said, "That's more 
+like it! Chop! Chop! Chop!"%
+Mrs Underlay muttered obscenities under her breath as she vigourously 
+polished a coffee table]
+[5060:dusted the fireplace and then looked up the chimney shaft. 
+"Tut, tut," she tutted, "The soot inside here looks thick enough to 
+climb"]
+[5061:% %Daisy watched Mrs Underlay clean the fireplace. "Nice to see you 
+working, for a change", she said.%
+"Put a sock in it, Daisy," replied Mrs Underlay]
+[5062:finished cleaning the fireplace and then emptied all the ash trays 
+into it, getting ash everywhere again]
+[5070:knelt down and began to polish the parquet floor]
+[5071:% %Daisy slipped on the highly polished floor and fell head over 
+heels. When she had managed to stand up again, she grabbed hold of Mrs 
+Underlay's polishing rag and angrily tore it to pieces.%
+Mrs Underlay pushed Daisy back onto the floor and grinned smugly]
+[5072:did a little waltz across the floor]
+[5080:popped into the nursery with a clean bucket and mop. She returned 
+soon after with a brown mop and a bucket full of nappies. "Filthy little 
+perishers!", she muttered]
+[5085:wandered off to tidy the manor bedrooms. She returned in disgust, 
+complaining about the magazines she found under old Grandfather 
+Quickbuck's mattress]
+;
+;* daisy intro *
+[5090:greeted Ingrid with a grubby handshake and said, "Ignore Mrs 
+Underlay; she's just the silly old housekeeper. If you stick with me, 
+I'll show you around the manor"]
+;
+;* jasper's racetrack *
+[5101:% %Jasper looked around suspiciously just to make sure he wasn't 
+being watched by anyone]
+;
+;FROOP
+[5110:fumbled with the portrait and told Ingrid to go away and stop 
+being nosey]
+[5111:stood suspiciously in front of the portrait. "Go away," he shouted 
+at Ingrid, "You've no business to be spying on me like that"]
+[5112:paced up and down, waiting for Ingrid to leave]
+[5113:straightened the portrait. "Stop watching me like that," he said 
+to Ingrid, "Have you no work to be getting on with?"]
+[5114:stood by the portrait and folded his arms. "Can't you go and 
+pester somebody else?", he said to Ingrid]
+;
+[5120:said, "I suppose you could make a start by cleaning this office, 
+but I'll fire you if I catch you looking in my desk"%
+"I wouldn't dream of it," replied Ingrid with a smile that revealed 
+everything but innocence]
+[5130:lifted the bed covers and took a copy of "The Beano" out from under 
+the mattress]
+[5131:% %Daisy watched Jasper reading his comic and said, "Isn't 'The 
+Beano' a little too old for you, Jasper?"%
+"Shut up," he replied, "I'm only looking at the pictures"]
+[5132:took a fat cigar out of his bed-side cabinet and lit it up. He 
+puffed it vigourously while reading his comic]
+[5133:% %Suddenly, Jasper's cigar exploded with a loud bang and blew 
+his eyebrows off. "Phew! The tobacco's a bit strong in these cigars," he 
+spluttered as Daisy innocently concealed a box of bangers behind her 
+back]
+[5134:hopped onto his bed and read his comic with great interest. His 
+tongue slobbered uncontrollably out of the corner of his mouth and dribbled 
+all over Dennis the Menace]
+[5140:began to do press-ups by the pool and collapsed on the third one]
+[5141:said, "Hmm, I fancy a nice refreshing swim. I think I'll go and 
+get changed]
+[5150:inflated his rubber arm-bands and put them on his puny little arms. 
+He walked over to the side of the pool, clasped his hands together, and 
+then dived in feet first]
+[5151:swam a length of breast stroke and then spluttered to get his breath 
+back. "It's too much hard work, this swimming business," he gasped]
+[5152:climbed onto a li-lo and poured himself a martini. He lit up a 
+cigarette and smoked it majestically while speaking to somebody on his 
+cordless telephone]
+[5153:burned a hole in his li-lo with his cigarette and suddenly found 
+himself being propelled around the pool by the escaping air. After two 
+or three laps, the li-lo finally ran out of air and sank, taking Jasper 
+down with it]
+[5154:climbed out of the pool looking like a drowned rat. He threw his 
+soggy cigarette onto the floor and sqashed it angrily with his foot.%
+"I've had enough!", he grumbled, "I'm going to change back into my 
+clothes"]
+[5160:picked up a mallet and swung it back, ready to hit a croquet ball]
+[5161:% %Just as Jasper was about to strike the ball, Daisy crept up 
+behind him and burst a crisp bag rather loudly]
+[5162:Jasper took the swing and missed by about three feet and took a large 
+chunk of grass out of the lawn]
+;
+;* cook racetrack *
+[5180:grinned broadly at Ingrid. "I'm sure you'd love to try one 
+of my home-made scones," she said as he offered one of them to Ingrid. 
+"But be careful, because they're still rather hot"% 
+%
+Ingrid paid little attention to the cook's warning as she eyed the 
+delicious scone that she had been offered]
+[5181:mixed some ingredients into a bowl and stirred them while smoking 
+her cigarette. "Whoops," she said as she spilled some ash into the bowl, "Never 
+mind, it all adds to the flavour"]
+[5182:% %Daisy sneezed into the cook's mixing bowl. "That should add some 
+more flavour for you," she said.
+"You're so kind," said the cook with an ungrateful scowl]
+[5183:emptied the mixture out of the bowl and began to knead it into 
+dough]
+[5184:forced the dough into a few Mickey Mouse bread moulds and then 
+put them in the oven to bake]
+[5190:walked out into the yard carrying a hatchet and soon returned, 
+chasing a chicken.% 
+%
+The chicken ran around the kitchen clucking frantically, while the cook 
+chased after it, waving her hatchet violently in the air]
+[5191:chased the chicken back outside into the yard. Ingrid heard a series 
+of mad clucks and then the cook returned with the chicken tossed over 
+her shoulder]
+[5192:% %The cook plucked the chicken, throwing the feathers into a neat 
+pile by his side. Suddenly, one of the feathers landed on Daisy's nose and 
+she sneezed, sending all the feathers up into the air.% 
+%
+Eventually, they settled back down again on the cook and made her look 
+like something from Sesame Street]
+[5193:gutted the chicken and threw the guts into the stewing pot in 
+the fireplace. "That'll do for the Daisy's supper," she laughed]
+[5194:stuffed the chicken with a large orange and put it into the oven 
+next to the bread]
+[5200:chopped a up a variety of turnips, bananas and cheeses and then 
+tossed them into the stewing pot in the fireplace]
+[5201:% %Daisy had a whiff of the stew and immediately vomitted in it. 
+"I hope you like diced carrots," she said to the cook.%
+"Oh, don't worry about that," replied the cook, "I won't be eating it. 
+It's for your supper"]
+[5202:stirred the stew slowly, while holding his nose]
+[5203:poked the fire and sent flames curling up the sides of the stewing 
+pot]
+[5210:swept the chicken feathers up from the floor and emptied them 
+into a paper bag]
+[5211:emptied a bag of chicken feathers into the dustbin]
+[5220:suddenly remembered that the bread was still in the oven and dashed 
+across the kitchen to take it out. Unfortunately, to say that the bread 
+was a little over-done would have been an understatement. It had 
+been completely burned to a cinder.% 
+%
+"Never mind," said the cook as she threw the bread onto the fire, "I bet it 
+makes great coal"]
+[5221:% %Daisy watched the bread burning in the fire and said to the 
+cook, "You're right! You ought to go into the coal business"]
+[5222:opened the oven and took out the chicken. "Ah, this looks luvly," she 
+said as she put the chicken on the worktop. "I could almost eat it all 
+myself". And apparently, she did]
+[5223:finished eating the chicken and then decided to wash it down with 
+a few bottles of wine. After which, she had a little snooze and then 
+woke up refreshed.% 
+%
+"Well," she sighed, "I'd better make some more bread and chicken"]
+;
+;* artist racetrack *
+[5230:said, "I'm glad to see that you haven't brought any of that 
+terrible 'Hogan' lager with you, sport. I hate the stuff!"]
+[5231:put the finishing touches to a painting showing a vase of 
+sunflowers. "Can you tell what it is yet?", he said]
+[5232:% %Daisy replied, "It looks more like a trodden-down daisy than 
+a Vangough"]
+[5233:took a pocket television out of his apron and switched it on. 
+The theme tune to "Neighbours" was just beginning.% 
+%
+"I can't stand these cheap Aussie soaps!", he protested, and he threw 
+the television out of the window]
+[5234:said, "And now for a picasso...". He put on a silly hat with corks 
+dangling from the brim, and then dipped the corks carefully in a variety 
+of coloured paint pots. Then he shook his head violently over a blank 
+canvas and splattered it with random streaks of coloured paint]
+[5235:dipped a boomerang in a pot of red paint and made boomerang shaped 
+splodges on his canavas]
+[5236:% %Daisy spilled a tin of paint over a blank canvas. "Whoops! Clumsy 
+me," she said.%
+"Brilliant work, sport!", complemented Rulf, "A perfect Andy Warhol!"]
+[5237:began to sing while he worked, "Two little boys had two little 
+thingies,".%
+"Come on everybody, join in," he enthused. Ingrid just gave him 
+a sort of look which told him to put a sock in it]
+[5238:folded up some serviettes and made a scale model of Sydney Opera 
+House]
+[5239:% %Daisy sorted through the stack of paintings and said, "I didn't 
+know the Mona Lisa was an Aborigine"]
+[5240:took a lump of red clay and threw it onto the floor. "And that's 
+how to make a model of Ayre's Rock!", he explained]
+[5241:opened his lunch box and ate his kangaroo sandwiches. For desert, 
+he scoffed a clump of eucalyptus leaves and then climbed along the beams 
+in the attic until the effect wore off]
+[5242:went into a mad fit of nervous twitching and excessive huffing and 
+puffing. When he had finished, he wiped the dribble from his chin and 
+spluttered, "Those eucalyptus leaves sure have terrible side effects, 
+mate"]
+[5243:signed a Constable forgery by writing "P.C.Plodd" on it]
+[5244:showed Ingrid a picture of a barren desert with a small shrub in the 
+middle. "And I call this one 'The Bush'", he announced]
+[5245:began to talk to Ingrid about cinema. "Oh, and if you're thinking 
+of going to see Koala Bear Dundee II," he advised, "then forget it! It's 
+just about an Aussie twerp who drinks gnat's-piddle"]
+[5246:picked up a painting that had just dried out and began to rub it 
+with brillo pads. "That should put a few hundred years onto it", he 
+said]
+;---

@@ -1,0 +1,312 @@
+; Hires code for Gnome Ranger
+;
+; Taken from Time+Magik Chain code
+;
+; M.J.Austin 21:52 9/9/87
+;
+; Copyright (c) 1987 Level 9 Computing.
+;---
+begin
+;
+; game starts here when first run.
+
+.StartGame
+ message space
+ message cr
+ if thisgame=GnomeRanger then start2
+
+ cif part1
+; for first part, clear+initialise
+  clear
+  gosub @essentialinit
+  goto initall
+ cend
+
+; for subsequent parts, restart part 1
+ gosub @essentialinit ; set up vars etc.
+ if c0=diskversion then start1
+ message 2312 ; wrong game.
+ parttochain=1
+ thisgame=0 ; cause p1 to restart
+ goto @chainparttochain
+
+.start1
+; cassette start with junk data in memory
+; clear part1/part12 score
+ list9(1)=c0
+ list9(2)=c0
+ list9(3)=c0
+ list9(4)=c0
+ message 2319 ; you'll have to restore
+ ThisGame=0
+ restore
+ if GameOver=True then start1
+ goto @AfterRestore ;AbsDoRestore
+
+.start2
+; this was definately chained from some part of KO
+; the part it was chained from is "THISPART"
+ if parttochain<>constantpartnum then notchained
+ if thispart<>constantpartnum then notchained
+; data is a position saved from this part.
+; must have loaded a saved position into another part
+; which caused this part to be chained in.
+ goto @afterrestore ;cancelinput
+
+.notchained
+ if thispart=constantpartnum then initall ; restarting this part
+; we are chaining in from another part...
+ if thispart<>2 then notsolvedtimelords
+; x1=list2(0)
+; if x1<>174 then notsolvedtimelords ; haven't properly solvedtimelord
+; solvedtimelords=true
+.notsolvedtimelords
+
+ x2=thispart ; set up THISPART.
+ thispart=parttochain
+; gosub @setuppartdependentobjects
+; if x2<>1 then @cancelinput ; (chaining in from alternate
+;			      of P2/P3, so just go straight into game)
+; we are chaining in from part 1
+
+.INITALL
+ gosub essentialinit ;>>mike 20/7/87
+ screen g c0
+ goto @normalStartGame
+;-----------------
+.essentialinit
+ list9(0)=thispart
+
+ cif part2
+  x1=part1score
+  x2=256
+  gosub @x1divx2
+  list9(1)=part1score
+  list9(2)=x1
+ cend
+
+ cif part3
+  x1=part12score
+  x2=256
+  gosub @x1divx2
+  list9(3)=part12score
+  list9(4)=x1
+ cend
+
+
+ CLEAR ; clears all variables
+ thispart=list9(0)
+
+ cif part2
+  part1score=list9(1)
+  value=list9(2)
+  gosub @valuetimes256
+  add part1score,value
+ cend
+
+ cif part3
+  part12score=list9(3)
+  value=list9(4)
+  gosub @valuetimes256
+  add part12score,value
+ cend
+
+ thisgame=GnomeRanger
+; initialise some variables which retain their values throughout
+; the game
+ C1=1
+ C2=2
+ C3=3
+; C4=4
+ c6=6IncludePictures
+
+
+ x3=0
+.waitpic1
+; make sure picture 1 has finished loading before doing any other pics
+ x2=34 ; is picture still being drawn?
+ list9(0)=x2
+ list9(2)=c0 ; fix latent bug
+ driver
+ add x3,c1
+ if x3=20000 then waitpic2 ; ensure infinite loop is impossible (15 sec)
+ x2=list9(2)
+ if x2=1 then waitpic1
+ if x1=1 then drawing1
+.waitpic2
+ picture1displayed=true ; picture 1 is ALWAYS the first pic to be shown.
+; BUT we can only be certain it is finished when we draw the next one.
+
+IncludePictures
+
+
+ x3=0
+.waitpic1
+; make sure picture 1 has finished loading before doing any other pics
+ x2=34 ; is picture still being drawn?
+ list9(0)=x2
+ list9(2)=c0 ; fix latent bug
+ driver
+ add x3,c1
+ if x3=20000 then waitpic2 ; ensure infinite loop is impossible (15 sec)
+ x2=list9(2)
+ if x2=1 then waitpic1
+ if x1=1 then drawing1
+.waitpic2
+ picture1displayed=true ; picture 1 is ALWAYS the first pic to be shown.
+; BUT we can only be certain it is finished when we draw the next one.
+
+.drawing1
+ xcoord=0
+ ycoord=0
+ if x1=1 then dp4
+ xcoord=48
+ ycoord=8 ; >> was 10 for knight orc
+
+.dp4
+ x2=32
+
+ list9(0)=x2
+
+ list9(1)=c0
+ list9(2)=x1 ; picture number to draw
+
+.picturenotcheat
+ list9(3)=c0
+ list9(4)=xcoord
+
+ list9(5)=c0
+ list9(6)=ycoord
+ driver
+
+ cend ; pictures
+
+ goto @restorelist9
+
+;---
+.diskinterlock
+
+ cif IncludePictures
+
+  x1=200 ; stop all picture drawing
+  gosub @waitpic ; (will finish picture 1 first, if not yet displayed)
+
+ cend
+
+;
+; this message printing/osrdch should take long enough
+; for there to have been a task swap since the above "kill picture"
+; command.
+ cif NotMac
+  message 2301 ; please insert save disk and strike a key
+  x2=25000 ; good long time to wait
+  gosub @timeoutosrdch
+  message cr ; to signal to user that we have acknowledged.
+ cend
+
+ cif IncludePictures
+
+  x3=0
+.restoredelay
+  x2=34 ; is picture still being drawn?
+  list9(0)=x2
+  list9(2)=c0 ; fix latent bug
+  driver
+  add x3,c1
+  if x3=20000 then dpret ; ensure infinite loop is impossible (15 sec)
+  x2=list9(2)
+  if x2<>0 then restoredelay ; loop if ANY picture displayed.
+
+ cend
+
+.dpret
+ return
+;---
+.RESTORE
+ Message 2202 ; really restore ?
+ GOSUB @YESORNO
+ if result=false then restoreend 
+; if y1=0 then restoreend ;>>Mike 15/7/87 IF RESULT=FALSE THEN RESTOREEND
+
+.DORESTORE
+ GOSUB @BOOKPROTECT
+ IF RESULT=FALSE THEN AFTERDORESTORE
+ gosub diskinterlock ; finish all picture activity first.
+ RESTORE
+ cif NotMac
+  message 2302 ; please reinsert game disk
+ cend
+
+.afterdorestore
+ if gameover=true then @restartorrestore ; restore failed.
+;>>mike 19/7/87 NOMOREINPUT=FALSE
+;>>mike 19/7/87 EOL=FALSE
+;>>mike 19/7/87 GOSUB @GETNEXTWORD
+
+.AFTERRESTORE
+ OOPSPOS=1 ; musn't do an oops now - to prevent corruption if
+ OOPSPOSEND=0 ; type OOPS immediately after a restore
+.OopsAfterRestore
+.afteroops ;>>mike 19/7/87
+ LASTPICTURE=0 ; allow picture to be drawn
+.RESTOREEND
+ if thisgame=GnomeRanger then restore1
+.wronggame
+ message 2312 ; wrong game
+ goto @restartorrestore
+
+.restore1
+ if thispart=constantpartnum then restore2
+ parttochain=thispart
+
+.chainparttochain
+ if c1=diskversion then diskchain
+ message 2311 ; you are about to chain - do you want to save first?
+ actor=user
+ gosub @yesorno
+ if result=false then cassettechain
+ save
+ goto @chainparttochain ; allow multiple copies
+
+.cassettechain
+ message 2313 ; put in cassette containing part number
+ print parttochain
+ message dot
+ message cr
+
+.diskchain
+; chain in "PARTTOCHAIN"
+ x1=200
+ gosub @waitpic ; kill any picture which is currently loading
+ x1=11
+ list9(0)=x1
+ list9(1)=parttochain
+
+; pass data to part 2 in first byte of currentpos/hicurrentpos lists...
+; currentpos(0)=ropelength ; score
+; hicurrentpos(0)=c0 ; no cloak unless changed....
+
+ driver
+ goto @restartorrestore
+
+.restore2
+ GOTO @gameafterrestore
+;---
+;---
+.osrdch
+ gosub @savelist9
+ x1=3 ; osrdch
+ list9(0)=x1
+ driver
+ x1=list9(1)
+ goto @restorelist9
+;---
+.SAVE
+ gosub @diskinterlock
+ SAVE
+ cif NotMac
+  message 2302 ; please insert game disk
+ cend
+.SAVERET
+ RETURN
+;---

@@ -1,0 +1,219 @@
+; Standard adventure source, copyright (C) 1987 Level 9 Computing.
+;
+; SCONST, game-specific constants. You will probably need to change 
+; most of the values of these. 
+;
+; A standard labelling convention for constants is that constants 
+; preceded by I (e.g ILOOK) are relative to their appropriate offset 
+; (e.g verboffset).
+;
+CONST
+ standardadventure=1806 ; unique game identifier value
+;
+;
+ MAXMOVEABLE=129 ; MAX OBJECT WHICH MAY BE TAKEN, THROWN ETC.
+ MAXMOVEAPLUS1=130
+
+ xmax=6 ; co-ords go 0..xmax - remember to change room 1 exits.
+ xmaxplus1=7
+ ymax=6
+; 
+ minsynthroomminus2=111
+ minsynthroomminus1=112
+ minsynthroom=113 ; the first room on the grid (bottom left hand corner)
+ maxsynthroom=141
+;
+ minsceneryobj=180
+ minsceneryobjminus1=179
+ maxsceneryobj=190
+ maxsceneryobjplus1=191
+ minsceneryobjtimes2minus1=359
+ maxsceneryobjtimes2plus2=382
+ numsceneryobjplus1=11
+;
+ minweaponminus1=39
+ minweapon=40
+ maxweapon=43
+ maxweaponplus1=44
+;
+ minclothes=99 ; 60
+ maxclothes=99 ; 61
+;
+ minfood=80
+ maxfood=81
+ maxfoodplus1=82
+
+ mintreasure=84 ; used for ingredients range in gnome2
+ maxtreasure=91 ; used for ingredients range in gnome2
+
+ minallobject=40
+ maxallobject=129
+
+ MAXOBJECTVISIBLE=159
+ MAXOBJECT=184 ; includes scenery objects.
+; goes wrong for maxobject>190 (dunno why!)
+; - inventory gets a funny value for hisearchpos (24)
+ MAXOBJECTPLUS1=187
+; 
+ MINOMNI=158 ; all real objects above this are omni-present
+ MINOMNIMINUS1=159
+ MAXOMNI=260 ; must include ieverything, except, it
+;
+; Preposition values (all relative to prepoffset)
+;
+;; riddenby=6
+ growingfrom=9 ; >>special to GNOME-II
+ FASTENEDTO=14
+
+ through=209
+;
+; VERBS...
+ iburn=115
+ ikiss=129
+ itakegoldtopub=137 ; for npcs only
+;; irecruit=146
+ ipast=162
+;; ifly=163
+ iwalk=164
+ icatch=165
+;---
+;
+; Offsets into SCORETABLE..
+ scmax=5
+ scmaxplus1=6
+;
+; Objects..
+ user=1
+ icechild=2
+ icewarrior=3
+ icejester=4
+ icequeen=5
+ icepeople=6
+ firefighter=7
+ fireguard=8
+ fireking=9
+ firepeople=10
+ gate=11
+ gnome=12
+ penguin=13
+ penguins=14
+ yeti=15
+
+ diamond=80
+ emerald=81
+ ruby=82
+ sapphire=83
+ boulder=84
+ cobblestone=85
+ flint=86
+ fossil=87
+ gravelheap=88
+ pebble=89
+ slate=90
+
+ cloudstuff=95
+ egg=96
+ keylog=97
+ sack=98
+ snowshoes=99
+
+ dam=130
+ debris=131
+ iceBridge=132
+ icefall=133
+ icefloe=134
+ signpost=135
+ treetrunk=136
+
+ ithing=246
+ iroom=243
+;
+ minpeople=1 ; = creaturebase
+ maxpeople=15 ; = maxnpc
+ maxpeopleplus1=16
+;
+ creaturebase=1 ; includies=100 ; 5 bytes per queued-command entry on stack
+;
+ npcstackentrysize=5; each entry is 5 bytes (hence the 5's above)
+;
+ npctablesizetozero=1039 ; =vandalmax
+; vandalised rooms table follows the above in list 6..
+ vandalbase=1029 ; maxnpcentries*5+npcstackbase 
+ vandalmax=1039 ; vandalbase+10
+ PotionWorkspace=1168 ; 4 bytes used in list 6, offset 1 from here.
+;
+; offsets within each npc table entry in list 6..
+ enemyoffset=0
+ followoffset=1 ; person to follow normally
+ masteroffset=2 ; the peies=100 ; 5 bytes per queued-command entry on stack
+;
+ npcstackentrysize=5; each entry is 5 bytes (hence the 5's above)
+;
+ npctablesizetozero=1039 ; =vandalmax
+; vandalised rooms table follows the above in list 6..
+ vandalbase=1029 ; maxnpcentries*5+npcstackbase 
+ vandalmax=1039 ; vandalbase+10
+ PotionWorkspace=1168 ; 4 bytes used in list 6, offset 1 from here.
+;
+; offsets within each npc table entry in list 6..
+ enemyoffset=0
+ followoffset=1 ; person to follow normally
+ masteroffset=2 ; the person or creature who subdued this npc
+ hitpointoffset=3
+ hatredoffset=4 ; the amount which this npc hates its enemy
+ npcptroffset=8
+ boredomoffset=9
+ attentionoffset=10
+; and offsets within each corresponding entry in npcinitial, list 5..
+ dodgeoffset=1
+ attackoffset=2
+ greedoffset=4 ; in static data
+ aggressionoffset=5 ; in static data
+ timidityoffset=6 ; in static data
+ obedienceoffset=7
+ goldsingingoffset=8 ; in static data - word (hi byte first)
+ patienceoffset=10;
+; 
+
+
+TABLE
+ list6=6
+
+; game-specific variables...
+
+VAR
+ CentaurOnHoliday ShopOpen ErrandOffered Itemsdeposited CentaurIntroduced
+ CentaurMetRecently EnvelopeOpened
+ NymphHappy
+ ActorHoldingRock
+ EagleFriendly
+ LeprecaunFriendly
+ DogsHaveToldIngrid
+ DogBarking
+ WitchLookingOut
+ BackDoorBroken
+ DogGone
+ WitchStoningEveryone
+ FollowingSomeone Misty
+ LeprecaunTime
+ DogsHaveFused
+ UnicornHappy
+;----------
+ HaveKilledPlant
+ StartPotionTable
+ IngredientNumber
+ CurrentBook
+ HoldingBreath
+ WeedkillerSmeared
+ BoulderRocking
+ BeanStalkState
+ HOldingCaveMouth
+ HaveDrunkAntidote
+ FlowerRaised
+ GreenSlaveAnimated
+;----
+ GemsAttached GateIntroduced
+ YetiIntroduced FireKingIntroduced IceQueenIntroduced IceChildReturned
+ OnRiver RiverUnDammed WaterLevel DamHeight
+ ThankedForRiver
+ RubyTime

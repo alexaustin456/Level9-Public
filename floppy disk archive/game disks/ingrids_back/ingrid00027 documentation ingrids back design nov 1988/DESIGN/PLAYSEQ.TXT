@@ -1,0 +1,196 @@
+
+    INGRID'S BACK! PLAY SEQUENCE. COPYRIGHT (C) 1988 LEVEL 9
+    --------------------------------------------------------
+
+The following list of commands takes you through all three parts 
+of Ingrid's Back, solving the puzzles as intended and completing 
+the game fairly quickly. You should also try the system features: 
+SAVE/RESTORE, RAM SAVE/RESTORE, UNDO, WORDS, PICTURES, editor etc. 
+
+Because the gnomes move about quite a bit, you may find one of 
+them gone when the time comes for them to help Ingrid. Just try 
+something like "FIND JUMBO", "FOLLOW FLOPSY" or "WAIT FOR GNORA" 
+and continue when Ingrid has found them again. 
+
+In the commands, "|" means "Enter or Return". 
+
+1 | inv | examine all | sign petition and read it 
+n | in | examine mug and drink it 
+e | offer petition to Boney Spratt | knock on door 
+go to bar | offer petition to Jumbo Butterpat 
+follow Flora Butterpat | offer petition to Flora 
+
+go to Ploughgnome Lane | e | n | s | se 
+follow Bumpy | offer petition to Bumpy 
+follow Gnoah | offer petition to Gnoah 
+follow Gnora | offer petition to Gnora 
+follow Grandma Gnutson | offer petition to Grandma 
+follow Dimple Bottomlow | offer petition to Dimple 
+follow Gnoggin Bottomlow | offer petition to Gnoggin 
+follow Arback Garden | offer petition to Arback
+
+run to Shop | in | offer petition to Miss Farthing 
+get groceries | run to notice and read it 
+east | Flopsy, go east | east | examine bush and bellrope 
+open door | pull bellrope | z 
+pull bellrope and hide in bush 
+get out. Drop groceries. Pull bellrope and hide in bush 
+get out | offer petition to Dusty 
+
+run to smithy | s | get in carriage | offer petition to Gnat 
+go to Hill. Go to bridge. E | examine carriage 
+n | n | in | drop petition. Out. In. Get it and read it 
+go to manor. Read gnotice 
+go to Ferry Cottage | wait for Boney | give petition to Boney
+read petition 
+
+find isfrunt | look | knock on door 
+se | ne | knock on door 
+a | run to high street | find isfrunt 
+Flopsy, wait 5 | se | ne | knock on door 
+
+find Great Aunt | look | e | read gnotice | e 
+follow Great Aunt | offer petition to Great Aunt | read petition
+
+run to Greater Cawing | Rook, hello 
+Rook, carry me and fly to Lighthouse | examine rook 
+down | offer petition to Millie | out 
+
+find Seamus | find Mrs Tackhammer 
+up | e | get ladder.w.drop ladder.up 
+offer petition to Mrs Tackhammer 
+examine wardrobe. open it. offer petition to Seamus 
+read petition. score
+run to Great Aunt and follow her 
+offer petition to Great Aunt 
+
+
+[Part 2] 
+
+open door | z.z.z.z 
+d | examine table | take loaf and examine it 
+find steamroller and examine it
+e | get plans | flopsy, get plans 
+e | lie down | Gnoah, lie down | examine chimney 
+z.z.z.z.z.z.z 
+
+run to trapdoor.examine trapdoor 
+run to well.examine well 
+se | in 
+run to soggybottom and wait for steamroller 
+z.go to dam
+hit dam.go to steamroller.put loaf in chimney
+nw | exits | w | n | in 
+examine root 
+flopsy,wait,wait for me and bite root 
+d.u | score
+
+go to mill | in | up | examine cask,sack,brake,lever | get all
+pull brake | push lever,pull it,push it 
+d.out | examine hook | wait 5 
+Flopsy,pull the lever
+z.attach hook to Doldrum 
+
+run to Soggybottom and get all
+run to trapdoor and open it 
+wait for Gormless
+push gormless.close trapdoor.put sack on trapdoor.score.z 
+
+find Fuddle | find well | put blue telelily in well 
+drop green telelily | stand on green telelily 
+get handbag | stand on blue telelily | get all 
+put green telelily on Fuddle | put green telelily in well 
+
+se | run to sandybottom | n 
+take brick.a.a.a.a.score 
+
+run to farmhouse.in 
+wear lipstick and perfume 
+offer cask to chugg
+u | inv | score | z.put deeds under door 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Part 3] 
+
+north | wave | n.n | knock on door 
+go to servants' yard | n | w | w | daisy,follow me 
+go to dustbin and examine it | examine rubbish | no 
+Daisy, search rubbish | Daisy, give letter to me 
+read letter 
+
+go to kitchen.up 
+out.w.w.w.w 
+read books.a.a.a.a.a.a.a.a.a 
+
+run to banquetting hall | in | up | up 
+examine hole | find paintings 
+look | examine tree | examine shadow 
+in | up | wait 6 | west 
+examine Rulf and paintings.z | examine painting and get it 
+
+go to banquetting hall | west | up 
+ [ram save | s | ram restore] 
+Daisy, hit knocker,z,hit it,z,hit it,z,hit it,z,hit it 
+wait 10 | s
+examine telephone and desk 
+examine paper and get it 
+examine drawer and remove it 
+get cheque stubs | north 
+
+w | w | w | s 
+examine window | open it | out 
+w | s | examine antiques | get diamond 
+run to loft and drop all
+
+run to reading room 
+examine fireplace | in | u.u 
+e | e | d | s | n | d 
+ [if Jasper arrives, wait under the bed until he leaves]
+examine telephone,answering machine,fireplace,wardrobe,bed 
+open wardrobe and look inside it 
+read manual.examine jacket | examine pocket | examine wallet 
+examine photograph and get it 
+ [wait until the 'phone rings] 
+press RECORD. Then press PLAY] 
+get tape 
+
+s | s | examine portrait | move it 
+drop tape, hide behind curtain and wait for Jasper 
+wait 3
+get out.move portrait.type 888155.examine safe
+get accounts and photograph
+
+run to tree court | n | n | n | e 
+wait for jasper 
+drop tape | wait for jasper 
+e | e | e | n | get filofax 
+run to loft and drop all 
+
+run to portrait.move it.dial 888155.examine safe 
+get accounts,photograph,tape 
+
+run to loft and get all.score 
+ram save 
+run to drive | s | wave 
+
+find Jasper | n | u | untie chandelier 

@@ -1,0 +1,37 @@
+1
+*examine everybody
+***read petition
+******sign it
+*go to bar
+****show petition to Jumbo Butterpat
+**ram save
+******take scrumpy and drink it
+**ram restore
+*****find bridge
+*****show petition to boney
+**knock on door
+******find miss farthing
+******take groceries
+**go to hill
+****go to Gnettlefield Farm
+******se
+******oops
+**follow Grandma
+**show petition to Grandma
+*******run to track
+****read notice
+****go east
+******flopsy, go east
+******go east
+****pull bellrope.wait
+***pull bellrope and hide
+***get out
+****drop groceries.pull bellrope.hide
+******get out
+******offer petition to Dusty
+**w.w
+**find Millie Watts
+**look.examine lighthouse
+******quit
+*yes
+

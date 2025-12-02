@@ -1,0 +1,739 @@
+; Ingrid's Back! (Gnome Ranger II) part I text. 
+; Copyright (C) 1988 Level 9 Computing. 
+; 
+; CT (Commodore 64 Tape) version
+; 
+; Messages are of the form: [ number : text ] ; comment 
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course. 
+; 
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard). 
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first. 
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+; 
+; Capitalization is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+; 
+; Please ensure that all long room descriptions and first-time 
+; messages are there. Comment blank msgs.. ;; [1375:] ; etc.. 
+; Please comment all long room descriptions, first-time messages, 
+; examine messages etc so we know what they refer to. eg: 
+; [1143:, in the Dunes. Etc..] ; back of Dunrollin. 
+; Exits must be clear from room descriptions or first-time msgs. 
+; 
+; punctuation messages.. 
+[1: ] 
+[2::] 
+[3:, ] 
+[4:.] ; dot with no space 
+[5:%] 
+[6:and ] 
+[7:.%] 
+[8:?%] 
+[9:. ] 
+; 
+; positions etc.. 
+[10:exits led ] 
+[11:an exit led ] 
+[12: through a door] 
+[13: through an open door] 
+[14: and ] 
+[15:%Ingrid put a stop to the "What gnow" prompts. ] 
+[16:%> ] 
+[17:%What gnow? ] 
+[18:: ]; 
+[19:"] 
+; 
+; Messages for printing objects.. 
+[20:a ] 
+[21:the ] 
+[22:an ] 
+[23:some ] 
+[24:." ] ; dot quote 
+[25:% %] ; blank line 
+[26:worn] ; for 'couldn't have worn' 
+[27:taken] ; for 'couldn't have taken' 
+; 
+; exits directions, doubling as movement verbs.. 
+[51:^V gnorth|^V north ^V gn ^V n ^V gnorthwards ^V northwards] 
+[52:^V gnortheast|^V northeast ^V gne ^V ne] 
+[53:^V east|^V e ^V eastwards] 
+[54:^V south|^V s ^V southwards] 
+[55:^V southeast|^V se] 
+[56:^V southwest|^V sw] 
+[57:^V west|^V w ^V westwards] 
+[58:^V gnorthwest|^V northwest ^V gnw ^V nw] 
+[59:^V upwards|^V u ^V up] 
+[60:^V downwards|^V d ^V down] 
+[61:^V inside|^V in ^V inwards ^V into ^V enter] 
+[62:^V outside|^V o ^V out ^V leave] 
+[63:^V across|^V cross ^V over] 
+[64:upwards|^V climb ^V scramble] 
+; 
+; Intransitive verbs.. 
+[71:^V again|^V a] 
+[72:^V look|^V l ^V display ^V redisplay ^V refresh] 
+[73:^V inventory|^V I ^V inv ^V possessions ^V possess ^V list] 
+[74:^V quit ^V restart] 
+[75:^V restore ^V load] 
+[76:^V save] 
+[77:^V RAMSAVE ^V RAM] ; && 
+[78:^V RAMLOAD] ; && 
+[79:^V score ^V rating ^V status] 
+[80:^V verbose] 
+[81:^V brief] 
+[82:^V wait|^V wa ^V pause ^V z] 
+[83:^V ring|^V play ^V blow ^V toot ^V sound] 
+[84:^V on] 
+[85:^V off|^V jump] ; >> 
+[86:^V pictures ^V graphics] ; && disc 
+[87:^V words ^V text] ; && disc 
+; 
+[89:^V UNDO ^V OOPS] 
+[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash] 
+; 
+[91:^V signed|^V sign] 
+[92:^V searched|^V search ^V explore] 
+;; [93:^V dig] 
+[94:^V sniffed|^V sniff ^V smell] 
+[95:^V knocked|^V knock] 
+[96:got|^V stand] ; output eg 'L got out', 'L got in' etc. 
+[97:^V lay|^V lie] 
+[98:^V sat|^V sit] 
+[99:^V hid|^V hide] 
+; 
+[100:^V said|^V say ^V whisper ^V call] 
+[101:^V teleported|^V teleport] 
+[102:^V getme] 
+; 
+[103:^V filled|^V fill] ; >>Lancelot 
+[104:^V ran|^V run ^V fly] 
+;; [105:^V poured|^V pour ^V empty] ;>>gnome2 
+;; [106:^V watered|^V water] ;>>gnome2 
+[105:^V made|^V make] ;>>Lancelot3 
+;; [106:^V prayed|^V pray] ;>>Lancelot3 
+[107:what Ingrid really wanted was turnip stew and dumplings|^V eat 
+^V bite ^V taste ^V gnibble ^V lick] 
+[108:^V went|^V go ^V goto ^V find ^V walk ^V fly] 
+[109:stopped|^V stop ^V abort] 
+[110:^V drank|^V drink] 
+[112:^V exits ^V exit] 
+; 
+; verbs for output.. 
+[130:^V had|^V have ] ; mainly for output 
+[131:^V had|^V has ] ; mainly for output 
+[132:^V was|^V am ] ; mainly for output 
+[133:^V were|^V are ] ; mainly for output 'you were' 
+[134:^V was|^V is ] ; mainly for output 'someone was' 
+[135:are] ; output only - present tense for 'tell me about' 
+[136:is] ; output only - present tense for 'tell me about' 
+; 
+;; [137 is 'GO IN'] 
+;; [138 is 'GO OUT'] 
+;; 139 is 'wait for person' 
+;; 140 is 'wait until time' 
+;; 141 is 'wait for (length of time)' 
+;; 142 is 'wait for single turn' 
+[143:^V fought|^V fight ^V kill] 
+;; [144:^V retaliate ^V strike ^V challenge ^V prove] ; special to L1 
+[145:^V dodged|^V dodge] 
+; 146 and 147 have text for debugging output only - do not mark 
+[146:gdgo] ; 196 - gdgo 
+[147:gdrun] ; 197 - gdrun 
+[148:^V stuff] 
+; 
+; Transitive verbs.. 
+[150:^V examined|^V examine ^V read ^V x] 
+[151:^V cut|^V chop] 
+[152:^V woke|^V wake ^V rouse] 
+; 
+[154:^V got|^V get] 
+[155:^V took|^V take ^V carry ^V pick ^V pluck ^V catch 
+^V lift ^V hold ^V keep ^V grab] 
+[156:^V wore|^V wear] 
+[157:^V dropped|^V drop ^V discard] 
+[158:^V put|^V conceal] 
+[159:^V removed|^V remove ^V free ^V release] 
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl] 
+[161:^V gave|^V give ^V offer ^V show ^V sell] 
+[162:^V asked|^V ask ^V question] 
+[163:^V followed|^V follow ^V chase] 
+[164:^V opened|^V open ^V unlock] 
+;; [165:^V snap] ; as in 'snap fingers' 
+;; [166:^V hold ^V keep] ; as in 'hold cave mouth' ;>>special to gnome 2 
+;; [167:^V plant ^V bury] ; as in 'plant bulb' >>special to gnome 2 
+[168:^V pushed|^V tug ^V push ^V launch ^V shove 
+^V paddle] ; >>gnome3 - launch 
+[169:^V fastened|^V fasten ^V tie ^V attach] 
+[170:^V unfastened|^V unfasten ^V untie] 
+[171:^V pulled|^V pull ^V yank] 
+; 
+[176:^V inserted|^V insert] 
+; 
+;; [182:^V collect] ; goal-directed 
+; 
+; 186, 187 and 189 have text for debugging only 
+[186:return object] ; 186 is 'return object to initial' (for npcs) 
+;; [188:^V find] ; set up find. 
+[189:gdfind] ; 239 is gdfind 
+; 
+[190:^V closed|^V close ^V shut] 
+;; 
+[192:^V told|^V tell] 
+[194:struggled] ; mainly for output 
+; 195 is 'steal all from' 
+; 
+[197:killed] ; output only 
+; 
+[210:reached] ; output only 
+[211:dragged] ; output only 
+[212:passed] ; output only 
+[213:flew] ; output only 
+[214:walked] ; output only 
+[215:caught] ; output only 
+[216:entered] ; output only, eg 'Fred entered from the east'. Do not mark 
+; 
+; Echo verbs (250-299) which just print the message containing them.. 
+[250:OK, if you say gnot|^V no ^V gno] 
+[251:right, so be it|^V yes] 
+[252:gosh! That was fun. Gnow then, back to business|^V leap ^V hop 
+^V skip ^V dance ^V celebrate] 
+[253:gno sooner had it been said, than there were bright lights 
+and a fanfare from massed sousaphones. Then everything went back 
+to gnormal|^V plugh ^V xyzzy ^V sesame ^V plover ^V humakaat 
+^V satarh ^V ollabin ^V obis] ; magic words for amusing response 
+[254:the ^V weather was gnice and cool and damp] 
+[255:to talk to someone, follow their gname with what you want 
+to say. For example GNAT, HELLO|^V hello ^V welcome ^V hi 
+^V greetings ^V day ^V afternoon] 
+[256:Ingrid heard gnothing gnew|^V listen ^V hear] 
+[257:send the coupon to Level 9 for a ^V hint|^V help] 
+[258:the ground was much too hard for digging|^V dig] 
+; 
+[260:the only ^V escape is to finish the game] 
+; 
+[262:Ingrid will have to find that out for herself|^V what] 
+[263:why gnot|^V y ^V why] 
+[264:gnow that you ask, I realise that I don't know ^V where it 
+is myself] 
+[265:gnot even I know ^V how things work around here. I'm just 
+grateful when they do] 
+[266:sorry, I can't help with such matters|^V whether ^V who] 
+; 
+[267:tut,tut! Really, what a thing to say|^V sod ^V motherfucker 
+^V crap ^V nipples ^V cock ^V bloody ^V scott ^V adams ^V frigging 
+^V wanker ^V turd ^V piss ^V shit ^V twat ^V cunt ^V prick 
+^V bollocks ^V jesus ^V christ ^V fanny ^V god ^V devil ^V tits 
+^V asshole ^V arsehole ^V cretin ^V spastic ^V coon ^V wog 
+^V fucking ^V screw ^V fucker ^V fuck ^V bastard ^V bugger ^V damn 
+^V fart ^V sex ^V hell ^V bonk ^V pratt ^V rape ^V shag] 
+; lower case swear words 
+; 
+[270:so what is there to ^V shout about? I don't know|^V yell] 
+; 
+[272:nobody gets killed in this game|^V death] 
+[273:going already? Don't forget to save your position|^V goodbye 
+^V bye] 
+[274:you're forgiven, and thank you for the gnice thought|^V sorry] 
+[275:EEEK! (Will that do?)|^V scream] 
+[276:what a scorcher|^V phew] 
+;
+[279:Ingrid couldn't ^V sleep, while there was so much to do] 
+[280:Ingrid thought of the gnasty cold, muddy waters of the 
+Dribble and decided that swimming was gnot for her|^V swim] 
+[281:gnuts! Go and ^V think for yourself] 
+[282:] 
+[283:hit] ; the object 'hit' target 
+; 
+[285:Ingrid wasn't thirsty|^V drink] ;>>gnome2 
+[286:that would do gno good|^V shake] 
+;; [287:] 
+[288:you are here to use objects, gnot to ^V bury them] 
+;; [289:] 
+[290:Ingrid polished until it gleamed in the gnoonday sun|^V 
+rub ^V clean ^V polish] 
+[291:you ^V fill a container by, eg, "Put thing in container"] 
+[292:please ^V empty a container by removing its contents in turn] 
+;; [293:] 
+[294:Ingrid had gnothing with which to ^V light anything. She was 
+a gnon-smoker, you see] 
+[295:try throwing some water at it|^V extinguish] 
+;; [296:] 
+[297:come closer, I'm puckering up for you. 
+%XXX. How was that?|^V kiss] 
+[298:the only thing worth waving would be a magic ^N wand, and I 
+don't know if we've got one of those|^V wave] 
+[299:gnothing happened|^V press ^V poke ^V prod ^V touch] 
+; 
+; -------------------------------------------------------------- 
+; 
+; Objects (300+N).. 
+; 
+; NPCs (1 onwards) People 
+; 
+[301:^N Ingrid|^N player ^N me] 
+[302:^N Gnora|^N mother ^N mum] 
+[303:^N Gnoah|^N father ^N dad] 
+[304:^N Bumpy] 
+[305:^N Dimple] 
+[306:^N Gnoggin] 
+[307:^N Arback ^N Garden|^N gardener] 
+[308:^N Isfrunt ^N Garden] 
+[309:^N Jumbo ^N Butterpat|^N barman ^N bartender ^N landlord] 
+[310:^N Flora ^N Butterpat|^N cook ^N chef] 
+[311:^N Miss ^N Farthing] 
+[312:^N Grandma ^N Gnutson] 
+[313:^N Uncle ^N Dusty ^N Halfyard|^N arm] 
+[314:^N Great ^N Aunt ^N Halfyard|^N Auntie ^N Aunty ^N Aggie] 
+[315:^N Boney ^N Spratt] 
+[316:^N Gnat ^N Tackhammer] 
+[317:^N Mrs ^N Tackhammer] 
+[318:^N Millie ^N Watts] 
+[319:^N Seamus ^N Sosmall|^N leprechaun] 
+; 
+; people who never appear, but are included for parsing purposes: 
+[320:the Hermit|^N hermit] 
+[321:^N Mistress ^N Spratt] 
+[322:^N Jasper ^N Quickbuck] 
+; 
+; Employees of Jasper Carrot 
+[325:^N Silas ^N Crawley|^N creepy ^N creepie] 
+[326:^N surveyor] 
+[327:Mrs ^N Underlay|^N housekeeper] 
+[328:^N travelling ^N salesgnome] 
+[329:^N Armillaria ^N Budblast|^N gardener] 
+; 
+; Animals 
+[335:^N Flopsy|^N dog ^N mutt ^N hound] 
+[336:^N rook|^N bird ^N crow] 
+[337:^A watch ^N chickens] 
+[338:^N mad ^N gorilla|^N ape ^N orang-outang ^N monkey ^N suit 
+^N costume ^N baboon ^N Rollo ^N Butterpat] 
+; 
+; ordinary objects (80 onwards) 
+[380:^N groceries|^N provisions ^N food ^A brown ^N bag] 
+[381:^N invitation|^N eviction ^N gnote ^N note] 
+[382:^N petition] 
+[383:^N short ^N ladder] 
+[384:^N mug of ^N scrumpy] 
+; 
+; static objects (110 onwards) 
+[410:^N bed] 
+[411:^N brier ^N patch|^N brambles ^N briers] 
+[412:^N bush|^N bushes] 
+[413:^N long ^N ladder] 
+[414:^N gnotice|^N notice] 
+[415:^N gnotice|^N notice] 
+[416:^N pile of ^N sacks] 
+[417:^N gnotice|^N notice] ; don't use sign, as it is a verb 
+[418:^N wardrobe|^N cupboard ^N closet] ;closed 
+[419:^N wardrobe|^N cupboard ^N closet] ;open 
+[420:^N window] 
+[421:^N window] 
+[422:^N bellrope|^N bell ^N rope] 
+[423:^N flowerbeds] 
+; 
+; vehicles (140 onwards) 
+[440:^A fishing ^N boat] 
+[441:^A broken ^N carriage|^N dogless ^N cart] 
+[442:^A dogless ^N carriage|^N cart] 
+; 
+; invisible objects (150 onwards) 
+[450:^N cottage] 
+[451:^N Inn|^N Green ^N Gnome ^N pub ^N tavern] 
+[452:^A hermit's ^N molehill] 
+[453:^N village ^N hall|^N town ^N townhall ^N villagehall] 
+[456:^N barn|^N shack ^N shed] 
+[457:^N Dribblemouth ^N Lighthouse] 
+[458:rabbit ^N warren|^N burrow ^N hole] 
+[459:^N Gnettlefield ^N farm|^N farmhouse] 
+[460:^N mill|^N windmill] 
+[461:^N Bridge] ;west 
+[462:^N Bridge] ;east 
+[463:^N River|^N Dribble ^N stream ^N water] ;west 
+[464:^N River|^N Dribble ^N stream ^N water] ;east 
+[465:^N River|^N Dribble ^N stream ^N water] ;on river 
+[466:^N farm|^N farmhouse] 
+[467:^N Dunrollin] ; back 
+[468:^N Dunrollin] ; front 
+[469:^N Ferry ^N Cottage] 
+[470:^N Ridley's ^N End|^N Manor] 
+[471:^N bar] 
+[472:^N beer|^N booze ^N beer ^N ale ^N scrumpy] 
+[473:^N glasses|^N drinks] 
+; 
+; Brief location objects (479+N). 
+; 
+; These are used for seeing from a distance and for input, eg for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works). 
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for ro›l J2JÔje šk32  € º	 	)‚™„Ø _‚˜„Ø  3
+M 3_…ÀM  €+
+‡ş‰&kŸ¢†G(¾†ÛŸ¾‰&kŸ¿
+  _ ‡“ 	Ÿ¢Ÿ‰bˆ –O“›€•–“V“••˜K“œ€•—“`•‘I’N€’G’QI—¦€–Û—©G—§€—G—ª€˜I™"€˜ê™#K“Ÿ€•™•›“µI˜Ì€˜³˜ÇI’€‘¸’M”{€”l”Š”†’uK•Î€•œ•Í”ÖI€‘¨•ÏMˆÌ€‘S–û]•q…G €M•€”¼‘ø–†–ŠO”ˆ€”U”‡–0–/”ûE–e–§E–ª•C–ìE–p–mC–nG–ø–w—ÏC˜àCëK˜ñ€˜ë•ä™”€C•µG•§€”E•ú“ÉE™[˜;€E•¾˜ºUğ€j”7ç”§–R—s¹–CG—L€—KI—	€—’ H’;'€‘êI—€€——uG”¹€”¸H@€—ä—ÈG”Í€”éG–è€—[G”,€”-K–ß€–ï™3‘G˜5€˜4C“HG’Ó€’ÒI–q€–Ö“G•&€•*€^Dƒ-…m€N‚=’R€I‚f€¹˜'“p”æO™€“·“Â’Ö˜ô“I‡æ€—å	G’€’+€E’™’˜‰X€Ÿ¡¨‰?C)©€‘­—8–ÿ™…G“í€”
+G“í€”G™€4G™ €SG™€”€S]…I“€’Ï”«€G’€’ƒBƒCC—ö€K’“€’’–|™wG‘¶€‘?I™O€˜ó–Ê€I“Á€“G”-W˜x€˜‘•ù–‘ ”ë”;”¢“ÄG™\€™I’2€’1‘ôG–X€‘qK–˜€–—“–M˜d€˜g‘C˜z”SK“?€“M•©—Ic€a–^I“€“‘/I•Á€•À˜Á‚O–V€˜Ÿ–U”Ì—=•ÔK’½€’¼˜lhI˜½€˜¼˜ÅI–P€–O™zƒG”z€”yˆ†®…¡ƒAI‘V€‘U—D€G˜v€˜6€‡ó„¬‹†{‚…ß‚ìˆõ!‚v N“•“£4€••“{K†µH+€™†^ƒÀŸ¡ƒ0k„ßL=‰]€”Ó”B—_‘À‘#@[^‡‡¸ˆ<&
+…L‰2
+‡Ü
+†…ZßˆÈ‰aQ
+ƒˆè‚*3Y†ğ€C‚ï€5TŸ¢‚‰=ƒ˜€–™x—–”N–é•³• J™*‰e…EtWˆıˆ!‡—ƒ{ƒWBˆı†ïG ‚”ƒ}„€” ™”*“Ö‘ÈLbYƒk€”ü”S‡„à€ 
+”4€”#€Q‡n‘4„à€€˜†•eM…»’€]‚Ú[…Ú`ˆ}… „VÈı‡“…ˆ…ìv…<,‰QL‚dQ‰@1‚Ö! „)€™'J‰8*€™y™9Tk&‰@\„V‚„»™+]…Wƒ€ˆ8\”KˆU‰]2E„\J„W>CR‡Ÿ,j‡ı…8€™,™5@_:Ÿ¡‰n„¦‡‡d€—‰•o‘••”Å–ú“"˜û˜£–	—3˜¬‘¯Ñ”•‘B‘æ“¹‘ä˜pe[‘£‘v—&—®‘ƒ™N“+“*“)û‘¾’»”–5–r€U”ê]J
+€â5H‰9*L‡áˆuQ‘Í]Jƒ_5ˆ7‰…àS‚ƒ†ìn†.‚ß€“¾‘R‰ƒ€¿ nw€—Ÿ€IB
+†÷€•øSè*ˆı—a‰/&H…|C_‚%b…€ˆQ‰†ÍH€„_€˜QB\˜VŸ¿hIˆCn„–N0…‰‚`(*€Oº–„7€J‰ˆY€’+W‡4
+RN‡C€Fƒ½€—'€P€SEˆĞ…¢*‘G€Y†)ˆÆƒTh‚Â€x‡¹€–Ë‘L–(T’ÒˆU%‚b†WˆTzQ†’k
+z%†™i|ˆ¥€P^5”í€I€¦
+ƒ“I^5’£€R„ZJ…è„ø‡k€”®e…»ˆT‰e‰2E]
+…'Èù‡‡¢…yˆ€S‡Ù… TY„ 4€–7—‘İ–&–C˜|€IÄr€ÆÅ;IÃ—€ÅlÅ„IÃ~€ÂÁÁ¹CÁ CÁìCÃƒIÀQÃ;€Ã<ƒEÃÇÃ²KÂù€ÂÅ‹ÄG„EÇÇ¢EÄ”Æa€GÈ•€ÀzKÇMÁš€Á¡Á IÀ9€È‘Ä¿GÀz€È‘GÁD€È‘GÂ	€È‘GÂ|€È‘GÃ,€È‘GÃ¿€È‘ƒEÃèÆEÉ4Æg”CÄúGÅò€ÆôGÃö€ÀwEÕÀêCÀÚIÁHÁ€ÇGÁÒ€Èo€GÅ€ÀåCÆFÆÜÂûGÅQ€ÇàKÀÈÈ3€ÄõĞÈKÃÒÈ3€ÄõÓÒEÂÁd‘CÀãCÁCÁ¼OÃ9ˆ¶€œM€ÇhÁ’GÄ@€ÆÅIÄã€ÃøÄ¶FÆÈªCÆÄGÃ¦€ÅšCÈCÈ‚CÈ‚CÉCÁ8MÂõ€ÀÌÈÉÂòEÀñÁ¼GÇÒ€Æ¿IÇÒÀ_€Æ¿‡M?tÅğ€ÆÅïÆ M?tÅğ€ÆÅïÆ M?tÅğ€ÆÅïÆ M?tÅğ€ÆÅïÆ IÅN€ÃóÂECÁıKÆ¹€Â&ÇíÉCÉC€GÄR€ÄQGÄR€ÄQGÄR€ÄQGÄR€ÄQGÈÜ€ÆâEÇûÆE€Á„GÀ‰€Ç/GÈ€€Åâ€KÆÑÅN€ÆÒÆĞ€NÂyÃiÂ·€Â¹Âº©CÆlOÀæ€Å3Å2À‹ÅçÇøGÂÀ,ÂŠCÄp€IÅñ€ÂŒÂ‹€GÂ€Ã=€SÆ€ÉÂÿÁ»À•ÄTÃËÇCÀ“IÃŞ€ÂöÆÃGÈö€ÈøIÇ`€ÈÅf€EÂ•ÁQÄ€ÈAÈGÈ]Ã”Ä2Ä&EÅUÅV€E¨I£oE¨L§„GÄr€ÉŠ…‡“">"€GKGKş†Û‚]‡¦‡ª‰"ƒ›ƒŸƒœ‚N‡§€ª€…Îa€5%T
+„€?„ÿ…`…»„C &(^…Ê‡,„2…Ä†‚/‚p‡­Ÿ„¨…4¥…º…hˆ<‚t©)0…l…z€ÜA‚Ğ
+†€€!0ƒl„`¿­‚…ºˆT7ˆÕ‰€)0‚Á…x€Ü€.‚¿„œ†?
+…„€ƒ~€g…n€å%0€ò‰5/€†i¿­…Åè†i…€KŸ¿ƒ€‚‰ˆ7 0‡
+€ò9ˆ_"€Ò„bìK"‰_„†4 ƒ‚ }ˆ+„‚Š‚ä‰ƒj€„ €˜~O+€Ù 0|€òˆ^‡Ù
+ˆc¯¨*‰‡ƒ©"€1ö‡
+…„„ê¿­W‚‰LˆÍC€I€„é$ˆÆ„ƒ»S&…²w†¬€RAƒ÷$€İ€0ƒi‚·
+‡S‡Îùƒ*„É
+…„ûƒ´
+‰K…²ˆT
+€”‚¤o„£†"†
+ƒŒ€¬ƒ€
+ƒÍº‚ñƒ°€‚‹‚f„+
+„Ü"ˆ…‚µ‰:‡»-ƒ®‡²…ke†,!4V‚%ˆÚƒ7ˆ}‚
+8‰‹ƒjˆı…@
+Âƒv‡ …*ƒ†Z{€Õ‚•†[D…|‚^ „”†b„À€"k*‚%O†E¯¨
+…g-…Â©(„¿%ƒ! ‡“…£†€"*
+„F‡ ˆ‘O+†‘ˆÈ_‚i%
+€y€÷€ÿ€³€´€ÕŸ»
+€„€¤‰5<+ƒg€’$ƒ–
+-*
+†‡I
+ÜÅË‰5è4‚¿­o†|8‚.
+ƒ1ˆ‡Šˆ)\¯§…]‚Fƒ‚e€€…õeˆˆr
+ˆ’ˆ‘€Ô‡^ƒÏˆ<f„‹‚xw/‡"ˆ‘ˆ~ˆRG4ˆ}€ÕˆQ„Û
+ˆ}ˆ¡ˆQ€Ë
+ˆ}„!ƒ$‚¿ƒ5‚³ƒ
+ƒ%ƒ0>(€2‚ï‚ÄH&(
+‚®‚ÊG•)ƒk„¯ˆ´
+‡$…¸€¸ˆD69<*„g‰9ƒÇ‚‰€Ş.†1‡öˆâ‚W`‰.„kŸ¢4
+ƒƒfLƒ‹†¥<Q+ˆÑ…Ø
+‚ø†à€w‡éƒù
+R‰MU…j«S2i‚Z:k‚k‡Ù‡w‡ñ‡“ƒ¯€)€±„½¿­†|ƒm€7€*Ÿ¢Ÿ­‰mUi‚,q‰l€Ú!1ƒ-%‰9‡4‚ƒİ‡ë…´i|q‚€*‡ï‚t…À ˆoÒƒi‚·…»5†K€İ†µ…&€
+ˆQ†É……m€å7‡^
+ˆ’c‚ŠR‡€H„yƒe4‡î‡1+„`…m€´…‚«`…m€´…Ÿ¡ˆˆÔ…ñƒ G 
+€´€©‚ş…£ˆT7‡+…aˆ<…Î9ƒçß`…Èˆ0€ô=‰>‚òdˆi‡şƒã#
+‰;‚ş
+…Ù†SƒÒ€K
+„4€È‚µ‚ni€¨
+r„Õ‚dFŸ¢‚h9'ˆ,‘/
+ˆQ‰Wƒø‡Ø!‚öƒa…(€q9<ˆ6€ã€˜€ãŸ¢‰q‡F
+†o†>
+Rˆ%‡–)
+…+y‡â…€ä„£‚%ƒ '‰t†É‚ı‚ô‡Œ‚Ë2
+‚!ƒ°‚À†C€I7‰)mˆ"„W†v1‚ ˆ<Ç&†Ã!
+©†Qˆ
+}‚½‚n
+…†Å„Pz;€i
+‰W€ƒñI‡š'‰`; 
+„L‰M†H€v‡Â€á‚¯$‡œM…Á*
+ƒX†Äo`‚…„â‰€.€»3/‡ï‚t S$
+ƒ¦o†ƒ‰†ğƒz„vŸ¢ƒz„q"‡Äbˆ+†¶„Ğ³ÔÛUƒ‚2€º€å…À‰:
+ˆ“‚1€¢VƒXˆâÓ&N€L+€Fd&‡+‡™€Û:
+Rˆ$ˆ<J†µ‡^‡ö
+ˆ’c'*&…|'Ÿ¡Y€¼‡|€_€µ!W(
+rˆé†¸‚%9€6&AH…|d7H€’‚%<‚ıƒ€ƒÈƒ²‰h1A†W‡€˜k&Y‡åƒš†á†µ'‡Œ‚Ë 
+‚×‚”„/ˆ-i†¼‚ÜE8&(…„„„·åoˆ¾…=Y>€€…b‚s„	.†“
+.‡ˆb?tu‚H‡|%
+r„Qˆb?tu‚H‡|%
+r„Qˆb?tu‚H‡|%
+r„Qˆb?tu‚H‡|%
+r„Q ˆµ‚Bƒòƒk;‚€Êi€ü‚ˆH†J€.ˆÉ…k‡â‚ã'†ƒ:2‰D‚(„ƒ§)‚;
+‰:…2‡Œ‚Ëˆ1‚0‚Á€óƒîƒ„€†H
+ˆ˜ƒ‘‡í¿­r‡j‡lˆ‰‡İ…à‡F‡Œ€şp‚ª…¼;‰|€r„R‡‚Hˆbur„R‡‚Hˆbur„R‡‚Hˆbur„R‡‚Hˆbu"_€.…5‡ƒ‚û€w†â‰Wƒ†İ‚è‚ü€é+
+ƒˆ‡v†ƒ-?†
+…‡öƒƒ‡61M!ƒî@†É‚‰‡‚k$€ş‡à
+‡2†Â„…‚†?…k‡€ıƒi‚·
+ƒY…€ˆ€„Ø€°ˆQ‡àˆø†„Ã‚¸€ƒÆ‡A‡â€º‰U@ˆÑ|…£„—7†€)
+…í‰WMDr iƒˆ‰)‚7D€´‰)‚š‰$‰ƒÇƒ³€œG…ÒÀœEÄ±G†ÄÁ$EÉK?tÇû€ÆK
+?tÅï€Æ K
+?tÅï€Æ K
+?tÅï€Æ G€Á„IÀ‰€Ç/=6U
+ÅÜ
+†gÉ€ÅŞÈ¢ÁÄ=O
+ÅÜ€ÉÅŞÈ¢ÁO
+ÅÜ€ÉÅŞÈ¢ÁO
+ÅÜ€ÉÅŞÈ¢ÁGÅÉIÇÖÅNJ;†Ã€ÅPNzÇÅ€ÈŞÈªI…²ÅNÆÒK‚n
+ˆ÷È€Gˆ÷È€Gˆ÷È€KzÆÃŠÄ0HÆÃŠÄÃL€ÛÆÃŠÄÃF;ÄÄF;É|IÆ]ÀÂÌFÆæÂÌ€¥6LÇŒÂÌ€ÀÌÈE
+ÁıG%Æ¸Â% ‡œƒü…Îz;„Ô‚‚„ƒŠ‚X¯¨UƒcW`v!…“©ƒj`ƒû2‰kƒ
+…7…d¿­†!c‚ß';‰|Ó†¥€ƒ€7&YC†¯‡Å4
+uˆ%…İ9<1ƒ5†ÉWˆşNˆı‰€Fe‰=…(ˆ¢Œ$„ÄƒÎ"…’Õƒi8Hˆ¦=†„Ã&„ÿ…^ˆäáiƒ‚&^j+ƒ7EH†®„ÄÍ‡ªˆ‚º
+?t‡ûf…Å†v„Ò‡¦‡¦‡F‚ºƒ6‡¦‡Ù€„‡§ˆ‚º…Î…²6‚º‚y€«
+…€ˆ€‰"	%‚ºo‚N‡F‚º†Òˆµ‚D…²;„Íƒ6‚N‚Í(ˆæ3
+ÆÇÃ=‡§ƒŸˆ‚º…Jƒ›‡F‚º…Î‚y„Hƒœˆ‚ºÉ 	p…Ã(ˆ±‚­ƒ©‚ßƒš„¢!Ÿ¢‡
+‰…Ìƒ™ƒ!Ÿ¢>„f‚ß‰„ƒG€Ò*‰[boAˆÑ
+ˆ¨‡ç%w„n…k†Ã‡Ùƒ-Èª	„‚¸ †‚Â„Eƒt‡g¿ƒÒ„åƒà4Vˆø ˆbtuf‡¦‚H‡|%
+r„Qo…‚t 
+ƒ‹¨D„/ ?†[5ƒƒ<…~!†‰IƒIˆ¿­…"…u„R†µ††µe‡Õ€°†…²€›‰U†X‚È%„Q‡…(‡û
+…s‚C‚Ã€­€ıƒi‚¸‰J†xe€İK„³Ó¿Çì+U‚yH&‡Ù†„ís%J:€˜&
+„Æ„=‚öJI‚y*‚µ‚y„=
+U4†vÂ€¢‡%-‚y„=>(ƒs‡
+RƒY%
+€´†É†Ãˆ^&‰€…|‡«…tƒÚ‚Ó…JRfo ‡“…£†€(„şÈª&(€‚N‰"0…ÒMf‡§‚
+„Ï‰"‚º€‚O€†‰:‚tL
+‚$UU„™†„ÃU†„Ã…ß‚.ƒi‰iS‡§ˆ„ÿ…^‡êRƒaz„1U†qƒ …à„Ÿ;„Ä‚N_o„Ø‡ê‚O€°ˆ#È‡‰VˆÛA ƒk;ƒk;A€ş€°ˆ‡€«‚Oˆ€€0ˆÛ-…»ÏR„À‰7‚¸ƒgD†åh†æƒ›ƒ–€Îh‡Œ‚N%UˆSƒËAW§%†i
+…â‰iƒ›ˆİ'
+„=Xi‡¨p‡1ˆ ‰d‰…
+R‰b†<‡Z-€A‡‹€ÎX‚L‚‡‰%ƒ›U€İŸ§‚Ÿ¢ı„Ø‚%@
+R‚)‰" …†É3‡Œ…A‚%ˆË€Öƒ‚oz‚n‡…‚ıÿÖ   E€İˆt‡[2ˆˆÆ{ˆ+bŸ€r-…Ìƒ~"î
+…ü€å'€Ğ‚c‚'‰ˆ4Vˆ‚\„’
+ƒs†d…i[…iŸJQ
+…†Óƒ……Î„Hˆˆƒ€Ğ‚c†¾!i„à€‚c°‡t…¼‚öŸ%„Ÿ¡B()"‚—‡¤
+Rh
+.\lƒ—ƒ~Jƒx…Îˆ
+…(‡u
+„Æ††È…/ˆT>èƒß‚Mƒ„„ğ‚SGc:
+ƒ½:9„µ[€˜
+rÇK†|‰€ş%‚€Ê‚€3ˆ
+„Kˆ]‚íƒ>„£?††4€‚€1‚&ˆ_€ˆ…Š+ƒ½A‰)€Q
+„¾¿­ˆC…hˆ<€Qh<‚Æ
+R
+‚€Æ3
+Á’‡àp…&
+ƒ¤L‚À…C‡œ1Ÿ„}†Äo„P$3„=€HT=-y1ƒÄ†Ä/ˆS‚t€¹3
+… „í‚Ô…Ü‚N€!&ƒO
+ƒ½‡ï…Å‚f…K1A…%kY‚@‚*„Î!‰C‡Hˆ—„ˆœLwˆk-€ˆHƒ2Ÿ€…˜ƒ…ú9ƒ¨
+„L€¼ˆT€M+ˆ™ˆ‚¸€°ƒYˆø&
+€—ˆã„ÿ…^N1e ‡Jˆs%<ˆ×„ƒ\ˆ€Sƒ$ˆä†dJQˆâ†d$;‰|‚P‚n„Ä€²;<s{…Ò†\€‚Ë!†‚Öœ…†£ˆµ‚B`„İˆT Cƒ@‰"ˆƒòƒk;€)6pÖƒf† 9…&
+…Dƒ¤‚€Ê…¶‡.@†6†A‡‘*‰&
+ˆÒ~ˆ_,€®‡e„7y€ç†D~‚dmˆŠ3ÿÑ<sKµµ€µ¼°µÏK¸·€°ª¸¶°¢C°¥F€°fI´l€´†´{ƒ…%‡\G¹H€¸ÕC³&–‰€ƒ€‚„(((‰€(((((€‚„œˆm˜…Ó‰€ƒ…%‡\€‚„(…Ó(‰€(ƒ(…%(‡\Cµ§C¸ÇC²C¸qCµÍE³& C³C¸ÆC±ÎC¸fC°
+ÿ¼
+‚ƒeˆĞ	Ÿ¢‚Úƒ8€
+,‚ˆ¸‰Z	Ÿ¢‰)ˆÑh€ 
+ _ 	‚™„Ø4ğ
+,‚ˆ¸B…<OsN1€1¨,„ƒ„_B€Sƒº7©„’D‚µS,‚Ö
+ˆß‡„’*&&(D…0ƒª‡OsE…ÓY4Â‡Ÿ,‚ƒ.ˆ¸ˆß&N‡+€Iˆˆ@
+†±†^B
+…sŸ¡ƒO1 €EO‚Ö ƒ	„’*NB  ]†‰„€Sˆ"‰’TŸ¿Oˆ!‡#…ñ…¶¥   ‰‡
+…Ú0€s†¯¨Ÿ©€ „à€pŸ9‰O-‡Åƒi‚¸c‡´‚¨(ƒÜ€Ä…rˆ(h€Û
+€„‡ŞGˆåA†%Ÿ¿…‚Ÿ¿F‡\Ÿ¿‚ˆ†–‚-
+†¯¨…Å…h)Ÿ©…¥‡„Éƒv…Û#o…÷ŸB‰cˆÀ€D„(
+‡S‡Î^‚#ƒÃo‚Ö
+€dy1‚©‰a
+ƒıŠ/‚‘‚œ€Ov53M€„’€1…À„O†X &€
+y1‚1‚ß€.ç„»v†c
+‚µI†Ÿ¿‚a†ÕƒiŸ¢…Åƒ¶„w	€
+,‚Ö
+†ˆŸ¡BŸ¿è*„»U…‰ †ˆ›T†ğBŸ¿o`Ÿ¿BŸ¿€ƒ-Ÿ¢E€O‰ ƒ€1‰ƒNƒeC‚‰b…°€e…ß€ƒy1ˆÅ‚ß€‰……Åƒy†	Šƒ€ˆÿš†~†§Ÿ¿€†~†ªŸ¿ŸèŸ¿ˆ=ƒ#Ÿ0€_‚n†ˆ²†¦ˆº†©…Å†m†©	†Ã€v½/2Ñ*€Ø>‡Ùƒî‡¡!‡T„ÉˆçŸ¡B
+„A€S…ˆ^ƒš1A‰]E€	ˆCD…ˆñˆñ ‡—…Å‚bˆğ€–†ù Ÿ…&
+…F…¶T		 !€ x„‚ˆâ€v
+†:ˆÒ… ƒ‹¿­:†f†:5€ª€nJ€ª€n	_€n‡ ƒ‹ƒI€¯4e€€n‚ˆâ:„n
+Q… ƒ‹
+ƒI†v†„)‡z4V‚©J7†ê¦ˆº†m†ë¯†©‚‰][ˆá†„y†ìó†7
+„¥†„yƒ8ó	„,ˆĞˆºv=ƒ6ˆ<[3Ÿ¨ˆ[ˆá€-ˆĞ†m†ë¯†©†ì
+†.…Bˆºˆ=€u…v©	,†®†í†.…B…ó‰†¨ƒ8‡T†í'Ÿ]7‡Ë€D…Úƒ8Cˆı†ì†.‚ßJŸ¿Æ*†í0€s†ƒ8ˆ&……Ú Ÿ]7‡Ë€D…Úƒ8Cˆıv€&Ÿ¿ƒ‰‡Ì…Jƒ8††ª
+†.†í[…ÚĞ*‚Ç‡	<‡uY„‚ƒY…|‰o7N‡uD€u4ˆUx„ ‡+…Å*+]†^Ò 3
+ƒ= 3_…Àƒ=3ƒ=ƒ=……Á€œM%_€mZXD„ ë€…ƒú†£/3g€œƒ-Z€@!.€Fƒ
+0€V(ˆƒ%ZZ@05	Ñˆñ j
+O€çƒZO…t
+…‡„0¥ j(…%Z
+ˆ¨…	…r…\	ƒ€b0…¥ƒ€<„0¥ j„†8Os„8,‰RU0@)„€G‡Ÿ¿„V‚Ö€J,ˆ«€×Ÿ¡‡˜„ŞZ!„V€®„’Ÿ¡NG-‰)i„?n„f‚«€¢
+†Z†uƒ/ƒJ‡{‰)"g€:Z„Ë‰„[&*ë!†D0ƒ	gZ„Ë„  "ŸƒÑ‡|€µ-‡k‚¬S†°
+‡f‡V‡‡¢‡\‡mX"= 
+‰/Q@-ƒÓŸ€£„’€uƒn„[€í"‡ˆˆPb7n…÷„‡æG44s…±š„€«„3]‰_‚¾ˆ<‚‰„€1‚ƒ½…ñ„ÿ…^‚J[…i‰“]ƒo„û >Ÿ‡†P„3ˆtƒ¬i\‰@
+R
+'<…9‡j#$%‡Ñ†W<C .‡6‡åK+ˆŸ:kƒ½… „X…+„$„]			Ÿ¢‡ˆİ€DXƒÒ‡|Š‚4. ‚4.„#€'
+ˆ„§F‰5…
+!5‚_F€‡#F†qJ2#‰5f„©ˆÓˆS€(#qƒÄFD†` K #ˆ ƒï†j‰@‡• …ö‚"‡è„F‚‡O‰<„ª@U‚tƒÄ†ƒõƒD†k#‰‰1ˆ]ˆO…RˆO†=‡¯¨…%$©…%$8„I. !5Q@=. <8„I.qƒ~!5ƒ~†X‚‡…h‰‚?0„>>J<*„ëKŸƒÍˆ„Å†k#šh"8‰1L‚¸|‡FŸ8@=.#è
+ƒuˆZˆ¥'ŸƒëŸ¡ƒìŸ¡†»D‰:E €Á„Ë#"‚4.28†›~D: +€ñTdm‚ò†¸‚%ˆ‡Œ‚Ì+Ÿ…c„Êb€?‡<µj#8/g{.@€Í$…#‚4.2‚ó€T4gI#„éƒ'.ƒ„\
+€Ü„\ˆÑ…%2‚Y†1„c‰Q…t!5…êQ„[‡Ÿ‰1ˆĞƒ#‰5‰4‡Ÿ&„	€F„_B
+…F[.y…*W,(„Ş†½V)#‰‚‰‰‰A„»#%„c„|…%ƒ'.Q„YL8S#‡:„‰&„CˆV‰‚€cƒ~ƒ~„¨.Q„D2\ƒƒF„MƒÍ…!„ŒI…„À‰‚ƒ~ƒ~€>ˆd‡â.1ƒ~‡4‚á#ˆvKv„¸$†³‚m„\*„„I…=‰|Ÿ¢›‡:=„‚õm‡‡k'X‚õm‡†'‚Ì‚õ‡km‚S‚Ìm‚7!
+… d€.‚Sd‚S„×‚Ìƒ-……m‚7ˆX€™…|‚İX€.‚7T€Ìn‚(- ƒF…p…²…S….‡:#‰5Nh…  *‡Ó‚r‚Ÿ
+ˆ:€~‡^€^€º…H4V‡Œ‚ÌŸ‡Nš8€Y†µŸ¡‚Ÿ¡^…h…wƒrƒ¸Ÿ¢‡9#Qƒ?…Ç8€{D‚	ƒ,ƒ¿†É-ˆ]…ö€İ‚}…G6€9 …{REŸ¢Ÿ‡N€>„Ø‡]8ˆ‚¸‰/€9…&5ˆO†z8O†z8a.…5f„%%.†'ƒ'„H‡˜$‡ÿ
+ˆ¨ƒ!‚±†Î„7c		
+.†3ƒ'„H†BØ‡Ùa Ÿb
+…–h‚¹†qˆg
+„L.€i53ƒ'pŸ†×„7c%
+„Æˆ¨oƒ!‚±†Î		†‡ß€>€€€9„ƒ'€Â5‰4†g†q$'‰"‚É†Â…Ü—$'…‰„×Y S$ ‚É$'…‰„7€9c"‰‚ƒ4q†û-…‚L‡Ôˆ¢p&^†Ä„Ùƒû…¼"J‡c=$T&YS$‚‚¬S…6f‚¬S‚É€Û:ˆø:(D‡gSˆ›‚3‚ß‚¬S€zf€Ã‚¹‚y7€z‡æm1-[
+ƒk‚ ‰ˆ„ğ‡Ù…ó<†X†Áˆ9ƒ½ˆĞ €z…Ğ%…‰)"g0‚l„ú‡w……òH…|H"€X
+ˆˆ‚¸Q†ÙIˆ
+€‘9‡y„‰‰K‚¶„1ˆ%„3‡.@|†J‰hhI…2DƒÊ‡‚`…ƒêˆQ\Dˆ¦€ìƒÒ™‡k…Îˆ
+€ã€1A†&
+‡jƒÙ…OˆÜmˆ¥	€ã€1‚q&
+Ó‡ƒ……OˆÜ‡æˆ§<„ˆÜˆ§…Î<s…OˆÜˆ§‰BY‡ƒÿ&
+‡5„²W„ãA…u‰s5/3‰Cg
+}†·‚n
+†Å}†Æˆz;Á„%‚n}&
+€ëˆi9/!‰Cg}‡ÙX/3‰Cg
+}à‚n
+†Å	}$'ˆã	}O+‚½@I}}<…»`…ô‚l<…»+…u
+… R‰hhNp l!‰76c
+…–ˆ„wa>(…_ƒäˆÖH„µ‚‹4†µ…&
+…Dƒ¤êG!„Ê‰)@‡“‡¬e6MA…6cŸƒPU‚|Aƒæ6g"A‚ê%6M„=†P…lwbƒ…a6>†Vl|‡Fp….†Oƒˆ{€`Q/ €D…l†P€Dlƒ
+Rj€Š€İlƒ†f‚Mpk…üˆÄ0ˆ ‰‡€Dlp‰76m‰L‰ƒbƒ¤waƒI†f‚–%4…#
+…ˆè…Œˆ¶6‰6€ì„_†O‚ïp$)b‡—a6…]ˆB„Ée,„üº†ö
+ˆèƒåa6„Y‚é…Ì‰),L!ˆ¶E……a7º€Ÿ¢‚*-3†Ò6<bw…FB„Ù6>‡+†ğ>ˆ_†A†ì‚¸Ú*†ìš„–Ù„$b‡—‡;€/-g
+û‚Ñ€i
+}z;*‡•‡:ƒF\$Eƒ‚cŸ¢9/2Os‰5…Å‰5>(ˆ"!b
+ûˆè‡8‡”L\$Ÿ¢ƒ@2Os‰5ƒ¨‡•‰{‚â7‰/ƒüz;9‰=3"
+û­jz;9ˆ_J„ˆU„f„6ˆd
+a$:…&
+‰G‚"7‡XƒS‚‚(„…%
+…×…ËŸ¢ˆ?‚U-Ş7ˆd
+‡à$:ˆò ‡µ„7d„~…&_…ËŸ¢„­‡£…k…£ˆ_
+û‚T†+!:j*‡•‡:ƒF\![‡ÛŸ§:9/':gYÃ:N‡Ú‚d	‡—:„PV€Ã5$P„ì‚M
+PD„„ë€ƒåW†ï‚
+†T…:ƒ‰‡ùV‚YP‚É'$ƒb‡•€ˆ·P*P…À
+… 
+ƒõ†{!9ˆ%5õ‰	‰j‡k=ab‡“ˆhƒ†j€¢P
+…„º‡£P _€?ˆè€ªP‡:…¯Ÿ¡‡—…À[‚çPŸ¢9…†„)ƒ¢W‚†ï†‡y€D`!5„
+ˆ.‚YPf‚YP…î'$„ÑV‚YP/‚f†v‡ú‚YP
+ˆú2‚YP…?†+3…Àƒ=†q'…(‡û ‡„%?†„¹KV†èzK>ƒq„çK†‘Kƒ ‡i…ƒ3€
+…„‡ò"‚Õ….‰jƒ‡ÃS† Ÿ„Ì„Éˆ‘†–LÒ‚¹†IG#š†{€Û‡Åbƒj„Â		#\‚Ş%‰n‚ƒ#‚„™    .#g†UÒ3ƒ9€¢M†F…Á†­GZ3…ÀM
+ƒÍ€mK€ "e…t9‰	
+†ŞúˆÆ
+…ˆè¤ƒF¯§‚gI\Ÿ¢*„ñŸ¢9ˆvK€<4n)1AÌˆKƒ|‚fhê!CƒM-)Ÿ¢ƒj
+ˆ©ˆè9ˆx€ÔI‚¡ƒmˆj#Nˆ…LK‡K_€%„Ö„ÿ…^…éŸ… †@‡‘‚ˆ@†Éëw!ˆ¶c6„ê†¯ƒ˜„ÿ…^Ÿ…¤‚tƒ€€Ù†ïˆ>W‰! 0ƒsˆšƒ^…K1ˆ_>€¾ ‚		‚É€†ˆ›T†ğ€Çˆ2…ÅƒĞˆ2 %Ÿ‡œg†ˆxG†ò3†õ4|ƒ€1A‚W.†{ƒi„¹$&y+ƒ€„ÙÕ‚%ˆÚŸqĞ„K€¬„m8F„-ˆ† ˆx
+ƒ„Óˆ„Á‡pz‚ë'XŸH‰)ƒ™‚†…Á‚nƒo‰~&†’
+N„u‡Æ'X€«†y†¤Ÿ¢‰E„fNM‚§†mƒá‡}‚õˆœ …T>ˆ…à‡„9‰	ò#„Ë0€l€Ì$.†q'dˆˆ‡“‚9…Õƒd0€‡“‚9‰{ƒ‡‡‚9'€(‡€
+…SA„Á‚îiˆ„% 
+‰/QF€gƒ?
+†ÓƒáW†ïˆÏn…†#‡‚‰"‰1
+m‰Xƒ]€E†#ˆ€(‡€2‡„)&†Ì„)€!€|„Ûq,5…àKN‰]€z…»‚¨ q„æI‡ ‚©-ƒ[ˆ'!ˆ–2„±„è-†L‡oD‡³ƒIƒÆ…hˆÄ„h…OˆÜ%ˆîˆJ‡æˆîˆJ„‡Ğ‡õƒ¡!‰C‰	}ˆaqˆl…»‡ü;ˆ/‡€c6†ı…æ€!Mq†z€Š€İ†qI†­l†¯Y
+‚Ê:ˆ/
+…sl‚@
+‚8ˆ{lS‰ƒl„7c€ß'úf:NˆdSl…åzPWˆœ„;$…åPW„5†—€F‰/V‚Yˆíˆ„‡}‡~‡ X‚@‚ÃA„Ù€¥†Ó€èA„<‚‰‡T…G?†‡}#"J†V!5
+‡4cˆ«†ıXO‚‡…-ê‡r„=H„‰{ˆ¿‡‹‡€X‡|U‡A‡Éƒİ†¾‚¨„Kº‡+È‰ƒ.J…YˆR~D‡ï€çTƒ?
+ˆâ‚<‡ ‚¢fV‚Y:ˆíˆ‰1ˆ‰	€z‡_I†Àˆ”„¦‡£‰3€‡4cˆ«‡¯
+‚à€Ò!…r0†è$Q‰ƒˆ	@-T†c
+‡Í¯¨†v‡½Ÿ©ƒ#„D!ˆ¶†²S'úf
+…€…á‡½
+ˆ/2‰TU4dƒ»‡¶†d€1DD†iƒfK"ƒMƒƒ
+ƒõ"ƒMì
+ƒõ„[€,j…W„^@‰V…/ƒs„[… ƒš)…ˆ„W…„]@L…‡)„„fn€€À„°	J…ãcT	„Ëˆâ„_‚[Ÿ¡„X…j…†:>‰Q„Ş\ƒÛ„[*ˆV‚5,€4Pˆe‡¯÷…&
+†ÏƒE	„Ë…0†¢‡{†V!5ƒ„f€†½…ˆx^ƒ¦ÿ ‡¥‡R
+:ˆC
+ƒ«r	,ˆV…<kˆK
+ƒ2ˆTˆıCº,„
+ƒsˆ›…ƒ
+ˆ˜ˆÙ€k
+‡‡(‰Q‰]*
+'
+ƒs€Œ‚€‰]„`h‰v‚µ¿­‡š„…K:„Ö€/
+,ˆƒ7
+ˆC*„iƒ8ƒ„’…»†ó,ˆV]†ó„kB…¡Ÿ¿ˆ›T‡Ÿ,O‚Ö_…¡†+…h‡±,‚h…¡&^…¡kCBŸ¿N†ï„,‚„»BˆCNN‡‰]	&^‚]€Iè†”… èY4„[€„‰h…tN€ú†+…u‡‚å†ˆÂ„
+‚€ØyCY	y+
+‰ey+†$‰QL€J‚›^†«„„&ƒÕ„B€îE
+ƒÔ_„x‡x„JCC)Ÿ¢†*„/†Y
+/
+†Y‚¢€M*1ˆ¹Bˆşt%0…Æ‡1†A„‡†Y%N„»B…=7†¡†A
+t%0…Æ7†A¢ƒ€ƒ‡kƒ…Ÿ€$ƒ‚w/†Y‰‰‰QL^j\‰…X	†8„e†^…»Š…Œ‡™‰Œ1‚Ï\ „W†v‰]ˆ<…Ú„[*ƒNYS[†ğ„‘…RŸ¡NI	‡Ê=‡Q†‹/†Y‡+t%0†¢‡Bƒ’…&
+†_ƒ…N‡ˆ¸À…!Eiˆ—…Œ…­^„’ƒé……„‘‚ƒKT„"Ÿ¡„’ƒİ„‰{ƒ‡‡4„)€ïˆíˆ‡€Xˆíˆ‡4‚ø‚K„/†s„…Ì
+†ç
+€à… †h„ ‡yˆØ„†Ôƒh‡7€wˆ°_‚¥ˆ®€–€P….ƒ
+‰u‡xƒÛˆ»„
+€Àƒ¡‡bŠ'‚á
+ˆï‚Ø'‚I/‡4câ
+gq…„Šƒ‡'
+‡ºƒş/2€‡4c
+‡j‡G€ğ‰B…q€½Fƒ/††" ‡™ƒå…	…Á…r€§‚'4$9ƒÛ‚Î	‡>„Ë…„†#…&†Ï†•……?‰v`Gƒåm‡U
+†Ï‡›7ƒ€ğ‰Bˆ¿‡¼ˆå„Ë__ˆÃ„š	ƒ?
+ãƒ(
+†Ìƒúˆt‚Î„Ë†9„ ˆ›‡åˆÎ€Ü‡:€„‡Ê„ç„ùƒL
+„®…†‰f
+…$€´„ä„È	/‚0„Ç‡Ÿ¡ˆüh=…†… ƒ‹)„‰€V‰=†ç7€Ÿ	c
+‚6„™7‚ö…ƒL
+‚+†¾7‚ö‡Ã‚È‡÷ˆH€ƒå„†¾…	Z2 
+®ƒ$€:ˆH˜
+†;k*†CT
+‰hjˆ›T
+…·k‚C‡…®*TŸ¡„^‚…¶€1˜Ê¦
+ˆèú‡:7
+‡Á…Ñƒ‡Ÿ‰@1‚Ö…Ò5E‡
+‰‚€ZŸ¡„ˆ=´ª‡ˆâ…¨ÀÀª£Üª¦ÀD
+ƒ?
+…s†Ÿ„"‰’„Wh,‰h+^ˆĞ‰ŒL^j\…X,yW,<,H,‡*‡Çn…Òˆ±‚È	…®€S‡É‡Ÿ‰‰…Š+ƒ±‡‚:,ˆW‰“/ˆ
+„Ë…­Ÿ¡‰
+ƒ2`/€bÿÿÎgÈEÈ\ÈMÈAÇ“À=À2À ÈìÄ˜ÆÆØÁÄÅ1À8Ã½Å¦Á·ÈJYÈLÀ4ÅÉ‘È›ÁÇkÉ ÆcÆsÃ	ÀWCÆMÆºÅ[ÅwÅyÅWÀÜMÈ3ÄõÄôÈ1ÄòÄóCÃ'ÿÁ€ƒ2… ƒ×‡æ%‰
+…
+†vˆ*€Ó…Ö „ö ‰Z )ƒ×ƒÛƒZ„µ‰sƒ×ˆİ
+†M†‡|	„ˆş„»‰Z ‰rTŸ¡ƒ×‡}i‚Ù‚‰€¼		ÛEâ‡å)CépCætCã·CäCâuEäOé‘CèÑCèÑCà=€Cã·CèEèÆèICäá‚CèECäUCâAƒCàóCãîCäUCå²CáCáñ€CèEçËâ€CéQCàªCçEä€ç‚CèECéQCáSCàcCà=EçàS€CàpCãîCäCéCèfCåÏCâu€EèEäïCáÉEã&å¦€EäyèE€Eæ}äyEåuáíGé4èĞçdCéCép€EäyèECâuCâCäUCèE€Cà=Cå;Cå¹Eåã„CäCçEèqàøCàf€Càó€EèEé‘ÿÿÿÿÖ Ÿ#ƒÅ%‡ƒd„ØƒÇƒ³€œU"ƒ†­Òˆ¶€šk#‰ƒºh\ƒMˆ]Ò‡¿†aƒ”n‚´ˆ‹!‰S„K…K+€‡å#ˆ{
+‚Ê‰<„`2c!‰‡œ+![‚¹„ ‡À…«‰…XƒU#,‡¾†‡‡ˆ!'‚º„µ…Y'†ì„ÿ…^…ˆx
+†ÖˆşƒÄ"…Y€ƒ¡€!X	0†ÉJ¢-€¥„£ˆœƒÄDƒw†Xc$+‰5‚„î€`„ "#‡?‡“]'‚Ü‚æ„ç!"VM‡W‚¦I€Ø"mˆBˆXe„’„ ˆs"‡õ‚Ø]€ù‚$ˆ±„÷€¼]‚@…¼€õ‡+‚¦)#ˆ.„Ù
+R‡½
+„‚ˆ›„é$5"ƒÛ‚)#†Ìƒúˆtˆ…»
+‚Ê…h‰}vn‚¹‰@+
+††Î†*…û†
+‡è#‡’„aƒ»~‚ó‚Ì‰1†š#Xˆ/€>"ˆ†¹'†´#8†~€ñ‡ã…*…|‡ğ[e##‰	8‡‰]†‚~"„ı-
+Iˆx
+……}‚&ˆD8‡ÌU-ƒ9~‡N„£
+‰
+‚¤G‰/"†NI(ˆD8†›ƒğ~>‡æ‰F{ˆ€ö‰/#ˆx
+„É‚I-ˆD8‰^„~‡NˆdI	'†¹‰	‚ğ'ú"„ı-€D`3ˆD8‚Û†œ~‡Nf=
+ƒ½……‡ï‚t"g=.5#‡æ.€Be 
+ˆ+€ç"…Á‚Ü‚Ó]Q†X
+†Ú…²„¤€€ÏˆD8…Á{…"‡{b„:…ı#ƒ÷‡!…ƒ8>‡n{ˆ+ƒ‡‚>{„o€¶%#8>{†ä‚{ˆ+…>ˆQY‡|€µ‡Ó8…%ŸF‡€Z/†Y‰†kˆ_7<†…0…Ò‡°‡uˆ ƒÔ
+ˆ¯ƒ¡Qˆ¦ˆ„=* „[*ƒü2E …[…Ú‰…h…K-‚¯$€F…U‡ ˆÊ
+X>{ ˆ°ƒ¡/!€‚Ì †¾†…ƒË ‡€2‚Ì †<‚K-†ñ2‚Ì„)„&mƒÇƒ²1ƒ€#ƒš>ˆ¤Ÿ¿…M„¢…kˆƒÇƒ²/$† ‡Y ƒ¼ƒš€U„.EˆsƒÇƒ²„}²ƒÇƒ²…îˆ¶ˆ ƒÇƒ²†'‡×-8‡:g…¬‚ƒš!‰*ˆ]ƒš+)…ŒƒÇƒ²‡¾3”‚÷˜&ˆD?†(×s>‡ƒ-€!‡@„›LU‚t 
+®ˆD?†„†FF‰0?††üV …½Ÿ¡%¯§‚V€z‡ô ‰[§‚{"‰‰(
+ƒsƒh‚
+†h[)9ƒ
+ƒØ7§‚z€S……$€z…ª
+‰9Nh†ŒHˆx‰†F‚ÅGF€z„´$X€ 
+ˆ`ƒ(‚Ó…ƒ €z‰€V7‚"†„€ˆ‘"y
+‰Yv		…5D‡¾ƒR‚¨€S€Ö¯¨„+Ÿ©ˆ­)"‡o"†{!‡'ƒú…Y‚ÉVD‡ÃV„±±ˆx!
+ƒQ)D†3„3
+‚+q„j%‚`ˆ¾"…Y†3…k$=+Dq†2„3€D‚+ƒ&Y„Ù‡0Ÿ¡…I€É‚k"s… <„w€a6M‡C&‰‚‚|"…M"…¯§…¿€,…-:ˆ‚|„¨F!5Fˆ ‚~€@F‡€‚~„Úƒâ‚}‡¯‚ú‚¤F€‡‚|‡Eº…‹‡:‚|F‡‚~€@…,K‰„'€(„bwƒô€>a6M‚|„¨6M‡P¥abw€‡ã=6ˆœ€çƒ$0w‰‚ ja6†X
+‡ˆ‰„ƒˆ…Ÿ¢‡9‚|bwˆœ„¸$p=6„ …¸8†#‡·‡Ÿ¡……$R…œŸ§¬Ÿ¢|8‰P‡K€}‚°…#T>@ˆ‚j
+€ù…ÿ'u	‡	 €F‚2Z7
+ˆQˆ¨†ã…&
+°ˆ+ˆò…ë vb†şƒñ
+ƒÌ†‡Y„N‡+ˆâ‰2E‰ˆâ†-2Eƒç‡6„Ö†:‡œ‰eƒü2E„µ‰)*ˆşæƒ:4sAŸ4h0ĞaÍ;æ„  ¡Fæ~Y<èÏôŸêOHšñêH¡¦û¨ÙùMu–A˜Œ#gçE²æ„Dœ ¢OºRôĞæı'è¯/T"O’3é]z @ı2Gä‰šç7ä‹\æôÀC~†Ê~#gæãÑ!ò„lúr {àÂÑêÄã¹h4 ¬_ µıÖ—˜éOÎi>Óz$ ñé;Ö%Öx%# _ÉÍ,	#À0+'4 °4_ Ç4ÒŸ[Í- ÑøÑBñøãÊY>²KÍu"šZéœ‘àéœ‘ôÎF{‡¹¤üÎ†›ö9"N¼Ÿ@GäH?¬Ÿ‰€LƒüHr6H©¶æ„„W€Jñ>™º	çæKÎ£Gè¦ şŠ|Ğƒ¡KB–…-úô#èGĞ¡#BF„	8È‡rÉÙxDhü’^@Éå|>AùèŠéË'gâz`şƒø¯‘ŸÈÇÎ]¨ˆäñ"¶;rydŞà0Mùæ„ 	\¯ëÇåä-Í@i84œĞ„“A<¸4š	åó|Èi¾Òó?02^Âº’ù>Eãê ù¡o·í ÿ/Hÿ9ó¡¦üÁú?æH}'€<}¿ˆÿI ´_„
+HŸsÓxoÅÎgâç2^#Ñ'Œı¤Ï÷F ñÈÇLÿCGä4ŞXAı^‚Ù şëzH??ÏAhh…ÏÓüÉØ„oªH€ÄöÑìàP">^7–·Xƒô…DN^Ÿ4!"dàQ2~_™Õ€Jû	ö~$¥ûyÂWÄ¢âRo¸r;§÷²nhBĞ™¡WB/º®ĞN²h'—4!8f$x7ÌAüØòõ~ZÜ%KÍ'œ¯Ïó—¦~hBtÎHğ.™Éœ‘ ÿ5“ós9¡	Ó›˜·[ósëKuyı¢ şÑcí¬½ãàbíÉ/ø(Ñ—À¯‚gù2O JùóiÓ}¦—ä¥ãÎQ>¢7ó9#ùœ‘—ècÏöı¥êL–ƒ- ”Iøf'ŒbGÈXÉ}cCMõÏË2nhB£ı‹­ùOøôüzŸæH|Ğ…IÌ‘x'¹àqâlæ„>ø@bxÍæ„0º	çÁkúÈ?0oôÏÑ!hµãñAøº?!¦üı"}^˜êóæ„0Y7E1Éõ‚>lâOF`CWœ>Ó|¿ñ1ø³ñd¿‘?"óñ	Ñ$P¼~$¿ ’æ„3’1ÇrXƒòÒcíûŞAıïCM÷ËÎQö<ƒûÿHƒüˆßEŸ¨%sBècpG£FH¡¦ûfH¡¦üZ†›fà2GÆI9“ÑÉ.¬aâ¿H?‚<Ğ†² h‰Á,€‰ú’<Ğ†²T‘ÜipKCö7"~DäEãôè9z’™"Aşb9ùˆèiºà/ë—ã"/BÈ?·ËÖÈƒúÁÑó†|Ğ†æ‚s	òKèi¾À4a2ïXÒïY&EãïY&‡7šÜÇÒhi¸'4Dş">è2å¤ˆ?–’CMù5ÑRKò@ÉMoä’$å8ĞSC›ù$26dñù‘³—4!¹³$§Á9³$¦Î_šB~hm?;ëû~ÿ?ÄPcÏšİ	Ñi#øS ıCƒù/¬XÛ zÉ÷¹¿Œ‰ê’(i·à¢+âQñ*_äÈäät4ß²È>hCˆ,²c‚ˆ,²cšâ,˜ĞO.
+$¾ÑR|A>GãïŸæ†ùÉ/´Äœ÷”½A“ã"ñödØôOØí5“ÍŸŸğ¸ÂàDrü½‘%éü›àúø³ò%3à1öışh‰ó,ƒôUõ4’—¤ÌñéƒÔ1æHËØüº@ã	?®™üÂ#gôŸ@È?rûşõãÅ#Gô5"ñå Ç™æ9h‘şå¢GCM÷-C›æÌƒóâ
+‰%/Ìòô„FŒƒøˆÑ¡¦ù#2ï#é’S-ê¡{àĞËÂW4" |öè'Ÿó!¦æ„D1ë'†=dóŞAú$Ğæü‚šÙz@{ÈŞä6l#gñ|@ˆş'R 1FÏâuIæ¤¦†™xûÖ~$xÌ?06š)¯˜ê}w4";An„vºgCMÁ¸f'ÌAóB#†bGƒpÌHø’ü› ~7ÓsB#–8ÑĞŸ¡;A>…NÍĞO?“ê&4ÙÑWÔLKšæ,#x7:?Œ½c7íûPÓ}¶G-ıàâ|Æ ş†ı‰ô4ƒû4^>Õ~s ÿC¡=¯‹œ_ĞÇœ¿Cxñ É~RCMûsB$P¬œP¬ŸVAüƒù#òÌƒûUö¨‘ûT†›õ'ê†›ÎrÈ?¿ïy÷½7êOQªûTFû ”AıRú±ãyûÖ†š^jÓz(i½)şhi¹¡’8:Jxæ„JJxĞO.’4Ë¶K ¶g‹¬†›gá:Ñúñù~gô¼~‚ÛSüÉşvG/Oèiº#»î ü¥yÆk˜|ĞŠ'5Ì@¥ÂÄù%Í¤á	Ò”‚ŸİıÑšÉ)/tg.he7oeá3’=YtÊ†›Ò'YàÅÈ"Aø‘1,yóAùã­ÀÙ¡¦æ„V„hÿ/&ÇŒCIÍ­2BE7×PÇôÉ’$ÏI š¯DIø¢&Éæ„X“„‰9¡&tøH™Óæ„X™ÓĞO.^OäÀ÷-ÆÇİtf†›Ï ¯˜&NÔûg@-xü~8‡Çi?Lèi¼Lƒúşµã· ¦¼}ˆi>Ä4ƒû²xD|ş‰XÂÈŸç/<ò
+ ¦Aü‘A"|‘CÙkÇÖá[¢OºDâIIo¦†šˆ‘öá0O†.·ÃZ_å·á@"|ƒüü2èi¼ˆùkúÈß­7˜…ãÍĞ -xø±èü–"×ÍÀ‹8PEŸaİIìÀ"?ÏÒ™ù‘¤æHú|ĞŒ	œ‘áA3’<ĞŒ	œ‘ĞO.€™ÉxThü?ZoÏË_­¿æ„dcáPEë¾Ñ¢G^<cÏçšoÒ$ò×õ™"Aù ZññüŸ1#ó2ú$¢G ı×û	±xü§éóüåéÌƒõIë}XI}ˆi¾÷œÈßÎdiùÌCMâ[Èd±÷¼ƒûŞ†›Îşµ¹èi¾áıÃ şá¡¦û‡`L‘û£÷D.G/½øæ„e¹òÇß,h'—
+·R?¤P¼~ß±#û2ıÓz….?#ûCM×È$§åª_[­õºÄÖë!¦óGçOó”Èùz?>"ä9 ?’¤ÌO˜“ù‘R7óÇ¨cÏæhşÑş;ábì$¾Ù @Zñâä^<‚4#F¼|¾c!¦óõ J ş´	Hi¾Ï¶³{A+ê$~¤4ÜĞAdáhµıxó²Íş‚ÕÒ¨i¾Üz?C©%ãñÇærGqá€†~a<ÿËšÁ‘¼0"24‘ôÉòKÕ'²AôeCGã;Ñ£y¡‘‹Š^’"NhG$øbOì'æ†›lác,ƒôWÍè—Š“èiº°íùKù ÿ”4Ş AùÀ™Öø'â²ñ‹­ùMÇå<sB;A> šĞ/ó¤IùÒ$ĞO/àÁãâ$¤ãâWÈ?dÑ3’?]I/ĞÒNk!PE†i*Hşß¶‚Ò¦YÍí%„	MdášKK÷Ÿ¬ŸVAóB;P"pÍ@‰ò—,ñó`VO¿šô'hOë]Ã5ßĞZæ“šô'hOĞƒ¡#­pğA<¸f¸.>1ÖNhGkŒd7†kŒ×0ŸD‰ôH’ú$…ãè–9¡Bv„ı	ºz×0œ3\Â}„ĞO/°šB	74#µÌ b˜œ3\Â0ØI}ˆÛ ´NcâC‘²C›öè-“¢Gí'ŞOÇšÚèƒ†k¢À/šÚèÈ†k˜OÆD3\ÂK†k£3ş39)ş39"ßÆg°"9~3=‰)ş3=‰)è-“©3ŸäNhGk§Ã5ÓüÉù7æó@ˆ ¬ŸšAşh%ú6_©Ííu¸fºß°K÷C©/QDOÎ\ĞÚNNoç'7A<¿9’2á›nhGwîhGpV†ğÎÓy¤æ„w8|3œ?Œ8'4#º,Y%.Ò?§÷zÍßá¢ ü! ş:kÇ4#ÄÃD÷—äòò—ˆ	càŸ4#Ä€™#ÃD€™#Íú´"èEĞØá¢B7äŸÉ2šâBM4¸h“CM/±hoß´hi¾ÑÊni%ö´ƒüç8 ÿFöıÓ~Ëı–AşÓ?¨À­7Û2´F†›Ä”ˆ?!¤–òïCM²æ„€pàğşİóò#å—åĞZr3 ×hHË€Dz	åÃeÀ"=òóH¡¦óGñ„øÈ?døÖI|rù¾d4ß3ªHıXóŞFıäi÷¡xûñèã^?RJ|Ğ	pà—Û |Ğ
+“‡Iò7A<ù¡ CMÃ‚¨iºOh'åàãCM÷ş?ˆÿ4ßŒÿT?®<%xf!Üo,_4$hEĞ™¡3BHµ»‡"Öï°“æ„‚-ü9ÿ½7Ş²JKÇ£ò}ß‘]ıáÑáx'Ğf›Æ?4$!káĞµùŸ‘_6šoKÓæ„†1œ;xğB‰ùcøĞÓ|Ÿ@Á0r¾´óşO¼ƒôb€¯“Ñ0dõ?ÈŸ‘%Í	·ëmáèbyjCMæ@üÑÄƒ—ÍèdøÖI}~’¶æ„#štˆĞN>hIĞNµñ	Ö¾hIĞNÎ#A;9¡'A=IÄh'©:2à—éè'—–NhI/^™®‰>è{â!¤ò&	~{£06‰%.hIcè·ñğœÚ‘¨#DO„ĞbJh©<hh#g.hIi¢IKñ@ø†š(4$´Ñ@ôËñ@ß6Š/7ˆl…LY>HÏäŒÈ? dú%?¼‚™ùæ„–Êh&N!²œh)¡Í—¦E­#DO’$”şH’S şH’SCMòF4|È?»Õù7G°"5ãàˆåµæ„
+2â"æú$|I) +'eÍ	3â'Í	3ĞO."z	åénæ„ IäIR[â\ËÆòAùDô¦´4Ûæ„ª0.âhÇıäš)¡Íæ„ªJ|M%=ÊâˆGùóôæ²{ïâ%}DÔ†›ê—–¿¬ƒóGéKòĞZø¹Åü‰/LG#zº5]i	õÏöóƒğËâWÄ¢âRoÛbâú ‘~4&¢'ã ş44ÜĞ˜“‹Ièæ'¤$U¤—ËóôÉPÇ şÑØöP¼t€o«iöÏïüZAşg$R~¨i¼?~7åçÄ‚8(ßJ^ŸôËš	R/‹%H¿‘rù#¿âÑ dğFËêúˆ?©7‰â“óüÈ?óùæ¼yDùò/Z	õ Ÿ^?4Ÿ$¼ÿËòš¯J™éşd‰Í	ˆœÖN-šÉê“® ş44ß/êIxJúˆ?ª^ˆ?-nyæ›æ$y¡1ÎWç+ê ş¤¦úÓ}HŸÕ/¿ï ÿ"zSôÿ/Pñê“ä^=o’;âè%yóDpºä—«õãdâğ†›dã 2xÈß¶`C|¢|šFï¡¦ó@b| şb/Am©‘rş=òü‚ËÒ‘éˆèi¾H FH?Ì‘üÉ{'4&èEã	à7íŸÛc¡düüIşhi¼ÇGhÿ0/óCš†›Ò—§ğ/rãádñ?xûGå¯ëĞO/®.s>¹MÍ'šOµÖû]i~“'é2KšQ)qˆ”¿"óæ„ÔJdXÆ1…)KÆ8æ„×¨i¸Ç¨i¹¡5ÀjmòãËš\2E¾a9qa9y¤Çœß=èi½}¨i¿0GÒŸ¦rGš]3’:	åÆ:g$tËç$KA(‘õ<}³üÏùœ´_ªO$¶æ„Øñ‘æ„ØËŒŒ¹¡6\eŸAišBƒú¼?)VAøÆ ÿ/3áYè²‘ ı!,Ÿ>>Ÿ§?Ì‘ ÿ2E6ÿã1éeÛãzOdúãPcÎ^{ÖIuŞŒÏùœ€”ÿ3Ø¿3Ø’Ÿ¦rãm±ãºt!A%âl×"^I?S—F?¯ĞŞ^8¾/ÈÑ$~H¡¦úN™¼Ğ~8ûæ„ôwB_V>9còÀ7¬C]I/o„O“Akš¼sB{IÇ4œĞÒh'—ÕãÓw4'¸ú@s÷B~…
+|süFı¤â	¡Íóİ$Lš‰3~ã£á’?$eäû3’?$eÍ	ôøêGÓü2v¤â'0Ÿ‰VëvÍù»ãÀ1¬ŸÈ?CH?¶ze8¡ï$|²z3üñéH'ä_K‘ùúb?Ïù~¤‰ë—®ïc¤ ‰ñY4­
+'ÄBÑkÇåâ-7âAù¿—œõ“Ñ-Oœ—äæóB#'4ãÉ%cÓDĞæôä¶ĞãĞ%~t‰%Í
+Ö†›AOËÆş‚ÙY_ŞFıäl¿/ÊxòÉòKÍWÛÏÒ—®‚K« ‰ñ_oÛ/¶rüÉüğZ-xñ 6€Ù¯‰ğHƒûg8|Ğ ·PÇãÖêä4(-Ô1Ì×0œzİRGÔ¾cüÇrÉö0“ úá(“ò2íšÉ)~Niåä–‰è‘È>hprÑ2/{òïCMú,ô‘49¿‘%/È’’ÙzdlıHş$ıãâMCMùÏÄ‘?Ê_™2ó#f‡RKÇç<~¨u%ä	Dê	“õ$üà€+ÇÂ²3áY/ˆ„ñüc ù¡B.4@Î>.cæ¼}œ¾òExüÈ)şƒıIÚk$¼Rü¤–¿¬ƒúÉ4GôIÍ
+t)èHãé#üä4(R|}'ìådçä(êCMÍ
+4fHòfHø’šßÊhsPÓyW4(ÑPh%|J­òä()xù'ùşdÙä@¢
+' ¶Ni¾N^1>Aù
+">hRĞƒ¡7ú4'èAĞ‰ÈgÍ
+Zt&èSĞƒ¡[B/"ùäú¼zĞZ³ôÌùÉ¡¦õ@bKšTHä‚yr$ ñƒøş6ë^?PäæóB‘D,|‰D,hi¼"6kÇÑ2î3Q"xh“Ö}¤”¼RD>HÅ7âIôúHŸ¤ˆ?,€‘>@Hƒù5’Rú?0iğ!²ø" xø"©|Œ	"AıÕ'İRîªo<Àˆ"†›äÀ“ëAõãîCf†›îŒÈ?B„”ı!Pƒæ…"J|‰%>hRĞ‹¡OB¦„
+Z9J`Œÿ0Fd4)hEĞ§¡SB~…-¼‰%7DŸ¢ç/Li#ø •'éş‘iêCMÓ’nŠîäP¢d4) k&4ËÆ<ùóóM/I74)"¤"Š’=pñè'—â†›Ë_ÖAıd˜ˆŸfyÅû??<‘=9‘¿šoQ£ü‰¿äh„ƒøQ#ü+'†O!¿iöËÌ
+ĞÓ}€1Í
+To#Fı¨i½#üäçüäº+êCMâ“ÈÖ%ºgúĞÓ}róGdÿ#’_9¡LéÍÌä€ÓzOôH¨ ù¡OB…m¼*O~·±ô4İòDƒûZAø$qöÏÇ è²|Œ$¼èˆäâOÄƒüçèY>dÁ1ƒø'5 òXƒı
+_ÑÇèÑ7¨R¬ƒé9¡L€e%öRZ	åÉÿƒğœÑıÍ¿OóC›â}ŸaöışFH?,‚ŸË ´d”ãAM'×æãCMùó#DO<È?F¨= 0Ÿæ†›óZoTù3ü‘úpŸ,şo¨Ÿa>È¸JûtÏï'âAøŸĞN?ä‘ü‚Ïí2ÉùùÎWã?Ñcı2GôŸ49Ô™ÉÔ™úM7é9~¤ıH?Ô‹Yú¡¦ôPÕ!¦ıbÔŒhÿÏó¿ä2xÇùÈ?<äB!¦û~ÒšĞ°K’BÁ.hSBÁ-òä²4Dù?¯bù¢'Íó1Ó|Ë'Õõ!¦ôÿ44Ş¿²N©ö:²ÿ%Iäã'Ìy’Sù5ãïy#ÏÎIÛö^=C?ØòñyøÄƒë %}kúÖIOò?ärÄZşµãëŸ²}dÖ†›ñQç(hòÄ&H? ¥ùJAüÆ$H?:“õe}w´ˆYà+ïğ•áø¨”Ğ LƒñhSq€ºss9'!~YÕãèé49¿©Í
+na9'0œĞ¦æ.9'0pñò®a>G4Ÿ#šMòù&t4ß%H“Í7œß´‘æ…7F8äãóüÈ>hSt˜¯’u?´dÚ9~güÎ@J™Éşg°"9~g±%>¼'âOÅKCMùMüüA øTíŸµkPÓy`‘ş	ƒı'2Dƒó”FşœÈ?D€mÄä¡@+ ş	ƒú2šáDDŸDI \”À%|J şc$ĞÒèŒ¾Ç|Ğ§04|”ÀÑı£CMøŒÿŒÖAşdüé/ÇÀ´4ß"å¬‘ø-d‚y|ûŞ†›ï—%|JCMõ¯íWÚ¤7ñŠo8fBñö GûAı¤ûH?´’ûIgE_pşÿ½äâOÅ„é?D1çğ!¤ÁoùiŸîi¾æ˜‘ûšeãô1–OĞÆYúËCMê	_)~R)PÓ}Y÷ kÇ±ÚD È?ŸÃñ‘«ÇŠRDƒñŒIOÈ˜²yŒ$|ß=î‘>÷Hƒæ…:Dœ•"O¾(‘>ø¢DßI7êL}·€µºßZİbìûâhi¿~C>Ó?iÓyÑ&Ğä°Ç‚g$Ğ -xô¦FmäÀ“š %h'—Ôp1„&½Ë'¿(Ÿ#|µ}Hi¾¿¬‘óL²yäô¦OÌƒüÉ/Nd‰Òñ—„v¹n6<I’$æ,‹BĞI|‹BÖ‚sB¦„]	št&hIĞ™¡g“"È´/#İütfAıZo®^hÈÑ ’ôb‚ ^¼úp7š«“8®ht8'Í
+‡ù3‚|Ğ¨pOA<¹3‚z	åÍ
+‡'&r}û>Éu$¾ßÄŸ‰4Ëñ!]~Dş?ñ'ñ ¤ò¯‰D”şß´ßi¥ö«íT¿ş2?ãAlÏAkÜ†Ïš‰rgD¼éô1ÿC¡2Ñ¡2ÑkÇ¢B|„hHü–û?º†?İoQCMö«oäĞ%,<OÌ'¦²~]w4*8`Ç&áƒ1&rGíA?,~wÕçúRüˆ?PGùó’Ÿ¬[äâ+ìzÈ?¼nt~÷{ĞÓ~¤ZÈ?¤IòKì
+È? JYñ)hi¾%KäÌbDƒıó³^<áóB¤\µòqr×õ¯A<¾µè-’2AıkDõ®_œÈ?Ğ+'¨¼}£ZoÊhi½¡¦ü§ÚÆùˆ?5ûH¿D3Pù}¿iö¡¦ûPÿµ~>Ô>^œÈ>Øò/Êdæ#şb9çnäğònå6å8ƒAi–éKšZ%“”hÉ’&i3ü‘”ÀÑü‘”ÜáóB®„íšùFBñâ‚S#~	L şèÎÈ¼ys|´(Ÿp•æ:¤¢G VOJd ñé ŸBúÿ9¾ŠyıÎ™éN$=`DrÛå"bv\Ğ«"r’'Çõ’RúÉ)/—Óz€_Àµã`å@ 6kÇ–€6|Ğ¬¬˜å@µ“i%ôHäHbLY%è‡át‰ù!Íş7åPKyk‰ç,šñé +'Ñ>¹'– 5Ûåº1ˆ?™7Ì²šô èIĞ©ËüÈ?(Z¾¢ëúÈ?®^hş2Dƒú‰´ŸæAşrôP¼~$o¥óüèi¾İóüÉù¡¦ôÄˆäÄrÑĞÓ|‘õH?¡¦ö9¡\š	Ö¾Xš	Ö¿ÄŸ©<ş(i¿3’> ş9y<şcÎ\Ğ®E‰Ì',E‰Ì'4+‘kåˆµù³ôIò7A<ı)şvG/Oó$y¡\àŸ,pOšÎ	è'—,r7šÎH“–9"OÌä#ü¥úÉö<‘ şÒñŠoÉäæO;šÎíòåå“šÏXøİå2|šXêLä–?xøåÍèZùd-~oÇñºß­/ OHş™şwR<¦çÙ#H>¸!Y>ãÆò‰å—Am‰Md› #ñ’$ÆH¡¦ó‡ñòı7¢?_'ÕõRo©4¾±ı¿‘?)şgæ…wO–u?¬mĞO?´{å¢ƒdùŒ²í7Ú¥”ÿ2~hi¿9‘¼Ğ¯4Ü´\Ó}¦Ğ[`cØí°å÷åñœãxæ:«Ïyèã—Hş2ü§å¯ë şòÑæ…ºù‚KÓÜæµsBË©Ì:ŸĞN>hYu4­|Ã© kş‚x“ú	êO´ßã",¿Œˆº’[ævFJ ¾J' NKQ ÇKr ËKs ƒL³ Mã ˜MœMUNHoO’âO¸âO¸iPå0QÚQGÚQG/Rd‹Rz(S¤5S©œSË‡TáT7áT7UJWÄ—Wë—Wë^X*·XLÒXUÒXUYg¶Y‹ØY”ØY”âY–ñYœ	Z¢	Z¢Z§NZ¼NZ¼NZ¼ºZäK[ Z[%_[&È[Ij\w­\³\º\“Ø\›Û\œÛ\œ]¯]]Åˆ]Ôˆ]Ôı]ù½^4A_ZA_ZA_ZA_Zy_gy_gÂ`²aË<aÛ<aÛ‰bFd¼7eEebfj™f€8g²<g³>g´­gÍËgØËgØõgãhêhêhêúh:	ij	¬iw	¬iw	®ix	®ix	®ix	³iy	×iˆ	j”	j”	j”	 E/¢º¬®¬¢q®  =¥¦r	lA& f&íµ-¡ \	Šß	H6ÍMJ†	 ¿£ “UÇÒt
+ Wf ,	 ‰ 
+•s	NŒ tNèÁ 	'ÿw'ùG„§¡2Gé‚I · o  	+ÏdŞ¥ª\;{ ;¹{	näîï“#­ ê ¡	‘	-öŒqşğ·²­	gyFÉ@¼‘                                                                                                     ing Road 
+; 
+;; [1375:] ; outside Gnettlefield Farm 
+;; [1376:] ; in Sandybottom field 
+; 
+[1377:Ingrid thanked the rook politely and promised that she'd 
+gnever let that awful Quickbuck chop down his trees. ] ; landing pad 
+; 
+[1378:oddly enough, the gnotice was positioned exactly at Ingrid's 
+eye-level. It read "Gno Ingrids", which made her laugh at Uncle 
+Dusty's bad spelling and correct it to "Gno Ingress". 
+%A loud clucking sounded to the east. ] ; on track 
+; 
+;; [1379:] ; in mill yard 
+;; [1380:] ; top of Ploughgnome Lane 
+; 
+[1381:the top of a mill sail appeared briefly over the trees to 
+the left, then sank slowly out of sight. ] ; Ploughgnome Lane 
+; 
+[1382:this was the steep bit, where Ingrid had once escaped from 
+the press ga

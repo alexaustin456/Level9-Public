@@ -1,0 +1,118 @@
+         GNOME RANGER II DESIGN NOTES. 16/4/87. LEVEL 9
+
+BACKGROUND
+
+The adventure, "Gnome Ranger", was pretty well received last Autumn, 
+due largely to its high-quality text which covered the full range of 
+humour from groan-inducing puns to political satire (eg public magic 
+was ended when prophets retired behind the hedges of their individual 
+cottages - a process known as "privetisation"). The Gnettlefield 
+Journal, a diary supplied with the game, illustrates this style. 
+
+Gnome Ranger was a contrast to traditional violent adventures (part 
+2 was just about making a cup of tea!) and starred Ingrid Bottomlow, 
+a bossy gnome of unconventional appearance but considerable star 
+quality. Accidentally magicked to the wilderness by her exasperated 
+family, after her "good ideas" had demolished most of Gnettlefield 
+Farm, Ingrid simply walked home, setting things to rights on the way. 
+
+"Gnome Ranger II: Ingrid's Back", to use its full title, is a sequel; 
+designed and written by the same team (with gnomic text and part two 
+of Ingrid's diary again translated by Peter McBride), and featuring  
+the improved graphics and characterisation of the cast, which were 
+introduced in Level 9's intervening game "Lancelot". The story 
+continues after Ingrid's return..
+
+
+DESIGN OUTLINE 
+
+Gnome Ranger II. The game is a three-part graphical adventure, set 
+in Ingrid's home village of Little Moaning, which follows the events 
+stemming from the death of the old Squire and his succession as lord 
+of the manor by Jasper Quickbuck. 
+
+He has decided that Little Moaning is the ideal site for an exciting 
+new enterprise zone and Gnorsegnome theme park, so the locals are to 
+be evicted... unless Ingrid can put a stop to the plan. 
+
+
+COMPONENTS 
+
+The game is made up of Ingrid's diary and three adventure programs, 
+corresponding to Little Moaning (the village), Gnettlefield Farm, 
+and Moaning Manor. Transfer between them is automatic with disc 
+versions; with cassette versions the player is told when to load a 
+tape. Each part has to be loaded once. 
+
+DIARY 
+
+The Second Gnettlefield Journal starts with Ingrid's return home to 
+Gnettlefield farm (where she finds the family have stored turnips 
+in her room again), and recounts the events of the next few weeks, 
+ending with the annual Mid-Winter party. 
+
+LITTLE MOANING   
+
+The game starts with a meeting in the village hall. Supposedly, the 
+gnomes have been invited to a party hosted by the new Squire, but 
+the hall is empty apart from Silas Crawley, Quickbuck's agent, who 
+reveals that their invitations double as eviction notices. 
+
+The other gnomes assume that "something will turn up", and life goes 
+on as before in the village, except for increasingly frequent visits 
+from surveyors and the like. 
+
+But Ingrid is determined to counter the threat and decides to get 
+everyone to sign a petition - no easy task when a typical gnomish 
+reaction to her visit is for householders to double-lock all their  
+doors and hide in the cellar. Ingrid is too thick-skinned to realise 
+anything is amiss, but her reputation for accidental destruction is 
+now well known.  
+
+Still, with cunning and persistence anything is possible, and Ingrid 
+eventually takes the completed petition to Great Aunt Ada Halfyard, 
+their local councillor at Doomladen, and Ada promises to raise the 
+matter at the next council meeting. 
+
+But then Ingrid's talent for disaster strikes again. News of the 
+petition leaks out and Silas Crawley reacts by bringing forward 
+the date of the eviction to before the meeting. The gnomes are 
+furious to learn that, because of Ingrid's meddling, they must be 
+gone by tomorrow...  
+
+GNETTLEFIELD FARM 
+
+The eviction starts at first light, with teams of northern dwarfs 
+marching on the village. Silas Crawley plans to tackle one house at 
+a time, starting with Gnettlefield, so Ingrid mounts her defence 
+here. 
+
+By means of killer chickens, more root vegetables which Ingrid's 
+family have again stored in her bedroom, the diversion of the River 
+Dribble, collapsing the barn to imprison people inside and so on, 
+by the end of the day all Silas' forces are trapped or fled, and 
+he is forced to admit defeat. The farm is wrecked (again) but the 
+village is saved. 
+
+MOANING MANOR 
+
+Ingrid's family have a secret meeting, accidentally forgetting to 
+tell Ingrid, but with Seamus Sosmall's Leprechaun magic they learn 
+that further plots are afoot to evict the gnomes. 
+
+A brave volunteer must infiltrate the manor and find out what is 
+going on there. By coincidence there is a vacancy for a maid, so 
+Ingrid applies, in disguise, and sets out to learn what she can. 
+
+Ingrid explores the labyrinthine building, meets the strange members 
+of the Quickbuck family and their aged retainers, and soon discovers 
+that Jasper Quickbuck has any number of skeletons in his closets (a 
+great sheaf of BT share applications, a letter from Guiness thanking 
+him for services rendered but advising destruction of the receipts, 
+an older brother who they "forgot" to tell when father died, etc). 
+
+Armed with this evidence, the gnomes confront Jasper, and Little 
+Moaning is made over to its inhabitants. And, in a final twist, 
+Ingrid takes over at the Manor. 
+
+  

@@ -1,0 +1,1361 @@
+; Gnome Ranger source, copyright (C) 1987 Level 9 Computing.
+;
+; MESSAGE.TXT, messages/keywords for the game.   
+;
+; Messages are of the form: [ number : text ] ; comment
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course.
+;
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard).
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first.
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+;
+; The word type ^C is used when a word is not to be used as part of 
+; the normal parsing but is to be available for checking should it 
+; be needed. This is so references to scenery may be checked for
+; containing particular words.
+;
+; Capitalisation is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+;
+; punctuation messages..
+[1: ]
+[2::]
+[3:, ]
+[4:.] ; dot with no space
+[5:%]
+[6:and ]
+[7:.%]
+[8:?%]
+[9:. ]
+;
+; positions etc..
+[10:exits led ]
+[11:an exit led ] 
+[12: through a door]
+[13: through an open door]
+[14: and ] 
+[15:Ingrid was standing on ]
+[17:%What now? ]
+[18:: ];
+[19:"]
+;
+; Messages for printing objects..
+[20:a ]
+[21:the ]
+[22:an ]
+[23:some ]
+[24:." ] ; dot quote
+;
+; exits directions, doubling as movement verbs..
+[51:^V north|^V n ^V northwards]
+[52:^V northeast|^V ne]
+[53:^V east|^V e ^V eastwards]
+[54:^V south|^V s ^V southwards]
+[55:^V southeast|^V se]
+[56:^V southwest|^V sw]
+[57:^V west|^V w ^V westwards]
+[58:^V northwest|^V nw]
+[59:^V upwards|^V u ^V up]
+[60:^V downwards|^V d ^V down]
+[61:^V inside|^V in ^V inwards ^V into ^V enter]
+[62:^V outside|^V out ^V leave]
+[63:^V cross|^V across ^V over]
+[64:with the ^V climb|^V scramble ^V ascend ^V mount]
+; is in 'you struggle with the climb and are in'
+;
+; Intransitive verbs..
+[70:^V i]
+[71:^V again|^V a]
+[72:^V look|^V l ^V display ^V redisplay ^V refresh]
+[73:^V inventory|^V inv ^V possessions ^V possess ^V list]
+[74:^V quit ^V restart]
+[75:^V restore ^V load]
+[76:^V save]
+[77:^V ramsave ^V ram]
+[78:^V ramload]
+[79:^V score ^V rating ^V status]
+[80:^V verbose]
+[81:^V brief]
+[82:^V wait|^V wa ^V pause ^V z]
+[83:^V ring|^V play]
+[84:^V on]
+[85:^V off]
+[86:^V pictures ^V graphics]
+[87:^V words ^V text]
+;
+[89:^V undo ^V oops ^V whoops]
+[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash]
+;
+[92:^V searched|^V search ^V explore]
+[93:^V dig]
+[94:^V sniffed|^V sniff ^V smell]
+[95:^V knocked|^V knock]
+[96:^V stood|^V stand]
+[97:^V lay|^V lie]
+[98:^V sat|^V sit]
+;
+[100:^V say|^V whisper ^V call]
+[101:^V teleport]
+[102:^V getme]
+;
+[104:^V run]
+; 
+[108:^V went|^V go ^V goto ^V find]
+[109:stopped|^V stop ^V abort]
+;
+[112:^V exits ^V exit]
+;
+; verbs for output..
+[130:^V had|^V have ] ; mainly for output
+[131:^V had|^V has ] ; mainly for output
+[132:^V was|^V am ] ; mainly for output
+[133:^V were|^V were ^V are ] ; mainly for output "you were"
+[134:^V was|^V is ] ; mainly for output   "someone was"
+;
+;; [137 is 'GO IN']
+;; [138 is 'GO OUT']
+;; 139 is 'wch ^V lift]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+[165:^V snap] ; as in "snap fingers"
+;
+[168:^V pulled|^V pull ^V tug]
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ch ^V lift]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+[165:^V snap] ; as in "snap fingers"
+;
+[168:^V pulled|^V pull ^V tug]
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ^V untie]
+;
+[176:^V insert]
+[177:^V picked|^V pick ^V pluck]
+;
+;; [182:^V collect] ; goal-directed
+;
+; 186, 187 and 189 have text for debugging only
+[186:return object] ; 186 is 'return object to initial' (for npcs)
+;; [188:^V find] ; set up find.
+[189:gdfind] ; 239 is gdfind
+;
+[190:^V closed|^V close ^V shut]
+;; 
+[192:^V tell]
+[194:struggled] ; mainly for output
+; 195 is 'steal all from'
+;
+[197:killed] ; output only
+;
+[210:reached] ; output only
+[211:draged] ; output only
+[212:passed] ; output only
+[213:flew] ; output only
+[214:walked] ; output only
+[215:caught] ; output only
+[216:entered] ; output only, e.g 'Fred enters from the east'. Do not mark 
+;
+; Armed combat blows..
+[220:^V scratch]
+[221:^V pink]
+[222:^V jab]
+[223:^V stab]
+[224:^V hack]
+[225:^V batter]
+[226:^V smite]
+[227:^V cleave]
+[228:^V pulverise]
+[229:^V devastate]
+;
+; Unarmed combat blows...
+[230:^V slap]
+[231:^V claw]
+[232:^V bite]
+[233:^V hit] ; must remain as hit!!!! - used for output in THROW
+[234:^V thump]
+[235:^V belabour]
+[236:^V crush]
+[237:^V mangle]
+[238:^V pulverise]
+[239:^V demolish]
+;
+; Echo verbs (250-299) which just print the message containing them..
+[250:you seem very sure|^V no]
+[251:you seem very positive|^V yes]
+[252:whee! That was fun|^V jump|^V leap ^V hop ^V skip ^V dance 
+^V celebrate ]
+[253:you seem to sense mysterious forces gathering, but nothing happens|
+^V plugh ^V xyzzy ^V sesame ^V plover ^V humakaat ^V satarh
+^V ollabin ^V obis] ; magic words for amusing response
+[254:the ^V weather is very average for the time of year]
+[255:^V hello to you too|^V welcome ^V hi ^V greetings ^V day ^V afternoon]
+[256:you hear nothing that you didn't already know about|^V listen ^V hear]
+[257:send the coupon to Level 9 for a ^V hint|^V help]
+;; [258:the ground is much to hard for digging|^V dig]
+[259:send your ^V cheques to Level 9|^V treasure ^V money]
+[260:the only ^V escape is to finish the game]
+[261:do you really? We can't have everything we ^V want you know]
+[262:you'll have to find that out for yourself^V what]
+[263:Why not|^V y ^V why]
+[264:sorry, I just tidied this place and now I can't find 
+anything|^V where]
+[265:I'm afraid not even the author knows ^V how things work around here]
+[266:sorry, I can't help with such matters|^V whether ^V who]  
+[267:Mary Whitehouse leaps out and slaps your legs|
+^V bloody ^V scott ^V adams ^V frigging ^V wanker ^V turd 
+^V shit ^V twat ^V cunt ^V prick ^V bollocks ^V jesus ^V christ 
+^V god ^V devil ^V tits ^V asshole ^V arsehole ^V cretin 
+^V spastic ^V coon ^V wog ^V fucking ^V screw ^V fucker ^V bastard 
+^V bugger ^V damn ^V fart ^V sex ^V hell] ; lower case swear words 
+[268:you are very ^V intelligent, boss|^V intelligence]
+[269:^V life is a many splendoured thing]
+[270:^V shout|^V yell]
+[271:the ^V royalties are never enough]
+[272:what a morbid subject|^V death]
+[273:what? Going so soon? Press CONTROL C, but don't forget to save 
+your position first|^V goodbye|^V bye]
+[274:I should think so too|^V sorry]
+[275:eeek!..|^V scream]
+[276:what a relief|^V phew]
+[277:%^V directory of disk A:\% %No files.%Space free = 123456789 
+Megabytes|^V dir ^V catalog ^V cat]
+;
+;
+[279:Ingrid was not sleepy|^V sleep]
+[280:the leeches make swimming too dangerous around here|^V swim]
+[281:I ^V think that may be a good idea. Or maybe not]
+[282:Ingrid's attempts at musicianship were not well received|^V play]
+;
+[285:bleuch|^V drink]
+[286:Ingrid didn't want to ^V shake that]
+[287:Ingrid's attempt at musicianship was not very well received|^V sing]
+[288:you are here to use objects, not to ^V bury them]
+[289:yum yum|^V eat ^V bite ^V taste ^V nibble ^V lick]
+[290:Ingrid polished it to a fine finish|^V rub ^V clean ^V polish]
+[291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+[292:please ^V empty a container by removing its contents in turn]
+;; [293:rat-a-tat-tat! That was fun|^V knock]
+[294:Ingrid had no source of fire|^V light]
+[295:that's not burning|^V extinguish]
+;; [296:that's not a musical inste ^N witch]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+[360:^N armour]
+[361:^N backpack]
+[362:^N necklace]
+[363:^N bridle] ; worn by unicorn
+;
+; now some ordinary objects (80 onwards)..
+[380:^N bell]
+[381:^N coin]
+[382:^N crock of ^N gold]
+[383:^N envelope]
+[384:^N flower]
+[385:^N fungus]
+[386:^N hair]
+[387:^N brass ^N lamp]
+[388:^N letter]
+;; [389:^N necklace]
+[390:^N nugget]
+[391:^N peg]
+[392:^N pipes]
+[393:^N black ^N rod]
+[394:^N bunch of ^N keys]
+[395:^N sandwich]
+[396:^N shove ^N witch]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+[360:^N armour]
+[361:^N backpack]
+[362:^N necklace]
+[363:^N bridle] ; worn by unicorn
+;
+; now some ordinary objects (80 onwards)..
+[380:^N bell]
+[381:^N coin]
+[382:^N crock of ^N gold]
+[383:^N envelope]
+[384:^N flower]
+[385:^N fungus]
+[386:^N hair]
+[387:^N brass ^N lamp]
+[388:^N letter]
+;; [389:^N necklace]
+[390:^N nugget]
+[391:^N peg]
+[392:^N pipes]
+[393:^N black ^N rod]
+[394:^N bunch of ^N keys]
+[395:^N sandwich]
+[396:^N shovel]
+[397:^N wand]
+[398:^N whistle]
+[399:^N rock]
+;
+; some static objects (130 onwards)..
+[430:^N gate]
+[431:^N knocker]
+[432:^N kennel]
+[433:^N note]
+[434:^N prints]
+[435:^N puddle|^N mud]
+[436:^N rainbow]
+[437:^N shutters]
+[438:^N sign]
+[439:^N statues]
+[440:^N waterfall]
+[441:^N brambles]
+[442:^N door] ; shop door
+[443:^N window] ; window at front of cottage
+;
+; some invisible objects (150 onwards)..
+[450:^N fingers]
+[451:^N woodland]
+[452:^N woodland]
+[453:^N fence] ; at south of cottage
+[454:^N fence] ; at west of cottage
+[455:^N fence] ; at east of cottage
+[456:^N marsh]
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+[480:^N shop]
+[481:^N cave]
+[482:^N pinnacle]
+[483:^N cottage]
+; 
+; These are used for seeing from a distance and for input, e.g for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc.
+;---
+; Collective nouns...
+[534:^N everything ^N all ^N every]
+[535:^N treasure] ; collective noun
+[536:^N weapons] ; collective noun
+[537:^N people|^N everyone ^N everybody] ; collective noun
+[538:^N clothes|^N armour]
+;
+; Omni-present objects.. 
+[539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It 
+; is apparantly never described by PRINTOBJECT (so?).
+[541:^N water|^N river]
+[542:^N be]
+[543:^N room|^N ground ^N floor] ; used for output as well
+[544:^N wall|^N walls]
+[545:^N sky|^N sun ^N moon]
+; 
+; and finally, some miscellaneous nouns which are used miscellaneously..
+[547:^N except ^N but]
+[548:^N it|^N that ^N them ^N those ^N none ^N him ^N her]
+[549:^N minute ^N minutes]
+[550:^N yak ^N sheep ^N cow ^N horse] ; for FIND Llama.
+[551:^J then ^J next]
+[552:^J therefore ^J so]
+
+[553:^N ingrid] ;you
+;
+; Pronouns...
+[560:it] ; ita
+[561:it] ; itan
+[562:some]
+[563:he]
+[564:she]
+[565:they]
+[566:ingrid] ; you
+;
+[570:it] ; ita
+[571:it] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:ingrid] ; you]
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s]
+[581:es]
+[582:is] ; used in examine
+;
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direction of the moving npc.
+;
+[585:from the south]     ; north
+[586:from the southwest] ; northeast
+[587:from the west]      ; east
+[588:from the north]     ; south
+[589:from the northwest] ; southeast
+[590:from the northeast] ; southwest
+[591:from the east]      ; west
+[592:from the southeast] ; northwest
+[593:from below]         ; above
+[594:from above]         ; below
+[595:from outside]       ;inside
+[596:from inside]        ;outside
+[597:from across the way];across
+[598:by climbing]        ;climb
+[599:with a jump]        ;jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+[601:ingrid was a small, rather attractive gnome] ; you
+[602:a large muscle-bound centaur]
+[603:ugly-looking eagle chicks]
+[604:fortunately, the cockatrice is looking the other way. You remember
+from legend that the gaze of the cockatrice instantly turns any
+living thing to stone]
+[605:a tiny little dog]
+[606:a crowd of yapping little dogs]
+[607:a huge majestic eagle]
+[608:a small green leprecaun]
+[609:a shaggy llama]
+[610:a strikingly beautiful nymph]
+[611:a delicate unicorn]
+[612:an ugly old witch]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+[660:some plate armour]
+[661:a capacious backpack]
+[662:a pretty necklace. Quite worthless though]
+[663:a bridle, as for a horse] ; worn by unicorn
+;
+; now some ordinary objects (80 onwards)..
+[680:a little silver bell]
+[681:a small round coin]
+[682:a crock of gold]
+[683:an envelope]
+[684:a pretty flower]
+[685:a piecvery large kennel]
+[733:a note]
+[734:a prints]
+[735:a puddle]
+[736:a rainbow]
+[737:shutters over the shop window]
+[738:a sign]
+[739:some very lifelike statues]
+[740:a huge waterfall]
+[741:thick, sharp brambles]
+[742:an iron-bound door]
+[743:an iron-bound window beside the door. Through the window, Ingrid
+could see the witch going about her business inside. The witch
+saw her and waved her over to the front door]
+;
+; some invisible objects (150 onwards)..
+[750:ingrid's fingers]
+[751:a thick pvery large kennel]
+[733:a note]
+[734:a prints]
+[735:a puddle]
+[736:a rainbow]
+[737:shutters over the shop window]
+[738:a sign]
+[739:some very lifelike statues]
+[740:a huge waterfall]
+[741:thick, sharp brambles]
+[742:an iron-bound door]
+[743:an iron-bound window beside the door. Through the window, Ingrid
+could see the witch going about her business inside. The witch
+saw her and waved her over to the front door]
+;
+; some invisible objects (150 onwards)..
+[750:ingrid's fingers]
+[751:a thick patch of woodland]
+[752:a thick patch of woodland]
+[753:the fence at the southern side of the cottage]
+[754:the fence at the western side of the cottage]
+[755:the fence at the eastern side of the cottage]
+;
+; Examine messages for location objects (779+N), see 479+ and 1199+
+[780:funny-looking shop]
+[781:cave]
+[782:pinnacle]
+[783:cottage]
+;
+; Short-Form room Descriptions (1000+N). No full stops at end please.
+; These are the brief mode descriptions; they are prefixed by "you 
+; are" and, in verbose mode, messages 1300+N are appended.
+;
+; room 1 is used as exit modifier for synthesised rooms.
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid.
+;
+[1002:in a ^N cave]
+[1003:in a ^N front ^N garden]
+[1004:in a ^N kennel]
+[1005:in the ^N hall]
+[1006:in the ^N parlour]
+[1007:in the ^N back ^N garden]
+[1008:on the ^N garden ^N path]
+[1009:inside the ^N shop]
+[1010:in the eagle's ^N nest]
+;
+; verbose messages for location objects..
+;
+; 1199+N (see 779+ for examine messages and 479+ for brief descs)
+[1200:beside a shop]
+[1201:beside a cave to the west]
+[1202:beside a huge pinnacle]
+[1203:beside the gate to a quaint little cottage. The road goes through
+the gate here, and a high fence stretches all around the cottage]
+;
+;
+; Now verbose additions to brief location descriptions (1300+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (1000+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.)
+;
+[1302:, perfumed by strange incense] ; in a ^N cave
+[1303:] ; in a ^N front ^N garden
+[1304:] ; in a ^N kennel
+[1305:] ; in the ^N hall
+[1306:] ; in the ^N parlour
+[1307:] ; in the ^N back ^N garden
+[1308:] ; on the ^N garden ^N path
+[1309:] ; inside the ^N shop
+[1310:] ; in the eagle's ^N nest
+;
+; Message pairs for use in describing containment positions
+; also used for preposition table
+;
+; part printed before container
+;
+[1600:could see]      ; 0 - you can see
+[1601:^P on |^P onto] ; 1 - on
+[1602:^P underneath|^P below ^P under] ; 2 - under
+[1603:^P behind]      ; 3 - behind
+[1604:]               ; 4 - carrying
+[1605:]               ; 5 - wearing
+[1606:in|^P at]       ; 6 - blocking the hole
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8
+[1609:part of ]               ; 9 - part of
+[1610:^P between]     ; tied between is tied a rope
+;; [1611:]            ;11 - for ring of knucklebone
+[1612:lying on]       ;12
+[1613:sitting on]     ;13
+[1614:fastened to]    ;14
+;; [1615:tied to]; 15 tied to (the chest) and holding the lid open is..
+[1616:^P with|^P using]
+[1617:^P from]
+;
+; part printed between container and contained.
+;
+[1640:]               ; 0 
+[1641:was]             ; 1 - on
+[1642:was]             ; 2 - under
+[1643:was]             ; 3 - behind
+[1644:was carrying]    ; 4
+[1645:was wearing]     ; 5
+[1646:was blocked by]  ; 6 - is blocked by
+[1647:was]             ; 7 - in
+[1648:was]             ; 8
+[1649:was] 	      ; 9 - part of.. is
+[1650:was tied]        ;10 -
+[1651:]               ;11 - from
+[1652:]               ;12
+[1653:]               ;13
+[1654:was]             ;14 - fastened to
+;; [1655:and holding the lid open was] ;15 tied to the (chest) is a (strap)
+;
+; 1700: is base for prepositions to use with 'you'
+;
+; 1700+N is part printed before 'you'
+[1715:tied to]
+;
+; 1740+N is part printed between you and object(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]            ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parser messages..
+[2000:you don't need to use "] 
+[2001:" to finish the gamear away] ; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence]
+[2017:it's not there]
+[2018:there were too many nouns in that sentence]
+;
+[2036:sorry, I don't fully understand that verb]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there doesn't seem to be anything suitable]
+;
+[2039:what a mouthful! ]
+;
+[2044:couldn't have ] ; as in "Ingrid couldn't have knocked that"
+;; [2045:that]
+[2046:that]
+[2047:here]
+[2048:ingrid couldn't find ]
+;
+[2053:it's noar away] ; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence]
+[2017:it's not there]
+[2018:there were too many nouns in that sentence]
+;
+[2036:sorry, I don't fully understand that verb]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there doesn't seem to be anything suitable]
+;
+[2039:what a mouthful! ]
+;
+[2044:couldn't have ] ; as in "Ingrid couldn't have knocked that"
+;; [2045:that]
+[2046:that]
+[2047:here]
+[2048:ingrid couldn't find ]
+;
+[2053:it's not clear to what ]
+[2054: is referring] 
+;
+[2055:(removing] ; E.g '(Removing the bat from the cage first).'
+[2056:from the]  ; to avoid containers inside themselves.
+[2057:first).]
+;
+; error messages for NPC's
+[2060:are you talking to yourself again?]
+[2061:ingrid couldn't talk to several people at once]
+;
+[2065:for] ; as in 'looks for the cask'
+[2066:but can't find]
+;
+; message pair when a npc tries to take stuff from others...
+[2074:won't let]
+[2075:take it]
+;
+; Standard Adventure output messages
+;
+[2100:Welcome to Gnome Ranger, copyright (C) 1987 Level 9 Computing. ]
+[2101:ingrid couldn't see]
+[2102:ingrid didn't have]
+[2103:ingrid already had]
+[2104:ingrid couldn't see that here]
+;; [2105:in the distance is ] ; for scenery seen from afar
+[2106:ingrid owned nothing at all. ]
+[2108:it was dark, ingrid could not see]
+;
+; examining something greater than maxobject: (but not scenery)
+; rare occurrence - mostly for omnipresent objects, numbers, spells
+[2112:it looks exactly as you would expect]
+[2113: nothing]
+[2114:ingrid couldn't go that way]
+[2115:through the door]
+[2116:ingrid tried very hard to squeeze under the door, but 
+couldn't manage it. She wished she had opened it before trying. ]
+[2117:it's already open]
+;; [2118:it's already closed]
+[2119:ingrid found]
+;
+[2123:ingrid couldn't put ] ; paired with 2124
+[2124:there]
+;
+[2125:ingrid couldn't go there! ]
+[2126:ingrid would have to drop it first]
+;
+[2127:ingrid couldn't climb that]
+[2128:%Did you know that you can say 'GO TO somewhere' to go to
+a far off place? e.g. 'GO TO TOWER' or 'GOTO ALDER FOREST.'%]
+;
+; 2130 is used when player refers to scenery which is not nearby
+[2130:I can't find a reference to "]
+[2131:ingrid was on it! ]
+[2132:what? ]
+[2133:where? ]
+[2134:ingrid was wearing ]
+[2135:Please try again, saying what with? ]
+[2136:which one?]
+[2137:at what?]
+[2139:is full]
+[2140:" here]
+;
+[2142:ingrid couldn't wear ]
+[2143:ingrid couldn't reach it from here]
+;
+[2147:ingrid was already wearing that]
+[2148:ingrid found she didn't need to do that]
+;
+; Confirmation messages
+;
+[2152:worn]
+[2153:OK]
+[2155:time passes. ]
+[2156:said]
+[2158:ingrid found she would have to untie it first]
+;
+[2160:YES or NO please.%]
+;
+[2177;ingrid heard strange noises]
+[2178:ingrid heard a strange noise]
+[2179:ingrid heard some strange noises come from nearby]
+;
+[2190:(]
+[2191:)]
+;
+; Death, scoring, game control etc.
+;
+[2200:really restart? ]
+;; [2201:%press space to play again]
+[2202:really restore? ]
+[2203:%please answer YES or NO]
+;
+[2207:do you want to continue? ]
+;
+[2209:% %thy adventure is over.%Please type RESTORE or RESTART: ]
+[2210:the room is badly damaged] ; attack/fireball room
+[2211:don't bother - ingrid made a pretty good job of smashing the place
+up last time]
+[2212:why don't you go and mangle a paper clip instead? ]
+[2213:vandals seem to have been at work here]
+[2214:% %do you want to continue? ]
+[2215:that's too long to wait] ; won't wait
+[2216:you can wait for someone (e.g. WAIT FOR BEETLE),
+for a certain length of time (e.g. WAIT FOR 25 MINUTES),
+or until a time (e.g. WAIT UNTIL 14:25)]
+[2217:the time is ]
+;
+; Residual combat messages..
+[2230:the body of] ; as in 'the body of a troll'
+[2231:, but]
+;
+; Score messages..
+[2240:ingrid scored ]
+[2241:% %you seem to have got ingrid killed.%]
+[2242: out of 1000 and was a ] 
+;
+; ratings..
+[2250:novice]
+[2251:sorcerer's apprentice]
+[2252:conjuror]
+[2253:soothsayer]
+[2254:shaman]
+[2255:a spellbinder]
+[2256:sorcerer]
+[2257:magician]
+[2258:wizard]
+[2259:mage]
+[2260:supreme archmage]
+; 
+; health reports
+[2270:dead]
+[2271:at death's door]
+[2272:a wreck]
+[2273:badly injured]
+[2274:wounded]
+[2275:injured]
+[2276:hurt]
+[2277:almost uninjured]
+[2278:in good shape]
+[2279:unhurt]
+[2280:completely uninjured] ; and probably cheating!
+;
+[2300:Oops and ram save/restore don't work in this version]
+[2301:%please insert save disk and press a key. %]
+[2302:%please insert game disk. %]
+[2308:I can't use OO06:ingrid smelled wonderful] ; smell player
+[2407:ingrid said hello]
+[2416:to be, or not to be, that is the question]
+;
+[2501:a wizard appears in a puff of smoke to take ]
+[2502: to heaven]
+;
+;
+;
+;
+; add your messages for special cases here....
+[2503:Ingrid knocked loudly on the door]
+[2504:the shutters and door were locked from inside]
+[2505:the shutters and door were wide open. Inside the shop, Ingrid saw
+a variety of junk]
+[2506:Cap introduced himself "Greetings, traveller. I am Cap. Centa06:ingrid smelled wonderful] ; smell player
+[2407:ingrid said hello]
+[2416:to be, or not to be, that is the question]
+;
+[2501:a wizard appears in a puff of smoke to take ]
+[2502: to heaven]
+;
+;
+;
+;
+; add your messages for special cases here....
+[2503:Ingrid knocked loudly on the door]
+[2504:the shutters and door were locked from inside]
+[2505:the shutters and door were wide open. Inside the shop, Ingrid saw
+a variety of junk]
+[2506:Cap introduced himself "Greetings, traveller. I am Cap. Centaur,
+propietor of this multifarious emporium. You may buy any object you like
+by giving me two other items in exchange"]
+[2507:Cap said "Hmm.. since you appear to be rather
+impoverished, perhaps you would
+care to run a little errand for me. Would you take this private letter
+to my dear old aunt who lives just a little way north of here,
+in a cute little old cottage, please?" He fished out an envelope
+and offered it to Ingrid]
+[2508:Cap said, "come on now, surely delivering one letter won't take
+too long"]
+[2509:Cap said "Hurry along now, and no peeking"]
+[2510:the envelope was sealed]
+[2511:ingrid tore open the envelope]
+[2512:the envelope had been torn open]
+[2513:Cap saw that Ingrid had opened the letter. He was obviously
+horrified and could see from Ingrid's expression that the game was up]
+[2514:Cap beat off Ingrid's blows with ease, but she did manage to
+bruise his shins rather badly]
+;
+[2516:the note now read: "Gone away for the sake of my health"]
+[2517:the shutters and door appeared to be unbreakable]
+; opening up from inside (i.e. on first visit)
+[2518:a centaur opened the door and shutters from inside and
+beckoned Ingrid to enter]
+; opening up from outside...
+;;[2519:the centaur opened the door and shutters and invited
+;;Ingrid to go in. ]
+;
+; Some random things that Cap says when he meets Ingrid,
+; either inside or outside the shop. (after the first meeting)
+[2520:Cap said "Hello again Ingrid. Have you any valuables you wish
+to exchange for my desirable goods"]
+[2521:Cap said "How nice to see you again"]
+[2522:Cap said "Greetings Ingrid"]
+
+; and random comments in response to most things Ingrid can say...
+[2530:Cap said "really, how nice" ]
+[2531:Cap appeared to be deep in thought, and ignored what Ingrid said]
+[2532:Cap murmured in acknowledgement]
+
+[2540:Cap said "OK, if you give me one more item, you can take
+any item you choose"]
+[2541:Cap said "Good! Now take whatever you like"]
+[2542:Cap stopped Ingrid: "But you have not yet paid me enough"]
+
+; Let's have some fun with the player if they haven't guessed
+; what the Llama hair is...
+[2543:Cap seemed delighted "Wow! Genuine (the next word was too muffled
+to hear properly) hair"]
+; And finally give the game away to prevent people getting stuck...
+[2544:Cap seemed almost sorry to part with the hair "an excellent
+choice, Madam. "Genuine 100 percent Llama hair, the very
+best you can buy"]
+[2545:the centaur threw Ingrid forcibly out of the shop
+(for she was many times smaller than him), 
+locked the shutter and door and cantered off into the distance]
+[2546:the centaur locked up the shop and rode off into the distance]
+[2547:the centaur rushed off towards the shop]
+[2548:the centaur rushed in, looking horrified]
+;
+; Find Llama stuff..
+[2550:Ingrid started to look for it, ]
+[2551:but decided that the hair didn't look quite right]
+[2552:but decided that the hair was too long]
+[2553:but decided that the hair was more like that from a mountain
+creature]
+[2554:the Llama said "peace, woman" and offered Ingrid a flower]
+
+; Nymph stuff...
+[2560:ingrid thought she caught a glimpse of something out of the 
+corner of her eye]
+[2561:ingrid saw a delicate shadow move nearby in the trees, then
+it was gone]
+[2562:a shy little nymph appeared in the bushes, almost completely
+hidden]
+[2563:the nymph panicked and ran off]
+[2564:the nymph gave ]
+[2565:back to Ingrid and said in a voice like Minnie Mouse on helium, 
+"Thank you anyway, but it doesn't really suit me"]
+[2566:the nymph seemed delighted by the flower]
+[2567:the nymph seemed delighted by the necklace and put it
+on]
+[2568:the nymph was soothed by Ingrid's soft voice and soon
+relaxed. As they talked, it soon emerged that the nymph was waiting
+for Mr. Right to come along. Ingrid explained a bit about women's
+rights, and the nymph seemed most impressed. She agreed to help
+Ingrid if Ingrid would promise to stop the Witch cutting down
+any more trees. Ingrid agreed willingly]
+;
+; gold singing when Nymph frightened...
+[2570:the nymph shook wis Ingrid got nearer]
+;; [2591:dug near the base of the rainbow, as directed by Ingrid]
+[2592:dug near the base of the rainbow, as directed by Ingrid,
+and eventually unearthed a crock of gold]
+[2593:dug for a while, but found nothing]
+[2594:the ground was too hard for digging]
+[2595:had no shovel]
+;
+; Leprecaun stuff..
+[2600:a Leprecaun was standing near the gold, sobbing. "Oh no!" he wailed
+"Now I must follow my gold for ever, or lose all my powers." Ingrid
+was most touched, and try to console his Ingrid got nearer]
+;; [2591:dug near the base of the rainbow, as directed by Ingrid]
+[2592:dug near the base of the rainbow, as directed by Ingrid,
+and eventually unearthed a crock of gold]
+[2593:dug for a while, but found nothing]
+[2594:the ground was too hard for digging]
+[2595:had no shovel]
+;
+; Leprecaun stuff..
+[2600:a Leprecaun was standing near the gold, sobbing. "Oh no!" he wailed
+"Now I must follow my gold for ever, or lose all my powers." Ingrid
+was most touched, and try to console him. Eventually he calmed down
+and said "But if you return the gold to me, I will help you defeat
+the witch"]
+[2601:the Leprecaun beamed at Ingrid. "Thankyou, you are most
+kind-hearted. If you ever need my help, just snap your fingers"]
+[2602:Ingrid snapped her fingers]
+[2603:the leprecaun said "well, must be going now. And teleported out"]
+;
+; group of Leprecaun arrival messages.
+[2610:and the leprecaun appeared in a puff of gold dust]
+[2611:and the leprecaun instantly appeared]
+[2612:and the leprecaun teleported in, unfortunately about 3 feet too
+high, and landed on Ingrid's shoulders. They collapsed in a heap
+on the ground]
+;
+; Leprecaun gold singing whilst unhappy...
+[2620:the leprecaun wailed unhappily]
+[2621:the leprecaun sang a sad song about gold]
+[2622:the leprecaun looked longingly at the gold]
+;
+; Eagle stuff..
+[2630:in the distance Ingrid saw an eagle swooping around]
+[2631:in the distance Ingrid say an eagle soaring up to the pinnacle]
+[2632:far above, Ingrid saw an eagle swoop]
+
+[2640:Ingrid saw an eagle circling directly overhead]
+[2641:the eagle started to dive towards Ingrid]
+[2642:the eagle snatched Ingrid up in its talons, and carried
+her back to its nest. She dropped Ingrid into the nest...]
+[2643:Ingrid hit the eagle chicks hard over the beak. They immediately
+shut up! The mother eagle is delighted. "First moments peace I've
+had for weeks. Thanks! As a reward, I won't make you stay to lunch."
+She then carried Ingrid down to the base of the pinnacle. Before flying
+away, she dropped a bell into Ingrid's hands - "If you need any help,
+just ring this and I'll be right with you"]
+[2644:the eagle flew up and landed nearby "Hello Ingrid, what
+can I do for you"]
+[2645:the eagle said "Bye Ingrid, I must go and feed my chicks again." 
+She flew off with powerful, steady wingbeats]
+[2646:ingrid thought about trying to climb down, but
+decided it was far too dangerous]
+[2647:ingrid thought about jumping, but decided that a 1000 foot
+fall would probably be fatal]
+[2648:finally the chicks got bored with playing with their
+food and ate Ingrid]
+[2649:Ding, dong]
+
+; Unicorn stuff..
+[2650:Ingrid heard a faint whinny in the distance]
+[2651:ingrid heard a unicorn moving around in the distance] ; well,
+; how else does player know what it is?
+[2652:ingrid heard a whinny in the distance]
+;
+
+[2660:unfortunately, Ingrid had no idea where the unicorn might be.
+It was too light to leave proper tracks, moved silently, and she
+could not smell its scent. Mind you, gnomes have never had a
+particularly good sense of smell]
+[2661:the dogs bayed and seemed to pick up the unicorn's
+trail immediately]
+[2662:the unicorn and the nymph saw each other, and were transfixed.
+Love at first sight! She rushed up to him and threw her arms around
+his neck. She climbed onto his back and, before riding away,
+he gave Ingrid a set a of pan pipes to play if she
+needed help to defeat the witch]
+[2663:the unicorn saw Ingrid and rushed off in terror]
+[2664:the dogs fused with the lone dog]
+[2665:the dogs were very grateful for the return of their
+kidnapped comrade! They offer to help Ingrid]
+
+; Swamp stuff
+[2670:a heavy mist descended over the swamp]
+[2671:the mist lifted]
+[2672:Ingrid walked for a little way, but started to sink into a 
+soft patch, so had to jump back]
+;
+[2680:flew over the fence]
+[2681:the gate squeaked loudly]
+[2682:through the gate Ingrid could see a little cottage and
+a large number of statues in the corner. In the southeast corner
+of the garden was a large kennel]
+[2683:the kennel was locked up with a peg]
+[2684:inside was ]
+[2685:couldn't open the gate]
+[2686:ingrid knocked loudly on the door. The witch answered it
+and said "Well hello my dear. Please come in. Now, if you would just
+pose for a photo..." She raised her magic wand and turned Ingrid to
+stone]
+[2687:the dog ran out under the gate]
+[2688:could not climb over the fence]
+[2689:the kennel door was fastened]
+;
+[2690:the witch pulled back the net curtains]
+[2691:the witch looked out]
+[]
+[2699:broke down the back door]
+
+; dog barking messages...
+[2700:the dog barked loudly]
+[2701:the dog went "Woof woof"]
+[2702:the dog barked continuously]
+
+[2710:found that the door was bolted from the inside]
+[2711:the door was too strong for]
+[2712:to break down]
+[2713:the cockatrice breathed on]
+[2714:and they turned immediately to stone]
+[2715:the witch seemed unconcerned by ]
+[2716:~'s blows] ; joins on to name of attacker
+[2717:broke the witch's wand, and her power was dispelled. All ]
+[2699:broke down the back door]
+
+; dog barking messages...
+[2700:the dog barked loudly]
+[2701:the dog went "Woof woof"]
+[2702:the dog barked continuously]
+
+[2710:found that the door was bolted from the inside]
+[2711:the door was too strong for]
+[2712:to break down]
+[2713:the cockatrice breathed on]
+[2714:and they turned immediately to stone]
+[2715:the witch seemed unconcerned by ]
+[2716:~'s blows] ; joins on to name of attacker
+[2717:broke the witch's wand, and her power was dispelled. All the
+statues were re-animated and the game ended]
+
+[2720:the unicorn rushed up to Ingrid]
+[2721:the unicorn cantered up to Ingrid]
+[2722:the unicorn galloped towards Ingrid, and at the last possible
+moment, he slid to a halt in a cloud of dust]
+;
+[2730:the unicorn said "Sorry, Ingrid, I've got to go back to
+my darling now. See you around"]
+
+; descriptions for outside rooms (do not mark anything in 2800 to 2819)..
+; matches up with TERRAINTABLE
+;
+[2800:on a grassy plain]
+[2801:beside a pinnacle]
+[2802:beside a fence]
+[2803:beside a gate in the fence]
+[2804:in a marsh]
+[2805:on a road]
+[2806:on a road with brambles]
+[2807:on a road with mud]
+[2808:on a road with a stream]
+[2809:on a stream]
+[2810:at the bottom of a waterfall]
+[2811:on some high moorland]
+[2812:in some shady woodland]
+;
+; Message groups (spaced every ten to permit lots of variations)..
+;
+[3100:don't be silly] ; "silly" group
+[3101:strange concept]
+[3102:you must be mad]
+;
+[3110:nice try] ; "nice try" group
+[3111:a valiant attempt]
+[3112:no chance]
+;
+[3120:you might as well leave it alone] ; just scenery group
+[3121:I suggest that you forget about it]
+[3122:that's not important]
+;
+[3130:I can't find any objects in that] ; ommitted object group 
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+;
+[3140:nothing happened] ; Nothing happens group
+[3141:that didn't seem to work]
+[3142:there was no effect]
+;
+; the following are printed after the object name..
+;
+[3150:wouldn't move] ; try to move static object group
+[3151:didn't budge]
+[3152:refused to be moved]
+;
+[3160:don't bother] ; don't bother group
+[3161:that would be a waste of time]
+[3162:that's pointless]
+;
+; groupsay messages for hello responses
+[3170:said, "Hello there"]
+[3171:said, "Greetings"]
+[3172:said, "Hello to you"]
+;
+[3180:nodded in acknowledgement]
+[3181:flickered an eyelid]
+[3182:snorted softly]
+;
+; messages for people recovering things they need
+[3190:said, "I'll take that, thank you"]
+[3191:said, "Give that to me"]
+[3192:said, "That's mine"]
+;
+[3200:growled angrily]
+[3201:snarled]
+[3202:stopped dead]
+;
+; responses for npcs - those who can talk and those who can't.
+; first - npc refuses an order
+[3210:said, "Get lost, buster"]
+[3211:said, "Don't try to order me around, matey"]
+[3212:said, "No way"]
+;
+[3220:sneered at your request]
+[3221:curled its upper lip disdainfully]
+[3222:laughed hoarsely]
+;
+; now, npc accepts an order
+[3230:said, "Right away, boss"]
+[3231:said, "I'll get onto it at once"]
+[3232:said, "No sooner said than done"]
+;
+[3240:nodded slowly]
+[3241:nodded in agreement]
+[3242:agreed with a flicker of the eyelids]
+;
+; now response to questions when not obedient...
+[3250:said, "You'll have to find that out for yourself"]
+[3251:said, "You won't get any help from me"]
+[3252:pretended to ignore your question]
+;
+[3260:made a rude gesture]
+[3261:pretended to ignore you]
+[3262:snarled threateningly]
+;
+; response to requests to give anything(s) to anyone
+[3270:said, "You'll have to fight me for that"]
+[3271:said, "I'd rather die"]
+[3272:said, "I'm not about to give anything away"]
+;
+;;[3280:clutches his possessions angrily]
+;;[3281:makes a rude gesture]
+;;[3282:waves it at you defiantly]
+;
+; npc wants to obey orders just given, but can't understand any of them!
+[3290:said, "Sorry boss, I don't understand"]
+[3291:said, "It must be me, boss, I can't understand what
+you're saying"]
+[3292:said, "Pardon? Could you rephrase that"]
+;
+[3300:shrugged in non-comprehension]
+[3301:didn't seem to understand]
+[3302:made a questioning noise]
+;
+; messages when people are attacked by other people (probably player)
+;;[3310:screams and turns angrily]
+;;[3311:says, "don't do that"]
+;;[3312:says, "OK, so that's the way you want it"]
+;
+;;[3320:screams and turns angrily]
+;;[3321:growls viciously]
+;;[3322:whirls around, ready to fight]
+;
+; now messages when people launch unprovoked attacks on the user
+; these are followed by 'and attacks you'
+;;[3330:s:said, "No way"]
+[3371:said, "Nope, I won't do it"]
+[3372:said, "No chance"]
+;
+;;[3380:laughs hoarsely]
+;;[3381:sniggers a bit]
+;;[3382:sighs heavily]
+;
+; centaur gold singing..
+[3400:folded his arms]
+[3401:grunted in irritation]
+[3402:snorted loudly]
+;
+; eagle chick gold singing (though actually only printed
+; by special code in SpecialActivateActor)
+[3410:the chicks pecked viciously at Ingrid]
+[3411:the chicks pecked Ingrid]
+[3412:the chicks rose up over Ingrid in a feathery mass - but sh:said, "No way"]
+[3371:said, "Nope, I won't do it"]
+[3372:said, "No chance"]
+;
+;;[3380:laughs hoarsely]
+;;[3381:sniggers a bit]
+;;[3382:sighs heavily]
+;
+; centaur gold singing..
+[3400:folded his arms]
+[3401:grunted in irritation]
+[3402:snorted loudly]
+;
+; eagle chick gold singing (though actually only printed
+; by special code in SpecialActivateActor)
+[3410:the chicks pecked viciously at Ingrid]
+[3411:the chicks pecked Ingrid]
+[3412:the chicks rose up over Ingrid in a feathery mass - but she managed
+to push them off again]
+;
+; cockatrice gold singing
+[3420:rattled its mandibles]
+[3421:gazed at a passing insect, which turns instantly to stone, and
+drops just like one]
+[3422:winked at no-one in particular]
+;
+; dog gold-singing
+[3430:yapped loudly]
+[3431:yapped furiously]
+[3432:ran around in circles]
+
+; dog swarm gold singing
+[3440:sniffed the air]
+[3441:barked in chorus]
+[3442:ran around Ingrid's feet]
+
+; eagle gold singing
+[3450:beat the air with its wings]
+[3451:called loudly]
+[3452:fixed Ingrid with a cold eye]
+
+; when someone attacks someone else in an unprovoked way..
+[3460:screamed and turns on you angrily. ] ;** used in Gnome?
+[3461:said, "What's your game, buster?" ]
+[3462:said, "OK, so that's the way you want it." ]
+;
+; when you give people presents of treasure...
+; this will probably make them like you a bit.
+;;[3480:says, "Ooo.. thank you"]
+;;[3481:bites it to test its value]
+;;[3482:examines it closely]
+;
+; when someone steals something from an NPC
+[3490:seemed annoyed]
+[3491:shrieked in surprise]
+[3492:snarled menacingly]
+;
+; group shouting messages..
+;; [3500:I've just stolen some treasure from ]
+;; [3501:I've just ripped off ]
+;; [3502:I've just stolen something from ]
+;
+;; [3510:I've just found a valuable ]
+;; [3511:I've just picked up a valuable ]
+;; [3512:I've got a valuable ]
+;
+;; [3520:I'm back in the game!]
+;; [3521:I'm now back in the game!]
+;; [3522:I'm back!]
+;
+; again used following a command referring to scenery
+[3530:the previous command was not repeatable]
+[3531:you can't repeat that]
+[3532:it wouldn't help to try that again]
+;
+; npc is blocked in a racetrack
+[3540:stopped, looking confused]
+[3541:looked puzzled]
+[3542:seemed uncertain of what to do now]
+
+; messages when the player tries to take things from others...
+[3550:wouldn't let Ingrid]
+[3551:slapped your hand away]
+[3552:stopped you]
+;
+[3600:a voice in the distance shouts, "]
+[3601:." ]
+[3602:wow! A stack overflow] ; a stack overflow!
+[3603:don't panic! Normal service will be resumed shortly] ; a panic
+[3604:sorry, I can't go there from here]
+[3605:sorry, you'll have to find the way yourself from here]
+;
+;
+;
+;
+;; [3710:I'm back in the game"] ; when people are repaired
+;; [3711:I've just stolen some treasure from ]
+;; [3712:I've just found some treasure"]
+;
+;; [3714:I'm in ] ; followed by room description.
+;
+; Leprecaun gold singing
+[3700:sang of gold]
+[3701:sang of gold pieces]
+[3702:sang of assorted gold treasure]
+
+; Llama gold singing
+[3710:said "Wow, man"]
+[3711:said "Gee, awesome"]
+[3712:said "awesome man"]
+
+; Nymph gold singing
+[3720:sang a soft love song]
+[3721:sang of the old days when the whole world was forest]
+[3722:sang of trees]
+
+; Unicorn gold singing
+[3730:pawed the ground]
+[3731:hummed quietly]
+[3732:raked the air with its horn]
+
+; Witch
+[3740:waved her wand]
+[3741:fiddled with her wand]
+[3742:twiddled her fingers]
+
+
+
+
+; Garbage words..
+[4000:^N the ^N this ^N these ^N that ^N some ^N a ^N and ^N also
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+^N good ^N of ^N cute ^N there]
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+^N warily ^N quickly ^N rapidly ^N following ^N around]
+;

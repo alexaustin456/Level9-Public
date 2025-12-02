@@ -1,0 +1,225 @@
+        GNOME RANGER II THINGS. COPYRIGHT (C) 1988 LEVEL 9
+        --------------------------------------------------
+ 
+The game was made up of three adventure programs, corresponding to 
+Little Moaning, Gnettlefield Farm and Moaning Manor. The idea was to 
+play the parts in order, but they could be treated much as separate 
+games.
+
+                       LITTLE MOANING (PART 1)
+                       -----------------------
+
+OBJECT         WHERE           PURPOSE 
+
+Groceries      Shop            Bait for Dusty Halfyard. 
+Invitation     Ingrid's hand   Scenery. 
+Petition       Ingrid's hand   Collected signatures to win. 
+Short Ladder   Barn            Allowed Ingrid to reach window. 
+ 
+STATIC OBJECT  WHERE           PURPOSE 
+
+Bed            Bedroom         Scenery. 
+Briar Patch    Field           aka Brambles. Trap Gorilla. 
+Bushes         Mill Yard       Hiding place for Ingrid.
+Long Ladder    Lighthouse      Lowered to allow Ingrid to leave. 
+Notice         Darkwood        Warning about Gorilla. 
+Notice         Moaning Manor   "I'd never work here!" thought Ingrid
+Pile of Sacks  Mill Yard       Kept Dusty Halfyard from escaping. 
+Sign           outside Mill    "No Ingrids"
+Wardrobe       Bedroom         Hid Seamus Sosmall.
+Window         Tack's Farm     For Ingrid to climb through. 
+ 
+Fishing Boat   East Bridge     Vehicle for crossing River. 
+Dogless Carr.  Smithy          Land vehicle for jumping River. 
+Broken Carr.   after crash     Scenery. 
+ 
+PERSON           WHERE         NOTES 
+
+Ingrid           Village Hall  Signed petition. Player. 
+Gnora            Gnettlefield  ditto. Mother.  
+Gnoah            Gnettlefield  ditto. Father.
+Bumpy            Warren        ditto. Brother.
+Dimple           Gnettlefield  ditto. Brother.
+Gnoggin          Gnettlefield  ditto. Brother. 
+Arback Garden    Gnettlefield  ditto. Hired help. 
+Isfrunt Garden   Dunrollin     ditto. Retrieved by Flopsy. 
+Jumbo Butterpat  Kitchen       ditto. 
+Flora Butterpat  Green Gnome   ditto.
+Miss Farthing    Shop          ditto. Handed over Groceries.
+Grandma Gnutson  Bedroom       ditto. 
+Dusty Halfyard   in Mill       ditto. Trapped below sacks. 
+Great Aunt H.    Doomladen     ditto. Taken petition at end. 
+Boney Spratt     Beside River  ditto. Fishing and awaiting boat. 
+Gnat Tackhammer  Forge         ditto. Owner of Carriage. 
+Millie Watts     Lighthouse    ditto. 
+
+Seamus Sosmall   in Wardrobe   ditto. Leprechaun.
+
+(Hermit          never appears ditto). 
+(Mistress Spratt never appears ditto). 
+
+Silas Crawley    Wandering     Employee of Silas Crawley. 
+Surveyor         Wandering     (ditto). 
+Mrs Underlay     Green Gnome   (ditto). The Housekeeper. 
+Travelling Salesgnome G.Gnome  (ditto). 
+Amillaria Budblast    G.Gnome  (ditto). Female gardener. 
+
+Flopsy the Dog   with Ingrid   Main character in this part. 
+Rook             Cawing Road   Carried Ingrid to Lighthouse Pad. 
+
+Chickens         Mill Yard     Vicious. Chased off by Flopsy.  
+
+(Some people, eg the Hermit, Mistress Spratt and all those living 
+at Moaning Manor, just appeared in messages and/or as signatures 
+on the petition). 
+
+
+
+                     GNETTLEFIELD FARM (PART 2)
+                     --------------------------
+
+OBJECT          WHERE         PURPOSE 
+
+Loose Brick     Back of Barn  Removed to collapse Barn. 
+Bottle          Drunken Troll Scenery. 
+Cider Cask      Mill Room     Given to drunken troll. 
+Deeds           at end        Pushed into gap under door.  
+Handbag         Down Well     Container. 
+Loaf            Table         Shoved in Steamroller's Chimney. 
+Plans           Silas         Read to learn Silas' plans. 
+Flour Sack      Mill Room     Possible "heavy" object for trapdoor. 
+Mill Stone      Mill Ruins    ditto. 
+
+Lipstick        Handbag       Worn to become more yet more stunning. 
+Perfume         Handbag       ditto. 
+
+Blue Telelily   Soggybottom   Anything put into either telelily..
+Green Telelily  Soggybottom    ..appears from the other one.
+
+  
+STATIC OBJECT   WHERE         PURPOSE 
+
+Brake           Mill Room     Controlled mill power. 
+Bushes          Mill Yard     Scenery (see part 1).
+Dam             River Dribble Broken to flood Soggybottom field. 
+Gap under door  Stairs        I. pushed Deeds here to trap Silas. 
+Gate            Coop/Farmyard A bit like a door. 
+Gate            Sty/Farmyard  ditto. 
+Gate            Pen 1         ditto.
+Gate            Pen 2         ditto. 
+Gate            Pen 3         ditto. 
+Hook            Mill Tower    Lowered, attached to Troll and raised.  
+Lever           Mill Room     Raised/lowered Hook. 
+Pile of Turnips Ingrid's Room Fell out and buried door opener.  
+Root            Warren        Flopsy bit it to cut off lower level. 
+Sign            outside Mill  "No Ingrids" (see part 1). 
+Steamroller     Lane          blocked and destroyed by Ingrid. 
+ " Ashes        after fire    Scenery. 
+Table           Kitchen       Scenery. 
+Trapdoor        Farmyard      Opened, Troll pushed in, weighted down. 
+Well            Farmyard      Anything dropped in fell to bottom. 
+
+
+PERSON          WHERE         NOTES 
+
+Ingrid          Village Hall  Player. 
+Gnora           Gnettlefield  Mother.  
+Gnoah           Gnettlefield  Father. Blocked Steamroller. 
+Bumpy           Warren        Brother.
+Dimple          Gnettlefield  Brother.
+Gnoggin         Gnettlefield  Brother. 
+Arback Garden   Gnettlefield  Hired help. 
+Grandma Gnutson Bedroom       ditto. 
+Seamus Sosmall  in Wardrobe   ditto. Leprechaun.
+
+Silas Crawley   Steamroller   Main enemy
+Ambul                         Troll on guard duty. Followed Ingrid. 
+Bane            Appeared      ditto. Fancied Ingrid. 
+Chugg            when         ditto. Fancied Alcohol. 
+Doldrum          the          ditto.
+Ergot            Trolls       ditto.
+Fugg             Separated    ditto.
+Gormley                       ditto.
+Trolls          Steamroller   Accompany Silas. 
+
+Flopsy the Dog  with Ingrid   Main character in this part. 
+Bantams         coop          Left, perhaps chasing off someone. 
+Guinea Pigs     Sty           Playful. Trapped one of the trolls.  
+
+(Some people and objects just appeared in messages). 
+  
+
+ 
+                      MOANING MANOR (PART 3)
+                      ----------------------
+
+OBJECT           WHERE        PURPOSE 
+
+Accounts (2 sets)Safe         Evidence of tax fiddle. 
+Blotting Paper   Desk         Evidence of fraud. 
+Cheque Stubs     Drawer       Evidence of fraud. 
+Filofax          Changing R.  Addresses of criminal contacts. 
+Letter (Gnomess) Rubbish      "Thank you for share help". 
+Moaning Star     Antiques.    Very valuable and reported stolen. 
+Painting (Fake)  Paintings    Evidence of Art forgery. 
+Photos           Wallet       Showed planning committee payola. 
+Tape             Ans.Machine  Records incriminating conversation. 
+
+Drawer           Desk         Pulled/removed to find cheque stubs. 
+Manual           On Wardrobe  Examine to learn use of Ans. Machine. 
+Phial            Seamus       "Strength" potion, drunk by Ingrid. 
+Wallet           Jacket       Held photos of councillors. 
+
+Telephone        J's Bedroom  "Static"; take to hear conversation. 
+Telephone        J's Office   ditto.
+
+Jacket           Wardrobe     Scenic garment to hide Pocket. 
+
+
+STATIC OBJECT    WHERE        PURPOSE 
+ 
+Answer Machine   J's Bedroom  Tape put inside and button pressed... 
+Record Button    Ans.Machine  Pressed to record phone conversation. 
+Play Button      Ans.Machine  Pressed to replay conversation. 
+
+Antiques         Secret Room  Scenery. 
+Chandelier       C.Gallery    Untied to swing into Ballroom. 
+Chimney          West Gable   Scenery. 
+Chimney          East Parapet Scenery. 
+Books            Library      Read for 10 messages. 
+Curtain          Long Gallery Ingrid hid here to spy on Safe. 
+Desk             J's Office   Scenery. 
+Dustbins         Yard         Contained Rubbish. 
+Fireplace        J's Bedroom  Scenery. Examine to see chimney exit. 
+Fireplace        Kitchen      (ditto). Exit went to Duct Junction. 
+Fireplace        Reading Room (ditto). 
+Hole             Shadow       Lead to Garret. 
+Knocker          Porch        Summons Butler. 
+Latch            Ent. Hall    Slide to lock/unlock Porch door. 
+Paintings        Garret       Scenery. 
+Portrait         Long Gallery Of First Lord. Move to see Safe. 
+Inside pocket    Jacket       Held a Wallet. 
+Pot              Fireplace 2  Scenery for Cook to stir. 
+Rubbish          Dustbin      Smelly. Searched repeatedly for Letter. 
+Safe             Behind Pict. Open to find two sets of Books. 
+Shadow           Tree         Examine to see entrance to Garret. 
+Sun Lounger      Garden Path  Hiding place for Ingrid. 
+Tree             Tree Court   Examine to see Shadow. 
+Wardrobe         J's Bedroom  Scenery.
+Window           W.Gall.End   Examine to see Court and wide ledge. 
+
+PERSON           WHERE        PURPOSE 
+
+Artist           "Attic"      Forged paintings for Jasper. 
+Butler           C.Gallery    Guarded Office, answered door. 
+Cook             Kitchen      Pottered about, scenically. 
+Housekeeper      Kitchen      Mrs Underlay wandered around the House. 
+Jasper           Wandering    Had Filofax. Confronted at end. 
+Ghost            nowhere      So references to the Ghost misled. 
+
+Daisy Bottomlow  Kitchen      Only person who obeyed Ingrid. 
+Noah Bottomlow   at end       "Helped" Ingrid tackle Jasper. 
+Seamus Sosmall   at end       Gave Phial to Ingrid. 
+
+(Some people and objects, eg Amillaria Budblast the gardener, just 
+appeared in messages). 

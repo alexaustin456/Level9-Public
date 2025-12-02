@@ -1,0 +1,625 @@
+GNOME II. COPYRIGHT (C) 1988 LEVEL 9
+------------------------------------ 
+
+Gnome II: Ingrid's Back
+----------------------- 
+
+Contents
+--------
+
+Getting started .................................................. ? 
+Preface .......................................................... ? 
+Talking to the game .............................................. ? 
+Hints ............................................................ ?
+Official Secrets ................................................. ? 
+Loading Instructions ............................................. ? 
+Background ....................................................... ?
+The Second Gnettlefield Journal .................................. ? 
+
+CREDITS
+-------
+
+Ingrid design: Pete Austin, Peter McBride, Godfrey Dowson. 
+Game design and management: Pete Austin.
+Game programming and game text: Graham Jones. 
+Diary translation and game text polishing: Peter McBride. 
+Cover Picture: Godfrey Dowson. 
+Computer Art: Dicken Peeke. 
+Systems: Mike and Nick Austin, John Jones-Steele, Mike Bryant. 
+Transport to your Micro: Nick Austin and Mike Bryant. 
+Published by: Level 9, PO Box 39, Weston-super-Mare BS24 9UR. 
+
+
+Getting started
+---------------
+
+    If you have not played a Level 9 adventure before, please read 
+all these instructions. If you are an experienced Level 9 adventurer, 
+skip to the preface and just read that. 
+
+Boot the disc or load the first cassette to start the game. If you 
+don't know how to do this, see the loading instructions on Page ??. 
+
+When the game prints "What gnow?" or ">", it is waiting for you to 
+type a command. (The game also waits when it has more text to print 
+than will fit on the screen at one time; read what's displayed and 
+press either SHIFT or SPACE to continue).
+
+This game knows four types of commands: 
+
+* Movement: just type the direction you want to go: NORTH, NORTHEAST, 
+  EAST (and the other compass directions), IN, OUT, UP, DOWN or 
+  ACROSS. GO or RUN take you to a named place, e.g GO TO INN, 
+  and FOLLOW is self-explanatory. 
+
+* Actions: e.g LOOK, TAKE THE PETITION, SIGN IT, DROP IT, EXAMINE 
+  THE CASK, WEAR THE HAT, DRINK THE CIDER, or GIVE CARROT TO BUMPY. 
+
+* System commands. EXITS, INVENTORY and SCORE give information; 
+  WORDS, PICTURES, BRIEF, VERBOSE, EXITS ON and EXITS OFF control 
+  what is output; UNDO; SAVE, RESTORE, RAM SAVE and RAM RESTORE 
+  save your position or return to an earlier position, and RESTART 
+  stops the game. See the example game, later, for more details. 
+
+* Commands to others. Ingrid could command a few people, such as 
+  Flopsy her dog, but most gnomes were wary of her talent for 
+  disaster and tried not to get involved. Type their name, followed 
+  by commands, e.g FLOPSY, GO NORTH, GET EVERYTHING, THEN FOLLOW ME.            
+
+You can abbreviate commands, e.g SOUTH to S and SOUTHEAST to SE, and 
+even type several commands on one line, e.g EAST, TAKE ALL, WEST. 
+After typing a command (or commands), press the ENTER or RETURN key. 
+
+
+Preface
+-------
+
+"Gnome Ranger" told how Ingrid Bottomlow returned from the Institute 
+of Gnome Economics, full of schemes to improve life, and succeeded 
+in demolishing most of the family farm. "Accidentally" banished by 
+her exasperated family, Ingrid had more success with putting the 
+wilderness to rights, and even stopped a war or two. 
+
+"Gnome II" starts when Ingrid's back in Little Moaning, and tells 
+how she stopped the plans of Jasper Quickbuck, money-grabbing lord 
+of Ridley's Manor, to steamroll the gnome-belt village for an estate 
+of yuppie homes. 
+
+Ingrid Bottomlow's Second Gnettlefield Journal is an introduction. 
+Then, part 1 of the game describes Ingrid's attempts to get her 
+fellow gnomes to sign a petition against the planned eviction. The 
+next part concerns the defence of Gnettlefield farm and then, in 
+part 3, Ingrid infiltrates Ridley's manor. 
+
+Hints for part 1:
+* Only Flopsy trusts Ingrid. 
+* To get someone to sign, try e.g "give petition to Jumbo". 
+* Don't collect signatures from outsiders. 
+
+Hints for part 2:
+* Noah has been known to lie down on the job, but follows instructions. 
+* Stop the steamroller, then trap the trolls. 
+
+Hint for part 3": 
+* Cousin Daisy my be of help. 
+
+If you are really stuck, you can get a comprehensive free cluesheet, 
+with hundreds of hints, from Official Secrets (see Page ??), or 
+direct from Level 9 at PO Box 39, Weston-super-Mare, Avon BS24 9UR 
+England. You must enclose the "clue card" from the packaging and 
+provide a large, stamped, self-addressed envelope (UK users), or 
+four International reply coupons (overseas users). 
+
+
+Talking to the game
+-------------------
+
+As you have seen, this game understands a lot of commands. The 
+following list is only part of its vocabulary, but it gives an idea 
+of what to try: 
+              
+North, northeast, east (and other compass directions), up, down, in, 
+out, across, climb, go, run, follow, again, attack, inventory, quit, 
+save, restore, ram save, ram restore, undo, score, wait, shout, 
+search, examine, blink, look, kneel, take, drop, wear, throw, give, 
+fill, empty, open, unlock, close, eat, drink, light, press, wave, 
+blow, exits, words, pictures, brief, verbose. 
+ 
+Many words can be abbreviated, e.g "inventory" to "inv". 
+       
+The following example is not from the game but it illustrates 
+how to play. The player's commands are in capitals, after each ">" 
+of "What now?" prompt, and text in square brackets is comments... 
+
+  Ingrid struggled from the rubble of Low Moan farm and brushed 
+herself down. All gnew projects had little teething troubles, and 
+fortunately the farmhouse had gneeded redecorating anyway. 
+
+Muffled shouts announced that Mrs Downtrodden was unharmed, just 
+trapped in the cellar of her former home, so Ingrid cheerily called, 
+"Don't worry! Trust me and I'll soon get you free". 
+
+There was a pause, then much louder shouting. But Ingrid had gnot 
+waited to be thanked and was already away down the road. 
+
+> LOOK 
+Ingrid was standing near the top of Ploughgnomes' Lane, looking down 
+towards the village of Little Moaning. She could see Flopsy. 
+
+Flopsy bounded around Ingrid, barking happily. 
+
+> EXAMINE FLOPSY 
+Flopsy was the Bottomlow's cart dog; a Yuletide present from Ingrid 
+to her parents. They had wanted a gnice, quiet, small dog, but 
+instead got this bouncy monster with flopping ears. However, Ingrid 
+thought she was wonderful. 
+
+> FLOPSY, FOLLOW ME
+Flopsy nodded and licked Ingrid's face. 
+
+> UP 
+Ingrid went uphill and reached the summit of Ploughgnomes' Hill. The 
+lane continued northwards, past a stile on the west side. A rabbit 
+scampered across the road, pushed through the hedge beside the stile 
+and hopped away quickly towards Darkwood. 
+Flopsy arrived from below. 
+
+> FOLLOW RABBIT
+Ingrid tried to climb over the stile but found, gnot surprisingly, 
+that it was too high. She shrugged, walked underneath and was in a 
+scrubby field on the eastern edge of a great forest. She could see 
+a signpost. The rabbit's tail was just visible, vanishing west into 
+the trees. 
+Flopsy entered from the east and barked excitedly. 
+
+Ingrid went west and was below the eaves of darkwood, in the middle 
+of a bramble hedge. Ingrid could see a multitude of thorns. 
+Flopsy entered from the east, sniffed at a bramble, yelped and 
+retreated out of sight. 
+
+Ingrid tried to go west but found she was trapped by the thorns and 
+could not follow the rabbit any further. 
+
+> UNDO  ["Take back move" - available on most micros.]
+Ingrid was in a scrubby field on the eastern edge of a great forest. 
+She could see a signpost and Flopsy.
+
+> INVENTORY  [or "examine me"]
+Ingrid owned a book and a petition. 
+Flopsy chased a butterfly into the distance. 
+
+> EXITS 
+Exits lead east, south and west. 
+
+> EXAMINE SIGNPOST
+It said "General Store, prop Seamus Sosmall" and pointed south along 
+a winding path. Ingrid thanked the signpost kindly. 
+
+> BRIEF, WORDS, EXITS ON
+OK. OK. OK.  [Locations will be described briefly, pictures turned 
+off and exits reported automatically in future. To reverse these 
+choices, you could use VERBOSE, PICTURES and EXITS OFF.]
+
+> S  [i.e "SOUTH"]
+Ingrid went south and was just outside Seamus' shop. Exits lead 
+gnorth and inside through a door. Ingrid could see a bell-pull. 
+
+> GO INSIDE
+The door was closed. 
+Flopsy arrived from the north. 
+
+> RING BELL
+As Ingrid rang the bell, the door opened and slowly closed again. 
+Flopsy looked on with interest. 
+
+> FLOPSY, WAIT AND HOLD DOOR
+Flopsy gnodded happily. 
+
+> RING BELL
+As Ingrid rang the bell, the door opened. Flopsy held the door so 
+that it could not close. 
+
+> IN
+Ingrid walked inside and was in Seamus Sosmall's shop, surrounded 
+by all kinds of peculiar objects. An exit led outside. Ingrid could 
+see a flying pig, a three dollar bill, a postcard of cute little 
+ice-skating demons, a tax refund, the philosopher's stone and an axe. 
+Ingrid looked very suspiciously at the axe, and it looked very 
+suspiciously back. 
+
+> SCORE
+Ingrid scored 10 out of 1000. 
+
+> EXITS OFF  [stop reporting exits]
+OK. One of the little demons winked at Ingrid. 
+
+> RAM SAVE 
+OK.  [Before doing anything with these strange objects, save the 
+position in RAM - i.e in the computer's memory - in case Ingrid 
+encounters difficulties and you want to return to this point, using 
+RAM RESTORE. To save to disc or tape, use SAVE and RESTORE.] 
+
+> GET ALL BUT THE PIG 
+Three dollar bill: Ingrid took it. 
+Postcard of cute little ice-skating demons: it was pinned firmly to 
+the wall. 
+Tax refund: Ingrid took it. 
+Philosopher's stone: as Ingrid touched the Philosopher's Stone, she 
+felt herself becoming slower and heavier. Her last thoughts were of 
+Mistress Gneehigh at the Institute, "She would have been so proud; 
+She was always wanted us girls to be good as gold." 
+
+RAM RESTORE
+OK. Ingrid was in Seamus Sosmall's shop, surrounded by all kinds of 
+peculiar objects. Ingrid could see a flying pig, a three dollar bill, 
+a postcard of cute little ice-skating demons, a tax refund, the 
+philosopher's stone and an axe. 
+
+TAKE AXE
+Ingrid took the axe. 
+
+GO TO THORNS  [letting the computer work out the route. Press any key 
+to abandon this type of "high level" command.]
+
+Ingrid went outside and was in a scrubby field on the eastern edge 
+of a great forest. She could see a signpost. Flopsy jumped up to 
+greet her. 
+
+Ingrid went west and was below the eaves of darkwood, in the middle 
+of a bramble hedge.  Ingrid could see a multitude of thorns. 
+Flopsy entered from the east and ate a blackberry. 
+
+> LIE ON THE GROUND
+Ingrid lay down and considered the problem. 
+
+> CUT THORNS
+Ingrid gave the thorns a thorough pruning with the axe. After all, 
+she had studied gardening for two years at the Institute. 
+Flopsy looked at the splintered greenery and barked approvingly. 
+
+> WEST
+Ingrid stepped over the remains of the thorns and was in a woodland 
+clearing. She could see a dog cart. In fact, the cart looked just 
+like the one from Gnettlefield farm.
+Flopsy entered from the east. 
+ 
+> GET IN  [to use vehicles, get in and move as normal]
+Ingrid seated herself in the dog cart. Seeing this, Flopsy 
+positioned herself between the shafts at the front of the cart, 
+ready to pull it. 
+From her higher vantage point, Ingrid caught sight of the smoke 
+from the chimney of a small cottage, far to the northeast. 
+ 
+> NE
+The cart drove northeast and was on a paved driveway. The sound of 
+angry voices came from the cottage at the other end. The trolls were 
+trying to evict Great Aunt Halfyard!   
+
+
+Hints 
+----- 
+
+1. Draw a map (or a series of maps). Remember that the EXITS ON 
+   command lists all the paths from each location. 
+
+2. To make life easy for you, the objects that matter in a location 
+   are normally listed in a sentence like, "You can see a shopkeeper 
+   and a bunch of herbs". (Some other authors hide useful objects 
+   amidst the background scenery, but Level 9 avoid this). The 
+   rest of your surroundings are probably scenery, but by all means 
+   try to do things to them if you like. 
+
+3. Examine all the objects that you see and, as a rule, take 
+   everything that you can. Most objects are useful in some way. 
+
+4. Use the "high level" commands, such as GO TO WINDMILL, RUN TO 
+   BRIDGE, FOLLOW STEAMROLLER, WAIT 5, WAIT FOR FLOPSY, which take 
+   the place of many individual instructions. Remember that pressing 
+   a key "breaks" out of such commands. 
+
+5. Some puzzles can only be solved with cooperation from other 
+   people (especially in later parts of the game), so get used to 
+   giving orders. You can cancel orders given in error by e.g, 
+   FLOPSY, STOP
+
+6. Get used to using "UNDO". If you make a mistake and get "killed" 
+   or lose a vital object, the UNDO command is available on most 
+   micros and takes you back in time - to before your previous move. 
+   On larger micros, you can use UNDO many times in succession to 
+   retrace your steps a long way through the game. 
+
+7. SAVE your place occasionally, so that if you notice a mistake too 
+   late to be able to UNDO it, or if the electricity flickers and your 
+   computer crashes, you can RESTORE the saved position and continue 
+   from there. SAVE puts your position on tape or disc (see the 
+   details instructions) and RESTORE can retrieve it later. RAM SAVE 
+   is quicker but less secure, as it saves the position in memory. 
+
+8. Try everything you can think of - even weird or dangerous actions 
+   sometimes provide clues, and might be fun. You can use UNDO (or 
+   RESTORE if you have previously used SAVE) to recover if the 
+   results are "fatal".  
+
+9. You can word a command in many different ways. For example, if there 
+   were an axe and a ball on the ground, you could take the axe by 
+   typing any of the following:
+   > GET THE AXE 
+   > TAKE AXE 
+   > GET ALL BUT THE BALL 
+   > LOOK AT THE AXE AND TAKE IT
+   If the game doesn't understand your command, try rephrasing it 
+   and using synonyms. If the game still doesn't understand, you 
+   are probably trying something that is not important in the game. 
+
+10.If you are really stuck, you can get a free hint sheet, with 
+   hundreds of clues, from Level 9 at PO Box 39, Weston-super-Mare, 
+   Avon BS24 9UR, England. You must enclose the "clue card" from the 
+   packaging and provide a large, stamped, self-addressed envelope 
+   (UK users), or four International reply coupons (overseas users). 
+
+
+
+[Official Secrets advert goes here] 
+-----------------------------------
+
+
+
+Loading instructions for Gnome II
+---------------------------------
+
+This section tells you how to run "Gnome II" on your computer, and 
+lists the specific features of each version. Should you experience 
+any loading problems, return the cassettes or disc, without the 
+packaging, to Level 9 Computing at PO Box 39, Weston-super-Mare, 
+Avon BS24 9UR. 
+
+
+Disc loading instructions
+-------------------------  
+
+Look down the alphabetical list of computer types and follow the 
+instructions for your computer. The underlined text is what you type, 
+and remember to press the ENTER or RETURN key after each command. 
+
+Amiga 500          Insert the game disc and turn on your Amiga. 
+Amiga 1000/2000    Insert your Kickstart disc and turn on your Amiga. 
+                   When it asks for Workbench, insert the game disc. 
+Amstrad CPC 6128   Turn on your CPC (6128 or 464/664 expanded to 
+                   128K) and insert the game disc. Enter RUN"MENU"
+Amstrad PCW        Insert your usual CP/M+ disc and turn on your PCW. 
+                   Insert the game disc and enter MENU
+Apple II           Insert the game disc and turn on your Apple II. 
+Atari ST           Insert the game disc and turn on your ST. 
+Atari XE or 800XL  Remove any cartridges. Insert the game disc. While 
+                   holding down OPTION for at least 5 seconds, turn 
+                   the Atari on. If nothing happens, turn off the 
+                   Atari for 30 seconds and try again. 
+BBC master or 48K+ Turn on your BBC micro, insert the game disc and 
+                   press SHIFT and BREAK together. If this doesn't 
+                   work, press CONTROL SHIFT D and BREAK together. 
+CBM 64 or 128 disc Turn on your Commodore (while holding down the 
+                   Commodore key, if you have a 128). Insert the game 
+                   disc and enter LOAD"*",8,1
+IBM PC and clones  Insert the normal operating system disc and turn 
+                   on your IBM PC. Replace it with the game disc, and 
+                   enter MENU
+Mac,Mac+           Insert the normal operating system disc and turn on 
+                   your Mac. Insert the game disc and double click on 
+                   the MENU icon.
+Spectrum +3        Turn on the Spectrum, insert the game disc and 
+                   press ENTER. 
+
+
+Tape loading instructions
+-------------------------  
+Put one of the game tapes in your recorder, look down the alphabetical 
+list of computer types and follow the instructions for your computer. 
+The underlined text is what you type, and remember to press the ENTER 
+or RETURN key after each command. 
+
+If the tape doesn't move, press ENTER or RETURN again.
+
+Amstrad CPC tape   Turn on your CPC. If it has a disc drive, enter 
+                   |TAPE 
+                   Type RUN"" start the tape on play and press SPACE. 
+Atari XE,800XL     Remove any cartridges. While holding down START and 
+                   OPTION for at least 5 seconds, turn on the Atari. 
+                   Start the tape on play and press RETURN.  If nothing 
+                   happens, turn off the Atari for 30 seconds and try 
+                   again. 
+CBM 64 or 128 disc Turn on your Commodore (while holding down the 
+                   Commodore key if you have a 128). Press SHIFT and 
+                   RUN/STOP together and start the tape. 
+MSX 64K            Turn on your MSX, enter RUN"CAS:" and play the tape. 
+Spectrum 48K       Turn on the Spectrum, type LOAD"" and play the tape.
+Spectrum 128/+2    Turn on the Spectrum, press ENTER and play the tape. 
+
+
+Save on disc
+------------ 
+To save game positions from the disc version of Gnome II, you 
+first need a blank disc of your own. 
+
+Before playing Gnome II, format (initialize) this disc, using 
+the ordinary software bought with your micro. (Exceptions to this 
+are Apple II and Atari XE,800XL discs - Gnome II uses its own disc 
+format on these computers and will initialize the disc itself.) 
+
+When playing the game, enter SAVE and follow the instructions 
+displayed. 
+
+To return to a SAVEd position, enter RESTORE and YES, and follow any 
+instructions asking for one word from the story. When entering a file 
+name, you can either type a short word such as POS1, or use the full 
+format permitted by your particular computer. 
+
+
+Save on tape
+------------ 
+To save game positions from a cassette version of Gnome II, you 
+need a blank cassette of your own. 
+
+When playing the game, start a blank tape on RECORD and enter SAVE 
+(if the cassette doesn't move, press ENTER or RETURN again). When the 
+game starts running again, e.g to prompt for your next command by 
+displaying ">" or "What now?", stop the tape. 
+
+To return to a SAVEd position, enter RESTORE and YES, then follow any 
+instructions asking for one word from the story. Finally, rewind the 
+tape on which the position was saved, and play it (if the cassette 
+doesn't move, press ENTER or RETURN again).
+
+
+Save in memory
+-------------- 
+To save your game position in memory (all but 48K Spectrums, 64K 
+Amstrad CPCs and small BBCs allow this), enter RAM SAVE
+
+To return to a SAVEd position, enter RAM RESTORE 
+
+Remember that saving in memory is very quick and convenient - it is 
+an ideal way of saving your position before trying something risky - 
+but a RAM SAVEd position will be lost if your computer is turned off 
+or crashes, so SAVE to disc or tape occasionally. 
+
+Note also that the UNDO command is available on all versions which 
+have RAM SAVE. UNDO takes you "back in time" to before Ingrid last 
+moved: it's a bit like RAM RESTORE where the corresponding RAM SAVEs 
+are automatic, and that UNDO can be used many times in succession on 
+larger micros. 
+
+
+                      Additional features
+                      ------------------- 
+The versions of Level 9 adventures on large micros often have more 
+facilities than those on smaller machines. Here is a summary of the 
+features available with Gnome II...
+
+AMIGA FEATURES 
+-------------- 
+* colour pictures (use the mouse, with its left button pressed, to 
+  slide the picture up and down);
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and 
+  BACK SPACE; 
+* RAM SAVE/RESTORE and UNDO; 
+* README file. For more information, boot the Amiga with Workbench, 
+  then insert the game disc and double click on its icon and README.TXT 
+
+AMSTRAD CPC DISC FEATURES
+------------------------- 
+* colour pictures (use F8 and F2 to slide the picture up and down). 
+  To see more pictures, wait until the game has loaded and is 
+  waiting for you to type something - then flip the disc over;
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and DELETE; 
+* RAM SAVE/RESTORE and UNDO; 
+* the Amstrad CPC disc also works on Amstrad PCW and Spectrum +3; 
+* README file. For more information, turn on the CPC, insert the game 
+  disc and enter LOAD"README" and LIST
+  
+AMSTRAD PCW DISC FEATURES
+-------------------------
+* black-and-white pictures. To see more pictures, wait until the game 
+  has loaded and is waiting for you to type something - then flip the 
+  disc over;
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and DELETE; 
+* RAM SAVE/RESTORE and UNDO; 
+* the Amstrad PCW disc also works on Amstrad CPC and Spectrum +3; 
+* README file. For more information, boot the PCW with CP/M+ as usual, 
+  then insert the game disc and enter TYPE README.TXT
+
+ATARI ST FEATURES
+-----------------
+* pictures on colour and black-and-white displays (use the mouse, 
+  with its left button pressed, to slide the picture up and down);
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and 
+  Backspace; 
+* RAM SAVE/RESTORE and UNDO (several times in succession); 
+* variable text size, (experiment by pressing F1 or F2, then typing 
+  a few characters). This will help television users; 
+* Demonstration Game. If you would like a continuous demonstration of 
+  Gnome II, perhaps for use in a shop, start the game and WAIT UNTIL 
+  THE FIRST PICTURE HAS FINISHED LOADING and the game is waiting for 
+  a command. If necessary, press SPACE a couple of times so the game 
+  can print the rest of its start-up message and reach the first 
+  prompt, ">" or "What now?". Only then should you press Alternate R
+* README file. For more information, start the ST with a disc which 
+  does not auto-boot (e.g a blank disc). Then insert the game disc 
+  and double click on its icon and README.TXT. 
+
+BBC DISC FEATURES
+-----------------
+* colour pictures on BBC Masters, B+ with additional sideways RAM, 
+  or BBC B with both shadow and sideways RAM. (Smaller BBC show a 
+  mode 7 text-only display, e.g BBC B with just sideways or shadow 
+  RAM). On BBC Masters you can use the cursor keys, with SHIFT 
+  pressed, to slide the picture up and down. 
+  To see more pictures, wait until the game has loaded and is waiting 
+  for you to type something - then flip the disc over;
+* recall and editing of previous commands, on BBCs big enough to 
+  show pictures, by cursor keys, DELETE and COPY ("forward delete"); 
+* variable text size, on BBCs big enough to show pictures; press F0 
+  and F1 to select between 40 and 80 column text; 
+* RAM SAVE/RESTORE and UNDO on big BBCs; 
+* picture cache on very big BBCs (avoiding unnecessary disc loads); 
+* README file. For more information, turn on the BBC, insert the 
+  game disc and enter *TYPE "README"
+
+COMMODORE 64/128 DISC FEATURES
+------------------------------ 
+* colour pictures (use the cursor keys to slide the picture up and 
+  down). To see more pictures, wait until the game has loaded and is 
+  waiting for you to type something - then flip the disc over;
+* RAM SAVE/RESTORE and UNDO; 
+* fast performance when the pictures are turned off; partly because 
+  loading from disc takes a little while (even though we use a good 
+  turbo) and partly because not needing to maintain a moveable split 
+  screen (between the picture and text) frees more processing power. 
+
+IBM PC FEATURES
+---------------
+* pictures in MGA and EGA modes. (The disc just contains one set of 
+  pictures and converts them on output when MGA is chosen);
+* picture cache (avoiding unnecessary disc loads); 
+* recall and editing of previous commands, by cursor keys and 
+  Backspace; 
+* RAM SAVE/RESTORE and UNDO (on machines with more than 128K); 
+* demonstration Game. If you would like a continuous demonstration 
+  of Gnome II, perhaps for use in a shop, start the game by entering 
+  MENU and waiting for it to load. Then, before doing anything else, 
+  press ALT R. Continue by choosing a display format as usual;  
+* README file. For more information, boot the PC from its normal 
+  operating system disc, then insert the game disc and enter 
+  TYPE README.TXT 
+
+MAC FEATURES 
+------------
+* black-and-white pictures (use the mouse, with its button pressed, to 
+  slide the picture up and down);
+* recall and editing of previous commands, by cursor keys and DELETE; 
+* RAM SAVE/RESTORE and UNDO (several times in succession). 
+
+SPECTRUM +3 DISC FEATURES
+-------------------------
+* black and white pictures, tailored for tv display (use the cursor 
+  keys to slide the picture up and down). To see more pictures, 
+  wait until the game has loaded and is waiting for you to type 
+  something - then flip the disc over;
+* recall and editing of previous commands, by cursor keys with SYMB 
+  SHIFT pressed, and DELETE; 
+* RAM SAVE/RESTORE and UNDO (several times in succession); 
+* the Spectrum +3 disc also works on Amstrad CPC and PCWs; 
+* README file. For more information, turn on the Spectrum +3, insert 
+  the game disc, select +3 BASIC and enter LOAD "READ.ME"
+
+
+Copyright
+---------
+Please remember that Gnome II is protected by copyright and took 
+a lot of research, time and trouble to produce, so don't make than 
+one copy, for your own use, to keep only as long as you have the 
+original game. 
+

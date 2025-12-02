@@ -1,0 +1,1795 @@
+; Gnome Ranger II source, copyright (C) 1987 Level 9 Computing.
+;
+; MESSAGE.TXT, messages/keywords for the game.   
+;
+; Messages are of the form: [ number : text ] ; comment
+; They must be in numeric order, but gaps are allowed in the number 
+; sequence, of course.
+;
+; | (vertical bar) terminates the printable part of a message. It 
+;   is typed by shifting backslash (to the left of the keyboard).
+; / forces the following character to be printed literally. 
+; % is carriage return. Note that carriage return is ignored if 
+;   the printing is already at the start of a line, to make coding 
+;   simpler. To force a real carriage return, print space first.
+; ^ (shift 6) marks a word for recognition by the parser. It is 
+;   followed by a letter for word type: 
+;   Adjective; Comment; conJunction; Noun; Preposition; Verb. 
+;
+; The word type ^C is used when a word is not to be used as part of 
+; the normal parsing but is to be available for checking should it 
+; be needed. This is so references to scenery may be checked for
+; containing particular words.
+;
+; Capitalisation is done automatically on output and you are 
+; recommended to use lower case for the first letter of messages 
+; as this improves compression and will make no difference on 
+; output, providing all punctuation is correct. 
+;
+; punctuation messages..
+[1: ]
+[2::]
+[3:, ]
+[4:.] ; dot with no space
+[5:%]
+[6:/and ] ; note lower case a
+[7:.%]
+[8:?%]
+[9:. ]
+;
+; positions etc..
+[10:exits led ]
+[11:an exit led ] 
+[12: through a door]
+[13: through an open door]
+[14: and ] 
+[15:Ingrid was standing on ]
+[17:%What gnow? ]
+[18:: ];
+[19:"]
+;
+; Messages for printing objects..
+[20:a ]
+[21:the ]
+[22:an ]
+[23:some ]
+[24:." ] ; dot quote
+;
+; exits directions, doubling as movement verbs..
+;[51:^V gnorth|^V north ^V n ^V northwards]
+;[52:^V gnortheast|^V northeast ^V ne]
+;[53:^V east|^V e ^V eastwards]
+;[54:^V south|^V s ^V southwards]
+;[55:^V southeast|^V se]
+;[56:^V southwest|^V sw]
+;[57:^V west|^V w ^V westwards]
+;[58:^V gnorthwest|^V northwest ^V nw]
+;[59:^V upwards|^V u ^V up]
+;[60:^V downwards|^V d ^V down]
+;[61:^V inside|^V in ^V inwards ^V into ^V enter]
+;[62:^V outside|^V out ^V leave]
+[63:^V cross|^V across ^V over]
+;[64:with the ^V climb|^V scramble ^V ascend ^V mount]
+;; is in 'you struggle with the climb and are in'
+;;
+;; Intransitive verbs..
+;[70:^V i]
+;[71:^V again|^V a]
+;[72:^V look|^V l ^V display ^V redisplay ^V refresh]
+;[73:^V inventory|^V inv ^V possessions ^V possess ^V list]
+;[74:^V quit ^V restart]
+;[75:^V restore ^V load]
+;[76:^V save]
+;[77:^V ramsave ^V ram]
+;[78:^V ramload]
+;[79:^V score ^V rating ^V status]
+;[80:^V verbose]
+;[81:^V brief]
+;[82:^V wait|^V wa ^V pause ^V z]
+;[83:^V ring|^V play]
+;[84:^V on]
+;[85:^V off]
+;[86:^V pictures ^V graphics]
+;[87:^V words ^V text]
+;;
+;[89:^V undo ^V oops ^V whoops]
+;[90:^V attacked|^V attack ^V hit ^V break ^V kick ^V punch ^V smash]
+;;
+;[92:^V searched|^V search ^V explore]
+;[93:^V dig]
+;[94:^V sniffed|^V sniff ^V smell]
+;[95:^V knocked|^V knock]
+;[96:^V stood|^V stand]
+;[97:^V lay|^V lie]
+;[98:^V sat|^V sit]
+;;
+;[100:^V said|^V say ^V whisper ^V call]
+;[101:^V teleport]
+;[102:^V getme]
+;
+[104:^V run]
+[105:^V poured|^v pour ^V empty] ;>>gnome2
+[106:^V watered|^V water] ;>>gnome2
+[107:^V filled|^V fill] ; >>gnome2
+[108:^V went|^V go ^V goto ^V find]
+[109:^V stopped|^V stop ^V abort]
+[110:^V drank|^V drink]
+[112:^V exited|^V exits ^V exit]
+;
+; verbs for output..
+[130:^V had|^V have ] ; mainly for ark
+[146:gdgo]  ; 196 - gdgo
+[147:gdrun] ; 197 - gdrun
+[148:^V cheated|^V cheat]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+;
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick
+^V pluck ^V catch ^V lift]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]ark
+[146:gdgo]  ; 196 - gdgo
+[147:gdrun] ; 197 - gdrun
+[148:^V cheated|^V cheat]
+;
+; Transitive verbs..
+[150:^V examined|^V examine ^V read]
+[151:^V cut|^V chop]
+[152:^V woke|^V wake ^V rouse]
+;
+[154:^V got|^V get]
+[155:^V took|^V take ^V carry ^V acquire ^V steal ^V picked ^V pick
+^V pluck ^V catch ^V lift]
+[156:^V wore|^V wear]
+[157:^V dropped|^V drop ^V discard]
+[158:^V put|^V hide ^V conceal]
+[159:^V removed|^V remove ^V free ^V release]
+[160:^V threw|^V throw ^V chuck ^V toss ^V hurl]
+[161:^V gave|^V give ^V offer ^V offered ^V sell]
+[162:^V asked|^V ask ^V question]
+[163:^V followed|^V follow ^V chase]
+[164:^V opened|^V open ^V unlock]
+; [165:^V snap] ; as in "snap fingers"
+[166:^V held|^V hold ^V keep] ; as in "hold cave mouth" ;>>spec to gnome 2
+[167:^V planted|^V plant ^V bury] ; as in "plant bulb" >>spec to gnome 2
+[168:^V pulled|^V pull ^V tug ^V push ^V rock] ;>>gnome2 "PUSH ROCK"
+[169:^V fastened|^V fasten ^V tie ^V attach]
+[170:^V unfastened|^V unfasten ^V untie]
+;
+[176:^V inserted|^V insert]
+;
+;; [182:^V collect] ; goal-directed
+;
+; 186, 187 and 189 have text for debugging only
+[186:return object] ; 186 is 'return object to initial' (for npcs)
+;; [188:^V find] ; set up find.
+[189:gdfind] ; 239 is gdfind
+;
+[190:^V closed|^V close ^V shut]
+;; 
+[192:^V told|^V tell]
+[194:struggled] ; mainly for output
+; 195 is 'steal all from'
+;
+[197:killed] ; output only
+;
+[210:reached] ; output only
+[211:dragged] ; output only
+[212:passed] ; output only
+[213:flew] ; output only
+[214:walked] ; output only
+[215:caught] ; output only
+[216:entered] ; output only, e.g 'Fred enters from the east'. Do not mark 
+;
+; Armed combat blows..
+[220:^V scratch]
+[221:^V pink]
+[222:^V jab]
+[223:^V stab]
+[224:^V hack]
+[225:^V batter]
+[226:^V smite]
+[227:^V cleave]
+[228:^V pulverise]
+[229:^V devastate]
+;
+; Unarmed combat blows...
+[230:^V slap]
+[231:^V claw]
+[232:^V bite]
+[233:^V hit] ; must remain as hit!!!! - used for output in THROW
+[234:^V thump]
+[235:^V belabour]
+[236:^V crush]
+[237:^V mangle]
+[238:^V pulverise]
+[239:^V demolish]
+;
+; Echo verbs (250-299) which just print the message containing them..
+[250:that's a very gnegative attitude|^V no ^V gno]
+[251:congratulations on making a positive decision. Whether or gnot it was 
+a good one remains to be seen....|^V yes]
+[252:whee! That was fun! Much better than a boring old "Go Gnorth|^V jump
+^V leap ^V hop ^V skip ^V dance ^V celebrate ]
+[253:The heavens were rent asunder by a savage bolt of vivid lightning. 
+The earth trembled beneath a booming roar of thunder. The air was charged 
+with a hair-lifting tingle and thick with ozone and mystic expectation. 
+And then....% Gnix! It all fizzled out and was quite a gnice day|^V plugh 
+^V xyzzy ^V sesame ^V plover ^V humakaat ^V satarh^V ollabin ^V obis]
+ ; magic words for amusing response
+[254:the ^V weather was very average for the time of year]
+[255:^V hello to you too|^V welcome ^V hi ^V greetings ^V day ^V afternoon]
+[256:Ingrid heard gnothing that she didn't already know about|^V listen 
+^V hear]
+[257:send the coupon to Level 9 for a ^V hint|^V help]
+;; [258:the ground was much to hard for digging|^V dig]
+[259:send your ^V cheques to Level 9|^V treasure ^V money]
+[260:the only ^V escape is to finish the game]
+[261:hard luck! This is the real world, sport? We can't have everything we 
+^V want you know]
+[262:Ingrid will have to find that out for herself another way|^V what]
+[263:why not|^V y ^V why]
+[264:sorry, the lady came in this morning and tidied up the place and 
+gnow we can't even find things for ourselves|^V where]
+[265:i'm afraid gnot even the authors knows ^V how things work around here]
+[266:sorry, that's Ingrid's problem. I can't help with such matters|
+^V whether ^V who]  
+[267:well really! I can't see the justification for such language, and as 
+I don't know the gnomic translation, I can't pass the message on to Ingrid|
+^V bloody ^V scott ^V adams ^V frigging ^V wanker ^V turd ^V conservatives 
+^V shit ^V twat ^V cunt ^V prick ^V bollocks ^V jesus ^V christ ^V dick 
+^V god ^V devil ^V tits ^V asshole ^V arsehole ^V cretin ^V balls 
+^V spastic ^V coon ^V wog ^V fucking ^V screw ^V fucker ^V bastard ^V bonk 
+^V bugger ^V damn ^V fart ^V sex ^V hell] ; lower case swear words 
+[268:Ingrid was very ^V intelligent, you know|^V intelligence]
+[269:^V life is a most expensive thing]
+[270:if you have something to ^V shout about, please let us know|^V yell]
+[271:the ^V royalties are gnever enough]
+[272:roll on ^V death, I could but the water was rather cloudy 
+and she had the definite impression that there were other things swimming 
+in there already]
+[281:oh yes! There's gnothing like a good ^V think, gnow and then, as long 
+as you don't expect anything to come of it]
+[282:when Ingrid had finished, she told her audience that it was a very 
+difficult piece to ^V play. Her audience would have preferred it to be 
+impossible]
+;
+[285:bleuch, that tasted like Grandma Gnutson's cold tea|^V drink]
+[286:^V shake, rattle and rollbut the water was rather cloudy 
+and she had the definite impression that there were other things swimming 
+in there already]
+[281:oh yes! There's gnothing like a good ^V think, gnow and then, as long 
+as you don't expect anything to come of it]
+[282:when Ingrid had finished, she told her audience that it was a very 
+difficult piece to ^V play. Her audience would have preferred it to be 
+impossible]
+;
+[285:bleuch, that tasted like Grandma Gnutson's cold tea|^V drink]
+[286:^V shake, rattle and roll. Coo, what an old swinger!]
+[287:if Ingrid had to ^V sing for her supper. she would have always gone 
+to bed hungry]
+;; [288:you are here to use object, not to ^V bury them]
+[289:scrunch, munch, crunch. Is there anything else for lunch?|^V eat 
+^V bite ^V taste ^V nibble ^V lick]
+[290:Ingrid gave it a good ^V polish. When she had finished, she could see 
+where she had been holding it because her sticky fingerprints really stood 
+out on the shiny background|^V rub ^V clean]
+;; [291:you ^V fill a container by, e.g, "PUT THING IN CONTAINER"]
+;; [292:please ^V empty a container by removing its contents in turn]
+;; [293:rat-a-tat-tat! That was fun|^V knock]
+[294:Ingrid hadn't got a ^V light. She hunted round for two Gnome Scouts 
+to rub together to start a fire, but couldn't find even one]
+[295:sorry, can't find the fire extinguisher, I'll have to stamp it out...%
+Hang on! It's gnot burning anyway|^V extinguish]
+;; [296:that's not a musical instrument|^V play ^V blow]
+[297:a quick pucker of the lips and smack. Mmmmm, that was gnice|^V kiss]
+[298:what do you think it is, a flag already?|^V wave]
+[299:Ingrid tried it carefully, and gnothing happened, so she tried again, 
+but more definitely this time, and definitely gnothing happened|^V press 
+^V select ^V depress ^V poke ^V prod ^V touch]
+;
+; Objects (300+N)..
+[301:^N Ingrid|^N player ^N me] ; Ingrid must start with upper case.
+[302:^N beanstalk]
+[303:^N greenslave]
+[304:^N treehouse]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[380:tiny ^N seed]
+[381:stripy ^N bulb]
+[382:^A blue ^N telelily]
+[383:^A white ^N telelily]
+[384:frail ^N air ^N flower]
+[385:prickly ^N thistle ^N flower]
+[386:tasty ^N raspberry ^N berry]
+[387:hairy ^N gooseberry ^N berry]
+[388:smelly ^N stinkwort ^N shoot]
+[389:furled ^N fern ^N shoot]
+[390:sweet-smelling ^N mint ^N shoot]
+[391:single ^N tea ^N leaf]
+
+[395:^N animate ^N potion]
+[396:^N antidote]
+[397:^N fertiliser ^N potion|^N fertilizer]
+[398:foul-smelling ^N weedkiller ^N potion]
+[399:steaming ^N potion of thick ^N gunge]
+[400:^N cup of tea] ; don't bother marking anyhing ** have added ^N
+[401:china ^N saucer]
+[402:little brown ^N bowl]
+[403:well-matured ^N compost ^N heap]
+
+;
+; some static objects (130 onwards)..
+[430:fragile ^N air ^N plant|^N airplant]
+[431:vicious ^N thistle ^N clump]
+[432:long, straggly ^N raspberry ^N cane]
+[433:well-tended ^N gooseberry ^N bush]
+[434:foul-smelling ^N stinkwort ^N plant]
+[435:soft green ^N fern ^N frond]
+[436:vigorous ^N mint ^N clump]
+[437:delicately scented ^N tea ^N bush]
+[438:yawning ^N cave ^N mouth]
+[439:thick ^N hedge]
+[440:leather-bound ^N books]
+[441:limpid ^N pond]
+[442:black iron ^N pot]
+[443:heavy ^N rock]
+[444:brick ^N wall]
+[445:^N clump of gnarled ^N trees|^N tree]
+[446:^N water]
+[447:^N water]
+[448:^N water]
+[449:^N withered ^N tea ^N bush]
+;
+; some invisible objects (150 onwards)..
+;
+; Brief location objects (479+N). See 779+ for examine messages and 
+; 1199+ for their verbose equivalents..
+[480:low ^N cave entrance]
+[481:little ^N cottage]
+[482:gneatly planted ^N garden]
+[483:high ^N cliff]
+[484:smooth green ^N hillside]
+; 
+; These are used for seeing from a distance and for input, e.g for 
+; 'examine tower' and 'go castle'. (Note that 'go scenery' also works).
+; They also provide a link between the grid of synthesised locations 
+; and the real, static locations used for rooms inside buildings etc.
+;---
+; Collective nouns...
+[534:^N everything ^N all ^N every]
+[535:^N ingredients] ; collective noun - was "treasure"
+[536:^N weapons] ; collective noun
+[537:^N people|^N everyone ^N everybody] ; collective noun
+[538:^N clothes|^N armour]
+;
+; Omni-present objects.. 
+[539:^N door] ; normal door, for the benefit of PRINTACTORACTION. It 
+; is apparantly never described by PRINTOBJECT (so?).
+[541:^N water|^N river]
+[542:^N be]
+[543:^N room|^N ground ^N floor] ; used for output as well
+[544:^N wall|^N walls]
+[545:^N sky|^N sun ^N moon]
+; 
+; and finit] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:Ingrid] ; you]
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s]
+[581:es]
+[582:is] ; used in examine
+;
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direcit] ; itan
+[572:them]
+[573:him]
+[574:her]
+[575:them]
+[576:Ingrid] ; you]
+;
+; and some misc output messages
+; plural endings, and other odd verb declension...
+[579:~] ; print to avoid bug which can print a space after previous word 
+[580:s]
+[581:es]
+[582:is] ; used in examine
+;
+; Entry directions, in the form 'The animal enters from the 
+; outside'. (As opposed to 'The animal goes in' - the normal 
+; verb table.) Note that directions are reversed, so the offset 
+; into the table is the direction of the moving npc.
+;
+[585:from the south]     ; north
+[586:from the southwest] ; northeast
+[587:from the west]      ; east
+[588:from the gnorth]     ; south
+[589:from the gnorthwest] ; southeast
+[590:from the gnortheast] ; southwest
+[591:from the east]      ; west
+[592:from the southeast] ; northwest
+[593:from below]         ; above
+[594:from above]         ; below
+[595:from outside]       ;inside
+[596:from inside]        ;outside
+[597:from across the way];across
+[598:by climbing]        ;climb
+[599:with a jump]        ;jump
+;
+; Examine messages (600+N). NO full stops at end please.
+;
+[601:everything a gnome maid should be - small, but beautifully made, 
+bright-eyed and bushy-haired. But she was more than just a pretty face. 
+Ingrid was just the sort of person to have around when you wanted things 
+doing - as long as you didn't mind how they were done; and if you didn't 
+want things doing, she was just the sort of person to avoid] ; you
+[602:growing close against the wall, and reaching rather less than half 
+way up. It was the sort of beanstalk that ought to grow obligingly, when 
+given the right prompting, so that an adventurous soul could climb it and 
+conquer gnew heights. Ingrid had learned all about them from Mistress Foot,
+ her old legend teacher]
+[603:a small, green person. Not as attractively proportioned as a gnome, 
+but more like an under-gnourished human. Its arms and legs were fairly 
+flat and skinny, and the round, lumpy muscles made them look rather like 
+runner beans gone mad. The body was as skinny as a gherkin, and had the 
+same kind of rough skin. The head - apple-cheeked and with a gnose like a 
+damson jammed on - was topped with grassy hair, and could do with a mow. 
+Ingrid guessed it might have been male, but without pruning away the ivy 
+that was growing discretely around it, there was gno way she was going to 
+find out - unless it flowered]
+[604:a set of trees, organically intertwined. Once the three had only been 
+joined by a rough platform, but over the years they had grown together 
+around the treehouse to form a single unit. Long, thick boughs hung down 
+low, their gnarled, leafy knuckles almost scraping the ground. If there 
+was any kind of face or head anywhere, Ingrid couldn't see it]
+;
+; weapons (40 onwards)..
+;
+; clothes...
+;
+; now some ordinary objects (80 onwards)..
+[680:a smooth, flat green seed, small enough to fit on the end of Ingrid's 
+little finger. (That is, on her little middle finger, it was a little to 
+big to fit on her little little finger)]
+[681:quite large, but gnot very heavy. In fact, Ingrid might have said it 
+was a light bulb. Its had bright blue and white stripes running top to 
+bottom all the way round it, and the wispy remains of some old ^N roots at 
+its base.]
+[682:a small blue trumpet-shaped flower. Looking deeper into its little 
+horn, Ingrid could see a tiny patch of white. By some trick of the light, 
+that white patch seemed to be some long distance away, yet the flower 
+would fit comfortably in Ingrid's hand]
+[683:a small bell-like white flower, with a daub of blue where the clapper 
+would have been - if it had been a bell. It was odd, but the flower seemed 
+much deeper inside than it could possibly have been from the outside]
+[684:a delicate, pale yellow flower, with petals as thin as a dragonfly's 
+wings and as smooth and soft as a gnomebaby's bottom. The stamen, as frail 
+as a ladybird's eyelashes, swayed under the weight of its head of 
+cloud-white pollen. The air around the flower seemed to shimmer, as if it 
+were filled with a pungent scent. Ingrid wondered if perhaps the flower's 
+fragrance was more substantial than the flower itself]
+[685:a rather unattractive, brown flower, almost as prickly as the thistle 
+plant itself. Its scent was sweet and slightly cloying. All in all, it 
+wasn't a bad attempt at a flower, considering the coarse and anti-social 
+nature of the plant, but it wasn't the sort that Ingrid would want to wear 
+behind her ear]
+[686:smooth-skinned, sweet-smellgrid decided it was probably sour]
+[688:a pale and paltry shoot, from sad and sickly plant. Despite its small 
+size, and withered state, it stank to high heaven. Ingrid wondered if it 
+could be used as a fly repellent, but had a sneaky feeling that it was 
+just the revolting kind of smell that would attract flies]
+[689:a small, pale green growth, on the point of unfurling from its 
+foetal position. So young and baby-like, it should have been attractive, 
+but there was something repellent about it. Pegrid decided it was probably sour]
+[688:a pale and paltry shoot, from sad and sickly plant. Despite its small 
+size, and withered state, it stank to high heaven. Ingrid wondered if it 
+could be used as a fly repellent, but had a sneaky feeling that it was 
+just the revolting kind of smell that would attract flies]
+[689:a small, pale green growth, on the point of unfurling from its 
+foetal position. So young and baby-like, it should have been attractive, 
+but there was something repellent about it. Perhaps it was the scatter of 
+straggly hairs, or the colour - it was really a rather revolting shade of 
+green. Ingrid couldn't decide which]
+[690:a vigorous little mint shoot on the edge of the clump, thrusting its 
+dark, wrinkled leaves up on a sturdy square stem, vying with its older 
+brothers and sisters for space and adding its bit to the pungency that 
+filled the air. "Gnice," thought Ingrid, "all I gneed gnow is a roast lamb"]
+[691:a smooth, brown leaf, dark, pungent and full of eastern promise. Its 
+smell conjured up a misty vision of breakfast time at Gnettlefield, 
+sitting around the kitchen table waiting for the tea to grow cold. Ingrid 
+allowed herself a moment to wonder about how the Bottomlows were surviving 
+without her, before getting back to the job at hand]
+
+[695:a seething, foaming liquid, a cross between a gooseberry fool and a 
+fancy foreign beer. Ingrid wondered if it would be able to reach the parts 
+that other potions couldn't reach]
+[696:a foul-smelling, evil-looking brew. Ingrid paled at the sight of it. 
+If this was the antidote, what on earth could the poison be like?]
+[697:a thin, bilious liquid. It reminded Ingrid of the stuff that used to 
+trickle from the guinea pigsty after a heavy shower. That used to make the 
+plants grow a treat, though Ingrid suspected it was mainly a defensive 
+reaction from the plants. They were trying to get as far as possible from 
+the fertiliser at their roots]
+[698:a bad-tempered mixture that bubbled and splattered long after the pot 
+had been lifted off the fire. Ingrid could well believe that it would kill 
+weeds. It could probably be used for stripping paint off doors as well]
+[699:a steaming, lumpy mixture of thick, off-white ribbons of some soft, 
+fleshy material, and smaller chunks of green, brown and red, all wallowing 
+in a glutinous, cloudy brown liquid. Ingrid sniffed it cautiously, then 
+gnodded. Yes, it smelt like pot gnoodle as well]
+[700:a china one of a robust, gno-gnonsense design. The outside was 
+decorated with a herb motif, worn off around the lip on one edge where 
+the alchemist's false teeth had rubbed it. At first sight, the inside 
+appeared to have a pattern of close-set brown rings, but closer 
+examination showed this to be the accumulated stains of years of 
+tea-drinking. Ingrid made a note to tell the alchemist to put the milk in 
+first, so that the tea didn't stain the cup so much]
+[701:of the same design as the cup, and with a matching herb motif and 
+brown ring, from years of pouring his tea into the saucer to cool]
+[702:a small earthenware one, the sort that would gnormally be used for 
+holding sugar, but since the alchemist didn't take sugar and had been using 
+it to hold all sorts of ^N things, gno-one in their right mind would use it 
+to put sugar into gnow, unless of course they had an unloved old uncle, who 
+had left them some money in his will, coming to tea]
+[703:a soft, brown and gently steaming heap of well-rotted compost. Though 
+the outside was a little dry and twiggy in places, inside it had matured 
+into a good friable loam. This had made a comfortable home to many 
+generations of ^N worms and whole hosts of ^N woodlice. It was the sort of 
+compost heap that positively cried out for a ^N marrow to be planted in it]
+
+;
+; some static objects (130 onwards)..
+[730:an intriguing plant, with a delicate yellow flower. The type was very 
+unusual in that part of the world. Like all air plants, it didn't send 
+roots into the soil in search of water, but instead, hung some out to 
+absorb moisture from the air. Other roots clung tightly onto the cliff 
+where it grew. This particular plant was extremely shy and retiring. Its 
+leaves twitched sporadically as it was gripped by sudden terrors, and it 
+seemed to be forever on the point of retreating completely within its 
+crevice. Sigmund Frond, the famous plantoanalysist, would have pointed to 
+its traumatic seedhood when it was blown from its pod, at far too early an 
+age, by a terrible storm and carried to a very inhospitablver attacked it. The thistles were topped with a 
+scatter of dull red flowers]
+[732:a long, thin, flexible cane, striving valiantly to stand upright, and 
+failing miserably. If it caught the wind the right way, it could haul 
+itself up almost straight, and would wobble its leaves at the sky for a 
+few brief moments before keeling drunkenly over again. There were a 
+scatter of berries, mainly green, and one juicy ripe one]
+[733:a substantial, but well-pruned bush. It was of the big-fruited, 
+though bver attacked it. The thistles were topped with a 
+scatter of dull red flowers]
+[732:a long, thin, flexible cane, striving valiantly to stand upright, and 
+failing miserably. If it caught the wind the right way, it could haul 
+itself up almost straight, and would wobble its leaves at the sky for a 
+few brief moments before keeling drunkenly over again. There were a 
+scatter of berries, mainly green, and one juicy ripe one]
+[733:a substantial, but well-pruned bush. It was of the big-fruited, 
+though big-spined, variety, but its branches were spaced out enough to 
+allow people to pick the berries.  Ingrid had heard all about gooseberry 
+bushes and looked underneath to see if there were any babies there. There 
+weren't - unless you counted baby spiders]
+[734:a remarkably revolting little plant, consisting of a short stem and a 
+few insipid shoots. It was wrinkled and of a particularly pallid and 
+sickly green. But then, living where it did, at the back of that cave, it 
+was surprising it had managed to grow at all. Ingrid decided that if she 
+had been the stinkwort, she would have uprooted herself and gone to grow 
+somewhere else. But as the stinkwort stank horribly, she was glad she 
+wasn't it]
+[735:fully-opened, broader than her hand and about as high as Ingrid's 
+waist. It was gnot that lovely, delicate, lacy type of fern - the sort 
+Mistress Gneehigh used to favour in her flower-arranging classes at the 
+Institute of Gnome Economics, but the tough and hairy type - the sort that 
+grew in the dingier parts of Soggybog field.]
+[736:a thick growth of shoots, almost as solid as a bush. The centermost 
+stems were topped with small patches of dull, pale violet, where 
+^N flowers would soon emerge. As Ingrid brushed against the clump, a 
+delicious minty fragrance filled the air]
+[737:a petite little bush, its leaves ranging in colour from glossy dark 
+green to rich brown. Ingrid guessed that the brown leaves would be the 
+ones that were ready for picking.]
+[738:a dark, dank, yawning hole. The walls around the entrance were 
+covered with a thick growth of soggy greenery of some sort. Even from 
+outside, Ingrid could smell a musty dampness and the stench of rottenness. 
+It was gnot an attractive place - which, of course, made it almost 
+irresistible to her adventurous spirit]
+[739:a mixed hedge, predominantly ^N brier and ^N quickthorn, with a good 
+sprinkling of ^N bramble, ^N privet, ^N elder and ^N beech. A good, honest 
+hedge, thought Ingrid, just the sort she would like to see around 
+Gnettlefield]
+[740:a collection of old, leather-bound volumes, their spines worn with 
+use and cracked with age so that their titles were almost unreadable. Some 
+of the books were lightly splattered with fading cooking stains, and most 
+had good covering of dust, as if the old alchemist knew their contents so 
+well that he rarely gneeded to look things up anymore]
+[741:a small, insignificant thing. Its water was tinged green with algae 
+and had the consistency of thin soup. ^N Reeds and ^N bullrushes lined the 
+banks, and ^N water lillies sprawled over much of its surface]
+[742:a large cast-iron pot, the sort that would have been called a 
+cauldron had its owner been a witch, or classed as a casserole had its 
+owner been a gourmet. As it was, the owner was an alchemist, so it could 
+be christened a crucible - except that he only used it for brewing potions 
+and cooking his meals. The outside had a thick black coating of soot from 
+countless years of hanging over the fire, and the inside had a thick black 
+coating of burnt food from countless times of being left hanging over the 
+fire too long because the alchemist had gnodded of while cooking]
+[743:smooth and round, and almost twice as tall as Ingrid. It was the only 
+decent-sized rock around, and looked quite out of place at the top of that 
+hill. It was as if someone had once rolled it up there for a bet, and 
+there it had stood ever since, a momument to mulish strength]
+[744:a remarkably solid example of the mason's art. It was built of large 
+stones, accurately cut for a good fit, and held together with mortar. It 
+was a very high wall, the top way out of reach, and the pointing was flush 
+with the surface of the stones so that there were gno handholds for 
+climbing. The wall stretched off in either direction, right around the hill]
+[745:a set of three trees, planted so close together that their upper 
+branches had grown into a single tangled mass. Looking upwards from 
+between the trunks, Ingrid could see gnothing but a dark y and gnot in the least bit inviting. The cave was set 
+in a low brown hill, and the sides of this were gnot so much smooth, as 
+downright slippery. It was certainly a very odd sort of rock]
+[781:a delightful old place, with white-washed walls and thatched with 
+straw. A wispy spire of woodsmoke wafted lazily from the stone chimney, 
+rising slowly at first then spreading and drifting downwards into the 
+garden. Its smell mixed with the scent of the flowers and herbs to give 
+that special homely fragry and gnot in the least bit inviting. The cave was set 
+in a low brown hill, and the sides of this were gnot so much smooth, as 
+downright slippery. It was certainly a very odd sort of rock]
+[781:a delightful old place, with white-washed walls and thatched with 
+straw. A wispy spire of woodsmoke wafted lazily from the stone chimney, 
+rising slowly at first then spreading and drifting downwards into the 
+garden. Its smell mixed with the scent of the flowers and herbs to give 
+that special homely fragrance that can be almost guaranteed to set off an 
+asthma attack. Fortunately for Ingrid, that was gnot something from which 
+she suffered]
+[782:a patchwork of herb and flower beds, separated by gently curving 
+pathways of gravel or of close-cropped grass. ^N Bees buzzed amongst the 
+flowers, and ^N butterflies fluttered by. With the chocolate box cottage 
+gnestling quaintly in its midst, it made an idyllic scene. Ingrid was on 
+her guard immediately]
+[783:a sheer face of grey rock, rising almost vertically. Apart from a few 
+gnarrow crevices gnear the top, it was completely unbroken. It would have 
+been a gnice cliff to absail down - if Ingrid could have got to the top. 
+But it was useless to think in terms of climbing up it, unless you were a 
+spider with particularly sticky feet. A few ambitious ^N spiders lay on 
+their backs at its base, their gnot particularly sticky feet pointing at 
+the sky]
+[784:covered in smooth, fine, low-growing grass, and would have made a 
+first-rate bowling green if it hadn't been for the slope. That was quite 
+steep. There was a scatter of small ^N stones here and there. (Yes, I know 
+that they would have been a gnuisance on a bowling green, but they could 
+have easily been moved, and compared with the problem of the slope, they 
+didn't really count, and gno-one had got any bowls round that part of the 
+world anyway, so what's all the fuss about)]
+;
+; Short-Form room Descriptions (1000+N). No full stops at end please.
+; These are the brief mode descriptions; they are prefixed by "you 
+; are" and, in verbose mode, messages 1300+N are appended.
+;
+; room 1 is used as exit modifier for synthesised rooms.
+; rooms 2..20 are those with static connections; i.e. not on the 
+; synthesised grid.
+;
+[1002:in the ^N kitchen of the alchemist's cottage]
+[1003:in the alchemist's  ^N library]
+[1004:on a grassy ^N hillside]
+[1005:beside a ^N pool]
+[1006:on the side of a ^N hill]
+[1007:on a ^N hilltop]
+[1008:inside a ^N cave ^N entrance]
+[1009:at the ^N back of a ^N cave]
+;
+; verbose messages for location objects..
+;
+; 1199+N (see 779+ for examine messages and 479+ for brief descs)
+[1200:beside the entrance to a small, dark cave. There was enough light 
+for Ingrid to be able to see that the inside of the cave was of a sickly 
+green colour. She guessed it was covered in algae. The cave exuded a  
+strong smell of damp and mould, with more than a hint of mystery and danger]
+[1201:beside a quaint little cottage,. It was tiny. Only one storey high, 
+and, to judge by the ^N windows, consisting of only two rooms. The 
+kitchen window stood open, and a faint smell of burnt cabbage drifted out 
+into the garden. That touch of human failure somehow added to the charm of 
+the cottage]
+[1202:in a beautifully tended garden. It was full of ^N flowers and 
+^N herbs of every sort, of every shade and hue. Ingrid had to stand back 
+and admire it. This was exactly what she wanted the back garden at 
+Gnettlefield to be like. She wondered if the gardener could be persuaded 
+to come and stay with them. (Once she had found her way back, of course, 
+and that was proving to be a bit of a problem at the time)] 
+[1203:beside a steep, sheer cliff. High and smooth, it stretched in a full  
+circle all around the small plateau, with gnot the slightest trace of a 
+path or of a climbable tumble of rocks anywhere along its length. Clearly, 
+this was gnot a cliff that wanted to people to get up it]
+[1204:beside a grassy hillside. It was quite high, and fairly steep - a 
+stiffish walk to the top, but quite manageable. And it would have been a 
+real whizz for tobogganing down in the winter. Ingrid reckoned it should 
+be qualify a three-broken-leg rating, which made it well worth a visit 
+when the snow came - as long as she could find her way back]
+;
+[1302:. Light streamed in through the open doorway and through the small 
+bottle-glass window, falling softly on the rush-matting that covered the 
+floor. Tiny motes of dust danced a delicate, intricate gavotte in the 
+sunbeams. Oppot of the
+space was taken up by big wooden ^N bed. It was obviously very old, and 
+from the way that the mattress sagged in the middle, it was clear that the 
+springs were going. Ingrid was sure that it couldn't be doing the 
+alchemist's back any good, and made a mental gnote to suggest that he got 
+himself a gnew one. The wall opposite the bed was lined with shelves and 
+these carried more books than Ingrid had seen since she left the Institute]
+; in the alchemist's  ^N library
+[1304:. The ground slt of the
+space was taken up by big wooden ^N bed. It was obviously very old, and 
+from the way that the mattress sagged in the middle, it was clear that the 
+springs were going. Ingrid was sure that it couldn't be doing the 
+alchemist's back any good, and made a mental gnote to suggest that he got 
+himself a gnew one. The wall opposite the bed was lined with shelves and 
+these carried more books than Ingrid had seen since she left the Institute]
+; in the alchemist's  ^N library
+[1304:. The ground sloped gently up in front of her towards a wall. Beyond 
+that, it seemed to rise more steeply, though the wall was so large that it 
+was difficult to tell] ; on a grassy ^N hillside
+[1305:, standing in a soggy ^N patch of ^N mud. The pool was a bit weedy -
+ both in terms of size and of plant growth, and Ingrid felt that it could 
+have done with a family of ducks to cheer it up. The pool, which enjoyed 
+its piece and quiet, knew perfectly well that the last thing it wanted 
+was a load of ducks quacking about and dropping feathers and what-gnot all 
+over the place] ; beside a ^N pool
+[1306:. The stope was steeper here, but still quite an easy climb. In a 
+way, Ingrid was a little disappointed - she rather liked the idea of 
+struggling on through rugged mountains, battling against the elements. But,
+ on the other hand, her feet were getting a bit sore anyway, and this sort 
+of pleasant hike was enough to be going on with] ;on the side of a ^N hill
+[1307:, looking down at the remnants of the wall and the hedge beyond. The 
+alchemist's cottage was visible in the distance. From the top, Ingrid 
+could see that the hill was unnaturally smooth and round. It made her 
+wonder if this wasn't perhaps one of those Gnorsegnome burial places - a 
+wheelbarrow or some such name] ;on a ^N hilltop
+[1308:, or maybe it should be called a cave mouth, for that opening did 
+look terribly like a pair of parted lips. The inside was horribly damp and 
+smelly. But more than that, its low ceiling and narrow walls gave it a 
+heavy, claustrophobic menace. There was something about all the inside 
+surfaces that Ingrid couldn't quite put her finger on - gnot that she 
+would have willingly put a finger on them anyway. The algae that grew upon 
+them, grew so thickly that the very walls, floor and ceiling seemed to be 
+solid vegetable. And all over, water was oozing slowly and stickily 
+through the algae, and hanging in glistening, syrupy drops]
+ ;inside a ^N cave ^N entrance
+[1309:. The entrance had been bad enough, but this place was even worse. 
+It was positively seething with vegetable menace like an overripe pumpkin. 
+The walls were seething and starting to drip sticky ^N goo onto the 
+squidgy floor, and the algal lining had an faint phosphorescence that cast 
+a sickly green glow over everything. And then there was the stinkwort. Its 
+foul stench was all but overwhelming in the close confines of the depths 
+of the cave] ;at the ^N back of a ^N cave
+;
+; Now verbose additions to brief location descriptions (1300+n). No 
+; full stops at end please. These are printed immediately after each 
+; short descriptions (1000+N), without any intervening punctuation. 
+; (You may start a message with either punctuation or just text.)
+[1415:. The road continued off to the south, which was where Ingrid
+had just come from]
+[1416:. To the east was a large hill, blocked off for some reason]
+[1419:. To the south was the gnorthern wall of the cottage]
+[1420:. To the south was the gnorthern wall of the cottage]
+[1429:. To the south was the gnorthern side of the hill]
+[1430:. To the south was the gnorthern side of the hill]
+[1437:. To the gnorth was a small rocky rising with sheer walls]
+[1438:. To the gnorth was a small rocky rising with sheer walls]
+[1442:. Near the top of the cliff, a small plant clung to the rock face]
+
+;
+;
+; Message pairs for use in describing containment positions
+; also used for preposition table
+;
+; part printed before container
+;
+[1600:could see]      ; 0 - you can see
+[1601:^P on |^P onto] ; 1 - on
+[1602:^P underneath|^P below ^P under] ; 2 - under
+[1603:^P behind]      ; 3 - behind
+[1604:]               ; 4 - carrying
+[1605:]               ; 5 - wearing
+[1606:in|^P at]       ; 6 - blocking the hole
+[1607:^P in |^P into ^P inside] ; 7 - in 
+[1608:hanging from]   ; 8
+[1609:growing from ]               ; 9 - part of
+[1610:^P between]     ; tied between is tied a rope
+;; [1611:]            ;11 - for ring of knucklebone
+[1612:lying on]       ;12
+[1613:sitting on]     ;13
+[1614:fastenof is
+[1650:was tied]        ;10 -
+[1651:]               ;11 - from
+[1652:]               ;12
+[1653:]               ;13
+[1654:was]             ;14 - fastened to
+;; [1655:and holding the lid open was] ;15 tied to the (chest) is a (strap)
+;
+; 1700: is base for prepositions to use with 'you'
+;
+; 1700+N is part printed before 'you'
+[1715:tied to]
+;
+; 1740+N is part printed between you and object(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]            ; 4 - own
+[1745:wof is
+[1650:was tied]        ;10 -
+[1651:]               ;11 - from
+[1652:]               ;12
+[1653:]               ;13
+[1654:was]             ;14 - fastened to
+;; [1655:and holding the lid open was] ;15 tied to the (chest) is a (strap)
+;
+; 1700: is base for prepositions to use with 'you'
+;
+; 1700+N is part printed before 'you'
+[1715:tied to]
+;
+; 1740+N is part printed between you and object(s)
+[1741:was on]         ; 1 - on
+; 1742 is 2
+; 1743 is 3
+[1744:owned]            ; 4 - own
+[1745:was wearing]    ; 5
+[1746:was riding]     ; 6
+[1747:was in]         ; 7
+[1752:was lying on]   ; 12
+[1753:was sitting on] ; 13
+[1754:was fastened to];14
+[1755:was] ; tied to you is 15
+;
+[1800:^P off]
+[1801:^P up]
+[1802:^P down]
+[1803:^P to]
+[1804:^P out]
+[1805:^P from the ] ; used for npc motion
+[1806:^P for]
+[1807:^P until]
+[1808:^P debug]
+[1809:^P through]
+[1810:^P about]
+;
+; Parser messages..
+[2000:you don't gneed to use "] 
+[2001:" to finish the game]
+;
+[2003:I don't understand the word "]
+[2004:" when used like that]
+;
+[2006:Ingrid was ]
+[2007:in a ] ; as in 'You are in an alder forest
+[2008:in an ]
+[2009:exits led in all directions]
+;
+; general error message when parsing has broken down.
+[2010:I don't understand what you mean]
+[2011:Ingrid couldn't see]
+[2012:Ingrid didn't have]
+[2013:Ingrid already had]
+[2014:(The management would like to take this opportunity to apologise for 
+gnot knowing what on earth you're blathering on about)]
+[2015:it's too far away to see it properly] 
+; examine, take etc. scenery objects
+[2016:I can't find a verb in that sentence. Aare you sure you put one in? 
+Because if you did, it dropped out before it reached me]
+[2017:it's gnot there]
+[2018:there were too many gnouns in that sentence]
+;
+[2036:sorry, I don't fully understand that verb]
+; ^ verb in keyword table but not in CALLVERB routine
+[2037:there doesn't seem to be anything suitable]
+;
+[2039:cor lummy! What a mouthful! ]
+;
+[2044:couldn't have ] ; as in "Ingrid couldn't have knocked that"
+;; [2045:that]
+[2046:that]
+[2047:here]
+[2048:Ingrid couldn't find ]
+;
+[2053:it's gnot clear to what ]
+[2054: is referring] 
+;
+[2055:(removing] ; E.g '(Removing the bat from the cage first).'
+[2056:from the]  ; to avoid containers inside themselves.
+[2057:first).]
+;
+; error messages for NPC's
+[2060:are you talking to yourself again?]
+[2061:Ingrid, for all her many talents, couldn't talk to several people at 
+once]
+;
+[2065:for] ; as in 'looks for the cask'
+[2066:but can't find]
+;
+; message pair when a npc tries to take stuff from others...
+[2074:would gnot let]
+[2075:take it]
+;
+; Standard Adventure output messages
+;
+[2100:Welcome to Gnome Ranger, copyright (C) 1987 Level 9 Computing. ]
+[2101:Ingrid couldn't see]
+[2102:Ingrid didn't have]
+[2103:Ingrid already had]
+[2104:Ingrid couldn't see that here]
+;; [2105:in the distance is ] ; for scenery seen from afar
+[2106:Ingrid owned gnothing at all]
+[2108:it was dark, Ingrid could not see]
+;
+; examining something greater than maxobject: (but not scenery)
+; rare occurrence - mostly for omnipresent objects, numbers, spells
+[2112:it looked exactly as Ingrid would have expected]
+[2113:gnothing]
+[2114:Ingrid couldn't go that way]
+[2115:through the door]
+[2116:Ingrid tried very hard to squeeze the crack between the door and the 
+frame, but try as she might, she just couldn't manage it. Perhaps she 
+should have opened it first? ]
+[2117:it's already open]
+;; [2118:it's already closed]
+[2119:Ingrid found]
+;
+[2123:Ingrid couldn't put ] ; paired with 2124
+[2124:there]
+;
+[2125:Ingrid couldn't go there! ]
+[2126:Ingrid would have to drop it first]
+;
+[2127:Ingrid couldn't climb that]
+[2128:%Did you know that you can say 'GO TO somewhere' to go to
+a far off place? e.g. 'GO TO TOWER' or 'GOTO ALDER FOREST.'%]
+;
+; 2130 is used when player refers to scenery which is not nearby
+[2130:Sorry, I can't find a reference to "]
+[2131:Ingrid was on it! ]
+[2132:what? ]
+[2133:where? ]
+[2134:Ingrid was wearing ]
+[2135:please try again, saying what with? ]
+[2136:which one?]
+[2137:at what?]
+[2139:was full]
+[2140:" hereabouts]
+;
+[2142:Ingrid couldn't wear ]
+[2143:Ingrid couldn't reach it from where she was just then]
+;
+[2147:Ingrid was already wearing that]
+[2148:Ingrid found she didn't need to do that]
+;
+; Confirmation messages
+;
+[2152:worn]
+[2153:OK]
+[2155:time passes. ]
+[2156:said]
+[2158:Ingrid found she would have to untie it first]
+;
+[2160:YES or NO please.%]
+;
+[2177;Ingrid heard strange gnoises]
+[2ESTART: ]
+[2210:the room was badly damaged] ; attack/fireball room
+[2211:don't bother - it hasn't been refitted since Ingrid last smashed the 
+place up]
+[2212:why don't you go and massacre a toadstool instead? ]
+[2213:gnorsegnomes seem to have been ravaging and pillaging here]
+[2214:% %do you want to continue? ]
+[2215:that's too long to wait] ; won't wait
+[2216:you can wait for someone (e.g. WAIT FOR BEETLE),
+for a certain length of time (e.g. WAIT FOR 25 MINUTES),
+or until a time (e.g. WAIT UNTILESTART: ]
+[2210:the room was badly damaged] ; attack/fireball room
+[2211:don't bother - it hasn't been refitted since Ingrid last smashed the 
+place up]
+[2212:why don't you go and massacre a toadstool instead? ]
+[2213:gnorsegnomes seem to have been ravaging and pillaging here]
+[2214:% %do you want to continue? ]
+[2215:that's too long to wait] ; won't wait
+[2216:you can wait for someone (e.g. WAIT FOR BEETLE),
+for a certain length of time (e.g. WAIT FOR 25 MINUTES),
+or until a time (e.g. WAIT UNTIL 14:25)]
+[2217:the time was ]
+;
+; Residual combat messages..
+[2230:the body of] ; as in 'the body of a troll'
+[2231:, but]
+;
+; Score messages..
+[2240:Ingrid scored ]
+[2241:% %you seem to have got Ingrid killed.%]
+[2242: out of 1000 and was a ] 
+;
+; ratings..
+[2250:gnovice]
+[2251:sorcerer's apprentice]
+[2252:conjuror]
+[2253:soothsayer]
+[2254:shaman]
+[2255:a spellbinder]
+[2256:sorcerer]
+[2257:magician]
+[2258:wizard]
+[2259:mage]
+[2260:supreme archmage]
+; 
+; health reports
+[2270:dead]
+[2271:at death's door]
+[2272:a wreck]
+[2273:badly injured]
+[2274:wounded]
+[2275:injured]
+[2276:hurt]
+[2277:almost uninjured]
+[2278:in good shape]
+[2279:unhurt]
+[2280:completely uninjured] ; and probably cheating!
+;
+[2300:Oops and ram save/restore don't work in this version]
+[2301:%please insert save disk and press a key. %]
+[2302:%please insert game disk. %]
+[2308:I can't use OOPS to go back further than this]
+[2309:%(This version allows you to use RAM SAVE and RAM RESTORE 
+to save a position in memory, and OOPS to take back bad moves). ]
+[2310:can't return to that saved position in memory. Perhaps 
+you've turned off the computer, or reloaded the game, since 
+it was saved]
+;
+; misc jokey messages (slightly more complex than echo verbs)..
+[2401:that might have made Ingrid hurt herself] ; attack me
+[2404:Ingrid could smell gnothing of any special interest]
+[2405:Ingrid found gnothing special]
+[2406:Ingrid smelled as a gnome maid should, of earth and flowers, of 
+sunny days and slightly sweaty armpits. It was a wonderful smell, 
+especially to a gnome lad's gnose] ; smell player
+[2407:Ingrid said hello]
+[2416:to be, or not to be, that is the question]
+;
+; add your messages for special cases here....
+[2500:it was several days since Ingrid had left the witch's cottage. The 
+road had been long and more or less empty. The only place that she had 
+passed had been a small roadside restaurant, run by a little chef. It was 
+very bright and gnew, and attractive in a rather gaudy way. Ingrid decided 
+it was probably some sort of trap, and gave it a wide berth. At last 
+she came in sight of a charming little cottage. As she drew closer, she 
+could see an old man out in its garden. He saw her and invited her in with 
+a cheery wave. "Hello, my dear," he said, "and who might you be?"% "I'm 
+Ingrid Bottomlow," she told him, entering the gneatly tended garden. "Well, 
+gnever mind, my dear," he replied, "come along in and have some tea. I was 
+just about to make a pot. You wouldn't mind going round and picking the 
+leaves, would you? My old back's giving me a bit of trouble today." Ingrid 
+agreed, and followed his directions round to the back garden, on the 
+gnorthern side of the cottage]
+[2501:Ingrid was a little hesitant, as she had been told gnever to take 
+tea with perfect strangers. However, she told herself that gnobody's 
+perfect, and she could do with a cup of tea. Besides, she knew that it 
+would have been unpardonably rude to leave without helping the old man, so 
+she set out to pick the ingredients to brew into tea]
+;; [2502:ingrid picked] **** should this be marked off ;; ?
+[2503:as she did so, the little tea bush shivered and shook, then before 
+her very eyes, its leaves wilted, its branches sagged and with a long, 
+slow rustle, like a last gasp, the plant died. Ingrid had heard of 
+over-acting, but that was ridiculous!%The alchemist - for that is what the 
+old man was - tottered angrily up the garden path, waving his walking 
+stick. "Look at it," he gasped, "You've killed my Tea bush! How could you! 
+Gnow how am I going to get my cup of tea?" Ingrid wanted to explain how she 
+had only taken a leaf, and the bush had come to pieces in her hand, as it 
+were. But the alchemist had already turned and creaked off, sniffling 
+sadly and blowing his gnose on the sleeve of his robe. Ingrid groaned 
+inwardly. The alchemist was almost as much of a ham as his tea bush. She 
+decided that he probably gneeded a good cup of tea, but looking at the 
+withered bush, she knew she woee%Ingrid's success at alchemy.% Gno wilting 
+violet, Ingrid, she%Tamed a plant and rode a tree,%She fought her way to 
+victory%And for this work she took gno fee,%But did enjoy her cup of tea]
+[2505:grew a gnice gnew]
+[2506:the alchemist's pot boiled and bubbled gnoisily]
+[2507:and magically produced]
+[2508:ingrid took a book down off the shelf and browsed idly through it. A 
+passage caught her eye, and she stopped to read. The book's was called..%]
+[2509:died] ; for, "the ??? plant died. "
+;
+; 2ee%Ingrid's success at alchemy.% Gno wilting 
+violet, Ingrid, she%Tamed a plant and rode a tree,%She fought her way to 
+victory%And for this work she took gno fee,%But did enjoy her cup of tea]
+[2505:grew a gnice gnew]
+[2506:the alchemist's pot boiled and bubbled gnoisily]
+[2507:and magically produced]
+[2508:ingrid took a book down off the shelf and browsed idly through it. A 
+passage caught her eye, and she stopped to read. The book's was called..%]
+[2509:died] ; for, "the ??? plant died. "
+;
+; 20 random hints about game]
+[2510:'Back Garden Alchemy'. She read....%If thou wanteth to bring life%
+Unto a greenslave, take a knife%Cut thyself a gnice big berry,%Gnot a gnut 
+or leaf or cherry,%Boil it up with something prickly,%Something sweet, but 
+gnot too sickly%Add to this a bit of green%And thee'll have a human bean]
+[2511:'Ye Alkemysts Almanak'. She read....%Of transmutation lett us speke,%
+That sekret that wee all do seke%If to us it coulde be tolde%Then all that 
+glittereth woulde be golde]
+[2512:'The Quadruple Question'. She read....%The Recognition of the 
+four-fold Gnature of Life is essential to the proper Understanding of 
+Alchemical Processes. Are there gnot four Elements, four Points of the 
+Compass, four Corners to a Horse, four Wonders of the World, four Deadly 
+Sins? Therefore let the fours be with thee always]
+[2513:'Gnomic Gnotes for Gourmets'. She read....%Mignce gnigne browgn gnuts 
+agnd sevegn greegn rugngner beagns,% Agn ignk-cap fugngus agnd bacogn leagn,
+%Blegnd ign a gnoggign of wigne agnd a gnip of pugnch,%Gargnish with 
+bagnagna agnd drignk it for lugnch]
+[2514:'Prize Pumpkins and Massive Marrows'. She read...%If you're troubled 
+by sickly plants, the answer lies in the soil. You've got to give them a 
+good dose of liquid fertiliser. Take the ingredients listed on page 73, 
+cook them and stir them with a leaf until the mixture is smooth and yellow, 
+and smells a bit sour...%(unfortunately, page 73 was stuck tight to page 72,
+probably with liquid fertiliser)] 
+[2515:'Praktikal Magianisme'. She read....%Iffe thou aspires to wizardye%
+Go thou weare the lizards be%Weare todes playe and gnewtes do slepe,%Finde 
+thyselfe a komposte heape.%Tayke the heape and holde thy gnose%And carte 
+it withe thou weare'ere thou gose]
+[2516:'A Potful of Potions'. She read....%All-Purpose Antidote%Take a 
+little pot and boil up in it a fresh young shoot, add a wrinkled bit of 
+something, anything revolting and a bit of greenery.%Some people prefer to 
+add salt, but this is a matter of taste]
+[2517:'Thaumaturgy for Beginners'. She read....%Help with the Housework%A 
+greenslave is a great boon to have around the place. They are always very 
+hardworking, and when they start to get old and tired, they will make a 
+good gnutritious soup]
+[2518:'Herb Cookery'. She read....%If you really want to get to know your 
+herbs, you must learn four things about them, their texture, colour, 
+fragrance and which part you should use]
+[2519:'An A to Z of Alchemy'. She read....%Immortality%The secret of 
+immortality is believed to have been discovered in 1546 by the great 
+alchemists, Phil McOffin and Paul Bearer, but was unfortunately lost, as 
+they failed to tell anyone else before they died]
+[2520:'A History of Alchemy'. She read....%Then the era when alchemy was 
+regarded as a social service drew to a close. The alchemists retreated 
+into their thatched cottages, and grew thick hedges of privet around their 
+gardens. This process, known as privetisation, took the prophets away from 
+the communities which had once shared them]
+[2521:'Choosing and Using Commercial Potions'. She read...%Gnot all of us 
+have the time or skill to concoct our own potions, but that doesn't mean 
+that we can gnot enjoy the benefits of modern alchemy. Gnowadays most 
+travelling leprechauns carry a good selection of commercial potions. All 
+that the user gneeds to know is how to find the right one for his purposes]
+[2522:'Cooking in a Crucible'. She read....%If you have been using your 
+crucible for transmuting base metal into gold, then it will probably have 
+a layer of lead on the inside. Do gnot try to remove this. If you scour it 
+out, the inside will go rusty, and as we always say, 'better lead than red']
+[2523:'The Plant Picker's Pocketbook'. She read....%It is sad, but true, 
+that sometimes the most beautiful flowers are also the most deadly. They 
+are also, for fairly obvious reasons, the ones we know least about]
+[2524:'Spells in a Saucepan'. She read....%All herbal potions will be more 
+r is running high, the 
+resulting brew will be good - it was in such a way that damson jam was 
+discovered. But more commonly, the alchemist will have made that mixture 
+to which we give the term 'gunge'] 
+[2526:'The Compleat Herbalist'. She read...%An Ode to Herb Tea%Oh, pungent 
+tea, so smooth and brown,%Thee lifteth me up when I feel down.%Aye, when I 
+smell the leaf and things%A-brewing, my heart taketh wings]
+[2527:'Step by Step Alchemy'. She read....%1 Getting to Know Your PC%
+Unpack your Persr is running high, the 
+resulting brew will be good - it was in such a way that damson jam was 
+discovered. But more commonly, the alchemist will have made that mixture 
+to which we give the term 'gunge'] 
+[2526:'The Compleat Herbalist'. She read...%An Ode to Herb Tea%Oh, pungent 
+tea, so smooth and brown,%Thee lifteth me up when I feel down.%Aye, when I 
+smell the leaf and things%A-brewing, my heart taketh wings]
+[2527:'Step by Step Alchemy'. She read....%1 Getting to Know Your PC%
+Unpack your Personal Cauldron kit carefully, and lay out the components on 
+the kitchen table. You should find:%Cauldron (either a 64 or 128 pint 
+version)%Key Board (plus keys to hang on it)%Minotaur (or similar 
+mythical beast)%Mouse (if this is dead, ask for a replacement)]
+[2528:'Potions in Season'. She read....%Happily, many potions can be made 
+at any season of the year, for they do gnot depend upon specific plants. 
+With this type, what is important is the contribution made to the potion 
+by an ingredient. Thus, if smoothness is required, any ingredient with a 
+smooth texture can be used]
+[2529:'Carefree Gardening'. She read....%There's gnothing like the liberal 
+application of weedkiller to make a garden easy to manage. I give my 
+garden a good all-over spray three times a year, or more often if I see 
+any sign of green anywhere. The best is Flowers'. It's right hairy stuff, 
+bright red in colour, with a revolting smell....]
+
+[2530:Ingrid climbed up one of the trees, squeezing through a screen of 
+leaves on the lower branches. She found a platform linking the tree to the 
+two others, and a roof and walls made from interwoven branches. The 
+three trees had grown into a huge treehouse - and a live one too! As soon 
+as she stepped onto the platform, a lugubrious voice groaned deeply, "Ooh, 
+my creaking boards, my poor old aching limbs!" Ingrid stopped in surprise 
+and peered around in the dim green light within the treehouse. There was 
+gno-one in sight. "Who's there?" she asked. "Where?" the deep, hollow 
+voice asked. "In this treehouse," replied Ingrid. "In the treehouse!" the 
+voice echoed hollowly, "but I am the treehouse. Who's in me asking who's 
+in me?" Ingrid introduced herself and apologised gnicely for entering the 
+treehouse without asking. The voice said, "That's alright, Ingridbottomlow.
+ It happens all the time. It happened about 500 years ago, and I expect it 
+will happen again before the end of the millenium]
+[2531:the treehouse said "Hello, back so soon, Ingridbottomlow", and 
+"I expect you will be wanting me to give you a lift. It's all go round 
+here today. All this rush and excitement. I don't know what the world's 
+coming to"]
+[2532:the treehouse said "I really am most terribly sorry, Ingridbottomlow.
+ I'm going to have to stop. I know you'll be disappointed, but I can't go 
+that way because there's gno soil for me to walk on. Still, life's full of 
+these disappointments." The treehouse shrugged its branches and settled 
+its roots comfortably for a gnice, quiet stand]
+[2533:Ingrid climbed up one of the gnarled and knobbly trunks into the 
+treehouse. Deep cracks in the ancient bark, and the stumps of long-lost 
+lower branches made it a very easy climb, though the splatterings from 
+several families of roosting ^N robins made it a rather messy one]
+[2534:the hedge sensed Ingrid hidden amongst the branches and its briers 
+swiftly rose up to block the way for]
+[2535:the hedge suddenly flexed itself, opening out like a collapsible 
+picnic table unfolding; stretching upwards and thickening out so rapidly 
+that before she could take another step, it had completely blocked]
+
+; weedkiller stuff
+[2540:caught a whiff of the weedkiller, and shied away from Ingrid]
+[2541:the weedkiller did wonders for Ingrid's complexion. It instantly 
+cleared up a little rash of spots that had been troubling her for ages, 
+and left her whole skin as soft as silk. Ingrid made a mental note to 
+remember the recipe so that once she had got these little local problems 
+sorted out, she could branch out into the beauty business]
+[2542:a single stalk of the hedge keeled over and died. The rest of the 
+hedge stood there in silent challenge]
+[2543:seemed to be resistant to the stuff. Ingrid had the sneaky feeling 
+that it was, in fact, thriving on the weedkiller!]
+
+; telelily stuff
+[2550:was too big to fit inside]
+[2551:disappeared]
+[2552:appeared from]
+[2553:water started to flow from]
+[2554:water came gushing out of]
+[2555:as if from a fireman's hosepipe]
+
+
+; beanstalk stuff
+[2anging. The leaves were 
+filling out like cushions, and things were going on below as well. The 
+earth beneath the wall began to quiver and bulge with the rapidly 
+burgeoning roots, and fine streams of powdered mortar began to trickle 
+from the wall as its stones ground and grated against each other. The 
+trickle turned into a torrent, carrying with it small stones and flakes of 
+rock. And the rumbling in the rootmass grew ever louder, a vegetable 
+volcano on the point of eruption. Large stones tumblanging. The leaves were 
+filling out like cushions, and things were going on below as well. The 
+earth beneath the wall began to quiver and bulge with the rapidly 
+burgeoning roots, and fine streams of powdered mortar began to trickle 
+from the wall as its stones ground and grated against each other. The 
+trickle turned into a torrent, carrying with it small stones and flakes of 
+rock. And the rumbling in the rootmass grew ever louder, a vegetable 
+volcano on the point of eruption. Large stones tumbled from the top of the 
+wall as it shook ever more violently, and then, with terrifying suddenness,
+ critical mass was reached. With an earth-shattering, eardrum-battering, 
+stone-scattering, mud-splattering, teeth-chattering explosion, both wall 
+and beanstalk disintegrated in a mass of flying stones and roots. Ingrid 
+found herself flat on her back, but apart from being covered in mud, 
+mortar and bits of beanstalk, gno-one was actually hurt.]
+[2564:the wall was too high and too smoothly finished to climb]
+[2565:the wall was too thick and solid to break]
+[2566:the wall was so high that even the treehouse couldn't step over it]
+[2567:watered the beanstalk. There was a vigorous slurping gnoise, and the 
+beanstalk grew fatter, but the tip was still gno closer to the top of the 
+wall]
+[2568:had no water]
+;
+; boulder stuff
+[2570:the boulder wobbled unevenly and stopped rocking]
+[2571:the boulder rocked backwards and forwards a little, but wouldn't 
+move off the top of the hill]
+[2572:the boulder rocked violently and began to roll heavily towards the 
+brow of the hill]
+[2573:the boulder started to roll down the hill, slowly and ponderously at 
+first, but steadily picking up speed, setting a scatter of smaller stones 
+in motion in its wake, leaving a broad track of crushed grass and torn 
+earth. Faster it rolled and louder it rumbled, crashing down towards the 
+hedge at the bottom of the hill. Ingrid watched, wide-eyed with 
+anticipation, then wider-eyed with fear as she realised that the boulder 
+was heading straight for her. She leapt to one side just before it 
+tumbled by, the wind of its passing whipping the hair around her face. 
+Moments later she was clapping her hands in triumph as the boulder smashed 
+through the hedge like a gnome on a bicycle going through a gnasturtium 
+bed. A scatter of twigs flew through the air. The rest of the hedge at 
+that point had been crushed so flat, there seemed to be a parquet floor in 
+the gnew opening]  
+
+; carnivorous cave stuff...
+[2580:the walls of the cave twitched menacingly as Ingrid stepped inside. 
+The fusty, musty air caught at Ingrid's gnostrils and drenched her tongue 
+with its thick, cloying taste. The brown-green, mossy, murky floor rocked 
+soggily beneath her feet. Ingrid stood just within the entrance to the 
+cave, sensing that she was in the midst of a critical moment. Was this the 
+time to go boldly on, striding fearlessly on to triumph? Or was this the 
+time to let discretion take the part of valour?%Did she continue? ]
+[2581:Ingrid stepped boldly into the cave, and the entrance snapped shut
+behind her with a soft, but very final, sound]
+[2582:alas, poor Ingrid! That was gno cave. That was a carnivorous plant, 
+an overgrown Venus' Fly Trap with a very healthy appetite. The grisly 
+details of what happened gnext are best glossed over.%%Thus ended Ingrid, 
+the gnome on a quest.%She entered a cave for she thought it was best.%But 
+the cave was a plant, and that plant had got thinner,%And it said 
+"Pleased to see you, you must stay for dinner."%Ingrid said,"Gno thank you,
+ I really must go"%but the plant shut its mouth and just muttered "No".% 
+It ignored her cries, and swallowed her moans,%Then three weeks later it 
+spat out the bones]
+[2583:held the cave mouth open]
+[2584:the cave closed convulsively, with that irrestible strength found 
+only in rampant vegetables, overcoming all efforts to hold it open]
+[2585:the cave mouth was tight shut, its lips sealed together so firmly 
+that nothing could part them]
+[2586:the cave opened its mouth and, with a grimace of distate, spat out]
+[2587:the treehouse was too tall and wide to go into the cave, and its 
+branches were unable to get a proper grip on the slimy sides of the 
+opening]
+[2588:released the cave mouth]
+[2589:the air flower had been folded up and drawn back tightly in amongst 
+the roots of the air plant, deep in the crevice. The plant shuffled and 
+twittered its roots gnervously, huddling into the safety of the rock. But 
+it gneeded have worried so. Ifield was, she guessed, a long way away, 
+though how far or in what direction, she hadn't a clue]
+[2592:Ingrid could now see the pretty little air plant, gnestling 
+gnervously in its crevice]
+[2593:the air plant retracted its beautiful flower in a gnervous flurry]
+[2594:the air plant shyly raised its flower to the sun, as if singing a 
+hymn to its glory and praying for a little of its strength]
+[2595:a beautiful flower was growing from the air plant, its translucent 
+yellow setting a harmonious counfield was, she guessed, a long way away, 
+though how far or in what direction, she hadn't a clue]
+[2592:Ingrid could now see the pretty little air plant, gnestling 
+gnervously in its crevice]
+[2593:the air plant retracted its beautiful flower in a gnervous flurry]
+[2594:the air plant shyly raised its flower to the sun, as if singing a 
+hymn to its glory and praying for a little of its strength]
+[2595:a beautiful flower was growing from the air plant, its translucent 
+yellow setting a harmonious counterpoint to the solid grey of its rocky 
+background]
+[2596:Ingrid breathed in the scent of the air plant flower. It was a 
+delightfully fresh and pungent smell, evoking visions of sunrise on a 
+spring morning at Gnettlefield, of dew sparkling on the grass in 
+Sandybottom field, and the distant hint of mother's cooking, of burnt 
+toast and greasy bacon. It was also highly poisonous. Ingrid breathed it 
+in once more, and then gno more.%%Oh listen gnow, and heed my warning,
+%Those who pick flowers of a morning.%The pretty ones might look quite 
+spiffing,% But they are gnot so good for sniffing.%Ingrid found a little 
+beauty,%Said, "Let's have a smell, you cutie."%She sniffed, the smell went 
+to her head.%Poor old Ingrid. Gnow she's dead]
+[2597:Ingrid held her breath]
+[2598:Ingrid could feel the blood pounding in her ears, her heart 
+straining and lungs near bursting. Her head swam with dizziness. It was 
+gno good. Time was running out and Ingrid was running out of air]
+[2599:Ingrid had to take a breath]
+;
+[2600:grew]
+[2601:the antidote smelled disgusting and tasted worse. After the first 
+tentative sip, Ingrid didn't think she would be able to drink the rest. 
+But she knew she had to, so she held her gnose, pretended it was Uncle 
+Dusty's birthday and she was drinking a toast to him in his gnome-made 
+gnettle wine, and forced it down. She had made it, and on reflection, she 
+realised that it hadn't tasted as bad as Uncle Dusty's gnettle wine]
+[2602:ingrid couldn't have grown] ; object name, [2603]
+[2603:here]
+[2604:the greenslave came to life, like Ingrid's brother Bumpy waking up 
+from a two-day lie-in. It stretched its back and straightened its gneck, 
+then slowly opened its eyes and closed them again. It flexed its arms and 
+wriggled its fingers, then did a long, creaking knees-bend. The ivy 
+twitched around its trunk. Finally, it wrinkled its gnose, smacked its lips 
+and opened its eyes again. It was as ready to face the world as it would 
+ever be]
+[2605:however much this greenslave, this mixed green salad on legs, might 
+look like a person, it was clearly gno more than a plant. It just stood 
+there, toes rooted to the spot, swaying gently in the light breeze, with 
+gnot a trace of animation, gnot the slightest sign of a life]
+[2606:the fertilizer worked like magic - which of course it was - and 
+revived the tea bush in a matter of moments. The withered branches filled 
+out and sent forth gnew shoots. Little brown buds appeared, swelling and 
+opening in a profusion of tiny green leaves. The leaves spread and 
+darkened, acquiring a glossy sheen, and the topmost one ripened into that 
+picking-ready rich brown]
+[2607:grew a little, but gnot very much, and it looked a little better for 
+it, but gnot very much. Ingrid, who had been expecting rather more, was a 
+little disappointed - but gnot very much]
+
+;
+; group for animated vegetables requested to enter the kitchen...
+[2610:wouldn't enter the kitchen on any account]
+[2611:shuddered violently and refused to enter the kitchen]
+[2612:shrank away from the kitchen door, its gnose wrinkling with fear at 
+the lingering smell of boiled vegetables]
+[2613:took a look through the kitchen door, realised what the place was 
+used for, and backed away in fear]
+[2614:wanted to go into the kitchen, because it knew that would please 
+Ingrid, but simply could gnot overcome its terror of the place]
+;
+; descriptions for outside rooms (do not mark anything in 2800 to 2819)..
+; matches up with TERRAINTABLE
+;
+[2800:on a grassy plain]
+[2801:beside a hill to the south]
+[2802:beside a hill to the east]
+[2803:beside a cottage to the south]
+[2804:beside a cottage to the west]
+[2805:on a road]
+;
+; Message groups (spaced every ten to permit lots of variations)..
+;
+[3100:what a silly thing to do] ; "silly" group
+[3101:really! What a strange person you are]
+[3102:you must be gnuts]
+[3103:I don't think Ingrid would have thought much of that idea]
+[3104:cor, I seem to have got a right one the other side of the keyboard 
+this time]
+t for the time being]
+[3122:that's gnot important. Really it isn't. In fact, it doesn't matter in 
+the least]
+[3123:that wasn't exactly put there to confuse you, but if it has, that's 
+a bonus for us. Meanwhile, I'd turn my attention elsewhere, if I were you]
+[3124:that is as crucial to this game as a roller skate is to a football 
+match]
+;
+[3130:I can't find any objects in that] ; ommitted object group 
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+[3133:come agat for the time being]
+[3122:that's gnot important. Really it isn't. In fact, it doesn't matter in 
+the least]
+[3123:that wasn't exactly put there to confuse you, but if it has, that's 
+a bonus for us. Meanwhile, I'd turn my attention elsewhere, if I were you]
+[3124:that is as crucial to this game as a roller skate is to a football 
+match]
+;
+[3130:I can't find any objects in that] ; ommitted object group 
+[3131:sorry, I couldn't find an object in that]
+[3132:please be more specific]
+[3133:come again? Do it to what?]
+[3134:speaking objectively, I'm gnot sure what the object was of that last 
+command]
+;
+[3140:gnothing happened] ; Nothing happens group
+[3141:that didn't seem to work]
+[3142:that had remarkably little effect]
+[3143:I don't know what you expected to happen, but whatever it was, you 
+were mistaken]
+[3144:interesting..... but useless]
+;
+; the following are printed after the object name..
+;
+[3150:wouldn't move despite all efforts] ; try to move static object group
+[3151:didn't budge a single inch]
+[3152:refused to be moved]
+[3153:resisted stolidly and could gnot be moved]
+[3154:stayed precisely where it was and looked smug]
+;
+[3160:don't bother with that, it won't do any good] ; don't bother group
+[3161:that would be a waste of time]
+[3162:that's pointless]
+[3163:that is really gnot worth the effort]
+[3164:that will get you gnowhere fast]
+;
+; groupsay messages for hello responses
+[3170:said, "Hello, gnice to see you"]
+[3171:said, "Greetings"]
+[3172:said, "Hello, gnome sweet gnome"]
+[3173:greeted her with a cheery, "Hullo"]
+[3174:said, "Good day to you, Mistress Gnome]
+;
+[3180:bowed in greeting]
+[3181:flickered an leaf as if to say "Hello"]
+[3182:vegetated welcomingly]
+[3183:waved a friendly greeting]
+[3184:turned towards Ingrid and gave a slow bow]
+;
+; messages for people recovering things they need
+[3190:said, "I'll take that, thank you, young miss"]
+[3191:said, "What are you doing with that? Give it to me"]
+[3192:said, "That's mine! Let me have it"]
+[3193:grabbed at it, wailing, "My precious"]
+[3194:looked relieved and cried, "Ah, it's back again"]
+;
+[3200:glared angrily and snatched at Ingrid]
+[3201:vegetated menacingly at Ingrid]
+[3202:stood rooted to the ground, looking angry]
+[3203:reached out crossly to take back its own]
+[3204:went green with anger] 
+;
+; responses for npcs - those who can talk and those who can't.
+; first - npc refuses an order
+[3210:said, "Excuse me, Mistress Gnome, but who do you think you are"]
+[3211:said, "Don't try to order me around, young miss"]
+[3212:said, "I don't have to take orders from you, miss"]
+[3213:shook a leaf in refusal and said, "Gno, I don't think I want to 
+right gnow. Come back gnext year"]
+[3214:bowed politely, but said, "Sorry, gno deal"]
+;
+[3220:swayed in the wind and acted deaf]
+[3221:curled its upper leaves disdainfully]
+[3222:refused with an indifferent wave]
+[3223:shook a leaf in refusal]
+[3224:turned its back on Ingrid and ignored her]
+;
+; now, npc accepts an order
+[3230:said, "Your wish is my command"]
+[3231:said, "Leave it to me. The grass doesn't grow under my feet when I 
+am on a job"]
+[3232:said, "No sooner said than done"]
+[3233:bowed and said, "Willingly, dearest gnome maid"]
+[3234:said, "Of course. Instantly, or very soon thereafter"]
+;
+[3240:nodded its leaves slowly as if to say, "Yes"]
+[3241:bowed stiffly in agreement]
+[3242:agreed with a flicker of its leaves]
+[3243:gave a curt, but polite, nod and set about its task]
+[3244:swayed towards Ingrid in acknowledgement]
+;
+; now response to questions when not obedient...
+[3250:said, "Sorry, miss. You'll have to find that out for yourself"]
+[3251:said, "Mistress Gnome, your every whim is my earnest desire, but 
+much as I earnestly desire to help you, in this particular case, I can't"] 
+[3252:pretended to be deaf and ignored her question woodenly]
+[3253:said sorrowfully, "Gno, I just can't help you with that, I'm afraid"]
+[3254:said, "Sorry to stem your flow, but you'll have to branch out in a 
+gnew direction and leave that, unless you can twig it by yourself. You are 
+barking up the wrong tree when you ask me"]
+;
+[3260:made a rude gesture with an upraised stalk]
+[3261:pretended to ignore Ingrid]
+[3262:glowered threateningly]
+[3263:took a sudden and intense interest in a passing ladybird and 
+appeared to have gnot heard her]
+[3264:flapped a leaf distainfully and ignored Ingrid]
+;
+; response to requests to give anything(s) to anyone
+[3270:said, "You'll have to give me the chop before I'll give that awa I can't understand what you're saying"]
+[3292:said, "Pardon? Could you put that a bit simpler for me"]
+[3293:looked doubtful and said, "Can we try that again? I didn't quite 
+follow you last time"]
+[3294:said, "Mistress Gnome, your wish is my command, but your command of 
+the language is gnot as good as I would wish. Please say that again in a 
+way that I might understand"]
+;
+[3300:shrugged in gnon-comprehension, and gave a placatory grin]
+[3301:didn't seem to understand what Ingrid wanted]
+[3302 I can't understand what you're saying"]
+[3292:said, "Pardon? Could you put that a bit simpler for me"]
+[3293:looked doubtful and said, "Can we try that again? I didn't quite 
+follow you last time"]
+[3294:said, "Mistress Gnome, your wish is my command, but your command of 
+the language is gnot as good as I would wish. Please say that again in a 
+way that I might understand"]
+;
+[3300:shrugged in gnon-comprehension, and gave a placatory grin]
+[3301:didn't seem to understand what Ingrid wanted]
+[3302:made a questioning gnoise and looked at Ingrid for an answer]
+[3303:wavered uncertainly, torn between the desire to rush off and do the 
+job, and a complete lack of understanding as to what it was supposed to do]
+[3304:stood still and shrugged helplessly]
+
+;
+; messages when people are attacked by other people (probably player)
+;;[3310:screams and turns angrily]
+;;[3311:says, "don't do that"]
+;;[3312:says, "OK, so that's the way you want it"]
+;
+;;[3320:screams and turns angrily]
+;;[3321:growls viciously]
+;;[3322:whirls around, ready to fight]
+;
+; now messages when people launch unprovoked attacks on the user
+; these are followed by 'and attacks you'
+;;[3330:shouted, "An orc! Let's kill it"]
+;;[3331:shouted, "Kill the orc"]
+;;[3332:shouted, "I'm going to kill you, vile orc"]
+;
+[3340:vegetated menacingly]
+[3341:stared at Ingrid with obvious distaste]
+[3342:moved threateningly towards Ingrid]
+[3343:came at Ingrid like a parboiled potato]
+[3344:came steaming towards, stewing with rage]
+;
+; messages when npc can't find the way to its destination
+[3350:said, "I've had my onions gnow. I'm in a real pickle"]
+[3351:said, "Where am I? I must have branched out the wrong way"]
+[3352:said, "Where did I leave my path? I can't find it"]
+[3353:scratched and said, "Oh, earthworms and spiders! I've gone and lost
+my route"]
+[3354:looked round, saying, "Gnow which way? This way, that way? I just 
+can't twig it"]
+;
+[3360:seemed to lose purpose, turned round twice in search of inspiration, 
+and stood still]
+[3361:seemed to be overcome by life's little frustrations]
+[3362:looked around, then muttered in disgust]
+[3363:ground slowly to a halt, as if it had forgotten what to do]
+[3364:sighed heavily, shrugged and planted its feet heavily in the ground]
+;
+[3370:said, "Gno, sorry, I can't do that"]
+[3371:said, "Gno, Mistress Gnome, I won't do it"]
+[3372:said, "There's gno chance of getting me to do that"]
+[3373:shook its head and said, "I'm gnot that sort of plant"]
+[3374:laughed and said, "Ho, ho. Very funny. You try doing it. I won't"]
+;
+;;[3380:laughs hoarsely]
+;;[3381:sniggers a bit]
+;;[3382:sighs heavily]
+;
+; beanstalk gold singing..
+[3400:waved around in the breeze, the tips of its stalks sketching dainty 
+circles in the air]
+[3401:turned gently towards the sun, driven by its phototropic impulses]
+[3402:rustled its leaves, stirring up the blackfly on its flowers]
+[3403:leant against the wall for a rest]
+[3404:stretched a little taller, then thought better of it and sagged back 
+again to where it was before]
+;
+; greenslave gold singing
+[3410:picked caterpillars off itself with a grimace of distaste, saying, 
+"Ooh, I hate those creepy-crawlies"]
+[3411:lifted a foot and shook a slug off. It shuddered and said, "Yuk! 
+Horrible slimy things"]
+[3412:examined its ivy carefully. Then it looked sorrowfully at Ingrid and 
+moaned, "I'm coming down with Black Spot"]
+[3413:flapped a worried hand at a wasp that was trying to settle on its 
+gnose]
+[3414:scratched its head vigorously and said, "I think I've got woodlice"]
+;
+; treehouse gold singing
+[3420:waved its long branches slowly, flicking its twiglets and showering 
+the ground with greenflies]
+[3421:picked up one of its trunks for a moment, flexed it stiffly and 
+complained woodenly about its rheumatism]
+[3422:shuffled a trunk into some gnew soil, wriggled its roots around 
+gratefully and gave a long, lugubrious sigh]
+[3423:creaked the planks of its platform and said it was bored]
+[3424:worked its roots into the ground and said hollowly, "If we aren't 
+going anywhere, do you mind if I do a bit of growing"]
+;
+;; dog gold-singing
+;[3430:yapped loudly]
+;[3431:yapped furiously]
+;[3432:ran around in circles]
+;
+;; dog swarm gold singing
+;[3440:sniffed the air]
+;[3441:barked in chorus]
+;[3442:ran around Ingrid's feet]
+;
+;; eagle gold singing
+;[3450:beat the air with its wings]
+;[3451:called loudly]
+;[3452:fixed Ingrid with a cold eye]
+
+; when someone attacks someone else in an unprovoked way..
+[3460:screamed aseemed annoyed]
+[3491:shrieked in surprise]
+[3492:glared menacingly]
+[3493:rumbled a vegetable threat]
+[3494:looked as angry as a tomato that has just been skewered]
+;
+; group shouting messages..
+;; [3500:I've just stolen some treasure from ]
+;; [3501:I've just ripped off ]
+;; [3502:I've just stolen something from ]
+;
+;; [3510:I've just found a valuable ]
+;; [3511:I've just picked up a valuable ]
+;; [3512:I've got a valuable ]
+;
+;; [3520:I'm back in the game!]
+;; [3521:I'm now back in the gaseemed annoyed]
+[3491:shrieked in surprise]
+[3492:glared menacingly]
+[3493:rumbled a vegetable threat]
+[3494:looked as angry as a tomato that has just been skewered]
+;
+; group shouting messages..
+;; [3500:I've just stolen some treasure from ]
+;; [3501:I've just ripped off ]
+;; [3502:I've just stolen something from ]
+;
+;; [3510:I've just found a valuable ]
+;; [3511:I've just picked up a valuable ]
+;; [3512:I've got a valuable ]
+;
+;; [3520:I'm back in the game!]
+;; [3521:I'm now back in the game!]
+;; [3522:I'm back!]
+;
+; again used following a command referring to scenery
+[3530:the previous command was gnot repeatable]
+[3531:you can't do that there here. Gnot twice, anyway]
+[3532:it wouldn't help to try that again]
+[3533:'ere, isn't once enough for you then? Don't try that again]
+[3534:that was a once-only whatnot]
+;
+; npc is blocked in a racetrack
+[3540:stopped, looking confused]
+[3541:looked puzzled, and flapped about helplessly]
+[3542:seemed uncertain of what to do gnext]
+[3543:came to a halt with a worried look]
+[3544:stopped, then turned round slowly shrugging its shoulders as if to 
+say "What gnow"]
+
+; messages when the player tries to take things from others...
+[3550:wouldn't let Ingrid]
+[3551:slapped her hand away quickly]
+[3552:stopped her from taking it]
+[3553:refused to let Ingrid have it]
+[3554:hung on tight and wouldn't let go]
+;
+[3600:a voice in the distance shouts, "]
+[3601:." ]
+[3602:wow! A stack overflow] ; a stack overflow!
+[3603:don't panic! Gnormal service will be resumed shortly] ; a panic
+[3604:sorry, I can't go there from here. I'm gnot even sure that I would 
+want to]
+[3605:sorry, you'll have to find the way yourself from here. This is as 
+far as I go]
+;
+;
+;
+;
+;; [3710:I'm back in the game"] ; when people are repaired
+;; [3711:I've just stolen some treasure from ]
+;; [3712:I've just found some treasure"]
+;
+;; [3714:I'm in ] ; followed by room description.
+;
+; Leprecaun gold singing
+;[3700:sang of gold]
+;[3701:sang of gold pieces]
+;[3702:sang of assorted gold treasure]
+
+; Llama gold singing
+;[3710:said "Wow, man"]
+;[3711:said "Gee, awesome"]
+;[3712:said "awesome man"]
+
+; Nymph gold singing
+;[3720:sang a soft love song]
+;[3721:sang of the old days when the whole world was forest]
+;[3722:sang of trees]
+
+; Unicorn gold singing
+;[3730:pawed the ground]
+;[3731:hummed quietly]
+;[3732:raked the air with its horn]
+
+; Witch
+;[3740:waved her wand]
+;[3741:fiddled with her wand]
+;[3742:twiddled her fingers]
+
+
+
+
+; Garbage words..
+[4000:^N the ^N this ^N these ^N that ^N some ^N and ^N also
+^N before ^N wade ^N jog ^N plod ^N rush ^N dash ^N march ^N amble
+^N good ^N of ^N cute ^N there]
+[4001:^N therefore ^N am ^N my ^N your ^N try ^N carefully ^N slowly
+^N warily ^N quickly ^N rapidly ^N following ^N around]
+;

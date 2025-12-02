@@ -1,0 +1,1848 @@
+; Gnome Ranger II source, copyright (C) 1987 Level 9 Computing.
+;
+; ASPECIAL.TXT, special case handlers for the game. (In practice, 
+; this means most of the code to handle puzzles etc.)
+;
+; Known bugs:
+; The compiler is happier if all DATA statements are followed by 
+; comments, otherwise line numbers for errors go wrong.
+;
+BEGIN
+; now print any messages to be printed after certain movements
+.AFTERMOVE
+ if actor=user then @amUser
+; is ACTOR carrying USER?
+ x1=hicurrentpos(user)
+ if x1=0 thenST, DEST, ACTOR is to move that way
+; and exit has been validated as possible (and hence described)
+; in SPECIALEXITS. The purpose of code here is when something
+; happens on moving. If exit is to be blocked, code here should
+; print the appropriate message and set RESULT=FALSE.
+;
+ if actor<>user then smnotuser
+; GOSUB @SAVEOOPS
+
+ if from<>120 then smUserNotLeaveGarden
+ if HaveKilledPlant<>0 then smUserNotLeaveGarden
+; haven't killed a plant yet, so keep player here...
+ m1=2501 ; pick them all fST, DEST, ACTOR is to move that way
+; and exit has been validated as possible (and hence described)
+; in SPECIALEXITS. The purpose of code here is when something
+; happens on moving. If exit is to be blocked, code here should
+; print the appropriate message and set RESULT=FALSE.
+;
+ if actor<>user then smnotuser
+; GOSUB @SAVEOOPS
+
+ if from<>120 then smUserNotLeaveGarden
+ if HaveKilledPlant<>0 then smUserNotLeaveGarden
+; haven't killed a plant yet, so keep player here...
+ m1=2501 ; pick them all first!
+ goto @smpreventm1Dot
+
+.smUserNotLeaveGarden
+.smNotUser
+ if from<>4 then smNotLeaveHedge
+ if dest>minsynthroom then smHedge
+
+.smNotLeaveHedge
+ if dest<>4 then smNotHedge
+ if room<>122 then smNotHedge
+.smHedge
+ x1=currentpos(hedge)
+ if x1=0 then smNotHedge ; hedge has been flattened by boulder
+
+ m1=2535 ; the hedge rose up and blocked
+ if actor=user then smHedgeBlocks
+; is Ingrid being carried BY actor?
+ x1=hicurrentpos(user)
+ if x1=0 then smNotHedge
+ x1=currentpos(user)
+ if x1<>actor then smNotHedge
+ m1=2534 ; the hedge saw Ingrid on board + blocked
+
+.smHedgeBlocks
+ if WeedKillerSmeared<>0 then passHedge
+ if verb>8 then smNotHedge ; up/down into treehouse
+ gosub @printM1
+ gosub @printTheActor
+ gosub @printDot
+ goto @smprevent
+
+.passHedge
+ object=hedge
+ gosub @printTheObject
+ HedgeCrossed=10
+ m1=2540 ; shied away from Ingrid
+ goto @smokM1Dot
+
+.smNotHedge
+ if from<>4 then smNotWall
+ if dest=7 then smWall
+ if dest<>6 then smNotWall ; allow walking to pond
+.smWall
+ x1=currentpos(wall)
+ if x1=0 then smNotWall ; wall has been destroyed
+ m1=2566 ; too high even for treehouse
+ if actor=treehouse then @smPreventM1Dot
+ m1=2564 ; wall too high to climb
+ goto @smPreventM1Dot
+ 
+.smNotWall
+ if actor<>treehouse then smNotTreehouse
+; treehouse can't move onto road unless fertilizer there...
+ x1=dest
+ gosub @GetTerrainType
+ if x1<>117 then smNotTreeHouse
+; is there any compost on road?
+ x1=hicurrentpos(compostheap)
+ if x1<>0 then cantwalk
+ x1=currentpos(compostheap)
+ if x1=dest then smTreeHouseOnCompost
+.cantwalk
+ m1=2532 ; can't walk on hard ground
+ goto @smpreventm1dot
+
+.smTreeHouseOnCompost
+ TreeHouseCrossedRoad=10
+
+.smNotTreeHouse
+ if HoldingCaveMouth<>actor then smNotReleaseMouth
+ HoldingCaveMouth=0
+ if currentuserroom=8 then smreleasemouth
+ if currentuserroom<>9 then smNotReleaseMouth
+.smReleaseMouth ; force printing of message if user inside!
+ add forceprinting,c1
+  gosub @PrintTheActor
+  m1=2588 ; released the cave mouth
+  gosub @printM1Dot
+ sub forceprinting,c1
+
+.smNotReleaseMouth
+ if dest<>8 then smNotEnterCave
+ if from<minsynthroom then smNotEnterCave
+ m1=2587 ; treehouse too big to go inside cave
+ if actor=treehouse then @smpreventM1Dot
+ if actor<>user then smCave
+ m1=2580 ; cave may close - want to continue?
+ gosub @printM1 ; no dot, because it's a question
+ gosub @YesOrNO
+ if result=false then @smprevent
+ x1=8 ; move actor inside so it can get eaten!
+ currentpos(actor)=x1
+ hicurrentpos(actor)=c0
+ if HoldingCaveMouth<>0 then smNotEnterCave ; ok to go in
+; get eaten
+ message 2581 ; stepped inside
+ message dot
+ goto @DigestActor
+
+.smCave
+ x1=8 ; move actor inside so it can get eaten!
+ currentpos(actor)=x1
+ hicurrentpos(actor)=c0
+ if HoldingCaveMouth=0 then @digestActor
+ ReachedStinkwort=10
+
+.smNotEnterCave
+; trying to climb cliff?
+ m1=2591 ; cliff too sheer to climb
+ if dest=10 then smPreventM1Dot
+
+.smNotCliff
+ if dest<>2 then smNotKitchen
+ if actor=user then smNotKitchen
+ gosub @PrintActor
+ m1=2610 ; won't go in!
+ gosub @varymessage
+ goto smPrevent
+
+.smNotKitchen
+ if dest<>treehouse then NotClimbingTrees
+ if hidest=0 then NotClimbingTrees
+ m1=2533 ; Ingrid climbed into the treehouse
+ if actor<>user then smOk
+ if TreeHouseIntroduced=true then smOkM1Dot
+ TreeHouseIntroduced=true
+;; .ClimbTrees
+ currentpos(145)=c0
+ currentpos(treehouse)=room ; swap tree clump for treehouse
+ m1=2530 ; Ingrid Climbed and discovered
+ NearTreeHouse=true ; prevent printing of "hello again"
+.ClimbTreeHouse
+ if WeedKillerSmeared=0 then ClimbTreeHouse2
+ gosub @printTheObject
+ m1=2540 ; shied away from Ingrid
+ goto @otPreventM1Dot
+
+.ClimbTreeHouse2
+ x1=hicurrentpos(actor)
+ if x1<>0 then NotClimbingTrees ; already in treehouse
+ object=treehouse
+ gosub @MakeObjectObedient
+ if actor=treehouse then smprevent
+ x1=treehouse
+ currentpos(actor)=x1
+ x1=ipin
+ hicurrentpos(actor)=x1
+ if actor<>user then smprevent
+ goto smPreventM1Dot ; called from SM as well as above
+
+.NotClimbingTrees
+.smok
+;; FollowingSomeo if x1=user then stncarried
+ if x1>maxpeople then stncarried
+ gosub @printTheObjectX1
+ m1=109 ; stopped
+ gosub @printm1
+ gosub @printactordot
+ goto @returnfalse ; security code
+
+.stncarried
+ if object<>user then stNotTakeUser
+ if pos<>treehouse then stNotTakeUser
+ if hipos=0 then stNotTakeUser
+ x1=treehouse
+ currentpos(user)=x1
+ x1=ipin
+ hicurrentpos(user)=x1
+ gosub @done ; confirm it!
+ goto @returnfalse
+
+.stNotTakeuser
+ if object<>CompostHeap then stNotCompost
+ x1=currentpos(treehouse) if x1=user then stncarried
+ if x1>maxpeople then stncarried
+ gosub @printTheObjectX1
+ m1=109 ; stopped
+ gosub @printm1
+ gosub @printactordot
+ goto @returnfalse ; security code
+
+.stncarried
+ if object<>user then stNotTakeUser
+ if pos<>treehouse then stNotTakeUser
+ if hipos=0 then stNotTakeUser
+ x1=treehouse
+ currentpos(user)=x1
+ x1=ipin
+ hicurrentpos(user)=x1
+ gosub @done ; confirm it!
+ goto @returnfalse
+
+.stNotTakeuser
+ if object<>CompostHeap then stNotCompost
+ x1=currentpos(treehouse)
+ if x1<>room then stNotCompost
+ x1=room
+ gosub @getterraintype
+ m1=2544 ; can't take compost while treehouse is using it
+ if x1<>112 then stpreventm1dot ; in a room where treehouse needs it
+
+.stNotCompost
+.stok
+ result=TRUE ; allow actor to take object
+ return
+
+.stokm1dot
+ result=true ; allow actor to take object
+ goto @printm1dot
+;---
+.stpreventm1dot
+ result=FALSE ; prevent taking
+ goto @printM1dot
+;--------
+.specialaftermoveobj
+; OBJECT has just been moved from HIFROM, FROM to POS, HIPOS
+; do anything you want, then return
+; no values to return
+;
+ if HaveKilledPlant<>0 then samoNotKillPlant
+ if object<>91 then samoNotKillPlant
+; kill off the tea bush when Ingrid tries to pick the tea leaf
+ if hifrom<>growingfrom then samoNotKillPlant
+ HaveKilledPlant=True
+ currentpos(teabush)=c0
+ currentpos(tealeaf)=c0
+; tealeaf is growing from tea bush
+ currentpos(witheredTeaBush)=room
+ TeaBushDestroyed=50 ; -ve score for destroying tea bush
+ m1=2503 ; tea bush dies
+ goto @PrintM1Dot
+
+.samoNotKillPlant
+ if pos<>pot then @samoNotPot
+ if hipos=0 then @samoNotPot
+; putting OBJECT into pot
+ if object<84 then @potSpatOut ; not ingredient
+ if object>91 then @PotSpatOut ; not ingredient
+ m1=2506 ; the pot bubbled noisily
+ gosub @PrintM1
+ gosub @destroyobject ; put e.g. ingredients into holding area
+; it was an ingredient - this is ingredient number INGREDIENTNUMBER
+; (0..3) for part, texture, flavour, colour
+ gosub @analyseObject
+; returns X1 as then IngredientNumber'th attribute of OBJECT
+ x2=PotionWorkSpace
+ add x2,IngredientNumber
+ list6(x2)=x1
+
+ add IngredientNumber,c1
+ if IngredientNumber<4 then @PrintDot
+; That was the fourth ingredient, so produce a suitable potion.
+; Compare list6(PotionWorkSpace+(0..3))
+; with list5(StartPotionTable+n+(0..3))
+; for n=0(animate), 4(antidote), 8(fertiliser), 12(weedkiller),
+; 16 (gunge), 20(tea)
+ object=animatePotion ; first Possible potion
+ x4=0 ; x4=n (i.e. potion number*4)
+
+.NextPotion
+ x3=0 ; offset into ingredient list
+
+.PotionLoop
+ x2=x3
+ x1=PotionWorkSpace
+ add x2,x1
+ x1=list6(x2)
+ x2=x3
+ add x2,StartPotionTable
+ add x2,x4
+ x2=list5(x2)
+
+ if x1<>x2 then TryNextPotion
+ add x3,c1
+ if x3<4 then PotionLoop
+; potion OBJECT is complete!
+.MakePotion
+ m1=2507 ; and magically produced
+ gosub @PrintM1
+ x1=Object
+ gosub @PrintAnObjectx1
+ gosub @printdot
+ IngredientNumber=0
+ pos=actor
+ hipos=carried
+ currentpos(object)=pos
+ hicurrentpos(object)=hipos ; can't use MOVEOBJECT because it prints move
+ gosub @addPotionScore
+ if object=100 then teaUp
+ return
+
+.ReGrowAll
+; regrow used ingredients
+ object=airflower ; air flower - lowest ingredient
+.ReGrowLoop
+ x1=currentpos(object)
+ if x1<>0 then NotRegrow
+ gosub @ReGrowObject
+.NotReGrow
+ add object,c1
+ if object<teaLeaf then ReGrowLoop ; Musn't regrow tea leaf (starts in 0)
+ return
+
+.teaUp
+ TeaPotionMade=50
+ m1=2504 ; Ingrid has made tea!
+ gosub @PrintM1Dot
+ goto @win
+
+.TryNextPotion
+ x1=4
+ add x4,x1
+ add Object,c1
+ if object<101 then NextPotion
+; otherwise make Potion of Gunge
+ object=PotionOfGunge
+ goto MakePotion
+
+.samoNotPot
+ if pos<>blueTelelily then samoNotBlueTelelily
+ pos=WhiteTelelily
+ goto TeleportObject
+
+.samoNotBlueTelelily
+ if pos<>whiteTelelily then samoNotTelelily
+ pos=BlueTelelily
+
+.teleportObject
+ gosub @printTheObject
+ m1=2551 ; disappeared
+ gosub @PrintM1Dot
+
+; move object to wherever the other telelily (pos) is currently.
+ gosub @checkifcontained ; remove loopy connections
+ x1=currentpos(pos)
+ currentpos(object)=x1
+ x1=hicurrentpos(pos)
+ hicurrentpos(object)=x1
+.Teleport3
+ gosub @getObjectPosx2
+; x2=room in which object is
+ if x2<>currentUserRoom then samoNotTelelily
+ add ForcePrinting,c1
+  lastwordprinted=0 ; because recipient may not have seen it disappear!
+  gosub @PrintTheObject
+  message 2552 ; appeared from
+  x1=pos
+  gosub @PrintTheObjectx1
+  gosub @printDot
+ sub forceprinting,c1
+
+.samoNotTelelily
+ if object<>stinkwortShoot then samoNotStinkWort
+; if anyone takes the stinkwort shoimates
+ gosub @PrintM1Dot
+ GreenSlaveAnimated=true
+ object=greenslave
+ gosub @makeobjectobedient
+
+.samoNotAnimate
+ return
+;---
+.addPotionScore ; for producing OBJECT
+ if object<>AnimatePotion then apsNotAnimate
+ animatePotionMade=50
+
+.apsNotAnimate
+ if object<>Antidote then apsNotAntidote
+ antidotePotionMade=50
+
+.apsNotAntidote
+ if object<>WeedkillerPotion then apsNotWeedkiller
+ WeedkillerPotionMade=50
+
+.apsNotWeedkiller
+ if object<>FertiliserPotion then apsNotFertiliser
+ FertilizerPoimates
+ gosub @PrintM1Dot
+ GreenSlaveAnimated=true
+ object=greenslave
+ gosub @makeobjectobedient
+
+.samoNotAnimate
+ return
+;---
+.addPotionScore ; for producing OBJECT
+ if object<>AnimatePotion then apsNotAnimate
+ animatePotionMade=50
+
+.apsNotAnimate
+ if object<>Antidote then apsNotAntidote
+ antidotePotionMade=50
+
+.apsNotAntidote
+ if object<>WeedkillerPotion then apsNotWeedkiller
+ WeedkillerPotionMade=50
+
+.apsNotWeedkiller
+ if object<>FertiliserPotion then apsNotFertiliser
+ FertilizerPotionMade=50
+
+.apsNotFertiliser
+ return
+;---
+.PotSpatOut
+ currentpos(object)=room
+ hicurrentpos(object)=c0
+ m1=2620 ; the pot spat out
+ gosub @printm1
+ gosub @printTheObject
+ goto @printdot
+;----
+.specialaftergive
+; NOUN1 has just been given to the npc NOUN2
+ return
+;---
+.TIMEDEPENDENTCODE
+; called for every minute that goes past
+ actor=user ; just in cast there is any doubt!
+ if HOldingBreath=0 then tdNotHoldingBreath
+ add HoldingBreath,c1
+ if HoldingBreath=2 then tdNotHoldingBreath ; only just started
+ m1=2598 ; running out of air
+ if HoldingBreath<4 then tdBreath1
+ m1=2599 ; had to take a breath
+ HoldingBreath=0
+
+.tdBreath1
+ gosub @printM1Dot
+
+.tdNotHOldingBreath
+; overcome by air flower perfume?
+;; if room<>142 then tdNotKilledByPerfume
+ object=airflower
+ gosub @checkifpresent
+ if result=false then tdNotKilledByPerfume
+ if HoldingBreath<>0 then tdNearAirPlant
+ if HaveDrunkAntidote<>false then tdNearAirPlant
+ m1=2596 ; overcome by scent
+ gosub @printM1Dot
+ goto @userDeath
+
+.tdNearAirplant
+ AirPlantReached=10
+
+.tdNotKilledByPerfume
+; when Ingrid appears, it retracts its flower
+ if currentuserroom=142 then MaybeRetractFlower
+; raises flower when Ingrid Not Around
+ FlowerRaised=true
+ goto tdNotAirPlant
+
+.MaybeRetractFlower
+ x1=hicurrentpos(airflower)
+ if x1<>growingfrom then tdNotAirPlant
+ if FlowerRaised=false then tdNotAirPlant
+ m1=2593 ; air plant shyly retracted its flower
+ gosub @PrintM1Dot
+ FlowerRaised=false
+
+.tdNotAirPlant
+; if WeedkillerSmeared=false then tdNotWeedkiller
+; add WeedkillerSmeared,c1
+; if WeedkillerSmeared<10 then tdNotWeedKiller
+; WeedKillerSmeared=0 ; wears off after a while (but don't bother to
+;; tell Ingrid)
+;
+;.tdNotWeedkiller
+ if BoulderRocking=0 then tdNotBoulder
+ sub BoulderRocking,c1
+ if BoulderRocking<>0 then tdNotBoulder
+ room=currentpos(rock)
+ m1=2570
+ add m1,BoulderRocking
+ gosub @printM1Dot
+
+.tdNotBoulder
+ if BeanstalkState=0 then tdBeanstalk2
+ sub BeanstalkState,c1
+
+.tdBeanStalk2
+ x1=currentpos(beanstalk)
+ if x1<>CurrentUserRoom then tdNotBeanstalk
+ m1=2559
+ add m1,BeanstalkState
+ message m1
+ message dot
+
+.tdNotBeanstalk
+ object=whiteTelelily
+ gosub @IsObjectUnderWater
+ x2=result
+ object=BlueTelelily
+ gosub @IsObjectUnderWater
+ if x2=result then tdNotHosePipe ; both under water/out of water -
+; no water gushes anywhere
+ object=BlueTelelily
+ if x2<>0 then waterGushes
+ object=whiteTelelily
+
+.waterGushes ; from OBJECT
+ gosub @getobjectposx2
+ room=x2
+ m1=2554 ; water was gushing from
+ gosub @printM1
+ gosub @PrintTheObject
+ m1=2555 ; like a hosepipe
+ gosub @PrintM1Dot
+ x1=currentpos(beanstalk)
+ if x1<>room then tdNotHosePIpe
+ gosub @AutoWaterBeanstalk
+
+.tdNotHosePipe
+ return
+;---
+.OBJECTTRIGGER
+; Trigger on OBJECT
+; set PROCESSED=TRUE if the command is completed
+; by this routine (usually by the printing of an
+; error message, or some other general response)
+ processed=FALSE
+ if object=nullobject then otok
+ gosub @checkifpresent
+ if result=FALSE then otret ; not here, so do nothing
+ OTPOS=CURRENTPOS(OBJECT) ; remain set throughout this routine
+ OTHIPOS=HICURRENTPOS(OBJECT)
+ processed=TRUE ; prevent processing unless cleared at end of routine
+
+ if verb=iexamine then otNotAirPlant
+ if object=airplant then otairPlant
+ if object<>airFlower then otNotAirPlant
+; is flower still attached to plant?
+ x1=hicurrentpos(AirFlower)
+ if x1<>growingFrom then OtNotAirPlant ; so not high on cliff.
+ if verb=89 then otNotAirPlant ; wait for person
+ if FlowerRaised=true then otAirPlant
+ m1=2589 ; flower retracted
+ goto @printM1Dot
+
+.otAirPlant
+ if actor=treehouse then otNotAirPlant
+ x1=currentpos(actor)
+ if x1=treehouse then otNotAirPlant
+ message 2590 ; out of reach ; yes, I do want this to be visible from
+ message dot ; everywhere - it confused me and Leon when
+; the greenslave couldn't get it.
+ goto otprevent
+
+.otNotAirPlant
+ if object=book then @readABook
+
+ if verb<>239 then otNotEat
+ gosub @drinkObject ; eat
+ goto otprevent
+
+.otnoteat
+.OTOK
+ processess drop through to end
+ if verb<>iexamine then fnotexamine
+ gosub isroomvandalised
+ if result=false then fnotvandalised
+ message 2213 ; vandals seem to have been at work here
+ message dot
+ if noun1<255 then fnotvandalised ; normal object, so also
+; print normal description
+ return
+
+.fnotvandalised
+ if object<600 then nothingspecial ;*needed?
+ if object>699 then funniesok ;nothingspecial
+; examining tree/terrain
+ verb=iam
+ gosub @printOBJECTverb
+ x1=object
+ x2=340
+ add x1,x2
+ message x1 ;ess drop through to end
+ if verb<>iexamine then fnotexamine
+ gosub isroomvandalised
+ if result=false then fnotvandalised
+ message 2213 ; vandals seem to have been at work here
+ message dot
+ if noun1<255 then fnotvandalised ; normal object, so also
+; print normal description
+ return
+
+.fnotvandalised
+ if object<600 then nothingspecial ;*needed?
+ if object>699 then funniesok ;nothingspecial
+; examining tree/terrain
+ verb=iam
+ gosub @printOBJECTverb
+ x1=object
+ x2=340
+ add x1,x2
+ message x1 ; examine message for tree/terrain
+ message dot
+ return
+
+.nothingspecial
+ if object<240 then examnotscenery
+ message 2112 ; it looks exactly as you would expect
+ return
+
+.fnotexamine
+ if object<240 then notvandal
+ if verb=iattack then vandal
+
+.notvandal
+.examnotscenery
+.funniesok
+ processed=FALSE
+ RETURN
+;---
+.vandal
+; vandalising scenery in ROOM
+; has it already been vandalised?
+ if noun1<minsceneryobj then notvandal
+ gosub isroomvandalised
+ if result=true then alreadyvandalised
+ if x2=vandalmax then cantaddentry ; off end of table
+
+; add entry
+ message 2210 ; vandal!
+ message dot
+ vandaltable(x2)=room
+ add vandalptr,c1
+ return
+
+.cantaddentry
+; can't add any more vandalised locations, so be rude to player..
+ message 2212 ; get knotted!
+ message dot
+ return
+
+.alreadyvandalised
+ message 2211 ; don't bother.. you made a good job last time
+ message dot
+ return
+;---
+.isroomvandalised
+; has room already been vandalised?
+; return result=true or false accordingly
+ result=false
+ x2=vandalbase ; pointer into table
+.vandal1
+ x1=vandaltable(x2)
+ if x2=vandalptr then irvret ; return false
+ if x1=room then @returntrue
+ add x2,c1
+ if x2<vandalmax then vandal1
+.irvret
+ return
+
+.SPECIALEXAMINE
+; print any special examine messages which follow
+; the basic message but are before any contents are printed
+; set processed=TRUE if the contents should not be printed
+ if object<>greenslave then seNotGS
+ m1=2605 ; greenslave is sleeping
+ if greenslaveanimated=false then @PrintM1Dot
+
+.seNotGS
+ x1=25 ; ingrid picture
+ if object=user then @drawpicturex1
+
+ if object<>airplant then senotAirPlant
+ x1=currentpos(actor)
+ m1=2590 ; out of reach
+ if x1<>treehouse then @printm1dot
+
+.seNotAirPlant
+ RETURN
+;---
+.SPECIALPREEXAMINE
+; before printing examine message / contents, check if
+; anything should prevent this. Return TRUE if details should
+; NOT be printed
+ RESULT=FALSE ; proceed normally
+ if object<>book then speNotBook
+
+.readabook
+ BooksRead=10
+ m1=2508 ; Ingrid selected a book at random+read:
+ gosub @printM1
+ m1=2530 ; 2510 is table, +20 because a subtract is always done below.
+ add m1,currentbook
+ add currentbook,c1
+.readbooksub
+ x1=20
+ sub m1,x1
+ if m1>2529 then readbooksub
+
+.readbook
+ gosub @printM1Dot
+ goto @returntrue ; prevent printing of normal examine message
+
+.speNotBook
+.speok
+ RETURN
+;---
+.CANTSEETHAT
+ M1=2104 ; can't see that
+ GOTO @errorm1
+;---
+.mighthurtyourself
+ m1=2401 ; you might hurt yourself
+ goto @errorm1dot
+;----
+;;.GENERALBLOW
+;;; given TARGET,ACTOR (WHO IS ATTACKING)
+;;; do an ordinary (non-magical) blow
+;;;
+;; IF ACTOR=TARGET THEN @mighthurtyourself
+;; object=target
+;; gosub @isobjectalive
+;; if result=true then gbalive
+;; if target>maxpeople then @silly
+;; m1=2230 ; what harm could a dead body do you?
+;; goto @errorm1dot
+;;
+;;.gbalive
+;;; first calculate blow strength
+;; X1=ATTACKOFFSET
+;; ADD X1,ACTORATTRIBUTES
+;; BLOWSTRENGTH=NPCINITIAL(X1)
+;; IF WEAPONSTRENGTH<BLOWSTRENGTH THEN GB1
+;; BLOWSTRENGTH=WEAPONSTRENGTH
+;;.GB1
+;; GOSUB @RANDOMIZEBLOWSTRENGTH
+;;; DO A GENERALBLOW
+;;; now do the blow
+;;; with strength BLOWSTRENGTH
+;;; see if target dodges
+;; OBJECT=TARGET
+;; GOSUB @setX4toOBJECTATTRIBUTES
+;; X1=DODGEOFFSET
+;; ADD X1,X4
+;; x6=npcinitial(x1)
+;; random x1
+;; IF X1>X6 THEN GBNDODGE
+;;
+;;.printdodge
+;;; you bet, so print 'you attack the klingon'
+;; verb=40 ; attack
+;; gosub @printattackverb
+;; m1=2231 ;comma but
+;; gosub @printM1
+;; object=target
+;; lastwordprinted=object ; force printing of article
+;; verb=idodge
+;; gosub @printOBJECTverb
+;; m1=dot
+;; goto @printM1
+;;
+;;.GBNDODGE
+;; GOSUB @printATTACK ; first part of report
+;; m1=dot
+;; gosub @printM1
+;;
+;;.gbnnodescription
+;; GOSUB @CHECKARMOUR
+;;; returns X1=object number of armour worn (0 if none)
+;; IF X1=0 THEN GBH
+;;; damage/destroy shield etc.
+;; M1=3511 ; blow strikes its
+;; IF TARGET<>USER THEN GBSHIELD
+;; M1=3510 ; blow strikes your
+;;.GBSHIELD
+;; gosub @printM1
+;; GOSUB @DESCOBJX1 ; print
+;; OBJECT=TARGET
+;; GOSUB @setX4toOBJECTATTRIBUTES
+;; X1=HITPOINTOFFSET ; find hit points
+;; ADD X1,X4
+;; hitpoints=NPCCURRENT(X1)
+;; if target<>user then gbhnocheat
+;; if cheatmode<>false then ddnotdead
+;;
+;;.gbhnocheat
+;; SUB hitpoints,BLOWSTRENGTH
+;; if hitpoints<negative then ddnotdead
+;; hitpoints=0
+;;.ddnotdead
+;; npccurrent(x1)=hitpoints
+;; 
+;;; print hit points remaining on target
+;; gosub printHEALTH
+;; if x1=0 then targetDEATH
+;; goto @makeenemies
+;;;-
+;;.printHEALTH
+;;; prin
+;; OBJECT=TARGET
+;; GOSUB @setX4toOBJECTATTRIBUTES
+;; X1=HITPOINTOFFSET ; find hit points
+;; ADD X1,X4
+;; hitpoints=NPCCURRENT(X1)
+;; if target<>user then gbhnocheat
+;; if cheatmode<>false then ddnotdead
+;;
+;;.gbhnocheat
+;; SUB hitpoints,BLOWSTRENGTH
+;; if hitpoints<negative then ddnotdead
+;; hitpoints=0
+;;.ddnotdead
+;; npccurrent(x1)=hitpoints
+;; 
+;;; print hit points remaining on target
+;; gosub printHEALTH
+;; if x1=0 then targetDEATH
+;; goto @makeenemies
+;;;-
+;;.printHEALTH
+;;; print hit points remaining on target
+;; OBJECT=TARGET
+;;.printHEALTHobject
+;;; x1 must be set up (see below in code)
+;; verb=82 ; you are/it is
+;; x6=x1 ; preserve position in npcxxx()
+;; gosub @printOBJECTverb
+;; if hitpoints=0 then dddead
+;; x1=npcinitial(x6) ; initial hit points
+;; x2=10
+;; gosub @x1divx2
+;;; x1=number of points for each health report division
+;; x2=x1
+;; x1=hitpoints
+;; gosub @x1divx2
+;; if x1>0 then printhealthobject1
+;;.dddead
+;; x1=0 ; dead!
+;;.printhealthobject1
+;; m1=2270 ; health report
+;; add m1,x1
+;; goto @printM1dot
+;-
+
+;.actordeath
+; target=actor
+;
+;.targetdeath
+; goto userdeath
+;; actorsave=actor
+;; actor=target
+;; object=target
+;; commandfinished=true
+;;; enemies don't hate it any more..
+;; x4=enemyoffset
+;;.targetdeath1
+;; x1=npccurrent(x4)
+;; if x1<>target then targetdeath2
+;; npccurrent(x4)=c0
+;;.targetdeath2
+;; x1=16 ; npcentrysize
+;; add x4,x1 ; npc entry size
+;; if x4<npctablesize then targetdeath1
+;;; drop everything carried (but not worn clothes etc)..
+;; HIPOS=CARRIED 
+;; POS=TARGET
+;; DEST=ROOM
+;; HIDEST=0
+;; GOSUB @POSSLOOP ; drop everything
+;;; terminate commands..
+;; GOSUB @stop 
+;;; set target to have 0 hit points..
+;; GOSUB @setX4toOBJECTATTRIBUTES ; X4=pointer to object's details in table
+;; X1=HITPOINTOFFSET ; find hit points
+;; ADD X1,X4
+;; npccurrent(x1)=c0
+;;; reset command queues..
+;; gosub @resetactor
+;;; and dump target in heaven..
+;; gosub gotoheaven
+;; actor=actorsave
+;;.deathreturn
+;; return
+;---
+;;.gotoheaven ; actor is taken to heaven. 
+;; m1=2501 ; wizard takes/to heaven
+;; gosub @printM1theactorNEXTdot
+;; x1=26 ; heaven
+;; currentpos(actor)=x1
+;; hicurrentpos(actor)=c0
+;; if actor<>user then deathreturn
+;; gosub @setuproom
+;; currentuserroom=room
+;; forceprinting=false
+;; gosub @abscancelinput
+;; goto @printroom
+;---
+.resetactor
+ gosub @setACTORATTRIBUTES
+ goto @initfifo
+;---
+;;.printATTACK
+;;; first part of damage report for ACTOR vs TARGET
+;;;
+;;; now pick out the appropriate verb - from 'scratch'
+;;; through to 'pulverise'
+;; x1=blowstrength ; (approx 1..40)
+;; x2=4 ; ( want 10 divisions, 0..9)
+;; gosub @x1divx2
+;; if x1<10 then daok
+;; x1=9 ; max blow
+;;.daok
+;; verb=170 ; armed blows
+;; if weapon<>nullobject then da1
+;; verb=180 ; unarmed blows ( relative to verboffset)
+;;.da1
+;; add verb,x1 ; appropriate attack verb
+;;.printattackverb
+;; noun1=target
+;; prep=with
+;; noun2=weapon
+;; goto @printACTORaction
+;;;---
+;;.RANDOMIZEBLOWSTRENGTH
+;;; return BLOWSTRENGTH=1..BLOWSTRENGTH at random
+;; if blowstrength=1 then rbsret
+;; x2=blowstrength
+;; gosub @randomx1modx2 ; x1=random number 0..19
+;; IF X1=0 THEN RANDOMIZEBLOWSTRENGTH
+;; BLOWSTRENGTH=X1
+;;.rbsret
+;; RETURN
+;;;---
+;;.CHECKARMOUR
+;;; return X1=object number of armour worn by TARGET or X1=0 if none
+;;.CAFAIL
+;; X1=0 ; no armour found
+;;
+;;.CARET
+;; RETURN
+;---
+;.ACTORCHOOSEBESTWEAPON
+;; did ACTOR specify a weapon ?
+;; if so, is it a sensible one ? (using a woodpile to
+;; attack someone is not very helpful, apart from making
+;; the game look pretty silly)
+;; IF NOUN2=NULLOBJECT THEN CHOOSEBESTWEAPON
+;; WEAPON=NOUN2
+;; IF NOUN2<minweapon THEN silly
+;; IF NOUN2>maxweapon THEN silly
+;; drop through to CHOOSEBESTWEAPON
+;;---
+;;.CHOOSEBESTWEAPON
+;;; select dhe best WEAPON that ACTOR is carrying
+;; object=noun2
+;; if noun2<>nullobject then assessweapon
+;;
+;; OBJECT=minweapon ; (best weapon)
+;; POS=ACTOR
+;; HIPOS=NONSPECIFIC
+;;.CBW1
+;; GOSUB @CHECKOBJECTPOS
+;; IF RESULT=TRUE THEN ASSESSWEAPON
+;; add OBJECT,C1
+;; IF OBJECT<maxweaponplus1 THEN CBW1
+;; OBJECT=NULLOBJECT
+;;
+;;.ASSESSWEAPON
+;; weapon=object
+;;;
+;;; Add entries of the form..
+;;; WEAPONSTRENGTH=something in the range 1-20
+;;; IF WEAPON=weapon name THEN CBWRET
+;;;
+;; WEAPONSTRENGTH=1
+;; WEAPON=NULLOBJECT
+;;.CBWRET
+;; RETURN
+;---
+;;.MAKEENEMIES
+;;; make TARGET and ACTOR be enemies
+;; OBJECT=TARGET
+;; GOSUB @setX4toOBJECTATTRIBUTES
+;; if target=user then makeen2
+;; x1=npccurrent(x4) ; does target CTOR
+;; NPCCURRENT(ACTORATTRIBUTES)=TARGET
+;;; and make TARGET's hatred of ACTOR increase
+;;; drop through to increasehatred
+;;;
+;;.increasehatred
+;;; increase hatred by npc with attributes at x4
+;; x1=hatredoffset
+;; add x1,x4
+;; x2=npccurrent(x1)
+;; if x2>200 then increasehatredret ; already hate actor lots
+;; add x2,c10
+;; npccurrent(x1)=x2
+;;.increasehatredret
+;; return
+;---
+; Routines to return pointer to character 'OBJECT' data. Note that they 
+; rely on npcentrysize=16, so beware if CTOR
+;; NPCCURRENT(ACTORATTRIBUTES)=TARGET
+;;; and make TARGET's hatred of ACTOR increase
+;;; drop through to increasehatred
+;;;
+;;.increasehatred
+;;; increase hatred by npc with attributes at x4
+;; x1=hatredoffset
+;; add x1,x4
+;; x2=npccurrent(x1)
+;; if x2>200 then increasehatredret ; already hate actor lots
+;; add x2,c10
+;; npccurrent(x1)=x2
+;;.increasehatredret
+;; return
+;---
+; Routines to return pointer to character 'OBJECT' data. Note that they 
+; rely on npcentrysize=16, so beware if you change this.
+.setACTORATTRIBUTES
+ ACTORATTRIBUTES=ACTOR
+ ADD ACTORATTRIBUTES,ACTORATTRIBUTES
+ ADD ACTORATTRIBUTES,ACTORATTRIBUTES
+ ADD ACTORATTRIBUTES,ACTORATTRIBUTES
+ ADD ACTORATTRIBUTES,ACTORATTRIBUTES
+ RETURN
+;
+.setX4toOBJECTATTRIBUTES
+; return pointer in X4. (Modify .notifynpc if you change this routine)
+ X4=0
+ if object>maxpeople then sxtnnotalive
+ X4=OBJECT
+ ADD X4,X4
+ ADD X4,X4
+ ADD X4,X4
+ ADD X4,X4
+.sxtnnotalive
+ return
+;---
+.SILLY
+; prs "[actor who is being silly is: "
+; x1=actor
+; gosub printTHEobjectx1
+; prs "]"
+; message cr
+ M1=3100
+ GOTO @VARYERRORM1DOT
+;---
+;-------------------
+.SPECIALDESC
+; come here after all objects and exits printed
+; no return necessary
+.sdret
+ RETURN
+;---
+.SPECIALEXITS
+; Given 'FROM' 'DIR' 'DEST'
+; Modify if an exit is blocked for some reason
+ HIDEST=0 ; normally can't move onto a container through an exit
+ X1=HICURRENTPOS(ACTOR)
+ IF X1=0 THEN SEORDINARY
+; ACTOR is on something - so exits may be different
+; Standing on something, but can take as being an
+; ordinary exit from the room in which the container is ('ROOM')
+.SEORDINARY
+; now check any other modified exits
+ if dest<minsynthroomminus1 then senotsynth
+ x1=dest
+; x2=minsynthroom
+; sub x1,x2
+; x1=terraintable(x1)
+ gosub @GetTerrainType
+ if x1<minsynthroomminus1 then seprevent ; should be going to a fixed room
+;
+; If you want to prevent movement onto a particular class
+; of terrain, add the line:
+;
+; IF x1<116 (say) then seprevent
+;
+; then terrain types MINSYNTHROOM to 115 will be impossible to move onto.
+; (You may need to remove the range check on DEST above, as well)
+.senotsynth
+ if dest<>0 then seNotUpDown ; already up/down exits present
+ if actor=treehouse then seNotUpDown
+ if dir=14 then seUp
+ if dir<>9 then seNotUp
+.seUp
+; is treehouse here?
+ if actor<>user then seNotTrees
+; only user can go up clump of trees to discover treehouse
+ x1=currentpos(trees)
+ if x1=room then seupTrees
+.seNotTrees
+ x1=currentpos(treehouse)
+ if x1<>room then seNotUp
+
+; is user in treehouse?
+ x1=hicurrentpos(actor)
+ if x1<>0 then seNotUp
+
+.seupTrees
+ dest=treehouse
+ hidest=ipin
+
+.seNotUp
+ if dir<>10 then seNotDown
+; in treehouse?
+ x1=hicurrentpos(actor)
+ if x1=0 then seNotDown
+ x1=currentpos(actor)
+ if x1<>treehouse then seNotDown
+ dest=room
+ hidest=0
+
+.seNotDown
+.seNotUpDown
+.specialexitsok
+ RETURN
+
+.seprevent
+.SEFALSE
+; Exit is not present
+ DEST=0
+ EXITVISIBLE=FALSE
+ RETURN
+;---
+.SPECIALDROPS
+; trying to drop 'OBJECT' to position HIPOS, POS
+; Print appropriate message if desired
+; and return RESULT=FALSE if ACTOR is to be prevented from dropping it
+; if hipos=0 then sdnotputonobject
+;.sdnotputonobject ; not going to a container
+
+ RESULT=TRUE ; allow it to be dropped
+ RETURN
+;---
+.SPECIALACTOR
+; print ACTOR
+ lastwordprinted=actor ; force it to print the article - 'you'
+ verb=iam
+ goto @printACTORverb
+;---
+.specialcheckifaccessible
+; if no special code is needed, LEAVE RESULT UNCHANGED
+; otherwise return RESULT=TRUE if OBJECT is accessible to VERB
+; or RESULT=FALSE if not accessible.
+ if processingsay=TRUE then sciatrue
+ if verb=isetupgo then conditionaltrue ; sciatrue
+ if verb=igdgo then conditionaltrue ; sciatrue
+ if verb=isetupfind then conditionaltrue ; sciatrue
+ if verb=igdfind then conditionaltrue ; sciatrue
+ if verb=igetme then sciatrue
+ if verb=iwaitforperson then conditionaltrue ; sciatrue ; wait for ...
+ if verb=iwaitforperiod then conditionaltrue ; sciatrue ; wait for ...
+ if verb=iwaituntiltime then conditionaltrue ; sciatrue ; wait until ...
+ if object<>generaldoor then scianotdoor
+ gosub @setupdoor
+ if door=TRUE then sciatrue
+ goto @returnfalse
+
+.scianotdoor
+ return
+;
+.conditionaltrue
+; only true if OBJECT exists in the game
+ x1=currentpos(object)
+ if x1=0 then @returnfalse
+.sciatrue
+ result=TRUE
+ return
+;---
+.isobjectalive
+; return result=TRUE if it is
+ result=FALSE
+ if object>maxnpc then ioaret
+ if object<>greenslave then ioaNotGreenSlave
+ if GreenslaveAnimated=false then ype
+; for ROOM.
+ return
+;---
+.GetXY
+; return X=x co-ordinate on grid
+; Y=y co-ordinate on grid
+ if room>minsynthroomminus1 then getxysynth
+; fixed room
+ x=0
+ y=0
+ return
+
+.getxysynth
+ x1=room
+.getxyx1
+ x2=minsynthroomminus1
+ sub x1,x2
+ sub x1,c1
+ x2=xmaxplus1
+ gosub @x1divx2
+ y=x1 ; y:=room div xmax = y co-ordinate
+ add x2,x3
+ x=x2 ; x:=room mod xmax = x co-ordinate
+ return
+;---
+.convertroom
+; return x1 as the room number for the description
+; printed by a room object being here.ype
+; for ROOM.
+ return
+;---
+.GetXY
+; return X=x co-ordinate on grid
+; Y=y co-ordinate on grid
+ if room>minsynthroomminus1 then getxysynth
+; fixed room
+ x=0
+ y=0
+ return
+
+.getxysynth
+ x1=room
+.getxyx1
+ x2=minsynthroomminus1
+ sub x1,x2
+ sub x1,c1
+ x2=xmaxplus1
+ gosub @x1divx2
+ y=x1 ; y:=room div xmax = y co-ordinate
+ add x2,x3
+ x=x2 ; x:=room mod xmax = x co-ordinate
+ return
+;---
+.convertroom
+; return x1 as the room number for the description
+; printed by a room object being here.
+; descriptions are in table with offsets 240..255
+; exits are stored in table from room 10..30
+ x1=minsceneryobjtimes2minus1 ; double to give index into initial pos
+.cr1
+ x2=objectstart(x1)
+ if x2=room then crfound
+ add x1,c2
+ if x1<maxsceneryobjtimes2plus2 then cr1
+ x1=0
+ return
+.crfound
+; objects have numbers minsceneryobj..maxsceneryobj
+; we want offset in objects 1..25
+;; so subtract minsceneryobjminus1
+ x2=2
+ gosub @x1divx2 ; get object number
+ x2=minsceneryobjminus1
+ sub x1,x2
+ return
+;---
+.specialactivatenpc
+; We are activating npc ACTOR
+; Put special code handlers for them HERE.
+; Set processed=TRUE if they have already done
+; everything they are going to this turn.
+; return verb<>0 to do that action
+ processed=true
+ if actor=beanstalk then sanRet ; kill gold-singing etc.
+ if actor<>greenslave then sanNotGreenSlave
+ if GreenslaveAnimated=false then sanRet ; do nothing until animated
+
+.sanNotGreenSlave
+.sanOK
+ processed=false ; no special code - so allow npc to activate
+.sanRet
+ return
+;---
+.isobjectalert
+; return result=TRUE if OBJECT is awake
+ gosub @isobjectalive
+;; if result=FALSE then ioalertret
+.ioalertret
+ return
+;---
+.canactormove
+; return result=FALSE if ACTOR is prevented from moving
+ result=TRUE
+.camret
+ return
+;---
+.canactorrandommove
+; return result=TRUE if actor can make random moves
+ result=false ; no-one moves at random in this part. TRUE
+.carmret
+ return
+;---
+.handleinterruption
+; ACTOR has been interrupted in the middle of something
+; Do whatever you see fit, then return
+; No values need be returned
+ return
+;---
+.specialrtmessage
+; actor is just about to print M1 as part of a racetrack
+; instruction. Use this hook to intercept particular things
+; which may happen in the message which cannot be easily
+; coded elsewhere.
+ return
+;---
+.newracetrackforobject
+; start racetrack x6 for actor OBJECT
+ actorsave=actor
+ actor=object ; replace its racetrack with a new one...
+ gosub @setACTORATTRIBUTES
+ gosub @stop ; kill existing racetrack
+ x1=x6 ; race track number to execute
+ gosub @initracetrackx1
+ goto @resetactor ; from actorsave
+;---
+.checknullaction
+; ACTOR has no stack actions to do, so we may want to start up a new 
+; one. This is used for people such as the valkyrie in Knight Orc, 
+; for whom it is VITAL that they should not become 'unhooked'. Set 
+; ORDERWAITING to the first command to  execute, if you want ACTOR 
+; to obey it immediately.
+ if actor<>treehouse then cnaNotTreeHouse
+ x1=currentpos(user)
+ if x1<>treehouse then cnaNotTreeHouse
+ x1=hicurrentpos(user)
+ if x1=0 then cnaNotTreeHouse
+ if NearTreeHouse=true then cnaNotTreeHouse
+ NearTreeHouse=true
+ m1=2531 ; where to?
+ goto @printM1Dot
+
+.cnaNotTreeHouse
+ return
+;---
+.specialcheckifpresent
+; have just checked if object is present
+; Add special modifiers here.
+; return RESULT=TRUE if object here.
+ return
+;---
+.initialscenecode
+ return
+;---
+.specialinitnpcs
+ return
+;---
+.destroyobject
+; object gets destroyed, and replaced in a location as appropriate
+
+ currentpos(object)=c0
+ hicurrentpos(object)=c0
+ if object<95 then destroyNotPotion
+ if object<101 then @RegrowAll
+
+.destroyNotPotion
+ return
+;---
+.createobject
+; OBJECT gets created in current room
+ currentpos(object)=room
+ hicurrentpos(object)=c0
+ return
+;---
+.createobjectpos
+; create OBJECT at position HIPOS, POS
+ currentpos(object)=pos
+ hicurrentpos(object)=hipos
+ return
+;---
+;.TRIGGERWORDS
+;; check current word to see if it is a trigger word
+;; ACTOR is the target of conversation
+; SEARCHTYPE=NOUNTYPE
+; GOSUB @CHECKTYPE
+;; VALUE is a trigger word ( a saying )
+;; see if there is any action to take on it
+; if value=nullvalue then tgret
+; gosub @checknoun
+; if processed=TRUE then tgret
+; if verb=itell then tgret ; process as parsed sentence
+;; OBJECT is a word spoken TO actor
+; if object=0 then tgret
+;.TGRET
+; RETURN
+;---
+;.tell
+;; tell me about NOUN2
+; if actor=user then @ask
+; goto @startorders
+;---
+.isactorflying
+; return RESULT=TRUE if 
+; gosub @varysayM1dot
+;
+;.npchelloend
+; SAYRESPONSE=TRUE
+; processed=TRUE
+;.NPCHELLOret
+;.knockret
+; RETURN
+;
+;---
+.AnalyseObject
+; return X1 as the IngredientNumber'th element of Ingredient OBJECT
+ x1=Object
+ x2=AirFlower
+ sub x1,x2
+
+; multiply by 4 (4 characteristics per Ingredient)
+ add x1,x1
+ add x1,x1
+
+ x2=24 ; offset in PotionTable
+ add x1,x2
+ add x1,StartPotionTable
+
+; x1 is pointer to attributes for OBJECT
+ add x1,IngredientNumber ; get appropriate attribute
+ x1=list5(x1)
+; gosub @varysayM1dot
+;
+;.npchelloend
+; SAYRESPONSE=TRUE
+; processed=TRUE
+;.NPCHELLOret
+;.knockret
+; RETURN
+;
+;---
+.AnalyseObject
+; return X1 as the IngredientNumber'th element of Ingredient OBJECT
+ x1=Object
+ x2=AirFlower
+ sub x1,x2
+
+; multiply by 4 (4 characteristics per Ingredient)
+ add x1,x1
+ add x1,x1
+
+ x2=24 ; offset in PotionTable
+ add x1,x2
+ add x1,StartPotionTable
+
+; x1 is pointer to attributes for OBJECT
+ add x1,IngredientNumber ; get appropriate attribute
+ x1=list5(x1)
+ return
+;---
+.hold
+; cave mouth/breath etc. - else treat as TAKE
+ if noun1<>250 then HoldNotBreath
+ if HoldingBreath<>0 then @silly
+ m1=2597
+ HoldingBreath=1
+ goto @printM1Dot ; start to hold breath
+
+.HoldNotBreath
+ if noun1<>cavemouth then HoldNotCaveMouth
+ HoldingCaveMouth=actor
+ gosub @printActor
+ m1=2583 ; held the mouth
+ goto @printM1Dot
+
+.HoldNotCaveMouth
+ verb=itake
+ goto @take
+;----
+.ReGrowObject
+; regrow OBJECT on its appropriate plant
+ x1=object
+ x2=46 ; 130(air plant)-84(air flower)
+ add x1,x2
+; x1=parent plant
+ currentpos(object)=x1
+ x2=growingFrom
+ hicurrentpos(object)=x2
+ x1=currentpos(x2) ; x1=location of parent plant
+ if x1<>currentUserRoom then ReGrowObjectRet
+ add forceprinting,c1
+  x1=x2 ; parent plant
+  gosub @PrintTheObjectx1
+ sub forceprinting,c1
+ message 2505 ; grew a new
+ x1=nounoffset
+ add x1,Object
+ message x1 ; shoot (etc.)
+ message dot
+.ReGrowObjectRet
+.waterret
+ return
+;---
+.empty
+.pour
+ if noun1=cup then checkForWater
+ if noun1=saucer then checkForWater
+ if noun1=bowl then checkForWater
+
+ if noun1<95 then pourNotPotion
+ if noun1<101 then @pourPotion
+.pourNotPotion
+ if noun1=water then CheckForWater
+ if noun1<146 then WaterSomething ; water objects 1-3
+ if noun1<149 then CheckForWater ; water objects 1-3
+
+.WaterSomething
+ if noun1<>beanstalk then @WasteOfTime
+
+.checkForWater
+; is actor carrying any water?
+ object=water1
+ gosub @CheckIfPresent ;Accessible
+ if result=true then waterBeanstalk
+
+ object=water2
+ gosub @CheckIfPresent ; Accessible
+ if result=true then waterBeanstalk
+
+ object=water3
+ gosub @CheckIfPresent ; Accessible
+ if result=true then waterBeanstalk
+ gosub @PrintActor
+ m1=2568 ; had no water
+ goto @printM1Dot
+
+.waterBeanstalk
+; using water OBJECT
+ currentpos(object)=c0
+ x1=currentpos(beanstalk)
+ if x1<>room then @done ; no response
+
+ gosub @PrintActor
+ m1=2567 ; watered the beanstalk
+ gosub @PrintM1Dot
+
+.AutoWaterBeanstalk
+ add BeanstalkState,c2
+ if BeanstalkState<>5 then waterRet
+ x1=currentpos(wall)
+ if x1<>room then waterRet
+ m1=2563 ; beanstalk broke wall
+ WeedkillerSmeared=0
+ currentpos(wall)=c0
+ currentpos(beanstalk)=c0
+ WallBroken=10
+ goto @PrintM1Dot
+;---
+.fill
+ if noun1=cup then fillcup
+ if noun1<101 then @silly
+ if noun1>102 then @silly
+.fillcup
+; filling something (with water)
+ if room<>5 then @silly
+; anything in object already?
+ searchpos=noun1
+ hisearchpos=nonspecific
+ gosub @initgetobj
+ gosub @getnextobject
+ if object<>0 then @actorCantVerbNoun1dot
+; find first available water object
+ object=water1
+ x1=currentpos(water1)
+ if x1=0 then fillWithObject
+
+ object=water2
+ x1=currentpos(water2)
+ if x1=0 then fillWithObject
+
+ object=water3
+ x1=currentpos(water3)
+ if x1=0 then fillWithObject
+
+ goto @ActorCantVerbNoun1Dot
+
+.fillWithObject
+ currentpos(object)=noun1
+ x1=ipin
+ hicurrentpos(object)=x1
+ goto @done
+;---
+.IsObjectUnderWater
+ result=false
+ x1=hicurrentpos(Object)
+ if x1<>ipin then iouwret
+ x1=currentpos(Object)
+ if x1<>pond then iouwret
+ result=true
+
+.iouwret
+ return
+
+;---
+.ConvulsiveClose
+ m1=2584 ; closed convulsively
+ gosub @printM1Dot ; tell person who took shoot
+ room=139 ; allow people outside to see
+ gosub @printM1Dot
+
+.DigestActor
+; digest ACTOR who has foolishly gone into the carnivorous cave.
+; is stinkwort shoot anywhere inside cave?
+ object=stinkwortshoot
+ gosub @getobjectposx2
+ if x2=9 then replacestinkwort
+ if x2<>8 then noreplacestinkwort
+.replacestinkwort
+ x1=stinkwortplant
+ currentpos(stinkwortshoot)=x1
+ x1=growingfrom
+ hicurrentpos(stinkwortshoot)=x1
+
+.noreplacestinkwort
+; others (plants) are indigestible, so get spat out.
+ room=139 ; force people outside to see what's going on
+
+ object=1
+.caveLoop
+ gosub @getobjectposx2
+ if x2=8 then insidecave
+ if x2<>9 then notInsideCave
+.insidecave
+ if object=user then DigestIngrid ; if ingrid inside at time, she dies
+.IngridProtected
+ currentpos(object)=room
+ hicurrentpos(object)=c0
+
+ m1=2586 ; cave opened and spat out...
+ gosub @;------------
+;---
+.TRIGGERWORDS
+; check current word to see if it is a trigger word
+; ACTOR is the target of conversation
+ SEARCHTYPE=NOUNTYPE
+ GOSUB @CHECKTYPE
+; VALUE is a trigger word ( a saying )
+; see if there is any action to take on it
+ if value=nullvalue then tgret
+ gosub @checknoun
+ if processed=TRUE then tgret
+; if verb=itell then tgret ; process as parsed sentence
+
+; OBJECT is a word spoken TO actor
+ if twNoun<>0 then tw2 ; verb seems to be cleared before subsequent words.
+ if ve;------------
+;---
+.TRIGGERWORDS
+; check current word to see if it is a trigger word
+; ACTOR is the target of conversation
+ SEARCHTYPE=NOUNTYPE
+ GOSUB @CHECKTYPE
+; VALUE is a trigger word ( a saying )
+; see if there is any action to take on it
+ if value=nullvalue then tgret
+ gosub @checknoun
+ if processed=TRUE then tgret
+; if verb=itell then tgret ; process as parsed sentence
+
+; OBJECT is a word spoken TO actor
+ if twNoun<>0 then tw2 ; verb seems to be cleared before subsequent words.
+ if verb<>itell then tgret
+.tw2
+ if object<>user then tellNotUser
+ if twNoun=object then TellNotUser ; "tell me about me"
+ twNoun=object ; "tell me about.. "
+ return
+
+.tellNotUser
+ result=false
+ gosub doquestion
+ if result=true then @realsayend ; clear stack, terminates if processed
+.TGRET
+ return
+
+;; OBJECT is a word spoken TO actor
+; result=false
+; gosub doquestion
+; if result=true then @realsayend ; clear stack, terminates if processed
+;.TGRET
+; RETURN
+;---
+.tell
+; tell me about NOUN2
+ if actor=user then @ask
+;; if actor<>rainbird then @startorders
+ result=false
+ object=noun1
+ if object<>nullobject then tell1
+ object=noun2
+.tell1
+ gosub doquestion
+ if result=false then @startorders
+ return
+;---
+.doquestion
+; rainbird prints examine messages for item OBJECT
+; set result=true if processed
+ if verb=itell then doquestion2
+; if verb=iask then doquestion2
+; if verb=isay then doquestion2
+ if verb=0 then doquestion2
+ return ; result=false, so not processed
+
+.doquestion2
+ if object=nullobject then rainbirdret
+ gosub @PrintActor
+ m1=3612 ; clears its throat and says "
+ gosub @Printm1
+ m1=3611 ; ..you, dummy!
+ if object=user then twprint
+ m1=3610 ; me!
+ if object=actor then twprint
+ if object=iyou then twprint
+;
+; objects which the rainbird won't describe because
+; their examine messages contain spell names...
+ m1=2112 ; nothing special
+ if object>maxobject then twprint
+
+ gosub @printTheObject
+; do "it is/they are" in PRESENT TENSE
+ x1=object
+ gosub @conjugatex1
+ m1=135 ; are (present tense)
+ if result=pluralsome then dor1
+ m1=136 ; is (present tense)
+.dor1
+ gosub @printm1
+
+;; verb=iam
+;; gosub @printobjectverb ; that is..
+ m1=examinemessages ; base of examine messages
+ add m1,object
+.twprint
+ gosub @printm1 ;dot
+ m1=dotquote
+ gosub @printm1
+
+ result=true ; processed
+.rainbirdret
+ return
+;---
+.specialconversation
+; USER is saying 'verb prep noun1 noun2' to ACTOR
+; make any intercepts you fancy.
+; If the command is not to be stored, set PROCESSED=TRUE
+; and SAYRESPONSE=TRUE
+;
+; see also TRIGGERWORDS
+ if actor<>greenslave then scNotGreenSlave
+ m1=2605 ; just a plant
+ if GreenslaveAnimated=false then scprintm1dot
+
+.scNotGreenslave
+
+ if verb=ihello then npchello
+
+ if verb=itell then @tell
+; m1=3270 ; won't give anything away
+; if verb=igive then scprint
+ if verb<211 then scnonotquestion
+ m1=3250 ; won't answer that
+ if verb<217 then scprint
+.scnonotquestion
+ m1=3620 ; seemed very offended
+ if verb=217 then scprint
+ m1=3640 ; won't help
+ if verb=207 then scprint
+ m1=3660 ; echo verb - can't do it etc.
+ if verb>199 then scprint
+ if verb<20 then scNotSystem
+ if verb<32 then scprint ; system command - e.g. SAVE, RESTORE etc.
+.scNotSystem
+ return ; nothing unusual - probably an order, so pass back for normal
+; handling code to cope with it.
+
+.scprint
+ goto scpreventVaryM1Dot
+
+;---
+.NPCHELLO
+; ACTOR is the person the user is trying to talk to, who is here
+ m1=3170 ; hello
+
+.scPreventVaryM1Dot
+ LASTWORDPRINTED=0 ; prevent use of IT
+ gosub @varysaym1dot
+.scprevent
+ SAYRESPONSE=TRUE
+ processed=TRUE
+.NPCHELLOret
+.knockret
+.scNoPrint
+ RETURN
+
+.scprintm1dot
+ gosub @printm1dot
+ goto scprevent
+;
+;---
+.knock ;*** remove verb?
+ goto @silly
+;---
+.win
+ message blankline
+ gosub @score
+
+ gosub @bookprotect
+ if result=false then @restartorRestore
+
+ parttochain=3
+ gosub @chainparttochain
+ goto @userdeath
+;---
+
+
+
+
