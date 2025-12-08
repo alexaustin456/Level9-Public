@@ -1,0 +1,773 @@
+Amiga Billy Midi Files
+----------------------
+
+4AMBUSV2 MID       604 01-10-90   4:34p
+4BANKJV2 MID      3701 01-10-90   4:34p
+4BARBRWL MID     10946 01-10-90   4:34p
+4CARDV2  MID     11563 01-10-90   4:35p
+4CHASEV2 MID      8284 01-10-90   4:35p
+4DUEL    MID      5468 01-10-90   4:35p
+4GEN     MID      1526 01-10-90   4:35p
+4GEN2V3  MID      1742 01-10-90   4:35p
+4GEN3    MID      2387 01-10-90   4:35p
+4GEN4    MID      3651 01-10-90   4:35p
+4GEN5    MID      3570 01-10-90   4:35p
+4GETWYV3 MID      6714 01-10-90   4:35p
+4GUNFIGT MID      5708 01-10-90   4:35p
+4HOE1    MID      6219 01-10-90   4:35p
+4HOE2    MID      9066 01-10-90   4:35p
+4HONK1V2 MID      5994 01-10-90   4:35p
+4MAP     MID      3957 01-10-90   4:35p
+4RAG3    MID      6250 01-10-90   4:36p
+4RAGTIME MID      9123 01-10-90   4:36p
+4SHOOT   MID      4122 01-10-90   4:36p
+4SHOOT2  MID      4634 01-10-90   4:36p
+4SHOOT3  MID      5810 01-10-90   4:36p
+4TRAIN   MID      7305 01-10-90   4:36p
+       23 File(s)
+
+
+MIDI File Instrument & Effect Scanner
+-------------------------------------
+
+MIDI Filename 4AMBUSV2.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 118    Taiko
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 2   Program (from 1 up) 61     Guitar 2
+
+Effects:
+Channel 10  Effect 37   Times 3        Rim Shot
+Channel 10  Effect 43   Times 3        Acoustic Low Tom
+Channel 10  Effect 47   Times 2        Acoustic Mid Tom
+Channel 10  Effect 48   Times 6        Acoustic High Tom
+Channel 10  Effect 49   Times 1        Crash Cymbal
+
+Note Ranges:
+Guitar 2                        Lo:50  Hi:62
+Pan Pipes                       Lo:57  Hi:62
+Taiko                           Lo:57  Hi:62
+
+Timings:
+Total ticks for track was 3896
+Tempo is set at 120
+Duration is 0 minutes 10 seconds
+
+
+MIDI Filename 4BANKJV2.MID
+
+Program changes:
+Channel 4   Program (from 1 up) 62     Electric Guitar 1
+Channel 3   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 89     Trumpet 1
+Channel 10  unnecessarily programmed
+Channel 3   Program (from 1 up) 84     Clarinet 2
+
+Effects:
+Channel 10  Effect 38   Times 72       Acoustic Snare Drum
+Channel 10  Effect 54   Times 144      Tambourine
+Channel 10  Effect 56   Times 16       Cowbell
+Channel 10  Effect 60   Times 122      High Bongo
+Channel 10  Effect 62   Times 144      Mute High Conga
+Channel 10  Effect 67   Times 2        High Agogo
+Channel 10  Effect 73   Times 10       Quijada
+Channel 10  Effect 81   Times 2        Footsteps 2
+
+Note Ranges:
+Electric Guitar 1               Lo:60  Hi:68
+Clarinet 2                      Lo:74  Hi:86
+Trumpet 1                       Lo:72  Hi:86
+
+Timings:
+Total ticks for track was 17375
+Tempo is set at 120
+Duration is 0 minutes 45 seconds
+
+
+MIDI Filename 4BARBRWL.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 3   Program (from 1 up) 71     Fretless 1
+Channel 2   Program (from 1 up) 54     Violin 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+Channel 4   Program (from 1 up) 111    Bottleblow
+Channel 4   Program (from 1 up) 99     Vibe 2
+
+Effects:
+Channel 10  Effect 38   Times 461      Acoustic Snare Drum
+Channel 10  Effect 44   Times 130      Open High Hat 2
+Channel 10  Effect 49   Times 3        Crash Cymbal
+Channel 10  Effect 56   Times 16       Cowbell
+Channel 10  Effect 65   Times 20       High Timbale
+Channel 10  Effect 66   Times 1        Low Timbale
+Channel 10  Effect 67   Times 1        High Agogo
+
+Note Ranges:
+Violin 2                        Lo:70  Hi:79
+Fretless 1                      Lo:41  Hi:53
+Vibe 2                          Lo:58  Hi:79
+Bottleblow                      Lo:72  Hi:93
+
+Timings:
+Total ticks for track was 22128
+Tempo is set at 120
+Duration is 0 minutes 57 seconds
+
+
+MIDI Filename 4CARDV2.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 98     Vibe 1
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 2   Program (from 1 up) 98     Vibe 1
+
+Effects:
+Channel 10  Effect 36   Times 148      Accoustic Bass Drum
+Channel 10  Effect 37   Times 217      Rim Shot
+Channel 10  Effect 42   Times 114      Closed High Hat
+Channel 10  Effect 44   Times 278      Open High Hat 2
+Channel 10  Effect 49   Times 1        Crash Cymbal
+Channel 10  Effect 56   Times 39       Cowbell
+
+Note Ranges:
+Pan Pipes                       Lo:51  Hi:77
+Vibe 1                          Lo:41  Hi:79
+
+Timings:
+Total ticks for track was 33168
+Tempo is set at 120
+Duration is 1 minutes 26 seconds
+
+
+MIDI Filename 4CHASEV2.MID
+
+Program changes:
+Channel 4   Program (from 1 up) 61     Guitar 2
+Channel 10  unnecessarily programmed
+Channel 2   Program (from 1 up) 90     Trumpet 2
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 112    Breathpipe
+Channel 3   Program (from 1 up) 60     Guitar 1
+
+Effects:
+Channel 10  Effect 36   Times 46       Accoustic Bass Drum
+Channel 10  Effect 39   Times 16       Hand Clap
+Channel 10  Effect 54   Times 184      Tambourine
+Channel 10  Effect 60   Times 58       High Bongo
+Channel 10  Effect 62   Times 408      Mute High Conga
+Channel 10  Effect 69   Times 16       Cabasa
+Channel 10  Effect 78   Times 16       Punch
+
+Note Ranges:
+Guitar 1                        Lo:51  Hi:68
+Guitar 2                        Lo:53  Hi:63
+Trumpet 2                       Lo:72  Hi:89
+Breathpipe                      Lo:77  Hi:87
+
+Timings:
+Total ticks for track was 23040
+Tempo is set at 120
+Duration is 1 minutes 0 seconds
+
+
+MIDI Filename 4DUEL.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 49     Strings Section 1
+Channel 3   Program (from 1 up) 113    Timpani
+Channel 2   Program (from 1 up) 60     Guitar 1
+
+Effects:
+Channel 10  Effect 38   Times 162      Acoustic Snare Drum
+Channel 10  Effect 54   Times 20       Tambourine
+Channel 10  Effect 60   Times 126      High Bongo
+
+Note Ranges:
+Strings Section 1               Lo:48  Hi:67
+Guitar 1                        Lo:67  Hi:87
+Timpani                         Lo:50  Hi:55
+
+Timings:
+Total ticks for track was 27767
+Tempo is set at 120
+Duration is 1 minutes 12 seconds
+
+
+MIDI Filename 4GEN.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 78     Pan Pipes
+Channel 3   Program (from 1 up) 64     Sitar
+Channel 2   Program (from 1 up) 64     Sitar
+
+Effects:
+Channel 10  Effect 37   Times 24       Rim Shot
+Channel 10  Effect 38   Times 40       Acoustic Snare Drum
+Channel 10  Effect 43   Times 8        Acoustic Low Tom
+Channel 10  Effect 47   Times 24       Acoustic Mid Tom
+Channel 10  Effect 49   Times 4        Crash Cymbal
+Channel 10  Effect 51   Times 32       Ride Cymbal
+
+Note Ranges:
+Sitar                           Lo:60  Hi:71
+Pan Pipes                       Lo:53  Hi:59
+
+Timings:
+Total ticks for track was 15096
+Tempo is set at 120
+Duration is 0 minutes 39 seconds
+
+
+MIDI Filename 4GEN2V3.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 5      Electric Piano 2
+Channel 3   Program (from 1 up) 37     Soundtrack
+Channel 2   Program (from 1 up) 51     Strings Section 3
+
+Effects:
+Channel 10  Effect 38   Times 48       Acoustic Snare Drum
+Channel 10  Effect 43   Times 3        Acoustic Low Tom
+Channel 10  Effect 45   Times 3        Acoustic Mid Tom
+Channel 10  Effect 47   Times 12       Acoustic Mid Tom
+Channel 10  Effect 54   Times 54       Tambourine
+Channel 10  Effect 62   Times 22       Mute High Conga
+Channel 10  Effect 73   Times 3        Quijada
+
+Note Ranges:
+Electric Piano 2                Lo:41  Hi:53
+Soundtrack                      Lo:65  Hi:77
+Strings Section 3               Lo:68  Hi:80
+
+Timings:
+Total ticks for track was 12333
+Tempo is set at 120
+Duration is 0 minutes 32 seconds
+
+
+MIDI Filename 4GEN3.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 94     French Horn 2
+Channel 3   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 60     Guitar 1
+Channel 3   Program (from 1 up) 103    Tube Bell
+Channel 3   Program (from 1 up) 89     Trumpet 1
+Channel 3   Program (from 1 up) 103    Tube Bell
+Channel 3   Program (from 1 up) 89     Trumpet 1
+
+Effects:
+Channel 10  Effect 54   Times 36       Tambourine
+Channel 10  Effect 56   Times 8        Cowbell
+Channel 10  Effect 60   Times 40       High Bongo
+Channel 10  Effect 62   Times 24       Mute High Conga
+Channel 10  Effect 73   Times 4        Quijada
+
+Note Ranges:
+Guitar 1                        Lo:60  Hi:67
+Trumpet 1                       Lo:70  Hi:84
+French Horn 2                   Lo:58  Hi:65
+Tube Bell                       Lo:81  Hi:81
+
+Timings:
+Total ticks for track was 16442
+Tempo is set at 120
+Duration is 0 minutes 42 seconds
+
+
+MIDI Filename 4GEN4.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 14     Pipe Organ 2
+Channel 3   Program (from 1 up) 93     French Horn 1
+Channel 2   Program (from 1 up) 60     Guitar 1
+
+Effects:
+Channel 10  Effect 51   Times 45       Ride Cymbal
+Channel 10  Effect 54   Times 162      Tambourine
+Channel 10  Effect 56   Times 9        Cowbell
+Channel 10  Effect 60   Times 45       High Bongo
+Channel 10  Effect 62   Times 27       Mute High Conga
+Channel 10  Effect 73   Times 4        Quijada
+
+Note Ranges:
+Pipe Organ 2                    Lo:56  Hi:74
+Guitar 1                        Lo:56  Hi:74
+French Horn 1                   Lo:53  Hi:65
+
+Timings:
+Total ticks for track was 18512
+Tempo is set at 120
+Duration is 0 minutes 48 seconds
+
+
+MIDI Filename 4GEN5.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 14     Pipe Organ 2
+Channel 3   Program (from 1 up) 108    Shakuhachi
+Channel 2   Program (from 1 up) 60     Guitar 1
+
+Effects:
+Channel 10  Effect 36   Times 96       Accoustic Bass Drum
+Channel 10  Effect 51   Times 80       Ride Cymbal
+Channel 10  Effect 54   Times 208      Tambourine
+Channel 10  Effect 56   Times 16       Cowbell
+Channel 10  Effect 60   Times 80       High Bongo
+Channel 10  Effect 62   Times 48       Mute High Conga
+
+Note Ranges:
+Pipe Organ 2                    Lo:41  Hi:65
+Guitar 1                        Lo:53  Hi:77
+Shakuhachi                      Lo:65  Hi:89
+
+Timings:
+Total ticks for track was 13262
+Tempo is set at 120
+Duration is 0 minutes 34 seconds
+
+
+MIDI Filename 4GETWYV3.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 50     Strings Section 2
+Channel 3   Program (from 1 up) 61     Guitar 2
+Channel 2   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 89     Trumpet 1
+Channel 2   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 89     Trumpet 1
+
+Effects:
+Channel 10  Effect 36   Times 16       Accoustic Bass Drum
+Channel 10  Effect 38   Times 120      Acoustic Snare Drum
+Channel 10  Effect 54   Times 256      Tambourine
+Channel 10  Effect 56   Times 8        Cowbell
+Channel 10  Effect 60   Times 96       High Bongo
+Channel 10  Effect 62   Times 128      Mute High Conga
+Channel 10  Effect 77   Times 2        Screaming
+Channel 10  Effect 90   Times 2        Crash
+Channel 10  Effect 96   Times 10       Pistol
+
+Note Ranges:
+Strings Section 2               Lo:60  Hi:65
+Guitar 2                        Lo:60  Hi:72
+Trumpet 1                       Lo:70  Hi:82
+Tube Bell                       Lo:71  Hi:71
+
+Timings:
+Total ticks for track was 11042
+Tempo is set at 120
+Duration is 0 minutes 28 seconds
+
+
+MIDI Filename 4GUNFIGT.MID
+
+Program changes:
+Channel 3   Program (from 1 up) 88     Harmonica
+Channel 2   Program (from 1 up) 99     Vibe 2
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 3   Program (from 1 up) 88     Harmonica
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 3   Program (from 1 up) 88     Harmonica
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 3   Program (from 1 up) 88     Harmonica
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+Channel 3   Program (from 1 up) 78     Pan Pipes
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 3   Program (from 1 up) 88     Harmonica
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 113    Timpani
+
+Effects:
+Channel 10  Effect 36   Times 5        Accoustic Bass Drum
+Channel 10  Effect 38   Times 140      Acoustic Snare Drum
+Channel 10  Effect 40   Times 10       Electric Snare Drum
+Channel 10  Effect 41   Times 24       Acoustic Low Tom
+Channel 10  Effect 42   Times 132      Closed High Hat
+Channel 10  Effect 43   Times 1        Acoustic Low Tom
+Channel 10  Effect 44   Times 36       Open High Hat 2
+Channel 10  Effect 45   Times 4        Acoustic Mid Tom
+Channel 10  Effect 46   Times 2        Open High Hat 1
+
+Note Ranges:
+Pan Pipes                       Lo:75  Hi:85
+Harmonica                       Lo:68  Hi:79
+Vibe 2                          Lo:77  Hi:92
+Tube Bell                       Lo:80  Hi:89
+Timpani                         Lo:45  Hi:48
+Orchestral Hit                  Lo:51  Hi:60
+
+Timings:
+Total ticks for track was 22711
+Tempo is set at 120
+Duration is 0 minutes 59 seconds
+
+
+MIDI Filename 4HOE1.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 72     Fretless 2
+Channel 3   Program (from 1 up) 64     Sitar
+Channel 2   Program (from 1 up) 54     Violin 2
+
+Effects:
+Channel 10  Effect 36   Times 152      Accoustic Bass Drum
+Channel 10  Effect 44   Times 152      Open High Hat 2
+
+Note Ranges:
+Violin 2                        Lo:72  Hi:86
+Sitar                           Lo:65  Hi:77
+Fretless 2                      Lo:48  Hi:58
+
+Timings:
+Total ticks for track was 28915
+Tempo is set at 120
+Duration is 1 minutes 15 seconds
+
+
+MIDI Filename 4HOE2.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 72     Fretless 2
+Channel 3   Program (from 1 up) 64     Sitar
+Channel 2   Program (from 1 up) 54     Violin 2
+
+Effects:
+Channel 10  Effect 36   Times 204      Accoustic Bass Drum
+Channel 10  Effect 38   Times 120      Acoustic Snare Drum
+Channel 10  Effect 44   Times 324      Open High Hat 2
+Channel 10  Effect 54   Times 156      Tambourine
+
+Note Ranges:
+Violin 2                        Lo:67  Hi:81
+Sitar                           Lo:67  Hi:79
+Fretless 2                      Lo:31  Hi:55
+
+Timings:
+Total ticks for track was 24403
+Tempo is set at 120
+Duration is 1 minutes 3 seconds
+
+
+MIDI Filename 4HONK1V2.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 4      Electric Piano 1
+Channel 3   Program (from 1 up) 4      Electric Piano 1
+Channel 2   Program (from 1 up) 4      Electric Piano 1
+
+Effects:
+Channel 10  Effect 36   Times 70       Accoustic Bass Drum
+Channel 10  Effect 37   Times 89       Rim Shot
+Channel 10  Effect 42   Times 58       Closed High Hat
+Channel 10  Effect 44   Times 133      Open High Hat 2
+Channel 10  Effect 56   Times 12       Cowbell
+
+Note Ranges:
+Electric Piano 1                Lo:44  Hi:79
+
+Timings:
+Total ticks for track was 11846
+Tempo is set at 120
+Duration is 0 minutes 30 seconds
+
+
+MIDI Filename 4MAP.MID
+
+Program changes:
+Channel 4   Program (from 1 up) 28     Syn Brass 4
+Channel 3   Program (from 1 up) 73     Flute 1
+Channel 5   Program (from 1 up) 113    Timpani
+Channel 2   Program (from 1 up) 3      Acoustic Piano 3
+Channel 2   Program (from 1 up) 51     Strings Section 3
+Channel 2   Program (from 1 up) 88     Harmonica
+Channel 2   Program (from 1 up) 3      Acoustic Piano 3
+
+Effects:
+
+Note Ranges:
+Acoustic Piano 3                Lo:69  Hi:74
+Syn Brass 4                     Lo:62  Hi:69
+Strings Section 3               Lo:79  Hi:93
+Flute 1                         Lo:55  Hi:84
+Harmonica                       Lo:67  Hi:81
+Timpani                         Lo:48  Hi:53
+
+Timings:
+Total ticks for track was 29268
+Tempo is set at 120
+Duration is 1 minutes 16 seconds
+
+
+MIDI Filename 4RAG3.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 54     Violin 2
+Channel 3   Program (from 1 up) 4      Electric Piano 1
+Channel 2   Program (from 1 up) 4      Electric Piano 1
+
+Effects:
+Channel 10  Effect 36   Times 88       Accoustic Bass Drum
+Channel 10  Effect 37   Times 88       Rim Shot
+Channel 10  Effect 42   Times 88       Closed High Hat
+Channel 10  Effect 44   Times 177      Open High Hat 2
+Channel 10  Effect 56   Times 11       Cowbell
+
+Note Ranges:
+Electric Piano 1                Lo:48  Hi:82
+Violin 2                        Lo:72  Hi:86
+
+Timings:
+Total ticks for track was 21257
+Tempo is set at 120
+Duration is 0 minutes 55 seconds
+
+
+MIDI Filename 4RAGTIME.MID
+
+Program changes:
+Channel 5   Program (from 1 up) 3      Acoustic Piano 3
+Channel 4   Program (from 1 up) 3      Acoustic Piano 3
+Channel 3   Program (from 1 up) 3      Acoustic Piano 3
+Channel 2   Program (from 1 up) 3      Acoustic Piano 3
+
+Effects:
+
+Note Ranges:
+Acoustic Piano 3                Lo:39  Hi:79
+
+Timings:
+Total ticks for track was 25632
+Tempo is set at 120
+Duration is 1 minutes 6 seconds
+
+
+MIDI Filename 4SHOOT.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 114    Melodic Tom
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 2   Program (from 1 up) 14     Pipe Organ 2
+
+Effects:
+Channel 10  Effect 36   Times 102      Accoustic Bass Drum
+Channel 10  Effect 51   Times 80       Ride Cymbal
+Channel 10  Effect 54   Times 208      Tambourine
+Channel 10  Effect 56   Times 16       Cowbell
+Channel 10  Effect 60   Times 80       High Bongo
+Channel 10  Effect 62   Times 48       Mute High Conga
+
+Note Ranges:
+Pipe Organ 2                    Lo:67  Hi:84
+Guitar 1                        Lo:56  Hi:79
+Melodic Tom                     Lo:41  Hi:50
+
+Timings:
+Total ticks for track was 14559
+Tempo is set at 120
+Duration is 0 minutes 37 seconds
+
+
+MIDI Filename 4SHOOT2.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 114    Melodic Tom
+Channel 3   Program (from 1 up) 60     Guitar 1
+Channel 2   Program (from 1 up) 14     Pipe Organ 2
+Channel 4   Program (from 1 up) 110    Whistle 2
+Channel 4   Program (from 1 up) 114    Melodic Tom
+Channel 4   Program (from 1 up) 110    Whistle 2
+Channel 4   Program (from 1 up) 114    Melodic Tom
+Channel 4   Program (from 1 up) 110    Whistle 2
+Channel 4   Program (from 1 up) 114    Melodic Tom
+Channel 4   Program (from 1 up) 110    Whistle 2
+Channel 4   Program (from 1 up) 114    Melodic Tom
+
+Effects:
+Channel 10  Effect 42   Times 128      Closed High Hat
+Channel 10  Effect 44   Times 48       Open High Hat 2
+Channel 10  Effect 51   Times 44       Ride Cymbal
+Channel 10  Effect 54   Times 20       Tambourine
+Channel 10  Effect 56   Times 12       Cowbell
+Channel 10  Effect 70   Times 4        Maracas
+Channel 10  Effect 73   Times 4        Quijada
+
+Note Ranges:
+Pipe Organ 2                    Lo:63  Hi:73
+Guitar 1                        Lo:65  Hi:77
+Whistle 2                       Lo:84  Hi:99
+Melodic Tom                     Lo:41  Hi:48
+
+Timings:
+Total ticks for track was 11323
+Tempo is set at 120
+Duration is 0 minutes 29 seconds
+
+
+MIDI Filename 4SHOOT3.MID
+
+Program changes:
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 110    Whistle 2
+Channel 3   Program (from 1 up) 14     Pipe Organ 2
+Channel 2   Program (from 1 up) 61     Guitar 2
+
+Effects:
+Channel 10  Effect 36   Times 88       Accoustic Bass Drum
+Channel 10  Effect 37   Times 32       Rim Shot
+Channel 10  Effect 51   Times 16       Ride Cymbal
+Channel 10  Effect 54   Times 272      Tambourine
+Channel 10  Effect 73   Times 8        Quijada
+
+Note Ranges:
+Pipe Organ 2                    Lo:43  Hi:56
+Guitar 2                        Lo:53  Hi:72
+Whistle 2                       Lo:77  Hi:96
+
+Timings:
+Total ticks for track was 19945
+Tempo is set at 120
+Duration is 0 minutes 51 seconds
+
+
+MIDI Filename 4TRAIN.MID
+
+Program changes:
+Channel 3   Program (from 1 up) 123    Orchestral Hit
+Channel 2   Program (from 1 up) 73     Flute 1
+Channel 10  unnecessarily programmed
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 88     Harmonica
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 2   Program (from 1 up) 73     Flute 1
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+Channel 4   Program (from 1 up) 108    Shakuhachi
+Channel 4   Program (from 1 up) 103    Tube Bell
+
+Effects:
+Channel 10  Effect 38   Times 365      Acoustic Snare Drum
+Channel 10  Effect 54   Times 20       Tambourine
+Channel 10  Effect 73   Times 14       Quijada
+
+Note Ranges:
+Flute 1                         Lo:77  Hi:92
+Harmonica                       Lo:82  Hi:91
+Tube Bell                       Lo:88  Hi:88
+Shakuhachi                      Lo:77  Hi:89
+Orchestral Hit                  Lo:56  Hi:67
+
+Timings:
+Total ticks for track was 30979
+Tempo is set at 120
+Duration is 1 minutes 20 seconds
+

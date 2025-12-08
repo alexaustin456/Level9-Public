@@ -1,0 +1,394 @@
+Billy the Kid - Midi Scores
+---------------------------
+
+AMBUSHV2 MID       708
+BANKJBV2 MID      4906
+BARBRAWL MID     17076
+CARDV2   MID     18047
+CHASEV2  MID     10804
+DUEL     MID      6718
+GEN2V3   MID      2213
+GENERIC  MID      1846
+GENERIC3 MID      2589
+GENERIC4 MID      3978
+GENERIC5 MID      5510
+GETWAYV3 MID      7344
+GUNFIGHT MID      7386
+HOEDOWN1 MID     11250
+HOEDOWN2 MID     12413
+HONKY1V2 MID      8008
+MAP      MID     12337
+RAG3     MID      8151
+RAGTIME  MID     10598
+SHOCKV2  MID      4134
+SHOOTOUT MID      6010
+SHOOTUT2 MID      5933
+SHOOTUT3 MID      7381
+THEME    MID     14209
+TRAIN    MID     11836
+       25 File(s)
+
+
+MIDI File Instrument & Effect Scanner
+-------------------------------------
+
+MIDI Filename AMBUSHV2.MID
+Channel 5   Program (from 1 up) 78
+Channel 6   Program (from 1 up) 118
+Channel 7   Program (from 1 up) 61
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 37  Times 3
+Channel 10  Effect 43  Times 3
+Channel 10  Effect 47  Times 2
+Channel 10  Effect 48  Times 6
+Channel 10  Effect 49  Times 1
+Total ticks for track was 3896
+
+MIDI Filename BANKJBV2.MID
+Channel 2   Program (from 1 up) 84
+Channel 3   Program (from 1 up) 89
+Channel 4   Program (from 1 up) 62
+Channel 5   Program (from 1 up) 103
+Channel 6   Program (from 1 up) 50
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 38  Times 36
+Channel 10  Effect 54  Times 72
+Channel 10  Effect 56  Times 8
+Channel 10  Effect 58  Times 3
+Channel 10  Effect 60  Times 62
+Channel 10  Effect 62  Times 72
+Channel 10  Effect 67  Times 1
+Channel 10  Effect 73  Times 5
+Channel 10  Effect 74  Times 3
+Channel 10  Effect 81  Times 1
+Total ticks for track was 17375
+
+MIDI Filename BARBRAWL.MID
+Channel 2   Program (from 1 up) 71
+Channel 3   Program (from 1 up) 54
+Channel 4   Program (from 1 up) 21
+Channel 5   Program (from 1 up) 99
+Channel 6   Program (from 1 up) 111
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 38  Times 461
+Channel 10  Effect 44  Times 130
+Channel 10  Effect 49  Times 3
+Channel 10  Effect 56  Times 16
+Channel 10  Effect 65  Times 20
+Channel 10  Effect 66  Times 1
+Channel 10  Effect 67  Times 1
+Total ticks for track was 22128
+
+MIDI Filename CARDV2.MID
+Channel 2   Program (from 1 up) 98
+Channel 3   Program (from 1 up) 78
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 148
+Channel 10  Effect 37  Times 217
+Channel 10  Effect 42  Times 114
+Channel 10  Effect 44  Times 278
+Channel 10  Effect 49  Times 1
+Channel 10  Effect 56  Times 39
+Total ticks for track was 33050
+
+MIDI Filename CHASEV2.MID
+Channel 2   Program (from 1 up) 61
+Channel 3   Program (from 1 up) 63
+Channel 4   Program (from 1 up) 66
+Channel 5   Program (from 1 up) 60
+Channel 6   Program (from 1 up) 90
+Channel 7   Program (from 1 up) 103
+Channel 8   Program (from 1 up) 112
+Channel 9   Program (from 1 up) 103
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 46
+Channel 10  Effect 39  Times 16
+Channel 10  Effect 54  Times 184
+Channel 10  Effect 60  Times 58
+Channel 10  Effect 62  Times 408
+Channel 10  Effect 69  Times 16
+Channel 10  Effect 78  Times 16
+Total ticks for track was 23040
+
+MIDI Filename DUEL.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 49
+Channel 4   Program (from 1 up) 60
+Channel 5   Program (from 1 up) 112
+Channel 6   Program (from 1 up) 113
+Channel 7   Program (from 1 up) 90
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 38  Times 162
+Channel 10  Effect 54  Times 20
+Channel 10  Effect 60  Times 126
+Total ticks for track was 27767
+
+MIDI Filename GEN2V3.MID
+Channel 2   Program (from 1 up) 5
+Channel 3   Program (from 1 up) 51
+Channel 4   Program (from 1 up) 37
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 38  Times 48
+Channel 10  Effect 43  Times 3
+Channel 10  Effect 45  Times 3
+Channel 10  Effect 47  Times 12
+Channel 10  Effect 54  Times 54
+Channel 10  Effect 62  Times 22
+Channel 10  Effect 73  Times 3
+Total ticks for track was 12333
+
+MIDI Filename GENERIC.MID
+Channel 2   Program (from 1 up) 78
+Channel 3   Program (from 1 up) 64
+Channel 4   Program (from 1 up) 127
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 0  Times 2
+Channel 10  Effect 37  Times 24
+Channel 10  Effect 38  Times 40
+Channel 10  Effect 43  Times 8
+Channel 10  Effect 47  Times 24
+Channel 10  Effect 49  Times 4
+Channel 10  Effect 51  Times 32
+Total ticks for track was 15096
+
+MIDI Filename GENERIC3.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 89
+Channel 4   Program (from 1 up) 94
+Channel 5   Program (from 1 up) 103
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 54  Times 36
+Channel 10  Effect 56  Times 8
+Channel 10  Effect 58  Times 8
+Channel 10  Effect 60  Times 40
+Channel 10  Effect 62  Times 24
+Channel 10  Effect 73  Times 4
+Total ticks for track was 16442
+
+MIDI Filename GENERIC4.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 14
+Channel 4   Program (from 1 up) 93
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 51  Times 45
+Channel 10  Effect 54  Times 162
+Channel 10  Effect 56  Times 9
+Channel 10  Effect 58  Times 9
+Channel 10  Effect 60  Times 45
+Channel 10  Effect 62  Times 27
+Channel 10  Effect 73  Times 4
+Total ticks for track was 18512
+
+MIDI Filename GENERIC5.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 14
+Channel 4   Program (from 1 up) 108
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 0  Times 2
+Channel 10  Effect 24  Times 152
+Channel 10  Effect 36  Times 64
+Channel 10  Effect 51  Times 40
+Channel 10  Effect 54  Times 104
+Channel 10  Effect 56  Times 8
+Channel 10  Effect 58  Times 8
+Channel 10  Effect 60  Times 40
+Channel 10  Effect 62  Times 24
+Total ticks for track was 13262
+
+MIDI Filename GETWAYV3.MID
+Channel 2   Program (from 1 up) 61
+Channel 3   Program (from 1 up) 89
+Channel 4   Program (from 1 up) 62
+Channel 5   Program (from 1 up) 103
+Channel 6   Program (from 1 up) 50
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 36  Times 18
+Channel 10  Effect 38  Times 122
+Channel 10  Effect 54  Times 294
+Channel 10  Effect 56  Times 9
+Channel 10  Effect 58  Times 9
+Channel 10  Effect 60  Times 109
+Channel 10  Effect 62  Times 147
+Channel 10  Effect 77  Times 2
+Channel 10  Effect 90  Times 2
+Channel 10  Effect 96  Times 13
+Total ticks for track was 12671
+
+MIDI Filename GUNFIGHT.MID
+Channel 2   Program (from 1 up) 78
+Channel 3   Program (from 1 up) 99
+Channel 4   Program (from 1 up) 127
+Channel 5   Program (from 1 up) 123
+Channel 6   Program (from 1 up) 113
+Channel 7   Program (from 1 up) 103
+Channel 8   Program (from 1 up) 88
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 5
+Channel 10  Effect 38  Times 140
+Channel 10  Effect 40  Times 10
+Channel 10  Effect 41  Times 24
+Channel 10  Effect 42  Times 132
+Channel 10  Effect 43  Times 1
+Channel 10  Effect 44  Times 36
+Channel 10  Effect 45  Times 4
+Channel 10  Effect 46  Times 2
+Total ticks for track was 22711
+
+MIDI Filename HOEDOWN1.MID
+Channel 2   Program (from 1 up) 54
+Channel 3   Program (from 1 up) 72
+Channel 4   Program (from 1 up) 63
+Channel 5   Program (from 1 up) 64
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 0  Times 2
+Channel 10  Effect 36  Times 152
+Channel 10  Effect 38  Times 145
+Channel 10  Effect 44  Times 152
+Total ticks for track was 28915
+
+MIDI Filename HOEDOWN2.MID
+Channel 2   Program (from 1 up) 54
+Channel 3   Program (from 1 up) 72
+Channel 4   Program (from 1 up) 63
+Channel 5   Program (from 1 up) 64
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 204
+Channel 10  Effect 38  Times 120
+Channel 10  Effect 44  Times 324
+Channel 10  Effect 54  Times 156
+Channel 10  Effect 127  Times 2
+Total ticks for track was 24403
+
+MIDI Filename HONKY1V2.MID
+Channel 2   Program (from 1 up) 4
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 70
+Channel 10  Effect 37  Times 89
+Channel 10  Effect 42  Times 58
+Channel 10  Effect 44  Times 133
+Channel 10  Effect 56  Times 12
+Channel 10  Effect 78  Times 1
+Channel 10  Effect 90  Times 1
+Total ticks for track was 11846
+
+MIDI Filename MAP.MID
+Channel 2   Program (from 1 up) 73
+Channel 3   Program (from 1 up) 52
+Channel 4   Program (from 1 up) 28
+Channel 5   Program (from 1 up) 22
+Channel 6   Program (from 1 up) 51
+Channel 7   Program (from 1 up) 3
+Channel 8   Program (from 1 up) 113
+Channel 9   Program (from 1 up) 88
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 54  Times 144
+Channel 10  Effect 60  Times 68
+Channel 10  Effect 61  Times 136
+Channel 10  Effect 63  Times 68
+Total ticks for track was 29290
+
+MIDI Filename RAGTIME.MID
+Channel 2   Program (from 1 up) 3
+Total ticks for track was 26219
+
+MIDI Filename RAG3.MID
+Channel 2   Program (from 1 up) 4
+Channel 3   Program (from 1 up) 54
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 88
+Channel 10  Effect 37  Times 88
+Channel 10  Effect 42  Times 88
+Channel 10  Effect 44  Times 177
+Channel 10  Effect 56  Times 11
+Total ticks for track was 21256
+
+MIDI Filename SHOCKV2.MID
+Channel 2   Program (from 1 up) 4
+Channel 3   Program (from 1 up) 38
+Channel 5   Program (from 1 up) 123
+Channel 6   Program (from 1 up) 103
+Channel 8   Program (from 1 up) 112
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 36  Times 13
+Channel 10  Effect 37  Times 26
+Channel 10  Effect 42  Times 6
+Channel 10  Effect 44  Times 19
+Channel 10  Effect 56  Times 2
+Channel 10  Effect 77  Times 1
+Channel 10  Effect 96  Times 1
+Channel 10  Effect 104  Times 2
+Total ticks for track was 8689
+
+MIDI Filename SHOOTOUT.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 14
+Channel 4   Program (from 1 up) 114
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 24  Times 152
+Channel 10  Effect 36  Times 64
+Channel 10  Effect 51  Times 40
+Channel 10  Effect 54  Times 104
+Channel 10  Effect 56  Times 8
+Channel 10  Effect 58  Times 8
+Channel 10  Effect 60  Times 40
+Channel 10  Effect 62  Times 24
+Total ticks for track was 14559
+
+MIDI Filename SHOOTUT2.MID
+Channel 2   Program (from 1 up) 60
+Channel 3   Program (from 1 up) 14
+Channel 4   Program (from 1 up) 114
+Channel 5   Program (from 1 up) 110
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 42  Times 128
+Channel 10  Effect 44  Times 48
+Channel 10  Effect 51  Times 44
+Channel 10  Effect 54  Times 20
+Channel 10  Effect 56  Times 12
+Channel 10  Effect 70  Times 4
+Channel 10  Effect 73  Times 4
+Total ticks for track was 11362
+
+MIDI Filename SHOOTUT3.MID
+Channel 2   Program (from 1 up) 61
+Channel 3   Program (from 1 up) 14
+Channel 4   Program (from 1 up) 98
+Channel 5   Program (from 1 up) 110
+Channel 10  Program (from 1 up) 127
+Channel 10  Effect 36  Times 88
+Channel 10  Effect 37  Times 32
+Channel 10  Effect 51  Times 16
+Channel 10  Effect 54  Times 272
+Channel 10  Effect 73  Times 8
+Total ticks for track was 19946
+
+MIDI Filename THEME.MID
+Channel 2   Program (from 1 up) 73
+Channel 3   Program (from 1 up) 52
+Channel 4   Program (from 1 up) 28
+Channel 5   Program (from 1 up) 123
+Channel 6   Program (from 1 up) 51
+Channel 7   Program (from 1 up) 3
+Channel 8   Program (from 1 up) 113
+Channel 9   Program (from 1 up) 88
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 38  Times 171
+Channel 10  Effect 49  Times 10
+Channel 10  Effect 54  Times 329
+Total ticks for track was 23577
+
+MIDI Filename TRAIN.MID
+Channel 2   Program (from 1 up) 73
+Channel 3   Program (from 1 up) 38
+Channel 4   Program (from 1 up) 99
+Channel 5   Program (from 1 up) 123
+Channel 6   Program (from 1 up) 108
+Channel 7   Program (from 1 up) 103
+Channel 8   Program (from 1 up) 88
+Channel 10  Program (from 1 up) 128
+Channel 10  Effect 0  Times 1
+Channel 10  Effect 38  Times 365
+Channel 10  Effect 54  Times 20
+Channel 10  Effect 73  Times 14
+Total ticks for track was 30979
+
